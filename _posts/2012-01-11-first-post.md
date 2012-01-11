@@ -1,6 +1,6 @@
 ---
 layout: post
-title: modal_soul debriefing01
+title: modal_soul debriefing00
 ---
 GitHubでブログを立ててみた。
 -----------------

@@ -2,9 +2,9 @@
 layout: post
 title: modal_soul debriefing01
 ---
-GitHub‚ÅƒuƒƒO‚ğ—§‚Ä‚Ä‚İ‚½B
+GitHubã§ãƒ–ãƒ­ã‚°ã‚’ç«‹ã¦ã¦ã¿ãŸã€‚
 -----------------
 
 ![Twitter:@modal_soul](https://si0.twimg.com/profile_images/1668051190/mcdonald-joker.png)
 
-[‚±‚¿‚ç](http://mattn.kaoriya.net/software/lang/ruby/20090409185248.htm)‚Ì‹L–‚ğQl‚É‚µ‚Ü‚µ‚½B
+[ã“ã¡ã‚‰](http://mattn.kaoriya.net/software/lang/ruby/20090409185248.htm)ã®è¨˜äº‹ã‚’å‚è€ƒã«ã—ã¾ã—ãŸã€‚

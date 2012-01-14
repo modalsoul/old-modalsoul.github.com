@@ -5,7 +5,7 @@ title: modal_soul debriefing00:GitHub+Jekyllでブログを立ててみた。
 GitHub+[Jekyll](http://jekyllbootstrap.com/)でブログを立ててみた。
 -----------------
 
-![Twitter:@modal_soul](https://si0.twimg.com/profile_images/1668051190/mcdonald-joker.png)
+![Twitter:@modal_soul](https://si0.twimg.com/profile_images/1753567251/square-icon-with-mark.png)
 
 [こちら](http://mattn.kaoriya.net/software/lang/ruby/20090409185248.htm)の記事を参考にしました。
 

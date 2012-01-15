@@ -1,7 +1,20 @@
-#destination: ./_site
-#auto:        false
-#lsi:         false
-#server_port: 4000
-pygments:    true
-#markdown:    maruku
-#permalink:   date
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:year/:month/:day/:title 
+auto: true
+pygments: true
+var:
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+
+production_url : http://modalsoul.github.com # or your custom domain name
+title : Jekyll Boostrap
+
+author :
+  name : Name Lastname
+  email : modalsoul0215@gmail.com
+  github : modalsoul
+  twitter : modal_soul
+
+exclude: .rbenv-version

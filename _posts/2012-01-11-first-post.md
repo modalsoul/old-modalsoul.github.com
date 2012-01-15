@@ -2,6 +2,7 @@
 layout: post
 title: GitHub+Jekyllでブログを立ててみた。@modal_soul
 tags: GitHub, Jekyll
+categories: record
 ---
 GitHub+[Jekyll](http://jekyllbootstrap.com/)でブログを立ててみた。
 -----------------

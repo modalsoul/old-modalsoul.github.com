@@ -1,6 +1,6 @@
 ---
 layout: post
-title: modal_soul debriefing00:GitHub+Jekyllでブログを立ててみた。
+title: GitHub+Jekyllでブログを立ててみた。@modal_soul
 ---
 GitHub+[Jekyll](http://jekyllbootstrap.com/)でブログを立ててみた。
 -----------------

@@ -26,14 +26,14 @@ $ C:\Proguram files(x86)\ruby-1.8
 ###Pathの設定
 環境変数に↓を追加
 {% highlight sh %}
-C:\Proguram files(x86)\ruby-1.8\bin
+$ "C:\Proguram files(x86)\ruby-1.8\bin"
 {% endhighlight %}
 ###RubyGemsのセットアップ
 
 ###再：Rubyをインストール
 Rubyのパスを↓に変更する。
 {% highlight sh %}
-C:\ruby-1.8
+$ C:\ruby-1.8
 {% endhighlight %}
 
 ###

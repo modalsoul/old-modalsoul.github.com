@@ -36,5 +36,57 @@ Rubyのパスを↓に変更する。
 $ C:\ruby-1.8
 {% endhighlight %}
 
-###
 ###Jekyllのインストール
+{% highlight sh %}
+$ gem install jekyll
+{% endhighlight %}
+で、インストールできるはずなんだけど、なんかエラーがでる。。
+どうやらWindows環境だと、MAKE無くてエラーになってるらしい。
+Mac、Linux環境だとmakeはデフォルトはいっているので、Windows環境の嵌りポイント。
+
+###NMAKEのインストール
+こちらを参考にWindows環境用のMAKE：NMAKEのインストールを試みる。
+[http://d.hatena.ne.jp/perlcodesample/20081025/1225035398](http://d.hatena.ne.jp/perlcodesample/20081025/1225035398)
+
+Nake15.exeをダウンロード＆インストールしようとしたら、
+![nmake error diag](/img/nmake15-error.jpg)
+手持ちの環境では、このNMAKEは使えないらしい。
+別の方法を探す。
+
+###VisualStudioのインストール
+VC++ CompilerにNMAKEが同梱されているようなので、VisualStudioをインストール。
+![VisualStudio 2010 Express](http://capture.heartrails.com/free?http://www.microsoft.com/japan/msdn/vstudio/express/)
+Microsoft Visual C++ 2010 Expressをインストール。
+インストール後に、再度Jekyllインストールしてみてもやっぱりダメ。
+{% highlight sh %}
+NMAKE : fatal error U1077: '"～\bin\cl.EXE"' : リターン コード '0xc0000135'
+{% endhighlight %}
+まだ何か足りないっぽい。
+
+###環境変数の設定
+環境変数を設定してやる必要があるらしい。
+![http://www7.atwiki.jp/smashonline/?cmd=word&word=cl.exe%200xc0000135&type=normal&page=nmake](http://capture.heartrails.com/free?http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake)
+{% highlight sh %}
+$ C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\vcvars32.bat
+{% endhighlight %}
+
+###再：Jekyllのインストール
+{% highlight sh %}
+$ gem install jekyll
+{% endhighlight %}
+なんとかJekyllのインストールに成功。
+
+##Jekyllの実行
+ローカルのgithub:pagesのルートディレクトリ配下に移動してJekyllを実行。
+{% highlight sh %}
+$ jekyll --server --auto
+{% endhighlight %}
+
+##ブラウザで表示
+デフォルトのポートが4000なので、
+http://localhost:4000
+にアクセスする。
+
+##最後に
+時間がたってからこの記事を書いたので、一部詳細があってないところもあるだろうけれど
+大体こんな流れでした。

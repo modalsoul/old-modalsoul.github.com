@@ -45,14 +45,29 @@ $ gem update --sytem
 {% endhighlight %}
 
 
+###Jekyllのインストール
+{% highlight sh %}
+$ gem install jekyll
+{% endhighlight %}
+インストールできるはずなんだけど、なんかエラーがでる。。
+どうやら、Program files(x86)配下に書き込み権限がないから、らしい。
 
-###再：Rubyをインストール
+
+###再：Rubyのインストール
+もう一度、今度は、C:\直下にインストール。
+{% highlight sh %}
+$ C:\ruby-1.8
+{% endhighlight %}
+
+
+###再：Pathの設定
 Rubyのパスを↓に変更する。
 {% highlight sh %}
 $ C:\ruby-1.8
 {% endhighlight %}
 
-###Jekyllのインストール
+
+###再：Jekyllのインストール
 {% highlight sh %}
 $ gem install jekyll
 {% endhighlight %}

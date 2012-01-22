@@ -47,11 +47,14 @@ Mac、Linux環境だとmakeはデフォルトはいっているので、Windows�
 ###NMAKEのインストール
 こちらを参考にWindows環境用のMAKE：NMAKEのインストールを試みる。
 [http://d.hatena.ne.jp/perlcodesample/20081025/1225035398](http://d.hatena.ne.jp/perlcodesample/20081025/1225035398)
+![http://d.hatena.ne.jp/perlcodesample/20081025/1225035398](http://capture.heartrails.com/free?http://d.hatena.ne.jp/perlcodesample/20081025/1225035398)
 
 Nake15.exeをダウンロード＆インストールしようとしたら、
 ![nmake error diag](/img/nmake15-error.jpg)
+
 手持ちの環境では、このNMAKEは使えないらしい。
 別の方法を探す。
+
 
 ###VisualStudioのインストール
 VC++ CompilerにNMAKEが同梱されているようなので、VisualStudioをインストール。
@@ -84,6 +87,7 @@ $ gem install jekyll
 {% endhighlight %}
 
 なんとかJekyllのインストールに成功。
+
 
 ##Jekyllの実行
 

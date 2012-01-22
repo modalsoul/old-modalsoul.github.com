@@ -28,7 +28,22 @@ $ C:\Proguram files(x86)\ruby-1.8
 {% highlight sh %}
 $ "C:\Proguram files(x86)\ruby-1.8\bin"
 {% endhighlight %}
+
+
 ###RubyGemsのセットアップ
+gemのバージョンを確認。
+
+{% highlight sh %}
+$ gem -v
+{% endhighlight %}
+
+
+1.3.6以前のバージョンには対応していないので、1.3.6以前だった場合は更新する。
+{% highlight sh %}
+$ gem update --sytem
+{% endhighlight %}
+
+
 
 ###再：Rubyをインストール
 Rubyのパスを↓に変更する。

@@ -64,6 +64,8 @@ VC++ CompilerにNMAKEが同梱されているようなので、VisualStudioを�
 
 ![VisualStudio 2010 Express](http://capture.heartrails.com/free?http://www.microsoft.com/japan/msdn/vstudio/express/)
 
+[VisualStudio 2010 Express](http://www.microsoft.com/japan/msdn/vstudio/express/)
+
 Microsoft Visual C++ 2010 Expressをインストール。
 インストール後に、再度Jekyllインストールしてみてもやっぱりダメ。
 
@@ -78,6 +80,9 @@ NMAKE : fatal error U1077: '"～\bin\cl.EXE"' : リターン コード '0xc00001
 環境変数を設定してやる必要があるらしい。
 
 ![http://www7.atwiki.jp/smashonline/?cmd=word&word=cl.exe%200xc0000135&type=normal&page=nmake](http://capture.heartrails.com/free?http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake)
+
+[http://www7.atwiki.jp/smashonline/?cmd=word&word=cl.exe%200xc0000135&type=normal&page=nmake](http://www7.atwiki.jp/smashonline/?cmd=word&word=cl.exe%200xc0000135&type=normal&page=nmake)
+
 
 {% highlight sh %}
 $ C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\vcvars32.bat

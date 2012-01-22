@@ -39,6 +39,7 @@ $ gem -v
 
 
 1.3.6以前のバージョンには対応していないので、1.3.6以前だった場合は更新する。
+
 {% highlight sh %}
 $ gem update --sytem
 {% endhighlight %}

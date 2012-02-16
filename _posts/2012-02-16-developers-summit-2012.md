@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Developers Summit 2012 1日目( #devsumiA #devsumiB #devsumiC ) ツイートまとめ。
+title: Developers Summit 2012 1日目ツイートまとめ。#devsumi
 tags: DevelopersSummit
 categories: report
 ---

@@ -49,6 +49,7 @@ Developers Summit でべろっぱーずさみっと （コンピュータ）
 
 [HTML5の今と未来 #devsumi #devsumiC つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpcM)
 [https://yukar.in/note/ckFpcM](https://yukar.in/note/ckFpcM)
+[https://yukar.in/note/ckFpcM](https://yukar.in/note/ckFpcM)
 
 
 ###[開発プロセス]11:10～11:55【16-B-2】Yahoo!アジャイルクロニクル ～コーチとエンジニアの体験記～ 長岡 実 氏 / 高橋 一貴 氏

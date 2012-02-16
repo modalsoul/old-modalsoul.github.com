@@ -84,7 +84,7 @@ E-mail： devinfo@shoeisha.co.jp
 結局、Scalaバッジを引き当てた後輩くんにトレードをお願いして、手に入れました！！
 
 ちなみに、↓です
-<img src="http://modalsoul.github.com/img/badge.jpg">
+<img src="/img/badge.jpg">
 
 Scala以外のバッジはトレード可能ですので、
 もしお目当てのバッジを私がもっていたら、メンションいただければ明日トレード可能です

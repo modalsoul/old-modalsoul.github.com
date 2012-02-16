@@ -9,7 +9,7 @@ categories: report
 
 ##Developers Summitとは？
 
-{% highlight sh %}
+{% highlight o %}
 Developers Summit でべろっぱーずさみっと （コンピュータ）
 
 通称：デブサミ
@@ -38,11 +38,13 @@ E-mail： devinfo@shoeisha.co.jp
 
 ##2月16日（木）
 ###[Web Technology]10:00～10:50【16-C-1】HTML5の今と未来 ～HTML5との正しいつきあい方～ 羽田野 太巳 氏
+
 [HTML5の今と未来 #devsumi #devsumiC つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpcM)
 [https://yukar.in/note/ckFpcM](https://yukar.in/note/ckFpcM)
 
 
 ###[開発プロセス]11:10～11:55【16-B-2】Yahoo!アジャイルクロニクル ～コーチとエンジニアの体験記～ 長岡 実 氏 / 高橋 一貴 氏
+
 [Yahoo!アジャイルクロニクル #devsumi #devsumiB つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpcp)
 [https://yukar.in/note/ckFpcp](https://yukar.in/note/ckFpcp)
 
@@ -58,16 +60,19 @@ E-mail： devinfo@shoeisha.co.jp
 
 
 ###[開発プロセス]14:20～15:05【16-B-4】アジャイル開発の10年と今後を語ろう。 平鍋 健児 氏
+
 [アジャイル開発の10年と今後を語ろう。 #devsumi #devsumiB つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpcs)
 [https://yukar.in/note/ckFpcs](https://yukar.in/note/ckFpcs)
 
 
 ###[開発プロセス]15:25～16:15【16-B-5】アジャイルリーダーシップと組織改革 ～楽天のアジャイル開発というリアル～ 藤原 大 氏
+
 [アジャイルリーダーシップと組織改革 #devsumi #devsumiB つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpcp)
 [https://yukar.in/note/ckFpcp](https://yukar.in/note/ckFpcp)
 
 
 ###[Special]17:40～19:10【16-A-7】あの人の自分戦略を聞きたい！ 和田 卓人 氏 / 小泉 守義 氏 / 市谷 聡啓 氏 / 倉貫 義人 氏 / 川口 耕介 氏 / 高橋 征義 氏 / bleis-tift 氏 / 高井 直人 氏
+
 [ [その１]あの人の自分戦略を聞きたい！ #devsumi #devsumiA つぶやきまとめ](https://yukar.in/note/ckFpck)
 [https://yukar.in/note/ckFpck](https://yukar.in/note/ckFpck)
 

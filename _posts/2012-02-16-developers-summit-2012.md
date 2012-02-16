@@ -9,7 +9,7 @@ categories: report
 
 ##Developers Summitとは？
 
-{% highlight p %}
+{% highlight sh %}
 Developers Summit でべろっぱーずさみっと （コンピュータ）
 
 通称：デブサミ
@@ -19,13 +19,21 @@ Developers Summit でべろっぱーずさみっと （コンピュータ）
 開催概要
 
 名称	Developers Summit 2012 （デブサミ2012）
+
 会期	2012年2月16日（木）・17日（金）
+
 会場	目黒雅叙園（東京・目黒）
+
 主催	株式会社 翔泳社
+
 お勧めする方	技術者、ソフトウェア開発者、システム開発者、ネットワーク管理・運用者、IT教育担当者、
+
 ITマーケティング・セールス担当者、IT関連部署マネージャ、プロジェクト関連マネージャ
+
 参加費	無料
+
 お問い合わせ	Developers Summit 運営事務局 (株式会社翔泳社内)
+
 E-mail： devinfo@shoeisha.co.jp
 
 その存在は知ってはいたものの、今回初めて参加しました、デブサミ！

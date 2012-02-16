@@ -9,7 +9,7 @@ categories: report
 
 ##Developers Summitとは？
 
-{% highlight o %}
+{% highlight p %}
 Developers Summit でべろっぱーずさみっと （コンピュータ）
 
 通称：デブサミ
@@ -97,7 +97,11 @@ Scala以外のバッジはトレード可能ですので、
 
 在庫一覧
 ・デコンパイリングJava　【右上】
+
 ・Natural Language Processing with Python　【左下】
+
 ・Restful Java　【左上】
+
 ・牛？　【中央下】
+
 ・白熊？　【中央上】

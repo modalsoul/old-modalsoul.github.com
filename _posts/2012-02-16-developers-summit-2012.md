@@ -8,6 +8,7 @@ categories: report
 -----------------
 
 ##Developers Summitとは？
+
 {% highlight %}
 Developers Summit でべろっぱーずさみっと （コンピュータ）
 

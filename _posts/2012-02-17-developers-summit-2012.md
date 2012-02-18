@@ -128,7 +128,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 
 
-###[Special]17:40～19:10【17-E-7】君の4tate（立てた帆）に、風を感じているか？ ～4tateで日本を変えるプロジェクト～　野村 恭彦 氏 / 市谷 聡啓 氏
+### [Special]17:40～19:10【17-E-7】君の4tate（立てた帆）に、風を感じているか？ ～4tateで日本を変えるプロジェクト～　野村 恭彦 氏 / 市谷 聡啓 氏
 
 [ 君の4tate（立てた帆）に、風を感じているか？ #devsumiE つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpaN)
 [https://yukar.in/note/ckFpaN](https://yukar.in/note/ckFpaN)

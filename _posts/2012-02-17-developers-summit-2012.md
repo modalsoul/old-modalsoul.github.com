@@ -130,6 +130,8 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 [ 君の4tate（立てた帆）に、風を感じているか？ #devsumiE つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpaN)
 [https://yukar.in/note/ckFpaN](https://yukar.in/note/ckFpaN)
 
+<blockquote class="twitter-tweet" lang="ja"><p>「よんたて」ではなく「ほたて」だった <a href="https://twitter.com/search/%2523devsumiE">#devsumiE</a></p>&mdash; uedayoさん (@uedayo) <a href="https://twitter.com/uedayo/status/170428328854040576" data-datetime="2012-02-17T08:44:14+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 このセッションですが、実際よくわからないまま参加しましたｗ
 ただ、スピーカーの野村　恭彦さんが監訳された[ゲームストーミング ―会議、チーム、プロジェクトを成功へと導く87のゲーム](http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_tl?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4873115051)は、

@@ -67,7 +67,15 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 [オフェンシブな開発 #devsumi #devsumiC つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpb7)
 [https://yukar.in/note/ckFpb7](https://yukar.in/note/ckFpb7)
 
-
+<div style="width:425px" id="__ss_11631411"> 
+	<strong style="display:block;margin:12px 0 4px">
+	<a href="http://www.slideshare.net/kuranuki/devsumi2012-11631411" title="Devsumi2012 倉貫講演資料" target="_blank">Devsumi2012 倉貫講演資料</a>
+	</strong> 
+	<iframe src="http://www.slideshare.net/slideshow/embed_code/11631411" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+	</iframe> 
+	<div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/kuranuki" target="_blank">Yoshihito Kuranuki</a> 
+	</div> 
+</div>
 
 
 このセッションの中で話された「家族がいても挑戦できる社会」。ガツンと響きました。
@@ -93,8 +101,6 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 このセッションで特に気になったつぶやきを抜粋
 
-<blockquote class="twitter-tweet" lang="ja"><p>そうだね、その辺の充実度がチームの成熟度と関係しているかもしれない。@<a href="https://twitter.com/modal_soul">modal_soul</a>: イテレーティブに開発する上で、やはり立ち上げの早さは重要なんですね　@<a href="https://twitter.com/tsuyok">tsuyok</a>: スプリント0のテンプレート。こういうテンプレートを作っていくのは重要だよなー。 <a href="https://twitter.com/search/%2523devsumiA">#devsumiA</a></p>&mdash; Tsuyoshi Yasunishiさん (@tsuyok) <a href="https://twitter.com/tsuyok/status/170383772905250816" data-datetime="2012-02-17T05:47:11+00:00">2月 17, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ###[10th Special]15:25～16:15【17-B-5】アジャイルマニフェスト ディケイド　角谷 信太郎 氏

@@ -101,9 +101,6 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 このセッションで特に気になったつぶやきを抜粋
 
-<blockquote class="twitter-tweet" lang="ja"><p>そうだね、その辺の充実度がチームの成熟度と関係しているかもしれない。@<a href="https://twitter.com/modal_soul">modal_soul</a>: イテレーティブに開発する上で、やはり立ち上げの早さは重要なんですね　@<a href="https://twitter.com/tsuyok">tsuyok</a>: スプリント0のテンプレート。こういうテンプレートを作っていくのは重要だよなー。 <a href="https://twitter.com/search/%2523devsumiA">#devsumiA</a></p>&mdash; Tsuyoshi Yasunishiさん (@tsuyok) <a href="https://twitter.com/tsuyok/status/170383772905250816" data-datetime="2012-02-17T05:47:11+00:00">2月 17, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ###[10th Special]15:25～16:15【17-B-5】アジャイルマニフェスト ディケイド　角谷 信太郎 氏
 

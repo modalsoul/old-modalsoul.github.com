@@ -53,7 +53,8 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 前日の「あの人の自分戦略を聞きたい！」セッション終了後、すごすごとステッカーください、と伺ったところ
 「ステッカー切れてしまったので、明日また持ってきますね」とのことで
 ステッカーもらうぞ！と意気込んでやってきたところ、会場入り口でアンケート用紙と一緒にJenkinsステッカーいただきました！
-![Jenkinsステッカー](./img/jenkins-sticker.jpg)
+
+<img src="./img/jenkins-sticker.jpg">
 
 講演では、検証済みマージや、ビルドパイプライン、昇進モデル
 自動化と自動化がつながり複雑な自動化が可能になる、「継続的デリバリ」についてのお話でした。
@@ -61,7 +62,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 検証済みマージについては、[WEB+DB Press vol.67](http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_tl?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4774149942)にて記事を書かれたそうなので、必読ですね！
 <a href="http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4774149942"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=4774149942&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" ></a><img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4774149942" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-
+<hr />
 ###[開発プロセス]13:10～14:00【17-C-3】オフェンシブな開発～「納品しない受託開発」にみるソフトウェア受託開発の未来　倉貫 義人 氏
 
 [オフェンシブな開発 #devsumi #devsumiC つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpb7)
@@ -88,6 +89,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 そんな現状を変えられそうなお話でした。
 
 
+<hr />
 ###[DeNA Special]14:20～15:05【17-A-4】Scrumで組織改革　貝瀬 岳志 氏
 
 [Scrumで組織改革 #devsumiA つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpcs)
@@ -106,6 +108,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 </script>
 
 
+<hr />
 ###[10th Special]15:25～16:15【17-B-5】アジャイルマニフェスト ディケイド　角谷 信太郎 氏
 
 [[その１]アジャイルマニフェスト ディケイド #devsumiB つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpbf)
@@ -129,7 +132,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 </script>
 
 
-
+<hr />
 ### [Special]17:40～19:10【17-E-7】君の4tate（立てた帆）に、風を感じているか？ ～4tateで日本を変えるプロジェクト～　野村 恭彦 氏 / 市谷 聡啓 氏
 
 [ 君の4tate（立てた帆）に、風を感じているか？ #devsumiE つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpaN)
@@ -172,7 +175,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 </script>
 
 
-
+<hr />
 ##最後に、
 どのセッションも、話された内容は違えど
 自分の中のモチベーションを喚起する非常に濃い内容でした。

@@ -18,23 +18,23 @@ Developers Summit でべろっぱーずさみっと （コンピュータ）
 
 ###開催概要
 
-** 名称	Developers Summit 2012 （デブサミ2012）**
+名称	Developers Summit 2012 （デブサミ2012）
 
-** 会期	2012年2月16日（木）・17日（金）**
+会期	2012年2月16日（木）・17日（金）
 
-** 会場	目黒雅叙園（東京・目黒）**
+会場	目黒雅叙園（東京・目黒）
 
-** 主催	株式会社 翔泳社 **
+主催	株式会社 翔泳社 
 
-** お勧めする方	技術者、ソフトウェア開発者、システム開発者、ネットワーク管理・運用者、IT教育担当者、**
+お勧めする方	技術者、ソフトウェア開発者、システム開発者、ネットワーク管理・運用者、IT教育担当者、
 
-** ITマーケティング・セールス担当者、IT関連部署マネージャ、プロジェクト関連マネージャ **
+ITマーケティング・セールス担当者、IT関連部署マネージャ、プロジェクト関連マネージャ 
 
-** 参加費	無料 **
+参加費	無料 
 
-** お問い合わせ	Developers Summit 運営事務局 (株式会社翔泳社内) **
+お問い合わせ	Developers Summit 運営事務局 (株式会社翔泳社内) 
 
-** E-mail： devinfo@shoeisha.co.jp **
+ E-mail： devinfo@shoeisha.co.jp 
 
 1日目に続き2日目も参加しました。2日目も非常にアツいセッションでした。
 
@@ -67,7 +67,16 @@ Developers Summit でべろっぱーずさみっと （コンピュータ）
 [オフェンシブな開発 #devsumi #devsumiC つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpb7)
 [https://yukar.in/note/ckFpb7](https://yukar.in/note/ckFpb7)
 
-<div style="width:425px" id="__ss_11631411"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/kuranuki/devsumi2012-11631411" title="Devsumi2012 倉貫講演資料" target="_blank">Devsumi2012 倉貫講演資料</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11631411" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/kuranuki" target="_blank">Yoshihito Kuranuki</a> </div> </div>
+<div style="width:425px" id="__ss_11631411"> 
+	<strong style="display:block;margin:12px 0 4px">
+	<a href="http://www.slideshare.net/kuranuki/devsumi2012-11631411" title="Devsumi2012 倉貫講演資料" target="_blank">Devsumi2012 倉貫講演資料</a>
+	</strong> 
+	<iframe src="http://www.slideshare.net/slideshow/embed_code/11631411" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+	</iframe> 
+	<div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/kuranuki" target="_blank">Yoshihito Kuranuki</a> 
+	</div> 
+</div>
+
 
 このセッションの中で話された「家族がいても挑戦できる社会」。ガツンと響きました。
 

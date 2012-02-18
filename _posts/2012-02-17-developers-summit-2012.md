@@ -122,6 +122,9 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 角谷さん自身もおっしゃっていましたが、このセッションは劇場版、生でしか味わえないものが満載でした！
 
 講演資料をツイートと併せて追っていただくと、劇場に近づけるかもしれませんね
+<blockquote class="twitter-tweet" lang="ja"><p>"角谷さんのセッションを最後まで聴いてデブサミが何なのか分かったような気がした。講演の中で角谷さんが言及したとおり、デブサミは"映画館"なのだ" / “10回目のデブサミ - The Dragon Scroll” <a href="http://t.co/RhwzqMeB" title="http://htn.to/NvW2er">htn.to/NvW2er</a></p>&mdash; Kakutani Shintaroさん (@kakutani) <a href="https://twitter.com/kakutani/status/170889006152826881" data-datetime="2012-02-18T15:14:48+00:00">2月 18, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
 
 
 

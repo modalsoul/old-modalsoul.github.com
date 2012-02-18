@@ -67,15 +67,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 [オフェンシブな開発 #devsumi #devsumiC つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpb7)
 [https://yukar.in/note/ckFpb7](https://yukar.in/note/ckFpb7)
 
-<div style="width:425px" id="__ss_11631411"> 
-	<strong style="display:block;margin:12px 0 4px">
-	<a href="http://www.slideshare.net/kuranuki/devsumi2012-11631411" title="Devsumi2012 倉貫講演資料" target="_blank">Devsumi2012 倉貫講演資料</a>
-	</strong> 
-	<iframe src="http://www.slideshare.net/slideshow/embed_code/11631411" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
-	</iframe> 
-	<div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/kuranuki" target="_blank">Yoshihito Kuranuki</a> 
-	</div> 
-</div>
+
 
 
 このセッションの中で話された「家族がいても挑戦できる社会」。ガツンと響きました。

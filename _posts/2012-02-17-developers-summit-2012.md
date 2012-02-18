@@ -88,6 +88,25 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 そんな現状を変えられそうなお話でした。
 
+<blockquote class="twitter-tweet" lang="ja"><p>"研修と納品が目的だと、価値を提供することを目指せなくなる。これが守りの姿勢。" <a href="https://twitter.com/search/%2523devsumiC">#devsumiC</a></p>&mdash; Tomohiro Hashidateさん (@joker1007) <a href="https://twitter.com/joker1007/status/170363635363880961" data-datetime="2012-02-17T04:27:10+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>"生産性を上げれば上げるほど、担当できる顧客が増える。SIerの逆向きのインセンティブとは違う。プログラマとして頑張っていけるモデルを作っている。" <a href="https://twitter.com/search/%2523devsumiC">#devsumiC</a></p>&mdash; Tomohiro Hashidateさん (@joker1007) <a href="https://twitter.com/joker1007/status/170368425288413185" data-datetime="2012-02-17T04:46:12+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>倉貫「いつまでも、いつからでも夢に挑戦できる社会にしていきたい。独身だろうが家族いても。それを実現するのがSonicGardenが取り組んでいるスタートアッププラットフォーム。」 <a href="https://twitter.com/search/%2523devsumi">#devsumi</a> <a href="https://twitter.com/search/%2523devsumiC">#devsumiC</a></p>&mdash; miyohideさん (@miyohide) <a href="https://twitter.com/miyohide/status/170369173749366784" data-datetime="2012-02-17T04:49:10+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>プログラマーはマニュアル化できないナレッジワーカー。ナレッジワーカーはノマドでタイムフリー、だからマネジメントするものではない <a href="https://twitter.com/search/%2523devsumiC">#devsumiC</a></p>&mdash; imae （Master BBQ）さん (@modal_soul) <a href="https://twitter.com/modal_soul/status/170369690638622720" data-datetime="2012-02-17T04:51:14+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>倉貫さんの目指している世界があまりにもカッコ良すぎる。自分のビジネスモデルを通して実現したい世界が凄く分かりやすくて、しかも魅力的だ。 <a href="https://twitter.com/search/%2523devsumiC">#devsumiC</a></p>&mdash; Tomohiro Hashidateさん (@joker1007) <a href="https://twitter.com/joker1007/status/170369902337736706" data-datetime="2012-02-17T04:52:04+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
 
 <hr />
 ###[DeNA Special]14:20～15:05【17-A-4】Scrumで組織改革　貝瀬 岳志 氏

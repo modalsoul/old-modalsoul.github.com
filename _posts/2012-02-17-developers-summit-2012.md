@@ -145,6 +145,25 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 このセッション中で特に感銘した部分のツイートを抜粋して紹介すると、
 
+<blockquote class="twitter-tweet" lang="ja"><p>べき論で集まってもうまくいかない　思いをもった人を集める　 <a href="https://twitter.com/search/%2523devsumiE">#devsumiE</a></p>&mdash; Dai Fujiharaさん (@daipresents) <a href="https://twitter.com/daipresents/status/170441710839676928" data-datetime="2012-02-17T09:37:25+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>対話による多様性と同調、アジャイル・スクラムにも通じてますよね <a href="https://twitter.com/search/%2523devsumiE">#devsumiE</a></p>&mdash; imae （Master BBQ）さん (@modal_soul) <a href="https://twitter.com/modal_soul/status/170442530129842176" data-datetime="2012-02-17T09:40:40+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>ITで何が生まれるかをITを使わない人は知らない <a href="https://twitter.com/search/%2523devsumiE">#devsumiE</a></p>&mdash; uedayoさん (@uedayo) <a href="https://twitter.com/uedayo/status/170441898404757504" data-datetime="2012-02-17T09:38:09+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>この問題に対する解答を行えない、なぜなら発注がないから。発注する側は、これまでの延長でしか考えていなくて、解決できることを知らないから　<a href="https://twitter.com/search/%2523devsumiE">#devsumiE</a></p>&mdash; imae （Master BBQ）さん (@modal_soul) <a href="https://twitter.com/modal_soul/status/170443275742871552" data-datetime="2012-02-17T09:43:38+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>共感駆動開発いいね　 <a href="https://twitter.com/search/%2523devsumiE">#devsumiE</a></p>&mdash; Dai Fujiharaさん (@daipresents) <a href="https://twitter.com/daipresents/status/170445204791369728" data-datetime="2012-02-17T09:51:18+00:00">2月 17, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
 
 
 

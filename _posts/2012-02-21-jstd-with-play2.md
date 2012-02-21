@@ -11,7 +11,7 @@ categories: Test
 
 
 [Testing javascript with Play Framework 2.0 and JsTestDriver](http://capture.heartrails.com/300x200/cool?http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html](Testing javascript with Play Framework 2.0 and JsTestDriver](http://capture.heartrails.com/300x200/cool?http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html)を適当翻訳でご紹介します。
-
+元記事は[こちら](http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html)
 
 <hr />
 

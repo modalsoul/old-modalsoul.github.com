@@ -4,12 +4,14 @@ title: Play Framework 2.0とJsTestDriverによるJavaScriptテスト。
 tags: Play, JsTestDriver, JavaScript
 categories: Test
 ---
-[意訳]Testing javascript with Play Framework 2.0 and JsTestDriver
+【意訳】Testing javascript with Play Framework 2.0 and JsTestDriver
 -----------------
 
 ![Testing javascript with Play Framework 2.0 and JsTestDriver](http://capture.heartrails.com/300x200/cool?http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html)
 
+
 [Testing javascript with Play Framework 2.0 and JsTestDriver](http://capture.heartrails.com/300x200/cool?http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html](Testing javascript with Play Framework 2.0 and JsTestDriver](http://capture.heartrails.com/300x200/cool?http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html)を適当翻訳でご紹介します。
+
 
 <hr />
 
@@ -20,10 +22,10 @@ Scalaの開発にIntelliJ IDEAを使うようになってからは、JavaScript�
 これにより、IntelliJとJsTestDriverの統合による恩恵を受けています。
 
 JavaScriptアプリでは、常に3つのブラウザを対象にテストをしています。
-[!http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg](http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg)
+![http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg](http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg)
 
 テストコンソールにはテスト結果と、ブラウザからフェッチされたコンソール出力を確認できます。
-[!http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg](http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg)
+![http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg](http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg)
 
 上の試験例では、FireFox, Chromeのテストは通っていますが、Safariでは失敗しています。
 サンプルでは３つのテストケースがあり、拡張した1つは2つのテストメソッドを持っています。

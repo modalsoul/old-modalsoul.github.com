@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Play Framework 2.0とJsTestDriverによるJavaScriptテスト。
+title: 【意訳】Play Framework 2.0とJsTestDriverによるJavaScriptテスト。
 tags: Play, JsTestDriver, JavaScript
 categories: Test
 ---

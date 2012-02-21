@@ -22,10 +22,10 @@ Scalaの開発にIntelliJ IDEAを使うようになってからは、JavaScript�
 これにより、IntelliJとJsTestDriverの統合による恩恵を受けています。
 
 JavaScriptアプリでは、常に3つのブラウザを対象にテストをしています。
-<img src="http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg" width="50%" height="50%">
+<img src="http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg" width="65%" height="65%">
 
 テストコンソールにはテスト結果と、ブラウザからフェッチされたコンソール出力を確認できます。
-<img src="http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg" width="50%" height="50%">
+<img src="http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg" width="65%" height="65%">
 
 上の試験例では、FireFox, Chromeのテストは通っていますが、Safariでは失敗しています。
 サンプルでは３つのテストケースがあり、拡張した1つは2つのテストメソッドを持っています。

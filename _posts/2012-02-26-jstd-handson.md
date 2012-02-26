@@ -11,10 +11,12 @@ JavaScriptテスト駆動開発ハンズオン
 
 横浜JSTDDハンズオンに参加してきました。
 概要は、JavaScriptのテスト駆動開発についてのあれこれについてで、
+
 会場の[「タネマキ」](http://tane-maki.net/)は、なんかワクワクするカッコいいところでした！
-![コワーキングスペースの「タネマキ」](http://capture.heartrails.com/300x200/cool?http://tane-maki.net/)
+![コワーキングスペースの「タネマキ」](https://yukar.in/p/pz/123506436)
 
 当日のつぶやきまとめは[こちら](https://yukar.in/note/ckFoT5)
+
 [横浜JSTDDハンズオン #JSTDD つぶやきまとめ - Yukarin'Note](https://yukar.in/note/ckFoT5)
 
 <hr />

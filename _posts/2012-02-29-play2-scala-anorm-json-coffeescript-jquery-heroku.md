@@ -193,14 +193,14 @@ Step 9) フォームパラメータを受け取るために、"main"テンプレ
 
 　＠(form: play.api.data.Form[String])
  
-　＠main("Welcome to Play 2.0") {
+　＠main("Welcome to Play 2.0") ｛
  
-    　＠helper.form(action = routes.Application.addBar) {
+    　＠helper.form(action = routes.Application.addBar) ｛
         　＠helper.inputText(form("name"))
-        ＜input type="submit"/>
-    }
+        ＜input type="submit"/＞
+    ｝
  
-}
+｝
 
 {% endhighlight %}
 

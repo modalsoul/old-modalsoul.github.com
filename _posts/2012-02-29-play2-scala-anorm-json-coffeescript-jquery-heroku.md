@@ -242,9 +242,9 @@ Step 11) jQueryを使いJSONシリアル化されたbarの取得と、それぞ�
 {% highlight sh %}
 
 $ ->
-  $.get "/listBars", (data) ->
-    $.each data, (index, item) ->
-      $("#bars").append "<li>Bar " + item.name + "</li>"
+  $.get "/listBars", (data) -＞
+    $.each data, (index, item) -＞
+      $("#bars").append "＜li＞Bar " + item.name + "＜/li＞"
 
 {% endhighlight %}
 
@@ -256,9 +256,9 @@ Step 12) CoffeeScriptのソースから自動コンパイルされたindex.jsス
 
 {% highlight sh %}
 
-　<script src="@routes.Assets.at("javascripts/index.js")" type="text/javascript"></script>
+　＜script src="@routes.Assets.at("javascripts/index.js")" type="text/javascript"＞＜/script＞
  
-    　<ul id="bars"></ul>
+    　＜ul id="bars"＞＜/ul＞
 
 {% endhighlight %}
 

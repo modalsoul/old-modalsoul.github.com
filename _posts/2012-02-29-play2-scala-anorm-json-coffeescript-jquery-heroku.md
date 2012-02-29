@@ -256,7 +256,7 @@ Step 12) CoffeeScriptのソースから自動コンパイルされたindex.jsス
 
 {% highlight sh %}
 
-　＜script src="@routes.Assets.at("javascripts/index.js")" type="text/javascript"＞＜/script＞
+　＜script src="＠routes.Assets.at("javascripts/index.js")" type="text/javascript"＞＜/script＞
  
     　＜ul id="bars"＞＜/ul＞
 

@@ -12,6 +12,10 @@ categories: Programing
 少々長い記事なので、Play2アプリのビルド編とHerokuへのデプロイ編に分けます。
 
 今回は、Play2アプリのビルド編です。
+
+Herokuへのデプロイ編は、[こちら](http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/)
+![Herokuへのデプロイ編](http://capture.heartrails.com/200x150/cool?http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/)
+
 <hr />
 
 Play Framework2 RC2がリリースされ、モダンなWebアプリケーションを構築する手法として成熟した生産的な方法になっています。

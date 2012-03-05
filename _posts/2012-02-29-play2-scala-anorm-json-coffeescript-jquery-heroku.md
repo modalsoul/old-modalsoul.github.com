@@ -17,6 +17,8 @@ Herokuへのデプロイ編は、[こちら](http://modalsoul.github.com/Program
 
 ![Herokuへのデプロイ編](http://capture.heartrails.com/200x150/cool?http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/)
 
+※ 2012/03/06:アドバイスいただいた箇所について修正しました。
+
 <hr />
 
 Play Framework2 RC2がリリースされ、モダンなWebアプリケーションを構築する手法として成熟した生産的な方法になっています。
@@ -39,8 +41,17 @@ $ play new foobar
 
 プロンプトの言語選択画面がでたら、Scalaを選択してください。
 
-注意：ここで生成されたIMLファイルは、プロジェクトとして直接インポート可能ではありません。代わりに、モジュールなしでプロジェクトを新たに生成し、生成されたIMLファイルからモジュールをインポートする必要があります。もしわからなければ、[Play1+Scala IntelliJ article](http://www.jamesward.com/2011/07/28/setup-play-framework-with-scala-in-intellij)が参考になります。
+Step 3) 新しく作成した"foobar"ディレクトリ配下にIDEの設定ファイルを生成します。
 
+IntelliJでは、このように実行します。
+
+{% highlight sh %}
+
+$ play new foobar
+
+{% endhighlight %}
+
+注意：ここで生成されたIMLファイルは、プロジェクトとして直接インポート可能ではありません。代わりに、モジュールなしでプロジェクトを新たに生成して、このステップで生成したIMLファイルからそのプロジェクトへモジュールをインポートする必要があります。もしわからなければ、[Play1+Scala IntelliJ article](http://www.jamesward.com/2011/07/28/setup-play-framework-with-scala-in-intellij)が参考になります。
 
 Eclipseプロジェクト化するために、下記のコマンドを実行
 {% highlight sh %}
@@ -61,7 +72,7 @@ $ play run
 正常に起動していることをテストするために、ここにアクセス[http://localhost:9000](http://localhost:9000)
 
 
-Step 5) Play2 with ScalaではデフォルトでORマッパーを提供していません。デフォルトRDBMSの代わりの永続性プロバイダはAnormです(Anormは Object Relational Mapperではありません)。このシンプルなアプリケーションでは、1つの永続的オブジェクト：Bar(ひとつのプライマリキーと名前を持っている)を持っています。Anormは、自動でのスキーマ作成を行わないので、SQLスキーマの作成/破壊のためのスクリプトが必要です。新しいファイル"conf/evolutions/default/1.sql"を作成し、以下の内容を記述します。
+Step 5) Play2 with ScalaではデフォルトでORマッパーを提供していません。代わりにデフォルトのRDBMS永続性プロバイダとなっているのがAnormです(Anormは Object Relational Mapperではありません)。このシンプルなアプリケーションでは、1つの永続的オブジェクト：Bar(ひとつのプライマリキーと名前を持っている)を持っています。Anormは、自動でのスキーマ作成を行わないので、SQLスキーマの作成/廃棄のためのスクリプトが必要です。新しいファイル"conf/evolutions/default/1.sql"を作成し、以下の内容を記述します。
 
 {% highlight sh %}
 
@@ -121,9 +132,9 @@ object Bar {
 
 {% endhighlight %}
 
-変数の"simple"は、データベースの行値とマップされたbasic row parserを、Bar case classに提供します。
+変数の"simple"は、データベースの行値をBar case classにマップする、基本的なパーサを提供します。
 
-静的関数、"findAll"と"create"は、定期的なデータアクセスを行います。
+静的関数、"findAll"と"create"は、一般的なデータアクセスを行います。
 
 注意点としては、"findAll"はBarへ各行を返すために、"simple" row parserを使っている点です。
 
@@ -137,7 +148,7 @@ db.default.url="jdbc:h2:mem:play"
 
 {% endhighlight %}
 
-Step 7) BarをHTTP POSTへ変換するアプリケーションコントローラー関数を作成して、"app/controllers/Application.scala"を下記のように更新してデータベースに反映します。
+Step 7) "app/controllers/Application.scala"を下記のように更新し、BarをHTTP POSTへ変換してデータベースに反映するアプリケーションコントローラー関数を作成します。
 
 {% highlight sh %}
 
@@ -179,7 +190,7 @@ object Application extends Controller {
 "barForm"マップは、フォームオブジェクトへパラメータを要求し、入力データのバリデーションを行います。
 静的関数の"addBar"は、リクエストと"barForm"へのリクエストパラメータのマッピングを行います。
 失敗した場合は、コントローラはBadRequestを返します。
-成功した場合は、新しい"Bar"を構築するために使われます。そしてその"Bar"はデータベースに保存され、indexページへリダイレクトが送られます。
+成功した場合は、Barの名前は新しい"Bar"を構築するために使われます。そしてその"Bar"はデータベースに保存され、indexページへのリダイレクトが送られます。
 index関数は、Step 9で更新されるテンプレートへ"barForm"を渡すように変更されました。
 
 

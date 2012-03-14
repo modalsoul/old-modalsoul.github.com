@@ -1,13 +1,24 @@
 ---
 layout: post
-title: AgileUX NYC 2012 Redux in Tokyo ( #AgileUXNYC_ja ) に参加しました。
+title: AgileUX NYC 2012 Redux in Tokyo(#AgileUXNYC_ja)に参加しました。
 tags: UX Agile
 categories: report
 ---
 AgileUX NYC 2012 Redux in Tokyo ( #AgileUXNYC_ja ) に参加しました。
 -----------------
 
-<div style="width:425px" id="__ss_12005232"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/kazumichisakata/agile-ux-nyc-2012-redux-in-tokyo" title="Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)" target="_blank">Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/12005232" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/kazumichisakata" target="_blank">Kazumichi Sakata</a> </div> </div>
+<div style="width:425px" id="__ss_12005232"> 
+<strong style="display:block;margin:12px 0 4px">
+<a href="http://www.slideshare.net/kazumichisakata/agile-ux-nyc-2012-redux-in-tokyo" title="Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)" target="_blank">Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)
+</a>
+</strong> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/12005232" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe> 
+<div style="padding:5px 0 12px"> View more 
+<a href="http://www.slideshare.net/" target="_blank">presentations</a> from 
+<a href="http://www.slideshare.net/kazumichisakata" target="_blank">Kazumichi Sakata</a> 
+</div> 
+</div>
 
 ## 「AgileUX NYC 2012 Redux in Tokyo」とは？
 2012/02/25に、アメリカのニューヨークで開催された「AgileUX NYC 2012」へ参加された@kawaguti さん(アギレルゴ・コンサルティング株式会社　川口恭伸さん)と@sprmari0 さん(楽天株式会社　坂田一倫さん)による報告会を兼ねたパネル・ディスカッションです。

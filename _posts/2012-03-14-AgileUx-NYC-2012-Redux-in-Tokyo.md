@@ -56,7 +56,20 @@ AgileUXは、1セッション20分×3セッション、その間にコーヒー�
 
 ### [Want to Win with Agile? Pivot Your Culture First](http://agileuxnyc.com/presentation/want-to-win-with-agile-pivot-your-culture-first/)
 
-<div style="width:425px" id="__ss_11761297"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/eburd/want-to-win-with-agile" title="Want to win with agile?" target="_blank">Want to win with agile?</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11761297" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/thecroaker/death-by-powerpoint" target="_blank">PowerPoint</a> from <a href="http://www.slideshare.net/eburd" target="_blank">eburd</a> </div> </div>
+<div style="width:425px" id="__ss_11761297"> 
+<strong style="display:block;margin:12px 0 4px">
+<a href="http://www.slideshare.net/eburd/want-to-win-with-agile" title="Want to win with agile?" target="_blank">Want to win with agile?
+</a>
+</strong> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/11761297" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe> 
+<div style="padding:5px 0 12px"> View more 
+<a href="http://www.slideshare.net/thecroaker/death-by-powerpoint" target="_blank">PowerPoint
+</a>
+ from <a href="http://www.slideshare.net/eburd" target="_blank">eburd
+</a> 
+</div> 
+</div>
 
 [The Ladders](http://www.theladders.com/)の Vice President of ProductのEric Burdさんのセッションでは、Agileで成功するためには、まず組織文化をピボットする必要性が紹介されていました。
 
@@ -87,7 +100,21 @@ Brown Bag Lunch Meetingについては、[こちら](http://www.rieti.go.jp/jp/e
 
 ### [Investing in Design: Horsepower vs. RPMs](http://agileuxnyc.com/presentation/investing-in-design/)
 
-<div style="width:425px" id="__ss_11770223"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/PhineasBarnes/agile-ux-nyc-4-keys-to-success-in-a-design-driven-company" title="Agile UX NYC -- 4 keys to success in a design driven company" target="_blank">Agile UX NYC -- 4 keys to success in a design driven company</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11770223" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/PhineasBarnes" target="_blank">Phineas Barnes</a> </div> </div>
+<div style="width:425px" id="__ss_11770223"> 
+<strong style="display:block;margin:12px 0 4px">
+<a href="http://www.slideshare.net/PhineasBarnes/agile-ux-nyc-4-keys-to-success-in-a-design-driven-company" title="Agile UX NYC -- 4 keys to success in a design driven company" target="_blank">
+Agile UX NYC -- 4 keys to success in a design driven company
+</a>
+</strong> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/11770223" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe> 
+<div style="padding:5px 0 12px"> View more 
+<a href="http://www.slideshare.net/" target="_blank">presentations
+</a> from 
+<a href="http://www.slideshare.net/PhineasBarnes" target="_blank">Phineas Barnes
+</a> 
+</div> 
+</div>
 
 「スキルセットではなく、マインドセットの問題だ」という言及がありました。
 
@@ -98,7 +125,19 @@ Brown Bag Lunch Meetingについては、[こちら](http://www.rieti.go.jp/jp/e
 
 ### [Replacing Requirements with Hypotheses](http://agileuxnyc.com/presentation/replacing-requirements-with-hypotheses/)
 
-<div style="width:425px" id="__ss_11747255"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/jseiden/2012-feb-25-agile-ux-nyc-seiden-requirements-to-hypotheses" title="2012 feb 25 agile ux nyc, seiden, requirements to hypotheses" target="_blank">2012 feb 25 agile ux nyc, seiden, requirements to hypotheses</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11747255" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/jseiden" target="_blank">Joshua Seiden</a> </div> </div>
+<div style="width:425px" id="__ss_11747255"> 
+<strong style="display:block;margin:12px 0 4px">
+<a href="http://www.slideshare.net/jseiden/2012-feb-25-agile-ux-nyc-seiden-requirements-to-hypotheses" title="2012 feb 25 agile ux nyc, seiden, requirements to hypotheses" target="_blank">2012 feb 25 agile ux nyc, seiden, requirements to hypotheses
+</a>
+</strong> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/11747255" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe> 
+<div style="padding:5px 0 12px"> View more 
+<a href="http://www.slideshare.net/" target="_blank">presentations
+</a> from 
+<a href="http://www.slideshare.net/jseiden" target="_blank">Joshua Seiden</a> 
+</div> 
+</div>
 
 このセッションで強調されていたことは、「要件を仮説に置き換える」ことです。
 
@@ -121,7 +160,20 @@ Brown Bag Lunch Meetingについては、[こちら](http://www.rieti.go.jp/jp/e
 
 ### [Quick, Visual, Collaborative and Continuous](http://agileuxnyc.com/presentation/lane/)
 
-<div style="width:425px" id="__ss_11707174"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/LaneHalley/quick-visual-collaborative-continuous" title="Quick, Visual, Collaborative &amp; Continuous" target="_blank">Quick, Visual, Collaborative &amp; Continuous</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11707174" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/LaneHalley" target="_blank">Lane Halley</a> </div> </div>
+<div style="width:425px" id="__ss_11707174"> 
+<strong style="display:block;margin:12px 0 4px">
+<a href="http://www.slideshare.net/LaneHalley/quick-visual-collaborative-continuous" title="Quick, Visual, Collaborative &amp; Continuous" target="_blank">Quick, Visual, Collaborative &amp; Continuous
+</a>
+</strong> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/11707174" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe> 
+<div style="padding:5px 0 12px"> View more 
+<a href="http://www.slideshare.net/" target="_blank">presentations
+</a> from 
+<a href="http://www.slideshare.net/LaneHalley" target="_blank">Lane Halley
+</a> 
+</div> 
+</div>
 
 このセッションのスピーカーのLane Halleyさんはデザイナーなのですが、「開発サイドを理解するためにプログラミングを独学で学んだぜ！」と言って拍手喝采を浴びた、コミュ力の高い方なんだとか。
 
@@ -133,7 +185,20 @@ Product Ownerチーム(エンジニアも入るがあくまでアーキテクト
 
 ### [Learning to Play UX Rugby](http://agileuxnyc.com/presentation/learning-to-play-ux-rugby-why-your-agile-ux-adoption-is-failing-and-what-to-do-about-it/)
 
-<div style="width:425px" id="__ss_11756904"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/andersr/learning-to-play-ux-rugby" title="Learning to Play UX Rugby" target="_blank">Learning to Play UX Rugby</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11756904" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/andersr" target="_blank">Anders Ramsay</a> </div> </div>
+<div style="width:425px" id="__ss_11756904"> 
+<strong style="display:block;margin:12px 0 4px">
+<a href="http://www.slideshare.net/andersr/learning-to-play-ux-rugby" title="Learning to Play UX Rugby" target="_blank">Learning to Play UX Rugby
+</a>
+</strong> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/11756904" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe> 
+<div style="padding:5px 0 12px"> View more 
+<a href="http://www.slideshare.net/" target="_blank">presentations
+</a> from 
+<a href="http://www.slideshare.net/andersr" target="_blank">Anders Ramsay
+</a> 
+</div> 
+</div>
 
 UXデザイナーはAgileな現場においてもウォーターフォールな働きをしており、それはリレーのように個別に走ってバトンを繋いでいく状態になっている。
 
@@ -142,7 +207,17 @@ AgileUXとは協調中心設計(Collaboration Centerd Design)と紹介されて�
 
 ### [Better. Faster. UXier. AToMIC Design](http://agileuxnyc.com/presentation/better-faster-uxier-atomic-design/)
 
-<div style="width:425px" id="__ss_11749624"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/jgergen/better-faster-uxier-atomic-design" title="Better. Faster. UXier.   AToMIC Design" target="_blank">Better. Faster. UXier.   AToMIC Design</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11749624" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/jgergen" target="_blank">Jennifer Gergen</a> </div> </div>
+<div style="width:425px" id="__ss_11749624"> 
+<strong style="display:block;margin:12px 0 4px">
+<a href="http://www.slideshare.net/jgergen/better-faster-uxier-atomic-design" title="Better. Faster. UXier.   AToMIC Design" target="_blank">Better. Faster. UXier.   AToMIC Design</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11749624" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe> 
+<div style="padding:5px 0 12px"> View more 
+<a href="http://www.slideshare.net/" target="_blank">presentations
+</a> from 
+<a href="http://www.slideshare.net/jgergen" target="_blank">Jennifer Gergen
+</a> 
+</div> 
+</div>
 
 イテレーティブな開発では、機能の開発改善には強いが、デザイン変更に弱さが現れる場合が多い。変更に強いAToMIC Designが必要。
 デザインの戦略をはじめに決めることで、共通化されたデザインをアセットとして管理する。

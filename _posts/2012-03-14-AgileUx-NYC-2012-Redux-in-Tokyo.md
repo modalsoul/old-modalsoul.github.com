@@ -65,8 +65,8 @@ AgileUXは、1セッション20分×3セッション、その間にコーヒー�
 </iframe> 
 <div style="padding:5px 0 12px"> View more 
 <a href="http://www.slideshare.net/thecroaker/death-by-powerpoint" target="_blank">PowerPoint
-</a>
- from <a href="http://www.slideshare.net/eburd" target="_blank">eburd
+</a> from 
+<a href="http://www.slideshare.net/eburd" target="_blank">eburd
 </a> 
 </div> 
 </div>

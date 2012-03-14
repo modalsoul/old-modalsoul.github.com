@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery & Heroku [Herokuデプロイ編]
-tags: Play2, Scala, CoffeeScript, jQuery, Heroku
+tags: Play2 Scala CoffeeScript jQuery Heroku
 categories: Programing
 ---
 【意訳】Tutorial: Play Framework2 with Scala, Anorm, JSON, CoffeeScript, jQuery & Heroku　[Herokuデプロイ編]

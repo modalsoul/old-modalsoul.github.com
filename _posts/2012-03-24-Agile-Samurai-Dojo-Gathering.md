@@ -12,16 +12,17 @@ Agile Samurai Dojo Gathering(#agilesamurai)でろくろ回しました。
 ## 「Agile Samurai Dojo Gathering」とは？
 
 以下公式サイトより抜粋
-{% highlight sh %}
 
+<hr/>
 アジャイルサムライ他流試合から半年、原著者を迎えて他流試合はAgile Samurai Dojo Gatheringと名前を改め、ふたたびの道場大集合となるイベントを開催します。
 今、日本で一番熱心にアジャイルについて語っている人達の経験に触れ、それを自分の言葉で議論する事でアジャイルサムライへの新たな一歩を!!
 
-{% endhighlight %}
+<hr/>
 
 
 Agile Samurai Dojo Gathering全体の内容については、他方々の良質なまとめ記事があるので
 そちらにお任せしたいと思います。
+
 
 ## なぜ私はろくろを回したのか？
 前回開催されたアジャイルサムライ他流試合では道場紹介ＬＴをさせていただき、今回は実践トラックのスピーカーをさせていただきました。
@@ -58,9 +59,9 @@ Agile Samurai Dojo Gathering全体の内容については、他方々の良質�
 
 ただ、私がこの発表を通して言いたかったことは
 
-{% highlight sh %}
+<hr/>
 ”顧客に価値を届ける”ことを考えたとき、”役割”がかえって邪魔になることがある
-{% endhighlight %}
+<hr/>
 
 ということです。
 
@@ -73,20 +74,20 @@ Agile Samurai Dojo Gathering全体の内容については、他方々の良質�
 アジャイルな組織にとって"自己組織化"が必須であるのに対し、これでは真逆の結果になってしまします。
 
 
-{% highlight sh %}
+<hr/>
 Wouldn't it be nice if the whole world got along Even on a small scale change is possible
 （世界の流れを止めなくたって小さな変化は起こせるはず）
-{% endhighlight %}
+<hr/>
 
 
 大切なのは、スキルセットではなくマインドセット。
 
 そんな意味をこめて、最後に
 
-{% highlight sh %}
+<hr/>
 Agile is attitude, not practice.
 (アジャイルはプラクティスをつぎはぎすることじゃない、態度が重要なんだ)
-{% endhighlight %}
+<hr/>
 
 とさせていただきました。
 

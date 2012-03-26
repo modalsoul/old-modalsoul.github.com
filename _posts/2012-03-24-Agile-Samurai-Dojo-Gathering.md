@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Agile Samurai Dojo Gathering(#agilesamurai)でろくろ回しました。
-tags: UX Agile
+tags: Agile
 categories: report
 ---
 Agile Samurai Dojo Gathering(#agilesamurai)でろくろ回しました。
@@ -49,9 +49,12 @@ Agile Samurai Dojo Gathering全体の内容については、他方々の良質�
 </div> 
 </div>
 
+発表時のツイートまとめはこちら
+[Agile Samurai Dojo Gathering サムライ戦記 実践トラック(@modal_soul)  - Yukarin'Note(ゆかりんのーと)](https://yukar.in/note/ckFofk)
+
+
 今回お話させていただいた内容は、Developmentではなくどちらかと言うとDirectionの内容であり、スクラムといいつつあまりスクラムっぽくない話になってしまいました。
 （開発関係の話を期待されていた方には本当に申し訳ないです。。）
-
 
 ただ、私がこの発表を通して言いたかったことは
 
@@ -106,7 +109,20 @@ Agile is attitude, not practice.
 </div> 
 </div>
 
+[Agile Samurai Dojo Gathering インセプションデッキが倒せない - Yukarin'Note(ゆかりんのーと)](https://yukar.in/note/ckFof8)
 
 ## 最後に、
 どなたか私がろくろを回している写真お持ちではないでしょうか？
 お持ちの方は、是非 @modal_soul までメンションいただければと思います。
+
+<a href="http://www.amazon.co.jp/gp/product/4274068560/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4274068560"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=4274068560&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" >
+</a>
+<img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4274068560" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<a href="http://www.amazon.co.jp/gp/product/B004IEAZ18/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=B004IEAZ18"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B004IEAZ18&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" >
+</a>
+<img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=B004IEAZ18" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<a href="http://www.amazon.co.jp/gp/product/B0058EWGK0/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=B0058EWGK0"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=B0058EWGK0&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" >
+</a>
+<img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=B0058EWGK0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />

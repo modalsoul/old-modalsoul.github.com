@@ -117,7 +117,8 @@ Agile is attitude, not practice.
 お持ちの方は、是非 @modal_soul までメンションいただければと思います。
 
 ## 追記
-@joker1007 さんに”ろくろ”写真いただきました！感謝！
+ ＠joker1007 さんに”ろくろ”写真いただきました！感謝！
+ 
 ![ろくろ](http://a.yfrog.com/img859/9978/34kba.jpg)
 
 

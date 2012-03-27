@@ -116,6 +116,11 @@ Agile is attitude, not practice.
 どなたか私がろくろを回している写真お持ちではないでしょうか？
 お持ちの方は、是非 @modal_soul までメンションいただければと思います。
 
+## 追記
+@joker1007 さんに”ろくろ”写真いただきました！感謝！
+[ろくろ](http://a.yfrog.com/img859/9978/34kba.jpg)
+
+
 <a href="http://www.amazon.co.jp/gp/product/4274068560/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4274068560"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=4274068560&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" >
 </a>
 <img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4274068560" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />

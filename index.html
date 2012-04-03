@@ -14,11 +14,58 @@ title: modal_soul debriefing
 {% endfor %}
 </ul>
 -->
+<div class="row">
+  <div class="span10">
+	{% for post in site.posts limit:14 %}
+	    <p><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></p>
+	    <a href="{{ post.url }}"><img src='http://capture.heartrails.com/200x100/cool/shorten?http://modalsoul.github.com/{{ post.url }}'></a>
+		<hr />
+	{% endfor %}
+</div>
+  
+  <div class="span4">
+  <!-- Summer Wars Clock -->
+	<iframe src="http://swclock.loftimg.jp/blogparts/?country=JPN" scrolling="no" frameborder="0" style="border:none;overflow:hidden;display:block;width:200px; height:150px;" allowTransparency="true"></iframe>
+  
+    <h4>Published</h4>
+    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
-{% for post in site.posts limit:14 %}
-    <p><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></p>
-    <a href="{{ post.url }}"><img src='http://capture.heartrails.com/200x100/cool/shorten?http://modalsoul.github.com/{{ post.url }}'></a>
-	<hr />
-{% endfor %}
+  {% unless page.tags == empty %}
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    {% assign tags_list = page.tags %}
+    {% include helpers/tags_list.html %}
+    </ul>
+  {% endunless %}  
+  <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#0781eb'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('modal_soul').start();
+</script>
+  </div>
+
 
 </div>

@@ -15,8 +15,8 @@ title: modal_soul debriefing
 </ul>
 -->
 <div class="row">
+	<h4>Categories</h4>
   <div class="span10">
-  	<h4>Categories</h4>
 	{% for post in site.posts limit:14 %}
 	    <p><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></p>
 	    <a href="{{ post.url }}"><img src='http://capture.heartrails.com/200x100/cool/shorten?http://modalsoul.github.com/{{ post.url }}'></a>

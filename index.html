@@ -16,6 +16,7 @@ title: modal_soul debriefing
 -->
 <div class="row">
   <div class="span10">
+  	<h4>Categories</h4>
 	{% for post in site.posts limit:14 %}
 	    <p><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></p>
 	    <a href="{{ post.url }}"><img src='http://capture.heartrails.com/200x100/cool/shorten?http://modalsoul.github.com/{{ post.url }}'></a>
@@ -23,37 +24,40 @@ title: modal_soul debriefing
 	{% endfor %}
 </div>
   
-  <div class="span4">
-
-  <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 30000,
-  width: 'auto',
-  height: 300,
-  theme: {
-    shell: {
-      background: '#333333',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#000000',
-      color: '#ffffff',
-      links: '#0781eb'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: false,
-    behavior: 'all'
-  }
-}).render().setUser('modal_soul').start();
-</script>
-  </div>
+<div class="span4">
+	<ul class="tag_box">
+	{% assign categories_list = site.categories %}
+	{% include helpers/categories_list.html %}
+	</ul>
+	<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script>
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'profile',
+	  rpp: 4,
+	  interval: 30000,
+	  width: 'auto',
+	  height: 300,
+	  theme: {
+	    shell: {
+	      background: '#333333',
+	      color: '#ffffff'
+	    },
+	    tweets: {
+	      background: '#000000',
+	      color: '#ffffff',
+	      links: '#0781eb'
+	    }
+	  },
+	  features: {
+	    scrollbar: false,
+	    loop: false,
+	    live: false,
+	    behavior: 'all'
+	  }
+	}).render().setUser('modal_soul').start();
+	</script>
+</div>
 
 
 </div>

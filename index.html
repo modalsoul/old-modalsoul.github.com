@@ -27,16 +27,6 @@ title: modal_soul debriefing
   <!-- Summer Wars Clock -->
 	<iframe src="http://swclock.loftimg.jp/blogparts/?country=JPN" scrolling="no" frameborder="0" style="border:none;overflow:hidden;display:block;width:200px; height:150px;" allowTransparency="true"></iframe>
   
-    <h4>Published</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
-
-  {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include helpers/tags_list.html %}
-    </ul>
-  {% endunless %}  
   <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({

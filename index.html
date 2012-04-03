@@ -12,7 +12,8 @@ title: modal_soul debriefing
 {% endfor %}
 
 {% for post in site.posts limit:14 %}
-    <li><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a><img src='http://capture.heartrails.com/400x200/cool/shorten?{{ post.url }}'</li>
+    <li><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ post.url }}"><img src='http://capture.heartrails.com/200x100/cool/shorten?http://modalsoul.github.com/{{ post.url }}'></a></li>
 {% endfor %}
 
 </ul>

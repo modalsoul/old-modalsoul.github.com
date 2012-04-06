@@ -2,6 +2,14 @@
 layout: default
 title: modal_soul debriefing
 ---
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="posts">
 <!-- <h1>{{ page.title }}</h1> -->
@@ -23,14 +31,6 @@ title: modal_soul debriefing
 	    
 	    <div align="right">
 		    
-			<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
 			<div class="fb-like" data-href="http://modalsoul.github.com{{ post.url }}" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
 
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.com{{ post.url }}" data-via="modal_soul" data-lang="ja">ツイート</a>

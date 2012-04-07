@@ -9,7 +9,9 @@
 			</script>
 <div class="page-header">
   <h1>{{ page.title }} <small>
-  {{ page.tags}}
+  {{% assign tags in page.tags %}}
+  
+  {{% include helpers/tag_list.html %}}
   </small></h1>
 </div>
 

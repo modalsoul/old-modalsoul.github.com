@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'HuiFontPRegular';
-    src: url(HuiFontP29.eot);/* IE */
+    src: url(HuiFontP109.eot);/* IE */
 }
 
 @font-face {
     font-family: 'HuiFontPRegular';
     src: local('HuiFontP Regular'), /*フォントがローカルにインストールされている時の指定*/
          local('HuiFontP'),
-         url('HuiFontP29.ttf') format('truetype'); /* Safari、Chrome、Firefox、Opera */
+         url('HuiFontP109.ttf') format('truetype'); /* Safari、Chrome、Firefox、Opera */
 }

@@ -91,7 +91,7 @@ DROP TABLE IF EXISTS bar;
 
 {% endhighlight %}
 
-Anormでは、Scalaの"case class"を永続的/CRUDインターフェースとして、値オブジェクトとシングルトンオブジェクトとして扱うことができます。"app/modules/Bar.scla"というファイルにBar case classとオブジェクトを作成して、以下の内容を記述します。
+Anormでは、Scalaの"case class"を永続的/CRUDインターフェースとして、値オブジェクトとシングルトンオブジェクトとして扱うことができます。"app/models/Bar.scla"というファイルにBar case classとオブジェクトを作成して、以下の内容を記述します。
 
 {% highlight sh %}
 

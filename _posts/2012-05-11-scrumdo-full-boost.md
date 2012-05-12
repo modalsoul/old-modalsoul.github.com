@@ -72,6 +72,10 @@ categories: report
 <script src="//platform.twitter.com/widgets.js" charset="utf-8">
 </script>
 
+いただいたポーカーはこちら
+外箱がVisualStudioになっているという、さすがマイクロソフトさん！
+![プランニングポーカー](/img/20120511/porker.jpg)
+
 <hr />
 
 ## ディスカッションRound1

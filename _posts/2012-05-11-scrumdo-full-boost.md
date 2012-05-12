@@ -109,21 +109,73 @@ categories: report
 
 ・スプリントで消化するSPの見積もり
 
+<blockquote class="twitter-tweet" lang="ja">
+<p>ベロシティはからないと、次のスプリントでどれぐらい積めるか基準値がわからなくなりません？ RT @
+<a href="https://twitter.com/kanu_">kanu_</a>
+: 別にベロシティで測らなきゃいいんじゃないのかぁ。ってか誰が欲しがってるのかな?　
+<a href="https://twitter.com/search/%2523scrumdo">#scrumdo</a>
+</p>&mdash; SEO Naotoshiさん (@sonots) 
+<a href="https://twitter.com/sonots/status/200897671223967745" data-datetime="2012-05-11T10:38:31+00:00">5月 11, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
 ・チームの成長度合い
+
+<blockquote class="twitter-tweet" lang="ja">
+<p>"ポイントの基準が更新されると、ベロシティによるチームの成長の測定が難しくなる。" 
+<a href="https://twitter.com/search/%2523scrumdo">#scrumdo</a>
+</p>
+&mdash; Tomohiro Hashidateさん (@joker1007) 
+<a href="https://twitter.com/joker1007/status/200896307970322432" data-datetime="2012-05-11T10:33:06+00:00">5月 11, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
 
 
 ディスカッションでの質問やツイートの反応にもありましたが、決して<h3>ベロシティを人事評価等に使いたい訳ではありません。</h3>この所は、特に強調しておきたいと思います。
 
+<blockquote class="twitter-tweet" lang="ja">
+<p>ベロシティは「人事評価に使うべきではない」というのは大前提ではあるが、「自分達がどれくらい成長したの？」というのを測るための指標として「数値がぶれる」のはマズイのでは？ 
+<a href="https://twitter.com/search/%2523scrumdo">#scrumdo</a>
+</p>
+&mdash; skowataさん (@skowata) 
+<a href="https://twitter.com/skowata/status/200898092667637760" data-datetime="2012-05-11T10:40:12+00:00">5月 11, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
 
-ただ、現実問題としてアジャイルなプロセスを取り入れたことによる効果を、実際にプラクティスを実行する人以外に説明することを考えたときどうでしょう？
+
+<h4>ただ、現実問題としてアジャイルなプロセスを取り入れたことによる効果を、実際にプラクティスを実行する人以外に説明することを考えたときどうでしょう？</h4>
+
 
 「アジャイルなプロセスを用いることで、どの程度生産性が向上した」、であるとかプラクティスの有用性を理解してもらえなければ、
-今後アジャイルなプロセスを取り入れることが出来なくなってしまうかもしれません。
+今後アジャイルなプロセスを継続することが出来なくなってしまうかもしれません。
 
 「価値判断で計測すればいい」という意見は正しいと思いますが、スプリント毎のROIを正しく計測するのは（そうできることが理想であり、その努力を惜しむべきではありませんが）難易度が高く早い段階での導入は難しいと思います。
 
 実際にプラクティスを実行する人以外も、アジャイルなプロセスについて本質的な理解をすれば、ベロシティによる説得を行わなくても有用性を理解してもらえるかもしれませんが、
 これもかなりハードルが高いと思います。
+
+
+<hr />
+
+### この質問で知りたかったこと
+<h3>PBL見積もりの基準が同じであれば、ベロシティの増減がチームの生産性を表す指標として機能するのではないか？
+ベロシティの向上によってアジャイルなプロセスの有用性の説明の裏づけになるのではいか？</h3>
+
+<h3>基準が変化することで、ベロシティが（見かけ上）減少しているような場合、生産性の低下を指摘された時どのように説明することで、見かけ上の誤解を解くことができるか？</h3>
+
+ということです。
+
+
+<blockquote class="twitter-tweet" lang="ja"><p>今の話（ストーリーポイントと実際のタスクの相関）は「通貨（経済の話）」に似てる by @
+<a href="https://twitter.com/kawaguti">kawaguti</a> 
+<a href="https://twitter.com/search/%2523scrumdo">#scrumdo</a></p>&mdash; skowataさん (@skowata) 
+<a href="https://twitter.com/skowata/status/200895587384692738" data-datetime="2012-05-11T10:30:15+00:00">5月 11, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
 
 
 <hr />

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: スクラム道 Full Boost 「青物横丁制圧作戦」に参加しました。
+title: スクラム道 Full Boost 「青物横丁制圧作戦」#scrumdoに参加しました。
 tags: Agile
 categories: report
 ---

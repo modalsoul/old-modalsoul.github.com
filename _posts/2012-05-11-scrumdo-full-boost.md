@@ -6,7 +6,7 @@ categories: report
 ---
 [スクラム道 Full Boost 「青物横丁制圧作戦」](http://www.taoofscrum.org/contents/post/240)に参加しました。
 -----------------
-<h4>この記事では、選手として参加させていただいて感じたことと、自分が壇上で行った質問や意見の補足をメインに書いています。</h4>
+<h4>この記事では、選手として参加させていただいて感じたことと、自分が壇上で発言した質問や意見の補足をメインに書いています。</h4>
 
 <a href="http://www.taoofscrum.org/contents/post/240">
 <img title="スクラム道 Full Boost 「青物横丁制圧作戦」 | スクラム道" src="http://capture.heartrails.com/400x300/cool/shorten?http://www.taoofscrum.org/contents/post/240" alt="http://www.taoofscrum.org/contents/post/240" width="400" />
@@ -41,6 +41,10 @@ categories: report
 ## 今回のテーマ
 今回はスクラム道10回記念ということで、過去に行われた5テーマから参加者の投票で再演を行う形式で、@imagireさんによる「プロダクトバックログ」の再演となりました。
 
+まとめ　その１
+[スクラム道 Full Boost 「青物横丁制圧作戦」 壮大な前座 #scrumdo - Yukarin'Note](https://yukar.in/note/ckFnru)
+
+
 <div style="width:425px" id="__ss_9027962"> 
 <strong style="display:block;margin:12px 0 4px">
 <a href="http://www.slideshare.net/imagire/07-9027962" title="スクラム道場.07" target="_blank">スクラム道場.07</a>
@@ -71,6 +75,9 @@ categories: report
 <hr />
 
 ## ディスカッションRound1
+ディスカッションRound1まとめ
+[スクラム道 Full Boost 「青物横丁制圧作戦」Round1 #scrumdo - Yukarin'Note](https://yukar.in/note/ckFnrw)
+
 
 プロダクトバックログに関して「ストーリーポイントを見積もる際の基準ストーリーが、後々<b>基準として不適格だった場合</b>どうするか？」と質問させていただきました。
 
@@ -191,6 +198,9 @@ categories: report
 
 <hr />
 ## ディスカッションRound2
+ディスカッションRound2まとめ
+[スクラム道 Full Boost 「青物横丁制圧作戦」Round2 #scrumdo - Yukarin'Note](https://yukar.in/note/ckFnrB)
+
 1Rだけのつもりだったのですが、もたもたして残留してしまい、居残り組みとして2Rも選手として参戦と相成りました。
 
 折角の機会なので、壇上から見た景色を写メってみました。

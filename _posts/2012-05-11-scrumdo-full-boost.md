@@ -1,7 +1,7 @@
 ---
 layout: post
 title: スクラム道 Full Boost 「青物横丁制圧作戦」#scrumdoに参加しました。
-tags: Agile スクラム道 #scrumdo 勉強会
+tags: Agile スクラム道 勉強会
 categories: report
 ---
 [スクラム道 Full Boost 「青物横丁制圧作戦」](http://www.taoofscrum.org/contents/post/240)に参加しました。

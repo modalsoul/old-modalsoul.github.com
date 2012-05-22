@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AndroidアプリのUIテスト-InstrumentationTestCase編-
-tags: Android UI Test InstrumentationTestCase
+tags: Android UI Test InstrumentationTestCase TouchUtils
 categories: Test Programing
 ---
 AndroidアプリのUIテスト-InstrumentationTestCase編-

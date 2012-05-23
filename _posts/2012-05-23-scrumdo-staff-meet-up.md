@@ -8,15 +8,6 @@ categories: report
 -----------------
 
 
-<blockquote class="twitter-tweet" lang="ja"><p>StaffMeetup に遊びに来る人とかもっといてもいいのにな 
-<a href="https://twitter.com/search/%2523scrumdo">#scrumdo</a>
-</p>
-&mdash; Nishimura Naotoさん (@nawoto) 
-<a href="https://twitter.com/nawoto/status/202028418051747841" data-datetime="2012-05-14T13:31:43+00:00">5月 14, 2012</a>
-</blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8">
-</script>
-
 
 <blockquote class="twitter-tweet" data-in-reply-to="202028418051747841" lang="ja">
 <p>@<a href="https://twitter.com/nawoto">nawoto</a> StaffMeetup遊びに行ってみたいです！</p>

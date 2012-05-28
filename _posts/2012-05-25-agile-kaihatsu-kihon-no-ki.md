@@ -11,18 +11,6 @@ categories: report
 
 ![アジャイルサムライ読書会横浜道場](http://kokucheese.com/images/upload/33598_photo1.jpg?20120408131717)
 
-<ul>
-				<li><span style="font-weight:bold;"><a href="https://speakerdeck.com/u/nawoto/p/basic-of-basics-of-agile-development" target="_blank">Basic of Basics of Agile Development // Speaker Deck</a></span>
-
-				<ul>
-					<li>
-					<div style="width:400px; padding-left:60px;"><script src="http://speakerdeck.com/embed/4fb9ea9a9d60b902f7004248.js">
-					</script>
-					</div>
-					</li>
-				</ul>
-				</li>
-			</ul>
 
 <script async="" class="speakerdeck-embed" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="//speakerdeck.com/assets/embed.js">
 </script><br />
@@ -44,7 +32,7 @@ categories: report
 
 ## 何が違うのか？
 
-<script async class="speakerdeck-embed" data-slide="38" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+<script async="" class="speakerdeck-embed" data-slide="38" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
 </script>
 
 この章では、とにかく従来のやり方と同じであることの肯定を１つ１つ丁寧に積み上げているように感じました。
@@ -60,10 +48,10 @@ categories: report
 ## どう進むのか？
 この章では、アジャイル開発における3本の柱、「透明性」「検査」の具体的なプラクティスと「適応」の重要性を伝えるためのものと思いました。
 
-<script async class="speakerdeck-embed" data-slide="148" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+<script async="" class="speakerdeck-embed" data-slide="148" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
 </script>
 
-<script async class="speakerdeck-embed" data-slide="148" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+<script async="" class="speakerdeck-embed" data-slide="148" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
 </script>
 
 
@@ -71,7 +59,7 @@ categories: report
 
 この章で伝えようとしていたことは、「少しづつで構いません　良くする事を続けてください」に集約されているのだなと思いました。
 
-<script async class="speakerdeck-embed" data-slide="148" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+<script async="" class="speakerdeck-embed" data-slide="148" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
 </script>
 
 

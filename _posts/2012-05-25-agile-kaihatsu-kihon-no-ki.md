@@ -31,6 +31,8 @@ categories: report
 ですので、必ずしも講師の@nawotoさんの意図したことを汲み取れていない可能性があります。
 
 ## 何が違うのか？
+<script async="" class="speakerdeck-embed" data-slide="23" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="//speakerdeck.com/assets/embed.js">
+</script>
 
 <script async="" class="speakerdeck-embed" data-slide="38" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
 </script>

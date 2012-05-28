@@ -20,10 +20,10 @@ categories: report
 				</li>
 			</ul>
 
-<script async class="speakerdeck-embed" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+<!-- <script async class="speakerdeck-embed" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
 
 </script>
-
+-->
 <hr />
 この講演を通しての内容については、私以外の他参加者の方々が良い記事を書かれているので、そちらをご参考ください。
 

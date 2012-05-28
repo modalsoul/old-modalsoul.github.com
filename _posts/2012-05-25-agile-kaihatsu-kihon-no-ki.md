@@ -11,8 +11,18 @@ categories: report
 
 [アジャイルサムライ読書会横浜道場](http://kokucheese.com/images/upload/33598_photo1.jpg?20120408131717)
 
+<ul>
+				<li><span style="font-weight:bold;"><a href="https://speakerdeck.com/u/nawoto/p/basic-of-basics-of-agile-development" target="_blank">Basic of Basics of Agile Development // Speaker Deck</a></span>
 
-<script async class="speakerdeck-embed" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js"></script>
+				<ul>
+					<li><div style="width:1000px; padding-left:60px;"><script src="http://speakerdeck.com/embed/4fb9ea9a9d60b902f7004248.js"></script></div></li>
+				</ul>
+				</li>
+			</ul>
+
+<script async class="speakerdeck-embed" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+
+</script>
 
 <hr />
 この講演を通しての内容については、私以外の他参加者の方々が良い記事を書かれているので、そちらをご参考ください。

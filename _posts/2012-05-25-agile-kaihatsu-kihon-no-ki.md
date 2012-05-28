@@ -48,10 +48,10 @@ categories: report
 ## どう進むのか？
 この章では、アジャイル開発における3本の柱、「透明性」「検査」の具体的なプラクティスと「適応」の重要性を伝えるためのものと思いました。
 
-<script async="" class="speakerdeck-embed" data-slide="148" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+<script async="" class="speakerdeck-embed" data-slide="122" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
 </script>
 
-<script async="" class="speakerdeck-embed" data-slide="148" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+<script async="" class="speakerdeck-embed" data-slide="123" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
 </script>
 
 

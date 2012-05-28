@@ -9,7 +9,7 @@ categories: report
 
 今回のアジャイルサムライ横浜道場は、特別編 第２回目。アジャイルサムライの監訳者、@nawoto さんにお越し頂き、Agile Japan 2012で講演した「アジャイル開発　基本のキ」を講演して頂きました。
 
-[アジャイルサムライ読書会横浜道場](http://kokucheese.com/images/upload/33598_photo1.jpg?20120408131717)
+![アジャイルサムライ読書会横浜道場](http://kokucheese.com/images/upload/33598_photo1.jpg?20120408131717)
 
 <ul>
 				<li><span style="font-weight:bold;"><a href="https://speakerdeck.com/u/nawoto/p/basic-of-basics-of-agile-development" target="_blank">Basic of Basics of Agile Development // Speaker Deck</a></span>
@@ -24,10 +24,9 @@ categories: report
 				</li>
 			</ul>
 
-<!-- <script async class="speakerdeck-embed" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="http://speakerdeck.com/assets/embed.js">
+<script async="" class="speakerdeck-embed" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="//speakerdeck.com/assets/embed.js">
+</script><br />
 
-</script>
--->
 <hr />
 この講演を通しての内容については、私以外の他参加者の方々が良い記事を書かれているので、そちらをご参考ください。
 

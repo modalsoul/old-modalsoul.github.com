@@ -15,7 +15,11 @@ categories: report
 				<li><span style="font-weight:bold;"><a href="https://speakerdeck.com/u/nawoto/p/basic-of-basics-of-agile-development" target="_blank">Basic of Basics of Agile Development // Speaker Deck</a></span>
 
 				<ul>
-					<li><div style="width:400px; padding-left:60px;"><script src="http://speakerdeck.com/embed/4fb9ea9a9d60b902f7004248.js"></script></div></li>
+					<li>
+					<div style="width:400px; padding-left:60px;"><script src="http://speakerdeck.com/embed/4fb9ea9a9d60b902f7004248.js">
+					</script>
+					</div>
+					</li>
 				</ul>
 				</li>
 			</ul>

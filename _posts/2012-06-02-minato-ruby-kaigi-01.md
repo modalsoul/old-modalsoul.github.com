@@ -15,7 +15,7 @@ categories: report Programing
 
 <hr/>
 
-<img src = 'http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg' height=60% width=60% >
+<img src = 'http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg' height='60%' width='60%' >
 
 
 ## 初Rubyイベント参加

@@ -13,8 +13,10 @@ categories: report Programing
 
 ・[みなとRuby会議01 後半まとめ #minatork01](https://yukar.in/note/ckF3We)
 
+<hr/>
 
-![みなとRuby会議01](http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg)
+<img src = "http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg" height=60% width=60% />
+
 
 ## 初Rubyイベント参加
 ずっとRubyは勉強したいと思っていたのですが、なかなか進まず放置状態でした。、(^^;)
@@ -23,6 +25,8 @@ categories: report Programing
 そんな私は普段Rubyを書いているわけもなく、
 たまたま勉強会でよくお会いする[@joker1007](https://twitter.com/#!/joker1007) さん経由でこのみなとRuby会議が開催されることを知り、一念発起し参加と相成りました。
 
+
+<hr/>
 
 ## Rubyのコミュニティ力
 言語やプラットフォームなどなど、新しい技術を学ぶとき、
@@ -33,6 +37,7 @@ categories: report Programing
 なぜRubyはコミュ力が高いのか？は、わかりませんが、
 スタートアップのプログラミング言語と言われるに納得できるAgilityの高さを感じました。
 
+<hr/>
 
 ## English Numeralsリベンジ
 ソーシャルコーディングの課題を、Scalaでリベンジしてみました。

@@ -6,11 +6,22 @@ categories: report Programing
 ---
 みなとRuby会議01に参加しました。#minatork01 
 -----------------
+
+当日のTwitterのまとめはこちら↓
+
+・[みなとRuby会議01 前半まとめ #minatork01](https://yukar.in/note/ckF3Wr)
+
+・[みなとRuby会議01 後半まとめ #minatork01](https://yukar.in/note/ckF3We)
+
+
 ![みなとRuby会議01](http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg)
 
 ## 初Rubyイベント参加
-ずっとRubyは勉強したいと思っていたのですが、私は普段Rubyを書いているわけではなく、
-たまたま勉強会でよくお会いする[@joker1007](https://twitter.com/#!/joker1007) さん経由でこのみなとRuby会議が開催されることを知り、一念発起し今回参加しました。
+ずっとRubyは勉強したいと思っていたのですが、なかなか進まず放置状態でした。、(^^;)
+<br />
+
+そんな私は普段Rubyを書いているわけもなく、
+たまたま勉強会でよくお会いする[@joker1007](https://twitter.com/#!/joker1007) さん経由でこのみなとRuby会議が開催されることを知り、一念発起し参加と相成りました。
 
 
 ## Rubyのコミュニティ力

@@ -15,7 +15,7 @@ categories: report Programing
 
 <hr/>
 
-<img src = "http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg" height=60% width=60% />
+<img src = "http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg" height=60% width=60% >
 
 
 ## 初Rubyイベント参加
@@ -40,7 +40,15 @@ categories: report Programing
 <hr/>
 
 ## English Numeralsリベンジ
-ソーシャルコーディングの課題を、Scalaでリベンジしてみました。
+今回はじめてペアプロでのソーシャルコーディングをしました。
+
+普段仕事ではペアプロをするのですが、こういった機会にするペアプロも新鮮で大変面白かったです！
+
+ただ、、Ruby自体のインストールも当日の朝やってくるような準備の足りなさだったため、
+ペアプロでは完全にナビ役になってしまいました。。
+
+リベンジのため、ソーシャルコーディングの課題をScalaで書いてみました。
+
 
 <script src="https://gist.github.com/2862228.js?file=numerals.scala">
 </script>
@@ -52,4 +60,6 @@ categories: report Programing
 ## まとめ
 今回この様な有意義なイベントに参加させていただき、運営スタッフ、参加者の皆様、ありがとうございました。
 
-ぜひはじめの一歩に続く次のイベントにも参加したいと思います。
+懇親会にも是非参加したかったのですが、諸事情により今回は断念となってしまいました。。orz
+
+今回はじめの一歩に続く次のイベントも開催されること期待しています。そのときにはもう少しRuby力を上げて参加できるようがんばります！

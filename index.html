@@ -39,7 +39,7 @@ title: modal_soul debriefing
 <div class="row">
 
   <div class="span10">
-	{% for post in site.posts limit:3 %}
+	{% for post in site.posts limit:6 %}
 	    <h4><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></h4>
 	    <a href="{{ post.url }}"><img src='http://capture.heartrails.com/350x180/cool/shorten?http://modalsoul.github.com/{{ post.url }}'></a>
 	    
@@ -70,11 +70,7 @@ title: modal_soul debriefing
 	<!-- You also need to place a container where you'd like the Coderwall badges to render. -->
 	<section class="coderwall" data-coderwall-username="modal_soul" data-coderwall-orientation="horizontal"></section>
 
-  	<h4>Categories</h4>
-	<ul class="tag_box">
-	{% assign categories_list = site.categories %}
-	{% include helpers/categories_list.html %}
-	</ul>
+
 	<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 	<script>
 	new TWTR.Widget({
@@ -111,13 +107,18 @@ google_ad_slot = "4224726858";
 google_ad_width = 180;
 google_ad_height = 150;
 //-->
-</script>
-<script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=1&color=1">
-</script>
-<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
+	</script>
+  	<h4>Categories</h4>
+	<ul class="tag_box">
+	{% assign categories_list = site.categories %}
+	{% include helpers/categories_list.html %}
+	</ul>
+	<script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=1&color=1">
+	</script>
+	<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
 </div>
 
 

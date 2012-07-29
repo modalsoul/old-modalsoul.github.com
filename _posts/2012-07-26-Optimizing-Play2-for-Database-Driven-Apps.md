@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【意訳】データベース駆動アプリのための、Play2最適化 
-tags:Play2 Heroku Database-Driven
+tags: Play2 Heroku Database-Driven
 categories: Programing
 ---
 【意訳】データベース駆動アプリのための、Play2最適化  
@@ -11,7 +11,7 @@ categories: Programing
 
 <hr />
 
-先週Matt Raible氏と共に、ÜberConfで行われたPlay vs. Grailsスマックダウンでプレゼンテーションをしました。
+先週Matt Raible氏と共に、UberConfで行われたPlay vs. Grailsスマックダウンでプレゼンテーションをしました。
 このセッションの目標は、同じフレームワークを用いて同じアプリケーションを作り、Play2+JavaとGrailsを比較することです。
 比較のために、いくつかのベンチマークを含む評価基準を使用しました。
 結果については、こちら（[Matt's session recap blog](http://raibledesigns.com/rd/entry/play_vs_grails_smackdown_at)）に詳しく掲載されています。

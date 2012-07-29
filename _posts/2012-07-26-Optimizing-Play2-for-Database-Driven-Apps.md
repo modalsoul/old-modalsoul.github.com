@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 【意訳】データベース駆動アプリのための、Play2最適化 
+title: 【意訳】データベース駆動アプリのための、Play2最適化について 
 tags: Play2 Heroku Database-Driven
 categories: Programing
 ---
-【意訳】データベース駆動アプリのための、Play2最適化  
+【意訳】データベース駆動アプリのための、Play2最適化について  
 -----------------
 
 この記事は、HerokuのPrincipal Developer Evangelistの[James Ward氏の記事](http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps)の意訳です。参考程度にどうぞ。
@@ -19,6 +19,6 @@ categories: Programing
 Play2は、ブロッキングのコールを含まないHTTPリクエスト(i.e. 非同期)のためにout-of-the-boxに最適化されています。
 Javaのほとんどのデータベース駆動アプリでは同期コールはJDBC経由で使用されるため、Play2ではこれらのリクエストタイプのためにAkkaを調整するちょっとした設定が必要です。
 
-シンプルな例をあげてみる。現実的なデータベースブロックをシミュレートするために、
+シンプルな例をあげてみます。現実的なデータベースブロックをシミュレートするために、
 
 

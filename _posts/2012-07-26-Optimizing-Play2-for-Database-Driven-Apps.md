@@ -22,5 +22,7 @@ Javaのほとんどのデータベース駆動アプリでは同期コールはJ
 シンプルな例をあげてみます。時間的に現実的なデータベースブロックをシミュレートするために、このベンチマークをローカルではなくHeroku上で実行します。
 ["play2bars"example app](https://github.com/jamesward/play2bars)から"java-ebean"ブランチとHerokuの共有のPostgreSQLデータベースを使います。
 
+Apache Benchを実行して100クライアントから1000コネクションを
+
 
 

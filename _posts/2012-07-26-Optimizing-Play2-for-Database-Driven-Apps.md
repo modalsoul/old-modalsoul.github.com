@@ -19,6 +19,8 @@ categories: Programing
 Play2は、ブロッキングのコールを含まないHTTPリクエスト(i.e. 非同期)のためにout-of-the-boxに最適化されています。
 Javaのほとんどのデータベース駆動アプリでは同期コールはJDBC経由で使用されるため、Play2ではこれらのリクエストタイプのためにAkkaを調整するちょっとした設定が必要です。
 
-シンプルな例をあげてみます。現実的なデータベースブロックをシミュレートするために、
+シンプルな例をあげてみます。時間的に現実的なデータベースブロックをシミュレートするために、このベンチマークをローカルではなくHeroku上で実行します。
+["play2bars"example app](https://github.com/jamesward/play2bars)から"java-ebean"ブランチとHerokuの共有のPostgreSQLデータベースを使います。
+
 
 

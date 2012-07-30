@@ -15,7 +15,7 @@ categories: Programing
 このセッションの目標は、同じフレームワークを用いて同じアプリケーションを作り、Play2+JavaとGrailsを比較することです。
 比較のために、いくつかのベンチマークを含む評価基準を使用しました。
 結果については、こちら（[Matt's session recap blog](http://raibledesigns.com/rd/entry/play_vs_grails_smackdown_at)）に詳しく掲載されています。
-結果プレゼンの後、これらのタイプのアプリケーションでPlay2のAkkaスレッドシステムを最適化するのに重要なことを学びました。
+評価結果のプレゼンの後、これらのタイプのアプリケーションでPlay2のAkkaスレッドシステムを最適化するのに重要なことを発見しました。
 Play2は、ブロッキングのコールを含まないHTTPリクエスト(i.e. 非同期)のためにout-of-the-boxに最適化されています。
 Javaのほとんどのデータベース駆動アプリでは同期コールはJDBC経由で使用されるため、Play2ではこれらのリクエストタイプのためにAkkaを調整するちょっとした設定が必要です。
 
@@ -113,7 +113,7 @@ play {
 {% endhighlight %}
 
 
-Akkaで使用されるスレッドの数は、CPUと"parallelism-factor"の設定値を掛け合わせた値で、"parallelism-max"までです。
+Akkaで使用されるスレッドの数は、CPUと"parallelism-factor"の設定値を掛け合わせた値で、"parallelism-max"が上限値です。
 デフォルトの"parallelism-factor"は"1"に設定されていて、この場合スレッド数はCPU数と同じで、"parallelism-max"のデフォルトは"24"です。これらの設定について詳しくは、[Playのドキュメント](http://www.playframework.org/documentation/2.0/AkkaCore)で確認できます。
 
 

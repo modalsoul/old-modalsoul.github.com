@@ -9,6 +9,8 @@ categories: Programing
 
 この記事は、HerokuのPrincipal Developer Evangelistの[James Ward氏の記事](http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps)の意訳です。参考程度にどうぞ。
 
+![Play modules Akka](http://capture.heartrails.com/300x200/cool?http://www.playframework.org/modules/akka)
+
 誤訳・誤植等ありましたら、[@modal_soulまで](https://twitter.com/modal_soul)リプライいただけるとありがたいです。
 
 <hr />

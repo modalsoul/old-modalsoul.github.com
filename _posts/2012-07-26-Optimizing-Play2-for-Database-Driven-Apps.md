@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【意訳】データベース駆動アプリのための、Play2最適化について #play_ja
+title: 【意訳】データベース駆動アプリのための、Play2最適化について　#play_ja
 tags: Play2 Heroku Database-Driven
 categories: Programing
 ---

@@ -24,19 +24,103 @@ Javaのほとんどのデータベース駆動アプリでは同期コールはJ
 
 Apache Benchを実行して、同時100クライアント接続で10000リクエストをアプリのJSONサービスへ投げるために、同じAWSリージョンにあるEC2サーバーからHerokuのmy appとして、以下のコマンドを実行しました。
 
-
+{% highlight sh %}
+ab -n 10000 -c 100 http://falling-dusk-7291.herokuapp.com/bars
+{% endhighlight %}
 
 最初の最適化前の結果がこちらです
 
-秒間973リクエストは悪くはありませんが、下記のようなエラーが確認できました。
+{% highlight sh %}
+Concurrency Level:      100
+Time taken for tests:   10.272 seconds
+Complete requests:      10000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1560000 bytes
+HTML transferred:       510000 bytes
+Requests per second:    973.53 [#/sec] (mean)
+Time per request:       102.719 [ms] (mean)
+{% endhighlight %}
 
 
 
-これは、Akkaが長時間ブロックされたことを意味しており、Play中のAkkaの設定を変え、同期のコードハンドリングを改善して、評価を再実行しました。
+毎秒973リクエストは悪くはありませんが、下記のようなエラーが確認できました。
+
+{% highlight sh %}
+[error] play - Cannot invoke the action, eventually got an error: Thrown(akka.pattern.AskTimeoutException: Timed out)
+{% endhighlight %}
 
 
+これは、Akkaが長時間ブロックされたことを意味しており、同期のコード実行を改善するようにPlay中のAkkaの設定を変え、評価を再実行しました。その結果は以下のようになりました。
+
+{% highlight sh %}
+Concurrency Level:      100
+Time taken for tests:   7.274 seconds
+Complete requests:      10000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1560000 bytes
+HTML transferred:       510000 bytes
+Requests per second:    1374.70 [#/sec] (mean)
+Time per request:       72.743 [ms] (mean)
+{% endhighlight %}
 
 
+今回は、毎秒1374リクエストになりました。シンプルな最適化の方法は、Akkaで処理を行うスレッドを増やすして、タイムアウト値を長く設定することです。それによりスレッドが同期DBによってブロックされた際、より多くのリクエストをハンドリングするためにさらにスレッドを呼び出します。実際に使ったPlayの設定は以下です。
+
+{% highlight sh %}
+play {
+ 
+    akka {
+ 
+        actor {
+ 
+            deployment {
+ 
+                /actions {
+                    router = round-robin
+                    nr-of-instances = 100
+                }
+ 
+                /promises {
+                    router = round-robin
+                    nr-of-instances = 100
+                }
+ 
+            }
+ 
+            retrieveBodyParserTimeout = 5 seconds
+ 
+            actions-dispatcher = {
+                fork-join-executor {
+                    parallelism-factor = 100
+                    parallelism-max = 100
+                }
+            }
+ 
+            promises-dispatcher = {
+                fork-join-executor {
+                    parallelism-factor = 100
+                    parallelism-max = 100
+                }
+            }
+ 
+        }
+ 
+    }
+ 
+}
+{% endhighlight %}
+
+
+Akkaで使用されるスレッドの数は、CPUと"parallelism-factor"の設定値を掛け合わせた値で、"parallelism-max"までです。
+デフォルトの"parallelism-factor"は"1"に設定されていて、この場合スレッド数はCPU数と同じで、"parallelism-max"のデフォルトは"24"です。これらの設定について詳しくは、[Playのドキュメント](http://www.playframework.org/documentation/2.0/AkkaCore)で確認できます。
+
+
+すべての設定ファイルは[こちらのplay2barsプロジェクトから](https://github.com/jamesward/play2bars/tree/java-ebean/conf)
+
+
+このベンチマークはあくまで参考であって、それぞれの環境で異なってくると思います。それぞれの環境に合わせたチューニングをしてください。質問があれば是非。
 
 
 

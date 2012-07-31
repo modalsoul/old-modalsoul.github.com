@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【意訳】Scala　on　Play2　with　Squerylではじめるデータベース駆動アプリ　#play_ja
+title: 【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#play_ja
 tags: Play2 Heroku Database-Driven Scala Squeryl CoffeScript JSON jQuery ScalaTest
 categories: Programing
 ---
@@ -21,5 +21,7 @@ categories: Programing
 </table>
 
 
-Play2,Scala,Squeryl,JSON,CoffeScript,jQueryとScalaTestの組み合わせによって、モダンなWebアプリケーションの構築とテストを効率的に行うことができます。
-シンプルなデータベース駆動Webアプリケーションの構築、テスト、クラウドへのデプロイを
+Play2,Scala,Squeryl,JSON,CoffeScript,jQueryとScalaTestの組み合わせによって、モダンなWebアプリケーションの構築とテストを効率的に行うことができ,
+シンプルなデータベース駆動Webアプリケーションの構築、テスト、クラウドへのデプロイを体験できます。
+
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#play_ja
+title:【意訳】Scala　on　Play2　with　Squerylではじめるデータベース駆動アプリ　#play_ja
 tags:Play2 Heroku Database-Driven Scala Squeryl CoffeScript JSON jQuery ScalaTest
 categories: Programing
 ---

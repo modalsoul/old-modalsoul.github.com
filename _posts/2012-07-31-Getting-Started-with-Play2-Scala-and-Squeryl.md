@@ -15,11 +15,13 @@ categories: Programing
 <hr />
 
 ## サマリー
-<table><tr><td>
+<table border="1"><tr><td>
 この記事では、Play2,Scala,Squeryl,JSON,CoffeScript,CoffeScript,jQueryとScalaTestを使ったWebアプリケーションの作り方を紹介します。また、同時にScalaTestを使ったテスト方法とHerokuを使ったクラウド環境へのアプリケーションデプロイについても学べます。
 </td></tr>
 </table>
 
 
-Play2,Scala,Squeryl,JSON,CoffeScript,jQueryとScalaTestの組み合わせによって、モダンなWebアプリケーションの構築とテストを効率的に行うことができます。
-シンプルなデータベース駆動Webアプリケーションの構築、テスト、クラウドへのデプロイを
+Play2,Scala,Squeryl,JSON,CoffeScript,jQueryとScalaTestの組み合わせによって、モダンなWebアプリケーションの構築とテストを効率的に行うことができ、シンプルなデータベース駆動Webアプリケーションの構築、テスト、クラウドへのデプロイをフォローすることができます。
+
+
+#

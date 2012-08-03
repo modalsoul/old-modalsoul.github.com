@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AgileUX NYC 2012 Redux in Tokyo(#AgileUXNYC_ja)に参加しました。
-tags: UX Agile
+tags: UX Agile 勉強会
 categories: report
 ---
 AgileUX NYC 2012 Redux in Tokyo ( #AgileUXNYC_ja ) に参加しました。

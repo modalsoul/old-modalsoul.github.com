@@ -96,7 +96,7 @@ play eclipsify
 これでプロジェクトを実行することができます。プロジェクトルートに移動し、以下のコマンドを実行しましょう。
 
 {% highlight sh %}
-play run
+play ~run
 {% endhighlight %}
 
 
@@ -204,12 +204,79 @@ http://localhost:9000をリロードすると、Playがデータベースへの�
 
 ## モデルのテスト
 
+Play2では、テスト駆動開発のスタイルに合った強力なテストサポートがなされています。ScalaでPlay2を使う場合、テストはデフォルトでspaes2が使われていますが、ScalaTestを使用します。Barモデルオブジェクトのシンプルなテストを作ります。プロジェクトにScalaTestの依存関係を追加し、testOptions設定を修正します。project/Build.scalaを以下を追記して更新します。
+
+{% highlight sh %}
+val appDependencies = Seq(
+  "org.scalatest" %% "scalatest" % "1.8" % "test",
+  "org.squeryl" %% "squeryl" % "0.9.5-2",
+  "postgresql" % "postgresql" % "9.1-901-1.jdbc4"
+)
+
+val main = PlayProject(appName, appVersion, appDependencies, mainLang = SCALA).settings(
+  testOptions in Test := Nil
+  // Add your own project settings here
+)
+{% endhighlight %}
+
+
+test/BarSpec.scalaを新規作成し以下を記述します。
+
+{% highlight sh %}
+import models.{AppDB, Bar}
+
+import org.scalatest.FlatSpec
+import org.scalatest.matchers.ShouldMatchers
+
+import org.squeryl.PrimitiveTypeMode.inTransaction
+
+import play.api.test._
+import play.api.test.Helpers._
+
+class BarSpec extends FlatSpec with ShouldMatchers {
+
+  "A Bar" should "be creatable" in {
+    running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
+      inTransaction {
+        val bar = AppDB.barTable insert Bar(Some("foo"))
+        bar.id should not equal(0)
+      }
+    }
+  }
+
+}
+{% endhighlight %}
+
+
+このテストでは、実行するためにFakeApplicationとインメモリデータベースを使います。FakeApplicationを使用すると、Squerylデータベースコネクションは先に生成されたGlobalオブジェクトを使って構成されます。テスト本体は単純にBarのインスタンスを生成し、idが０ではないことをテストします。
+これはSquerylトランザクションで行われます。
+1系のPlayと異なり、テストはコマンドラインから実行されます。コマンドは以下
+
+{% highlight sh %}
+play test
+{% endhighlight %}
+
+
+テストが終了したら、以下のメッセージがPlayのSTDOUTログに出力されていることを確認します。
+
+{% highlight sh %}
+[info] Passed: : Total 1, Failed 0, Errors 0, Passed 1, Skipped 0
+{% endhighlight %}
+
+
+ソースの変更の度にテストを実行するには、以下のコマンドで実行します
+
+{% highlight sh %}
+play ~test
+{% endhighlight %}
+
+
+~runと~testコマンドはバックグラウンドで継続して実行することができます。これにより、ユニットテスト/機能テストやブラウザからの手動テストをすぐさま実行することができます。
+
+
+## WebフォームからBarを生成する
 
 
 
 
 『まだ途中です』
-
-
-
-

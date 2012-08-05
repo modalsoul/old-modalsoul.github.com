@@ -449,7 +449,7 @@ JSONサービスをテストする新しいテストのためにtest/Application
 
 
 
-{% endhighlight %}
+{% highlight sh %}
 "A request to the getBars Action" should "respond with data" in {
     running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
       inTransaction(AppDB.barTable insert Bar(Some("foo")))
@@ -459,8 +459,7 @@ JSONサービスをテストする新しいテストのためにtest/Application
       contentAsString(result) should include ("foo")
     }
   }
-{% highlight sh %}
-
+{% endhighlight %}
 
 再びこの機能テストでは、FakeApplicationとインメモリデータベースを使用しています。
 

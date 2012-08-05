@@ -401,8 +401,46 @@ class ApplicationSpec extends FlatSpec with ShouldMatchers {
 {% endhighlight %}
 
 
-機能テストではインメモリーデータベースとFakeApplicationを使います。
+機能テストではインメモリーデータベースとFakeApplicationを使います。テストでは、Application controllerのaddBarメソッドへのリクエストとnameという名前でFooBarという値のフォームパラメータを生成します。このテストの成功は、シンプルにindexページへリダイレクトされることで、ステータスがSEE_OTHER(HTTP 303ステータスコード)であるかをチェックし、リダイレクトのロケーションはindexページのURLでチェックされます。play testでテストを実行するか、play ~testであればコードの変更のタイミングでテストが実行されています。
 
+
+## JSONとしてBarを取得する
+
+JSONのシリアライズされたデータとして全てのBarオブジェクトをアプリケーションへ返却するRESTfulなサービスを追加しましょう。app/controllers/Application.scalaファイルに新しいメソッドを追加します。
+
+
+{% highlight sh %}
+  def getBars = Action {
+    val json = inTransaction {
+      val bars = from(AppDB.barTable)(barTable =>
+        select(barTable)
+      )
+      Json.generate(bars)
+    }
+    Ok(json).as(JSON)
+  }
+{% endhighlight %}
+
+
+getBarsメソッドは、Squerylを使用してデータベースからBarオブジェクトを取ってきて、BarオブジェクトのJSON形式のリストを生成し、JSONデータを返却します。
+
+
+conf/routesファイルに新しいルートを追加します。
+
+{% highlight sh %}
+GET     /bars                       controllers.Application.getBars
+{% endhighlight %}
+
+
+これにより、/barsへのGETリクエストがgetBarsメソッドへマッピングされます。
+
+ブラウザでhttp://localhost:9000/barsを表示させ確認してみましょう。
+
+JSONとしてシリアライズされたBarオブジェクトのリストが見られるはずです。
+
+前述した通り、トランザクションはSquerylのinTransactionで明示的に開始される必要があり、データベースから値をselectする場合もです。そして、トランザクション内で、Barの全てののエンティティはデータベースから取得されます。
+
+クエリーの構文は、Squerylのタイプ・セーフなクエリー言語の力とDSLを作るためのScalaの力を示しています。
 
 
 『まだ途中です』

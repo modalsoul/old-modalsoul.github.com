@@ -461,7 +461,12 @@ JSONサービスをテストする新しいテストのためにtest/Application
   }
 {% endhighlight %}
 
-再びこの機能テストでは、FakeApplicationとインメモリデータベースを使用しています。
+再びこの機能テストでは、FakeApplicationとインメモリデータベースを使用します。そしてデータベースに新しいBarを生成し、Application controllerのgetBarsメソッドへのリクエストを作ります。テストしたレスポンスはOK(HTTP 200)で、生成されたBarの名前を含んでいるはずです。前と同じように、play testでこのテストを実行するか、play ~testで実行します。これで３つのテストに通っているはずです。
+
+
+## CoffeScriptとjQueryでBarsを表示する
+
+
 
 
 『まだ途中です』

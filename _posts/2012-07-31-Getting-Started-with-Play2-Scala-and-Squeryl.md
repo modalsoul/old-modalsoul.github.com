@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#play_ja
+title: 【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#scalajp　#play_ja
 tags: Play2 Heroku Database-Driven Scala Squeryl CoffeeScript JSON jQuery ScalaTest
 categories: Programing
 ---
@@ -465,6 +465,19 @@ JSONサービスをテストする新しいテストのためにtest/Application
 
 
 ## CoffeScriptとjQueryでBarsを表示する
+
+これで、Barオブジェクトのリストを取得するRESTfulなJSONサービスができたので、取得とindexページへの表示を行うようCoffeScriptとjQueryを使って書いてみましょう。Play2の新しい機能の一つに、CoffeeScriptからJavaScriptへコンパイルとJavaScriptの構文チェック、ミニファイ化、LESSのCSSへのコンパイルを行うassetコンパイラがあります。
+
+app/assets/javascripts/index.coffeeファイルを新規作成し、下記を記述します。
+
+{% highlight sh %}
+$ ->
+  $.get "/bars", (data) ->
+    $.each data, (index, item) ->
+      $("#bars").append $("<li>").text item.name
+{% endhighlight %}
+
+このCoffeeScriptは、/barsへのgetリクエストを作るためにjQueryを使用し、各barに対して反復処理し、
 
 
 

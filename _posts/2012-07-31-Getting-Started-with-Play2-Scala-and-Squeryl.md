@@ -440,7 +440,29 @@ JSONとしてシリアライズされたBarオブジェクトのリストが見�
 
 前述した通り、トランザクションはSquerylのinTransactionで明示的に開始される必要があり、データベースから値をselectする場合もです。そして、トランザクション内で、Barの全てののエンティティはデータベースから取得されます。
 
-クエリーの構文は、Squerylのタイプ・セーフなクエリー言語の力とDSLを作るためのScalaの力を示しています。
+クエリーの構文は、Squerylのタイプ・セーフなクエリー言語の力とDSLを作るためのScalaの力を示しています。from関数は最初のパラメータとしてテーブルへのタイプ・セーフな参照を受け取ります。これはキーワードからのSQLに似ています。２番目のパラメータは、パラメータとしてクエリーにテーブルを取得し、そのテーブル上に何をするかを指定します。この場合はselectです。formは、barsを不変な定数にセットされている反復処理可能なオブジェクトを返却します。その後、Json.generateメソッドは、データベースから取得されたbarsを反復処理し、それらを返却します。jsonの定数は、application/json(JSONの値)にセットされたコンテントタイプと共に、OK(HTTP 200ステータスコードの応答)で返却されます。
+
+
+## JSONサービスをテストする
+
+JSONサービスをテストする新しいテストのためにtest/ApplicationSpec.scalaを更新します。以下を追記します。
+
+
+
+{% endhighlight %}
+"A request to the getBars Action" should "respond with data" in {
+    running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
+      inTransaction(AppDB.barTable insert Bar(Some("foo")))
+
+      val result = controllers.Application.getBars(FakeRequest())
+      status(result) should equal (OK)
+      contentAsString(result) should include ("foo")
+    }
+  }
+{% highlight sh %}
+
+
+再びこの機能テストでは、FakeApplicationとインメモリデータベースを使用しています。
 
 
 『まだ途中です』

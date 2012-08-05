@@ -276,6 +276,66 @@ play ~test
 
 ## WebフォームからBarを生成する
 
+新しくBarオブジェクトを生成するための基本的なWeb UIを追加してみましょう。このセクションの手順を全て踏まないとコードのコンパイルができないので注意してください。
+
+
+最初に、app/controllers/Application.scalaファイルを下記の記述を追加して更新します。
+
+{% highlight sh %}
+package controllers
+
+import play.api.mvc._
+
+import com.codahale.jerkson.Json
+import play.api.data.Form
+import play.api.data.Forms.{mapping, text, optional}
+
+import org.squeryl.PrimitiveTypeMode._
+import models.{AppDB, Bar}
+
+
+object Application extends Controller {
+
+  val barForm = Form(
+    mapping(
+      "name" -> optional(text)
+    )(Bar.apply)(Bar.unapply)
+  )
+
+  def index = Action {
+    Ok(views.html.index(barForm))
+  }
+
+  def addBar = Action { implicit request =>
+    barForm.bindFromRequest.value map { bar =>
+      inTransaction(AppDB.barTable insert bar)
+      Redirect(routes.Application.index())
+    } getOrElse BadRequest
+  }
+
+}
+{% endhighlight %}
+
+barFormは、リクエストパラメーターnameからcace class Barのプロパティnameへ（コンストラクタを通して）マッピングをします。indexメソッドは、index templateへbarFormのインスタンスを渡すように更新されました。次にtemplateを更新します。addBarメソッドは、リクエストパラメーターをオブジェクトbarにバインドし、トランザクション内でデータベースへインサートします。SquerylはPlay frameworkに統合されていないので、データベーストランザクションはSquerylのinTransactionを使って明示的に開始する必要があります。次にユーザはindexページにリダイレクトされます。リクエストパラメータがbarFormを使ってBarにマッピングされなかった場合、BadRequestエラーが返却されます。
+
+
+次にapp/views/index.scala.htmlテンプレートに以下を追記して更新します。
+
+{% highlight sh %}
+@(form: play.api.data.Form[Bar])
+
+@main("Welcome to Play 2.0") {
+
+    @helper.form(action = routes.Application.addBar) {
+        @helper.inputText(form("name"))
+        <input type="submit"/>
+    }
+
+}
+{% endhighlight %}
+
+
+この時点で、テンプレートはApplication Controllerのindexメソッドから渡されたForm[Bar]パラメータを取ります。テンプレート本体の新しいHTMLフォームはPlay2のform helperを使ってレンダリングされます。このフォームは、nameフィールドとsubmitボタンを持ちます。フォームのアクションは、ルートからApplication controllerのaddBarメソッドへを
 
 
 

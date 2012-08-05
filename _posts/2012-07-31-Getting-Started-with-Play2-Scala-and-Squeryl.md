@@ -322,6 +322,7 @@ barFormは、リクエストパラメーターnameからcace class Barのプロ�
 次にapp/views/index.scala.htmlテンプレートに以下を追記して更新します。
 
 {% highlight sh %}
+
  @(form: play.api.data.Form[Bar])
 
  @main("Welcome to Play 2.0") {

@@ -7,7 +7,7 @@ categories: Programing
 【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ
 -----------------
 
-この記事は、HerokuのPrincipal Developer EvangelistのJames Ward氏とRyan Knight氏の記事の意訳です。参考程度にどうぞ。
+この記事は、HerokuのPrincipal Developer EvangelistのJames Ward氏とRyan Knight氏の記事[Getting Started with Play 2, Scala, and Squeryl](http://www.artima.com/articles/play2_scala_squeryl.html)の意訳です。参考程度にどうぞ。
 
 ![Getting Started with Play 2, Scala, and Squeryl](http://capture.heartrails.com/300x200/cool?http://www.artima.com/articles/play2_scala_squeryl.html)
 

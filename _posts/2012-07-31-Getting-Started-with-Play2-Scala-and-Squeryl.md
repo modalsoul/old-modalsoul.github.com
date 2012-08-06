@@ -508,12 +508,12 @@ git add .
 git commit -m init
 {% endhighlight %}
 
-** HerokuのツールベルトはHerokuへのコマンドラインインターフェースです。Heroku ツールベルトをインストールしましょう。
+*** HerokuのツールベルトはHerokuへのコマンドラインインターフェースです。Heroku ツールベルトをインストールしましょう。
 
-** Herokuアカウントへサインアップします。
+*** Herokuアカウントへサインアップします。
 
 
-** コマンドラインからHerokuへログインします：
+*** コマンドラインからHerokuへログインします：
 
 {% highlight sh %}
 heroku login
@@ -521,13 +521,13 @@ heroku login
 
 GitのSSHキーをセットアップし、それをHerokuアカウントへ紐付けます。
 
-** 新しいアプリケーションをHerokuにプロビジョニングします。
+*** 新しいアプリケーションをHerokuにプロビジョニングします。
 
 {% highlight sh %}
 heroku create --stack cedar
 {% endhighlight %}
 
-** HerokuへアプリケーションをPushします。
+*** HerokuへアプリケーションをPushします。
 
 {% highlight sh %}
 git push heroku master
@@ -535,7 +535,7 @@ git push heroku master
 
 Herokuが、SBTでアプリケーションをビルドし、dyno上で実行します。
 
-** ブラウザでクラウド上で実行されるアプリケーションを開きましょう。
+*** ブラウザでクラウド上で実行されるアプリケーションを開きましょう。
 
 {% highlight sh %}
 heroku open

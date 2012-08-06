@@ -492,7 +492,7 @@ $ ->
 
 Herokuはクラウド上でPlay2の実行環境を提供する複数言語対応したCloud Application Platformです。このアプリケーションをHerokuへデプロイするには以下の手順を実行します。
 
-** 下記の内容を記述したProcfileをルートディレクトリは以下に作成します。
+*1 下記の内容を記述したProcfileをルートディレクトリは以下に作成します。
 
 {% highlight sh %}
 web: target/start -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL} ${JAVA_OPTS}
@@ -500,7 +500,7 @@ web: target/start -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.defaul
 
 これによりHerokuへPlayアプリケーションの実行方法を伝えます。
 
-** Herokuは、Heroku上へのファイル転送にGitを用います。まだGitがインストールされていないのであれば、Gitをインストールしましょう。プロジェクトのルートディレクトリから、このプロジェクト用のGitリポジトリを生成し、ファイルを追加し、コミットします。
+*2 Herokuは、Heroku上へのファイル転送にGitを用います。まだGitがインストールされていないのであれば、Gitをインストールしましょう。プロジェクトのルートディレクトリから、このプロジェクト用のGitリポジトリを生成し、ファイルを追加し、コミットします。
 
 {% highlight sh %}
 git init

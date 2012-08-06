@@ -477,9 +477,106 @@ $ ->
       $("#bars").append $("<li>").text item.name
 {% endhighlight %}
 
-このCoffeeScriptは、/barsへのgetリクエストを作るためにjQueryを使用し、各barに対して反復処理し、
+このCoffeeScriptは、/barsへのgetリクエストを作るためにjQueryを使用し、各barに対して反復処理を行い、barsのidと共にbarをページのエレメントに追加します。では、このスクリプトをロードするためにapp/views/index.scala.htmlテンプレートを更新し、ページにbarsエレメントを入れてみましょう。以下の記述をテンプレートのmainセクションのトップに追加します。
+
+{% highlight sh %}
+ <script src="@routes.Assets.at("javascripts/index.min.js")" type="text/javascript"></script>    
+    <ul id="bars"></ul>
+{% endhighlight %}
 
 
+スクリプトのsrcは、javascripts/index.min.jsファイルへのURLを取得するためにroutes.Assets.at関数を使うことに注意してください。まだこのファイルは存在していません。Playのassetコンパイラは、index.coffeeファイルをコンパイルしてミニファイ化されたこのファイルを生成する必要がることを検知します。再度http://localhost:9000 のWebページを読み込み、新しいBarを生成し、Webページに表示されることを確認しましょう。
 
 
-『まだ途中です』
+## Herokuへのデプロイ
+
+Herokuはクラウド上でPlay2の実行環境を提供する複数言語対応したCloud Application Platformです。このアプリケーションをHerokuへデプロイするには以下の手順を実行します。
+
+** 下記の内容を記述したProcfileをルートディレクトリは以下に作成します。
+
+{% highlight sh %}
+web: target/start -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL} ${JAVA_OPTS}
+{% endhighlight %}
+
+これによりHerokuへPlayアプリケーションの実行方法を伝えます。
+
+** Herokuは、Heroku上へのファイル転送にGitを用います。まだGitがインストールされていないのであれば、Gitをインストールしましょう。プロジェクトのルートディレクトリから、このプロジェクト用のGitリポジトリを生成し、ファイルを追加し、コミットします。
+
+{% highlight sh %}
+git init
+git add .
+git commit -m init
+{% endhighlight %}
+
+** HerokuのツールベルトはHerokuへのコマンドラインインターフェースです。Heroku ツールベルトをインストールしましょう。
+
+** Herokuアカウントへサインアップします。
+
+
+** コマンドラインからHerokuへログインします：
+
+{% highlight sh %}
+heroku login
+{% endhighlight %}
+
+GitのSSHキーをセットアップし、それをHerokuアカウントへ紐付けます。
+
+** 新しいアプリケーションをHerokuにプロビジョニングします。
+
+{% highlight sh %}
+heroku create --stack cedar
+{% endhighlight %}
+
+** HerokuへアプリケーションをPushします。
+
+{% highlight sh %}
+git push heroku master
+{% endhighlight %}
+
+Herokuが、SBTでアプリケーションをビルドし、dyno上で実行します。
+
+** ブラウザでクラウド上で実行されるアプリケーションを開きましょう。
+
+{% highlight sh %}
+heroku open
+{% endhighlight %}
+
+おめでとうございます！これであなたのアプリケーションはクラウド上で実行されています。
+
+
+## Share Your Opinion
+
+Play2について思うところはありませんか？[Getting Started with Play2, Scala, and Squeryl](http://www.artima.com/forums/flat.jsp?forum=226&thread=344288)のフォーラムトピックで議論しましょう。
+
+
+## リソース
+
+このプロジェクトの全てのソースコードは、Github上から入手することができます。
+
+[https://github.com/jamesward/play2bars/blob/scala-squeryl](https://github.com/jamesward/play2bars/blob/scala-squeryl)
+
+
+ローカルでPlayが実行されている場合、Playのローカルドキュメントにアクセスできます。
+
+[http://localhost:9000/@documentation](http://localhost:9000/@documentation)
+
+
+下記のサイトでもPlayのドキュメントを閲覧できます。
+
+[http://www.playframework.org/documentation](http://www.playframework.org/documentation)
+
+
+Herokuについては、Heroku Dev Centerを見てください。
+
+[http://devcenter.heroku.com/](http://devcenter.heroku.com/)
+
+
+この記事が一助となればと思いますが、もし質問や問題があれば我々に知らせてください。
+
+
+## 著者について
+
+James Ward ([www.jamesward.com](www.jamesward.com)) is a Principal Developer Evangelist at Heroku. Today he focuses on teaching developers how to deploy Java, Play! and Scala apps to the cloud. James frequently presents at conferences around the world such as JavaOne, Devoxx, and many other Java get-togethers. Along with Bruce Eckel, James co-authored First Steps in Flex. He has also published numerous screencasts, blogs, and technical articles. Starting with Pascal and Assembly in the 80's, James found his passion for writing code. Beginning in the 90's he began doing web development with HTML, Perl/CGI, then Java. After building a Flex and Java based customer service portal in 2004 for Pillar Data Systems he became a Technical Evangelist for Flex at Adobe. You can find him tweeting as [@JamesWard](http://twitter.com/_JamesWard), answering questions on [StackOverflow.com](http://stackoverflow.com/users/77409/james-ward), and posting code at [github.com/jamesward](http://github.com/jamesward).
+
+Ryan Knight is a senior software architect and consultant with over fifteen years of experience in all aspects of cloud computing and software development. He first started Java Consulting for Sun Microsystems Java Center and now runs his own consulting company. Some of his recent projects include being a software Consultant for Deloitte at the State of Louisiana, expert services for Adobe at T-Mobile, creatng a web application at Team Marketing Report, development of a text and voice chat system for Sony Online Entertainment, contributing to the Development of a Gift Card Creation Tool, and being a software architect for Williams Pipeline.
+

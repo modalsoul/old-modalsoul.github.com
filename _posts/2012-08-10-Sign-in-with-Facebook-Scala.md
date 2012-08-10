@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 【意訳】Scalaを使ったFacebookサインイン
+title: 【意訳】Scala of LiftでのFacebookサインイン
 tags: Scala Facebook Lift
 categories: Programing
 ---
-【意訳】Scalaを使ったFacebookサインイン
+【意訳】Scala of LiftでのFacebookサインイン
 -----------------
 
 この記事は、[ayushmishra2005氏の記事](http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/)の意訳です。参考にさせていただいたついでに訳してみました。参考程度にどうぞ。
@@ -17,6 +17,8 @@ categories: Programing
 
 ここ最近に、Lift2.4で構築したソーシャルプロジェクトで、Facebookへのサインイン機能を統合しました。この記事はその時の手順のサマリです。
 
+
+<hr />
 
 *1)Facebook APIを作る（※既に持っている場合不要です）
 

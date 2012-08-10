@@ -7,7 +7,7 @@ categories: Programing
 【意訳】Scalaを使ったFacebookサインイン
 -----------------
 
-この記事は、[ayushmishra2005氏の記事](http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/)の意訳です。参考程度にどうぞ。
+この記事は、[ayushmishra2005氏の記事](http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/)の意訳です。参考にさせていただいたついでに訳してみました。参考程度にどうぞ。
 
 ![Providing a “Sign-in with Facebook” functionality using Scala](http://capture.heartrails.com/300x200/cool?http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/)
 

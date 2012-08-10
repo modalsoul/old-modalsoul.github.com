@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#play_ja
+title: 【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#scalajp　#play_ja 
 tags: Play2 Heroku Database-Driven Scala Squeryl CoffeeScript JSON jQuery ScalaTest
 categories: Programing
 ---
 【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ
 -----------------
 
-この記事は、HerokuのPrincipal Developer EvangelistのJames Ward氏とRyan Knight氏の記事の意訳です。参考程度にどうぞ。
+この記事は、HerokuのPrincipal Developer EvangelistのJames Ward氏とRyan Knight氏の記事[Getting Started with Play 2, Scala, and Squeryl](http://www.artima.com/articles/play2_scala_squeryl.html)の意訳です。参考程度にどうぞ。
 
 ![Getting Started with Play 2, Scala, and Squeryl](http://capture.heartrails.com/300x200/cool?http://www.artima.com/articles/play2_scala_squeryl.html)
 
@@ -322,9 +322,10 @@ barFormは、リクエストパラメーターnameからcace class Barのプロ�
 次にapp/views/index.scala.htmlテンプレートに以下を追記して更新します。
 
 {% highlight sh %}
-@(form: play.api.data.Form[Bar])
 
-@main("Welcome to Play 2.0") {
+ ＠(form: play.api.data.Form[Bar])
+
+ ＠main("Welcome to Play 2.0") {
 
     @helper.form(action = routes.Application.addBar) {
         @helper.inputText(form("name"))
@@ -335,8 +336,247 @@ barFormは、リクエストパラメーターnameからcace class Barのプロ�
 {% endhighlight %}
 
 
-この時点で、テンプレートはApplication Controllerのindexメソッドから渡されたForm[Bar]パラメータを取ります。テンプレート本体の新しいHTMLフォームはPlay2のform helperを使ってレンダリングされます。このフォームは、nameフィールドとsubmitボタンを持ちます。フォームのアクションは、ルートからApplication controllerのaddBarメソッドへを
+この時点で、テンプレートはApplication Controllerのindexメソッドから渡されたForm[Bar]パラメータを取ります。テンプレート本体の新しいHTMLフォームはPlay2のform helperを使ってレンダリングされます。このフォームは、nameフィールドとsubmitボタンを持ちます。注意しなければいけないのは、フォームのアクションは、ルートからApplication controllerのaddBarメソッドへを指していることです。
+
+
+この時点でコンソールウィンドウをみると”value addBar is not a member of controllers.ReverseApplication”エラーがみられると思います。
+これは、routeファイルがコンパイルされ、routeがチェックされたからです。まだrouteが作られていないので、conf/routesファイルを編集し、以下の行を追加します。
+
+{% highlight sh %}
+POST    /bars                       controllers.Application.addBar
+{% endhighlight %}
+
+
+これにより、/barsURLへのPOSTリクエストをaddBarメソッドへマッピングするHTTPルートを作成します。
+
+ブラウザでhttp://localhost:9000 を更新すると、新しいBarオブジェクトを追加するための基本的なフォームが表示されているはずです。成功した場合、新しいBarを追加した後に、ブラウザはindexページにリダイレクトして戻ります。
+
+
+これで一通りが動くようになったので、controllerのコードに戻り、これらの動作についてより理解しましょう。addBarメソッドについて理解することは、コンパイラが周囲のスコープから値を見つけるために、どのように暗黙的なキーワードを通知するかを理解するのに役立ちます。Scalaでは、implicitキーワードは、implicit関数のパラメータもしくは、inplicitオブジェクトへの変換としても使用することができます。二つは全く異なりますが、両方ともにScalaの定義を解決する方法に関連しています。この場合、implicitは一つもしくはそれ以上の関数を呼ぶ場合と全ての関数に同じあたいを渡す必要がある場合に使われます。この手順は、APIを構成する際に便利で、ユーザはいつも何のパラメータが使用されるかについて明示する必要がなくなりますが、変わりにデフォルト値に依存します。
+
+
+addBarの場合、barForm.bindFromRequestメソッドがplay.api.mvc.Requestパラメータをとり、明示的に渡す必要がないため、リクエストをimplicitと明示します。
+
+参考に、Form.bindToRequestメソッドのメソッド定義を記載します。
+
+{% highlight sh %}
+def bindFromRequest()(implicit request: play.api.mvc.Request[_]): Form[T] = {...}
+{% endhighlight %}
+
+
+bindFromRequestはフォームオブジェクトを返します。addBarメソッドでは、この場合Option[Bar]を返却するFormインスタンスのvalueメソッドを呼び出します。そして、呼び出しもとのマップがBarを取得し、フォームマッピングから生成できれば生成し、そうでなければgetOrElseステートメントはBadRequestを返却します。Barオブジェクトが生成することができた場合、それはトランザクション内でデータベースに保存されます。
+
+
+これで、Squerylでリクエストパラメータとオブジェクトをマップしオブジェクトを保存する方法について理解できたと思うので、新しいaddBar controllerメソッドのテストを書きましょう。
+
+
+## Barの追加のテスト
+
+下記の記述を新規作成したtest/ApplicationSpec.scalaファイルを記述し、addBar controllerメソッドの新しいテストを作ります。
+
+{% highlight sh %}
+import controllers.routes
+import models.{AppDB, Bar}
+
+import org.scalatest.FlatSpec
+import org.scalatest.matchers.ShouldMatchers
+
+import org.squeryl.PrimitiveTypeMode.inTransaction
+
+import play.api.http.ContentTypes.JSON
+import play.api.test._
+import play.api.test.Helpers._
+
+class ApplicationSpec extends FlatSpec with ShouldMatchers {
+
+  "A request to the addBar action" should "respond" in {
+    running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
+      val result = controllers.Application.addBar(FakeRequest().withFormUrlEncodedBody("name" -> "FooBar"))
+      status(result) should equal (SEE_OTHER)
+      redirectLocation(result) should equal (Some(routes.Application.index.url))
+    }
+  }
+
+}
+{% endhighlight %}
+
+
+機能テストではインメモリーデータベースとFakeApplicationを使います。テストでは、Application controllerのaddBarメソッドへのリクエストとnameという名前でFooBarという値のフォームパラメータを生成します。このテストの成功は、シンプルにindexページへリダイレクトされることで、ステータスがSEE_OTHER(HTTP 303ステータスコード)であるかをチェックし、リダイレクトのロケーションはindexページのURLでチェックされます。play testでテストを実行するか、play ~testであればコードの変更のタイミングでテストが実行されています。
+
+
+## JSONとしてBarを取得する
+
+JSONのシリアライズされたデータとして全てのBarオブジェクトをアプリケーションへ返却するRESTfulなサービスを追加しましょう。app/controllers/Application.scalaファイルに新しいメソッドを追加します。
+
+
+{% highlight sh %}
+  def getBars = Action {
+    val json = inTransaction {
+      val bars = from(AppDB.barTable)(barTable =>
+        select(barTable)
+      )
+      Json.generate(bars)
+    }
+    Ok(json).as(JSON)
+  }
+{% endhighlight %}
+
+
+getBarsメソッドは、Squerylを使用してデータベースからBarオブジェクトを取ってきて、BarオブジェクトのJSON形式のリストを生成し、JSONデータを返却します。
+
+
+conf/routesファイルに新しいルートを追加します。
+
+{% highlight sh %}
+GET     /bars                       controllers.Application.getBars
+{% endhighlight %}
+
+
+これにより、/barsへのGETリクエストがgetBarsメソッドへマッピングされます。
+
+ブラウザでhttp://localhost:9000/barsを表示させ確認してみましょう。
+
+JSONとしてシリアライズされたBarオブジェクトのリストが見られるはずです。
+
+前述した通り、トランザクションはSquerylのinTransactionで明示的に開始される必要があり、データベースから値をselectする場合もです。そして、トランザクション内で、Barの全てののエンティティはデータベースから取得されます。
+
+クエリーの構文は、Squerylのタイプ・セーフなクエリー言語の力とDSLを作るためのScalaの力を示しています。from関数は最初のパラメータとしてテーブルへのタイプ・セーフな参照を受け取ります。これはキーワードからのSQLに似ています。２番目のパラメータは、パラメータとしてクエリーにテーブルを取得し、そのテーブル上に何をするかを指定します。この場合はselectです。formは、barsを不変な定数にセットされている反復処理可能なオブジェクトを返却します。その後、Json.generateメソッドは、データベースから取得されたbarsを反復処理し、それらを返却します。jsonの定数は、application/json(JSONの値)にセットされたコンテントタイプと共に、OK(HTTP 200ステータスコードの応答)で返却されます。
+
+
+## JSONサービスをテストする
+
+JSONサービスをテストする新しいテストのためにtest/ApplicationSpec.scalaを更新します。以下を追記します。
 
 
 
-『まだ途中です』
+{% highlight sh %}
+"A request to the getBars Action" should "respond with data" in {
+    running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
+      inTransaction(AppDB.barTable insert Bar(Some("foo")))
+
+      val result = controllers.Application.getBars(FakeRequest())
+      status(result) should equal (OK)
+      contentAsString(result) should include ("foo")
+    }
+  }
+{% endhighlight %}
+
+再びこの機能テストでは、FakeApplicationとインメモリデータベースを使用します。そしてデータベースに新しいBarを生成し、Application controllerのgetBarsメソッドへのリクエストを作ります。テストしたレスポンスはOK(HTTP 200)で、生成されたBarの名前を含んでいるはずです。前と同じように、play testでこのテストを実行するか、play ~testで実行します。これで３つのテストに通っているはずです。
+
+
+## CoffeScriptとjQueryでBarsを表示する
+
+これで、Barオブジェクトのリストを取得するRESTfulなJSONサービスができたので、取得とindexページへの表示を行うようCoffeScriptとjQueryを使って書いてみましょう。Play2の新しい機能の一つに、CoffeeScriptからJavaScriptへコンパイルとJavaScriptの構文チェック、ミニファイ化、LESSのCSSへのコンパイルを行うassetコンパイラがあります。
+
+app/assets/javascripts/index.coffeeファイルを新規作成し、下記を記述します。
+
+{% highlight sh %}
+$ ->
+  $.get "/bars", (data) ->
+    $.each data, (index, item) ->
+      $("#bars").append $("<li>").text item.name
+{% endhighlight %}
+
+このCoffeeScriptは、/barsへのgetリクエストを作るためにjQueryを使用し、各barに対して反復処理を行い、barsのidと共にbarをページのエレメントに追加します。では、このスクリプトをロードするためにapp/views/index.scala.htmlテンプレートを更新し、ページにbarsエレメントを入れてみましょう。以下の記述をテンプレートのmainセクションのトップに追加します。
+
+{% highlight sh %}
+ <script src="@routes.Assets.at("javascripts/index.min.js")" type="text/javascript"></script>    
+    <ul id="bars"></ul>
+{% endhighlight %}
+
+
+スクリプトのsrcは、javascripts/index.min.jsファイルへのURLを取得するためにroutes.Assets.at関数を使うことに注意してください。まだこのファイルは存在していません。Playのassetコンパイラは、index.coffeeファイルをコンパイルしてミニファイ化されたこのファイルを生成する必要がることを検知します。再度http://localhost:9000 のWebページを読み込み、新しいBarを生成し、Webページに表示されることを確認しましょう。
+
+
+## Herokuへのデプロイ
+
+Herokuはクラウド上でPlay2の実行環境を提供する複数言語対応したCloud Application Platformです。このアプリケーションをHerokuへデプロイするには以下の手順を実行します。
+
+*1. 下記の内容を記述したProcfileをルートディレクトリは以下に作成します。
+
+{% highlight sh %}
+web: target/start -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL} ${JAVA_OPTS}
+{% endhighlight %}
+
+これによりHerokuへPlayアプリケーションの実行方法を伝えます。
+
+*2. Herokuは、Heroku上へのファイル転送にGitを用います。まだGitがインストールされていないのであれば、Gitをインストールしましょう。プロジェクトのルートディレクトリから、このプロジェクト用のGitリポジトリを生成し、ファイルを追加し、コミットします。
+
+{% highlight sh %}
+git init
+git add .
+git commit -m init
+{% endhighlight %}
+
+*3. HerokuのツールベルトはHerokuへのコマンドラインインターフェースです。Heroku ツールベルトをインストールしましょう。
+
+*4. Herokuアカウントへサインアップします。
+
+
+*5. コマンドラインからHerokuへログインします：
+
+{% highlight sh %}
+heroku login
+{% endhighlight %}
+
+GitのSSHキーをセットアップし、それをHerokuアカウントへ紐付けます。
+
+*6. 新しいアプリケーションをHerokuにプロビジョニングします。
+
+{% highlight sh %}
+heroku create --stack cedar
+{% endhighlight %}
+
+*7. HerokuへアプリケーションをPushします。
+
+{% highlight sh %}
+git push heroku master
+{% endhighlight %}
+
+Herokuが、SBTでアプリケーションをビルドし、dyno上で実行します。
+
+*8. ブラウザでクラウド上で実行されるアプリケーションを開きましょう。
+
+{% highlight sh %}
+heroku open
+{% endhighlight %}
+
+おめでとうございます！これであなたのアプリケーションはクラウド上で実行されています。
+
+
+## Share Your Opinion
+
+Play2について思うところはありませんか？[Getting Started with Play2, Scala, and Squeryl](http://www.artima.com/forums/flat.jsp?forum=226&thread=344288)のフォーラムトピックで議論しましょう。
+
+
+## リソース
+
+このプロジェクトの全てのソースコードは、Github上から入手することができます。
+
+[https://github.com/jamesward/play2bars/blob/scala-squeryl](https://github.com/jamesward/play2bars/blob/scala-squeryl)
+
+
+ローカルでPlayが実行されている場合、Playのローカルドキュメントにアクセスできます。
+
+[http://localhost:9000/@documentation](http://localhost:9000/@documentation)
+
+
+下記のサイトでもPlayのドキュメントを閲覧できます。
+
+[http://www.playframework.org/documentation](http://www.playframework.org/documentation)
+
+
+Herokuについては、Heroku Dev Centerを見てください。
+
+[http://devcenter.heroku.com/](http://devcenter.heroku.com/)
+
+
+この記事が一助となればと思いますが、もし質問や問題があれば我々に知らせてください。
+
+
+## 著者について
+
+James Ward ([www.jamesward.com](www.jamesward.com)) is a Principal Developer Evangelist at Heroku. Today he focuses on teaching developers how to deploy Java, Play! and Scala apps to the cloud. James frequently presents at conferences around the world such as JavaOne, Devoxx, and many other Java get-togethers. Along with Bruce Eckel, James co-authored First Steps in Flex. He has also published numerous screencasts, blogs, and technical articles. Starting with Pascal and Assembly in the 80's, James found his passion for writing code. Beginning in the 90's he began doing web development with HTML, Perl/CGI, then Java. After building a Flex and Java based customer service portal in 2004 for Pillar Data Systems he became a Technical Evangelist for Flex at Adobe. You can find him tweeting as [@JamesWard](http://twitter.com/_JamesWard), answering questions on [StackOverflow.com](http://stackoverflow.com/users/77409/james-ward), and posting code at [github.com/jamesward](http://github.com/jamesward).
+
+Ryan Knight is a senior software architect and consultant with over fifteen years of experience in all aspects of cloud computing and software development. He first started Java Consulting for Sun Microsystems Java Center and now runs his own consulting company. Some of his recent projects include being a software Consultant for Deloitte at the State of Louisiana, expert services for Adobe at T-Mobile, creatng a web application at Team Marketing Report, development of a text and voice chat system for Sony Online Entertainment, contributing to the Development of a Gift Card Creation Tool, and being a software architect for Williams Pipeline.
+

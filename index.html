@@ -39,8 +39,9 @@ title: modal_soul debriefing
 <div class="row">
 
   <div class="span10">
-	{% for post in site.posts limit:6 %}
-	    <h4><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></h4>
+	{% for post in site.posts limit:4 %}
+	    <h4><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;</h4>
+	    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
 	    <a href="{{ post.url }}"><img src='http://capture.heartrails.com/350x180/cool/shorten?http://modalsoul.github.com/{{ post.url }}'></a>
 	    
 	    	<div id="tweet-root"></div>
@@ -60,14 +61,30 @@ title: modal_soul debriefing
   
 <div class="span4">
 	<h4>about modal_soul</h4>
-	<img src="https://si0.twimg.com/profile_images/1753567251/square-icon-with-mark.png" border="0" alt="@modal_soul" height="130px" width="130px"/>
-	<p>BBQをこよなく愛するエンジニア。Certified Scrum Master（認定スクラムマスター）</p>
-	<p>スクラム道 スタッフ</p>
-	<p>アジャイルサムライ読書会 横浜道場 運営スタッフ</p>
-	<img src="/img/csm.jpg" alt="certified scrum master" border="0" />
+		
+	<!--
 	<p><a href="http://twitter.com/modal_soul" target="_blank"><img src="http://twitbtn.com/images/buttons/button_new19a.png" alt="Twitterボタン" border="0" /></a><br /></p>
-	<p><a href="https://yukar.in/profile/t/modal_soul" target="_blank"><img src="https://yukar.in/favicon.ico" alt="Yukari'n Note" border="0" height="16px" width="16px" />Yukari'n Note</a></p>
-	<p><a href="http://www.slideshare.net/modalsoul" target="_blank"><img src="http://www.slideshare.net/favicon.ico" alt="slideshare" border="0" />slideshare</a></p>
+	-->
+	<table>
+	<tr><th>
+	BBQをこよなく愛するエンジニア。
+	<br/>
+	<img src="https://si0.twimg.com/profile_images/1753567251/square-icon-with-mark.png" border="0" alt="@modal_soul" height="130px" width="130px" style="border-radius: 10px;"/>
+	</th></tr>
+	</table>
+	<ul>
+	<li>スクラム道 スタッフ</li>
+	<li>アジャイルサムライ読書会 横浜道場 運営スタッフ</li>
+	<li>
+	Certified Scrum Master（認定スクラムマスター）<img src="/img/csm.jpg" alt="certified scrum master" border="0"/>
+	</li>
+	<li>
+	<a href="https://yukar.in/profile/t/modal_soul" target="_blank"><img src="https://yukar.in/favicon.ico" alt="Yukari'n Note" border="0" height="16px" width="16px" />Yukari'n Note</a>
+	</li>
+	<li>
+	<a href="http://www.slideshare.net/modalsoul" target="_blank"><img src="http://www.slideshare.net/favicon.ico" alt="slideshare" border="0" />slideshare</a>
+	</li>
+	</ul>
 
 	<!-- You also need to place a container where you'd like the Coderwall badges to render. -->
 	<section class="coderwall" data-coderwall-username="modal_soul" data-coderwall-orientation="horizontal"></section>
@@ -110,17 +127,21 @@ google_ad_width = 180;
 google_ad_height = 150;
 //-->
 	</script>
+  	<!--
   	<h4>Categories</h4>
 	<ul class="tag_box">
 	{% assign categories_list = site.categories %}
 	{% include helpers/categories_list.html %}
 	</ul>
+	-->
 	<script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=1&color=1">
 	</script>
 	<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>
 	<script type="text/javascript"
 	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 	</script>
+
+
 </div>
 
 

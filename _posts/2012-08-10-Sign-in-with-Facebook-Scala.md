@@ -64,6 +64,8 @@ facebook.callbackurl=/api/facebook/auth
 </script>
 
 
+<hr />
+
 *6) login.htmlにFacebookログインリンクを追加します。
 
 {% highlight sh %}
@@ -72,6 +74,8 @@ facebook.callbackurl=/api/facebook/auth
 </div>
 {% endhighlight %}
 
+
+<hr />
 
 *7) SiteMap.scalaにFacebook接続メニューを作ります。
 
@@ -83,6 +87,7 @@ val facebookConnect = MenuLoc(
  }))
 {% endhighlight %}
 
+<hr />
 
 *8) 最後に、Facebookからレスポンスを受け取るためのFacebook.apiを作成します。
 

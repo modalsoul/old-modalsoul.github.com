@@ -72,7 +72,7 @@ case class Widget(id: Int, name: String)
 *Step2) app/views/Widget/list.scala.htmlファイルを新規作成して、以下を記述します。
 
 {% highlight sh %}
-@(widgets: Vector[models.Widget])
+ @(widgets: Vector[models.Widget])
  
 <!DOCTYPE html>
 <html>

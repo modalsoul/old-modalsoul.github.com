@@ -1,0 +1,32 @@
+{% comment %}<!--
+The reference_thumbnail include is a thumbnail helper for reference.
+Usage:
+  1) assign the 'reference_url' variable to a url of reference.
+  2) include helpers/reference_thumbnail.html.
+  example:
+    {% assign reference_url = page.thumbnail %}  
+  	{% include helpers/reference_thumbnail.html %}
+  	
+  Notes: 
+  option:assign the 'comment' valiable to insert comment before thumbnail.
+    
+-->{% endcomment %}
+
+{% if reference_url == null %}
+
+{% else %}
+
+	{% if comment == null %}
+		<a href="{{reference_url}}">
+		<img title="参考" src="http://capture.heartrails.com/300x200/cool?{{reference_url}}" alt="参考" width="300" height="200" />
+		</a>
+	{% else %}
+		<p>{{comment}}</p>
+		<a href="{{reference_url}}">
+		<img title="参考" src="http://capture.heartrails.com/300x200/cool?{{reference_url}}" alt="参考" width="300" height="200" />
+		</a>
+	{% endif %}
+{% endif %}
+
+{% assign reference_url = null %}
+{% assign comment = null %}

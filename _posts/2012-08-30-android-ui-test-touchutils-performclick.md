@@ -10,8 +10,11 @@ TouchUtilsを使ったAndroidテストでjava.lang.SecurityException: Permission
 -----------------
 
 以前の記事では、InstrumantetionTestCaseとTouchUtilsを使ってのUIテストについて書きました。
+
 最近、この方法でテストを実行してjava.lang.SecurityException: Permission Denialが発生して、テストに失敗する事象に悩まされたので、
 回避方法を記録しておきます。
+
+
 
 ## なぜjava.lang.SecurityExceptionが発生するのか？
 
@@ -27,21 +30,26 @@ TouchUtilsは端末によっては利用できないよう制限されている�
 そのため、テストケース中のボタンなどのViewのクリック動作がシミュレートできずにテストが失敗したようです。
 
 
+
 ## TouchUtilsを使わずにテストする方法
 
 以前紹介した方法では、ユーザのViewのクリック動作を以下のような方法でシミュレートしました。
+
 
 ### Activityの取得
 <script src="https://gist.github.com/2758303.js?file=getCurrentActivity.java">
 </script>
 
+
 ### Viewを取得して、初期状態を確認。
 <script src="https://gist.github.com/2758332.js?file=getAndCheckView.java">
 </script>
 
+
 ### ボタンのクリックをシミュレート。
 <script src="https://gist.github.com/2758332.js?file=getAndCheckView.java">
 </script>
+
 
 
 上記のクリックのシミュレートに使用したTouchUtilsの代わりに、[performClick()](http://developer.android.com/reference/android/view/View.html#performClick())を使います。

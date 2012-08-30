@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TouchUtilsを使ったAndroidテストでjava.lang.SecurityException:Permission　Denialが起きたときの回避方法
+title: TouchUtilsを使ったAndroidテストでjava.lang.SecurityException:PermissionDenialが起きたときの回避方法
 tags: Android UI Test InstrumentationTestCase TouchUtils performClick
 categories: Test Programing
 comment: この記事は、以前書いた記事<a href="http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/" >AndroidアプリのUIテスト-InstrumentationTestCase編-</a>の補足記事です。

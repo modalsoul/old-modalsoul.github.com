@@ -52,7 +52,7 @@ TouchUtilsは端末によっては利用できないよう制限されている�
 </script>
 
 
-### 回避方法
+### performClick()を使った回避方法
 上記のクリックのシミュレートに使用したTouchUtilsの代わりに、[performClick()](http://developer.android.com/reference/android/view/View.html#performClick())を使います。
 
 ※この場合、clickPerformは明示的にUIスレッドで実行する必要があります。

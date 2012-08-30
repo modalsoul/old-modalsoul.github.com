@@ -16,7 +16,7 @@ thumbnail: http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-tes
 
 
 
-## なぜjava.lang.SecurityExceptionが発生するのか？
+## 原因
 
 この問題が発生する正確な理由はわかっていません。
 
@@ -24,13 +24,14 @@ thumbnail: http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-tes
 
 Xperia NX, MEDIASでは同じテストケースを実行してもこの現象は確認できませんでした。
 
+
 これらの状況と、logcatで確認できたエラーログから察するに、
 TouchUtilsは端末によっては利用できないよう制限されているようです。
 
 そのため、テストケース中のボタンなどのViewのクリック動作がシミュレートできずにテストが失敗したようです。
 
 
-
+<br/>
 ## TouchUtilsを使わずにテストする方法
 
 以前紹介した方法では、ユーザのViewのクリック動作を以下のような方法でシミュレートしました。
@@ -51,7 +52,7 @@ TouchUtilsは端末によっては利用できないよう制限されている�
 </script>
 
 
-
+### 回避方法
 上記のクリックのシミュレートに使用したTouchUtilsの代わりに、[performClick()](http://developer.android.com/reference/android/view/View.html#performClick())を使います。
 
 ※この場合、clickPerformは明示的にUIスレッドで実行する必要があります。

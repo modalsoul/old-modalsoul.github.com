@@ -6,7 +6,7 @@ categories: Test Programing
 comment: この記事は、以前書いた記事<a href="http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/" >AndroidアプリのUIテスト-InstrumentationTestCase編-</a>の補足記事です。
 thumbnail: http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/
 ---
-TouchUtilsを使ったAndroidテストでjava.lang.SecurityException: Permission Denialが起きたときの回避方法
+
 -----------------
 
 以前の記事では、InstrumantetionTestCaseとTouchUtilsを使ってのUIテストについて書きました。

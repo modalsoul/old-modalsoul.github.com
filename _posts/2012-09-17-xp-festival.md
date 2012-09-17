@@ -84,7 +84,7 @@ XP祭り当日にも、「スタッフ参加したい！」という声が聞か
 セッションの内容によっては、事前に講師と打ち合わせをし、どういった趣旨・内容でセッションを行うのか話をします。
 なにせ運営スタッフですので、当日の講師控え室にだって堂々と入ることができます。
 
-<a target='_blank' title='yfrog.com - Image And Video Hosting' href='http://twitter.yfrog.com/kl9tncenj'><img src='http://a.yfrog.com/img741/9136/9tncen.jpg' border='0'/>
+<a target='_blank' title='yfrog.com - Image And Video Hosting' href='http://twitter.yfrog.com/kl9tncenj'><img src='http://desmond.yfrog.com/Himg741/scaled.php?tn=0&server=741&filename=9tncen.jpg&xsize=640&ysize=640' border='0'/>
 </a>
 
 そんな合間合間の時間に、普段なかなかお目にかかる機会の無い講師の方にも直接質問をしたり話を伺うことができます。

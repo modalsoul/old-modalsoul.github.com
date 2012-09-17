@@ -111,7 +111,30 @@ XPを謳う以上、ふりかえりは当然。
 ということで、もうしばらく後にXP祭り2012のふりかえりが行われると思います。
 そして、今年のXP祭りでの気づきを生かし、来年さらにすばらしいXP祭りになるのではと思います。
 
+<blockquote class="twitter-tweet" lang="ja">
+<p>つーか、スタッフを募集しております <a href="https://twitter.com/search/%23xpjug">#xpjug
+</a>
+</p>
+&mdash; Yasunobu Kawaguchiさん (@kawaguti) 
+<a href="https://twitter.com/kawaguti/status/246989439409197056" data-datetime="2012-09-15T15:10:45+00:00">9月 15, 2012
+</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+
+<blockquote class="twitter-tweet" lang="ja">
+<p>XP祭りのスタッフや、TOCの活動に興味を持たれた方、お声かけくださいまし。 
+<a href="https://twitter.com/search/%23xpjug">#xpjug
+</a>
+</p>
+&mdash; nohdomiさん (@nohdomi) 
+<a href="https://twitter.com/nohdomi/status/247064138495447040" data-datetime="2012-09-15T20:07:35+00:00">9月 15, 2012
+</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <hr />
+
 ## 最後に
 実行委員として、会場に居合わせた一個人として、非常に多くの経験や気付きをいただきました。
 XP祭りに参加くださった方々、実行委員の皆さん、会場を提供くださった早稲田大学さん、協賛各社様、本当にありがとうございました。

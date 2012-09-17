@@ -1,9 +1,9 @@
 ---
 layout: post
-title: XP祭り2012〜ソーシャルチェンジ！〜にスタッフ参加してきました#xpjug 
+title: XP祭り2012～ソーシャルチェンジ～にスタッフ参加してきました#xpjug 
 tags: XP祭り
 categories: report
-comment: この記事は、2012年９月１６日に開催された<a href="http://xpjug.com/xp2012/" >XP祭り2012〜ソーシャルチェンジ！〜</a>についての記事です。主に参加者視点ではなく、１運営スタッフとしての視点で書いています。
+comment: この記事は、2012年９月１６日に開催された<a href="http://xpjug.com/xp2012/" >XP祭り2012～ソーシャルチェンジ！～</a>についての記事です。主に参加者視点ではなく、１運営スタッフとしての視点で書いています。
 thumbnail: http://xpjug.com/xp2012/
 ---
 
@@ -64,25 +64,28 @@ XP祭り当日にも、「スタッフ参加したい！」という声が聞か
 
 <hr />
 ## ここが得だよ、実行委員
-人生ツライことばかりではありません、実行委員を勤めて「グフフフ・・得したなぁ〜」ということを挙げてみます。
+人生ツライことばかりではありません、実行委員を勤めて「グフフフ・・得したなぁ縲怐vということを挙げてみます。
 
 <hr />
 ### 規模の大きいイベントができていく過程を体験できる
 これだけの規模のイベントの運営はそうそうできるものではありません。
 私は、[アジャイルサムライ読書会横浜道場](https://github.com/agile-samurai-ja/support/wiki/Readingagilesamuraiinyokohama)の運営スタッフもさせてもらっているのですが、これともまた違った運営の醍醐味があります。
-※ちなみに、９月２２日は[アジャイルサムライ読書会 横浜道場 「当てずっぽうの奥義」](http://kokucheese.com/event/index/52905/)が開催されます。どうぞご参加ください#ステマ
 
 <a href="http://kokucheese.com/event/index/52905/">
-<img title="9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」" src="http://capture.heartrails.com/400x300/cool/1347884382166?http://kokucheese.com/event/index/52905/" alt="http://kokucheese.com/event/index/52905/" width="400" height="300" />
+<img title="9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」" src="http://capture.heartrails.com/300x200/cool/1347884382166?http://kokucheese.com/event/index/52905/" alt="http://kokucheese.com/event/index/52905/" width="400" height="300" />
 </a>
+
+※ちなみに、９月２２日は[アジャイルサムライ読書会 横浜道場 「当てずっぽうの奥義」](http://kokucheese.com/event/index/52905/)が開催されます。どうぞご参加ください#ステマ
 
 
 <hr />
 ### 講師と話ができる
-<a target='_blank' title='yfrog.com - Image And Video Hosting' href='http://twitter.yfrog.com/kl9tncenj'><img src='http://a.yfrog.com/img741/9136/9tncen.th.jpg' border='0'/>
-</a>
+
 セッションの内容によっては、事前に講師と打ち合わせをし、どういった趣旨・内容でセッションを行うのか話をします。
 なにせ運営スタッフですので、当日の講師控え室にだって堂々と入ることができます。
+
+<a target='_blank' title='yfrog.com - Image And Video Hosting' href='http://twitter.yfrog.com/kl9tncenj'><img src='http://a.yfrog.com/img741/9136/9tncen.jpg' border='0'/>
+</a>
 
 そんな合間合間の時間に、普段なかなかお目にかかる機会の無い講師の方にも直接質問をしたり話を伺うことができます。
 Twitterにメンションを投げるよりも確実に聞きたいことが聞けます。

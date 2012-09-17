@@ -72,6 +72,9 @@ XP祭り当日にも、「スタッフ参加したい！」という声が聞か
 これだけの規模のイベントの運営はそうそうできるものではありません。
 私は、[アジャイルサムライ読書会横浜道場](https://github.com/agile-samurai-ja/support/wiki/Readingagilesamuraiinyokohama)の運営スタッフもさせてもらっているのですが、これともまた違った運営の醍醐味があります。
 
+クロージングの際、メイン会場に集まった参加者とセッションで高まった熱気、この場の雰囲気は正に圧巻です
+。
+
 <a href="http://kokucheese.com/event/index/52905/">
 <img title="9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」" src="http://capture.heartrails.com/300x200/cool?http://kokucheese.com/event/index/52905/" alt="http://kokucheese.com/event/index/52905/" width="300" height="200" />
 </a>

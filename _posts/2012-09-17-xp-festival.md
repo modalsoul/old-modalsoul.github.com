@@ -80,7 +80,7 @@ XP祭り当日にも、「スタッフ参加したい！」という声が聞か
 <img title="9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」" src="http://capture.heartrails.com/300x200/cool?http://kokucheese.com/event/index/52905/" alt="http://kokucheese.com/event/index/52905/" width="300" height="200" />
 </a>
 
-※ちなみに、９月２２日は[アジャイルサムライ読書会 横浜道場 「当てずっぽうの奥義」](http://kokucheese.com/event/index/52905/)が開催されます。どうぞご参加ください#ステマ
+※ちなみに、９月２０日は[アジャイルサムライ読書会 横浜道場 「当てずっぽうの奥義」](http://kokucheese.com/event/index/52905/)が開催されます。どうぞご参加ください#ステマ
 
 
 <hr />

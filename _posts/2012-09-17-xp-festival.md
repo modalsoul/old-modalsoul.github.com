@@ -132,7 +132,8 @@ XPを謳う以上、ふりかえりは当然。
 <a href="https://twitter.com/nohdomi/status/247064138495447040" data-datetime="2012-09-15T20:07:35+00:00">9月 15, 2012
 </a>
 </blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
 <hr />
 
 ## 最後に

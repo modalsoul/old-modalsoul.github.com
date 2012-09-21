@@ -1,141 +1,43 @@
 ---
 layout: post
-title: XP祭り2012～ソーシャルチェンジ～にスタッフ参加してきました　#xpjug 
-tags: XP祭り
+title: Android端末をUSBデバッグ接続してもMacのDDMSで認識されない問題でハマった件について
+tags: Android DDMS Mac
 categories: report
-comment: この記事は、2012年９月１６日に開催された<a href="http://xpjug.com/xp2012/" >XP祭り2012～ソーシャルチェンジ！～</a>についての記事です。主に参加者視点ではなく、１運営スタッフとしての視点で書いています。
-thumbnail: http://xpjug.com/xp2012/
+comment: この記事は、MacでAndroidアプリ開発するべく開発環境を構築したときのメモです。特にハマった現象について、原因と対処法を記録しておきます。
+thumbnail: http://developer.android.com/index.html
 ---
-
 -----------------
 
+## 現象について
+Android端末をUSBケーブルでつないでデバッグ接続しても、EclipseのDDMSで認識されませんでした。
 
-## XP祭りとは？
-アジャイル界隈では言わずもがなのイベントですが、改めて
+PCは、Core2世代のMac book air
 
-以下、XPJUGの公式ページの転載です。
-
-
-<b><i>"日本XPユーザグループ(XPJUG)が主催しているイベントです。
-2002年より毎年秋に開催しています。
-
-当初は、XPJUGコミュニティのスタッフが企画・運営を行ってきましたが、2010年より運営自体をオープンにし、実行委員形式をとっています。 実行委員は、毎年公募しています。"
-</i></b>
-<br/>
-<br/>
-
-
-私は今までXP祭りに参加したことが無かったのですが、実行委員の公募に乗っかり、初参加でスタッフ参加という、突飛な状況になったのでした。
+Android端末は、docomo版Sony EricssonのXperia arc
 
 <hr />
-## スタッフ参加して
-私は、[アジャイルサムライ読書会横浜道場](https://github.com/agile-samurai-ja/support/wiki/Readingagilesamuraiinyokohama)の運営スタッフもさせていただいているのですが、このように大規模（参加者数が数百名にも達する）イベントの運営には携わったことはありませんでした。
+## 原因
+端的に言うと、MBAにインストールされていたEasyTetherのドライバと競合していた為でした。
 
-公募に応募した当初は、実行委員としてコミットできるかどうか？不安に思っていましたが、過去１０回のXP祭りを切り盛りしてきた歴戦のコアスタッフの皆さんに手助けいただき、実行委員としての勤めを果たすことができました。
-
-XP祭り当日にも、「スタッフ参加したい！」という声が聞かれたので、スタッフになることのメリット・デメリットについて書いてみようと思います。
-
-
-<hr />
-## ここがツライよ、実行委員
-やるからには苦難があるものですが、実行委員になってツラかったことをご紹介します。
-
-
-### 当日セッションに参加できない
-
-当たり前と言えば当たり前ですが、当日は運営の仕事があります。
-役割によりけりですが、興味のあるセッションを必ず見られるかというと難しそうです。
-
-今回のXP祭りの場合、私は午前中に受付、午後がD会場付きを担当しました。
-受付は午前中ずっと続く訳ではありませんが、オープニングトークとアジャイルコーチラウンドテーブルの途中までを見ることができませんでした。
-
-午後は、D会場付きなので「スクラムの基本」と「ODC入門」を見学することができ、個人的には願ったり叶ったりの内容でした。
-スタッフの中には、写真撮影を担当し、プレス特権でセッションを縦横無尽に見学する強者もいました。
-
-なので、セッションを見学することはある程度できますが、ワークショップに参加したい場合は少々難儀です。
-
-<hr />
-### 協賛各社様から提供された書籍・グッズがもらえない
-
-スタッフ最大の役損と言えますね。今年のXP祭りでは、協賛各社様から数十(単純な数なら１００近く？)にも及ぶ書籍・グッズが提供されました。[※協賛各社からのご支援](http://xpjug.com/xp2012-sponsor/)
-![協賛各社様からのご支援](http://farm9.staticflickr.com/8031/7995736441_fd620ed66b.jpg)
-
-
-これも公正な運営の為には当たり前のことですが、目の前にこれだけの技術書が積まれると、エンジニアなら誰しも「よ、読みたいっ！」となるのが人情。スタッフは皆泣く泣く我慢しているのです。。
-
-
-<hr />
-## ここが得だよ、実行委員
-人生ツライことばかりではありません、実行委員を勤めて「グフフフ・・得したなぁ～」ということを挙げてみます。
-
-
-### 規模の大きいイベントができていく過程を体験できる
-これだけの規模のイベントの運営はそうそうできるものではありません。
-私は、[アジャイルサムライ読書会横浜道場](https://github.com/agile-samurai-ja/support/wiki/Readingagilesamuraiinyokohama)の運営スタッフもさせてもらっているのですが、これともまた違った運営の醍醐味があります。
-
-クロージングの際、メイン会場に集まった参加者とセッションで高まった熱気、この場の雰囲気は正に圧巻です
-。
-
-<a href="http://kokucheese.com/event/index/52905/">
-<img title="9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」" src="http://capture.heartrails.com/300x200/cool?http://kokucheese.com/event/index/52905/" alt="http://kokucheese.com/event/index/52905/" width="300" height="200" />
+<a href="https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja">
+<img title="Now Capturing..." src="http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja" alt="https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja" width="300" height="200" />
 </a>
 
-※ちなみに、９月２０日は[アジャイルサムライ読書会 横浜道場 「当てずっぽうの奥義」](http://kokucheese.com/event/index/52905/)が開催されます。どうぞご参加ください#ステマ
-
-
 <hr />
-### 講師と話ができる
+## 対処法
+EasyTetherのドライバを削除することで、DDMSでAndroid端末が認識されない問題は解消できます。
 
-セッションの内容によっては、事前に講師と打ち合わせをし、どういった趣旨・内容でセッションを行うのか話をします。
-なにせ運営スタッフですので、当日の講師控え室にだって堂々と入ることができます。
-
-そんな合間合間の時間に、普段なかなかお目にかかる機会の無い講師の方にも直接質問をしたり話を伺うことができます。
-Twitterにメンションを投げるよりも確実に聞きたいことが聞けます。
-
-<a target='_blank' title='豪華アジャイルコーチ陣' href='http://twitter.yfrog.com/kl9tncenj'><img src='http://desmond.yfrog.com/Himg741/scaled.php?tn=0&server=741&filename=9tncen.jpg&xsize=640&ysize=640' border='0'/>
-</a>
+**: 「/System/Library/Extentions」をFinderで開き、「EasyTetherUSBEthernet.kext」を削除する
 
 
-<hr />
-### 登壇して欲しい人やセッション内容を推薦できる
-XP祭りの内容そのものを自分の興味・指向性に合わせることができる、まさに天地創造の如き大技です！
+競合そのものを解消する方法ではないので、EasyTetherが使えなくなりますが、Android2.3以降？の端末では、OSの機能としてテザリングがサポートされているようなので影響は少ないかな、と。
 
-「自分のセッションをやりたい！」という場合も、自分が実行委員になって推薦する、これが一番の近道ですね。
+[こちら](http://gadget-shot.com/news/5757)の記事を参考しました。
 
+## 余談ですが、、
+このMBA、少し前にRuby界隈では有名なJoJoエバンジェリスト”@joker1007”さんに、譲ってもらったものです。このMBAでAndroidアプリの開発をするために環境を準備していた訳です。
 
-<hr />
-## 今後について
-XP祭り2012もつつがなく終了した訳ですが、実行委員の仕事が終わった訳ではありません。
-XPを謳う以上、ふりかえりは当然。
+![my MBA](http://farm9.staticflickr.com/8462/8008426062_ecca73f4dd.jpg)
 
-ということで、もうしばらく後にXP祭り2012のふりかえりが行われると思います。
-そして、今年のXP祭りでの気づきを生かし、来年さらにすばらしいXP祭りになるのではと思います。
+ちなみにこのMBAは、@joker1007仕様のためステッカーはプリインです。
 
-<blockquote class="twitter-tweet" lang="ja">
-<p>つーか、スタッフを募集しております <a href="https://twitter.com/search/%23xpjug">#xpjug
-</a>
-</p>
-&mdash; Yasunobu Kawaguchiさん (@kawaguti) 
-<a href="https://twitter.com/kawaguti/status/246989439409197056" data-datetime="2012-09-15T15:10:45+00:00">9月 15, 2012
-</a>
-</blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8">
-</script>
-
-
-<blockquote class="twitter-tweet" lang="ja">
-<p>XP祭りのスタッフや、TOCの活動に興味を持たれた方、お声かけくださいまし。 
-<a href="https://twitter.com/search/%23xpjug">#xpjug
-</a>
-</p>
-&mdash; nohdomiさん (@nohdomi) 
-<a href="https://twitter.com/nohdomi/status/247064138495447040" data-datetime="2012-09-15T20:07:35+00:00">9月 15, 2012
-</a>
-</blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8">
-</script>
-<hr />
-
-## 最後に
-実行委員として、会場に居合わせた一個人として、非常に多くの経験や気付きをいただきました。
-XP祭りに参加くださった方々、実行委員の皆さん、会場を提供くださった早稲田大学さん、協賛各社様、本当にありがとうございました。

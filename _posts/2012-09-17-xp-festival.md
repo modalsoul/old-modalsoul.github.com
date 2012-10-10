@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XP祭り2012～ソーシャルチェンジ～にスタッフ参加してきました#xpjug 
+title: XP祭り2012～ソーシャルチェンジ～にスタッフ参加してきました　#xpjug 
 tags: XP祭り
 categories: report
 comment: この記事は、2012年９月１６日に開催された<a href="http://xpjug.com/xp2012/" >XP祭り2012～ソーシャルチェンジ！～</a>についての記事です。主に参加者視点ではなく、１運営スタッフとしての視点で書いています。

@@ -21,6 +21,7 @@ npmでlog4jsをインストールします。
 $ npm install log4js
 {% endhighlight %}
 
+<hr />
 
 ## ログ出力のために必要な手順
 
@@ -52,6 +53,8 @@ $ node logging-sample.js
 
 出力形式を指定せずに実行すると、デフォルトで標準出力にログ出力されます。
 
+
+<hr />
 
 ## ログをファイルに出力する手順
 
@@ -114,6 +117,7 @@ log4js.configure({
 <i><b>ただし</b>、パスにしていしたディレクトリは自動で生成はされないので、あらかじめディレクトリを生成しておく必要があります。</i>
 
 
+<hr />
 
 ## ログファイルのローテーションを設定する手順
 <a href="https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender"><img title="Date rolling file appender ・ nomiddlename/log4js-node Wiki ・ GitHub" src="http://capture.heartrails.com/200x150/cool/1350212685200?https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender" alt="https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender" width="200" height="150" />
@@ -159,6 +163,8 @@ getLoggerの引数に、上記で設定したtypeを指定します。
 
 そして午前0時に、現在の"logging.log"が、"logging.log<i>-yyyy-MM-dd</i>"にリネームされ新しい"logging.log"が生成されます。
 
+
+<hr />
 
 ### patternの設定
 

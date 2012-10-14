@@ -98,8 +98,6 @@ getLoggerの引数に、上記で設定したtypeを指定します。
 
 
 ### ログファイルの出力先を変更する
-![Date rolling file appender](http://capture.heartrails.com/200x150/cool?https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender)
-
 appendersのfilenameに、ファイルパスを含めて記載すると、出力先を任意に変更できます。
 
 {% highlight sh %}
@@ -118,7 +116,8 @@ log4js.configure({
 
 
 ## ログファイルのローテーションを設定する手順
-
+<a href="https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender"><img title="Date rolling file appender ・ nomiddlename/log4js-node Wiki ・ GitHub" src="http://capture.heartrails.com/200x150/cool/1350212685200?https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender" alt="https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender" width="200" height="150" />
+</a>
 ログファイルを日次でローテーションするよう設定します。
 
 *1. appenders.jsonを生成

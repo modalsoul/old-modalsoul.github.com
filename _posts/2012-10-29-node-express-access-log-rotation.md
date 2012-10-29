@@ -16,6 +16,7 @@ thumbnail:
 
 *・ [【Node.js】expressでaccess log + log rotate | 湘南社中テクニカルブログ](http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html)
 
+<hr />
 
 ## node.jsとexpressでのアクセスログ
 
@@ -43,6 +44,7 @@ LoggingFrameworkのlog4jsについては、こちらで紹介しています
 <script src="https://gist.github.com/3973839.js">
 </script>
 app.routerの前で、functionを入れログレベルをinfoで出力させています。
+
 
 
 実際にexpressをスタートさせ、ブラウザからアクセスすると以下のようなログが出力されます。

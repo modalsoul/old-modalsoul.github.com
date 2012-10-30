@@ -37,6 +37,8 @@ Javaだと、JavaDocの形式で書いておけば、Eclipse等のIDEを使う�
 
 現状だとJSDocの後継"JsDoc Toolkit"がメジャーなようですが、さらに後継のJSDoc3を使いました。
 
+<hr />
+
 ## JSDoc3のインストール
 JSDoc3をインストールします。
 npmが既にインストールされている前提で
@@ -47,6 +49,7 @@ npm install -g git://github.com/jsdoc3/jsdoc.git
 
 npmはとても便利ですね
 
+<hr />
 
 ## アノテーションの記述
 
@@ -61,6 +64,7 @@ Javaと同じく"/** ... */ "で囲まれた部分がアノテーションとな
 <img title="expressSample/app.js at master ・ modalsoul/expressSample ・ GitHub" src="http://capture.heartrails.com/200x150/cool/1351634631326?https://github.com/modalsoul/expressSample/blob/master/app.js" alt="https://github.com/modalsoul/expressSample/blob/master/app.js" width="200" height="150" />
 </a>
 
+<hr />
 
 ## タグの種類
 上記のサンプルでは@param, @return, @moduleの3種類しか使っていませんが、JSDocには他にもタグが用意されているようです。
@@ -89,8 +93,10 @@ Javaと同じく"/** ... */ "で囲まれた部分がアノテーションとな
 
  @version  @since  @deprecated  @see  @author 
  
- 
-### ドキュメントの生成
+
+<hr />
+
+## ドキュメントの生成
 JSDocを実行して、ドキュメントを生成します。
 
 {% highlight sh %}

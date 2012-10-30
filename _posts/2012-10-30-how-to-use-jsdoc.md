@@ -6,8 +6,8 @@ categories: report
 comment: この記事は、node.js+JSDoc3によるインラインAPIドキュメントの生成についてのメモ書きです。
 thumbnail: 
 ---
-<a href="http://www.flickr.com/photos/kuromatsunai/3024100752/" title="足跡 - Footprint - by kuromatsunai.info, on Flickr">
-<img src="http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg" width="320" height="240" alt="足跡 - Footprint -">
+<a href="http://www.flickr.com/photos/pixagraphic/3414730395/" title="Old Documents by pixagraphic, on Flickr">
+<img src="http://farm4.staticflickr.com/3586/3414730395_7dedac534b_n.jpg" width="320" height="213" alt="Old Documents">
 </a>
 -----------------
 ## 謝辞
@@ -97,5 +97,5 @@ JSDocを実行して、ドキュメントを生成します。
 jsdoc app.js
 {% endhighlight %}
 
-[生成されたドキュメントはこちら](http://modalsoul.github.com/sample/jsdoc-out)
+[生成されたドキュメントはこちら](http://modalsoul.github.com/assets/sample/jsdoc-out/56ea328d1a.html)
 

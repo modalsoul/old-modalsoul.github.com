@@ -52,7 +52,7 @@ function process() {
 }
 -->
 </script>
-<div>
+
 <form name="calc">
 <table>
 <tr>
@@ -79,10 +79,12 @@ function process() {
 <th>エビの匹数:</th>
 <td><input type="text" name="shrimp" /></td>
 </tr>
+<tr onclick="process()">
+計算する
+</tr>
 </table>
-<input type="button" value="計算する" onclick="process()" />
 </form>
-</div>
+
 <hr />
 
 <form name="edit-size">

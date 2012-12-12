@@ -1,0 +1,94 @@
+---
+layout: page
+title: Fish Counter
+---
+<script type="text/javascript">
+<!--
+function process() {
+	var height = document.calc.height.value;
+	var width = document.calc.width.value;
+	var depth = document.calc.depth.value;
+	var soil = document.calc.soil.value;
+	var water_level = document.calc.water_level.value;
+	var shrimp = document.calc.shrimp.value;
+	// 体長による補正
+	var coefficient = document.getElementById('size').value / 3;
+
+	// 1匹あたりの必要水量の計算
+	var group_swimming_fish = 1*coefficient;
+	var non_group_swimming_fish = 1.5*coefficient;
+	var mix_group = 2*coefficient;
+	var mix_non_group = 3*coefficient;
+
+	// エビに必要な水量
+	var shrimp_water = shrimp/10;
+	// 水槽の水量
+	var capacity = ((height - water_level) * width * depth)/1000 - shrimp_water - soil;
+	
+	// 小型群雄魚のみ
+	var group_swimming_fish_only = capacity/group_swimming_fish;
+	// 非群遊魚のみ
+	var non_group_swimming_fish_only = capacity/non_group_swimming_fish;
+	// 異層の混泳で小型群雄魚のみ
+	var group_mix_difficult_layer = capacity/group_swimming_fish;
+	// 異層の混泳で非群遊魚のみ
+	var non_group_mix_difficult_layer = capacity/non_group_swimming_fish;
+	// 同層の混泳で小型群雄魚のみ
+	var group_mix_same_layer = capacity/mix_group;
+	// 同層の混泳で非群遊魚のみ
+	var non_group_mix_same_layer = capacity/mix_non_group;
+		
+	var txt = '小型群雄魚の単一種飼育なら' + Math.floor(group_swimming_fish_only) + '匹' +'<br/>'+ 
+			  '非群遊魚の単一種飼育なら' + Math.floor(non_group_swimming_fish_only) + '匹' +'<br/>'+ 
+			  '異層の混泳で小型群雄魚の混泳なら' + Math.floor(group_mix_difficult_layer) + '匹' +'<br/>'+ 
+			  '異層の混泳で非群遊魚の混泳なら' + Math.floor(non_group_mix_difficult_layer) + '匹' +'<br/>'+ 
+			  '同層の混泳で小型群雄魚の混泳なら' + Math.floor(group_mix_same_layer) + '匹' +'<br/>'+ 
+			  '同層の混泳で非群遊魚の混泳なら' + Math.floor(non_group_mix_same_layer) + '匹' +'<br/>'; 
+	
+	var result = document.getElementById('result');
+	
+	result.innerHTML = txt;
+	
+}
+-->
+</script>
+
+<form name="calc">
+<table>
+<tr>
+<th>水槽の高さ(cm):</th>
+<td><input type="text" name="height" size="10" /></td>
+</tr>
+<tr>
+<th>水槽の幅(cm):</th>
+<td><input type="text" name="width" size="10" /></td>
+</tr>
+<tr>
+<th>水槽の奥行き(cm):</th>
+<td><input type="text" name="depth" size="10" /></td>
+</tr>
+<tr>
+<th>水槽の水位(上から)(cm):</th>
+<td><input type="text" name="water_level" size="10" /></td>
+</tr>
+<tr>
+<th>ソイルの量(L):</th>
+<td><input type="text" name="soil" size="10" /></td>
+</tr>
+<tr>
+<th>エビの匹数:</th>
+<td><input type="text" name="shrimp" size="10" /></td>
+</tr>
+<tr>
+<input type="button" value="計算する" onclick="process()" />
+</tr>
+</table>
+</form>
+
+
+<form name="edit-size">
+体長<input type="text" id="size" value="3" size="2" />cmの場合
+<p>※体長は10cm以下</p>
+<input type="button" value="大きさを変更" onclick="process()" />
+</form>
+<div id="result"></div>

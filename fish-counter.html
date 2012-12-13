@@ -4,6 +4,14 @@ title: Fish Counter
 ---
 <script type="text/javascript">
 <!--
+function clearCalc() {
+	document.calc.height.value = "";
+	document.calc.width.value = "";
+	document.calc.depth.value = "";
+	document.calc.soil.value = "";
+	document.calc.water_level.value = "";
+	document.calc.shrimp.value = "";
+}
 function process() {
 	var height = document.calc.height.value;
 	var width = document.calc.width.value;
@@ -45,9 +53,19 @@ function process() {
 			  '同層の混泳で小型群雄魚の混泳なら' + Math.floor(group_mix_same_layer) + '匹' +'<br/>'+ 
 			  '同層の混泳で非群遊魚の混泳なら' + Math.floor(non_group_mix_same_layer) + '匹' +'<br/>'; 
 	
-	var result = document.getElementById('result');
-	
-	result.innerHTML = txt;
+	var pattern1 = document.getElementById('pattern1');
+	var pattern2 = document.getElementById('pattern2');
+	var pattern3 = document.getElementById('pattern3');
+	var pattern4 = document.getElementById('pattern4');
+	var pattern5 = document.getElementById('pattern5');
+	var pattern6 = document.getElementById('pattern6');	
+
+	pattern1.innerHTML = Math.floor(group_swimming_fish_only) + '匹';
+	pattern2.innerHTML = Math.floor(non_group_swimming_fish_only) + '匹';
+	pattern3.innerHTML = Math.floor(group_mix_difficult_layer) + '匹';
+	pattern4.innerHTML = Math.floor(non_group_mix_difficult_layer) + '匹';
+	pattern5.innerHTML = Math.floor(group_mix_same_layer) + '匹';
+	pattern6.innerHTML = Math.floor(non_group_mix_same_layer) + '匹';
 	
 }
 -->
@@ -80,7 +98,10 @@ function process() {
 <td><input type="text" name="shrimp" /></td>
 </tr>
 </table>
-<input type="button" class="btn" value="計算する" onclick="process()" />
+<div class="btn-group">
+<button class="btn" onclick="process()">計算する</button>
+<button class="btn" onclick="clearCalc()">クリア</button>
+</div>
 </form>
 
 <hr />
@@ -88,6 +109,33 @@ function process() {
 <form name="edit-size">
 体長<input type="text" id="size" value="3" size="2" />cmの場合
 <p>※体長は10cm以下</p>
-<input type="button" value="大きさを変更" onclick="process()" />
+<input type="button" class="btn" value="大きさを変更" onclick="process()" />
 </form>
-<div id="result"></div>
+<div id="result">
+<table>
+<tr>
+<th>小型群雄魚の単一種飼育なら</th>
+<td id="pattern1"></td>
+</tr>
+<tr>
+<th>非群遊魚の単一種飼育なら</th>
+<td id="pattern2"></td>
+</tr>
+<tr>
+<th>異層の混泳で小型群雄魚の混泳なら</th>
+<td id="pattern3"></td>
+</tr>
+<tr>
+<th>異層の混泳で非群遊魚の混泳なら</th>
+<td id="pattern4"></td>
+</tr>
+<tr>
+<th>同層の混泳で小型群雄魚の混泳なら</th>
+<td id="pattern5"></td>
+</tr>
+<tr>
+<th>同層の混泳で非群遊魚の混泳なら</th>
+<td id="pattern6"></td>
+</tr>
+
+</div>

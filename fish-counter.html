@@ -72,70 +72,73 @@ function process() {
 </script>
 
 <form name="calc">
-<table>
-<tr>
-<th>水槽の高さ(cm):</th>
-<td><input type="text" name="height" /></td>
-</tr>
-<tr>
-<th>水槽の幅(cm):</th>
-<td><input type="text" name="width" /></td>
-</tr>
-<tr>
-<th>水槽の奥行き(cm):</th>
-<td><input type="text" name="depth" /></td>
-</tr>
-<tr>
-<th>水槽の水位(上から)(cm):</th>
-<td><input type="text" name="water_level" /></td>
-</tr>
-<tr>
-<th>ソイルの量(L):</th>
-<td><input type="text" name="soil" /></td>
-</tr>
-<tr>
-<th>エビの匹数:</th>
-<td><input type="text" name="shrimp" /></td>
-</tr>
-</table>
-<div class="btn-group">
-<button class="btn" onclick="process()">計算する</button>
-<button class="btn" onclick="clearCalc()">クリア</button>
-</div>
+	<table>
+		<tr>
+			<th>水槽の高さ(cm):</th>
+			<td><input type="text" name="height" /></td>
+		</tr>
+		<tr>
+			<th>水槽の幅(cm):</th>
+			<td><input type="text" name="width" /></td>
+		</tr>
+		<tr>
+			<th>水槽の奥行き(cm):</th>
+			<td><input type="text" name="depth" /></td>
+		</tr>
+		<tr>
+			<th>水槽の水位(上から)(cm):</th>
+			<td><input type="text" name="water_level" /></td>
+		</tr>
+		<tr>
+			<th>ソイルの量(L):</th>
+			<td><input type="text" name="soil" /></td>
+		</tr>
+		<tr>
+			<th>エビの匹数:</th>
+			<td><input type="text" name="shrimp" /></td>
+		</tr>
+	</table>
+
+	<div class="btn-group">
+		<button class="btn" onclick="process()">計算する</button>
+		<button class="btn" onclick="clearCalc()">クリア</button>
+	</div>
 </form>
 
 <hr />
 
 <form name="edit-size">
-体長<input type="text" id="size" value="3" size="2" />cmの場合
-<p>※体長は10cm以下</p>
-<input type="button" class="btn" value="大きさを変更" onclick="process()" />
+	体長
+	<input type="text" id="size" value="3" size="2" />cmの場合
+	<p>※体長は10cm以下</p>
+	<input type="button" class="btn" value="大きさを変更" onclick="process()" />
 </form>
-<div id="result">
-<table>
-<tr>
-<th>小型群雄魚の単一種飼育なら</th>
-<td id="pattern1"></td>
-</tr>
-<tr>
-<th>非群遊魚の単一種飼育なら</th>
-<td id="pattern2"></td>
-</tr>
-<tr>
-<th>異層の混泳で小型群雄魚の混泳なら</th>
-<td id="pattern3"></td>
-</tr>
-<tr>
-<th>異層の混泳で非群遊魚の混泳なら</th>
-<td id="pattern4"></td>
-</tr>
-<tr>
-<th>同層の混泳で小型群雄魚の混泳なら</th>
-<td id="pattern5"></td>
-</tr>
-<tr>
-<th>同層の混泳で非群遊魚の混泳なら</th>
-<td id="pattern6"></td>
-</tr>
 
+<div id="result">
+	<table>
+		<tr>
+			<th>小型群雄魚の単一種飼育なら</th>
+			<td id="pattern1"></td>
+		</tr>
+		<tr>
+			<th>非群遊魚の単一種飼育なら</th>
+			<td id="pattern2"></td>
+		</tr>
+		<tr>
+			<th>異層の混泳で小型群雄魚の混泳なら</th>
+			<td id="pattern3"></td>
+		</tr>
+		<tr>
+			<th>異層の混泳で非群遊魚の混泳なら</th>
+			<td id="pattern4"></td>
+		</tr>
+		<tr>
+			<th>同層の混泳で小型群雄魚の混泳なら</th>
+			<td id="pattern5"></td>
+		</tr>
+		<tr>
+			<th>同層の混泳で非群遊魚の混泳なら</th>
+			<td id="pattern6"></td>
+		</tr>
+	</table>
 </div>

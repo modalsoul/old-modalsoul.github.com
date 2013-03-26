@@ -1,6 +1,6 @@
 
 ---
-layout:pages
+layout:post
 title:Upgrading Kobold2D Projects
 tags: Kobold2D Cocos2D Document
 categories: Reference

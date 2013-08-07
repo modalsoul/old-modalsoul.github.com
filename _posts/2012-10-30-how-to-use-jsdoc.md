@@ -14,8 +14,8 @@ thumbnail:
 以下の記事を参考にさせていただきました。感謝です。
 
 
-*・ [JsDoc3-manual-jp](https://sites.google.com/site/jsdoc3manualjp/)
-*・ [JavaScript対応APIドキュメント生成ツールのまとめ | Web scratch](http://efcl.info/2011/0226/res2291/)
+*・ [JsDoc3-manual-jp](https://sites.google.com/site/jsdoc3manualjp/) *
+*・ [JavaScript対応APIドキュメント生成ツールのまとめ | Web scratch](http://efcl.info/2011/0226/res2291/) *
 
 <hr />
 
@@ -54,11 +54,11 @@ npmはとても便利ですね
 ## アノテーションの記述
 
 ドキュメントに落としたいオブジェクトの直前にJSDocアノテーションを追加します。
-Javaと同じく"/** ... */ "で囲まれた部分がアノテーションとなります。
+Javaと同じく"/＊＊... ＊/ "で囲まれた部分がアノテーションとなります。
 
-タグは、"@... "で記述します。
+タグは、"＠... "で記述します。
 
-実際にnode.js+expressのコードにアノテーションを追加してみました。
+実際にnode.js＋expressのコードにアノテーションを追加してみました。
 
 <a href="https://github.com/modalsoul/expressSample/blob/master/app.js">
 <img title="expressSample/app.js at master ・ modalsoul/expressSample ・ GitHub" src="http://capture.heartrails.com/200x150/cool/1351634631326?https://github.com/modalsoul/expressSample/blob/master/app.js" alt="https://github.com/modalsoul/expressSample/blob/master/app.js" width="200" height="150" />

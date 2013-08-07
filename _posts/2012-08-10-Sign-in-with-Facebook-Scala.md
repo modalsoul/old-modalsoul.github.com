@@ -20,7 +20,7 @@ categories: Programing
 
 <hr />
 
-*1)Facebook APIを作る（※既に持っている場合不要です）
+*1)Facebook APIを作る（※既に持っている場合不要です）*
 
 次のリンクを参考にアプリを作ってください。サイトURLを含む全ての詳細を記入してエンターします。サイトURLは以下のような感じになります。
 
@@ -34,7 +34,7 @@ http://www.com/api/facebook/auth
 
 <hr />
 
-*2) Liftを使っている場合は、各キーをdefault.propsに追加設定します。
+*2) Liftを使っている場合は、各キーをdefault.propsに追加設定します。*
 
 {% highlight sh %}
 facebook.key=<your_key>
@@ -45,12 +45,12 @@ facebook.callbackurl=/api/facebook/auth
 
 <hr />
 
-*3) Facebookログイン画像[fb.png](http://sandthre34.wapka.mobi/download-43-23c50858c8a88d7a9397/fb.png?PHPSESSID=3b88fe8fb9bb628c5beb8870fd0e367c)をダウンロードします
+*3) Facebookログイン画像[fb.png](http://sandthre34.wapka.mobi/download-43-23c50858c8a88d7a9397/fb.png?PHPSESSID=3b88fe8fb9bb628c5beb8870fd0e367c)をダウンロードします*
 
 
 <hr />
 
-*4) アプリキー/APIキー/秘密鍵とコールバックURLを設定するために、FacebookGraph.scalaを新規作成します。またFacebookからアクセストークンを要求するためにこのScalaファイルを使用します。
+*4) アプリキー/APIキー/秘密鍵とコールバックURLを設定するために、FacebookGraph.scalaを新規作成します。またFacebookからアクセストークンを要求するためにこのScalaファイルを使用します。*
 
 
 <script src="https://gist.github.com/3310411.js?file=FacebookGraph.scala">
@@ -60,7 +60,7 @@ facebook.callbackurl=/api/facebook/auth
 <hr />
 
 
-*5) 次にログインページにFacebookログインリンクを表示するためにFacebook素にペットを作成します。
+*5) 次にログインページにFacebookログインリンクを表示するためにFacebook素にペットを作成します。*
 
 <script src="https://gist.github.com/3310425.js?file=Facebook.scala">
 </script>
@@ -68,7 +68,7 @@ facebook.callbackurl=/api/facebook/auth
 
 <hr />
 
-*6) login.htmlにFacebookログインリンクを追加します。
+*6) login.htmlにFacebookログインリンクを追加します。*
 
 {% highlight sh %}
 <div class="span4">
@@ -79,7 +79,7 @@ facebook.callbackurl=/api/facebook/auth
 
 <hr />
 
-*7) SiteMap.scalaにFacebook接続メニューを作ります。
+*7) SiteMap.scalaにFacebook接続メニューを作ります。*
 
 {% highlight sh %}
 val facebookConnect = MenuLoc(
@@ -91,7 +91,7 @@ val facebookConnect = MenuLoc(
 
 <hr />
 
-*8) 最後に、Facebookからレスポンスを受け取るためのFacebook.apiを作成します。
+*8) 最後に、Facebookからレスポンスを受け取るためのFacebook.apiを作成します。*
 
 <script src="https://gist.github.com/3310432.js?file=FacebookApiStateful.scala">
 </script>

@@ -14,7 +14,7 @@ thumbnail:
 以下の記事を参考にさせていただきました。感謝です。
 
 
-*・ [【Node.js】expressでaccess log + log rotate | 湘南社中テクニカルブログ](http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html)
+*・ [【Node.js】expressでaccess log + log rotate | 湘南社中テクニカルブログ](http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html)*
 
 <hr />
 

@@ -25,25 +25,25 @@ $ npm install log4js
 
 ## ログ出力のために必要な手順
 
-*1. log4jsを読み込む
+*1. log4jsを読み込む*
 
 {% highlight sh %}
 var log4js = require('log4js');
 {% endhighlight %}
 
-*2. loggerを取得する
+*2. loggerを取得する*
 
 {% highlight sh %}
 var logger = log4js.getLogger();
 {% endhighlight %}
 
-*3. ログレベルを指定して、ログ出力する
+*3. ログレベルを指定して、ログ出力する*
 
 {% highlight sh %}
 logger.info('This is test.');
 {% endhighlight %}
 
-*4．実行結果
+*4．実行結果*
 
 {% highlight sh %}
 $ node logging-sample.js
@@ -60,7 +60,7 @@ $ node logging-sample.js
 
 ログの出力先を標準出力からファイルに変更します。
 
-*1. appenders.jsonを生成
+*1. appenders.jsonを生成*
 
 {% highlight sh %}
 appenders: [{
@@ -70,7 +70,7 @@ appenders: [{
 {% endhighlight %}
 
 
-*2. log4jsに設定を反映
+*2. log4jsに設定を反映*
 
 {% highlight sh %}
 log4js.configure({
@@ -82,7 +82,7 @@ log4js.configure({
 {% endhighlight %}
 
 
-*3. loggerを取得する
+*3. loggerを取得する*
 
 {% highlight sh %}
 var logger = log4js.getLogger('file');
@@ -91,7 +91,7 @@ var logger = log4js.getLogger('file');
 getLoggerの引数に、上記で設定したtypeを指定します。
 
 
-*4．実行結果
+*4．実行結果*
 
 実行すると、プロダクトと同じ階層に"logger.log"ファイルが生成され、以下のように出力されます。
 
@@ -124,7 +124,7 @@ log4js.configure({
 </a>
 ログファイルを日次でローテーションするよう設定します。
 
-*1. appenders.jsonを生成
+*1. appenders.jsonを生成*
 
 {% highlight sh %}
 appenders: [{
@@ -135,7 +135,7 @@ appenders: [{
 {% endhighlight %}
 
 
-*2. log4jsに設定を反映する
+*2. log4jsに設定を反映する*
 
 log4js.configure({
 	appenders: [{
@@ -148,7 +148,7 @@ log4js.configure({
 ここで設定している"pattern"は、ローテーションで生成されるログファイル名のpostfixです。
 
 
-*3. loggerを取得する
+*3. loggerを取得する*
 
 {% highlight sh %}
 var logger = log4js.getLogger('dateFile');
@@ -157,7 +157,7 @@ var logger = log4js.getLogger('dateFile');
 getLoggerの引数に、上記で設定したtypeを指定します。
 
 
-*4. ローテーションの動作
+*4. ローテーションの動作*
 
 上記設定の場合、初回起動時は"filename"の設定値の"logging.log"という名前のログファイルが生成されます。
 
@@ -172,21 +172,21 @@ patternの設定は、ローテーションされたファイルのpostfixにな
 
 patternの設定は、以下の書式が適用されます。
 
-*・ yyyy : 西暦を4桁表示します。2桁表示するには"yy"を指定します。
+*・ yyyy : 西暦を4桁表示します。2桁表示するには"yy"を指定します。*
 
-*・ MM : 月
+*・ MM : 月*
 
-*・ dd : 日
+*・ dd : 日*
 
-*・ hh : 時間(24時間表示)
+*・ hh : 時間(24時間表示)*
 
-*・ mm : 分
+*・ mm : 分*
 
-*・ ss : 秒
+*・ ss : 秒*
 
-*・ sss : ミリ秒
+*・ sss : ミリ秒*
 
-*・ O : タイムゾーン（大文字のOです）
+*・ O : タイムゾーン（大文字のOです）*
 
 
 これでnode.js+log4jsで、ログローテーションできるようになりました。

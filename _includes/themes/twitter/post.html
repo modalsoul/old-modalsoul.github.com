@@ -1,149 +1,130 @@
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-</script>
+
 <div class="page-header">
-	<h1>{{ page.title }} 
-		<small>
-			{{% assign tags in page.tags %}} 
-			{{% include helpers/tags_list.html %}}
-		</small>
-	</h1>
-	
-	<div id="social-button" style="padding-left:20px">
-		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.com{{ page.url }}/" data-via="modal_soul" data-lang="ja">ツイート</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-		</script>
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  <div id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io{{ page.url }}/" data-via="modal_soul" data-lang="ja">ツイート</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
 			
-		<a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.com{{ page.url }}/" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ page.title }}" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
-			<img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
-		</a>
-		<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
-		</script>
+    <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io{{ page.url }}/" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ page.title }}" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+      <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+    </a>
+    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+    </script>
 	
-		<!-- このタグを +1 ボタンを表示する場所に挿入してください -->
-		<g:plusone size="medium"></g:plusone>
+    <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+    <g:plusone size="medium"></g:plusone>
 
-		<!-- この render 呼び出しを適切な位置に挿入してください -->
-		<script type="text/javascript">
-	  	window.___gcfg = {lang: 'ja'};
-
-	  	(function() {
-	    	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-	    	po.src = 'https://apis.google.com/js/plusone.js';
-	    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	  	})();
-		</script>
+    <!-- この render 呼び出しを適切な位置に挿入してください -->
+    <script type="text/javascript">
+      window.___gcfg = {lang: 'ja'};
+  	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	  </script>
 	
-		<div class="fb-like" data-href="http://modalsoul.github.com{{ page.url }}/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
-		</div>
-	</div>
+    <div class="fb-like" data-href="http://modalsoul.github.io{{ page.url }}/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+    </div>
+  </div>
 </div>
 
-<div class="row">
-	<div class="span10">
-		<div id="thumbnail">
-			{% unless page.thumbnail == empty %}
-				{% assign reference_url = page.thumbnail %}
-				{% unless page.comment == empty %}
-					{% assign comment = page.comment %}
-					{% include helpers/reference_thumbnail.html %}
-				{% endunless %}
-			{% endunless %}			
-		</div>
-{{ content }}
+<div class="row-fluid">
+  <div class="span9">
+    <div class="content">
+      <div id="thumbnail">
+      	{% unless page.thumbnail == empty %}
+          {% assign reference_url = page.thumbnail %}
+          {% unless page.comment == empty %}
+            {% assign comment = page.comment %}
+            {% include helpers/reference_thumbnail.html %}
+          {% endunless %}
+        {% endunless %}			
+	 </div>
+      {{ content }}
+    </div>
+    <hr>
 
-		<hr />
-		
+  {% unless page.categories == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
+    </ul>
+  {% endunless %}  
 
-    	<div class="share">
-	    	<a href="https://twitter.com/share" class="twitter-share-button" data-via="modal_soul" data-lang="ja">ツイート</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-			</script>
-			<a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.com{{ page.url }}" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ page.title }}" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
-			</a>
-			<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
-			</script>
-			<!-- このタグを +1 ボタンを表示する場所に挿入してください -->
-			<g:plusone size="medium"></g:plusone>
-<!--<div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
--->
-		</div>
-
-		<div id="disqus_thread"></div>
-			<script type="text/javascript">
-	    	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	    	var disqus_shortname = 'modalsoul'; // required: replace example with your forum shortname
-
-	    	/* * * DON'T EDIT BELOW THIS LINE * * */
-	    	(function() {
-	        	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        	dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	        	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    	})();
-			</script>
-			<noscript>Please enable JavaScript to view the 
-				<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-			</noscript>
-			<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>		
-
-    		<hr />
-    		<SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/modalsoul-22/8004/63a6c3cc-a1fe-409c-92f6-d656ddde480a"> 
-			</SCRIPT> 
-			<NOSCRIPT>
-				<A HREF="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fmodalsoul-22%2F8004%2F63a6c3cc-a1fe-409c-92f6-d656ddde480a&Operation=NoScript">Amazon.co.jp ウィジェット</A>
-			</NOSCRIPT>
-			<hr />
-    		<div class="pagination">
-      			<ul>
-      			{% if page.previous %}
-        		<li class="prev">
-        			<a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
-        		</li>
-      			{% else %}
-        		<li class="prev disabled">
-        			<a>&larr; Previous</a>
-        		</li>
-      			{% endif %}
-        		<li>
-        			<a href="/archive.html">Archive</a>
-        		</li>
-      			{% if page.next %}
-        		<li class="next">
-        			<a href="{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
-        		</li>
-      			{% else %}
-        		<li class="next disabled">
-        			<a>Next &rarr;</a>
-        		</li>
-      			{% endif %}
-      		</ul>
-    	</div>    
-  	</div>
-  	<div class="span4">
-
-  	<!-- Summer Wars Clock -->
-  	<!--
-  	<iframe src="http://swclock.loftimg.jp/blogparts/?country=JPN" scrolling="no" frameborder="0" style="border:none;overflow:hidden;display:block;width:200px; height:150px;" allowTransparency="true"></iframe>
-	-->  
-    <h4>Published</h4>
+  {% unless page.tags == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+    </ul>
+  {% endunless %}  
+  <hr>
+  <div  id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="modal_soul" data-lang="ja">ツイート</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	  </script>
+	  <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io{{ page.url }}" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ page.title }}" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+	    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+	  </a>
+	  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+	  </script>
+	  <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+	  <g:plusone size="medium"></g:plusone>
+	  <div class="fb-like" data-href="http://modalsoul.github.io{{ page.url }}/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+	  </div>
+	</div>
+    <hr>
+    <SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/modalsoul-22/8004/63a6c3cc-a1fe-409c-92f6-d656ddde480a"> 
+	</SCRIPT> 
+	<NOSCRIPT>
+	  <A HREF="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fmodalsoul-22%2F8004%2F63a6c3cc-a1fe-409c-92f6-d656ddde480a&Operation=NoScript">Amazon.co.jp ウィジェット</A>
+	</NOSCRIPT>
     
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
-
-  		{% unless page.tags == empty %}
-    	<h4>Tags</h4>
-    	<ul class="tag_box">
-    	{% assign tags_list = page.tags %}
-    	{% include helpers/tags_list.html %}
-    	</ul>
-  		{% endunless %}  
-  		
-	<script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+      {% endif %}
+      </ul>
+    </div>
+    <hr>
+    {% include JB/comments %}
+  </div>
+  
+  <div class="span3">
+    <h4>Published</h4>
+    <div class="date">
+      <span>{{ page.date | date_to_long_string }}</span>
+    </div>
+    <h4>Category</h4>
+    {% unless page.categories == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
+    </ul>
+    {% endunless %}  
+    <h4>Tag</h4>
+    {% unless page.tags == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+    </ul>
+    {% endunless %}  
+    <hr>
+    <script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
 	</script>
 	<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>
   		
@@ -187,5 +168,6 @@
 		<script type="text/javascript"
 		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 		</script>
- 	 </div>
+
+  </div>
 </div>

@@ -85,25 +85,44 @@ JsTestDriverで非同期処理のテストを使用とすると、
 Sinon.jsでやったほうがいいところも（多々）あるそうです。
 
 この辺りは適材適所で使い分けるのがポイントのようです。
-<blockquote class="twitter-tweet" lang="ja"><p>ajaxのテストは、jsTestDriverだけじゃなくて、Sinon.jsとか、jqMockとか、使うといいんじゃない? 適材適所大切。 <a href="https://twitter.com/search/%2523JSTDD">#JSTDD</a></p>&mdash; gochoさん (@gocho) <a href="https://twitter.com/gocho/status/173642294325555202" data-datetime="2012-02-26T05:35:23+00:00">2月 26, 2012</a></blockquote>
+<blockquote class="twitter-tweet" lang="ja">
+<p>ajaxのテストは、jsTestDriverだけじゃなくて、Sinon.jsとか、jqMockとか、使うといいんじゃない? 適材適所大切。 
+<a href="https://twitter.com/search/%2523JSTDD">#JSTDD
+</a>
+</p>&mdash; gochoさん (@gocho) 
+<a href="https://twitter.com/gocho/status/173642294325555202" data-datetime="2012-02-26T05:35:23+00:00">2月 26, 2012
+</a>
+</blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8">
 </script>
 
-##@azu_reさん発表
-###WebStormについて
+## @azu_reさん発表 ##
+### WebStormについて ###
 私は使ったこと無かったのですが、シェアウェアのIDEなんだそうです。
 
-<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/search/%2523JSTDD">#JSTDD</a> 発表中のスライド "WebStorm指南書" <a href="http://t.co/t72fnvYh" title="http://bit.ly/wbPl1J">bit.ly/wbPl1J</a></p>&mdash; azuさん (@azu_re) <a href="https://twitter.com/azu_re/status/173658374586646528" data-datetime="2012-02-26T06:39:17+00:00">2月 26, 2012</a></blockquote>
+<blockquote class="twitter-tweet" lang="ja">
+<p>
+<a href="https://twitter.com/search/%2523JSTDD">#JSTDD</a>
+ 発表中のスライド "WebStorm指南書" 
+ <a href="http://t.co/t72fnvYh" title="http://bit.ly/wbPl1J">bit.ly/wbPl1J
+ </a>
+ </p>
+ &mdash; azuさん (@azu_re) 
+<a href="https://twitter.com/azu_re/status/173658374586646528" data-datetime="2012-02-26T06:39:17+00:00">2月 26, 2012
+</a>
+</blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8">
 </script>
 
-有償なだけあり、豊富な機能が提供されていてとても便利そうな印象でした。
+有償なだけあり、豊富な機能が提供されていてとても便利そうな印象でした。＠azu_reさんの資料がとても良くまとめられていらっしゃるので、詳細は 
+[こちら](http://azu.github.com/slide/webstorm/webstorm.html) 
+を見てもらったほうがいいと思います。
 
-@azu_reさんの資料がとても良くまとめられていらっしゃるので、詳細は[こちら](http://azu.github.com/slide/webstorm/webstorm.html)を見てもらったほうがいいと思います。
-![WebStorm指南書](http://capture.heartrails.com/200x150/cool?http://azu.github.com/slide/webstorm/webstorm.html)
+![WebStorm指南書](http://capture.heartrails.com/200x150/cool?http://azu.github.com/slide/webstorm/webstorm.html) 
 
-##@os0xさん発表
-###jasmine-headless-webkitについて
+## ＠os0xさん発表 ##
+### jasmine-headless-webkitについて ###
+
 ![jasmine-headless-webkit -- The fastest way to run your Jasmine specs!](http://capture.heartrails.com/200x150/cool?http://johnbintz.github.com/jasmine-headless-webkit/)
 
 JasmineのspecをCUI環境でいい感じにテストできるツールなんだそうです
@@ -116,14 +135,14 @@ JasmineのspecをCUI環境でいい感じにテストできるツールなんだ
 ##まとめ
 全体を通して、なかなかコアな話が聞けてとてもためになりました。
 
-[テスト駆動JavaScript](http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_tl?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4048707868)を去年読みはじめてから、
-もっと勉強しよう、と思いつつなかなか手がつけられずにいたので、
-とてもいい機会になりました。
+[テスト駆動JavaScript](http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_tl?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4048707868) 
 
-<a href="http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4048707868"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=4048707868&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" ></a><img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4048707868" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+を去年読みはじめてから、もっと勉強しよう、と思いつつなかなか手がつけられずにいたので、とてもいい機会になりました。
 
 
-今回の内容を踏まえつつ、
+<a href="http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4048707868"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=4048707868&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" /></a>
 
-Jenkinsとからめてビルドパイプラインを構築するのが当面の目標ですね。
+<img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4048707868" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+今回の内容を踏まえつつ、Jenkinsとからめてビルドパイプラインを構築するのが当面の目標ですね。
 

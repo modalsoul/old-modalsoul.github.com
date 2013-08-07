@@ -15,11 +15,11 @@ thumbnail: http://www.jamesward.com/2011/10/19/running-play-framework-scala-apps
 
 <hr />
 
-*Step1) [Play Framework](http://www.playframework.org/download)をインストールします（バージョン1.2.3以上をインストールしてください)。
+*Step1) [Play Framework](http://www.playframework.org/download)をインストールします（バージョン1.2.3以上をインストールしてください)。*
 
 <hr />
 
-*Step2) Play Scalaモジュールをインストールします。
+*Step2) Play Scalaモジュールをインストールします。*
 
 {% highlight sh %}
 play install scala
@@ -27,7 +27,7 @@ play install scala
 
 <hr />
 
-*Step3) ScalaサポートしたPlayアプリを作成します。
+*Step3) ScalaサポートしたPlayアプリを作成します。*
 
 {% highlight sh %}
 play new playwithscala --with scala
@@ -36,7 +36,7 @@ play new playwithscala --with scala
 
 <hr />
 
-*Step4) アプリケーションをスタートします。
+*Step4) アプリケーションをスタートします。*
 
 {% highlight sh %}
 cd playwithscala
@@ -46,7 +46,7 @@ play run
 <hr />
 
 
-*Step5) ブラウザでアプリケーションを開きます。
+*Step5) ブラウザでアプリケーションを開きます。*
 
 {% highlight sh %}
 http://localhost:9000
@@ -58,7 +58,7 @@ http://localhost:9000
 
 <hr />
 
-*Step1) app/models/Widget.scalaを新規作成して、以下を記述します。
+*Step1) app/models/Widget.scalaを新規作成して、以下を記述します。*
 
 {% highlight sh %}
 package models
@@ -69,7 +69,7 @@ case class Widget(id: Int, name: String)
 
 <hr />
 
-*Step2) app/views/Widget/list.scala.htmlファイルを新規作成して、以下を記述します。
+*Step2) app/views/Widget/list.scala.htmlファイルを新規作成して、以下を記述します。*
 
 {% highlight sh %}
  ＠(widgets: Vector[models.Widget])
@@ -86,7 +86,7 @@ case class Widget(id: Int, name: String)
 
 <hr />
 
-*Step3) app/controllers/WidgetController.scalaを新規作成して、以下を記述します。
+*Step3) app/controllers/WidgetController.scalaを新規作成して、以下を記述します。*
 
 {% highlight sh %}
 package controllers
@@ -109,7 +109,7 @@ object WidgetController extends Controller {
 }
 {% endhighlight %}
 
-*Step4) 以下のURLを表示して、動きを確認しましょう。
+*Step4) 以下のURLを表示して、動きを確認しましょう。*
 
 {% highlight sh %}
 http://localhost:9000/WidgetController/list
@@ -127,17 +127,17 @@ GET     /                                       WidgetController.list
 
 <hr />
 
-*Step1) Linux, MacもしくはWindowsに、Herokuコマンドクライアントをインストールします。
+*Step1) Linux, MacもしくはWindowsに、Herokuコマンドクライアントをインストールします。*
 
 
-*Step2) コマンドラインからHerokuへログインします。
+*Step2) コマンドラインからHerokuへログインします。*
 
 {% highlight sh %}
 heroku auth:login
 {% endhighlight %}
 
 
-*Step3) Herokuは、アプリケーションのデプロイにgitを使うので、.gitignoreファイルを作成して、以下を記述します。
+*Step3) Herokuは、アプリケーションのデプロイにgitを使うので、.gitignoreファイルを作成して、以下を記述します。*
 
 {% highlight sh %}
 /modules
@@ -145,7 +145,7 @@ heroku auth:login
 {% endhighlight %}
 
 
-*Step4) gitリポジトリを作成して、ファイルを追加し、コミットします。
+*Step4) gitリポジトリを作成して、ファイルを追加し、コミットします。*
 
 {% highlight sh %}
 git init
@@ -154,7 +154,7 @@ git commit -m init
 {% endhighlight %}
 
 
-*Step5) Herokuにアプリケーションを新規作成します。
+*Step5) Herokuにアプリケーションを新規作成します。*
 
 {% highlight sh %}
 heroku create -s cedar
@@ -164,7 +164,7 @@ heroku create -s cedar
 これで、Heroku上に新しいアプリケーションを規定し、アプリケーションへのランダムな名前/のURLを割り当てます。
 
 
-*Step6) アプリケーションをデプロイします。
+*Step6) アプリケーションをデプロイします。*
 
 {% highlight sh %}
 git push heroku master
@@ -174,7 +174,7 @@ git push heroku master
 アプリケーションがアセンブルされ、Heroku上にデプロイされます。
 
 
-*Step7) ブラウザでアプリケーションを開きます。
+*Step7) ブラウザでアプリケーションを開きます。*
 
 {% highlight sh %}
 heroku open

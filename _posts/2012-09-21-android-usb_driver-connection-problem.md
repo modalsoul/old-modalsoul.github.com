@@ -28,7 +28,7 @@ Android端末は、docomo版Sony EricssonのXperia arc
 EasyTetherのドライバを削除することで、DDMSでAndroid端末が認識されない問題は解消できます。
 
 
-**・「/System/Library/Extentions」をFinderで開き、「EasyTetherUSBEthernet.kext」を削除する
+**・「/System/Library/Extentions」をFinderで開き、「EasyTetherUSBEthernet.kext」を削除する **
 
 
 競合そのものを解消する方法ではないので、EasyTetherが使えなくなりますが、Android2.3以降？の端末では、OSの機能としてテザリングがサポートされているようなので影響は少ないかな、と。

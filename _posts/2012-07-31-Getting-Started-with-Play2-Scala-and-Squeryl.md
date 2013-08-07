@@ -492,7 +492,7 @@ $ ->
 
 Herokuはクラウド上でPlay2の実行環境を提供する複数言語対応したCloud Application Platformです。このアプリケーションをHerokuへデプロイするには以下の手順を実行します。
 
-*1. 下記の内容を記述したProcfileをルートディレクトリは以下に作成します。
+*1. 下記の内容を記述したProcfileをルートディレクトリは以下に作成します。*
 
 {% highlight sh %}
 web: target/start -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL} ${JAVA_OPTS}
@@ -500,7 +500,7 @@ web: target/start -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.defaul
 
 これによりHerokuへPlayアプリケーションの実行方法を伝えます。
 
-*2. Herokuは、Heroku上へのファイル転送にGitを用います。まだGitがインストールされていないのであれば、Gitをインストールしましょう。プロジェクトのルートディレクトリから、このプロジェクト用のGitリポジトリを生成し、ファイルを追加し、コミットします。
+*2. Herokuは、Heroku上へのファイル転送にGitを用います。まだGitがインストールされていないのであれば、Gitをインストールしましょう。プロジェクトのルートディレクトリから、このプロジェクト用のGitリポジトリを生成し、ファイルを追加し、コミットします。*
 
 {% highlight sh %}
 git init
@@ -508,12 +508,12 @@ git add .
 git commit -m init
 {% endhighlight %}
 
-*3. HerokuのツールベルトはHerokuへのコマンドラインインターフェースです。Heroku ツールベルトをインストールしましょう。
+*3. HerokuのツールベルトはHerokuへのコマンドラインインターフェースです。Heroku ツールベルトをインストールしましょう。*
 
-*4. Herokuアカウントへサインアップします。
+*4. Herokuアカウントへサインアップします。*
 
 
-*5. コマンドラインからHerokuへログインします：
+*5. コマンドラインからHerokuへログインします：*
 
 {% highlight sh %}
 heroku login
@@ -521,13 +521,13 @@ heroku login
 
 GitのSSHキーをセットアップし、それをHerokuアカウントへ紐付けます。
 
-*6. 新しいアプリケーションをHerokuにプロビジョニングします。
+*6. 新しいアプリケーションをHerokuにプロビジョニングします。*
 
 {% highlight sh %}
 heroku create --stack cedar
 {% endhighlight %}
 
-*7. HerokuへアプリケーションをPushします。
+*7. HerokuへアプリケーションをPushします。*
 
 {% highlight sh %}
 git push heroku master
@@ -535,7 +535,7 @@ git push heroku master
 
 Herokuが、SBTでアプリケーションをビルドし、dyno上で実行します。
 
-*8. ブラウザでクラウド上で実行されるアプリケーションを開きましょう。
+*8. ブラウザでクラウド上で実行されるアプリケーションを開きましょう。*
 
 {% highlight sh %}
 heroku open

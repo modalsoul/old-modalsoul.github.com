@@ -21,23 +21,23 @@ AgileUX NYC 2012 Redux in Tokyo ( #AgileUXNYC_ja ) に参加しました。
 </div>
 
 ## 「AgileUX NYC 2012 Redux in Tokyo」とは？
-2012/02/25に、アメリカのニューヨークで開催された「AgileUX NYC 2012」へ参加された@kawaguti さん(アギレルゴ・コンサルティング株式会社　川口恭伸さん)と@sprmari0 さん(楽天株式会社　坂田一倫さん)による報告会を兼ねたパネル・ディスカッションです。
+2012/02/25に、アメリカのニューヨークで開催された「AgileUX NYC 2012」へ参加された＠kawaguti さん(アギレルゴ・コンサルティング株式会社　川口恭伸さん)と＠sprmari0 さん(楽天株式会社　坂田一倫さん)による報告会を兼ねたパネル・ディスカッションです。
 
 <blockquote class="twitter-tweet" lang="ja">
 <p>Want to Win with Agile? Pivot Your Culture First by Eric Burd( 
 <a href="https://twitter.com/search/%2523agileuxnyc">#agileuxnyc</a>
  live at <a href="http://t.co/2FcXmNnQ" title="http://ustre.am/I3ND/1">ustre.am/I3ND/1</a> ) </p>
- &mdash; Yasunobu Kawaguchiさん (@kawaguti) 
+ &mdash; Yasunobu Kawaguchiさん (＠kawaguti) 
  <a href="https://twitter.com/kawaguti/status/173412876877447169" data-datetime="2012-02-25T14:23:46+00:00">2月 25, 2012</a>
  </blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8">
 </script>
 
-私はAgileUX NYC当日の@kawaguti さんのツイートを見ていて、AgileUX NYCの内容に興味を持ち、ATNDでこのイベントを発見して、すぐに参加登録しました。
+私はAgileUX NYC当日の＠kawaguti さんのツイートを見ていて、AgileUX NYCの内容に興味を持ち、ATNDでこのイベントを発見して、すぐに参加登録しました。
 
-AgileUX NYCについての@kawaguti さんと@sprmari0 さんのツイートに、一部意訳を交えたものを[こちら](https://yukar.in/note/ckFoVh)にまとめています。
+AgileUX NYCについての＠kawaguti さんと＠sprmari0 さんのツイートに、一部意訳を交えたものを[こちら](https://yukar.in/note/ckFoVh)にまとめています。
 
-[AgileUX NYC 2012 #agileuxnyc ほぼ@kawaguti さんつぶやきまとめ   Yukarin’Note](https://yukar.in/note/ckFoVh)
+[AgileUX NYC 2012 #agileuxnyc ほぼ＠kawaguti さんつぶやきまとめ   Yukarin’Note](https://yukar.in/note/ckFoVh)
 
 
 ## AgileUX NYC ハイライト
@@ -45,9 +45,7 @@ AgileUX NYCについての@kawaguti さんと@sprmari0 さんのツイートに�
 
 ### AgileUX NYC 2012について
 AgileUX NYCは、今年からはじまったAgileUXにテーマを絞ったイベントだそうです。
-参加された方も、アメリカ特にニューヨークを中心とした東海岸から来られた方が多かったそうです。
-
-@kawaguti さん曰く「デザインだけで食っていける」ほどニューヨークは、UXへの関心が高くお国柄?らしく、デザイナーの需要が高く、そういった背景からAgileUXが開催されたようです。
+参加された方も、アメリカ特にニューヨークを中心とした東海岸から来られた方が多かったそうです。@kawaguti さん曰く「デザインだけで食っていける」ほどニューヨークは、UXへの関心が高くお国柄?らしく、デザイナーの需要が高く、そういった背景からAgileUXが開催されたようです。
 
 AgileUXは、1セッション20分×3セッション、その間にコーヒーブレイクやランチを挟んで、朝8時から夕方5時までぶっ通しの、非常にタフなイベントだったそうです。
 

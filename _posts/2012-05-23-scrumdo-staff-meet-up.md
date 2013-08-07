@@ -23,14 +23,14 @@ categories: report
 
 スクラム道の活動がどのように運営されてきたのか、イベントに参加するだけではわからないことところを見学でき、愉しかったです。
 
-どうもありがとうございましたm(_ _)m
+どうもありがとうございました
 
 
-<hr />
+<hr/>
 
 
 
-[スクラム道 StaffMeetup20120523-[PARTAKE]](http://partake.in/events/c4e5c8e0-e5d7-4d3c-a1e2-52ad57749078)
+[スクラム道 StaffMeetup20120523-［PARTAKE］](http://partake.in/events/c4e5c8e0-e5d7-4d3c-a1e2-52ad57749078)
 
 勉強会スタイルではないので、覚えている限り雑感をば。
 
@@ -39,13 +39,9 @@ categories: report
 
 ・イベントにストーリーがある
 
-<<<<<<< HEAD
 ・ストーリーが無いものは売り切りになる、続かない
 
 ・モチベーションマネジメントがすごい。コミュニティとスタッフがWinWinな関係。
-=======
-・モチベーションマネジメントすごい。コミュニティとスタッフがWinWin
->>>>>>> a3937933c50d3be9e851ab9fa47777d558ecc58b
 
 ・大崎はロスっぽい
 
@@ -75,7 +71,8 @@ categories: report
 
 <blockquote class="twitter-tweet" lang="ja"
 ><p>スクラム道と組んでくれる地方のコミュニティ求む 
-<a href="https://twitter.com/search/%2523scrumdo">#scrumdo</a></p>&mdash; Nishimura Naotoさん (@nawoto) 
+<a href="https://twitter.com/search/%2523scrumdo">#scrumdo</a>
+</p>&mdash; Nishimura Naotoさん (@nawoto) 
 <a href="https://twitter.com/nawoto/status/205305686693904388" data-datetime="2012-05-23T14:34:24+00:00">5月 23, 2012</a>
 </blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8">
@@ -84,7 +81,9 @@ categories: report
 
 <blockquote class="twitter-tweet" lang="ja">
 <p>ちなみにネタじゃなくて本気で一緒にやってくれるとこを募集中です。メンションだけじゃ分かんないんで俺にメールしてくれ 
-<a href="https://twitter.com/search/%2523scrumdo">#scrumdo</a></p>&mdash; Nishimura Naotoさん (@nawoto) 
+<a href="https://twitter.com/search/%2523scrumdo">#scrumdo
+</a>
+</p>&mdash; Nishimura Naotoさん (@nawoto) 
 <a href="https://twitter.com/nawoto/status/205308208510803968" data-datetime="2012-05-23T14:44:26+00:00">5月 23, 2012</a>
 </blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8">

@@ -44,7 +44,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 
 ##2月17日（金）
-###[開発プロセス]10:00～10:50【17-A-1】Continuous DeliveryとJenkinsアブストラクト　川口 耕介 氏
+###［開発プロセス］10:00～10:50【17-A-1】Continuous DeliveryとJenkinsアブストラクト　川口 耕介 氏
 
 [Continuous DeliveryとJenkinsアブストラクト #devsumiA  - Yukarin'Note](https://yukar.in/note/ckFpbG)
 [https://yukar.in/note/ckFpbG](https://yukar.in/note/ckFpbG)
@@ -63,7 +63,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 <a href="http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4774149942"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=4774149942&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" ></a><img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4774149942" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 <hr />
-###[開発プロセス]13:10～14:00【17-C-3】オフェンシブな開発～「納品しない受託開発」にみるソフトウェア受託開発の未来　倉貫 義人 氏
+###［開発プロセス］13:10～14:00【17-C-3】オフェンシブな開発～「納品しない受託開発」にみるソフトウェア受託開発の未来　倉貫 義人 氏
 
 [オフェンシブな開発 #devsumi #devsumiC つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpb7)
 [https://yukar.in/note/ckFpb7](https://yukar.in/note/ckFpb7)
@@ -109,7 +109,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 </script>
 
 <hr />
-###[DeNA Special]14:20～15:05【17-A-4】Scrumで組織改革　貝瀬 岳志 氏
+###［DeNA Special］14:20～15:05【17-A-4】Scrumで組織改革　貝瀬 岳志 氏
 
 [Scrumで組織改革 #devsumiA つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpcs)
 [https://yukar.in/note/ckFpcs](https://yukar.in/note/ckFpcs)
@@ -128,12 +128,12 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 
 <hr />
-###[10th Special]15:25～16:15【17-B-5】アジャイルマニフェスト ディケイド　角谷 信太郎 氏
+###［10th Special］15:25～16:15【17-B-5】アジャイルマニフェスト ディケイド　角谷 信太郎 氏
 
-[[その１]アジャイルマニフェスト ディケイド #devsumiB つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpbf)
+[［その１］アジャイルマニフェスト ディケイド #devsumiB つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpbf)
 [https://yukar.in/note/ckFpbf](https://yukar.in/note/ckFpbf)
 
-[[その２]アジャイルマニフェスト ディケイド #devsumiB つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpb4)
+[［その２］アジャイルマニフェスト ディケイド #devsumiB つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpb4)
 [https://yukar.in/note/ckFpb4](https://yukar.in/note/ckFpb4)
 
 
@@ -152,7 +152,7 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 
 <hr />
-### [Special]17:40～19:10【17-E-7】君の4tate（立てた帆）に、風を感じているか？ ～4tateで日本を変えるプロジェクト～　野村 恭彦 氏 / 市谷 聡啓 氏
+### ［Special］17:40～19:10【17-E-7】君の4tate（立てた帆）に、風を感じているか？ ～4tateで日本を変えるプロジェクト～　野村 恭彦 氏 / 市谷 聡啓 氏
 
 [ 君の4tate（立てた帆）に、風を感じているか？ #devsumiE つぶやきまとめ  - Yukarin'Note](https://yukar.in/note/ckFpaN)
 [https://yukar.in/note/ckFpaN](https://yukar.in/note/ckFpaN)
@@ -163,11 +163,13 @@ ITマーケティング・セールス担当者、IT関連部署マネージャ�
 
 
 このセッションですが、実際よくわからないまま参加しましたｗ
-ただ、スピーカーの野村　恭彦さんが監訳された[ゲームストーミング ―会議、チーム、プロジェクトを成功へと導く87のゲーム](http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_tl?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4873115051)は、
-仕事や勉強会のワークショップのネタにフル活用していて、この本つながりで参加しました。
-※この本、オススメです
+ただ、スピーカーの野村　恭彦さんが監訳された[ゲームストーミング ―会議、チーム、プロジェクトを成功へと導く87のゲーム](http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_tl?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4873115051) は、
+仕事や勉強会のワークショップのネタにフル活用していて、この本つながりで参加しました。※この本、オススメです
 
-<a href="http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4873115051"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=4873115051&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" ></a><img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4873115051" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4873115051">
+<img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=4873115051&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" >
+</a>
+<img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4873115051" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 このセッションでは、これまでの聴講するだけのスタイルではなくて、受講者同士がディスカッションするスタイルでした。
 

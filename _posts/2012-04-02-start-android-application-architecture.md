@@ -8,9 +8,12 @@ Androidプログラミング入門してみた-アーキテクチャ編-
 -----------------
 仕事でAndroidアプリの開発をすることになったので、改めてAndroidプログラミングについて勉強してみたいと思います。
 
-今回は主に書籍（[本格アプリを作ろう！ Androidプログラミングレシピ](http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4844331272)）を参考にして進めました。
+今回は主に書籍（ [本格アプリを作ろう！ Androidプログラミングレシピ](http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4844331272)）を参考にして進めました。
 
-<a href="http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4844331272"><img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL160_&ASIN=4844331272&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" ></a><img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4844331272" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a href="http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4844331272">
+<img border="0" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL160_&ASIN=4844331272&MarketPlace=JP&ID=AsinImage&WS=1&tag=modalsoul-22&ServiceVersion=20070822" >
+</a>
+<img src="http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&l=as2&o=9&a=4844331272" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 ## アプリケーションアーキテクチャについて
 Androidアプリのアーキテクチャは、「intent(以下、インテント)」を用いて相互にコミュニケーションを行うコンポーネントの集合がベースになっているそうです。

@@ -13,9 +13,10 @@ categories: report
 
 
 <script async="" class="speakerdeck-embed" data-id="4fb9ea9a9d60b902f7004248" data-ratio="1.299492385786802" src="//speakerdeck.com/assets/embed.js">
-</script><br />
+</script>
+<br/>
 
-<hr />
+<hr/>
 この講演を通しての内容については、私以外の他参加者の方々が良い記事を書かれているので、そちらをご参考ください。
 
 ・[http://d.hatena.ne.jp/absj31/20120525/1337976374](http://d.hatena.ne.jp/absj31/20120525/1337976374)

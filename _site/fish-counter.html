@@ -7,18 +7,19 @@
     
     <meta name="author" content="modal_soul">
 
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Le styles -->
-	<link href="/assets/themes/twitter/css/syntax.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    
-    <link href="/css/main.css" media="screen" rel="stylesheet" type="text/css">
-        
+    <link href="http://modalsoul.github.io/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
+
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -26,90 +27,92 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
-  	<!-- Add these tags to the HEAD section of your page. -->
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 
-	<link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
-	<script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+    <!-- coderwall -->
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
 
-	<!-- Add koottam -->
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.koottam.js"></script>
-	<link href="css/koottam.css" rel="stylesheet"/>
-
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29102099-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
-
-
-</script>
-<!-- end Mixpanel -->
-
+    <!-- atom & rss feed -->
+    <link href="http://modalsoul.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="http://modalsoul.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
   </head>
 
   <body>
-
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="/"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="http://modalsoul.github.io"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
           <ul class="nav">
             
             
             
 
 
-
   
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      	
+      
+    
   
-  	
-  	<li><a href="/archive.html">Archive</a></li>
-  	
- 
+    
+      
+    
   
-
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/categories.html">Categories</a></li>
+      	
+      
+    
   
+    
+      
+    
   
-  	
-  	<li><a href="/categories.html">Categories</a></li>
-  	
- 
+    
+      
+    
   
-
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/pages.html">Pages</a></li>
+      	
+      
+    
   
-
+    
+      
+    
   
-
+    
+      
+    
   
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/tags.html">Tags</a></li>
+      	
+      
+    
   
-  	
-  	<li><a href="/pages.html">Pages</a></li>
-  	
- 
-  
-
-  
-  
-  	
-  	<li><a href="/tags.html">Tags</a></li>
-  	
- 
-  
-
-
 
 
 
@@ -118,15 +121,17 @@ mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-narrow row-fluid">
 
       <div class="content">
-        <div class="page-header">
-  <h1>Fish Counter <small>Supporting tagline</small></h1>
+        
+<div class="page-header">
+  <h1>Fish Counter </h1>
+  <img src="/img/header.png">
 </div>
 
-<div class="row">
-  <div class="span14">
+<div class="row-fluid">
+  <div class="span12">
     <script type="text/javascript">
 <!--
 function clearCalc() {
@@ -273,29 +278,48 @@ function process() {
 
 
       </div>
-
+      <hr>
       <footer>
-        <p>&copy; modal_soul 2012 
+        <p>&copy; 2013 modal_soul
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
 
-    </div> <!-- /container -->
-<!-- Twitter badge -->
-<!-- twitter follow badge by go2web20 -->
-<script src='http://www.go2web20.net/twitterfollowbadge/1.0/badge.js' type='text/javascript'>
+    </div>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102099-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
-<script type='text/javascript' charset='utf-8'><!--
-tfb.account = 'modal_soul';
-tfb.label = 'follow-me';
-tfb.color = '#2f3192';
-tfb.side = 'r';
-tfb.top = 136;
-tfb.showbadge();
--->
-</script>
-<!-- end of twitter follow badge -->
+
+
+
+    
+    <!-- Twitter badge -->
+    <!-- twitter follow badge by go2web20 -->
+    <script src='http://www.go2web20.net/twitterfollowbadge/1.0/badge.js' type='text/javascript'>
+    </script>
+    <script type='text/javascript' charset='utf-8'><!--
+    tfb.account = 'modal_soul';
+    tfb.label = 'follow-me';
+    tfb.color = '#2f3192';
+    tfb.side = 'r';
+    tfb.top = 136;
+    tfb.showbadge();
+    -->
+    </script>
+    <!-- end of twitter follow badge -->
   </body>
 </html>
 

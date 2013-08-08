@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>node.jsをはじめました</title>
+    
+    <meta name="author" content="modal_soul">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="http://modalsoul.github.io/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <!-- coderwall -->
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+
+    <!-- atom & rss feed -->
+    <link href="http://modalsoul.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="http://modalsoul.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="http://modalsoul.github.io"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow row-fluid">
+
+      <div class="content">
+        
+
+<div class="page-header">
+  <h1>node.jsをはじめました </h1>
+  <div id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io/report/2012/10/10/entrance-into-node-js/" data-via="modal_soul" data-lang="ja">ツイート</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+			
+    <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/report/2012/10/10/entrance-into-node-js/" class="hatena-bookmark-button" data-hatena-bookmark-title="node.jsをはじめました" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+      <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+    </a>
+    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+    </script>
+	
+    <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+    <g:plusone size="medium"></g:plusone>
+
+    <!-- この render 呼び出しを適切な位置に挿入してください -->
+    <script type="text/javascript">
+      window.___gcfg = {lang: 'ja'};
+  	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	  </script>
+	
+    <div class="fb-like" data-href="http://modalsoul.github.io/report/2012/10/10/entrance-into-node-js/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+    </div>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span9">
+    <div class="content">
+      <div id="thumbnail">
+      	
+          
+          
+            
+            
+
+
+
+	
+		<p>この記事は、node.js使い始めのメモ書きです。</p>
+		<a href="http://nodejs.jp/index.html">
+		<img title="�Q�l" src="http://capture.heartrails.com/300x200/cool?http://nodejs.jp/index.html" alt="�Q�l" width="300" height="200" />
+		</a>
+	
+
+
+
+
+          
+        			
+	 </div>
+      <hr />
+<h2 id='id99'>謝辞</h2>
+
+<p>今回、node.jsをはじめるに辺りこちらのサイトを参考にさせていただきました。感謝です。</p>
+
+<p><img alt='node.js ハンズオン資料' src='http://capture.heartrails.com/200x150/cool?http://dl.dropbox.com/u/219436/node.js/handson/build/html/index.html' /></p>
+<hr />
+<h2 id='id100'>インストール</h2>
+
+<p>まずは、環境の準備です。</p>
+
+<p>上記ハンズオン資料にもUnixシステムへのインストール手順が記載されていますが、手持ちの環境がWindowsなので若干異なりました。</p>
+
+<p><em>1. インストーラのダウンロード</em></p>
+
+<p>下記サイトから最新の安定版をダウンロード。2012/10/10時点の最新の安定版は、v0.8.11</p>
+
+<p><img alt='v0.8のインストーラダウンロード' src='http://capture.heartrails.com/200x150/cool?http://nodejs.jp/nodejs.org_ja/docs/v0.8/' /></p>
+
+<p><em>2. インストーラの起動</em></p>
+
+<p>画面に従いインストールを完了します。</p>
+
+<p><em>3. インストールの確認</em></p>
+
+<p>コマンドラインからインストールしたnode.jsのバージョンを確認します。v0.8.11の表示が確認できます。</p>
+<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>node -v
+v0.8.11
+</code></pre></div>
+<p><em>4. npmのインストール</em> npmは、nodeのライブラリパッケージ専用のパッケージ管理ツールです。 インストーラからインストールすると、併せてnpmもインストールされます。</p>
+
+<h2 id='hello_world'>Hello World</h2>
+
+<p>helloworld.jsを作成します。 <script src='https://gist.github.com/3868393.js'> 
+</script></p>
+
+<p>実行すると、こんな感じ。</p>
+<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>node helloworld.js
+Hello node.js
+</code></pre></div>
+<h2 id='io'>非同期IOメソッドを使う</h2>
+
+<p>ハンズオンの内容を写経してみます。</p>
+
+<h3 id='1'>1ファイルのダウンロード</h3>
+<script src='https://gist.github.com/3868441.js'> 
+</script>
+<p>これを実行すると、こんな感じ。</p>
+<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>node download1.js http://www.google.co.jp/
+http.createClient is deprecated. Use <span class='sb'>`</span>http.request<span class='sb'>`</span> instead.
+200
+date:Wed, 10 Oct 2012 21:17:40 GMT
+expires:-1
+cache-control:private, max-age<span class='o'>=</span>0
+content-type:text/html; <span class='nv'>charset</span><span class='o'>=</span>Shift_JIS
+<span class='nb'>set</span>-cookie:PREF<span class='o'>=</span><span class='nv'>ID</span><span class='o'>=</span>e0429b2fdb66b6f5:FF<span class='o'>=</span>0:TM<span class='o'>=</span>1349903860:LM<span class='o'>=</span>1349903860:S<span class='o'>=</span>RztyFRMdq8JPKHw1; <span class='nv'>expires</span><span class='o'>=</span>Fri, 10-Oct-2014 21:17:40 GMT; <span class='nv'>path</span><span class='o'>=</span>/; <span class='nv'>domain</span><span class='o'>=</span>.google.co.jp,NID<span class='o'>=</span><span class='nv'>64</span><span class='o'>=</span>bF0HOrYnQ_hHT1a9O-_qkflB9ZOIv34SmPnV4YeXbEbhqCQGR0wjpKvjFPtnQ0psZzJQPW3qZvP7uaHjxg_ajr0--fMSSVCFvOzHFe_O6Eqc2wCs-VZqV-7L3-1PnQ9V; <span class='nv'>expires</span><span class='o'>=</span>Thu, 11-Apr-2013 21:17:40 GMT; <span class='nv'>path</span><span class='o'>=</span>/; <span class='nv'>domain</span><span class='o'>=</span>.google.co.jp; HttpOnly
+p3p:CP<span class='o'>=</span><span class='s2'>&quot;This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=151657 for more info.&quot;</span>
+server:gws
+x-xss-protection:1; <span class='nv'>mode</span><span class='o'>=</span>block
+x-frame-options:SAMEORIGIN
+transfer-encoding:chunked
+
+・・・
+</code></pre></div>
+<p>実行結果の1行目に何やらメッセージが出力されていますが、リファレンスで確認するとhttp.createClientの使用は非推奨とのことでした。</p>
+
+<p><img alt='http.createClientは非推奨らしい' src='http://capture.heartrails.com/200x150/cool?http://nodejs.jp/nodejs.org_ja/docs/v0.8/api/http.html#http_http_createclient_port_host' /></p>
+
+<p>http.request()で書き直したものがこちら。</p>
+<script src='https://gist.github.com/3868625.js'> 
+</script>
+<p>同じように動きます。</p>
+    </div>
+    <hr>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#report-ref">
+    		report <span>17</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#node.js-ref">node.js <span>5</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#入門-ref">入門 <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  <hr>
+  <div  id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="modal_soul" data-lang="ja">ツイート</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	  </script>
+	  <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/report/2012/10/10/entrance-into-node-js" class="hatena-bookmark-button" data-hatena-bookmark-title="node.jsをはじめました" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+	    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+	  </a>
+	  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+	  </script>
+	  <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+	  <g:plusone size="medium"></g:plusone>
+	  <div class="fb-like" data-href="http://modalsoul.github.io/report/2012/10/10/entrance-into-node-js/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+	  </div>
+	</div>
+    <hr>
+    <SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/modalsoul-22/8004/63a6c3cc-a1fe-409c-92f6-d656ddde480a"> 
+	</SCRIPT> 
+	<NOSCRIPT>
+	  <A HREF="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fmodalsoul-22%2F8004%2F63a6c3cc-a1fe-409c-92f6-d656ddde480a&Operation=NoScript">Amazon.co.jp ウィジェット</A>
+	</NOSCRIPT>
+    
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="http://modalsoul.github.io/report/2012/09/21/android-usb_driver-connection-problem" title="Android端末をUSBデバッグ接続してもMacのDDMSで認識されない問題でハマった件について">&larr; Previous</a></li>
+      
+        <li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="http://modalsoul.github.io/report/2012/10/14/node-js-log4js" title="node.js+log4jsで、ログローテーションする">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'modalsoul'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span3">
+    <h4>Published</h4>
+    <div class="date">
+      <span>10 October 2012</span>
+    </div>
+    <h4>Category</h4>
+    
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#report-ref">
+    		report <span>17</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+      
+    <h4>Tag</h4>
+    
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#node.js-ref">node.js <span>5</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#入門-ref">入門 <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+      
+    <hr>
+    <script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
+	</script>
+	<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>
+  		
+  		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 4,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+	      background: '#333333',
+	      color: '#ffffff'
+	    },
+	    tweets: {
+	      background: '#000000',
+	      color: '#ffffff',
+	      links: '#0781eb'
+	    }
+	  	},
+	  	features: {
+	    	scrollbar: false,
+	    	loop: false,
+	    	live: false,
+	    	behavior: 'all'
+	  	}
+		}).render().setUser('modal_soul').start();
+		</script>
+
+		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-8642536258449297";
+		/* modalsoul1 */
+		google_ad_slot = "8173659218";
+		google_ad_width = 160;
+		google_ad_height = 600;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+
+  </div>
+</div>
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2013 modal_soul
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102099-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+    
+    <!-- Twitter badge -->
+    <!-- twitter follow badge by go2web20 -->
+    <script src='http://www.go2web20.net/twitterfollowbadge/1.0/badge.js' type='text/javascript'>
+    </script>
+    <script type='text/javascript' charset='utf-8'><!--
+    tfb.account = 'modal_soul';
+    tfb.label = 'follow-me';
+    tfb.color = '#2f3192';
+    tfb.side = 'r';
+    tfb.top = 136;
+    tfb.showbadge();
+    -->
+    </script>
+    <!-- end of twitter follow badge -->
+  </body>
+</html>
+

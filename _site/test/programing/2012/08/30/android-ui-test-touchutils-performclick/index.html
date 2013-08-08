@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TouchUtilsを使ったAndroidテストでjava.lang.SecurityException:PermissionDenialが起きたときの回避方法</title>
+    
+    <meta name="author" content="modal_soul">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="http://modalsoul.github.io/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <!-- coderwall -->
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+
+    <!-- atom & rss feed -->
+    <link href="http://modalsoul.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="http://modalsoul.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="http://modalsoul.github.io"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow row-fluid">
+
+      <div class="content">
+        
+
+<div class="page-header">
+  <h1>TouchUtilsを使ったAndroidテストでjava.lang.SecurityException:PermissionDenialが起きたときの回避方法 </h1>
+  <div id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io/test/programing/2012/08/30/android-ui-test-touchutils-performclick/" data-via="modal_soul" data-lang="ja">ツイート</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+			
+    <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/test/programing/2012/08/30/android-ui-test-touchutils-performclick/" class="hatena-bookmark-button" data-hatena-bookmark-title="TouchUtilsを使ったAndroidテストでjava.lang.SecurityException:PermissionDenialが起きたときの回避方法" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+      <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+    </a>
+    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+    </script>
+	
+    <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+    <g:plusone size="medium"></g:plusone>
+
+    <!-- この render 呼び出しを適切な位置に挿入してください -->
+    <script type="text/javascript">
+      window.___gcfg = {lang: 'ja'};
+  	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	  </script>
+	
+    <div class="fb-like" data-href="http://modalsoul.github.io/test/programing/2012/08/30/android-ui-test-touchutils-performclick/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+    </div>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span9">
+    <div class="content">
+      <div id="thumbnail">
+      	
+          
+          
+            
+            
+
+
+
+	
+		<p>この記事は、以前書いた記事<a href="http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/" >AndroidアプリのUIテスト-InstrumentationTestCase編-</a>の補足記事です。</p>
+		<a href="http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/">
+		<img title="�Q�l" src="http://capture.heartrails.com/300x200/cool?http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/" alt="�Q�l" width="300" height="200" />
+		</a>
+	
+
+
+
+
+          
+        			
+	 </div>
+      <hr />
+<p>以前の記事では、InstrumantetionTestCaseとTouchUtilsを使ってのUIテストについて書きました。</p>
+
+<p>最近、この方法でテストを実行してjava.lang.SecurityException: Permission Denialが発生して、テストに失敗する事象に悩まされたので、 回避方法を記録しておきます。</p>
+
+<h2 id='id83'>原因</h2>
+
+<p>この問題が発生する正確な理由はわかっていません。</p>
+
+<p>特定の端末(今回の場合、私が持っていたXperia arc android2.3.4)でのみ事象の発生が確認できました。</p>
+
+<p>Xperia NX, MEDIASでは同じテストケースを実行してもこの現象は確認できませんでした。</p>
+
+<p>これらの状況と、logcatで確認できたエラーログから察するに、 TouchUtilsは端末によっては利用できないよう制限されているようです。</p>
+
+<p>そのため、テストケース中のボタンなどのViewのクリック動作がシミュレートできずにテストが失敗したようです。</p>
+<br />
+<h2 id='touchutils'>TouchUtilsを使わずにテストする方法</h2>
+
+<p>以前紹介した方法では、ユーザのViewのクリック動作を以下のような方法でシミュレートしました。</p>
+
+<h3 id='activity'>Activityの取得</h3>
+<script src='https://gist.github.com/2758303.js?file=getCurrentActivity.java'>
+</script>
+<h3 id='view'>Viewを取得して、初期状態を確認。</h3>
+<script src='https://gist.github.com/2758332.js?file=getAndCheckView.java'>
+</script>
+<h3 id='id84'>ボタンのクリックをシミュレート。</h3>
+<script src='https://gist.github.com/2758332.js?file=getAndCheckView.java'>
+</script>
+<h3 id='performclick'>performClick()を使った回避方法</h3>
+
+<p>上記のクリックのシミュレートに使用したTouchUtilsの代わりに、<a href='http://developer.android.com/reference/android/view/View.html#performClick('>performClick()</a>)を使います。</p>
+
+<p>※この場合、clickPerformは明示的にUIスレッドで実行する必要があります。</p>
+<script src='https://gist.github.com/3531257.js?file=performClick-sample.java'>
+</script>
+    </div>
+    <hr>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#test-ref">
+    		test <span>4</span>
+    	</a></li>
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#programing-ref">
+    		programing <span>12</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Android-ref">Android <span>5</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#UI-ref">UI <span>2</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Test-ref">Test <span>3</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#InstrumentationTestCase-ref">InstrumentationTestCase <span>2</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#TouchUtils-ref">TouchUtils <span>2</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#performClick-ref">performClick <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  <hr>
+  <div  id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="modal_soul" data-lang="ja">ツイート</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	  </script>
+	  <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/test/programing/2012/08/30/android-ui-test-touchutils-performclick" class="hatena-bookmark-button" data-hatena-bookmark-title="TouchUtilsを使ったAndroidテストでjava.lang.SecurityException:PermissionDenialが起きたときの回避方法" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+	    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+	  </a>
+	  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+	  </script>
+	  <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+	  <g:plusone size="medium"></g:plusone>
+	  <div class="fb-like" data-href="http://modalsoul.github.io/test/programing/2012/08/30/android-ui-test-touchutils-performclick/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+	  </div>
+	</div>
+    <hr>
+    <SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/modalsoul-22/8004/63a6c3cc-a1fe-409c-92f6-d656ddde480a"> 
+	</SCRIPT> 
+	<NOSCRIPT>
+	  <A HREF="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fmodalsoul-22%2F8004%2F63a6c3cc-a1fe-409c-92f6-d656ddde480a&Operation=NoScript">Amazon.co.jp ウィジェット</A>
+	</NOSCRIPT>
+    
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="http://modalsoul.github.io/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku" title="【意訳】Heroku上でPlayFramework + Scalaアプリケーションを実行する">&larr; Previous</a></li>
+      
+        <li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="http://modalsoul.github.io/report/2012/09/17/xp-festival" title="XP祭り2012～ソーシャルチェンジ～にスタッフ参加してきました　#xpjug">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'modalsoul'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span3">
+    <h4>Published</h4>
+    <div class="date">
+      <span>30 August 2012</span>
+    </div>
+    <h4>Category</h4>
+    
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#test-ref">
+    		test <span>4</span>
+    	</a></li>
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#programing-ref">
+    		programing <span>12</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+      
+    <h4>Tag</h4>
+    
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Android-ref">Android <span>5</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#UI-ref">UI <span>2</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Test-ref">Test <span>3</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#InstrumentationTestCase-ref">InstrumentationTestCase <span>2</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#TouchUtils-ref">TouchUtils <span>2</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#performClick-ref">performClick <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+      
+    <hr>
+    <script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
+	</script>
+	<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>
+  		
+  		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 4,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+	      background: '#333333',
+	      color: '#ffffff'
+	    },
+	    tweets: {
+	      background: '#000000',
+	      color: '#ffffff',
+	      links: '#0781eb'
+	    }
+	  	},
+	  	features: {
+	    	scrollbar: false,
+	    	loop: false,
+	    	live: false,
+	    	behavior: 'all'
+	  	}
+		}).render().setUser('modal_soul').start();
+		</script>
+
+		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-8642536258449297";
+		/* modalsoul1 */
+		google_ad_slot = "8173659218";
+		google_ad_width = 160;
+		google_ad_height = 600;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+
+  </div>
+</div>
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2013 modal_soul
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102099-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+    
+    <!-- Twitter badge -->
+    <!-- twitter follow badge by go2web20 -->
+    <script src='http://www.go2web20.net/twitterfollowbadge/1.0/badge.js' type='text/javascript'>
+    </script>
+    <script type='text/javascript' charset='utf-8'><!--
+    tfb.account = 'modal_soul';
+    tfb.label = 'follow-me';
+    tfb.color = '#2f3192';
+    tfb.side = 'r';
+    tfb.top = 136;
+    tfb.showbadge();
+    -->
+    </script>
+    <!-- end of twitter follow badge -->
+  </body>
+</html>
+

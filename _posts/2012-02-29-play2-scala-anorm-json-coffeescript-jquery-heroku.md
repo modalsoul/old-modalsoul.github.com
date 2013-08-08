@@ -108,8 +108,8 @@ case class Bar(id: Pk[Long], name: String)
 object Bar {
  
   val simple = {
-    get[Pk[Long]]("id") ~
-    get[String]("name") map {
+    get[Pk[Long]]（"id") ~
+    get[String]（"name") map {
       case id~name => Bar(id, name)
     }
   }

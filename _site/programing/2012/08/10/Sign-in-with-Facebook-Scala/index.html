@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>【意訳】Scala on LiftでのFacebookサインイン</title>
+    
+    <meta name="author" content="modal_soul">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="http://modalsoul.github.io/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <!-- coderwall -->
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+
+    <!-- atom & rss feed -->
+    <link href="http://modalsoul.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="http://modalsoul.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="http://modalsoul.github.io"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow row-fluid">
+
+      <div class="content">
+        
+
+<div class="page-header">
+  <h1>【意訳】Scala on LiftでのFacebookサインイン </h1>
+  <div id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io/programing/2012/08/10/Sign-in-with-Facebook-Scala/" data-via="modal_soul" data-lang="ja">ツイート</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+			
+    <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/programing/2012/08/10/Sign-in-with-Facebook-Scala/" class="hatena-bookmark-button" data-hatena-bookmark-title="【意訳】Scala on LiftでのFacebookサインイン" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+      <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+    </a>
+    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+    </script>
+	
+    <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+    <g:plusone size="medium"></g:plusone>
+
+    <!-- この render 呼び出しを適切な位置に挿入してください -->
+    <script type="text/javascript">
+      window.___gcfg = {lang: 'ja'};
+  	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	  </script>
+	
+    <div class="fb-like" data-href="http://modalsoul.github.io/programing/2012/08/10/Sign-in-with-Facebook-Scala/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+    </div>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span9">
+    <div class="content">
+      <div id="thumbnail">
+      	
+          
+          
+            
+            
+
+
+
+
+
+
+
+          
+        			
+	 </div>
+      <h2 id='scala_on_liftfacebook'>【意訳】Scala on LiftでのFacebookサインイン</h2>
+
+<p>この記事は、<a href='http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/'>ayushmishra2005氏の記事</a>の意訳です。参考にさせていただいたついでに訳してみました。参考程度にどうぞ。</p>
+
+<p><img alt='Providing a “Sign-in with Facebook” functionality using Scala' src='http://capture.heartrails.com/300x200/cool?http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/' /></p>
+
+<p>誤訳・誤植等ありましたら、<a href='https://twitter.com/modal_soul'>@modal_soulまで</a>リプライいただけるとありがたいです。</p>
+<hr />
+<p>ここ最近に、Lift2.4で構築したソーシャルプロジェクトで、Facebookへのサインイン機能を統合しました。この記事はその時の手順のサマリです。</p>
+<hr />
+<p><em>1)Facebook APIを作る（※既に持っている場合不要です）</em></p>
+
+<p>次のリンクを参考にアプリを作ってください。サイトURLを含む全ての詳細を記入してエンターします。サイトURLは以下のような感じになります。</p>
+
+<p>http://www.com/api/facebook/auth</p>
+
+<p>このサイトURL宛に、Facebookはレスポンスを送ります。このアプリケーションを保存すると、アプリキー/APIキー/秘密鍵が入手できます。</p>
+
+<p>これらのキーは後ほど使うので注意してください。</p>
+<hr />
+<p><em>2) Liftを使っている場合は、各キーをdefault.propsに追加設定します。</em></p>
+<div class='highlight'><pre><code class='sh'>facebook.key<span class='o'>=</span>&lt;your_key&gt;
+facebook.secret<span class='o'>=</span>your &lt;secret_key&gt;
+facebook.callbackurl<span class='o'>=</span>/api/facebook/auth
+</code></pre></div><hr />
+<p><em>3) Facebookログイン画像<a href='http://sandthre34.wapka.mobi/download-43-23c50858c8a88d7a9397/fb.png?PHPSESSID=3b88fe8fb9bb628c5beb8870fd0e367c'>fb.png</a>をダウンロードします</em></p>
+<hr />
+<p><em>4) アプリキー/APIキー/秘密鍵とコールバックURLを設定するために、FacebookGraph.scalaを新規作成します。またFacebookからアクセストークンを要求するためにこのScalaファイルを使用します。</em></p>
+<script src='https://gist.github.com/3310411.js?file=FacebookGraph.scala'>
+</script><hr />
+<p><em>5) 次にログインページにFacebookログインリンクを表示するためにFacebook素にペットを作成します。</em></p>
+<script src='https://gist.github.com/3310425.js?file=Facebook.scala'>
+</script><hr />
+<p><em>6) login.htmlにFacebookログインリンクを追加します。</em></p>
+<div class='highlight'><pre><code class='sh'>&lt;div <span class='nv'>class</span><span class='o'>=</span><span class='s2'>&quot;span4&quot;</span>&gt;
+      &lt;span <span class='nv'>lift</span><span class='o'>=</span><span class='s2'>&quot;Facebook.link&quot;</span>/&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre></div><hr />
+<p><em>7) SiteMap.scalaにFacebook接続メニューを作ります。</em></p>
+<div class='highlight'><pre><code class='sh'>val <span class='nv'>facebookConnect</span> <span class='o'>=</span> MenuLoc<span class='o'>(</span>
+    Menu.i<span class='o'>(</span><span class='s2'>&quot;FacebookConnect&quot;</span><span class='o'>)</span> / <span class='s2'>&quot;facebook&quot;</span> / <span class='s2'>&quot;connect&quot;</span> &gt;&gt; EarlyResponse<span class='o'>(()</span> <span class='o'>=</span>&gt; <span class='o'>{</span>
+      FacebookGraph.csrf<span class='o'>(</span>Helpers.nextFuncName<span class='o'>)</span>
+      Full<span class='o'>(</span>RedirectResponse<span class='o'>(</span>FacebookGraph.authUrl, S.responseCookies: _*<span class='o'>))</span>
+ <span class='o'>}))</span>
+</code></pre></div><hr />
+<p><em>8) 最後に、Facebookからレスポンスを受け取るためのFacebook.apiを作成します。</em></p>
+<script src='https://gist.github.com/3310432.js?file=FacebookApiStateful.scala'>
+</script>
+    </div>
+    <hr>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#programing-ref">
+    		programing <span>12</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Scala-ref">Scala <span>7</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Facebook-ref">Facebook <span>1</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Lift-ref">Lift <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  <hr>
+  <div  id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="modal_soul" data-lang="ja">ツイート</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	  </script>
+	  <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/programing/2012/08/10/Sign-in-with-Facebook-Scala" class="hatena-bookmark-button" data-hatena-bookmark-title="【意訳】Scala on LiftでのFacebookサインイン" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+	    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+	  </a>
+	  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+	  </script>
+	  <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+	  <g:plusone size="medium"></g:plusone>
+	  <div class="fb-like" data-href="http://modalsoul.github.io/programing/2012/08/10/Sign-in-with-Facebook-Scala/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+	  </div>
+	</div>
+    <hr>
+    <SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/modalsoul-22/8004/63a6c3cc-a1fe-409c-92f6-d656ddde480a"> 
+	</SCRIPT> 
+	<NOSCRIPT>
+	  <A HREF="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fmodalsoul-22%2F8004%2F63a6c3cc-a1fe-409c-92f6-d656ddde480a&Operation=NoScript">Amazon.co.jp ウィジェット</A>
+	</NOSCRIPT>
+    
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="http://modalsoul.github.io/programing/2012/07/31/Getting-Started-with-Play2-Scala-and-Squeryl" title="【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#scalajp　#play_ja">&larr; Previous</a></li>
+      
+        <li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="http://modalsoul.github.io/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku" title="【意訳】Heroku上でPlayFramework + Scalaアプリケーションを実行する">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'modalsoul'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span3">
+    <h4>Published</h4>
+    <div class="date">
+      <span>10 August 2012</span>
+    </div>
+    <h4>Category</h4>
+    
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#programing-ref">
+    		programing <span>12</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+      
+    <h4>Tag</h4>
+    
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Scala-ref">Scala <span>7</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Facebook-ref">Facebook <span>1</span></a></li>
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#Lift-ref">Lift <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+      
+    <hr>
+    <script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
+	</script>
+	<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>
+  		
+  		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 4,
+		  interval: 30000,
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+	      background: '#333333',
+	      color: '#ffffff'
+	    },
+	    tweets: {
+	      background: '#000000',
+	      color: '#ffffff',
+	      links: '#0781eb'
+	    }
+	  	},
+	  	features: {
+	    	scrollbar: false,
+	    	loop: false,
+	    	live: false,
+	    	behavior: 'all'
+	  	}
+		}).render().setUser('modal_soul').start();
+		</script>
+
+		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-8642536258449297";
+		/* modalsoul1 */
+		google_ad_slot = "8173659218";
+		google_ad_width = 160;
+		google_ad_height = 600;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+
+  </div>
+</div>
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2013 modal_soul
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102099-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+    
+    <!-- Twitter badge -->
+    <!-- twitter follow badge by go2web20 -->
+    <script src='http://www.go2web20.net/twitterfollowbadge/1.0/badge.js' type='text/javascript'>
+    </script>
+    <script type='text/javascript' charset='utf-8'><!--
+    tfb.account = 'modal_soul';
+    tfb.label = 'follow-me';
+    tfb.color = '#2f3192';
+    tfb.side = 'r';
+    tfb.top = 136;
+    tfb.showbadge();
+    -->
+    </script>
+    <!-- end of twitter follow badge -->
+  </body>
+</html>
+

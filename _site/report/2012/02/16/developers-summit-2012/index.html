@@ -7,18 +7,19 @@
     
     <meta name="author" content="modal_soul">
 
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Le styles -->
-	<link href="/assets/themes/twitter/css/syntax.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    
-    <link href="/css/main.css" media="screen" rel="stylesheet" type="text/css">
-        
+    <link href="http://modalsoul.github.io/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="http://modalsoul.github.io/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
+
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -26,90 +27,92 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
-  	<!-- Add these tags to the HEAD section of your page. -->
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 
-	<link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
-	<script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+    <!-- coderwall -->
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+    <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
 
-	<!-- Add koottam -->
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.koottam.js"></script>
-	<link href="css/koottam.css" rel="stylesheet"/>
-
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29102099-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
-
-
-</script>
-<!-- end Mixpanel -->
-
+    <!-- atom & rss feed -->
+    <link href="http://modalsoul.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="http://modalsoul.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
   </head>
 
   <body>
-
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="/"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="http://modalsoul.github.io"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
           <ul class="nav">
             
             
             
 
 
-
   
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      	
+      
+    
   
-  	
-  	<li><a href="/archive.html">Archive</a></li>
-  	
- 
+    
+      
+    
   
-
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/categories.html">Categories</a></li>
+      	
+      
+    
   
+    
+      
+    
   
-  	
-  	<li><a href="/categories.html">Categories</a></li>
-  	
- 
+    
+      
+    
   
-
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/pages.html">Pages</a></li>
+      	
+      
+    
   
-
+    
+      
+    
   
-
+    
+      
+    
   
+    
+      
+      	
+      	<li><a href="http://modalsoul.github.io/tags.html">Tags</a></li>
+      	
+      
+    
   
-  	
-  	<li><a href="/pages.html">Pages</a></li>
-  	
- 
-  
-
-  
-  
-  	
-  	<li><a href="/tags.html">Tags</a></li>
-  	
- 
-  
-
-
 
 
 
@@ -118,64 +121,51 @@ mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-narrow row-fluid">
 
       <div class="content">
-        <div id="fb-root"></div>
-<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-</script>
+        
+
 <div class="page-header">
-	<h1>Developers Summit 2012 1日目ツイートまとめ。#devsumi 
-		<small>
-			 
+  <h1>Developers Summit 2012 1日目ツイートまとめ。#devsumi </h1>
+  <div id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io/report/2012/02/16/developers-summit-2012/" data-via="modal_soul" data-lang="ja">ツイート</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
 			
-		</small>
-	</h1>
+    <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/report/2012/02/16/developers-summit-2012/" class="hatena-bookmark-button" data-hatena-bookmark-title="Developers Summit 2012 1日目ツイートまとめ。#devsumi" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+      <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+    </a>
+    <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+    </script>
 	
-	<div id="social-button" style="padding-left:20px">
-		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.com/report/2012/02/16/developers-summit-2012/" data-via="modal_soul" data-lang="ja">ツイート</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-		</script>
-			
-		<a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.com/report/2012/02/16/developers-summit-2012/" class="hatena-bookmark-button" data-hatena-bookmark-title="Developers Summit 2012 1日目ツイートまとめ。#devsumi" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
-			<img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
-		</a>
-		<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
-		</script>
-	
-		<!-- このタグを +1 ボタンを表示する場所に挿入してください -->
-		<g:plusone size="medium"></g:plusone>
+    <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+    <g:plusone size="medium"></g:plusone>
 
-		<!-- この render 呼び出しを適切な位置に挿入してください -->
-		<script type="text/javascript">
-	  	window.___gcfg = {lang: 'ja'};
-
-	  	(function() {
-	    	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-	    	po.src = 'https://apis.google.com/js/plusone.js';
-	    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	  	})();
-		</script>
+    <!-- この render 呼び出しを適切な位置に挿入してください -->
+    <script type="text/javascript">
+      window.___gcfg = {lang: 'ja'};
+  	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	  </script>
 	
-		<div class="fb-like" data-href="http://modalsoul.github.com/report/2012/02/16/developers-summit-2012/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
-		</div>
-	</div>
+    <div class="fb-like" data-href="http://modalsoul.github.io/report/2012/02/16/developers-summit-2012/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+    </div>
+  </div>
 </div>
 
-<div class="row">
-	<div class="span10">
-		<div id="thumbnail">
-			
-				
-				
-					
-					
+<div class="row-fluid">
+  <div class="span9">
+    <div class="content">
+      <div id="thumbnail">
+      	
+          
+          
+            
+            
 
 
 
@@ -183,10 +173,10 @@ mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
 
 
 
-				
-						
-		</div>
-<h2 id='developers_summit_2012'><img alt='Developers Summit 2012' src='http://capture.heartrails.com/300x200/cool?http://seshop.com/se/timetable/21' /></h2>
+          
+        			
+	 </div>
+      <h2 id='developers_summit_2012'><img alt='Developers Summit 2012' src='http://capture.heartrails.com/300x200/cool?http://seshop.com/se/timetable/21' /></h2>
 
 <h2 id='developers_summit'>Developers Summitとは？</h2>
 <div class='highlight'><pre><code class='sh'>Developers Summit でべろっぱーずさみっと （コンピュータ）
@@ -194,7 +184,7 @@ mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
 通称：デブサミ
 「デベロッパーの復権」を目指して年1回開催される、ITエンジニアのお祭り
 </code></pre></div>
-<h3 id='id1'>開催概要</h3>
+<h3 id='id26'>開催概要</h3>
 
 <h4 id='_developers_summit_2012_2012'>名称 Developers Summit 2012 （デブサミ2012）</h4>
 
@@ -248,7 +238,7 @@ mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
 
 <p><a href='https://yukar.in/note/ckFpc8'>［その２］あの人の自分戦略を聞きたい！ #devsumi #devsumiA つぶやきまとめ</a> <a href='https://yukar.in/note/ckFpc8'>https://yukar.in/note/ckFpc8</a></p>
 
-<h2 id='id2'>最後に、</h2>
+<h2 id='id27'>最後に、</h2>
 
 <p>会場の本ブースに、オライリーガシャポンがあったため まんまとやってしまいましたｗ（1回\300也）</p>
 
@@ -267,94 +257,146 @@ mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
 <p>・牛？　【中央下】</p>
 
 <p>・白熊？　【中央上】</p>
+    </div>
+    <hr>
 
-		<hr />
-		
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
 
-    	<div class="share">
-	    	<a href="https://twitter.com/share" class="twitter-share-button" data-via="modal_soul" data-lang="ja">ツイート</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-			</script>
-			<a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.com/report/2012/02/16/developers-summit-2012" class="hatena-bookmark-button" data-hatena-bookmark-title="Developers Summit 2012 1日目ツイートまとめ。#devsumi" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
-			</a>
-			<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
-			</script>
-			<!-- このタグを +1 ボタンを表示する場所に挿入してください -->
-			<g:plusone size="medium"></g:plusone>
-<!--<div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
--->
-		</div>
 
-		<div id="disqus_thread"></div>
-			<script type="text/javascript">
-	    	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	    	var disqus_shortname = 'modalsoul'; // required: replace example with your forum shortname
-
-	    	/* * * DON'T EDIT BELOW THIS LINE * * */
-	    	(function() {
-	        	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        	dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	        	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    	})();
-			</script>
-			<noscript>Please enable JavaScript to view the 
-				<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-			</noscript>
-			<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>		
-
-    		<hr />
-    		<SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/modalsoul-22/8004/63a6c3cc-a1fe-409c-92f6-d656ddde480a"> 
-			</SCRIPT> 
-			<NOSCRIPT>
-				<A HREF="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fmodalsoul-22%2F8004%2F63a6c3cc-a1fe-409c-92f6-d656ddde480a&Operation=NoScript">Amazon.co.jp ウィジェット</A>
-			</NOSCRIPT>
-			<hr />
-    		<div class="pagination">
-      			<ul>
-      			
-        		<li class="prev">
-        			<a href="/record/2012/01/11/first-post" title="GitHub+Jekyllでブログを立ててみた。">&larr; Previous</a>
-        		</li>
-      			
-        		<li>
-        			<a href="/archive.html">Archive</a>
-        		</li>
-      			
-        		<li class="next disabled">
-        			<a>Next &rarr;</a>
-        		</li>
-      			
-      		</ul>
-    	</div>    
-  	</div>
-  	<div class="span4">
-
-  	<!-- Summer Wars Clock -->
-  	<!--
-  	<iframe src="http://swclock.loftimg.jp/blogparts/?country=JPN" scrolling="no" frameborder="0" style="border:none;overflow:hidden;display:block;width:200px; height:150px;" allowTransparency="true"></iframe>
-	-->  
-    <h4>Published</h4>
+  
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#report-ref">
+    		report <span>17</span>
+    	</a></li>
     
-    <div class="date"><span>16 February 2012</span></div>
-
-  		
-    	<h4>Tags</h4>
-    	<ul class="tag_box">
-    	
-    	
+  
 
 
-   
-  	<li><a href="/tags.html#DevelopersSummit-ref">DevelopersSummit <span>1</span></a></li>
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#DevelopersSummit-ref">DevelopersSummit <span>2</span></a></li>
+    
   
 
 
 
+    </ul>
+    
+  <hr>
+  <div  id="right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="modal_soul" data-lang="ja">ツイート</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	  </script>
+	  <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/report/2012/02/16/developers-summit-2012" class="hatena-bookmark-button" data-hatena-bookmark-title="Developers Summit 2012 1日目ツイートまとめ。#devsumi" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+	    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+	  </a>
+	  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+	  </script>
+	  <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+	  <g:plusone size="medium"></g:plusone>
+	  <div class="fb-like" data-href="http://modalsoul.github.io/report/2012/02/16/developers-summit-2012/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+	  </div>
+	</div>
+    <hr>
+    <SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822/JP/modalsoul-22/8004/63a6c3cc-a1fe-409c-92f6-d656ddde480a"> 
+	</SCRIPT> 
+	<NOSCRIPT>
+	  <A HREF="http://ws.amazon.co.jp/widgets/q?ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fmodalsoul-22%2F8004%2F63a6c3cc-a1fe-409c-92f6-d656ddde480a&Operation=NoScript">Amazon.co.jp ウィジェット</A>
+	</NOSCRIPT>
+    
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="http://modalsoul.github.io/environment/2012/02/13/setup-WMWare-ubuntu" title="VMWarePlayerでUbuntu環境を立ててみた。">&larr; Previous</a></li>
+      
+        <li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="http://modalsoul.github.io/report/2012/02/17/developers-summit-2012" title="Developers Summit 2012 2日目ツイートまとめ。#devsumi">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
 
-    	</ul>
-  		  
-  		
-	<script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'modalsoul'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span3">
+    <h4>Published</h4>
+    <div class="date">
+      <span>16 February 2012</span>
+    </div>
+    <h4>Category</h4>
+    
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/categories.html#report-ref">
+    		report <span>17</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+      
+    <h4>Tag</h4>
+    
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="http://modalsoul.github.io/tags.html#DevelopersSummit-ref">DevelopersSummit <span>2</span></a></li>
+    
+  
+
+
+
+    </ul>
+      
+    <hr>
+    <script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
 	</script>
 	<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>
   		
@@ -398,34 +440,53 @@ mixpanel.init("fd7955295db9a38051405fdfe0db600d");mixpanel.track("View page");
 		<script type="text/javascript"
 		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 		</script>
- 	 </div>
+
+  </div>
 </div>
 
-
       </div>
-
+      <hr>
       <footer>
-        <p>&copy; modal_soul 2012 
+        <p>&copy; 2013 modal_soul
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
 
-    </div> <!-- /container -->
-<!-- Twitter badge -->
-<!-- twitter follow badge by go2web20 -->
-<script src='http://www.go2web20.net/twitterfollowbadge/1.0/badge.js' type='text/javascript'>
+    </div>
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29102099-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
-<script type='text/javascript' charset='utf-8'><!--
-tfb.account = 'modal_soul';
-tfb.label = 'follow-me';
-tfb.color = '#2f3192';
-tfb.side = 'r';
-tfb.top = 136;
-tfb.showbadge();
--->
-</script>
-<!-- end of twitter follow badge -->
+
+
+
+    
+    <!-- Twitter badge -->
+    <!-- twitter follow badge by go2web20 -->
+    <script src='http://www.go2web20.net/twitterfollowbadge/1.0/badge.js' type='text/javascript'>
+    </script>
+    <script type='text/javascript' charset='utf-8'><!--
+    tfb.account = 'modal_soul';
+    tfb.label = 'follow-me';
+    tfb.color = '#2f3192';
+    tfb.side = 'r';
+    tfb.top = 136;
+    tfb.showbadge();
+    -->
+    </script>
+    <!-- end of twitter follow badge -->
   </body>
 </html>
 

@@ -5,17 +5,17 @@
         <description>modal_soul debriefing - modal_soul</description>
         <link>http://modalsoul.github.io</link>
         <link>http://modalsoul.github.io</link>
-        <lastBuildDate>2013-08-08T22:43:43+09:00</lastBuildDate>
-        <pubDate>2013-08-08T22:43:43+09:00</pubDate>
+        <lastBuildDate>2013-08-08T22:57:56+09:00</lastBuildDate>
+        <pubDate>2013-08-08T22:57:56+09:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>node.js+JSDoc3によるインラインAPIドキュメントの生成</title>
-                <description>&lt;a title='Old Documents by pixagraphic, on Flickr' href='http://www.flickr.com/photos/pixagraphic/3414730395/'&gt;
-&lt;img height='213' alt='Old Documents' src='http://farm4.staticflickr.com/3586/3414730395_7dedac534b_n.jpg' width='320' /&gt;
+                <description>&lt;a href='http://www.flickr.com/photos/pixagraphic/3414730395/' title='Old Documents by pixagraphic, on Flickr'&gt;
+&lt;img width='320' alt='Old Documents' src='http://farm4.staticflickr.com/3586/3414730395_7dedac534b_n.jpg' height='213' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
-&lt;h2 id='id112'&gt;謝辞&lt;/h2&gt;
+&lt;h2 id='id103'&gt;謝辞&lt;/h2&gt;
 
 &lt;p&gt;以下の記事を参考にさせていただきました。感謝です。&lt;/p&gt;
 
@@ -30,7 +30,7 @@
 &lt;h2 id='jsdoc3'&gt;JSDoc3を使う&lt;/h2&gt;
 
 &lt;p&gt;ドキュメント生成ルーツは色々あるようですが、今回はJSDoc3を使いました。 &lt;a href='https://github.com/jsdoc3/jsdoc'&gt;
-&lt;img title='jsdoc3/jsdoc ・ GitHub' alt='https://github.com/jsdoc3/jsdoc' height='90' src='http://capture.heartrails.com/120x90/cool/1351633993677?https://github.com/jsdoc3/jsdoc' width='120' /&gt;
+&lt;img width='120' title='jsdoc3/jsdoc ・ GitHub' alt='https://github.com/jsdoc3/jsdoc' src='http://capture.heartrails.com/120x90/cool/1351633993677?https://github.com/jsdoc3/jsdoc' height='90' /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;現状だとJSDocの後継&amp;#8221;JsDoc Toolkit&amp;#8221;がメジャーなようですが、さらに後継のJSDoc3を使いました。&lt;/p&gt;
@@ -42,7 +42,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;npmはとても便利ですね&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id113'&gt;アノテーションの記述&lt;/h2&gt;
+&lt;h2 id='id104'&gt;アノテーションの記述&lt;/h2&gt;
 
 &lt;p&gt;ドキュメントに落としたいオブジェクトの直前にJSDocアノテーションを追加します。 Javaと同じく&amp;#8221;/＊＊&amp;#8230; ＊/ &amp;#8220;で囲まれた部分がアノテーションとなります。&lt;/p&gt;
 
@@ -50,37 +50,37 @@
 
 &lt;p&gt;実際にnode.js＋expressのコードにアノテーションを追加してみました。&lt;/p&gt;
 &lt;a href='https://github.com/modalsoul/expressSample/blob/master/app.js'&gt;
-&lt;img title='expressSample/app.js at master ・ modalsoul/expressSample ・ GitHub' alt='https://github.com/modalsoul/expressSample/blob/master/app.js' height='150' src='http://capture.heartrails.com/200x150/cool/1351634631326?https://github.com/modalsoul/expressSample/blob/master/app.js' width='200' /&gt;
+&lt;img width='200' title='expressSample/app.js at master ・ modalsoul/expressSample ・ GitHub' alt='https://github.com/modalsoul/expressSample/blob/master/app.js' src='http://capture.heartrails.com/200x150/cool/1351634631326?https://github.com/modalsoul/expressSample/blob/master/app.js' height='150' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
-&lt;h2 id='id114'&gt;タグの種類&lt;/h2&gt;
+&lt;h2 id='id105'&gt;タグの種類&lt;/h2&gt;
 
 &lt;p&gt;上記のサンプルでは@param, @return, @moduleの3種類しか使っていませんが、JSDocには他にもタグが用意されているようです。&lt;/p&gt;
 
-&lt;h3 id='id115'&gt;主要属性&lt;/h3&gt;
+&lt;h3 id='id106'&gt;主要属性&lt;/h3&gt;
 
 &lt;p&gt;@param @return @extends&lt;/p&gt;
 
-&lt;h3 id='id116'&gt;アクセス識別子&lt;/h3&gt;
+&lt;h3 id='id107'&gt;アクセス識別子&lt;/h3&gt;
 
 &lt;p&gt;@private @protected @public @access&lt;/p&gt;
 
-&lt;h3 id='id117'&gt;オブジェクト属性&lt;/h3&gt;
+&lt;h3 id='id108'&gt;オブジェクト属性&lt;/h3&gt;
 
 &lt;p&gt;@class @constructor @function @constant @member @enum &amp;#8230;&lt;/p&gt;
 
-&lt;h3 id='id118'&gt;オブジェクト参照属性&lt;/h3&gt;
+&lt;h3 id='id109'&gt;オブジェクト参照属性&lt;/h3&gt;
 
 &lt;p&gt;@static @inner&lt;/p&gt;
 
-&lt;h3 id='id119'&gt;説明&lt;/h3&gt;
+&lt;h3 id='id110'&gt;説明&lt;/h3&gt;
 
 &lt;p&gt;@desc @example @fileoverview @classdesc &amp;#8230;&lt;/p&gt;
 
-&lt;h3 id='id120'&gt;サポート情報&lt;/h3&gt;
+&lt;h3 id='id111'&gt;サポート情報&lt;/h3&gt;
 
 &lt;p&gt;@version @since @deprecated @see @author&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id121'&gt;ドキュメントの生成&lt;/h2&gt;
+&lt;h2 id='id112'&gt;ドキュメントの生成&lt;/h2&gt;
 
 &lt;p&gt;JSDocを実行して、ドキュメントを生成します。&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;jsdoc app.js
@@ -93,10 +93,10 @@
 
         <item>
                 <title>node.js+express+log4jsでのアクセスログローテーション</title>
-                <description>&lt;a title='足跡 - Footprint - by kuromatsunai.info, on Flickr' href='http://www.flickr.com/photos/kuromatsunai/3024100752/'&gt;
-&lt;img height='240' alt='足跡 - Footprint -' src='http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg' width='320' /&gt;
+                <description>&lt;a href='http://www.flickr.com/photos/kuromatsunai/3024100752/' title='足跡 - Footprint - by kuromatsunai.info, on Flickr'&gt;
+&lt;img width='320' alt='足跡 - Footprint -' src='http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg' height='240' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
-&lt;h2 id='id110'&gt;謝辞&lt;/h2&gt;
+&lt;h2 id='id101'&gt;謝辞&lt;/h2&gt;
 
 &lt;p&gt;以下の記事を参考にさせていただきました。感謝です。&lt;/p&gt;
 
@@ -116,7 +116,7 @@
 
 &lt;p&gt;&lt;a href='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/'&gt;node.js+log4jsで、ログローテーションする&lt;/a&gt;&lt;/p&gt;
 &lt;a href='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/'&gt;
-&lt;img title='Now Capturing...' alt='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' height='90' src='http://capture.heartrails.com/120x90/cool?http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' width='120' /&gt;
+&lt;img width='120' title='Now Capturing...' alt='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' src='http://capture.heartrails.com/120x90/cool?http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' height='90' /&gt;
 &lt;/a&gt;
 &lt;p&gt;実際のコードはこんな感じ。※:要リファクタリング &lt;script src='https://gist.github.com/3973839.js'&gt;
 &lt;/script&gt; app.routerの前で、functionを入れログレベルをinfoで出力させています。&lt;/p&gt;
@@ -135,7 +135,7 @@
         <item>
                 <title>node.jsにおける、npmとpackage.jsonという作法について</title>
                 <description>&lt;hr /&gt;
-&lt;h2 id='id107'&gt;謝辞&lt;/h2&gt;
+&lt;h2 id='id98'&gt;謝辞&lt;/h2&gt;
 
 &lt;p&gt;以下の記事を参考にさせていただきました。感謝です。&lt;/p&gt;
 
@@ -172,7 +172,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;npm installを実行することで、実行環境を切り替え、モジュールをPATHに追加し、起動します。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id108'&gt;まとめ&lt;/h2&gt;
+&lt;h2 id='id99'&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;プロジェクトを作成する人は、package.jsonをキチンと書く。&lt;/p&gt;
 
@@ -183,144 +183,15 @@
         </item>
 
         <item>
-                <title>node.js+log4jsで、ログローテーションする</title>
-                <description>&lt;hr /&gt;
-&lt;h2 id='id101'&gt;インストール&lt;/h2&gt;
-
-&lt;p&gt;まずは、環境の準備です。&lt;/p&gt;
-
-&lt;p&gt;npmでlog4jsをインストールします。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;&lt;span class='nv'&gt;$ &lt;/span&gt;npm install log4js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr /&gt;
-&lt;h2 id='id102'&gt;ログ出力のために必要な手順&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;1. log4jsを読み込む&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;var &lt;span class='nv'&gt;log4js&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; require&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;log4js&amp;#39;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;2. loggerを取得する&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;var &lt;span class='nv'&gt;logger&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; log4js.getLogger&lt;span class='o'&gt;()&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;3. ログレベルを指定して、ログ出力する&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;logger.info&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;This is test.&amp;#39;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;4．実行結果&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;&lt;span class='nv'&gt;$ &lt;/span&gt;node logging-sample.js
-&lt;span class='o'&gt;[&lt;/span&gt;2012-10-14 14:04:49.197&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;[&lt;/span&gt;INFO&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;[&lt;/span&gt;default&lt;span class='o'&gt;]&lt;/span&gt; - This is test.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;出力形式を指定せずに実行すると、デフォルトで標準出力にログ出力されます。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id='id103'&gt;ログをファイルに出力する手順&lt;/h2&gt;
-
-&lt;p&gt;ログの出力先を標準出力からファイルに変更します。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;1. appenders.jsonを生成&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;appenders: &lt;span class='o'&gt;[{&lt;/span&gt;
-	&lt;span class='s2'&gt;&amp;quot;type&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;file&amp;quot;&lt;/span&gt;,
-	&lt;span class='s2'&gt;&amp;quot;filename&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;logging.log&amp;quot;&lt;/span&gt;,
-&lt;span class='o'&gt;}]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;2. log4jsに設定を反映&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;log4js.configure&lt;span class='o'&gt;({&lt;/span&gt;
-	appenders: &lt;span class='o'&gt;[{&lt;/span&gt;
-	&lt;span class='s2'&gt;&amp;quot;type&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;file&amp;quot;&lt;/span&gt;,
-	&lt;span class='s2'&gt;&amp;quot;filename&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;logging.log&amp;quot;&lt;/span&gt;,
-	&lt;span class='o'&gt;}]&lt;/span&gt;
-&lt;span class='o'&gt;})&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;3. loggerを取得する&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;var &lt;span class='nv'&gt;logger&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; log4js.getLogger&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;file&amp;#39;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;getLoggerの引数に、上記で設定したtypeを指定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;4．実行結果&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;実行すると、プロダクトと同じ階層に&amp;#8221;logger.log&amp;#8221;ファイルが生成され、以下のように出力されます。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;&lt;span class='o'&gt;[&lt;/span&gt;2012-10-14 18:50:33.876&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;[&lt;/span&gt;INFO&lt;span class='o'&gt;]&lt;/span&gt; file - This is test.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id='id104'&gt;ログファイルの出力先を変更する&lt;/h3&gt;
-
-&lt;p&gt;appendersのfilenameに、ファイルパスを含めて記載すると、出力先を任意に変更できます。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;log4js.configure&lt;span class='o'&gt;({&lt;/span&gt;
-	appenders: &lt;span class='o'&gt;[{&lt;/span&gt;
-	&lt;span class='s2'&gt;&amp;quot;type&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;file&amp;quot;&lt;/span&gt;,
-	&lt;span class='s2'&gt;&amp;quot;filename&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;logs/logging.log&amp;quot;&lt;/span&gt;,
-	&lt;span class='o'&gt;}]&lt;/span&gt;
-&lt;span class='o'&gt;})&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;上記の設定で実行すると、プロダクトと同階層にある&amp;#8221;logs&amp;#8221;ディレクトリ配下に、&amp;#8221;logger.log&amp;#8221;ファイルが生成され、ログが出力されます。&lt;/p&gt;
-&lt;i&gt;&lt;b&gt;ただし&lt;/b&gt;、パスにしていしたディレクトリは自動で生成はされないので、あらかじめディレクトリを生成しておく必要があります。&lt;/i&gt;&lt;hr /&gt;
-&lt;h2 id='id105'&gt;ログファイルのローテーションを設定する手順&lt;/h2&gt;
-&lt;a href='https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender'&gt;&lt;img title='Date rolling file appender ・ nomiddlename/log4js-node Wiki ・ GitHub' alt='https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender' height='150' src='http://capture.heartrails.com/200x150/cool/1350212685200?https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender' width='200' /&gt;
-&lt;/a&gt;
-&lt;p&gt;ログファイルを日次でローテーションするよう設定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;1. appenders.jsonを生成&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;appenders: &lt;span class='o'&gt;[{&lt;/span&gt;
-	&lt;span class='s2'&gt;&amp;quot;type&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;dateFile&amp;quot;&lt;/span&gt;,
-	&lt;span class='s2'&gt;&amp;quot;filename&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;logging.log&amp;quot;&lt;/span&gt;,
-	&lt;span class='s2'&gt;&amp;quot;pattern&amp;quot;&lt;/span&gt;: &lt;span class='s2'&gt;&amp;quot;-yyyy-MM-dd&amp;quot;&lt;/span&gt;
-&lt;span class='o'&gt;}]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;2. log4jsに設定を反映する&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;log4js.configure({ appenders: &lt;span&gt;{ &amp;#8220;type&amp;#8221;: &amp;#8220;dateFile&amp;#8221;, &amp;#8220;filename&amp;#8221;: &amp;#8220;logging.log&amp;#8221;, &amp;#8220;pattern&amp;#8221;: &amp;#8220;-yyyy-MM-dd&amp;#8221; }&lt;/span&gt; });&lt;/p&gt;
-
-&lt;p&gt;ここで設定している&amp;#8221;pattern&amp;#8221;は、ローテーションで生成されるログファイル名のpostfixです。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;3. loggerを取得する&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;var &lt;span class='nv'&gt;logger&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; log4js.getLogger&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;dateFile&amp;#39;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;getLoggerの引数に、上記で設定したtypeを指定します。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;4. ローテーションの動作&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;上記設定の場合、初回起動時は&amp;#8221;filename&amp;#8221;の設定値の&amp;#8221;logging.log&amp;#8221;という名前のログファイルが生成されます。&lt;/p&gt;
-
-&lt;p&gt;そして午前0時に、現在の&amp;#8221;logging.log&amp;#8221;が、&amp;#8221;logging.log&lt;i&gt;-yyyy-MM-dd&lt;/i&gt;&amp;#8220;にリネームされ新しい&amp;#8221;logging.log&amp;#8221;が生成されます。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h3 id='pattern'&gt;patternの設定&lt;/h3&gt;
-
-&lt;p&gt;patternの設定は、ローテーションされたファイルのpostfixになります。&lt;/p&gt;
-
-&lt;p&gt;patternの設定は、以下の書式が適用されます。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;・ yyyy : 西暦を4桁表示します。2桁表示するには&amp;#8221;yy&amp;#8221;を指定します。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;・ MM : 月&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;・ dd : 日&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;・ hh : 時間(24時間表示)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;・ mm : 分&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;・ ss : 秒&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;・ sss : ミリ秒&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;・ O : タイムゾーン（大文字のOです）&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;これでnode.js+log4jsで、ログローテーションできるようになりました。&lt;/p&gt;
-
-&lt;p&gt;最後に、日次でローテーションするサンプル全コードを載せます。&lt;/p&gt;
-&lt;script src='https://gist.github.com/3888287.js'&gt; 
-&lt;/script&gt;
-&lt;p&gt;この他にもlog4jsには色々な設定ができるようなので、機会を見て調べてみたいと思います。&lt;/p&gt;</description>
-                <link>http://modalsoul.github.io/report/2012/10/14/node-js-log4js</link>
-                <guid>http://modalsoul.github.io/report/2012/10/14/node-js-log4js</guid>
-                <pubDate>2012-10-14T00:00:00+09:00</pubDate>
-        </item>
-
-        <item>
                 <title>node.jsをはじめました</title>
                 <description>&lt;hr /&gt;
-&lt;h2 id='id99'&gt;謝辞&lt;/h2&gt;
+&lt;h2 id='id95'&gt;謝辞&lt;/h2&gt;
 
 &lt;p&gt;今回、node.jsをはじめるに辺りこちらのサイトを参考にさせていただきました。感謝です。&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='node.js ハンズオン資料' src='http://capture.heartrails.com/200x150/cool?http://dl.dropbox.com/u/219436/node.js/handson/build/html/index.html' /&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id100'&gt;インストール&lt;/h2&gt;
+&lt;h2 id='id96'&gt;インストール&lt;/h2&gt;
 
 &lt;p&gt;まずは、環境の準備です。&lt;/p&gt;
 
@@ -393,7 +264,7 @@ transfer-encoding:chunked
         <item>
                 <title>Android端末をUSBデバッグ接続してもMacのDDMSで認識されない問題でハマった件について</title>
                 <description>&lt;hr /&gt;
-&lt;h2 id='id95'&gt;現象について&lt;/h2&gt;
+&lt;h2 id='id91'&gt;現象について&lt;/h2&gt;
 
 &lt;p&gt;Android端末をUSBケーブルでつないでデバッグ接続しても、EclipseのDDMSで認識されませんでした。&lt;/p&gt;
 
@@ -401,13 +272,13 @@ transfer-encoding:chunked
 
 &lt;p&gt;Android端末は、docomo版Sony EricssonのXperia arc&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id96'&gt;原因&lt;/h2&gt;
+&lt;h2 id='id92'&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;端的に言うと、MBAにインストールされていたEasyTetherのドライバと競合していた為でした。&lt;/p&gt;
 &lt;a href='https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja'&gt;
-&lt;img title='Now Capturing...' alt='https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja' height='200' src='http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja' width='300' /&gt;
+&lt;img width='300' title='Now Capturing...' alt='https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja' src='http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja' height='200' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
-&lt;h2 id='id97'&gt;対処法&lt;/h2&gt;
+&lt;h2 id='id93'&gt;対処法&lt;/h2&gt;
 
 &lt;p&gt;EasyTetherのドライバを削除することで、DDMSでAndroid端末が認識されない問題は解消できます。&lt;/p&gt;
 
@@ -417,7 +288,7 @@ transfer-encoding:chunked
 
 &lt;p&gt;&lt;a href='http://gadget-shot.com/news/5757'&gt;こちら&lt;/a&gt;の記事を参考しました。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id98'&gt;余談ですが、、&lt;/h2&gt;
+&lt;h2 id='id94'&gt;余談ですが、、&lt;/h2&gt;
 
 &lt;p&gt;このMBA、Ruby界隈では有名なJoJoエバンジェリスト”&lt;a href='http://twitter.com/joker1007'&gt;@joker1007&lt;/a&gt;”さんに、２ヶ月ほど前に譲ってもらったものです。このMBAでAndroidアプリの開発をするために環境を準備していた訳です。&lt;/p&gt;
 
@@ -444,7 +315,7 @@ transfer-encoding:chunked
 &lt;/i&gt;&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;p&gt;私は今までXP祭りに参加したことが無かったのですが、実行委員の公募に乗っかり、初参加でスタッフ参加という、突飛な状況になったのでした。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id85'&gt;スタッフ参加して&lt;/h2&gt;
+&lt;h2 id='id81'&gt;スタッフ参加して&lt;/h2&gt;
 
 &lt;p&gt;私は、&lt;a href='https://github.com/agile-samurai-ja/support/wiki/Readingagilesamuraiinyokohama'&gt;アジャイルサムライ読書会横浜道場&lt;/a&gt;の運営スタッフもさせていただいているのですが、このように大規模（参加者数が数百名にも達する）イベントの運営には携わったことはありませんでした。&lt;/p&gt;
 
@@ -452,11 +323,11 @@ transfer-encoding:chunked
 
 &lt;p&gt;XP祭り当日にも、「スタッフ参加したい！」という声が聞かれたので、スタッフになることのメリット・デメリットについて書いてみようと思います。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id86'&gt;ここがツライよ、実行委員&lt;/h2&gt;
+&lt;h2 id='id82'&gt;ここがツライよ、実行委員&lt;/h2&gt;
 
 &lt;p&gt;やるからには苦難があるものですが、実行委員になってツラかったことをご紹介します。&lt;/p&gt;
 
-&lt;h3 id='id87'&gt;当日セッションに参加できない&lt;/h3&gt;
+&lt;h3 id='id83'&gt;当日セッションに参加できない&lt;/h3&gt;
 
 &lt;p&gt;当たり前と言えば当たり前ですが、当日は運営の仕事があります。 役割によりけりですが、興味のあるセッションを必ず見られるかというと難しそうです。&lt;/p&gt;
 
@@ -466,53 +337,53 @@ transfer-encoding:chunked
 
 &lt;p&gt;なので、セッションを見学することはある程度できますが、ワークショップに参加したい場合は少々難儀です。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h3 id='id88'&gt;協賛各社様から提供された書籍・グッズがもらえない&lt;/h3&gt;
+&lt;h3 id='id84'&gt;協賛各社様から提供された書籍・グッズがもらえない&lt;/h3&gt;
 
 &lt;p&gt;スタッフ最大の役損と言えますね。今年のXP祭りでは、協賛各社様から数十(単純な数なら１００近く？)にも及ぶ書籍・グッズが提供されました。&lt;a href='http://xpjug.com/xp2012-sponsor/'&gt;※協賛各社からのご支援&lt;/a&gt; &lt;img alt='協賛各社様からのご支援' src='http://farm9.staticflickr.com/8031/7995736441_fd620ed66b.jpg' /&gt;&lt;/p&gt;
 
 &lt;p&gt;これも公正な運営の為には当たり前のことですが、目の前にこれだけの技術書が積まれると、エンジニアなら誰しも「よ、読みたいっ！」となるのが人情。スタッフは皆泣く泣く我慢しているのです。。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id89'&gt;ここが得だよ、実行委員&lt;/h2&gt;
+&lt;h2 id='id85'&gt;ここが得だよ、実行委員&lt;/h2&gt;
 
 &lt;p&gt;人生ツライことばかりではありません、実行委員を勤めて「グフフフ・・得したなぁ～」ということを挙げてみます。&lt;/p&gt;
 
-&lt;h3 id='id90'&gt;規模の大きいイベントができていく過程を体験できる&lt;/h3&gt;
+&lt;h3 id='id86'&gt;規模の大きいイベントができていく過程を体験できる&lt;/h3&gt;
 
 &lt;p&gt;これだけの規模のイベントの運営はそうそうできるものではありません。 私は、&lt;a href='https://github.com/agile-samurai-ja/support/wiki/Readingagilesamuraiinyokohama'&gt;アジャイルサムライ読書会横浜道場&lt;/a&gt;の運営スタッフもさせてもらっているのですが、これともまた違った運営の醍醐味があります。&lt;/p&gt;
 
 &lt;p&gt;クロージングの際、メイン会場に集まった参加者とセッションで高まった熱気、この場の雰囲気は正に圧巻です 。&lt;/p&gt;
 &lt;a href='http://kokucheese.com/event/index/52905/'&gt;
-&lt;img title='9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」' alt='http://kokucheese.com/event/index/52905/' height='200' src='http://capture.heartrails.com/300x200/cool?http://kokucheese.com/event/index/52905/' width='300' /&gt;
+&lt;img width='300' title='9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」' alt='http://kokucheese.com/event/index/52905/' src='http://capture.heartrails.com/300x200/cool?http://kokucheese.com/event/index/52905/' height='200' /&gt;
 &lt;/a&gt;
 &lt;p&gt;※ちなみに、９月２０日は&lt;a href='http://kokucheese.com/event/index/52905/'&gt;アジャイルサムライ読書会 横浜道場 「当てずっぽうの奥義」&lt;/a&gt;が開催されます。どうぞご参加ください#ステマ&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h3 id='id91'&gt;講師と話ができる&lt;/h3&gt;
+&lt;h3 id='id87'&gt;講師と話ができる&lt;/h3&gt;
 
 &lt;p&gt;セッションの内容によっては、事前に講師と打ち合わせをし、どういった趣旨・内容でセッションを行うのか話をします。 なにせ運営スタッフですので、当日の講師控え室にだって堂々と入ることができます。&lt;/p&gt;
 
 &lt;p&gt;そんな合間合間の時間に、普段なかなかお目にかかる機会の無い講師の方にも直接質問をしたり話を伺うことができます。 Twitterにメンションを投げるよりも確実に聞きたいことが聞けます。&lt;/p&gt;
-&lt;a title='豪華アジャイルコーチ陣' target='_blank' href='http://twitter.yfrog.com/kl9tncenj'&gt;&lt;img src='http://desmond.yfrog.com/Himg741/scaled.php?tn=0&amp;server=741&amp;filename=9tncen.jpg&amp;xsize=640&amp;ysize=640' border='0' /&gt;
+&lt;a href='http://twitter.yfrog.com/kl9tncenj' title='豪華アジャイルコーチ陣' target='_blank'&gt;&lt;img src='http://desmond.yfrog.com/Himg741/scaled.php?tn=0&amp;server=741&amp;filename=9tncen.jpg&amp;xsize=640&amp;ysize=640' border='0' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
-&lt;h3 id='id92'&gt;登壇して欲しい人やセッション内容を推薦できる&lt;/h3&gt;
+&lt;h3 id='id88'&gt;登壇して欲しい人やセッション内容を推薦できる&lt;/h3&gt;
 
 &lt;p&gt;XP祭りの内容そのものを自分の興味・指向性に合わせることができる、まさに天地創造の如き大技です！&lt;/p&gt;
 
 &lt;p&gt;「自分のセッションをやりたい！」という場合も、自分が実行委員になって推薦する、これが一番の近道ですね。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id93'&gt;今後について&lt;/h2&gt;
+&lt;h2 id='id89'&gt;今後について&lt;/h2&gt;
 
 &lt;p&gt;XP祭り2012もつつがなく終了した訳ですが、実行委員の仕事が終わった訳ではありません。 XPを謳う以上、ふりかえりは当然。&lt;/p&gt;
 
 &lt;p&gt;ということで、もうしばらく後にXP祭り2012のふりかえりが行われると思います。 そして、今年のXP祭りでの気づきを生かし、来年さらにすばらしいXP祭りになるのではと思います。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;つーか、スタッフを募集しております &lt;a href='https://twitter.com/search/%23xpjug'&gt;#xpjug
 &lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; Yasunobu Kawaguchiさん (@kawaguti) 
 &lt;a data-datetime='2012-09-15T15:10:45+00:00' href='https://twitter.com/kawaguti/status/246989439409197056'&gt;9月 15, 2012
 &lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;XP祭りのスタッフや、TOCの活動に興味を持たれた方、お声かけくださいまし。 
 &lt;a href='https://twitter.com/search/%23xpjug'&gt;#xpjug
 &lt;/a&gt;
@@ -520,9 +391,9 @@ transfer-encoding:chunked
 &amp;mdash; nohdomiさん (@nohdomi) 
 &lt;a data-datetime='2012-09-15T20:07:35+00:00' href='https://twitter.com/nohdomi/status/247064138495447040'&gt;9月 15, 2012
 &lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;hr /&gt;
-&lt;h2 id='id94'&gt;最後に&lt;/h2&gt;
+&lt;h2 id='id90'&gt;最後に&lt;/h2&gt;
 
 &lt;p&gt;実行委員として、会場に居合わせた一個人として、非常に多くの経験や気付きをいただきました。 XP祭りに参加くださった方々、実行委員の皆さん、会場を提供くださった早稲田大学さん、協賛各社様、本当にありがとうございました。&lt;/p&gt;</description>
                 <link>http://modalsoul.github.io/report/2012/09/17/xp-festival</link>
@@ -537,7 +408,7 @@ transfer-encoding:chunked
 
 &lt;p&gt;最近、この方法でテストを実行してjava.lang.SecurityException: Permission Denialが発生して、テストに失敗する事象に悩まされたので、 回避方法を記録しておきます。&lt;/p&gt;
 
-&lt;h2 id='id83'&gt;原因&lt;/h2&gt;
+&lt;h2 id='id79'&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;この問題が発生する正確な理由はわかっていません。&lt;/p&gt;
 
@@ -559,7 +430,7 @@ transfer-encoding:chunked
 &lt;h3 id='view'&gt;Viewを取得して、初期状態を確認。&lt;/h3&gt;
 &lt;script src='https://gist.github.com/2758332.js?file=getAndCheckView.java'&gt;
 &lt;/script&gt;
-&lt;h3 id='id84'&gt;ボタンのクリックをシミュレート。&lt;/h3&gt;
+&lt;h3 id='id80'&gt;ボタンのクリックをシミュレート。&lt;/h3&gt;
 &lt;script src='https://gist.github.com/2758332.js?file=getAndCheckView.java'&gt;
 &lt;/script&gt;
 &lt;h3 id='performclick'&gt;performClick()を使った回避方法&lt;/h3&gt;
@@ -735,422 +606,6 @@ facebook.callbackurl&lt;span class='o'&gt;=&lt;/span&gt;/api/facebook/auth
         </item>
 
         <item>
-                <title>【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#scalajp　#play_ja</title>
-                <description>&lt;h2 id='scala_on_play2_with_squeryl'&gt;【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ&lt;/h2&gt;
-
-&lt;p&gt;この記事は、HerokuのPrincipal Developer EvangelistのJames Ward氏とRyan Knight氏の記事&lt;a href='http://www.artima.com/articles/play2_scala_squeryl.html'&gt;Getting Started with Play 2, Scala, and Squeryl&lt;/a&gt;の意訳です。参考程度にどうぞ。&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt='Getting Started with Play 2, Scala, and Squeryl' src='http://capture.heartrails.com/300x200/cool?http://www.artima.com/articles/play2_scala_squeryl.html' /&gt;&lt;/p&gt;
-
-&lt;p&gt;誤訳・誤植等ありましたら、&lt;a href='https://twitter.com/modal_soul'&gt;@modal_soul&lt;/a&gt;までリプライいただけるとありがたいです。 &lt;hr /&gt;&lt;/p&gt;
-
-&lt;h2 id='id79'&gt;サマリー&lt;/h2&gt;
-&lt;table border='1'&gt;&lt;tr&gt;&lt;td&gt;
-この記事では、Play2,Scala,Squeryl,JSON,CoffeScript,CoffeScript,jQueryとScalaTestを使ったWebアプリケーションの作り方を紹介します。また、同時にScalaTestを使ったテスト方法とHerokuを使ったクラウド環境へのアプリケーションデプロイについても学べます。
-&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-&lt;p&gt;Play2,Scala,Squeryl,JSON,CoffeScript,jQueryとScalaTestの組み合わせによって、モダンなWebアプリケーションの構築とテストを効率的に行うことができ, シンプルなデータベース駆動Webアプリケーションの構築、テスト、クラウドへのデプロイを体験できます。&lt;/p&gt;
-
-&lt;h2 id='play2'&gt;Play2の紹介&lt;/h2&gt;
-
-&lt;p&gt;Play2は数あるWebフレームワークの中でも、ステートレスアーキテクチャで設計された、ユニークなWebフレームワークです。 Play2は、メモリやCPUなどのリソースの消費を抑えた、とても軽量なフレームワークです。 ステートレスであるため、昨今クラウドアーキテクチャにとって重要な、水平のスケーリングを容易に行うことができます。 他のアーキテクチャの特徴としては、完全に非同期なHTTPプログラミングモデルを使った、Websocketやcometのようなlong lived-connectionを利用するために設計されていることです。&lt;/p&gt;
-
-&lt;p&gt;また他の特徴としては、Herokuのようなクラウドアプリケーションプラットフォームへのデプロイに適するように、完璧に完結していることです。 Playアプリケーションのデプロイはシンプルで、コンテナベースのアプローチをしてきたJava開発者の多くが経験してきた環境齟齬を回避することができます。&lt;/p&gt;
-
-&lt;p&gt;Ruby on Rails, GrailsやDjangoなどの新しいWebフレームワークは、動的型付によってとても優れた生産性を発揮します。Playも動的言語フレームワークが持っているのと同じように、素早い繰り返しと高速な開発を行うことができ、しかしながらJavaやScalaのような静的型付言語による恩恵も留めています。これによりコンパイラは生産性を妨害することなく開発者を支援することができます。&lt;/p&gt;
-
-&lt;h2 id='squeryl'&gt;Squerylの紹介&lt;/h2&gt;
-
-&lt;p&gt;データベースとのインテグレーションに最適の技術は何か？これは今まで幾度と無く討論されてきました。幸いなことに、JavaやScalaのエコシステムでは、データの永続化の方法が複数用意され、選択することができます。 Play2のデフォルトのデータベースマッピングツールはAnormが使われています。(※AnormはORMではありません) 名前が指し示す通り、Anormはオブジェクトとリレーショナルモデルとの自動マッピングを行いません。 代わりに、開発者はネイティブなSQLを書き、手動でリレーショナルデータとオブジェクトのマッピングを行います。 この手法では、実行される生のクエリーをチューニングすることができるという利点があります。 Playの開発者は、SQLを使用することはリレーショナルデータベースとの対話とSQL層を抽象化することにおいての優れたDSLであり、パワフルで柔軟な方法だと主張してます。&lt;/p&gt;
-
-&lt;p&gt;Squerylは、Scalaにおけるデータ永続化のためのAnormの代替手段です。Anormと比較して、SquerylはHibernateに似ており、オブジェクトリレーショナルマッピングを提供します。Squerylはデータベースとの対話において、型安全なDSLを提供します。 またSquerylは、明示的に取得されるデータオブジェクトの粒度を制御することができます。 Hibernateのような従来のORMと共通のN+1問題に対するエレガントなソリューションを提供します。&lt;/p&gt;
-
-&lt;p&gt;SquerylはPlay2のデフォルトのデータ永続化ライブラリではありませんが、特別な追加設定やセットアップは必要としません。データベースエボリューションは手動で行う必要があり、データベース接続は初期起動時に生成する必要があります。トランザクションも同様に、コントローラーで呼ばれた際に、明示的に定義される必要があります。&lt;/p&gt;
-
-&lt;h2 id='play2squeryl'&gt;Play2でのSquerylのセットアップ&lt;/h2&gt;
-
-&lt;p&gt;Play2プロジェクトがまだない場合、Play2をインストール後、新規プロジェクトを作成しましょう。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;play new mysquerylapp
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;プロジェクトの言語はScalaを選択しましょう。&lt;/p&gt;
-
-&lt;p&gt;SquerylライブラリをPlayプロジェクトに追加する必要があります。後ほどプロジェクトはHerokuにデプロイします。HerokuのデフォルトのデータベースはPostgreSQLで、PostgreJDBCドライバーも依存関係にあるためここで追加します。&lt;/p&gt;
-
-&lt;p&gt;project/Build.scalaファイルを編集し、依存関係を更新しましょう。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;val &lt;span class='nv'&gt;appDependencies&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; Seq&lt;span class='o'&gt;(&lt;/span&gt;
-  &lt;span class='s2'&gt;&amp;quot;org.squeryl&amp;quot;&lt;/span&gt; %% &lt;span class='s2'&gt;&amp;quot;squeryl&amp;quot;&lt;/span&gt; % &lt;span class='s2'&gt;&amp;quot;0.9.5-2&amp;quot;&lt;/span&gt;,
-  &lt;span class='s2'&gt;&amp;quot;postgresql&amp;quot;&lt;/span&gt; % &lt;span class='s2'&gt;&amp;quot;postgresql&amp;quot;&lt;/span&gt; % &lt;span class='s2'&gt;&amp;quot;9.1-901-1.jdbc4&amp;quot;&lt;/span&gt;
-&lt;span class='o'&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;IDEにEclipseやIntellijを使っている場合、Playはプロジェクトを自動作成してくれます。&lt;/p&gt;
-
-&lt;p&gt;Intellijの場合&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;play idea
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Eclipseの場合&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;play eclipsify
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;ここでは注意ですが、プロジェクトファイルは依存関係を更新した後に作成しましょう。なぜならプロジェクトは必要なライブラリも含めて構成されるからです。もし後で依存関係を更新する場合は、プロジェクトを生成するコマンドを再度実行してください。&lt;/p&gt;
-
-&lt;p&gt;これでプロジェクトを実行することができます。プロジェクトルートに移動し、以下のコマンドを実行しましょう。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;play ~run
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;サーバは以下のURLで起動しています。確かめてみましょう。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;http://localhost:9000
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;ローカルでのテストではインメモリのh2データベースを使用します。Playでこのデータベースを使用するには、conf/application.confファイルを修正し、以下の行のコメントアウトの解除か、行の追加をします。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;db.default.driver&lt;span class='o'&gt;=&lt;/span&gt;org.h2.Driver
-db.default.url&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;jdbc:h2:mem:play&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;最後のセットアップ手順として、Squerylデータベースを接続します。データベースの接続情報を取得するために、Play標準の構成システムを使います。 Playアプリケーションのライフサイクルのスタートアップフェーズにフックするグローバルクラスを追加するだけで完了です。 app/Global.scalaファイルを新規に作成し、以下を記述します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;import org.squeryl.adapters.&lt;span class='o'&gt;{&lt;/span&gt;H2Adapter, PostgreSqlAdapter&lt;span class='o'&gt;}&lt;/span&gt;
-import org.squeryl.internals.DatabaseAdapter
-import org.squeryl.&lt;span class='o'&gt;{&lt;/span&gt;Session, SessionFactory&lt;span class='o'&gt;}&lt;/span&gt;
-import play.api.db.DB
-import play.api.GlobalSettings
-
-import play.api.Application
-
-object Global extends GlobalSettings &lt;span class='o'&gt;{&lt;/span&gt;
-
-  override def onStart&lt;span class='o'&gt;(&lt;/span&gt;app: Application&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-    SessionFactory.concreteFactory &lt;span class='o'&gt;=&lt;/span&gt; app.configuration.getString&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;db.default.driver&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; match &lt;span class='o'&gt;{&lt;/span&gt;
-      &lt;span class='k'&gt;case &lt;/span&gt;Some&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;org.h2.Driver&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;&amp;gt; Some&lt;span class='o'&gt;(()&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;&amp;gt; getSession&lt;span class='o'&gt;(&lt;/span&gt;new H2Adapter, app&lt;span class='o'&gt;))&lt;/span&gt;
-      &lt;span class='k'&gt;case &lt;/span&gt;Some&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;org.postgresql.Driver&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;&amp;gt; Some&lt;span class='o'&gt;(()&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;&amp;gt; getSession&lt;span class='o'&gt;(&lt;/span&gt;new PostgreSqlAdapter, app&lt;span class='o'&gt;))&lt;/span&gt;
-      &lt;span class='k'&gt;case &lt;/span&gt;&lt;span class='nv'&gt;_&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;&amp;gt; sys.error&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;Database driver must be either org.h2.Driver or org.postgresql.Driver&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;
-    &lt;span class='o'&gt;}&lt;/span&gt;
-  &lt;span class='o'&gt;}&lt;/span&gt;
-
-  def getSession&lt;span class='o'&gt;(&lt;/span&gt;adapter:DatabaseAdapter, app: Application&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; Session.create&lt;span class='o'&gt;(&lt;/span&gt;DB.getConnection&lt;span class='o'&gt;()(&lt;/span&gt;app&lt;span class='o'&gt;)&lt;/span&gt;, adapter&lt;span class='o'&gt;)&lt;/span&gt;
-
-&lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;アプリケーションスタートアップのdb.default.driver設定パラメータは、データベース接続のセットアップのために使用するドライバを決定するために使われます。新しいコネクションが生成され、SquerylのSessionFactoryにストアされます。&lt;/p&gt;
-
-&lt;p&gt;ブラウザで、http://localhost:9000をリロードすると、アプリケーションが動作し、PlayのSTDOUTログで以下のメッセージが表示されるはずです。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;&lt;span class='o'&gt;[&lt;/span&gt;info&lt;span class='o'&gt;]&lt;/span&gt; play - database &lt;span class='o'&gt;[&lt;/span&gt;default&lt;span class='o'&gt;]&lt;/span&gt; connected at jdbc:h2:mem:play
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id='entity'&gt;Entityの作成&lt;/h2&gt;
-
-&lt;p&gt;それでは、データベースでデータを保持するためのシンプルなEntityオブジェクトを作成しましょう。app/models/Bar.scalaファイルを新規に作成し、以下のを記述します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;package models
-
-import org.squeryl.&lt;span class='o'&gt;{&lt;/span&gt;Schema, KeyedEntity&lt;span class='o'&gt;}&lt;/span&gt;
-
-&lt;span class='k'&gt;case &lt;/span&gt;class Bar&lt;span class='o'&gt;(&lt;/span&gt;name: Option&lt;span class='o'&gt;[&lt;/span&gt;String&lt;span class='o'&gt;])&lt;/span&gt; extends KeyedEntity&lt;span class='o'&gt;[&lt;/span&gt;Long&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-  val id: &lt;span class='nv'&gt;Long&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; 0
-&lt;span class='o'&gt;}&lt;/span&gt;
-
-object AppDB extends Schema &lt;span class='o'&gt;{&lt;/span&gt;
-  val &lt;span class='nv'&gt;barTable&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; table［Bar］&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;
-&lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;これはBarオブジェクトのリストを保持するかなりシンプルなentityです。各々のBarはnameとプライマリキーとしてIDを持っています。Scalaのcase classは,不変で、基本的にクラスを文法上の便宜で満たすものです。また、クライアントから返却されたフォーム値のマッチングを行う際にとても便利なパターンマッチングとして使用することもできます。AppDBオブジェクトは、Squerylがデータベースへマッピングするスキーマのインスタンスです。今回の場合、データベースにbarというテーブルを１つ定義します。スキーマは単一のオブジェクトとして宣言されるため、シングルトンオブジェクトを生成します。&lt;/p&gt;
-
-&lt;p&gt;Squerylを使うと、AppDB.createメソッドを呼ぶだけでプラグラムチックにデータベーススキーマを生成することができます。ですが、手動でSQLスクリプトを作成する方法をお勧めします（PlayではこのSQLスクリプトをevolutions scriptと呼びます)。Playは、これらのSQLスクリプトに対応するデータベーススキーマをチェックして、データベーススキーマの変更を追跡します。Playは、スキーマが古くなっていることを検出すると、このSQLスクリプトの適用を提案してきます。これはDEVモードのときにのみ行われ、PRODモードでは、アプリケーションの起動前にスクリプトを適用されます。これにより、データベーススキーマの変更やバージョンのロールバックを行う必要がある場合に、スキーマの変更をコントロールすることができます。&lt;/p&gt;
-
-&lt;p&gt;conf/evolutions/default/1.sqlファイルを新規作成して、以下を記述します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;&lt;span class='c'&gt;# --- First database schema&lt;/span&gt;
-
-&lt;span class='c'&gt;# --- !Ups&lt;/span&gt;
-
-create sequence s_bar_id;
-
-create table bar &lt;span class='o'&gt;(&lt;/span&gt;
-  id    bigint DEFAULT nextval&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;s_bar_id&amp;#39;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;,
-  name  varchar&lt;span class='o'&gt;(&lt;/span&gt;128&lt;span class='o'&gt;)&lt;/span&gt;
-&lt;span class='o'&gt;)&lt;/span&gt;;
-
-
-&lt;span class='c'&gt;# --- !Downs&lt;/span&gt;
-
-drop table bar;
-drop sequence s_bar_id;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;このSQLファイルは”Ups”と”Downs”の2つのセクションから成っています。”Ups”セクションは、データベーススキーマに変更を反映させ、”Downs”セクションは、データベースへの変更を取り消す際の記述です。Playは、データベーススキーマへの変更をこれらのファイルの名前順に適用します。もし、デプロイ後1.sqlの適用後にスキーマへ変更を行う必要がある場合は、2.sqlファイルに変更内容を記述します。 http://localhost:9000をリロードすると、Playがデータベースへの変更を適用するか尋ねてくるはずです。1.sqlの”Ups”セクションをローカルのインメモリデータベースに適用するために、Apply this script now!ボタンをクリックします。&lt;/p&gt;
-
-&lt;h2 id='id80'&gt;モデルのテスト&lt;/h2&gt;
-
-&lt;p&gt;Play2では、テスト駆動開発のスタイルに合った強力なテストサポートがなされています。ScalaでPlay2を使う場合、テストはデフォルトでspaes2が使われていますが、ScalaTestを使用します。Barモデルオブジェクトのシンプルなテストを作ります。プロジェクトにScalaTestの依存関係を追加し、testOptions設定を修正します。project/Build.scalaを以下を追記して更新します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;val &lt;span class='nv'&gt;appDependencies&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; Seq&lt;span class='o'&gt;(&lt;/span&gt;
-  &lt;span class='s2'&gt;&amp;quot;org.scalatest&amp;quot;&lt;/span&gt; %% &lt;span class='s2'&gt;&amp;quot;scalatest&amp;quot;&lt;/span&gt; % &lt;span class='s2'&gt;&amp;quot;1.8&amp;quot;&lt;/span&gt; % &lt;span class='s2'&gt;&amp;quot;test&amp;quot;&lt;/span&gt;,
-  &lt;span class='s2'&gt;&amp;quot;org.squeryl&amp;quot;&lt;/span&gt; %% &lt;span class='s2'&gt;&amp;quot;squeryl&amp;quot;&lt;/span&gt; % &lt;span class='s2'&gt;&amp;quot;0.9.5-2&amp;quot;&lt;/span&gt;,
-  &lt;span class='s2'&gt;&amp;quot;postgresql&amp;quot;&lt;/span&gt; % &lt;span class='s2'&gt;&amp;quot;postgresql&amp;quot;&lt;/span&gt; % &lt;span class='s2'&gt;&amp;quot;9.1-901-1.jdbc4&amp;quot;&lt;/span&gt;
-&lt;span class='o'&gt;)&lt;/span&gt;
-
-val &lt;span class='nv'&gt;main&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; PlayProject&lt;span class='o'&gt;(&lt;/span&gt;appName, appVersion, appDependencies, &lt;span class='nv'&gt;mainLang&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; SCALA&lt;span class='o'&gt;)&lt;/span&gt;.settings&lt;span class='o'&gt;(&lt;/span&gt;
-  testOptions in Test :&lt;span class='o'&gt;=&lt;/span&gt; Nil
-  // Add your own project settings here
-&lt;span class='o'&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;test/BarSpec.scalaを新規作成し以下を記述します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;import models.&lt;span class='o'&gt;{&lt;/span&gt;AppDB, Bar&lt;span class='o'&gt;}&lt;/span&gt;
-
-import org.scalatest.FlatSpec
-import org.scalatest.matchers.ShouldMatchers
-
-import org.squeryl.PrimitiveTypeMode.inTransaction
-
-import play.api.test._
-import play.api.test.Helpers._
-
-class BarSpec extends FlatSpec with ShouldMatchers &lt;span class='o'&gt;{&lt;/span&gt;
-
-  &lt;span class='s2'&gt;&amp;quot;A Bar&amp;quot;&lt;/span&gt; should &lt;span class='s2'&gt;&amp;quot;be creatable&amp;quot;&lt;/span&gt; in &lt;span class='o'&gt;{&lt;/span&gt;
-    running&lt;span class='o'&gt;(&lt;/span&gt;FakeApplication&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='nv'&gt;additionalConfiguration&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; inMemoryDatabase&lt;span class='o'&gt;()))&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-      inTransaction &lt;span class='o'&gt;{&lt;/span&gt;
-        val &lt;span class='nv'&gt;bar&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; AppDB.barTable insert Bar&lt;span class='o'&gt;(&lt;/span&gt;Some&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;foo&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;))&lt;/span&gt;
-        bar.id should not equal&lt;span class='o'&gt;(&lt;/span&gt;0&lt;span class='o'&gt;)&lt;/span&gt;
-      &lt;span class='o'&gt;}&lt;/span&gt;
-    &lt;span class='o'&gt;}&lt;/span&gt;
-  &lt;span class='o'&gt;}&lt;/span&gt;
-
-&lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;このテストでは、実行するためにFakeApplicationとインメモリデータベースを使います。FakeApplicationを使用すると、Squerylデータベースコネクションは先に生成されたGlobalオブジェクトを使って構成されます。テスト本体は単純にBarのインスタンスを生成し、idが０ではないことをテストします。 これはSquerylトランザクションで行われます。 1系のPlayと異なり、テストはコマンドラインから実行されます。コマンドは以下&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;play &lt;span class='nb'&gt;test&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;テストが終了したら、以下のメッセージがPlayのSTDOUTログに出力されていることを確認します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;&lt;span class='o'&gt;[&lt;/span&gt;info&lt;span class='o'&gt;]&lt;/span&gt; Passed: : Total 1, Failed 0, Errors 0, Passed 1, Skipped 0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;ソースの変更の度にテストを実行するには、以下のコマンドで実行します&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;play ~test
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;~runと~testコマンドはバックグラウンドで継続して実行することができます。これにより、ユニットテスト/機能テストやブラウザからの手動テストをすぐさま実行することができます。&lt;/p&gt;
-
-&lt;h2 id='webbar'&gt;WebフォームからBarを生成する&lt;/h2&gt;
-
-&lt;p&gt;新しくBarオブジェクトを生成するための基本的なWeb UIを追加してみましょう。このセクションの手順を全て踏まないとコードのコンパイルができないので注意してください。&lt;/p&gt;
-
-&lt;p&gt;最初に、app/controllers/Application.scalaファイルを下記の記述を追加して更新します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;package controllers
-
-import play.api.mvc._
-
-import com.codahale.jerkson.Json
-import play.api.data.Form
-import play.api.data.Forms.&lt;span class='o'&gt;{&lt;/span&gt;mapping, text, optional&lt;span class='o'&gt;}&lt;/span&gt;
-
-import org.squeryl.PrimitiveTypeMode._
-import models.&lt;span class='o'&gt;{&lt;/span&gt;AppDB, Bar&lt;span class='o'&gt;}&lt;/span&gt;
-
-
-object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
-
-  val &lt;span class='nv'&gt;barForm&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; Form&lt;span class='o'&gt;(&lt;/span&gt;
-    mapping&lt;span class='o'&gt;(&lt;/span&gt;
-      &lt;span class='s2'&gt;&amp;quot;name&amp;quot;&lt;/span&gt; -&amp;gt; optional&lt;span class='o'&gt;(&lt;/span&gt;text&lt;span class='o'&gt;)&lt;/span&gt;
-    &lt;span class='o'&gt;)(&lt;/span&gt;Bar.apply&lt;span class='o'&gt;)(&lt;/span&gt;Bar.unapply&lt;span class='o'&gt;)&lt;/span&gt;
-  &lt;span class='o'&gt;)&lt;/span&gt;
-
-  def &lt;span class='nv'&gt;index&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; Action &lt;span class='o'&gt;{&lt;/span&gt;
-    Ok&lt;span class='o'&gt;(&lt;/span&gt;views.html.index&lt;span class='o'&gt;(&lt;/span&gt;barForm&lt;span class='o'&gt;))&lt;/span&gt;
-  &lt;span class='o'&gt;}&lt;/span&gt;
-
-  def &lt;span class='nv'&gt;addBar&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; Action &lt;span class='o'&gt;{&lt;/span&gt; implicit &lt;span class='nv'&gt;request&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;&amp;gt;
-    barForm.bindFromRequest.value map &lt;span class='o'&gt;{&lt;/span&gt; &lt;span class='nv'&gt;bar&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;&amp;gt;
-      inTransaction&lt;span class='o'&gt;(&lt;/span&gt;AppDB.barTable insert bar&lt;span class='o'&gt;)&lt;/span&gt;
-      Redirect&lt;span class='o'&gt;(&lt;/span&gt;routes.Application.index&lt;span class='o'&gt;())&lt;/span&gt;
-    &lt;span class='o'&gt;}&lt;/span&gt; getOrElse BadRequest
-  &lt;span class='o'&gt;}&lt;/span&gt;
-
-&lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;barFormは、リクエストパラメーターnameからcace class Barのプロパティnameへ（コンストラクタを通して）マッピングをします。indexメソッドは、index templateへbarFormのインスタンスを渡すように更新されました。次にtemplateを更新します。addBarメソッドは、リクエストパラメーターをオブジェクトbarにバインドし、トランザクション内でデータベースへインサートします。SquerylはPlay frameworkに統合されていないので、データベーストランザクションはSquerylのinTransactionを使って明示的に開始する必要があります。次にユーザはindexページにリダイレクトされます。リクエストパラメータがbarFormを使ってBarにマッピングされなかった場合、BadRequestエラーが返却されます。&lt;/p&gt;
-
-&lt;p&gt;次にapp/views/index.scala.htmlテンプレートに以下を追記して更新します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt; ＠&lt;span class='o'&gt;(&lt;/span&gt;form: play.api.data.Form&lt;span class='o'&gt;[&lt;/span&gt;Bar&lt;span class='o'&gt;])&lt;/span&gt;
-
- ＠main&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;Welcome to Play 2.0&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-
-    @helper.form&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='nv'&gt;action&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; routes.Application.addBar&lt;span class='o'&gt;)&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-        @helper.inputText&lt;span class='o'&gt;(&lt;/span&gt;form&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;))&lt;/span&gt;
-        &amp;lt;input &lt;span class='nb'&gt;type&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;submit&amp;quot;&lt;/span&gt;/&amp;gt;
-    &lt;span class='o'&gt;}&lt;/span&gt;
-
-&lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;この時点で、テンプレートはApplication Controllerのindexメソッドから渡されたForm&lt;span&gt;Bar&lt;/span&gt;パラメータを取ります。テンプレート本体の新しいHTMLフォームはPlay2のform helperを使ってレンダリングされます。このフォームは、nameフィールドとsubmitボタンを持ちます。注意しなければいけないのは、フォームのアクションは、ルートからApplication controllerのaddBarメソッドへを指していることです。&lt;/p&gt;
-
-&lt;p&gt;この時点でコンソールウィンドウをみると”value addBar is not a member of controllers.ReverseApplication”エラーがみられると思います。 これは、routeファイルがコンパイルされ、routeがチェックされたからです。まだrouteが作られていないので、conf/routesファイルを編集し、以下の行を追加します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;POST    /bars                       controllers.Application.addBar
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;これにより、/barsURLへのPOSTリクエストをaddBarメソッドへマッピングするHTTPルートを作成します。&lt;/p&gt;
-
-&lt;p&gt;ブラウザでhttp://localhost:9000 を更新すると、新しいBarオブジェクトを追加するための基本的なフォームが表示されているはずです。成功した場合、新しいBarを追加した後に、ブラウザはindexページにリダイレクトして戻ります。&lt;/p&gt;
-
-&lt;p&gt;これで一通りが動くようになったので、controllerのコードに戻り、これらの動作についてより理解しましょう。addBarメソッドについて理解することは、コンパイラが周囲のスコープから値を見つけるために、どのように暗黙的なキーワードを通知するかを理解するのに役立ちます。Scalaでは、implicitキーワードは、implicit関数のパラメータもしくは、inplicitオブジェクトへの変換としても使用することができます。二つは全く異なりますが、両方ともにScalaの定義を解決する方法に関連しています。この場合、implicitは一つもしくはそれ以上の関数を呼ぶ場合と全ての関数に同じあたいを渡す必要がある場合に使われます。この手順は、APIを構成する際に便利で、ユーザはいつも何のパラメータが使用されるかについて明示する必要がなくなりますが、変わりにデフォルト値に依存します。&lt;/p&gt;
-
-&lt;p&gt;addBarの場合、barForm.bindFromRequestメソッドがplay.api.mvc.Requestパラメータをとり、明示的に渡す必要がないため、リクエストをimplicitと明示します。&lt;/p&gt;
-
-&lt;p&gt;参考に、Form.bindToRequestメソッドのメソッド定義を記載します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;def bindFromRequest&lt;span class='o'&gt;()(&lt;/span&gt;implicit request: play.api.mvc.Request&lt;span class='o'&gt;[&lt;/span&gt;_&lt;span class='o'&gt;])&lt;/span&gt;: Form&lt;span class='o'&gt;[&lt;/span&gt;T&lt;span class='o'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;...&lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;bindFromRequestはフォームオブジェクトを返します。addBarメソッドでは、この場合Option&lt;span&gt;Bar&lt;/span&gt;を返却するFormインスタンスのvalueメソッドを呼び出します。そして、呼び出しもとのマップがBarを取得し、フォームマッピングから生成できれば生成し、そうでなければgetOrElseステートメントはBadRequestを返却します。Barオブジェクトが生成することができた場合、それはトランザクション内でデータベースに保存されます。&lt;/p&gt;
-
-&lt;p&gt;これで、Squerylでリクエストパラメータとオブジェクトをマップしオブジェクトを保存する方法について理解できたと思うので、新しいaddBar controllerメソッドのテストを書きましょう。&lt;/p&gt;
-
-&lt;h2 id='bar'&gt;Barの追加のテスト&lt;/h2&gt;
-
-&lt;p&gt;下記の記述を新規作成したtest/ApplicationSpec.scalaファイルを記述し、addBar controllerメソッドの新しいテストを作ります。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;import controllers.routes
-import models.&lt;span class='o'&gt;{&lt;/span&gt;AppDB, Bar&lt;span class='o'&gt;}&lt;/span&gt;
-
-import org.scalatest.FlatSpec
-import org.scalatest.matchers.ShouldMatchers
-
-import org.squeryl.PrimitiveTypeMode.inTransaction
-
-import play.api.http.ContentTypes.JSON
-import play.api.test._
-import play.api.test.Helpers._
-
-class ApplicationSpec extends FlatSpec with ShouldMatchers &lt;span class='o'&gt;{&lt;/span&gt;
-
-  &lt;span class='s2'&gt;&amp;quot;A request to the addBar action&amp;quot;&lt;/span&gt; should &lt;span class='s2'&gt;&amp;quot;respond&amp;quot;&lt;/span&gt; in &lt;span class='o'&gt;{&lt;/span&gt;
-    running&lt;span class='o'&gt;(&lt;/span&gt;FakeApplication&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='nv'&gt;additionalConfiguration&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; inMemoryDatabase&lt;span class='o'&gt;()))&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-      val &lt;span class='nv'&gt;result&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; controllers.Application.addBar&lt;span class='o'&gt;(&lt;/span&gt;FakeRequest&lt;span class='o'&gt;()&lt;/span&gt;.withFormUrlEncodedBody&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;name&amp;quot;&lt;/span&gt; -&amp;gt; &lt;span class='s2'&gt;&amp;quot;FooBar&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;))&lt;/span&gt;
-      status&lt;span class='o'&gt;(&lt;/span&gt;result&lt;span class='o'&gt;)&lt;/span&gt; should equal &lt;span class='o'&gt;(&lt;/span&gt;SEE_OTHER&lt;span class='o'&gt;)&lt;/span&gt;
-      redirectLocation&lt;span class='o'&gt;(&lt;/span&gt;result&lt;span class='o'&gt;)&lt;/span&gt; should equal &lt;span class='o'&gt;(&lt;/span&gt;Some&lt;span class='o'&gt;(&lt;/span&gt;routes.Application.index.url&lt;span class='o'&gt;))&lt;/span&gt;
-    &lt;span class='o'&gt;}&lt;/span&gt;
-  &lt;span class='o'&gt;}&lt;/span&gt;
-
-&lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;機能テストではインメモリーデータベースとFakeApplicationを使います。テストでは、Application controllerのaddBarメソッドへのリクエストとnameという名前でFooBarという値のフォームパラメータを生成します。このテストの成功は、シンプルにindexページへリダイレクトされることで、ステータスがSEE_OTHER(HTTP 303ステータスコード)であるかをチェックし、リダイレクトのロケーションはindexページのURLでチェックされます。play testでテストを実行するか、play ~testであればコードの変更のタイミングでテストが実行されています。&lt;/p&gt;
-
-&lt;h2 id='jsonbar'&gt;JSONとしてBarを取得する&lt;/h2&gt;
-
-&lt;p&gt;JSONのシリアライズされたデータとして全てのBarオブジェクトをアプリケーションへ返却するRESTfulなサービスを追加しましょう。app/controllers/Application.scalaファイルに新しいメソッドを追加します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;  def &lt;span class='nv'&gt;getBars&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; Action &lt;span class='o'&gt;{&lt;/span&gt;
-    val &lt;span class='nv'&gt;json&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; inTransaction &lt;span class='o'&gt;{&lt;/span&gt;
-      val &lt;span class='nv'&gt;bars&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; from&lt;span class='o'&gt;(&lt;/span&gt;AppDB.barTable&lt;span class='o'&gt;)(&lt;/span&gt;&lt;span class='nv'&gt;barTable&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;&amp;gt;
-        &lt;span class='k'&gt;select&lt;/span&gt;&lt;span class='o'&gt;(&lt;/span&gt;barTable&lt;span class='o'&gt;)&lt;/span&gt;
-      &lt;span class='o'&gt;)&lt;/span&gt;
-      Json.generate&lt;span class='o'&gt;(&lt;/span&gt;bars&lt;span class='o'&gt;)&lt;/span&gt;
-    &lt;span class='o'&gt;}&lt;/span&gt;
-    Ok&lt;span class='o'&gt;(&lt;/span&gt;json&lt;span class='o'&gt;)&lt;/span&gt;.as&lt;span class='o'&gt;(&lt;/span&gt;JSON&lt;span class='o'&gt;)&lt;/span&gt;
-  &lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;getBarsメソッドは、Squerylを使用してデータベースからBarオブジェクトを取ってきて、BarオブジェクトのJSON形式のリストを生成し、JSONデータを返却します。&lt;/p&gt;
-
-&lt;p&gt;conf/routesファイルに新しいルートを追加します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;GET     /bars                       controllers.Application.getBars
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;これにより、/barsへのGETリクエストがgetBarsメソッドへマッピングされます。&lt;/p&gt;
-
-&lt;p&gt;ブラウザでhttp://localhost:9000/barsを表示させ確認してみましょう。&lt;/p&gt;
-
-&lt;p&gt;JSONとしてシリアライズされたBarオブジェクトのリストが見られるはずです。&lt;/p&gt;
-
-&lt;p&gt;前述した通り、トランザクションはSquerylのinTransactionで明示的に開始される必要があり、データベースから値をselectする場合もです。そして、トランザクション内で、Barの全てののエンティティはデータベースから取得されます。&lt;/p&gt;
-
-&lt;p&gt;クエリーの構文は、Squerylのタイプ・セーフなクエリー言語の力とDSLを作るためのScalaの力を示しています。from関数は最初のパラメータとしてテーブルへのタイプ・セーフな参照を受け取ります。これはキーワードからのSQLに似ています。２番目のパラメータは、パラメータとしてクエリーにテーブルを取得し、そのテーブル上に何をするかを指定します。この場合はselectです。formは、barsを不変な定数にセットされている反復処理可能なオブジェクトを返却します。その後、Json.generateメソッドは、データベースから取得されたbarsを反復処理し、それらを返却します。jsonの定数は、application/json(JSONの値)にセットされたコンテントタイプと共に、OK(HTTP 200ステータスコードの応答)で返却されます。&lt;/p&gt;
-
-&lt;h2 id='json'&gt;JSONサービスをテストする&lt;/h2&gt;
-
-&lt;p&gt;JSONサービスをテストする新しいテストのためにtest/ApplicationSpec.scalaを更新します。以下を追記します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;&lt;span class='s2'&gt;&amp;quot;A request to the getBars Action&amp;quot;&lt;/span&gt; should &lt;span class='s2'&gt;&amp;quot;respond with data&amp;quot;&lt;/span&gt; in &lt;span class='o'&gt;{&lt;/span&gt;
-    running&lt;span class='o'&gt;(&lt;/span&gt;FakeApplication&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='nv'&gt;additionalConfiguration&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; inMemoryDatabase&lt;span class='o'&gt;()))&lt;/span&gt; &lt;span class='o'&gt;{&lt;/span&gt;
-      inTransaction&lt;span class='o'&gt;(&lt;/span&gt;AppDB.barTable insert Bar&lt;span class='o'&gt;(&lt;/span&gt;Some&lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;foo&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;)))&lt;/span&gt;
-
-      val &lt;span class='nv'&gt;result&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; controllers.Application.getBars&lt;span class='o'&gt;(&lt;/span&gt;FakeRequest&lt;span class='o'&gt;())&lt;/span&gt;
-      status&lt;span class='o'&gt;(&lt;/span&gt;result&lt;span class='o'&gt;)&lt;/span&gt; should equal &lt;span class='o'&gt;(&lt;/span&gt;OK&lt;span class='o'&gt;)&lt;/span&gt;
-      contentAsString&lt;span class='o'&gt;(&lt;/span&gt;result&lt;span class='o'&gt;)&lt;/span&gt; should include &lt;span class='o'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;foo&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;)&lt;/span&gt;
-    &lt;span class='o'&gt;}&lt;/span&gt;
-  &lt;span class='o'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;再びこの機能テストでは、FakeApplicationとインメモリデータベースを使用します。そしてデータベースに新しいBarを生成し、Application controllerのgetBarsメソッドへのリクエストを作ります。テストしたレスポンスはOK(HTTP 200)で、生成されたBarの名前を含んでいるはずです。前と同じように、play testでこのテストを実行するか、play ~testで実行します。これで３つのテストに通っているはずです。&lt;/p&gt;
-
-&lt;h2 id='coffescriptjquerybars'&gt;CoffeScriptとjQueryでBarsを表示する&lt;/h2&gt;
-
-&lt;p&gt;これで、Barオブジェクトのリストを取得するRESTfulなJSONサービスができたので、取得とindexページへの表示を行うようCoffeScriptとjQueryを使って書いてみましょう。Play2の新しい機能の一つに、CoffeeScriptからJavaScriptへコンパイルとJavaScriptの構文チェック、ミニファイ化、LESSのCSSへのコンパイルを行うassetコンパイラがあります。&lt;/p&gt;
-
-&lt;p&gt;app/assets/javascripts/index.coffeeファイルを新規作成し、下記を記述します。&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;&lt;span class='nv'&gt;$ &lt;/span&gt;-&amp;gt;
-  &lt;span class='nv'&gt;$.&lt;/span&gt;get &lt;span class='s2'&gt;&amp;quot;/bars&amp;quot;&lt;/span&gt;, &lt;span class='o'&gt;(&lt;/span&gt;data&lt;span class='o'&gt;)&lt;/span&gt; -&amp;gt;
-    &lt;span class='nv'&gt;$.&lt;/span&gt;each data, &lt;span class='o'&gt;(&lt;/span&gt;index, item&lt;span class='o'&gt;)&lt;/span&gt; -&amp;gt;
-      &lt;span class='k'&gt;$(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;#bars&amp;quot;&lt;/span&gt;&lt;span class='k'&gt;)&lt;/span&gt;.append &lt;span class='k'&gt;$(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&amp;lt;li&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class='k'&gt;)&lt;/span&gt;.text item.name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;このCoffeeScriptは、/barsへのgetリクエストを作るためにjQueryを使用し、各barに対して反復処理を行い、barsのidと共にbarをページのエレメントに追加します。では、このスクリプトをロードするためにapp/views/index.scala.htmlテンプレートを更新し、ページにbarsエレメントを入れてみましょう。以下の記述をテンプレートのmainセクションのトップに追加します。&lt;/p&gt;
-
-&lt;p&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt; &amp;lt;script &lt;span class='nv'&gt;src&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;@routes.Assets.at(&amp;quot;&lt;/span&gt;javascripts/index.min.js&lt;span class='s2'&gt;&amp;quot;)&amp;quot;&lt;/span&gt; &lt;span class='nb'&gt;type&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;    
-    &amp;lt;ul &lt;span class='nv'&gt;id&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;bars&amp;quot;&lt;/span&gt;&amp;gt;&amp;lt;/ul&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;スクリプトのsrcは、javascripts/index.min.jsファイルへのURLを取得するためにroutes.Assets.at関数を使うことに注意してください。まだこのファイルは存在していません。Playのassetコンパイラは、index.coffeeファイルをコンパイルしてミニファイ化されたこのファイルを生成する必要がることを検知します。再度http://localhost:9000 のWebページを読み込み、新しいBarを生成し、Webページに表示されることを確認しましょう。&lt;/p&gt;
-
-&lt;h2 id='heroku'&gt;Herokuへのデプロイ&lt;/h2&gt;
-
-&lt;p&gt;Herokuはクラウド上でPlay2の実行環境を提供する複数言語対応したCloud Application Platformです。このアプリケーションをHerokuへデプロイするには以下の手順を実行します。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;1. 下記の内容を記述したProcfileをルートディレクトリは以下に作成します。&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;web: target/start -Dhttp.port&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='k'&gt;${&lt;/span&gt;&lt;span class='nv'&gt;PORT&lt;/span&gt;&lt;span class='k'&gt;}&lt;/span&gt; -DapplyEvolutions.default&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='nb'&gt;true&lt;/span&gt; -Ddb.default.driver&lt;span class='o'&gt;=&lt;/span&gt;org.postgresql.Driver -Ddb.default.url&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='k'&gt;${&lt;/span&gt;&lt;span class='nv'&gt;DATABASE_URL&lt;/span&gt;&lt;span class='k'&gt;}&lt;/span&gt; &lt;span class='k'&gt;${&lt;/span&gt;&lt;span class='nv'&gt;JAVA_OPTS&lt;/span&gt;&lt;span class='k'&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;これによりHerokuへPlayアプリケーションの実行方法を伝えます。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;2. Herokuは、Heroku上へのファイル転送にGitを用います。まだGitがインストールされていないのであれば、Gitをインストールしましょう。プロジェクトのルートディレクトリから、このプロジェクト用のGitリポジトリを生成し、ファイルを追加し、コミットします。&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;git init
-git add .
-git commit -m init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;3. HerokuのツールベルトはHerokuへのコマンドラインインターフェースです。Heroku ツールベルトをインストールしましょう。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;4. Herokuアカウントへサインアップします。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;5. コマンドラインからHerokuへログインします：&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;heroku login
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;GitのSSHキーをセットアップし、それをHerokuアカウントへ紐付けます。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;6. 新しいアプリケーションをHerokuにプロビジョニングします。&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;heroku create --stack cedar
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;7. HerokuへアプリケーションをPushします。&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;git push heroku master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Herokuが、SBTでアプリケーションをビルドし、dyno上で実行します。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;8. ブラウザでクラウド上で実行されるアプリケーションを開きましょう。&lt;/em&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;heroku open
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;おめでとうございます！これであなたのアプリケーションはクラウド上で実行されています。&lt;/p&gt;
-
-&lt;h2 id='share_your_opinion'&gt;Share Your Opinion&lt;/h2&gt;
-
-&lt;p&gt;Play2について思うところはありませんか？&lt;a href='http://www.artima.com/forums/flat.jsp?forum=226&amp;amp;thread=344288'&gt;Getting Started with Play2, Scala, and Squeryl&lt;/a&gt;のフォーラムトピックで議論しましょう。&lt;/p&gt;
-
-&lt;h2 id='id81'&gt;リソース&lt;/h2&gt;
-
-&lt;p&gt;このプロジェクトの全てのソースコードは、Github上から入手することができます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href='https://github.com/jamesward/play2bars/blob/scala-squeryl'&gt;https://github.com/jamesward/play2bars/blob/scala-squeryl&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;ローカルでPlayが実行されている場合、Playのローカルドキュメントにアクセスできます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href='http://localhost:9000/@documentation'&gt;http://localhost:9000/@documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;下記のサイトでもPlayのドキュメントを閲覧できます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href='http://www.playframework.org/documentation'&gt;http://www.playframework.org/documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Herokuについては、Heroku Dev Centerを見てください。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href='http://devcenter.heroku.com/'&gt;http://devcenter.heroku.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;この記事が一助となればと思いますが、もし質問や問題があれば我々に知らせてください。&lt;/p&gt;
-
-&lt;h2 id='id82'&gt;著者について&lt;/h2&gt;
-
-&lt;p&gt;James Ward (&lt;a href='www.jamesward.com'&gt;www.jamesward.com&lt;/a&gt;) is a Principal Developer Evangelist at Heroku. Today he focuses on teaching developers how to deploy Java, Play! and Scala apps to the cloud. James frequently presents at conferences around the world such as JavaOne, Devoxx, and many other Java get-togethers. Along with Bruce Eckel, James co-authored First Steps in Flex. He has also published numerous screencasts, blogs, and technical articles. Starting with Pascal and Assembly in the 80&amp;#8217;s, James found his passion for writing code. Beginning in the 90&amp;#8217;s he began doing web development with HTML, Perl/CGI, then Java. After building a Flex and Java based customer service portal in 2004 for Pillar Data Systems he became a Technical Evangelist for Flex at Adobe. You can find him tweeting as &lt;a href='http://twitter.com/_JamesWard'&gt;@JamesWard&lt;/a&gt;, answering questions on &lt;a href='http://stackoverflow.com/users/77409/james-ward'&gt;StackOverflow.com&lt;/a&gt;, and posting code at &lt;a href='http://github.com/jamesward'&gt;github.com/jamesward&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ryan Knight is a senior software architect and consultant with over fifteen years of experience in all aspects of cloud computing and software development. He first started Java Consulting for Sun Microsystems Java Center and now runs his own consulting company. Some of his recent projects include being a software Consultant for Deloitte at the State of Louisiana, expert services for Adobe at T-Mobile, creatng a web application at Team Marketing Report, development of a text and voice chat system for Sony Online Entertainment, contributing to the Development of a Gift Card Creation Tool, and being a software architect for Williams Pipeline.&lt;/p&gt;</description>
-                <link>http://modalsoul.github.io/programing/2012/07/31/Getting-Started-with-Play2-Scala-and-Squeryl</link>
-                <guid>http://modalsoul.github.io/programing/2012/07/31/Getting-Started-with-Play2-Scala-and-Squeryl</guid>
-                <pubDate>2012-07-31T00:00:00+09:00</pubDate>
-        </item>
-
-        <item>
                 <title>【意訳】データベース駆動アプリのための、Play2最適化について　#play_ja</title>
                 <description>&lt;h2 id='play2'&gt;【意訳】データベース駆動アプリのための、Play2最適化について&lt;/h2&gt;
 
@@ -1254,7 +709,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;・&lt;a href='https://yukar.in/note/ckF3Wr'&gt;みなとRuby会議01 前半まとめ #minatork01&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;・&lt;a href='https://yukar.in/note/ckF3We'&gt;みなとRuby会議01 後半まとめ #minatork01&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;&lt;img height='60%' src='http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg' width='60%' /&gt;
+&lt;hr /&gt;&lt;img width='60%' src='http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg' height='60%' /&gt;
 &lt;h2 id='ruby'&gt;初Rubyイベント参加&lt;/h2&gt;
 
 &lt;p&gt;ずっとRubyは勉強したいと思っていたのですが、なかなか進まず放置状態でした。、(^^;) &lt;br /&gt;&lt;/p&gt;
@@ -1301,7 +756,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;今回のアジャイルサムライ横浜道場は、特別編 第２回目。アジャイルサムライの監訳者、@nawoto さんにお越し頂き、Agile Japan 2012で講演した「アジャイル開発　基本のキ」を講演して頂きました。&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='アジャイルサムライ読書会横浜道場' src='http://kokucheese.com/images/upload/33598_photo1.jpg?20120408131717' /&gt;&lt;/p&gt;
-&lt;script async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' src='//speakerdeck.com/assets/embed.js' data-ratio='1.299492385786802'&gt;
+&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' src='//speakerdeck.com/assets/embed.js'&gt;
 &lt;/script&gt;&lt;br /&gt;&lt;hr /&gt;
 &lt;p&gt;この講演を通しての内容については、私以外の他参加者の方々が良い記事を書かれているので、そちらをご参考ください。&lt;/p&gt;
 
@@ -1316,8 +771,8 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;ですので、必ずしも講師の@nawotoさんの意図したことを汲み取れていない可能性があります。&lt;/p&gt;
 
 &lt;h2 id='id74'&gt;何が違うのか？&lt;/h2&gt;
-&lt;script async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='23' src='//speakerdeck.com/assets/embed.js' data-ratio='1.299492385786802'&gt;
-&lt;/script&gt;&lt;script async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='38' src='http://speakerdeck.com/assets/embed.js' data-ratio='1.299492385786802'&gt;
+&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='23' src='//speakerdeck.com/assets/embed.js'&gt;
+&lt;/script&gt;&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='38' src='http://speakerdeck.com/assets/embed.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;この章では、とにかく従来のやり方と同じであることの肯定を１つ１つ丁寧に積み上げているように感じました。&lt;/p&gt;
 
@@ -1330,13 +785,13 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h2 id='id75'&gt;どう進むのか？&lt;/h2&gt;
 
 &lt;p&gt;この章では、アジャイル開発における3本の柱、「透明性」「検査」の具体的なプラクティスと「適応」の重要性を伝えるためのものと思いました。&lt;/p&gt;
-&lt;script async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='122' src='http://speakerdeck.com/assets/embed.js' data-ratio='1.299492385786802'&gt;
-&lt;/script&gt;&lt;script async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='123' src='http://speakerdeck.com/assets/embed.js' data-ratio='1.299492385786802'&gt;
+&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='122' src='http://speakerdeck.com/assets/embed.js'&gt;
+&lt;/script&gt;&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='123' src='http://speakerdeck.com/assets/embed.js'&gt;
 &lt;/script&gt;
 &lt;h2 id='id76'&gt;明日から始める&lt;/h2&gt;
 
 &lt;p&gt;この章で伝えようとしていたことは、「少しづつで構いません　良くする事を続けてください」に集約されているのだなと思いました。&lt;/p&gt;
-&lt;script async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='148' src='http://speakerdeck.com/assets/embed.js' data-ratio='1.299492385786802'&gt;
+&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='148' src='http://speakerdeck.com/assets/embed.js'&gt;
 &lt;/script&gt;
 &lt;h2 id='id77'&gt;最後に&lt;/h2&gt;
 
@@ -1349,11 +804,11 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
         <item>
                 <title>スクラム道 StaffMeetup20120523に遊びに行ってきました。</title>
                 <description>&lt;h2 id='_staffmeetup20120523'&gt;スクラム道 StaffMeetup20120523に遊びに行ってきました。&lt;/h2&gt;
-&lt;blockquote class='twitter-tweet' lang='ja' data-in-reply-to='202028418051747841'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet' data-in-reply-to='202028418051747841'&gt;
 &lt;p&gt;@&lt;a href='https://twitter.com/nawoto'&gt;nawoto&lt;/a&gt; StaffMeetup遊びに行ってみたいです！&lt;/p&gt;
 &amp;mdash; imae masatoshiさん (@modal_soul) 
 &lt;a data-datetime='2012-05-14T14:28:32+00:00' href='https://twitter.com/modal_soul/status/202042716673159170'&gt;5月 14, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;こんな流れで、スクラム道のスタッフミーティングに遊びに行ってきました。&lt;/p&gt;
 
@@ -1396,18 +851,18 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;・uedyo大阪夏の陣&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id73'&gt;地方コミュニティ募集&lt;/h2&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;スクラム道と組んでくれる地方のコミュニティ求む 
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;スクラム道と組んでくれる地方のコミュニティ求む 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;&amp;mdash; Nishimura Naotoさん (@nawoto) 
 &lt;a data-datetime='2012-05-23T14:34:24+00:00' href='https://twitter.com/nawoto/status/205305686693904388'&gt;5月 23, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;ちなみにネタじゃなくて本気で一緒にやってくれるとこを募集中です。メンションだけじゃ分かんないんで俺にメールしてくれ 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo
 &lt;/a&gt;
 &lt;/p&gt;&amp;mdash; Nishimura Naotoさん (@nawoto) 
 &lt;a data-datetime='2012-05-23T14:44:26+00:00' href='https://twitter.com/nawoto/status/205308208510803968'&gt;5月 23, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;スクラム道では、スクラム道と組んでくれる地方コミュニティを募集しているそうです。&lt;/p&gt;
 
@@ -1425,7 +880,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 
 &lt;p&gt;キャッチーなイベントタイトルに釣られて参加してきました。 私はスクラムマスターではない(自称ですらない)ですが、まぁ細かい事を気にしてはいけません。&lt;/p&gt;
 &lt;hr /&gt;&lt;a href='http://kokucheese.com/event/index/36283/'&gt;
-&lt;img title='5月21日 全員スクラムマスター。(東京都)' alt='http://kokucheese.com/event/index/36283/' src='http://capture.heartrails.com/360x250/cool/shorten?http://kokucheese.com/event/index/36283/' width='360' /&gt;
+&lt;img width='360' title='5月21日 全員スクラムマスター。(東京都)' alt='http://kokucheese.com/event/index/36283/' src='http://capture.heartrails.com/360x250/cool/shorten?http://kokucheese.com/event/index/36283/' /&gt;
 &lt;/a&gt;
 &lt;p&gt;今回、CSM研修同期のMTIのイケメンスクラムマスター岩崎さん（@niwa303）が、事例発表をされるということと、CSM,CSPO数ぶっちぎりだけど勉強会でなかなか遭遇しないMTI社の事例が聞けるということで、その辺りも期待していました。&lt;/p&gt;
 
@@ -1447,18 +902,18 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h2 id='id71'&gt;チームへの働きかけについて&lt;/h2&gt;
 
 &lt;p&gt;ダイアログ中に共通して「スクラムを導入したいが、プラクティスがなかなかチームに浸透しない」といった問題を聞くことが多かったように感じました。&lt;/p&gt;
-&lt;div style='width:425px' id='__ss_13014872'&gt; 
+&lt;div id='__ss_13014872' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='私がスクラムをやめた理由 - 全員スクラムマスター。＠DevLove -' target='_blank' href='http://www.slideshare.net/TakaoOyobe/20120521-13014872'&gt;私がスクラムをやめた理由 - 全員スクラムマスター。＠DevLove -
+&lt;a href='http://www.slideshare.net/TakaoOyobe/20120521-13014872' title='私がスクラムをやめた理由 - 全員スクラムマスター。＠DevLove -' target='_blank'&gt;私がスクラムをやめた理由 - 全員スクラムマスター。＠DevLove -
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/13014872' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/13014872' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt;
  View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt;
  from 
-&lt;a target='_blank' href='http://www.slideshare.net/TakaoOyobe'&gt;Takao Oyobe&lt;/a&gt; 
+&lt;a href='http://www.slideshare.net/TakaoOyobe' target='_blank'&gt;Takao Oyobe&lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
 &lt;p&gt;「スクラムを導入するためにスクラムのことを説明したが、スクラムに対する質問攻めに会い、質問者に納得の行く回答ができず理解を得られなくて失敗した」というお話もありました。&lt;/p&gt;
@@ -1502,10 +957,10 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h2 id='id61'&gt;サンプルアプリの動作について&lt;/h2&gt;
 
 &lt;p&gt;このサンプルでは、アプリの起動後の画面にボタンが表示され、そのボタンをクリックすると別画面に遷移します。&lt;/p&gt;
-&lt;h3&gt;起動後の画面&lt;/h3&gt;&lt;a title='uiTestSample-main by modal_soul, on Flickr' href='http://www.flickr.com/photos/modalsoul/7233426834/'&gt;
-&lt;img height='492' alt='uiTestSample-main' src='http://farm6.staticflickr.com/5343/7233426834_d72dda0713.jpg' width='500' /&gt;
-&lt;/a&gt;&lt;h3&gt;ボタンクリックで遷移後の画面&lt;/h3&gt;&lt;a title='uiTestSample-transited by modal_soul, on Flickr' href='http://www.flickr.com/photos/modalsoul/7233469296/'&gt;
-&lt;img height='492' alt='uiTestSample-transited' src='http://farm6.staticflickr.com/5196/7233469296_d04794833e.jpg' width='500' /&gt;
+&lt;h3&gt;起動後の画面&lt;/h3&gt;&lt;a href='http://www.flickr.com/photos/modalsoul/7233426834/' title='uiTestSample-main by modal_soul, on Flickr'&gt;
+&lt;img width='500' alt='uiTestSample-main' src='http://farm6.staticflickr.com/5343/7233426834_d72dda0713.jpg' height='492' /&gt;
+&lt;/a&gt;&lt;h3&gt;ボタンクリックで遷移後の画面&lt;/h3&gt;&lt;a href='http://www.flickr.com/photos/modalsoul/7233469296/' title='uiTestSample-transited by modal_soul, on Flickr'&gt;
+&lt;img width='500' alt='uiTestSample-transited' src='http://farm6.staticflickr.com/5196/7233469296_d04794833e.jpg' height='492' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;h2 id='id62'&gt;テストの概要&lt;/h2&gt;
 
@@ -1547,7 +1002,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
                 <title>スクラム道 Full Boost 「青物横丁制圧作戦」#scrumdoに参加しました。</title>
                 <description>&lt;h2 id='_full_boost_'&gt;&lt;a href='http://www.taoofscrum.org/contents/post/240'&gt;スクラム道 Full Boost 「青物横丁制圧作戦」&lt;/a&gt;に参加しました。&lt;/h2&gt;
 &lt;h4&gt;この記事では、選手として参加させていただいて感じたことと、自分が壇上で発言した質問や意見の補足をメインに書いています。&lt;/h4&gt;&lt;a href='http://www.taoofscrum.org/contents/post/240'&gt;
-&lt;img title='スクラム道 Full Boost 「青物横丁制圧作戦」 | スクラム道' alt='http://www.taoofscrum.org/contents/post/240' src='http://capture.heartrails.com/400x300/cool/shorten?http://www.taoofscrum.org/contents/post/240' width='400' /&gt;
+&lt;img width='400' title='スクラム道 Full Boost 「青物横丁制圧作戦」 | スクラム道' alt='http://www.taoofscrum.org/contents/post/240' src='http://capture.heartrails.com/400x300/cool/shorten?http://www.taoofscrum.org/contents/post/240' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;p&gt;イベント自体については、他方々の記事にとてもわかりやすくまとめられていますので、そちらを参考にして頂ければと思います。&lt;/p&gt;
 
@@ -1568,16 +1023,16 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;今回はスクラム道10回記念ということで、過去に行われた5テーマから参加者の投票で再演を行う形式で、@imagireさんによる「プロダクトバックログ」の再演となりました。&lt;/p&gt;
 
 &lt;p&gt;まとめ　その１ &lt;a href='https://yukar.in/note/ckFnru'&gt;スクラム道 Full Boost 「青物横丁制圧作戦」 壮大な前座 #scrumdo - Yukarin&amp;#8217;Note&lt;/a&gt;&lt;/p&gt;
-&lt;div style='width:425px' id='__ss_9027962'&gt; 
+&lt;div id='__ss_9027962' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='スクラム道場.07' target='_blank' href='http://www.slideshare.net/imagire/07-9027962'&gt;スクラム道場.07&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/imagire/07-9027962' title='スクラム道場.07' target='_blank'&gt;スクラム道場.07&lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/9027962' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/9027962' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt;
  from 
-&lt;a target='_blank' href='http://www.slideshare.net/imagire'&gt;Takashi Imagire&lt;/a&gt; 
+&lt;a href='http://www.slideshare.net/imagire' target='_blank'&gt;Takashi Imagire&lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
 &lt;p&gt;読み手の@imagireさんによる発表の後、「議論に参加したい」「プロダクトバックログについて悩んでいる」人が選手として登壇。&lt;/p&gt;
@@ -1585,12 +1040,12 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;選手として登壇した人には、マイクロソフトさんからプランニングポーカーがもらえる！とのことだったので、物欲に駆られて登壇してきました。&lt;/p&gt;
 
 &lt;h3 id='id55'&gt;ステマ&lt;/h3&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;おぉ！マイクロソフトさんからプランニングポーカーの差し入れだ!! 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;&amp;mdash; imae masatoshiさん (@modal_soul) 
 &lt;a data-datetime='2012-05-11T10:16:40+00:00' href='https://twitter.com/modal_soul/status/200892170767577088'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;いただいたポーカーはこちら 外箱がVisualStudioになっているという、さすがマイクロソフトさん！ &lt;img alt='プランニングポーカー' src='/img/20120511/porker.jpg' /&gt;&lt;/p&gt;
 &lt;hr /&gt;
@@ -1623,30 +1078,30 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h3 id='id58'&gt;ベロシティって重要ですか？&lt;/h3&gt;
 
 &lt;p&gt;ベロシティを使う目的は様々あると思いますが、ざっと挙げると以下のような感じでしょうか。&lt;/p&gt;
-&lt;h4&gt;・スプリントで消化するSPの見積もり&lt;/h4&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;h4&gt;・スプリントで消化するSPの見積もり&lt;/h4&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;ベロシティはからないと、次のスプリントでどれぐらい積めるか基準値がわからなくなりません？ RT @
 &lt;a href='https://twitter.com/kanu_'&gt;kanu_&lt;/a&gt;
 : 別にベロシティで測らなきゃいいんじゃないのかぁ。ってか誰が欲しがってるのかな?　
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;&amp;mdash; SEO Naotoshiさん (@sonots) 
 &lt;a data-datetime='2012-05-11T10:38:31+00:00' href='https://twitter.com/sonots/status/200897671223967745'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;h4&gt;・チームの成長度合い&lt;/h4&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;h4&gt;・チームの成長度合い&lt;/h4&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;&quot;ポイントの基準が更新されると、ベロシティによるチームの成長の測定が難しくなる。&quot; 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; Tomohiro Hashidateさん (@joker1007) 
 &lt;a data-datetime='2012-05-11T10:33:06+00:00' href='https://twitter.com/joker1007/status/200896307970322432'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;p&gt;ディスカッションでの質問やツイートの反応にもありましたが、決して&lt;h3&gt;ベロシティを人事評価等に使いたい訳ではありません。&lt;/h3&gt;この所は、特に強調しておきたいと思います。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;ベロシティは「人事評価に使うべきではない」というのは大前提ではあるが、「自分達がどれくらい成長したの？」というのを測るための指標として「数値がぶれる」のはマズイのでは？ 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; skowataさん (@skowata) 
 &lt;a data-datetime='2012-05-11T10:40:12+00:00' href='https://twitter.com/skowata/status/200898092667637760'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;h4&gt;ただ、現実問題としてアジャイルなプロセスを取り入れたことによる効果を、実際にプラクティスを実行する人以外に説明することを考えたときどうでしょう？&lt;/h4&gt;
 &lt;p&gt;「アジャイルなプロセスを用いることで、どの程度生産性が向上した」、であるとか&lt;h4&gt;プラクティスの有用性を理解してもらえなければ、
 今後アジャイルなプロセスを継続することが出来なくなってしまうかもしれません。&lt;/h4&gt;&lt;/p&gt;
@@ -1658,11 +1113,11 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h3 id='id59'&gt;この質問で知りたかったこと&lt;/h3&gt;
 &lt;strong&gt;PBL見積もりの基準が同じであれば、ベロシティの増減がチームの生産性を表す指標として機能するのではないか？&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;ベロシティの向上によってアジャイルなプロセスの有用性の説明の裏づけになるのではいか？&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;基準が変化することで、ベロシティが（見かけ上）減少しているような場合、生産性の低下を指摘された時どのように説明することで、見かけ上の誤解を解くことができるか？&lt;/strong&gt;
 &lt;p&gt;ということです。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;今の話（ストーリーポイントと実際のタスクの相関）は「通貨（経済の話）」に似てる by @
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;今の話（ストーリーポイントと実際のタスクの相関）は「通貨（経済の話）」に似てる by @
 &lt;a href='https://twitter.com/kawaguti'&gt;kawaguti&lt;/a&gt; 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;&lt;/p&gt;&amp;mdash; skowataさん (@skowata) 
 &lt;a data-datetime='2012-05-11T10:30:15+00:00' href='https://twitter.com/skowata/status/200895587384692738'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;この質問に対するコメントのなかで、@kawagutiさんの通貨のたとえが、とても腹落ちしました。&lt;/p&gt;
 &lt;hr /&gt;
@@ -1675,13 +1130,13 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;折角の機会なので、壇上から見た景色を写メってみました。 &lt;img alt='壇上から見た景色' src='/img/20120511/audience.jpg' /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id='po'&gt;POの価値判断にチームが納得できない場合&lt;/h3&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;POが初心者の場合、「これってホントに正しい優先順位なの？」という場合がある。その場合チームとしてどうするべき？ 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; skowataさん (@skowata) 
 &lt;a data-datetime='2012-05-11T11:27:55+00:00' href='https://twitter.com/skowata/status/200910101131964417'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;POがPBLの各項目について優先順位付けした結果が必ずしもチームの意見と合致ばかりではないですね。&lt;/p&gt;
 
@@ -1694,12 +1149,12 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;li&gt;POから責任(＝権限)を剥奪することは、スクラムでのロールが破綻しているのでは。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;ということです。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
  「POに責任がある」といって自分達の自主性を殺すのも危険なかおりじゃまいか&lt;/p&gt;&amp;mdash; atsumi shibataさん (@JibrielShibata) 
 &lt;a data-datetime='2012-05-11T11:30:18+00:00' href='https://twitter.com/JibrielShibata/status/200910702075064321'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;br /&gt;
 &lt;p&gt;責任(＝権限)はPOにあるから、チームは一切口出ししないと言いたい訳ではなく、あくまで&lt;strong&gt;「判断、決定」するのはPO&lt;/strong&gt;であって、その判断のプロセスをチームが手伝うのアリはだという話でした。 ロールに拘らず、助け合うのがスクラムチームの有るべき姿だと思っています。&lt;/p&gt;
 &lt;hr /&gt;
@@ -1724,7 +1179,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;今回も主に書籍（ &lt;a href='http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4844331272'&gt;本格アプリを作ろう！ Androidプログラミングレシピ&lt;/a&gt;）を参考にして進めます。&lt;/p&gt;
 &lt;a href='http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4844331272'&gt;
 &lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=4844331272&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img height='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4844331272' border='0' style='border:none !important; margin:0px !important;' width='1' /&gt;
+&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4844331272' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;
 &lt;h2 id='id49'&gt;アクティビティについて&lt;/h2&gt;
 
 &lt;p&gt;アクティビティは、&lt;b&gt;android.appp.Activity&lt;/b&gt;クラスのサブクラスによって記述される。 &lt;b&gt;Activity&lt;/b&gt;のサブクラスでは、アクティビティが存続する間Androidが呼び出す、&lt;b&gt;ライフサイクルコールバックメソッド&lt;/b&gt;をオーバーライドします。&lt;/p&gt;
@@ -1824,7 +1279,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;今回は主に書籍（ &lt;a href='http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4844331272'&gt;本格アプリを作ろう！ Androidプログラミングレシピ&lt;/a&gt;）を参考にして進めました。&lt;/p&gt;
 &lt;a href='http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4844331272'&gt;
 &lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=4844331272&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img height='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4844331272' border='0' style='border:none !important; margin:0px !important;' width='1' /&gt;
+&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4844331272' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;
 &lt;h2 id='id38'&gt;アプリケーションアーキテクチャについて&lt;/h2&gt;
 
 &lt;p&gt;Androidアプリのアーキテクチャは、「intent(以下、インテント)」を用いて相互にコミュニケーションを行うコンポーネントの集合がベースになっているそうです。 インテントとは、実行すべき処理や外部イベントが発生したことを他のコンポーネントに通知するために使われるメッセージです。&lt;/p&gt;
@@ -1902,16 +1357,16 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;そして、今回のAgile Samurai Dojo Gatheringが開催されることを知り、 多少なり自身の経験が還元できるのではないかと思い、実践トラックへの登壇をさせていただきました。&lt;/p&gt;
 
 &lt;p&gt;以下に発表資料を掲載しています。&lt;/p&gt;
-&lt;div style='width:425px' id='__ss_12147199'&gt; 
+&lt;div id='__ss_12147199' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='Agile samuraidojogathering' target='_blank' href='http://www.slideshare.net/modalsoul/agile-samuraidojogathering'&gt;Agile samuraidojogathering&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/modalsoul/agile-samuraidojogathering' title='Agile samuraidojogathering' target='_blank'&gt;Agile samuraidojogathering&lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12147199' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12147199' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt;
  from 
-&lt;a target='_blank' href='http://www.slideshare.net/modalsoul'&gt;Imae Masatoshi&lt;/a&gt; 
+&lt;a href='http://www.slideshare.net/modalsoul' target='_blank'&gt;Imae Masatoshi&lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
 &lt;p&gt;発表時のツイートまとめはこちら &lt;a href='https://yukar.in/note/ckFofk'&gt;Agile Samurai Dojo Gathering サムライ戦記 実践トラック(@modal_soul) - Yukarin&amp;#8217;Note(ゆかりんのーと)&lt;/a&gt;&lt;/p&gt;
@@ -1945,14 +1400,14 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;同じ実践トラックの次のスピーカーは、同じアジャイルサムライBIGLOBE道場の上田さんでした。&lt;/p&gt;
 
 &lt;p&gt;上田さんの発表では、インセプションデッキに取り組んだ際の内容が紹介され、とても良い発表でした。併せてどうぞ&lt;/p&gt;
-&lt;div style='width:425px' id='__ss_12136492'&gt; &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='cantbeatinceptiondeck' target='_blank' href='http://www.slideshare.net/uedayo/cantbeatinceptiondeck'&gt;cantbeatinceptiondeck&lt;/a&gt;
+&lt;div id='__ss_12136492' style='width:425px'&gt; &lt;strong style='display:block;margin:12px 0 4px'&gt;
+&lt;a href='http://www.slideshare.net/uedayo/cantbeatinceptiondeck' title='cantbeatinceptiondeck' target='_blank'&gt;cantbeatinceptiondeck&lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12136492' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12136492' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations&lt;/a&gt; from 
-&lt;a target='_blank' href='http://www.slideshare.net/uedayo'&gt;Yoshinori Ueda
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt; from 
+&lt;a href='http://www.slideshare.net/uedayo' target='_blank'&gt;Yoshinori Ueda
 &lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
@@ -1968,9 +1423,9 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 
 &lt;p&gt;&lt;img alt='ろくろ' src='http://a.yfrog.com/img859/9978/34kba.jpg' /&gt;&lt;/p&gt;
 &lt;a href='http://www.amazon.co.jp/gp/product/4274068560/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4274068560'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4274068560&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img height='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4274068560' border='0' style='border:none !important; margin:0px !important;' width='1' /&gt;&lt;a href='http://www.amazon.co.jp/gp/product/B004IEAZ18/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B004IEAZ18'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=B004IEAZ18&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img height='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=B004IEAZ18' border='0' style='border:none !important; margin:0px !important;' width='1' /&gt;&lt;a href='http://www.amazon.co.jp/gp/product/B0058EWGK0/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B0058EWGK0'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=B0058EWGK0&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img height='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=B0058EWGK0' border='0' style='border:none !important; margin:0px !important;' width='1' /&gt;</description>
+&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4274068560' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;&lt;a href='http://www.amazon.co.jp/gp/product/B004IEAZ18/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B004IEAZ18'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=B004IEAZ18&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
+&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=B004IEAZ18' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;&lt;a href='http://www.amazon.co.jp/gp/product/B0058EWGK0/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B0058EWGK0'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=B0058EWGK0&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
+&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=B0058EWGK0' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;</description>
                 <link>http://modalsoul.github.io/report/2012/03/24/Agile-Samurai-Dojo-Gathering</link>
                 <guid>http://modalsoul.github.io/report/2012/03/24/Agile-Samurai-Dojo-Gathering</guid>
                 <pubDate>2012-03-24T00:00:00+09:00</pubDate>
@@ -1979,28 +1434,28 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
         <item>
                 <title>AgileUX NYC 2012 Redux in Tokyo(#AgileUXNYC_ja)に参加しました。</title>
                 <description>&lt;h2 id='agileux_nyc_2012_redux_in_tokyo__agileuxnyc_ja__'&gt;AgileUX NYC 2012 Redux in Tokyo ( #AgileUXNYC_ja ) に参加しました。&lt;/h2&gt;
-&lt;div style='width:425px' id='__ss_12005232'&gt; 
+&lt;div id='__ss_12005232' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)' target='_blank' href='http://www.slideshare.net/kazumichisakata/agile-ux-nyc-2012-redux-in-tokyo'&gt;Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)
+&lt;a href='http://www.slideshare.net/kazumichisakata/agile-ux-nyc-2012-redux-in-tokyo' title='Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)' target='_blank'&gt;Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12005232' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12005232' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations&lt;/a&gt; from 
-&lt;a target='_blank' href='http://www.slideshare.net/kazumichisakata'&gt;Kazumichi Sakata&lt;/a&gt; 
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt; from 
+&lt;a href='http://www.slideshare.net/kazumichisakata' target='_blank'&gt;Kazumichi Sakata&lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
 &lt;h2 id='agileux_nyc_2012_redux_in_tokyo'&gt;「AgileUX NYC 2012 Redux in Tokyo」とは？&lt;/h2&gt;
 
 &lt;p&gt;2012/02/25に、アメリカのニューヨークで開催された「AgileUX NYC 2012」へ参加された＠kawaguti さん(アギレルゴ・コンサルティング株式会社　川口恭伸さん)と＠sprmari0 さん(楽天株式会社　坂田一倫さん)による報告会を兼ねたパネル・ディスカッションです。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;Want to Win with Agile? Pivot Your Culture First by Eric Burd( 
 &lt;a href='https://twitter.com/search/%2523agileuxnyc'&gt;#agileuxnyc&lt;/a&gt;
- live at &lt;a title='http://ustre.am/I3ND/1' href='http://t.co/2FcXmNnQ'&gt;ustre.am/I3ND/1&lt;/a&gt; ) &lt;/p&gt;
+ live at &lt;a href='http://t.co/2FcXmNnQ' title='http://ustre.am/I3ND/1'&gt;ustre.am/I3ND/1&lt;/a&gt; ) &lt;/p&gt;
  &amp;mdash; Yasunobu Kawaguchiさん (＠kawaguti) 
  &lt;a data-datetime='2012-02-25T14:23:46+00:00' href='https://twitter.com/kawaguti/status/173412876877447169'&gt;2月 25, 2012&lt;/a&gt;
- &lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+ &lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;私はAgileUX NYC当日の＠kawaguti さんのツイートを見ていて、AgileUX NYCの内容に興味を持ち、ATNDでこのイベントを発見して、すぐに参加登録しました。&lt;/p&gt;
 
@@ -2021,17 +1476,17 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;登壇された方も興味深いポジションの方が多く、UX デザイナーがいれば、経営者やデベロッパー、そしてデザイナーからマーケティング PR の担当者の方々でした。Early Stage Specialistなんていう、スーパーマンのような方もいらっしゃったようです。&lt;/p&gt;
 
 &lt;h3 id='want_to_win_with_agile_pivot_your_culture_first'&gt;&lt;a href='http://agileuxnyc.com/presentation/want-to-win-with-agile-pivot-your-culture-first/'&gt;Want to Win with Agile? Pivot Your Culture First&lt;/a&gt;&lt;/h3&gt;
-&lt;div style='width:425px' id='__ss_11761297'&gt; 
+&lt;div id='__ss_11761297' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='Want to win with agile?' target='_blank' href='http://www.slideshare.net/eburd/want-to-win-with-agile'&gt;Want to win with agile?
+&lt;a href='http://www.slideshare.net/eburd/want-to-win-with-agile' title='Want to win with agile?' target='_blank'&gt;Want to win with agile?
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11761297' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11761297' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt;
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/thecroaker/death-by-powerpoint'&gt;PowerPoint
+&lt;a href='http://www.slideshare.net/thecroaker/death-by-powerpoint' target='_blank'&gt;PowerPoint
 &lt;/a&gt; from 
-&lt;a target='_blank' href='http://www.slideshare.net/eburd'&gt;eburd
+&lt;a href='http://www.slideshare.net/eburd' target='_blank'&gt;eburd
 &lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
@@ -2054,7 +1509,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;/ol&gt;
 
 &lt;p&gt;そして、技術やプロダクトのチームだけでなく、営業などの関係する部署を集め共通の課題を提示することが必要である。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;Want to Win with Agile セッションより： 意思決定者は忙しいためつかまえづらい。なので、ランチをセッティングして定期ミーティングを行い、啓蒙してプロジェクトに巻き込む。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:16:24+00:00' href='https://twitter.com/storywriter/status/179873607957233664'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;Want to Win with Agile セッションより： 意思決定者は忙しいためつかまえづらい。なので、ランチをセッティングして定期ミーティングを行い、啓蒙してプロジェクトに巻き込む。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:16:24+00:00' href='https://twitter.com/storywriter/status/179873607957233664'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;&amp;#8220;Small Wins&amp;#8221;（小さな成功）に成りうるものを探して、成功させ、そこから得たものを組織に蓄積することが重要、とのことです。&lt;/p&gt;
 
@@ -2065,61 +1520,61 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;Brown Bag Lunch Meetingについては、&lt;a href='http://www.rieti.go.jp/jp/events/bbl/index.html'&gt;こちら&lt;/a&gt;に紹介がありましたので、参照ください。&lt;/p&gt;
 
 &lt;h3 id='investing_in_design_horsepower_vs_rpms'&gt;&lt;a href='http://agileuxnyc.com/presentation/investing-in-design/'&gt;Investing in Design: Horsepower vs. RPMs&lt;/a&gt;&lt;/h3&gt;
-&lt;div style='width:425px' id='__ss_11770223'&gt; 
+&lt;div id='__ss_11770223' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='Agile UX NYC -- 4 keys to success in a design driven company' target='_blank' href='http://www.slideshare.net/PhineasBarnes/agile-ux-nyc-4-keys-to-success-in-a-design-driven-company'&gt;
+&lt;a href='http://www.slideshare.net/PhineasBarnes/agile-ux-nyc-4-keys-to-success-in-a-design-driven-company' title='Agile UX NYC -- 4 keys to success in a design driven company' target='_blank'&gt;
 Agile UX NYC -- 4 keys to success in a design driven company
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11770223' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11770223' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
 &lt;/a&gt; from 
-&lt;a target='_blank' href='http://www.slideshare.net/PhineasBarnes'&gt;Phineas Barnes
+&lt;a href='http://www.slideshare.net/PhineasBarnes' target='_blank'&gt;Phineas Barnes
 &lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
 &lt;p&gt;「スキルセットではなく、マインドセットの問題だ」という言及がありました。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;Investing in Design セッションより：共通課題をダッシュボード化し、共有する。定期的に更新していく。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:18:06+00:00' href='https://twitter.com/storywriter/status/179874034941566977'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;Investing in Design セッションより：共通課題をダッシュボード化し、共有する。定期的に更新していく。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:18:06+00:00' href='https://twitter.com/storywriter/status/179874034941566977'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;h3 id='replacing_requirements_with_hypotheses'&gt;&lt;a href='http://agileuxnyc.com/presentation/replacing-requirements-with-hypotheses/'&gt;Replacing Requirements with Hypotheses&lt;/a&gt;&lt;/h3&gt;
-&lt;div style='width:425px' id='__ss_11747255'&gt; 
+&lt;div id='__ss_11747255' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='2012 feb 25 agile ux nyc, seiden, requirements to hypotheses' target='_blank' href='http://www.slideshare.net/jseiden/2012-feb-25-agile-ux-nyc-seiden-requirements-to-hypotheses'&gt;2012 feb 25 agile ux nyc, seiden, requirements to hypotheses
+&lt;a href='http://www.slideshare.net/jseiden/2012-feb-25-agile-ux-nyc-seiden-requirements-to-hypotheses' title='2012 feb 25 agile ux nyc, seiden, requirements to hypotheses' target='_blank'&gt;2012 feb 25 agile ux nyc, seiden, requirements to hypotheses
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11747255' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11747255' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
 &lt;/a&gt; from 
-&lt;a target='_blank' href='http://www.slideshare.net/jseiden'&gt;Joshua Seiden&lt;/a&gt; 
+&lt;a href='http://www.slideshare.net/jseiden' target='_blank'&gt;Joshua Seiden&lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
 &lt;p&gt;このセッションで強調されていたことは、「要件を仮説に置き換える」ことです。&lt;/p&gt;
 
 &lt;p&gt;ビジネスサイドのニーズがそのまま開発サイドへ要件として伝わってしまうことで、本来の顧客のニーズを把握できなくなるという弊害がおこります。&lt;/p&gt;
 
-&lt;p&gt;要件を仮説に置き換えることで、@kawaguti さんのツイートにもあったのですが、 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;&quot;仮説はの利点はテスト可能であること&quot;&lt;/p&gt;&amp;mdash; Yasunobu Kawaguchiさん (@kawaguti) &lt;a data-datetime='2012-02-25T15:04:40+00:00' href='https://twitter.com/kawaguti/status/173423171544952832'&gt;2月 25, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt; という特性が発揮されます。仮説を検証するサイクルが生まれます。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;アジャイルを導入するためには、要件ではなく仮説。要件は断固としたものだが、仮説なら不確実性というエッセンスがある。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; mocha_cocoaさん (@mocha_cocoa) &lt;a data-datetime='2012-03-14T10:23:21+00:00' href='https://twitter.com/mocha_cocoa/status/179875356344451072'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;要件を仮説に置き換えることで、@kawaguti さんのツイートにもあったのですが、 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;&quot;仮説はの利点はテスト可能であること&quot;&lt;/p&gt;&amp;mdash; Yasunobu Kawaguchiさん (@kawaguti) &lt;a data-datetime='2012-02-25T15:04:40+00:00' href='https://twitter.com/kawaguti/status/173423171544952832'&gt;2月 25, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt; という特性が発揮されます。仮説を検証するサイクルが生まれます。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;アジャイルを導入するためには、要件ではなく仮説。要件は断固としたものだが、仮説なら不確実性というエッセンスがある。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; mocha_cocoaさん (@mocha_cocoa) &lt;a data-datetime='2012-03-14T10:23:21+00:00' href='https://twitter.com/mocha_cocoa/status/179875356344451072'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;そしてこういったプロセスが言語化されることが最も評価できると@kawaguti さんも話されていました。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;視覚化も大事だが、言語化も大きな課題。特に日本語はあやふやな表現を許しやすいが故に、英語環境より言語化の整備が要するとおもう。 &lt;a href='https://twitter.com/search/%2523agileuxnyc_ja'&gt;#agileuxnyc_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:24:23+00:00' href='https://twitter.com/yhassy/status/179875614336098304'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;視覚化も大事だが、言語化も大きな課題。特に日本語はあやふやな表現を許しやすいが故に、英語環境より言語化の整備が要するとおもう。 &lt;a href='https://twitter.com/search/%2523agileuxnyc_ja'&gt;#agileuxnyc_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:24:23+00:00' href='https://twitter.com/yhassy/status/179875614336098304'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;h3 id='quick_visual_collaborative_and_continuous'&gt;&lt;a href='http://agileuxnyc.com/presentation/lane/'&gt;Quick, Visual, Collaborative and Continuous&lt;/a&gt;&lt;/h3&gt;
-&lt;div style='width:425px' id='__ss_11707174'&gt; 
+&lt;div id='__ss_11707174' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='Quick, Visual, Collaborative &amp;amp; Continuous' target='_blank' href='http://www.slideshare.net/LaneHalley/quick-visual-collaborative-continuous'&gt;Quick, Visual, Collaborative &amp;amp; Continuous
+&lt;a href='http://www.slideshare.net/LaneHalley/quick-visual-collaborative-continuous' title='Quick, Visual, Collaborative &amp;amp; Continuous' target='_blank'&gt;Quick, Visual, Collaborative &amp;amp; Continuous
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11707174' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11707174' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
 &lt;/a&gt; from 
-&lt;a target='_blank' href='http://www.slideshare.net/LaneHalley'&gt;Lane Halley
+&lt;a href='http://www.slideshare.net/LaneHalley' target='_blank'&gt;Lane Halley
 &lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
@@ -2130,17 +1585,17 @@ Agile UX NYC -- 4 keys to success in a design driven company
 &lt;p&gt;Product Ownerチーム(エンジニアも入るがあくまでアーキテクト程度のみ)が大まかな部分を作り、そこから複数のチームに別れ、POチームメンバーだったデザイナがそのまま複数チームに分かれて所属するスタイルが紹介されていました。&lt;/p&gt;
 
 &lt;h3 id='learning_to_play_ux_rugby'&gt;&lt;a href='http://agileuxnyc.com/presentation/learning-to-play-ux-rugby-why-your-agile-ux-adoption-is-failing-and-what-to-do-about-it/'&gt;Learning to Play UX Rugby&lt;/a&gt;&lt;/h3&gt;
-&lt;div style='width:425px' id='__ss_11756904'&gt; 
+&lt;div id='__ss_11756904' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='Learning to Play UX Rugby' target='_blank' href='http://www.slideshare.net/andersr/learning-to-play-ux-rugby'&gt;Learning to Play UX Rugby
+&lt;a href='http://www.slideshare.net/andersr/learning-to-play-ux-rugby' title='Learning to Play UX Rugby' target='_blank'&gt;Learning to Play UX Rugby
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11756904' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11756904' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
 &lt;/a&gt; from 
-&lt;a target='_blank' href='http://www.slideshare.net/andersr'&gt;Anders Ramsay
+&lt;a href='http://www.slideshare.net/andersr' target='_blank'&gt;Anders Ramsay
 &lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
@@ -2149,25 +1604,25 @@ Agile UX NYC -- 4 keys to success in a design driven company
 &lt;p&gt;AgileUXとは協調中心設計(Collaboration Centerd Design)と紹介されており、ラグビーの様に各々のプレイヤーが走り、縦横無尽にパスが交わされるようになる。&lt;/p&gt;
 
 &lt;h3 id='better_faster_uxier_atomic_design'&gt;&lt;a href='http://agileuxnyc.com/presentation/better-faster-uxier-atomic-design/'&gt;Better. Faster. UXier. AToMIC Design&lt;/a&gt;&lt;/h3&gt;
-&lt;div style='width:425px' id='__ss_11749624'&gt; 
+&lt;div id='__ss_11749624' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='Better. Faster. UXier.   AToMIC Design' target='_blank' href='http://www.slideshare.net/jgergen/better-faster-uxier-atomic-design'&gt;Better. Faster. UXier.   AToMIC Design&lt;/a&gt;&lt;/strong&gt; &lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11749624' width='425' marginwidth='0'&gt;
+&lt;a href='http://www.slideshare.net/jgergen/better-faster-uxier-atomic-design' title='Better. Faster. UXier.   AToMIC Design' target='_blank'&gt;Better. Faster. UXier.   AToMIC Design&lt;/a&gt;&lt;/strong&gt; &lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11749624' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
-&lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations
+&lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
 &lt;/a&gt; from 
-&lt;a target='_blank' href='http://www.slideshare.net/jgergen'&gt;Jennifer Gergen
+&lt;a href='http://www.slideshare.net/jgergen' target='_blank'&gt;Jennifer Gergen
 &lt;/a&gt; 
 &lt;/div&gt; 
 &lt;/div&gt;
 &lt;p&gt;イテレーティブな開発では、機能の開発改善には強いが、デザイン変更に弱さが現れる場合が多い。変更に強いAToMIC Designが必要。 デザインの戦略をはじめに決めることで、共通化されたデザインをアセットとして管理する。&lt;/p&gt;
 
-&lt;p&gt;デザイナがプログラミングスキルを（共通言語として）身に付けることで、開発サイドとの会話・意思疎通が迅速になるそうです。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;そうか。UX専門家が、プログラミングを理解するだけでも、大きな価値になるのか。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:32:32+00:00' href='https://twitter.com/storywriter/status/179877666613239808'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;デザイナがプログラミングスキルを（共通言語として）身に付けることで、開発サイドとの会話・意思疎通が迅速になるそうです。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;そうか。UX専門家が、プログラミングを理解するだけでも、大きな価値になるのか。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:32:32+00:00' href='https://twitter.com/storywriter/status/179877666613239808'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h3 id='demystifying_design_fewer_secrets_greater_impact'&gt;&lt;a href='http://agileuxnyc.com/presentation/demystifying-design-fewer-secrets-greater-impact/'&gt;Demystifying Design: Fewer Secrets, Greater Impact&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;UXデザインは未だブラックボックスな状態になっている。 デザイナ以外の人間にとって、UXデザインは過程が不明であり、このような状態では信頼を勝ち取ることはできない。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;UXがマジックのように見えるが故にスケープゴートみたいになってることもあるな。「UXスゲー」みたいな。謎表現だ。 &lt;a href='https://twitter.com/search/%2523agileuxnyc_ja'&gt;#agileuxnyc_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:33:03+00:00' href='https://twitter.com/yhassy/status/179877797098033153'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;UXデザインは未だブラックボックスな状態になっている。 デザイナ以外の人間にとって、UXデザインは過程が不明であり、このような状態では信頼を勝ち取ることはできない。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;UXがマジックのように見えるが故にスケープゴートみたいになってることもあるな。「UXスゲー」みたいな。謎表現だ。 &lt;a href='https://twitter.com/search/%2523agileuxnyc_ja'&gt;#agileuxnyc_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:33:03+00:00' href='https://twitter.com/yhassy/status/179877797098033153'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;デザインは様々な要因(ビジネスとユーザのニーズ、ユーザビリティ、ブランド等)が絡み合っており簡単ではないが、 頻繁に成果物を見せ、学んだことをシェアする必要がある。&lt;/p&gt;
@@ -2188,7 +1643,7 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;“We are being invited,but we are not inviting them to ours.”&lt;/p&gt;
 
-&lt;p&gt;開発チームはUXを一緒のチームへ招待しているが、UXは開発チームを招待していない、と締めくくられていました。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;デザイナーがプログラムを覚えろ…というより cross discipline (横断型) であれってことなんだろうね。 きっと。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:39:32+00:00' href='https://twitter.com/yhassy/status/179879428627775490'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;開発チームはUXを一緒のチームへ招待しているが、UXは開発チームを招待していない、と締めくくられていました。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;デザイナーがプログラムを覚えろ…というより cross discipline (横断型) であれってことなんだろうね。 きっと。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:39:32+00:00' href='https://twitter.com/yhassy/status/179879428627775490'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id='id32'&gt;パネルディスカッション&lt;/h2&gt;
@@ -2199,7 +1654,7 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;樽本徹也さん(以下、樽)：これまでは開発がウォーターフォールだったから、UX・UCDもウォーターフォールだった。だがこれからは、開発がAgileになる、だからUX・UCDもAgileになる。これはUX・UCDが自発的にAgile化したのではなく、開発サイドの変化に強いられた結果だ。今後日本でもAgileへシフトする、だからUXはAgileを学ぶべきた。&lt;/p&gt;
 
-&lt;p&gt;和波俊久さん(以下、和)：AgileはProjectの中で完結するものであり、終わりがある。だがStartupは終わらない。終わらせ方を知りたい。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;「プロジェクトは終わる使命をもっているが、スタートアップは終わらないという使命をもっている。」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takehara.Masashi.3kさん (@take3000) &lt;a data-datetime='2012-03-14T10:39:53+00:00' href='https://twitter.com/take3000/status/179879518054522880'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;和波俊久さん(以下、和)：AgileはProjectの中で完結するものであり、終わりがある。だがStartupは終わらない。終わらせ方を知りたい。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;「プロジェクトは終わる使命をもっているが、スタートアップは終わらないという使命をもっている。」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takehara.Masashi.3kさん (@take3000) &lt;a data-datetime='2012-03-14T10:39:53+00:00' href='https://twitter.com/take3000/status/179879518054522880'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;坂田一倫さん(以下、坂)：UXデザイナはエゴで仕事をしていないだろうか？DevelopmentがUXについて学んで来ており、DevelopmentとBusinnessのロールだけで開発が回るようになってきている。UXとして危機感を持っている。現状の職場ではUXはDevとBizと分断された状態になっている。&lt;/p&gt;
@@ -2208,7 +1663,7 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;坂：現状プロジェクト単位に分かれているが、入っていくステージが違う。同時ではない。&lt;/p&gt;
 
-&lt;p&gt;樽：同時に入れていればLeanStartupになる。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;ビジネス、UX、開発、よーいドンでチームとしてユーザー調査から始められたらAgileUX。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:54:01+00:00' href='https://twitter.com/sanochka/status/179883071867322369'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;樽：同時に入れていればLeanStartupになる。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;ビジネス、UX、開発、よーいドンでチームとしてユーザー調査から始められたらAgileUX。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:54:01+00:00' href='https://twitter.com/sanochka/status/179883071867322369'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;和：株式会社である以上、決算が必要。決算をするにはどこかで定量的に見せなければいけない。そこがBlackBoxのままではいけない。報告のうまい仕組みが必要。&lt;/p&gt;
@@ -2223,17 +1678,17 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;A: 和：課題をセグメントしていく&lt;/p&gt;
 
-&lt;p&gt;川： &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;37signalsからの著書から参照すると自らがペルソナになることが一番の検証方法となる。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt; &lt;a title='http://qlive.co/events/FsSNS/posts/5120/comments/376' href='http://t.co/0QbVLv0L'&gt;qlive.co/events/FsSNS/p…&lt;/a&gt;&lt;/p&gt;&amp;mdash; QLiveさん (@QLive_jp) &lt;a data-datetime='2012-03-14T10:53:03+00:00' href='https://twitter.com/QLive_jp/status/179882831206555648'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;川： &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;37signalsからの著書から参照すると自らがペルソナになることが一番の検証方法となる。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt; &lt;a href='http://t.co/0QbVLv0L' title='http://qlive.co/events/FsSNS/posts/5120/comments/376'&gt;qlive.co/events/FsSNS/p…&lt;/a&gt;&lt;/p&gt;&amp;mdash; QLiveさん (@QLive_jp) &lt;a data-datetime='2012-03-14T10:53:03+00:00' href='https://twitter.com/QLive_jp/status/179882831206555648'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;坂：Lean Work Shopに参加した際は、 　　　・自分が使うサービスを出す 　　　・ペルソナを4つ作る 　　　・セグメントの人に検証のためのインタビューをする 　　　・セグメントが存在するか検証する？ 　　　 川：開発者でなければわからないこともある。だから壁があったら負け。&lt;/p&gt;
 
-&lt;p&gt;樽：インタビューは誰にでもできる。全ての人が常に同席することは難しくとも、インタビューを録音・速記して、全員が見聞きできるようにする。そうすればアイデアは出てくる。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;チーム内で持っている情報に差がないほうがいい。ユーザーインタビューもチーム皆で参加。役割超えてアイデアぼこぼこ出てくる。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:56:48+00:00' href='https://twitter.com/sanochka/status/179883774903984128'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;樽：インタビューは誰にでもできる。全ての人が常に同席することは難しくとも、インタビューを録音・速記して、全員が見聞きできるようにする。そうすればアイデアは出てくる。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;チーム内で持っている情報に差がないほうがいい。ユーザーインタビューもチーム皆で参加。役割超えてアイデアぼこぼこ出てくる。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:56:48+00:00' href='https://twitter.com/sanochka/status/179883774903984128'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;川：ウォーターフォールは科学的根拠を重視する。「統計的に5人以上ヒアリングする必要がある」だとか。Agileではアイデアが出るのなら（体験的に）少人数でも問題ないとわかっている。&lt;/p&gt;
 
-&lt;p&gt;樽：データの精度よりもアイデア。アイデアを出し、動かして、検証する。なぜなら結果が全てだから。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;インタビューデータの精度より早くアイデアを形にすること。結果が全て。立派な調査やったって売れなきゃ意味ないでしょ。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:59:07+00:00' href='https://twitter.com/sanochka/status/179884358742708225'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;樽：データの精度よりもアイデア。アイデアを出し、動かして、検証する。なぜなら結果が全てだから。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;インタビューデータの精度より早くアイデアを形にすること。結果が全て。立派な調査やったって売れなきゃ意味ないでしょ。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:59:07+00:00' href='https://twitter.com/sanochka/status/179884358742708225'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;川：正にOutputsではなく、Outcomesが重要。&lt;/p&gt;
@@ -2242,20 +1697,20 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;和：最初から”学ぶ気持ち”でいることが重要。フィードバックを得ることを前提に動いているからこそうまくいく。&lt;/p&gt;
 
-&lt;p&gt;樽：開発者は今後UXを学ぶ。UXだけでは立ち行かなくなる &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;UX専門のデザイナーは必要ない？開発者がUXを身に付けだしている。&lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kazunori Nishimuraさん (@nishimuu) &lt;a data-datetime='2012-03-14T11:00:00+00:00' href='https://twitter.com/nishimuu/status/179884578880765953'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;樽：開発者は今後UXを学ぶ。UXだけでは立ち行かなくなる &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;UX専門のデザイナーは必要ない？開発者がUXを身に付けだしている。&lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kazunori Nishimuraさん (@nishimuu) &lt;a data-datetime='2012-03-14T11:00:00+00:00' href='https://twitter.com/nishimuu/status/179884578880765953'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;川：如何にチームに入っていくかが重要。&lt;/p&gt;
 
-&lt;p&gt;坂：インタビューに併せて、その人がコアユーザかどうかも見極める必要がある。製品・サービスのコアが何かを見極めて、ピボットの幅を考える。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;インタビューする相手は合わせてコアユーザーであるのかを確かめる必要がる。&lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kazunori Nishimuraさん (@nishimuu) &lt;a data-datetime='2012-03-14T11:01:28+00:00' href='https://twitter.com/nishimuu/status/179884949149728768'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;坂：インタビューに併せて、その人がコアユーザかどうかも見極める必要がある。製品・サービスのコアが何かを見極めて、ピボットの幅を考える。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;インタビューする相手は合わせてコアユーザーであるのかを確かめる必要がる。&lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kazunori Nishimuraさん (@nishimuu) &lt;a data-datetime='2012-03-14T11:01:28+00:00' href='https://twitter.com/nishimuu/status/179884949149728768'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;和：コアじゃないユーザのインタビューはかなしくなる。エバンジェリストユーザを見つけることが大事。&lt;/p&gt;
 
-&lt;p&gt;和：インタビューでは、採用障壁を下げるインタビューをしなければならない。インタビューされる側は現状で考えている。採用障壁を下げることですんなり採用されるパターンは多い。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;和波さん「BtoBの場合、『あったら便利』というサービスでも、導入側が『これは自社の文化に馴染まない』と思ったら導入はされない。その敷居を下げる昨日をつければ簡単に度付きしてもらえたりする。スタートアップの人たちは、なかなかそれに気がつかない」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T11:06:32+00:00' href='https://twitter.com/storywriter/status/179886222213263363'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;和：インタビューでは、採用障壁を下げるインタビューをしなければならない。インタビューされる側は現状で考えている。採用障壁を下げることですんなり採用されるパターンは多い。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;和波さん「BtoBの場合、『あったら便利』というサービスでも、導入側が『これは自社の文化に馴染まない』と思ったら導入はされない。その敷居を下げる昨日をつければ簡単に度付きしてもらえたりする。スタートアップの人たちは、なかなかそれに気がつかない」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T11:06:32+00:00' href='https://twitter.com/storywriter/status/179886222213263363'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;川：「これを他人に勧めたいか？」という質問がいい。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;「あなたはこのカンファレンスを人に勧めたいですか？　という質問がある」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takehara.Masashi.3kさん (@take3000) &lt;a data-datetime='2012-03-14T11:03:58+00:00' href='https://twitter.com/take3000/status/179885579293573120'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;川：「これを他人に勧めたいか？」という質問がいい。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;「あなたはこのカンファレンスを人に勧めたいですか？　という質問がある」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takehara.Masashi.3kさん (@take3000) &lt;a data-datetime='2012-03-14T11:03:58+00:00' href='https://twitter.com/take3000/status/179885579293573120'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id='id33'&gt;最後に&lt;/h2&gt;
@@ -2551,16 +2006,16 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 
 &lt;p&gt;まずは簡単なアンケート&lt;/p&gt;
 
-&lt;p&gt;今日のハンズオンが初TDDの人？ &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;初TDD率は、5/20人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:08:01+00:00' href='https://twitter.com/modal_soul/status/173620307347783680'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;今日のハンズオンが初TDDの人？ &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;初TDD率は、5/20人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:08:01+00:00' href='https://twitter.com/modal_soul/status/173620307347783680'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;JavaScriptのテストをしたことがある人？ ※初TDDの人を含まず。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;JavaScriptのテスト　3/15人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:08:36+00:00' href='https://twitter.com/modal_soul/status/173620451766050816'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;JavaScriptのテストをしたことがある人？ ※初TDDの人を含まず。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;JavaScriptのテスト　3/15人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:08:36+00:00' href='https://twitter.com/modal_soul/status/173620451766050816'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;JsTestDriverを使ったことがある人？ &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;JsTestDriverやったことある率は、3/20人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:09:07+00:00' href='https://twitter.com/modal_soul/status/173620584972943360'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;JsTestDriverを使ったことがある人？ &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;JsTestDriverやったことある率は、3/20人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:09:07+00:00' href='https://twitter.com/modal_soul/status/173620584972943360'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;そもそもテストって？ &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;「プログラマがおこなうホワイトボックステスト」って、１．開発的アプローチ（TDD）、2.ドキュメント的アプローチ、3.品質担保的アプローチ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:16:53+00:00' href='https://twitter.com/modal_soul/status/173622536502906880'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;そもそもテストって？ &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;「プログラマがおこなうホワイトボックステスト」って、１．開発的アプローチ（TDD）、2.ドキュメント的アプローチ、3.品質担保的アプローチ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:16:53+00:00' href='https://twitter.com/modal_soul/status/173622536502906880'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h3 id='jstestdriver'&gt;JsTestDriverについて&lt;/h3&gt;
@@ -2576,25 +2031,25 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;p&gt;テストコードの書き方、流れ、設定のTips、loggingなどなど&lt;/p&gt;
 
 &lt;p&gt;なかでもドキュメントやヘルプにもでてこない&lt;a href='http://code.google.com/p/js-test-driver/source/browse/trunk/JsTestDriver/src/com/google/jstestdriver/config/YamlParser.java#96'&gt;オプション&lt;/a&gt;がでてきて新鮮でしたｗ&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;これは「変なことをやりたかったらJSTestDriverのコードを読もうぜ」フラグ…… &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; さねゆきさん (@saneyuki_s) &lt;a data-datetime='2012-02-26T05:34:16+00:00' href='https://twitter.com/saneyuki_s/status/173642014301224960'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;これは「変なことをやりたかったらJSTestDriverのコードを読もうぜ」フラグ…… &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; さねゆきさん (@saneyuki_s) &lt;a data-datetime='2012-02-26T05:34:16+00:00' href='https://twitter.com/saneyuki_s/status/173642014301224960'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;Google ProjectのWikiを読むよりも&lt;a href='http://code.google.com/p/js-test-driver/source/browse/trunk/JsTestDriver/src/com/google/jstestdriver/config/YamlParser.java#96'&gt;コード&lt;/a&gt;を見たほうが色々わかるよ、って&lt;/p&gt;
 
 &lt;h3 id='sinonjs'&gt;Sinon.jsについて&lt;/h3&gt;
 
 &lt;p&gt;JsTestDriverで非同期処理のテストを使用とすると、 （かなり）難しいことになるようなので、&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;jsTestDriverで非同期テストの設定を書くのはあまりに面倒なので向いてない(かも) &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; gochoさん (@gocho) &lt;a data-datetime='2012-02-26T05:23:21+00:00' href='https://twitter.com/gocho/status/173639264653942786'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;jsTestDriverで非同期テストの設定を書くのはあまりに面倒なので向いてない(かも) &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; gochoさん (@gocho) &lt;a data-datetime='2012-02-26T05:23:21+00:00' href='https://twitter.com/gocho/status/173639264653942786'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;Sinon.jsでやったほうがいいところも（多々）あるそうです。&lt;/p&gt;
 
-&lt;p&gt;この辺りは適材適所で使い分けるのがポイントのようです。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;p&gt;この辺りは適材適所で使い分けるのがポイントのようです。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;ajaxのテストは、jsTestDriverだけじゃなくて、Sinon.jsとか、jqMockとか、使うといいんじゃない? 適材適所大切。 
 &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD
 &lt;/a&gt;
 &lt;/p&gt;&amp;mdash; gochoさん (@gocho) 
 &lt;a data-datetime='2012-02-26T05:35:23+00:00' href='https://twitter.com/gocho/status/173642294325555202'&gt;2月 26, 2012
 &lt;/a&gt;
-&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id='azu_re'&gt;@azu_reさん発表&lt;/h2&gt;
@@ -2602,17 +2057,17 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;h3 id='webstorm'&gt;WebStormについて&lt;/h3&gt;
 
 &lt;p&gt;私は使ったこと無かったのですが、シェアウェアのIDEなんだそうです。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;
 &lt;p&gt;
 &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;
  発表中のスライド &quot;WebStorm指南書&quot; 
- &lt;a title='http://bit.ly/wbPl1J' href='http://t.co/t72fnvYh'&gt;bit.ly/wbPl1J
+ &lt;a href='http://t.co/t72fnvYh' title='http://bit.ly/wbPl1J'&gt;bit.ly/wbPl1J
  &lt;/a&gt;
  &lt;/p&gt;
  &amp;mdash; azuさん (@azu_re) 
 &lt;a data-datetime='2012-02-26T06:39:17+00:00' href='https://twitter.com/azu_re/status/173658374586646528'&gt;2月 26, 2012
 &lt;/a&gt;
-&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;有償なだけあり、豊富な機能が提供されていてとても便利そうな印象でした。＠azu_reさんの資料がとても良くまとめられていらっしゃるので、詳細は &lt;a href='http://azu.github.com/slide/webstorm/webstorm.html'&gt;こちら&lt;/a&gt; を見てもらったほうがいいと思います。&lt;/p&gt;
 
@@ -2637,7 +2092,7 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;p&gt;&lt;a href='http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4048707868'&gt;テスト駆動JavaScript&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;を去年読みはじめてから、もっと勉強しよう、と思いつつなかなか手がつけられずにいたので、とてもいい機会になりました。&lt;/p&gt;
-&lt;a href='http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4048707868'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4048707868&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;&lt;/a&gt;&lt;img height='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4048707868' border='0' style='border:none !important; margin:0px !important;' width='1' /&gt;
+&lt;a href='http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4048707868'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4048707868&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4048707868' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;
 &lt;p&gt;今回の内容を踏まえつつ、Jenkinsとからめてビルドパイプラインを構築するのが当面の目標ですね。&lt;/p&gt;</description>
                 <link>http://modalsoul.github.io/report/test/2012/02/26/jstd-handson</link>
                 <guid>http://modalsoul.github.io/report/test/2012/02/26/jstd-handson</guid>
@@ -2660,9 +2115,9 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 
 &lt;p&gt;これにより、IntelliJとJsTestDriverの統合による恩恵を受けています。&lt;/p&gt;
 
-&lt;p&gt;JavaScriptアプリでは、常に3つのブラウザを対象にテストをしています。 &lt;img height='80%' src='http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg' width='80%' /&gt;&lt;/p&gt;
+&lt;p&gt;JavaScriptアプリでは、常に3つのブラウザを対象にテストをしています。 &lt;img width='80%' src='http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg' height='80%' /&gt;&lt;/p&gt;
 
-&lt;p&gt;テストコンソールにはテスト結果と、ブラウザからフェッチされたコンソール出力を確認できます。 &lt;img height='80%' src='http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg' width='80%' /&gt;&lt;/p&gt;
+&lt;p&gt;テストコンソールにはテスト結果と、ブラウザからフェッチされたコンソール出力を確認できます。 &lt;img width='80%' src='http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg' height='80%' /&gt;&lt;/p&gt;
 
 &lt;p&gt;上の試験例では、FireFox, Chromeのテストは通っていますが、Safariでは失敗しています。 サンプルでは３つのテストケースがあり、拡張した1つは2つのテストメソッドを持っています。 もしエラーが発生した場合、スタックトレースがクリッカブルになり、IntelliJはエラーの行右側に飛びます。&lt;/p&gt;
 
@@ -2725,18 +2180,18 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;img src='/img/jenkins-sticker.jpg' /&gt;
 &lt;p&gt;講演では、検証済みマージや、ビルドパイプライン、昇進モデル 自動化と自動化がつながり複雑な自動化が可能になる、「継続的デリバリ」についてのお話でした。&lt;/p&gt;
 
-&lt;p&gt;検証済みマージについては、&lt;a href='http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4774149942'&gt;WEB+DB Press vol.67&lt;/a&gt;にて記事を書かれたそうなので、必読ですね！ &lt;a href='http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4774149942'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4774149942&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;&lt;/a&gt;&lt;img height='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4774149942' border='0' style='border:none !important; margin:0px !important;' width='1' /&gt;&lt;/p&gt;
+&lt;p&gt;検証済みマージについては、&lt;a href='http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4774149942'&gt;WEB+DB Press vol.67&lt;/a&gt;にて記事を書かれたそうなので、必読ですね！ &lt;a href='http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4774149942'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4774149942&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4774149942' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id='1310140017c3__'&gt;［開発プロセス］13:10～14:00【17-C-3】オフェンシブな開発～「納品しない受託開発」にみるソフトウェア受託開発の未来　倉貫 義人 氏&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href='https://yukar.in/note/ckFpb7'&gt;オフェンシブな開発 #devsumi #devsumiC つぶやきまとめ - Yukarin&amp;#8217;Note&lt;/a&gt; &lt;a href='https://yukar.in/note/ckFpb7'&gt;https://yukar.in/note/ckFpb7&lt;/a&gt;&lt;/p&gt;
-&lt;div style='width:425px' id='__ss_11631411'&gt; 
+&lt;div id='__ss_11631411' style='width:425px'&gt; 
 	&lt;strong style='display:block;margin:12px 0 4px'&gt;
-	&lt;a title='Devsumi2012 倉貫講演資料' target='_blank' href='http://www.slideshare.net/kuranuki/devsumi2012-11631411'&gt;Devsumi2012 倉貫講演資料&lt;/a&gt;
+	&lt;a href='http://www.slideshare.net/kuranuki/devsumi2012-11631411' title='Devsumi2012 倉貫講演資料' target='_blank'&gt;Devsumi2012 倉貫講演資料&lt;/a&gt;
 	&lt;/strong&gt; 
-	&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11631411' width='425' marginwidth='0'&gt;
+	&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11631411' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 	&lt;/iframe&gt; 
-	&lt;div style='padding:5px 0 12px'&gt; View more &lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations&lt;/a&gt; from &lt;a target='_blank' href='http://www.slideshare.net/kuranuki'&gt;Yoshihito Kuranuki&lt;/a&gt; 
+	&lt;div style='padding:5px 0 12px'&gt; View more &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt; from &lt;a href='http://www.slideshare.net/kuranuki' target='_blank'&gt;Yoshihito Kuranuki&lt;/a&gt; 
 	&lt;/div&gt; 
 &lt;/div&gt;
 &lt;p&gt;このセッションの中で話された「家族がいても挑戦できる社会」。ガツンと響きました。&lt;/p&gt;
@@ -2744,11 +2199,11 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;p&gt;技術が好きでエンジニアになった人が、 食っていく為、家族を食わせて行く為に、それまでのスキルを捨ててマネジメントをする でも、それってその人の本意じゃないし、それまでのスキルが無駄になる 本人にとっても雇用する側にとってもおいしくない&lt;/p&gt;
 
 &lt;p&gt;そんな現状を変えられそうなお話でした。&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;&quot;研修と納品が目的だと、価値を提供することを目指せなくなる。これが守りの姿勢。&quot; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:27:10+00:00' href='https://twitter.com/joker1007/status/170363635363880961'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;&quot;生産性を上げれば上げるほど、担当できる顧客が増える。SIerの逆向きのインセンティブとは違う。プログラマとして頑張っていけるモデルを作っている。&quot; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:46:12+00:00' href='https://twitter.com/joker1007/status/170368425288413185'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;倉貫「いつまでも、いつからでも夢に挑戦できる社会にしていきたい。独身だろうが家族いても。それを実現するのがSonicGardenが取り組んでいるスタートアッププラットフォーム。」 &lt;a href='https://twitter.com/search/%2523devsumi'&gt;#devsumi&lt;/a&gt; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; miyohideさん (@miyohide) &lt;a data-datetime='2012-02-17T04:49:10+00:00' href='https://twitter.com/miyohide/status/170369173749366784'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;プログラマーはマニュアル化できないナレッジワーカー。ナレッジワーカーはノマドでタイムフリー、だからマネジメントするものではない &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T04:51:14+00:00' href='https://twitter.com/modal_soul/status/170369690638622720'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;倉貫さんの目指している世界があまりにもカッコ良すぎる。自分のビジネスモデルを通して実現したい世界が凄く分かりやすくて、しかも魅力的だ。 &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:52:04+00:00' href='https://twitter.com/joker1007/status/170369902337736706'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;&quot;研修と納品が目的だと、価値を提供することを目指せなくなる。これが守りの姿勢。&quot; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:27:10+00:00' href='https://twitter.com/joker1007/status/170363635363880961'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;&quot;生産性を上げれば上げるほど、担当できる顧客が増える。SIerの逆向きのインセンティブとは違う。プログラマとして頑張っていけるモデルを作っている。&quot; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:46:12+00:00' href='https://twitter.com/joker1007/status/170368425288413185'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;倉貫「いつまでも、いつからでも夢に挑戦できる社会にしていきたい。独身だろうが家族いても。それを実現するのがSonicGardenが取り組んでいるスタートアッププラットフォーム。」 &lt;a href='https://twitter.com/search/%2523devsumi'&gt;#devsumi&lt;/a&gt; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; miyohideさん (@miyohide) &lt;a data-datetime='2012-02-17T04:49:10+00:00' href='https://twitter.com/miyohide/status/170369173749366784'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;プログラマーはマニュアル化できないナレッジワーカー。ナレッジワーカーはノマドでタイムフリー、だからマネジメントするものではない &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T04:51:14+00:00' href='https://twitter.com/modal_soul/status/170369690638622720'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;倉貫さんの目指している世界があまりにもカッコ良すぎる。自分のビジネスモデルを通して実現したい世界が凄く分かりやすくて、しかも魅力的だ。 &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:52:04+00:00' href='https://twitter.com/joker1007/status/170369902337736706'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;hr /&gt;
 &lt;h3 id='dena_special1420150517a4scrum__'&gt;［DeNA Special］14:20～15:05【17-A-4】Scrumで組織改革　貝瀬 岳志 氏&lt;/h3&gt;
 
@@ -2759,7 +2214,7 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;p&gt;それと、会場の聴講者がとても多いことにも驚きました。 やはりスクラムが注目されている、ということなんでしょうか？&lt;/p&gt;
 
 &lt;p&gt;このセッションで特に気になったつぶやきを抜粋&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;そうだね、その辺の充実度がチームの成熟度と関係しているかもしれない。@&lt;a href='https://twitter.com/modal_soul'&gt;modal_soul&lt;/a&gt;: イテレーティブに開発する上で、やはり立ち上げの早さは重要なんですね　@&lt;a href='https://twitter.com/tsuyok'&gt;tsuyok&lt;/a&gt;: スプリント0のテンプレート。こういうテンプレートを作っていくのは重要だよなー。 &lt;a href='https://twitter.com/search/%2523devsumiA'&gt;#devsumiA&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tsuyoshi Yasunishiさん (@tsuyok) &lt;a data-datetime='2012-02-17T05:47:11+00:00' href='https://twitter.com/tsuyok/status/170383772905250816'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;そうだね、その辺の充実度がチームの成熟度と関係しているかもしれない。@&lt;a href='https://twitter.com/modal_soul'&gt;modal_soul&lt;/a&gt;: イテレーティブに開発する上で、やはり立ち上げの早さは重要なんですね　@&lt;a href='https://twitter.com/tsuyok'&gt;tsuyok&lt;/a&gt;: スプリント0のテンプレート。こういうテンプレートを作っていくのは重要だよなー。 &lt;a href='https://twitter.com/search/%2523devsumiA'&gt;#devsumiA&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tsuyoshi Yasunishiさん (@tsuyok) &lt;a data-datetime='2012-02-17T05:47:11+00:00' href='https://twitter.com/tsuyok/status/170383772905250816'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;hr /&gt;
 &lt;h3 id='10th_special1525161517b5___'&gt;［10th Special］15:25～16:15【17-B-5】アジャイルマニフェスト ディケイド　角谷 信太郎 氏&lt;/h3&gt;
 
@@ -2772,26 +2227,26 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 
 &lt;p&gt;流石、信頼と実績の角谷さん。素晴らしいセッションでした！そしてもの凄い聴講者の数ｗｗ 角谷さん自身もおっしゃっていましたが、このセッションは劇場版、生でしか味わえないものが満載でした！&lt;/p&gt;
 
-&lt;p&gt;講演資料をツイートと併せて追っていただくと、劇場に近づけるかもしれませんね &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;&quot;角谷さんのセッションを最後まで聴いてデブサミが何なのか分かったような気がした。講演の中で角谷さんが言及したとおり、デブサミは&quot;映画館&quot;なのだ&quot; / “10回目のデブサミ - The Dragon Scroll” &lt;a title='http://htn.to/NvW2er' href='http://t.co/RhwzqMeB'&gt;htn.to/NvW2er&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kakutani Shintaroさん (@kakutani) &lt;a data-datetime='2012-02-18T15:14:48+00:00' href='https://twitter.com/kakutani/status/170889006152826881'&gt;2月 18, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;p&gt;講演資料をツイートと併せて追っていただくと、劇場に近づけるかもしれませんね &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;&quot;角谷さんのセッションを最後まで聴いてデブサミが何なのか分かったような気がした。講演の中で角谷さんが言及したとおり、デブサミは&quot;映画館&quot;なのだ&quot; / “10回目のデブサミ - The Dragon Scroll” &lt;a href='http://t.co/RhwzqMeB' title='http://htn.to/NvW2er'&gt;htn.to/NvW2er&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kakutani Shintaroさん (@kakutani) &lt;a data-datetime='2012-02-18T15:14:48+00:00' href='https://twitter.com/kakutani/status/170889006152826881'&gt;2月 18, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id='special1740191017e74tate_4tate______'&gt;［Special］17:40～19:10【17-E-7】君の4tate（立てた帆）に、風を感じているか？ ～4tateで日本を変えるプロジェクト～　野村 恭彦 氏 / 市谷 聡啓 氏&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href='https://yukar.in/note/ckFpaN'&gt;君の4tate（立てた帆）に、風を感じているか？ #devsumiE つぶやきまとめ - Yukarin&amp;#8217;Note&lt;/a&gt; &lt;a href='https://yukar.in/note/ckFpaN'&gt;https://yukar.in/note/ckFpaN&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;「よんたて」ではなく「ほたて」だった &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; uedayoさん (@uedayo) &lt;a data-datetime='2012-02-17T08:44:14+00:00' href='https://twitter.com/uedayo/status/170428328854040576'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;「よんたて」ではなく「ほたて」だった &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; uedayoさん (@uedayo) &lt;a data-datetime='2012-02-17T08:44:14+00:00' href='https://twitter.com/uedayo/status/170428328854040576'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;
 &lt;p&gt;このセッションですが、実際よくわからないまま参加しましたｗ ただ、スピーカーの野村　恭彦さんが監訳された&lt;a href='http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4873115051'&gt;ゲームストーミング ―会議、チーム、プロジェクトを成功へと導く87のゲーム&lt;/a&gt; は、 仕事や勉強会のワークショップのネタにフル活用していて、この本つながりで参加しました。※この本、オススメです&lt;/p&gt;
 &lt;a href='http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4873115051'&gt;
 &lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4873115051&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img height='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4873115051' border='0' style='border:none !important; margin:0px !important;' width='1' /&gt;
+&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4873115051' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;
 &lt;p&gt;このセッションでは、これまでの聴講するだけのスタイルではなくて、受講者同士がディスカッションするスタイルでした。&lt;/p&gt;
 
 &lt;p&gt;このセッション中で特に感銘した部分のツイートを抜粋して紹介すると、&lt;/p&gt;
-&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;べき論で集まってもうまくいかない　思いをもった人を集める　 &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dai Fujiharaさん (@daipresents) &lt;a data-datetime='2012-02-17T09:37:25+00:00' href='https://twitter.com/daipresents/status/170441710839676928'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;対話による多様性と同調、アジャイル・スクラムにも通じてますよね &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T09:40:40+00:00' href='https://twitter.com/modal_soul/status/170442530129842176'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;ITで何が生まれるかをITを使わない人は知らない &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; uedayoさん (@uedayo) &lt;a data-datetime='2012-02-17T09:38:09+00:00' href='https://twitter.com/uedayo/status/170441898404757504'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;この問題に対する解答を行えない、なぜなら発注がないから。発注する側は、これまでの延長でしか考えていなくて、解決できることを知らないから　&lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T09:43:38+00:00' href='https://twitter.com/modal_soul/status/170443275742871552'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
-&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;共感駆動開発いいね　 &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dai Fujiharaさん (@daipresents) &lt;a data-datetime='2012-02-17T09:51:18+00:00' href='https://twitter.com/daipresents/status/170445204791369728'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;べき論で集まってもうまくいかない　思いをもった人を集める　 &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dai Fujiharaさん (@daipresents) &lt;a data-datetime='2012-02-17T09:37:25+00:00' href='https://twitter.com/daipresents/status/170441710839676928'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;対話による多様性と同調、アジャイル・スクラムにも通じてますよね &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T09:40:40+00:00' href='https://twitter.com/modal_soul/status/170442530129842176'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;ITで何が生まれるかをITを使わない人は知らない &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; uedayoさん (@uedayo) &lt;a data-datetime='2012-02-17T09:38:09+00:00' href='https://twitter.com/uedayo/status/170441898404757504'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;この問題に対する解答を行えない、なぜなら発注がないから。発注する側は、これまでの延長でしか考えていなくて、解決できることを知らないから　&lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T09:43:38+00:00' href='https://twitter.com/modal_soul/status/170443275742871552'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;共感駆動開発いいね　 &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dai Fujiharaさん (@daipresents) &lt;a data-datetime='2012-02-17T09:51:18+00:00' href='https://twitter.com/daipresents/status/170445204791369728'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
 &lt;/script&gt;&lt;hr /&gt;
 &lt;h2 id='id29'&gt;最後に、&lt;/h2&gt;
 
@@ -2943,7 +2398,7 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
         <item>
                 <title>Capistranoをやってみよう</title>
                 <description>&lt;h2 id='id21' /&gt;
-&lt;a href='https://github.com/capistrano/capistrano'&gt;&lt;img title='capistrano/capistrano - GitHub' alt='https://github.com/capistrano/capistrano' height='300' src='http://capture.heartrails.com/300x300/cool?https://github.com/capistrano/capistrano' width='300' /&gt;&lt;/a&gt;
+&lt;a href='https://github.com/capistrano/capistrano'&gt;&lt;img width='300' title='capistrano/capistrano - GitHub' alt='https://github.com/capistrano/capistrano' src='http://capture.heartrails.com/300x300/cool?https://github.com/capistrano/capistrano' height='300' /&gt;&lt;/a&gt;
 &lt;p&gt;Capistranoをやってみました。 &lt;a href='http://builder.japan.zdnet.com/virtualization/sp_open-source-software-moonlinx-2009/20396188/'&gt;こちら&lt;/a&gt;と&lt;a href='http://doruby.kbmj.com/trinityt_on_rails/20080325/__Capistrano___1'&gt;こちら&lt;/a&gt;を参考にしました。&lt;/p&gt;
 
 &lt;h2 id='capistrano'&gt;Capistranoって？&lt;/h2&gt;
@@ -3067,7 +2522,7 @@ end
         <item>
                 <title>ScalaでFizzBuzzしてみた</title>
                 <description>&lt;h2 id='id6' /&gt;
-&lt;a href='http://ja.wikipedia.org/wiki/Fizz_Buzz'&gt;&lt;img title='Fizz Buzz - Wikipedia' alt='http://ja.wikipedia.org/wiki/Fizz_Buzz' height='120' src='http://capture.heartrails.com/200x120/cool?http://ja.wikipedia.org/wiki/Fizz_Buzz' width='200' /&gt;&lt;/a&gt;
+&lt;a href='http://ja.wikipedia.org/wiki/Fizz_Buzz'&gt;&lt;img width='200' title='Fizz Buzz - Wikipedia' alt='http://ja.wikipedia.org/wiki/Fizz_Buzz' src='http://capture.heartrails.com/200x120/cool?http://ja.wikipedia.org/wiki/Fizz_Buzz' height='120' /&gt;&lt;/a&gt;
 &lt;p&gt;社内でFizzBuzz大会をやりました。&lt;/p&gt;
 
 &lt;h2 id='id7'&gt;はじめに&lt;/h2&gt;
@@ -3075,14 +2530,14 @@ end
 &lt;p&gt;社内のチームでFizzBuzz大会をやろう、という話自体は去年の秋ごろからあって 年が明けて、今日開催しました。&lt;/p&gt;
 
 &lt;h2 id='fizzbuzz'&gt;FizzBuzz大会要綱&lt;/h2&gt;
-&lt;div style='width:425px' id='__ss_11253526'&gt; 
+&lt;div id='__ss_11253526' style='width:425px'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a title='Fizz buzz publish' target='_blank' href='http://www.slideshare.net/modalsoul/fizz-buzz-publish-11253526'&gt;Fizz buzz publish&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/modalsoul/fizz-buzz-publish-11253526' title='Fizz buzz publish' target='_blank'&gt;Fizz buzz publish&lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe scrolling='no' height='355' marginheight='0' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11253526' width='425' marginwidth='0'&gt;
+&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11253526' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
 &lt;/iframe&gt; 
-&lt;div style='padding:5px 0 12px'&gt; View more &lt;a target='_blank' href='http://www.slideshare.net/'&gt;presentations
-&lt;/a&gt; from &lt;a target='_blank' href='http://www.slideshare.net/modalsoul'&gt;modalsoul&lt;/a&gt; &lt;/div&gt; &lt;/div&gt;
+&lt;div style='padding:5px 0 12px'&gt; View more &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
+&lt;/a&gt; from &lt;a href='http://www.slideshare.net/modalsoul' target='_blank'&gt;modalsoul&lt;/a&gt; &lt;/div&gt; &lt;/div&gt;
 &lt;h3 id='id8'&gt;大会参加者&lt;/h3&gt;
 
 &lt;ul&gt;

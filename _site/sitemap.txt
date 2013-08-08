@@ -12,14 +12,12 @@ http://modalsoul.github.io/tags.html
 http://modalsoul.github.io/report/2012/10/30/how-to-use-jsdoc
 http://modalsoul.github.io/report/2012/10/29/node-express-access-log-rotation
 http://modalsoul.github.io/report/2012/10/18/about-npm-start-and-package-json
-http://modalsoul.github.io/report/2012/10/14/node-js-log4js
 http://modalsoul.github.io/report/2012/10/10/entrance-into-node-js
 http://modalsoul.github.io/report/2012/09/21/android-usb_driver-connection-problem
 http://modalsoul.github.io/report/2012/09/17/xp-festival
 http://modalsoul.github.io/test/programing/2012/08/30/android-ui-test-touchutils-performclick
 http://modalsoul.github.io/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku
 http://modalsoul.github.io/programing/2012/08/10/Sign-in-with-Facebook-Scala
-http://modalsoul.github.io/programing/2012/07/31/Getting-Started-with-Play2-Scala-and-Squeryl
 http://modalsoul.github.io/programing/2012/07/26/Optimizing-Play2-for-Database-Driven-Apps
 http://modalsoul.github.io/report/programing/2012/06/02/minato-ruby-kaigi-01
 http://modalsoul.github.io/report/2012/05/25/agile-kaihatsu-kihon-no-ki

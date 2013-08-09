@@ -40,4 +40,3 @@ http://modalsoul.github.io/ci/2012/02/01/setup-capistrano
 http://modalsoul.github.io/programing/2012/01/24/fizz-buzz
 http://modalsoul.github.io/record/2012/01/15/setup-jekyll
 http://modalsoul.github.io/record/2012/01/11/first-post
-http://modalsoul.github.io/lessons/2011/12/29/jekyll-introduction

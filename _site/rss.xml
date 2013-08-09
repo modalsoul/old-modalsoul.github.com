@@ -5,15 +5,15 @@
         <description>modal_soul debriefing - modal_soul</description>
         <link>http://modalsoul.github.io</link>
         <link>http://modalsoul.github.io</link>
-        <lastBuildDate>2013-08-08T22:57:56+09:00</lastBuildDate>
-        <pubDate>2013-08-08T22:57:56+09:00</pubDate>
+        <lastBuildDate>2013-08-10T01:17:23+09:00</lastBuildDate>
+        <pubDate>2013-08-10T01:17:23+09:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>node.js+JSDoc3によるインラインAPIドキュメントの生成</title>
                 <description>&lt;a href='http://www.flickr.com/photos/pixagraphic/3414730395/' title='Old Documents by pixagraphic, on Flickr'&gt;
-&lt;img width='320' alt='Old Documents' src='http://farm4.staticflickr.com/3586/3414730395_7dedac534b_n.jpg' height='213' /&gt;
+&lt;img height='213' alt='Old Documents' src='http://farm4.staticflickr.com/3586/3414730395_7dedac534b_n.jpg' width='320' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;h2 id='id103'&gt;謝辞&lt;/h2&gt;
 
@@ -30,7 +30,7 @@
 &lt;h2 id='jsdoc3'&gt;JSDoc3を使う&lt;/h2&gt;
 
 &lt;p&gt;ドキュメント生成ルーツは色々あるようですが、今回はJSDoc3を使いました。 &lt;a href='https://github.com/jsdoc3/jsdoc'&gt;
-&lt;img width='120' title='jsdoc3/jsdoc ・ GitHub' alt='https://github.com/jsdoc3/jsdoc' src='http://capture.heartrails.com/120x90/cool/1351633993677?https://github.com/jsdoc3/jsdoc' height='90' /&gt;
+&lt;img height='90' alt='https://github.com/jsdoc3/jsdoc' title='jsdoc3/jsdoc ・ GitHub' src='http://capture.heartrails.com/120x90/cool/1351633993677?https://github.com/jsdoc3/jsdoc' width='120' /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;現状だとJSDocの後継&amp;#8221;JsDoc Toolkit&amp;#8221;がメジャーなようですが、さらに後継のJSDoc3を使いました。&lt;/p&gt;
@@ -50,7 +50,7 @@
 
 &lt;p&gt;実際にnode.js＋expressのコードにアノテーションを追加してみました。&lt;/p&gt;
 &lt;a href='https://github.com/modalsoul/expressSample/blob/master/app.js'&gt;
-&lt;img width='200' title='expressSample/app.js at master ・ modalsoul/expressSample ・ GitHub' alt='https://github.com/modalsoul/expressSample/blob/master/app.js' src='http://capture.heartrails.com/200x150/cool/1351634631326?https://github.com/modalsoul/expressSample/blob/master/app.js' height='150' /&gt;
+&lt;img height='150' alt='https://github.com/modalsoul/expressSample/blob/master/app.js' title='expressSample/app.js at master ・ modalsoul/expressSample ・ GitHub' src='http://capture.heartrails.com/200x150/cool/1351634631326?https://github.com/modalsoul/expressSample/blob/master/app.js' width='200' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;h2 id='id105'&gt;タグの種類&lt;/h2&gt;
 
@@ -94,7 +94,7 @@
         <item>
                 <title>node.js+express+log4jsでのアクセスログローテーション</title>
                 <description>&lt;a href='http://www.flickr.com/photos/kuromatsunai/3024100752/' title='足跡 - Footprint - by kuromatsunai.info, on Flickr'&gt;
-&lt;img width='320' alt='足跡 - Footprint -' src='http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg' height='240' /&gt;
+&lt;img height='240' alt='足跡 - Footprint -' src='http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg' width='320' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;h2 id='id101'&gt;謝辞&lt;/h2&gt;
 
@@ -116,7 +116,7 @@
 
 &lt;p&gt;&lt;a href='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/'&gt;node.js+log4jsで、ログローテーションする&lt;/a&gt;&lt;/p&gt;
 &lt;a href='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/'&gt;
-&lt;img width='120' title='Now Capturing...' alt='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' src='http://capture.heartrails.com/120x90/cool?http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' height='90' /&gt;
+&lt;img height='90' alt='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' title='Now Capturing...' src='http://capture.heartrails.com/120x90/cool?http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' width='120' /&gt;
 &lt;/a&gt;
 &lt;p&gt;実際のコードはこんな感じ。※:要リファクタリング &lt;script src='https://gist.github.com/3973839.js'&gt;
 &lt;/script&gt; app.routerの前で、functionを入れログレベルをinfoで出力させています。&lt;/p&gt;
@@ -276,7 +276,7 @@ transfer-encoding:chunked
 
 &lt;p&gt;端的に言うと、MBAにインストールされていたEasyTetherのドライバと競合していた為でした。&lt;/p&gt;
 &lt;a href='https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja'&gt;
-&lt;img width='300' title='Now Capturing...' alt='https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja' src='http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja' height='200' /&gt;
+&lt;img height='200' alt='https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja' title='Now Capturing...' src='http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja' width='300' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;h2 id='id93'&gt;対処法&lt;/h2&gt;
 
@@ -353,7 +353,7 @@ transfer-encoding:chunked
 
 &lt;p&gt;クロージングの際、メイン会場に集まった参加者とセッションで高まった熱気、この場の雰囲気は正に圧巻です 。&lt;/p&gt;
 &lt;a href='http://kokucheese.com/event/index/52905/'&gt;
-&lt;img width='300' title='9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」' alt='http://kokucheese.com/event/index/52905/' src='http://capture.heartrails.com/300x200/cool?http://kokucheese.com/event/index/52905/' height='200' /&gt;
+&lt;img height='200' alt='http://kokucheese.com/event/index/52905/' title='9月20日 アジャイルサムライ読書会 横浜道場「当てずっぽうの奥義」' src='http://capture.heartrails.com/300x200/cool?http://kokucheese.com/event/index/52905/' width='300' /&gt;
 &lt;/a&gt;
 &lt;p&gt;※ちなみに、９月２０日は&lt;a href='http://kokucheese.com/event/index/52905/'&gt;アジャイルサムライ読書会 横浜道場 「当てずっぽうの奥義」&lt;/a&gt;が開催されます。どうぞご参加ください#ステマ&lt;/p&gt;
 &lt;hr /&gt;
@@ -362,7 +362,7 @@ transfer-encoding:chunked
 &lt;p&gt;セッションの内容によっては、事前に講師と打ち合わせをし、どういった趣旨・内容でセッションを行うのか話をします。 なにせ運営スタッフですので、当日の講師控え室にだって堂々と入ることができます。&lt;/p&gt;
 
 &lt;p&gt;そんな合間合間の時間に、普段なかなかお目にかかる機会の無い講師の方にも直接質問をしたり話を伺うことができます。 Twitterにメンションを投げるよりも確実に聞きたいことが聞けます。&lt;/p&gt;
-&lt;a href='http://twitter.yfrog.com/kl9tncenj' title='豪華アジャイルコーチ陣' target='_blank'&gt;&lt;img src='http://desmond.yfrog.com/Himg741/scaled.php?tn=0&amp;server=741&amp;filename=9tncen.jpg&amp;xsize=640&amp;ysize=640' border='0' /&gt;
+&lt;a href='http://twitter.yfrog.com/kl9tncenj' target='_blank' title='豪華アジャイルコーチ陣'&gt;&lt;img border='0' src='http://desmond.yfrog.com/Himg741/scaled.php?tn=0&amp;server=741&amp;filename=9tncen.jpg&amp;xsize=640&amp;ysize=640' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;h3 id='id88'&gt;登壇して欲しい人やセッション内容を推薦できる&lt;/h3&gt;
 
@@ -375,23 +375,23 @@ transfer-encoding:chunked
 &lt;p&gt;XP祭り2012もつつがなく終了した訳ですが、実行委員の仕事が終わった訳ではありません。 XPを謳う以上、ふりかえりは当然。&lt;/p&gt;
 
 &lt;p&gt;ということで、もうしばらく後にXP祭り2012のふりかえりが行われると思います。 そして、今年のXP祭りでの気づきを生かし、来年さらにすばらしいXP祭りになるのではと思います。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;つーか、スタッフを募集しております &lt;a href='https://twitter.com/search/%23xpjug'&gt;#xpjug
 &lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; Yasunobu Kawaguchiさん (@kawaguti) 
-&lt;a data-datetime='2012-09-15T15:10:45+00:00' href='https://twitter.com/kawaguti/status/246989439409197056'&gt;9月 15, 2012
+&lt;a href='https://twitter.com/kawaguti/status/246989439409197056' data-datetime='2012-09-15T15:10:45+00:00'&gt;9月 15, 2012
 &lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;XP祭りのスタッフや、TOCの活動に興味を持たれた方、お声かけくださいまし。 
 &lt;a href='https://twitter.com/search/%23xpjug'&gt;#xpjug
 &lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; nohdomiさん (@nohdomi) 
-&lt;a data-datetime='2012-09-15T20:07:35+00:00' href='https://twitter.com/nohdomi/status/247064138495447040'&gt;9月 15, 2012
+&lt;a href='https://twitter.com/nohdomi/status/247064138495447040' data-datetime='2012-09-15T20:07:35+00:00'&gt;9月 15, 2012
 &lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;hr /&gt;
 &lt;h2 id='id90'&gt;最後に&lt;/h2&gt;
 
@@ -709,7 +709,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;・&lt;a href='https://yukar.in/note/ckF3Wr'&gt;みなとRuby会議01 前半まとめ #minatork01&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;・&lt;a href='https://yukar.in/note/ckF3We'&gt;みなとRuby会議01 後半まとめ #minatork01&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;&lt;img width='60%' src='http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg' height='60%' /&gt;
+&lt;hr /&gt;&lt;img height='60%' src='http://distilleryimage2.instagram.com/70137e18ac5611e19894123138140d8c_7.jpg' width='60%' /&gt;
 &lt;h2 id='ruby'&gt;初Rubyイベント参加&lt;/h2&gt;
 
 &lt;p&gt;ずっとRubyは勉強したいと思っていたのですが、なかなか進まず放置状態でした。、(^^;) &lt;br /&gt;&lt;/p&gt;
@@ -756,7 +756,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;今回のアジャイルサムライ横浜道場は、特別編 第２回目。アジャイルサムライの監訳者、@nawoto さんにお越し頂き、Agile Japan 2012で講演した「アジャイル開発　基本のキ」を講演して頂きました。&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='アジャイルサムライ読書会横浜道場' src='http://kokucheese.com/images/upload/33598_photo1.jpg?20120408131717' /&gt;&lt;/p&gt;
-&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' src='//speakerdeck.com/assets/embed.js'&gt;
+&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' src='//speakerdeck.com/assets/embed.js' data-id='4fb9ea9a9d60b902f7004248'&gt;
 &lt;/script&gt;&lt;br /&gt;&lt;hr /&gt;
 &lt;p&gt;この講演を通しての内容については、私以外の他参加者の方々が良い記事を書かれているので、そちらをご参考ください。&lt;/p&gt;
 
@@ -771,8 +771,8 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;ですので、必ずしも講師の@nawotoさんの意図したことを汲み取れていない可能性があります。&lt;/p&gt;
 
 &lt;h2 id='id74'&gt;何が違うのか？&lt;/h2&gt;
-&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='23' src='//speakerdeck.com/assets/embed.js'&gt;
-&lt;/script&gt;&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='38' src='http://speakerdeck.com/assets/embed.js'&gt;
+&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' src='//speakerdeck.com/assets/embed.js' data-id='4fb9ea9a9d60b902f7004248' data-slide='23'&gt;
+&lt;/script&gt;&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' src='http://speakerdeck.com/assets/embed.js' data-id='4fb9ea9a9d60b902f7004248' data-slide='38'&gt;
 &lt;/script&gt;
 &lt;p&gt;この章では、とにかく従来のやり方と同じであることの肯定を１つ１つ丁寧に積み上げているように感じました。&lt;/p&gt;
 
@@ -785,13 +785,13 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h2 id='id75'&gt;どう進むのか？&lt;/h2&gt;
 
 &lt;p&gt;この章では、アジャイル開発における3本の柱、「透明性」「検査」の具体的なプラクティスと「適応」の重要性を伝えるためのものと思いました。&lt;/p&gt;
-&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='122' src='http://speakerdeck.com/assets/embed.js'&gt;
-&lt;/script&gt;&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='123' src='http://speakerdeck.com/assets/embed.js'&gt;
+&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' src='http://speakerdeck.com/assets/embed.js' data-id='4fb9ea9a9d60b902f7004248' data-slide='122'&gt;
+&lt;/script&gt;&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' src='http://speakerdeck.com/assets/embed.js' data-id='4fb9ea9a9d60b902f7004248' data-slide='123'&gt;
 &lt;/script&gt;
 &lt;h2 id='id76'&gt;明日から始める&lt;/h2&gt;
 
 &lt;p&gt;この章で伝えようとしていたことは、「少しづつで構いません　良くする事を続けてください」に集約されているのだなと思いました。&lt;/p&gt;
-&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' data-id='4fb9ea9a9d60b902f7004248' data-slide='148' src='http://speakerdeck.com/assets/embed.js'&gt;
+&lt;script data-ratio='1.299492385786802' async='' class='speakerdeck-embed' src='http://speakerdeck.com/assets/embed.js' data-id='4fb9ea9a9d60b902f7004248' data-slide='148'&gt;
 &lt;/script&gt;
 &lt;h2 id='id77'&gt;最後に&lt;/h2&gt;
 
@@ -804,11 +804,11 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
         <item>
                 <title>スクラム道 StaffMeetup20120523に遊びに行ってきました。</title>
                 <description>&lt;h2 id='_staffmeetup20120523'&gt;スクラム道 StaffMeetup20120523に遊びに行ってきました。&lt;/h2&gt;
-&lt;blockquote lang='ja' class='twitter-tweet' data-in-reply-to='202028418051747841'&gt;
+&lt;blockquote data-in-reply-to='202028418051747841' class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;@&lt;a href='https://twitter.com/nawoto'&gt;nawoto&lt;/a&gt; StaffMeetup遊びに行ってみたいです！&lt;/p&gt;
 &amp;mdash; imae masatoshiさん (@modal_soul) 
-&lt;a data-datetime='2012-05-14T14:28:32+00:00' href='https://twitter.com/modal_soul/status/202042716673159170'&gt;5月 14, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;a href='https://twitter.com/modal_soul/status/202042716673159170' data-datetime='2012-05-14T14:28:32+00:00'&gt;5月 14, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;こんな流れで、スクラム道のスタッフミーティングに遊びに行ってきました。&lt;/p&gt;
 
@@ -851,18 +851,18 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;・uedyo大阪夏の陣&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id73'&gt;地方コミュニティ募集&lt;/h2&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;スクラム道と組んでくれる地方のコミュニティ求む 
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;スクラム道と組んでくれる地方のコミュニティ求む 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;&amp;mdash; Nishimura Naotoさん (@nawoto) 
-&lt;a data-datetime='2012-05-23T14:34:24+00:00' href='https://twitter.com/nawoto/status/205305686693904388'&gt;5月 23, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;a href='https://twitter.com/nawoto/status/205305686693904388' data-datetime='2012-05-23T14:34:24+00:00'&gt;5月 23, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;ちなみにネタじゃなくて本気で一緒にやってくれるとこを募集中です。メンションだけじゃ分かんないんで俺にメールしてくれ 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo
 &lt;/a&gt;
 &lt;/p&gt;&amp;mdash; Nishimura Naotoさん (@nawoto) 
-&lt;a data-datetime='2012-05-23T14:44:26+00:00' href='https://twitter.com/nawoto/status/205308208510803968'&gt;5月 23, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;a href='https://twitter.com/nawoto/status/205308208510803968' data-datetime='2012-05-23T14:44:26+00:00'&gt;5月 23, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;スクラム道では、スクラム道と組んでくれる地方コミュニティを募集しているそうです。&lt;/p&gt;
 
@@ -880,7 +880,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 
 &lt;p&gt;キャッチーなイベントタイトルに釣られて参加してきました。 私はスクラムマスターではない(自称ですらない)ですが、まぁ細かい事を気にしてはいけません。&lt;/p&gt;
 &lt;hr /&gt;&lt;a href='http://kokucheese.com/event/index/36283/'&gt;
-&lt;img width='360' title='5月21日 全員スクラムマスター。(東京都)' alt='http://kokucheese.com/event/index/36283/' src='http://capture.heartrails.com/360x250/cool/shorten?http://kokucheese.com/event/index/36283/' /&gt;
+&lt;img alt='http://kokucheese.com/event/index/36283/' title='5月21日 全員スクラムマスター。(東京都)' src='http://capture.heartrails.com/360x250/cool/shorten?http://kokucheese.com/event/index/36283/' width='360' /&gt;
 &lt;/a&gt;
 &lt;p&gt;今回、CSM研修同期のMTIのイケメンスクラムマスター岩崎さん（@niwa303）が、事例発表をされるということと、CSM,CSPO数ぶっちぎりだけど勉強会でなかなか遭遇しないMTI社の事例が聞けるということで、その辺りも期待していました。&lt;/p&gt;
 
@@ -902,12 +902,12 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h2 id='id71'&gt;チームへの働きかけについて&lt;/h2&gt;
 
 &lt;p&gt;ダイアログ中に共通して「スクラムを導入したいが、プラクティスがなかなかチームに浸透しない」といった問題を聞くことが多かったように感じました。&lt;/p&gt;
-&lt;div id='__ss_13014872' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_13014872'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/TakaoOyobe/20120521-13014872' title='私がスクラムをやめた理由 - 全員スクラムマスター。＠DevLove -' target='_blank'&gt;私がスクラムをやめた理由 - 全員スクラムマスター。＠DevLove -
+&lt;a href='http://www.slideshare.net/TakaoOyobe/20120521-13014872' target='_blank' title='私がスクラムをやめた理由 - 全員スクラムマスター。＠DevLove -'&gt;私がスクラムをやめた理由 - 全員スクラムマスター。＠DevLove -
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/13014872' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/13014872' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt;
  View more 
@@ -958,9 +958,9 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 
 &lt;p&gt;このサンプルでは、アプリの起動後の画面にボタンが表示され、そのボタンをクリックすると別画面に遷移します。&lt;/p&gt;
 &lt;h3&gt;起動後の画面&lt;/h3&gt;&lt;a href='http://www.flickr.com/photos/modalsoul/7233426834/' title='uiTestSample-main by modal_soul, on Flickr'&gt;
-&lt;img width='500' alt='uiTestSample-main' src='http://farm6.staticflickr.com/5343/7233426834_d72dda0713.jpg' height='492' /&gt;
+&lt;img height='492' alt='uiTestSample-main' src='http://farm6.staticflickr.com/5343/7233426834_d72dda0713.jpg' width='500' /&gt;
 &lt;/a&gt;&lt;h3&gt;ボタンクリックで遷移後の画面&lt;/h3&gt;&lt;a href='http://www.flickr.com/photos/modalsoul/7233469296/' title='uiTestSample-transited by modal_soul, on Flickr'&gt;
-&lt;img width='500' alt='uiTestSample-transited' src='http://farm6.staticflickr.com/5196/7233469296_d04794833e.jpg' height='492' /&gt;
+&lt;img height='492' alt='uiTestSample-transited' src='http://farm6.staticflickr.com/5196/7233469296_d04794833e.jpg' width='500' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;h2 id='id62'&gt;テストの概要&lt;/h2&gt;
 
@@ -1002,7 +1002,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
                 <title>スクラム道 Full Boost 「青物横丁制圧作戦」#scrumdoに参加しました。</title>
                 <description>&lt;h2 id='_full_boost_'&gt;&lt;a href='http://www.taoofscrum.org/contents/post/240'&gt;スクラム道 Full Boost 「青物横丁制圧作戦」&lt;/a&gt;に参加しました。&lt;/h2&gt;
 &lt;h4&gt;この記事では、選手として参加させていただいて感じたことと、自分が壇上で発言した質問や意見の補足をメインに書いています。&lt;/h4&gt;&lt;a href='http://www.taoofscrum.org/contents/post/240'&gt;
-&lt;img width='400' title='スクラム道 Full Boost 「青物横丁制圧作戦」 | スクラム道' alt='http://www.taoofscrum.org/contents/post/240' src='http://capture.heartrails.com/400x300/cool/shorten?http://www.taoofscrum.org/contents/post/240' /&gt;
+&lt;img alt='http://www.taoofscrum.org/contents/post/240' title='スクラム道 Full Boost 「青物横丁制圧作戦」 | スクラム道' src='http://capture.heartrails.com/400x300/cool/shorten?http://www.taoofscrum.org/contents/post/240' width='400' /&gt;
 &lt;/a&gt;&lt;hr /&gt;
 &lt;p&gt;イベント自体については、他方々の記事にとてもわかりやすくまとめられていますので、そちらを参考にして頂ければと思います。&lt;/p&gt;
 
@@ -1023,11 +1023,11 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;今回はスクラム道10回記念ということで、過去に行われた5テーマから参加者の投票で再演を行う形式で、@imagireさんによる「プロダクトバックログ」の再演となりました。&lt;/p&gt;
 
 &lt;p&gt;まとめ　その１ &lt;a href='https://yukar.in/note/ckFnru'&gt;スクラム道 Full Boost 「青物横丁制圧作戦」 壮大な前座 #scrumdo - Yukarin&amp;#8217;Note&lt;/a&gt;&lt;/p&gt;
-&lt;div id='__ss_9027962' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_9027962'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/imagire/07-9027962' title='スクラム道場.07' target='_blank'&gt;スクラム道場.07&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/imagire/07-9027962' target='_blank' title='スクラム道場.07'&gt;スクラム道場.07&lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/9027962' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/9027962' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt;
@@ -1040,12 +1040,12 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;選手として登壇した人には、マイクロソフトさんからプランニングポーカーがもらえる！とのことだったので、物欲に駆られて登壇してきました。&lt;/p&gt;
 
 &lt;h3 id='id55'&gt;ステマ&lt;/h3&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;おぉ！マイクロソフトさんからプランニングポーカーの差し入れだ!! 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;&amp;mdash; imae masatoshiさん (@modal_soul) 
-&lt;a data-datetime='2012-05-11T10:16:40+00:00' href='https://twitter.com/modal_soul/status/200892170767577088'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;a href='https://twitter.com/modal_soul/status/200892170767577088' data-datetime='2012-05-11T10:16:40+00:00'&gt;5月 11, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;いただいたポーカーはこちら 外箱がVisualStudioになっているという、さすがマイクロソフトさん！ &lt;img alt='プランニングポーカー' src='/img/20120511/porker.jpg' /&gt;&lt;/p&gt;
 &lt;hr /&gt;
@@ -1078,30 +1078,30 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h3 id='id58'&gt;ベロシティって重要ですか？&lt;/h3&gt;
 
 &lt;p&gt;ベロシティを使う目的は様々あると思いますが、ざっと挙げると以下のような感じでしょうか。&lt;/p&gt;
-&lt;h4&gt;・スプリントで消化するSPの見積もり&lt;/h4&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;h4&gt;・スプリントで消化するSPの見積もり&lt;/h4&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;ベロシティはからないと、次のスプリントでどれぐらい積めるか基準値がわからなくなりません？ RT @
 &lt;a href='https://twitter.com/kanu_'&gt;kanu_&lt;/a&gt;
 : 別にベロシティで測らなきゃいいんじゃないのかぁ。ってか誰が欲しがってるのかな?　
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;&amp;mdash; SEO Naotoshiさん (@sonots) 
-&lt;a data-datetime='2012-05-11T10:38:31+00:00' href='https://twitter.com/sonots/status/200897671223967745'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;h4&gt;・チームの成長度合い&lt;/h4&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;a href='https://twitter.com/sonots/status/200897671223967745' data-datetime='2012-05-11T10:38:31+00:00'&gt;5月 11, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;h4&gt;・チームの成長度合い&lt;/h4&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;&quot;ポイントの基準が更新されると、ベロシティによるチームの成長の測定が難しくなる。&quot; 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; Tomohiro Hashidateさん (@joker1007) 
-&lt;a data-datetime='2012-05-11T10:33:06+00:00' href='https://twitter.com/joker1007/status/200896307970322432'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;a href='https://twitter.com/joker1007/status/200896307970322432' data-datetime='2012-05-11T10:33:06+00:00'&gt;5月 11, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;p&gt;ディスカッションでの質問やツイートの反応にもありましたが、決して&lt;h3&gt;ベロシティを人事評価等に使いたい訳ではありません。&lt;/h3&gt;この所は、特に強調しておきたいと思います。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;ベロシティは「人事評価に使うべきではない」というのは大前提ではあるが、「自分達がどれくらい成長したの？」というのを測るための指標として「数値がぶれる」のはマズイのでは？ 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; skowataさん (@skowata) 
-&lt;a data-datetime='2012-05-11T10:40:12+00:00' href='https://twitter.com/skowata/status/200898092667637760'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;a href='https://twitter.com/skowata/status/200898092667637760' data-datetime='2012-05-11T10:40:12+00:00'&gt;5月 11, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;h4&gt;ただ、現実問題としてアジャイルなプロセスを取り入れたことによる効果を、実際にプラクティスを実行する人以外に説明することを考えたときどうでしょう？&lt;/h4&gt;
 &lt;p&gt;「アジャイルなプロセスを用いることで、どの程度生産性が向上した」、であるとか&lt;h4&gt;プラクティスの有用性を理解してもらえなければ、
 今後アジャイルなプロセスを継続することが出来なくなってしまうかもしれません。&lt;/h4&gt;&lt;/p&gt;
@@ -1113,11 +1113,11 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h3 id='id59'&gt;この質問で知りたかったこと&lt;/h3&gt;
 &lt;strong&gt;PBL見積もりの基準が同じであれば、ベロシティの増減がチームの生産性を表す指標として機能するのではないか？&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;ベロシティの向上によってアジャイルなプロセスの有用性の説明の裏づけになるのではいか？&lt;/strong&gt;&lt;br /&gt;&lt;strong&gt;基準が変化することで、ベロシティが（見かけ上）減少しているような場合、生産性の低下を指摘された時どのように説明することで、見かけ上の誤解を解くことができるか？&lt;/strong&gt;
 &lt;p&gt;ということです。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;今の話（ストーリーポイントと実際のタスクの相関）は「通貨（経済の話）」に似てる by @
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;今の話（ストーリーポイントと実際のタスクの相関）は「通貨（経済の話）」に似てる by @
 &lt;a href='https://twitter.com/kawaguti'&gt;kawaguti&lt;/a&gt; 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;&lt;/p&gt;&amp;mdash; skowataさん (@skowata) 
-&lt;a data-datetime='2012-05-11T10:30:15+00:00' href='https://twitter.com/skowata/status/200895587384692738'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;a href='https://twitter.com/skowata/status/200895587384692738' data-datetime='2012-05-11T10:30:15+00:00'&gt;5月 11, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;この質問に対するコメントのなかで、@kawagutiさんの通貨のたとえが、とても腹落ちしました。&lt;/p&gt;
 &lt;hr /&gt;
@@ -1130,13 +1130,13 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;折角の機会なので、壇上から見た景色を写メってみました。 &lt;img alt='壇上から見た景色' src='/img/20120511/audience.jpg' /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id='po'&gt;POの価値判断にチームが納得できない場合&lt;/h3&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;POが初心者の場合、「これってホントに正しい優先順位なの？」という場合がある。その場合チームとしてどうするべき？ 
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
 &lt;/p&gt;
 &amp;mdash; skowataさん (@skowata) 
-&lt;a data-datetime='2012-05-11T11:27:55+00:00' href='https://twitter.com/skowata/status/200910101131964417'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;a href='https://twitter.com/skowata/status/200910101131964417' data-datetime='2012-05-11T11:27:55+00:00'&gt;5月 11, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;POがPBLの各項目について優先順位付けした結果が必ずしもチームの意見と合致ばかりではないですね。&lt;/p&gt;
 
@@ -1149,12 +1149,12 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;li&gt;POから責任(＝権限)を剥奪することは、スクラムでのロールが破綻しているのでは。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;ということです。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;
 &lt;a href='https://twitter.com/search/%2523scrumdo'&gt;#scrumdo&lt;/a&gt;
  「POに責任がある」といって自分達の自主性を殺すのも危険なかおりじゃまいか&lt;/p&gt;&amp;mdash; atsumi shibataさん (@JibrielShibata) 
-&lt;a data-datetime='2012-05-11T11:30:18+00:00' href='https://twitter.com/JibrielShibata/status/200910702075064321'&gt;5月 11, 2012&lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;a href='https://twitter.com/JibrielShibata/status/200910702075064321' data-datetime='2012-05-11T11:30:18+00:00'&gt;5月 11, 2012&lt;/a&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;br /&gt;
 &lt;p&gt;責任(＝権限)はPOにあるから、チームは一切口出ししないと言いたい訳ではなく、あくまで&lt;strong&gt;「判断、決定」するのはPO&lt;/strong&gt;であって、その判断のプロセスをチームが手伝うのアリはだという話でした。 ロールに拘らず、助け合うのがスクラムチームの有るべき姿だと思っています。&lt;/p&gt;
 &lt;hr /&gt;
@@ -1178,8 +1178,8 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 
 &lt;p&gt;今回も主に書籍（ &lt;a href='http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4844331272'&gt;本格アプリを作ろう！ Androidプログラミングレシピ&lt;/a&gt;）を参考にして進めます。&lt;/p&gt;
 &lt;a href='http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4844331272'&gt;
-&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=4844331272&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4844331272' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;
+&lt;img border='0' src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=4844331272&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' /&gt;
+&lt;/a&gt;&lt;img height='1' alt='' border='0' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4844331272' style='border:none !important; margin:0px !important;' width='1' /&gt;
 &lt;h2 id='id49'&gt;アクティビティについて&lt;/h2&gt;
 
 &lt;p&gt;アクティビティは、&lt;b&gt;android.appp.Activity&lt;/b&gt;クラスのサブクラスによって記述される。 &lt;b&gt;Activity&lt;/b&gt;のサブクラスでは、アクティビティが存続する間Androidが呼び出す、&lt;b&gt;ライフサイクルコールバックメソッド&lt;/b&gt;をオーバーライドします。&lt;/p&gt;
@@ -1278,8 +1278,8 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 
 &lt;p&gt;今回は主に書籍（ &lt;a href='http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4844331272'&gt;本格アプリを作ろう！ Androidプログラミングレシピ&lt;/a&gt;）を参考にして進めました。&lt;/p&gt;
 &lt;a href='http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4844331272'&gt;
-&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=4844331272&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4844331272' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;
+&lt;img border='0' src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=4844331272&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' /&gt;
+&lt;/a&gt;&lt;img height='1' alt='' border='0' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4844331272' style='border:none !important; margin:0px !important;' width='1' /&gt;
 &lt;h2 id='id38'&gt;アプリケーションアーキテクチャについて&lt;/h2&gt;
 
 &lt;p&gt;Androidアプリのアーキテクチャは、「intent(以下、インテント)」を用いて相互にコミュニケーションを行うコンポーネントの集合がベースになっているそうです。 インテントとは、実行すべき処理や外部イベントが発生したことを他のコンポーネントに通知するために使われるメッセージです。&lt;/p&gt;
@@ -1357,11 +1357,11 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;そして、今回のAgile Samurai Dojo Gatheringが開催されることを知り、 多少なり自身の経験が還元できるのではないかと思い、実践トラックへの登壇をさせていただきました。&lt;/p&gt;
 
 &lt;p&gt;以下に発表資料を掲載しています。&lt;/p&gt;
-&lt;div id='__ss_12147199' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_12147199'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/modalsoul/agile-samuraidojogathering' title='Agile samuraidojogathering' target='_blank'&gt;Agile samuraidojogathering&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/modalsoul/agile-samuraidojogathering' target='_blank' title='Agile samuraidojogathering'&gt;Agile samuraidojogathering&lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12147199' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/12147199' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt;
@@ -1400,10 +1400,10 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;同じ実践トラックの次のスピーカーは、同じアジャイルサムライBIGLOBE道場の上田さんでした。&lt;/p&gt;
 
 &lt;p&gt;上田さんの発表では、インセプションデッキに取り組んだ際の内容が紹介され、とても良い発表でした。併せてどうぞ&lt;/p&gt;
-&lt;div id='__ss_12136492' style='width:425px'&gt; &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/uedayo/cantbeatinceptiondeck' title='cantbeatinceptiondeck' target='_blank'&gt;cantbeatinceptiondeck&lt;/a&gt;
+&lt;div style='width:425px' id='__ss_12136492'&gt; &lt;strong style='display:block;margin:12px 0 4px'&gt;
+&lt;a href='http://www.slideshare.net/uedayo/cantbeatinceptiondeck' target='_blank' title='cantbeatinceptiondeck'&gt;cantbeatinceptiondeck&lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12136492' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/12136492' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt; from 
@@ -1422,10 +1422,10 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;＠joker1007 さんに”ろくろ”写真いただきました！感謝！&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='ろくろ' src='http://a.yfrog.com/img859/9978/34kba.jpg' /&gt;&lt;/p&gt;
-&lt;a href='http://www.amazon.co.jp/gp/product/4274068560/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4274068560'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4274068560&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4274068560' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;&lt;a href='http://www.amazon.co.jp/gp/product/B004IEAZ18/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B004IEAZ18'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=B004IEAZ18&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=B004IEAZ18' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;&lt;a href='http://www.amazon.co.jp/gp/product/B0058EWGK0/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B0058EWGK0'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=B0058EWGK0&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=B0058EWGK0' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;</description>
+&lt;a href='http://www.amazon.co.jp/gp/product/4274068560/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4274068560'&gt;&lt;img border='0' src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4274068560&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' /&gt;
+&lt;/a&gt;&lt;img height='1' alt='' border='0' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4274068560' style='border:none !important; margin:0px !important;' width='1' /&gt;&lt;a href='http://www.amazon.co.jp/gp/product/B004IEAZ18/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B004IEAZ18'&gt;&lt;img border='0' src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=B004IEAZ18&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' /&gt;
+&lt;/a&gt;&lt;img height='1' alt='' border='0' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=B004IEAZ18' style='border:none !important; margin:0px !important;' width='1' /&gt;&lt;a href='http://www.amazon.co.jp/gp/product/B0058EWGK0/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=B0058EWGK0'&gt;&lt;img border='0' src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=B0058EWGK0&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' /&gt;
+&lt;/a&gt;&lt;img height='1' alt='' border='0' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=B0058EWGK0' style='border:none !important; margin:0px !important;' width='1' /&gt;</description>
                 <link>http://modalsoul.github.io/report/2012/03/24/Agile-Samurai-Dojo-Gathering</link>
                 <guid>http://modalsoul.github.io/report/2012/03/24/Agile-Samurai-Dojo-Gathering</guid>
                 <pubDate>2012-03-24T00:00:00+09:00</pubDate>
@@ -1434,12 +1434,12 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
         <item>
                 <title>AgileUX NYC 2012 Redux in Tokyo(#AgileUXNYC_ja)に参加しました。</title>
                 <description>&lt;h2 id='agileux_nyc_2012_redux_in_tokyo__agileuxnyc_ja__'&gt;AgileUX NYC 2012 Redux in Tokyo ( #AgileUXNYC_ja ) に参加しました。&lt;/h2&gt;
-&lt;div id='__ss_12005232' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_12005232'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/kazumichisakata/agile-ux-nyc-2012-redux-in-tokyo' title='Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)' target='_blank'&gt;Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)
+&lt;a href='http://www.slideshare.net/kazumichisakata/agile-ux-nyc-2012-redux-in-tokyo' target='_blank' title='Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)'&gt;Agile UX NYC 2012 Redux in Tokyo (#AgileUXNYC_ja)
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/12005232' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/12005232' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt; from 
@@ -1449,13 +1449,13 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;h2 id='agileux_nyc_2012_redux_in_tokyo'&gt;「AgileUX NYC 2012 Redux in Tokyo」とは？&lt;/h2&gt;
 
 &lt;p&gt;2012/02/25に、アメリカのニューヨークで開催された「AgileUX NYC 2012」へ参加された＠kawaguti さん(アギレルゴ・コンサルティング株式会社　川口恭伸さん)と＠sprmari0 さん(楽天株式会社　坂田一倫さん)による報告会を兼ねたパネル・ディスカッションです。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;Want to Win with Agile? Pivot Your Culture First by Eric Burd( 
 &lt;a href='https://twitter.com/search/%2523agileuxnyc'&gt;#agileuxnyc&lt;/a&gt;
  live at &lt;a href='http://t.co/2FcXmNnQ' title='http://ustre.am/I3ND/1'&gt;ustre.am/I3ND/1&lt;/a&gt; ) &lt;/p&gt;
  &amp;mdash; Yasunobu Kawaguchiさん (＠kawaguti) 
- &lt;a data-datetime='2012-02-25T14:23:46+00:00' href='https://twitter.com/kawaguti/status/173412876877447169'&gt;2月 25, 2012&lt;/a&gt;
- &lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+ &lt;a href='https://twitter.com/kawaguti/status/173412876877447169' data-datetime='2012-02-25T14:23:46+00:00'&gt;2月 25, 2012&lt;/a&gt;
+ &lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;私はAgileUX NYC当日の＠kawaguti さんのツイートを見ていて、AgileUX NYCの内容に興味を持ち、ATNDでこのイベントを発見して、すぐに参加登録しました。&lt;/p&gt;
 
@@ -1476,12 +1476,12 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;登壇された方も興味深いポジションの方が多く、UX デザイナーがいれば、経営者やデベロッパー、そしてデザイナーからマーケティング PR の担当者の方々でした。Early Stage Specialistなんていう、スーパーマンのような方もいらっしゃったようです。&lt;/p&gt;
 
 &lt;h3 id='want_to_win_with_agile_pivot_your_culture_first'&gt;&lt;a href='http://agileuxnyc.com/presentation/want-to-win-with-agile-pivot-your-culture-first/'&gt;Want to Win with Agile? Pivot Your Culture First&lt;/a&gt;&lt;/h3&gt;
-&lt;div id='__ss_11761297' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_11761297'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/eburd/want-to-win-with-agile' title='Want to win with agile?' target='_blank'&gt;Want to win with agile?
+&lt;a href='http://www.slideshare.net/eburd/want-to-win-with-agile' target='_blank' title='Want to win with agile?'&gt;Want to win with agile?
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11761297' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/11761297' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt;
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/thecroaker/death-by-powerpoint' target='_blank'&gt;PowerPoint
@@ -1509,7 +1509,7 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;/ol&gt;
 
 &lt;p&gt;そして、技術やプロダクトのチームだけでなく、営業などの関係する部署を集め共通の課題を提示することが必要である。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;Want to Win with Agile セッションより： 意思決定者は忙しいためつかまえづらい。なので、ランチをセッティングして定期ミーティングを行い、啓蒙してプロジェクトに巻き込む。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:16:24+00:00' href='https://twitter.com/storywriter/status/179873607957233664'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;Want to Win with Agile セッションより： 意思決定者は忙しいためつかまえづらい。なので、ランチをセッティングして定期ミーティングを行い、啓蒙してプロジェクトに巻き込む。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a href='https://twitter.com/storywriter/status/179873607957233664' data-datetime='2012-03-14T10:16:24+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;&amp;#8220;Small Wins&amp;#8221;（小さな成功）に成りうるものを探して、成功させ、そこから得たものを組織に蓄積することが重要、とのことです。&lt;/p&gt;
 
@@ -1520,13 +1520,13 @@ Time per request:       72.743 &lt;span class='o'&gt;[&lt;/span&gt;ms&lt;span cl
 &lt;p&gt;Brown Bag Lunch Meetingについては、&lt;a href='http://www.rieti.go.jp/jp/events/bbl/index.html'&gt;こちら&lt;/a&gt;に紹介がありましたので、参照ください。&lt;/p&gt;
 
 &lt;h3 id='investing_in_design_horsepower_vs_rpms'&gt;&lt;a href='http://agileuxnyc.com/presentation/investing-in-design/'&gt;Investing in Design: Horsepower vs. RPMs&lt;/a&gt;&lt;/h3&gt;
-&lt;div id='__ss_11770223' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_11770223'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/PhineasBarnes/agile-ux-nyc-4-keys-to-success-in-a-design-driven-company' title='Agile UX NYC -- 4 keys to success in a design driven company' target='_blank'&gt;
+&lt;a href='http://www.slideshare.net/PhineasBarnes/agile-ux-nyc-4-keys-to-success-in-a-design-driven-company' target='_blank' title='Agile UX NYC -- 4 keys to success in a design driven company'&gt;
 Agile UX NYC -- 4 keys to success in a design driven company
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11770223' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/11770223' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
@@ -1536,15 +1536,15 @@ Agile UX NYC -- 4 keys to success in a design driven company
 &lt;/div&gt; 
 &lt;/div&gt;
 &lt;p&gt;「スキルセットではなく、マインドセットの問題だ」という言及がありました。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;Investing in Design セッションより：共通課題をダッシュボード化し、共有する。定期的に更新していく。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:18:06+00:00' href='https://twitter.com/storywriter/status/179874034941566977'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;Investing in Design セッションより：共通課題をダッシュボード化し、共有する。定期的に更新していく。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a href='https://twitter.com/storywriter/status/179874034941566977' data-datetime='2012-03-14T10:18:06+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;h3 id='replacing_requirements_with_hypotheses'&gt;&lt;a href='http://agileuxnyc.com/presentation/replacing-requirements-with-hypotheses/'&gt;Replacing Requirements with Hypotheses&lt;/a&gt;&lt;/h3&gt;
-&lt;div id='__ss_11747255' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_11747255'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/jseiden/2012-feb-25-agile-ux-nyc-seiden-requirements-to-hypotheses' title='2012 feb 25 agile ux nyc, seiden, requirements to hypotheses' target='_blank'&gt;2012 feb 25 agile ux nyc, seiden, requirements to hypotheses
+&lt;a href='http://www.slideshare.net/jseiden/2012-feb-25-agile-ux-nyc-seiden-requirements-to-hypotheses' target='_blank' title='2012 feb 25 agile ux nyc, seiden, requirements to hypotheses'&gt;2012 feb 25 agile ux nyc, seiden, requirements to hypotheses
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11747255' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/11747255' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
@@ -1556,20 +1556,20 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;ビジネスサイドのニーズがそのまま開発サイドへ要件として伝わってしまうことで、本来の顧客のニーズを把握できなくなるという弊害がおこります。&lt;/p&gt;
 
-&lt;p&gt;要件を仮説に置き換えることで、@kawaguti さんのツイートにもあったのですが、 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;&quot;仮説はの利点はテスト可能であること&quot;&lt;/p&gt;&amp;mdash; Yasunobu Kawaguchiさん (@kawaguti) &lt;a data-datetime='2012-02-25T15:04:40+00:00' href='https://twitter.com/kawaguti/status/173423171544952832'&gt;2月 25, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt; という特性が発揮されます。仮説を検証するサイクルが生まれます。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;アジャイルを導入するためには、要件ではなく仮説。要件は断固としたものだが、仮説なら不確実性というエッセンスがある。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; mocha_cocoaさん (@mocha_cocoa) &lt;a data-datetime='2012-03-14T10:23:21+00:00' href='https://twitter.com/mocha_cocoa/status/179875356344451072'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;要件を仮説に置き換えることで、@kawaguti さんのツイートにもあったのですが、 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;&quot;仮説はの利点はテスト可能であること&quot;&lt;/p&gt;&amp;mdash; Yasunobu Kawaguchiさん (@kawaguti) &lt;a href='https://twitter.com/kawaguti/status/173423171544952832' data-datetime='2012-02-25T15:04:40+00:00'&gt;2月 25, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt; という特性が発揮されます。仮説を検証するサイクルが生まれます。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;アジャイルを導入するためには、要件ではなく仮説。要件は断固としたものだが、仮説なら不確実性というエッセンスがある。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; mocha_cocoaさん (@mocha_cocoa) &lt;a href='https://twitter.com/mocha_cocoa/status/179875356344451072' data-datetime='2012-03-14T10:23:21+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;そしてこういったプロセスが言語化されることが最も評価できると@kawaguti さんも話されていました。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;視覚化も大事だが、言語化も大きな課題。特に日本語はあやふやな表現を許しやすいが故に、英語環境より言語化の整備が要するとおもう。 &lt;a href='https://twitter.com/search/%2523agileuxnyc_ja'&gt;#agileuxnyc_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:24:23+00:00' href='https://twitter.com/yhassy/status/179875614336098304'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;視覚化も大事だが、言語化も大きな課題。特に日本語はあやふやな表現を許しやすいが故に、英語環境より言語化の整備が要するとおもう。 &lt;a href='https://twitter.com/search/%2523agileuxnyc_ja'&gt;#agileuxnyc_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a href='https://twitter.com/yhassy/status/179875614336098304' data-datetime='2012-03-14T10:24:23+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;h3 id='quick_visual_collaborative_and_continuous'&gt;&lt;a href='http://agileuxnyc.com/presentation/lane/'&gt;Quick, Visual, Collaborative and Continuous&lt;/a&gt;&lt;/h3&gt;
-&lt;div id='__ss_11707174' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_11707174'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/LaneHalley/quick-visual-collaborative-continuous' title='Quick, Visual, Collaborative &amp;amp; Continuous' target='_blank'&gt;Quick, Visual, Collaborative &amp;amp; Continuous
+&lt;a href='http://www.slideshare.net/LaneHalley/quick-visual-collaborative-continuous' target='_blank' title='Quick, Visual, Collaborative &amp;amp; Continuous'&gt;Quick, Visual, Collaborative &amp;amp; Continuous
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11707174' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/11707174' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
@@ -1585,12 +1585,12 @@ Agile UX NYC -- 4 keys to success in a design driven company
 &lt;p&gt;Product Ownerチーム(エンジニアも入るがあくまでアーキテクト程度のみ)が大まかな部分を作り、そこから複数のチームに別れ、POチームメンバーだったデザイナがそのまま複数チームに分かれて所属するスタイルが紹介されていました。&lt;/p&gt;
 
 &lt;h3 id='learning_to_play_ux_rugby'&gt;&lt;a href='http://agileuxnyc.com/presentation/learning-to-play-ux-rugby-why-your-agile-ux-adoption-is-failing-and-what-to-do-about-it/'&gt;Learning to Play UX Rugby&lt;/a&gt;&lt;/h3&gt;
-&lt;div id='__ss_11756904' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_11756904'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/andersr/learning-to-play-ux-rugby' title='Learning to Play UX Rugby' target='_blank'&gt;Learning to Play UX Rugby
+&lt;a href='http://www.slideshare.net/andersr/learning-to-play-ux-rugby' target='_blank' title='Learning to Play UX Rugby'&gt;Learning to Play UX Rugby
 &lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11756904' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/11756904' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
@@ -1604,9 +1604,9 @@ Agile UX NYC -- 4 keys to success in a design driven company
 &lt;p&gt;AgileUXとは協調中心設計(Collaboration Centerd Design)と紹介されており、ラグビーの様に各々のプレイヤーが走り、縦横無尽にパスが交わされるようになる。&lt;/p&gt;
 
 &lt;h3 id='better_faster_uxier_atomic_design'&gt;&lt;a href='http://agileuxnyc.com/presentation/better-faster-uxier-atomic-design/'&gt;Better. Faster. UXier. AToMIC Design&lt;/a&gt;&lt;/h3&gt;
-&lt;div id='__ss_11749624' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_11749624'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/jgergen/better-faster-uxier-atomic-design' title='Better. Faster. UXier.   AToMIC Design' target='_blank'&gt;Better. Faster. UXier.   AToMIC Design&lt;/a&gt;&lt;/strong&gt; &lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11749624' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;a href='http://www.slideshare.net/jgergen/better-faster-uxier-atomic-design' target='_blank' title='Better. Faster. UXier.   AToMIC Design'&gt;Better. Faster. UXier.   AToMIC Design&lt;/a&gt;&lt;/strong&gt; &lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/11749624' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more 
 &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
@@ -1617,12 +1617,12 @@ Agile UX NYC -- 4 keys to success in a design driven company
 &lt;/div&gt;
 &lt;p&gt;イテレーティブな開発では、機能の開発改善には強いが、デザイン変更に弱さが現れる場合が多い。変更に強いAToMIC Designが必要。 デザインの戦略をはじめに決めることで、共通化されたデザインをアセットとして管理する。&lt;/p&gt;
 
-&lt;p&gt;デザイナがプログラミングスキルを（共通言語として）身に付けることで、開発サイドとの会話・意思疎通が迅速になるそうです。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;そうか。UX専門家が、プログラミングを理解するだけでも、大きな価値になるのか。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T10:32:32+00:00' href='https://twitter.com/storywriter/status/179877666613239808'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;デザイナがプログラミングスキルを（共通言語として）身に付けることで、開発サイドとの会話・意思疎通が迅速になるそうです。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;そうか。UX専門家が、プログラミングを理解するだけでも、大きな価値になるのか。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a href='https://twitter.com/storywriter/status/179877666613239808' data-datetime='2012-03-14T10:32:32+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h3 id='demystifying_design_fewer_secrets_greater_impact'&gt;&lt;a href='http://agileuxnyc.com/presentation/demystifying-design-fewer-secrets-greater-impact/'&gt;Demystifying Design: Fewer Secrets, Greater Impact&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;UXデザインは未だブラックボックスな状態になっている。 デザイナ以外の人間にとって、UXデザインは過程が不明であり、このような状態では信頼を勝ち取ることはできない。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;UXがマジックのように見えるが故にスケープゴートみたいになってることもあるな。「UXスゲー」みたいな。謎表現だ。 &lt;a href='https://twitter.com/search/%2523agileuxnyc_ja'&gt;#agileuxnyc_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:33:03+00:00' href='https://twitter.com/yhassy/status/179877797098033153'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;UXデザインは未だブラックボックスな状態になっている。 デザイナ以外の人間にとって、UXデザインは過程が不明であり、このような状態では信頼を勝ち取ることはできない。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;UXがマジックのように見えるが故にスケープゴートみたいになってることもあるな。「UXスゲー」みたいな。謎表現だ。 &lt;a href='https://twitter.com/search/%2523agileuxnyc_ja'&gt;#agileuxnyc_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a href='https://twitter.com/yhassy/status/179877797098033153' data-datetime='2012-03-14T10:33:03+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;デザインは様々な要因(ビジネスとユーザのニーズ、ユーザビリティ、ブランド等)が絡み合っており簡単ではないが、 頻繁に成果物を見せ、学んだことをシェアする必要がある。&lt;/p&gt;
@@ -1643,7 +1643,7 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;“We are being invited,but we are not inviting them to ours.”&lt;/p&gt;
 
-&lt;p&gt;開発チームはUXを一緒のチームへ招待しているが、UXは開発チームを招待していない、と締めくくられていました。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;デザイナーがプログラムを覚えろ…というより cross discipline (横断型) であれってことなんだろうね。 きっと。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a data-datetime='2012-03-14T10:39:32+00:00' href='https://twitter.com/yhassy/status/179879428627775490'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;開発チームはUXを一緒のチームへ招待しているが、UXは開発チームを招待していない、と締めくくられていました。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;デザイナーがプログラムを覚えろ…というより cross discipline (横断型) であれってことなんだろうね。 きっと。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yasuhisa Hasegawaさん (@yhassy) &lt;a href='https://twitter.com/yhassy/status/179879428627775490' data-datetime='2012-03-14T10:39:32+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id='id32'&gt;パネルディスカッション&lt;/h2&gt;
@@ -1654,7 +1654,7 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;樽本徹也さん(以下、樽)：これまでは開発がウォーターフォールだったから、UX・UCDもウォーターフォールだった。だがこれからは、開発がAgileになる、だからUX・UCDもAgileになる。これはUX・UCDが自発的にAgile化したのではなく、開発サイドの変化に強いられた結果だ。今後日本でもAgileへシフトする、だからUXはAgileを学ぶべきた。&lt;/p&gt;
 
-&lt;p&gt;和波俊久さん(以下、和)：AgileはProjectの中で完結するものであり、終わりがある。だがStartupは終わらない。終わらせ方を知りたい。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;「プロジェクトは終わる使命をもっているが、スタートアップは終わらないという使命をもっている。」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takehara.Masashi.3kさん (@take3000) &lt;a data-datetime='2012-03-14T10:39:53+00:00' href='https://twitter.com/take3000/status/179879518054522880'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;和波俊久さん(以下、和)：AgileはProjectの中で完結するものであり、終わりがある。だがStartupは終わらない。終わらせ方を知りたい。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;「プロジェクトは終わる使命をもっているが、スタートアップは終わらないという使命をもっている。」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takehara.Masashi.3kさん (@take3000) &lt;a href='https://twitter.com/take3000/status/179879518054522880' data-datetime='2012-03-14T10:39:53+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;坂田一倫さん(以下、坂)：UXデザイナはエゴで仕事をしていないだろうか？DevelopmentがUXについて学んで来ており、DevelopmentとBusinnessのロールだけで開発が回るようになってきている。UXとして危機感を持っている。現状の職場ではUXはDevとBizと分断された状態になっている。&lt;/p&gt;
@@ -1663,7 +1663,7 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;坂：現状プロジェクト単位に分かれているが、入っていくステージが違う。同時ではない。&lt;/p&gt;
 
-&lt;p&gt;樽：同時に入れていればLeanStartupになる。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;ビジネス、UX、開発、よーいドンでチームとしてユーザー調査から始められたらAgileUX。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:54:01+00:00' href='https://twitter.com/sanochka/status/179883071867322369'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;樽：同時に入れていればLeanStartupになる。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;ビジネス、UX、開発、よーいドンでチームとしてユーザー調査から始められたらAgileUX。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a href='https://twitter.com/sanochka/status/179883071867322369' data-datetime='2012-03-14T10:54:01+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;和：株式会社である以上、決算が必要。決算をするにはどこかで定量的に見せなければいけない。そこがBlackBoxのままではいけない。報告のうまい仕組みが必要。&lt;/p&gt;
@@ -1678,17 +1678,17 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;A: 和：課題をセグメントしていく&lt;/p&gt;
 
-&lt;p&gt;川： &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;37signalsからの著書から参照すると自らがペルソナになることが一番の検証方法となる。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt; &lt;a href='http://t.co/0QbVLv0L' title='http://qlive.co/events/FsSNS/posts/5120/comments/376'&gt;qlive.co/events/FsSNS/p…&lt;/a&gt;&lt;/p&gt;&amp;mdash; QLiveさん (@QLive_jp) &lt;a data-datetime='2012-03-14T10:53:03+00:00' href='https://twitter.com/QLive_jp/status/179882831206555648'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;川： &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;37signalsからの著書から参照すると自らがペルソナになることが一番の検証方法となる。 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt; &lt;a href='http://t.co/0QbVLv0L' title='http://qlive.co/events/FsSNS/posts/5120/comments/376'&gt;qlive.co/events/FsSNS/p…&lt;/a&gt;&lt;/p&gt;&amp;mdash; QLiveさん (@QLive_jp) &lt;a href='https://twitter.com/QLive_jp/status/179882831206555648' data-datetime='2012-03-14T10:53:03+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;坂：Lean Work Shopに参加した際は、 　　　・自分が使うサービスを出す 　　　・ペルソナを4つ作る 　　　・セグメントの人に検証のためのインタビューをする 　　　・セグメントが存在するか検証する？ 　　　 川：開発者でなければわからないこともある。だから壁があったら負け。&lt;/p&gt;
 
-&lt;p&gt;樽：インタビューは誰にでもできる。全ての人が常に同席することは難しくとも、インタビューを録音・速記して、全員が見聞きできるようにする。そうすればアイデアは出てくる。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;チーム内で持っている情報に差がないほうがいい。ユーザーインタビューもチーム皆で参加。役割超えてアイデアぼこぼこ出てくる。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:56:48+00:00' href='https://twitter.com/sanochka/status/179883774903984128'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;樽：インタビューは誰にでもできる。全ての人が常に同席することは難しくとも、インタビューを録音・速記して、全員が見聞きできるようにする。そうすればアイデアは出てくる。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;チーム内で持っている情報に差がないほうがいい。ユーザーインタビューもチーム皆で参加。役割超えてアイデアぼこぼこ出てくる。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a href='https://twitter.com/sanochka/status/179883774903984128' data-datetime='2012-03-14T10:56:48+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;川：ウォーターフォールは科学的根拠を重視する。「統計的に5人以上ヒアリングする必要がある」だとか。Agileではアイデアが出るのなら（体験的に）少人数でも問題ないとわかっている。&lt;/p&gt;
 
-&lt;p&gt;樽：データの精度よりもアイデア。アイデアを出し、動かして、検証する。なぜなら結果が全てだから。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;インタビューデータの精度より早くアイデアを形にすること。結果が全て。立派な調査やったって売れなきゃ意味ないでしょ。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a data-datetime='2012-03-14T10:59:07+00:00' href='https://twitter.com/sanochka/status/179884358742708225'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;樽：データの精度よりもアイデア。アイデアを出し、動かして、検証する。なぜなら結果が全てだから。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;インタビューデータの精度より早くアイデアを形にすること。結果が全て。立派な調査やったって売れなきゃ意味ないでしょ。（樽本さん） &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Saori Babaさん (@sanochka) &lt;a href='https://twitter.com/sanochka/status/179884358742708225' data-datetime='2012-03-14T10:59:07+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;川：正にOutputsではなく、Outcomesが重要。&lt;/p&gt;
@@ -1697,20 +1697,20 @@ Agile UX NYC -- 4 keys to success in a design driven company
 
 &lt;p&gt;和：最初から”学ぶ気持ち”でいることが重要。フィードバックを得ることを前提に動いているからこそうまくいく。&lt;/p&gt;
 
-&lt;p&gt;樽：開発者は今後UXを学ぶ。UXだけでは立ち行かなくなる &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;UX専門のデザイナーは必要ない？開発者がUXを身に付けだしている。&lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kazunori Nishimuraさん (@nishimuu) &lt;a data-datetime='2012-03-14T11:00:00+00:00' href='https://twitter.com/nishimuu/status/179884578880765953'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;樽：開発者は今後UXを学ぶ。UXだけでは立ち行かなくなる &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;UX専門のデザイナーは必要ない？開発者がUXを身に付けだしている。&lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kazunori Nishimuraさん (@nishimuu) &lt;a href='https://twitter.com/nishimuu/status/179884578880765953' data-datetime='2012-03-14T11:00:00+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;川：如何にチームに入っていくかが重要。&lt;/p&gt;
 
-&lt;p&gt;坂：インタビューに併せて、その人がコアユーザかどうかも見極める必要がある。製品・サービスのコアが何かを見極めて、ピボットの幅を考える。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;インタビューする相手は合わせてコアユーザーであるのかを確かめる必要がる。&lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kazunori Nishimuraさん (@nishimuu) &lt;a data-datetime='2012-03-14T11:01:28+00:00' href='https://twitter.com/nishimuu/status/179884949149728768'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;坂：インタビューに併せて、その人がコアユーザかどうかも見極める必要がある。製品・サービスのコアが何かを見極めて、ピボットの幅を考える。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;インタビューする相手は合わせてコアユーザーであるのかを確かめる必要がる。&lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kazunori Nishimuraさん (@nishimuu) &lt;a href='https://twitter.com/nishimuu/status/179884949149728768' data-datetime='2012-03-14T11:01:28+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;和：コアじゃないユーザのインタビューはかなしくなる。エバンジェリストユーザを見つけることが大事。&lt;/p&gt;
 
-&lt;p&gt;和：インタビューでは、採用障壁を下げるインタビューをしなければならない。インタビューされる側は現状で考えている。採用障壁を下げることですんなり採用されるパターンは多い。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;和波さん「BtoBの場合、『あったら便利』というサービスでも、導入側が『これは自社の文化に馴染まない』と思ったら導入はされない。その敷居を下げる昨日をつければ簡単に度付きしてもらえたりする。スタートアップの人たちは、なかなかそれに気がつかない」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a data-datetime='2012-03-14T11:06:32+00:00' href='https://twitter.com/storywriter/status/179886222213263363'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;和：インタビューでは、採用障壁を下げるインタビューをしなければならない。インタビューされる側は現状で考えている。採用障壁を下げることですんなり採用されるパターンは多い。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;和波さん「BtoBの場合、『あったら便利』というサービスでも、導入側が『これは自社の文化に馴染まない』と思ったら導入はされない。その敷居を下げる昨日をつければ簡単に度付きしてもらえたりする。スタートアップの人たちは、なかなかそれに気がつかない」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yoshiki HAYAMA 羽山 祥樹さん (@storywriter) &lt;a href='https://twitter.com/storywriter/status/179886222213263363' data-datetime='2012-03-14T11:06:32+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;川：「これを他人に勧めたいか？」という質問がいい。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;「あなたはこのカンファレンスを人に勧めたいですか？　という質問がある」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takehara.Masashi.3kさん (@take3000) &lt;a data-datetime='2012-03-14T11:03:58+00:00' href='https://twitter.com/take3000/status/179885579293573120'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;川：「これを他人に勧めたいか？」という質問がいい。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;「あなたはこのカンファレンスを人に勧めたいですか？　という質問がある」 &lt;a href='https://twitter.com/search/%2523AgileUXNYC_ja'&gt;#AgileUXNYC_ja&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takehara.Masashi.3kさん (@take3000) &lt;a href='https://twitter.com/take3000/status/179885579293573120' data-datetime='2012-03-14T11:03:58+00:00'&gt;3月 14, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id='id33'&gt;最後に&lt;/h2&gt;
@@ -2006,16 +2006,16 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 
 &lt;p&gt;まずは簡単なアンケート&lt;/p&gt;
 
-&lt;p&gt;今日のハンズオンが初TDDの人？ &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;初TDD率は、5/20人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:08:01+00:00' href='https://twitter.com/modal_soul/status/173620307347783680'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;今日のハンズオンが初TDDの人？ &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;初TDD率は、5/20人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a href='https://twitter.com/modal_soul/status/173620307347783680' data-datetime='2012-02-26T04:08:01+00:00'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;JavaScriptのテストをしたことがある人？ ※初TDDの人を含まず。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;JavaScriptのテスト　3/15人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:08:36+00:00' href='https://twitter.com/modal_soul/status/173620451766050816'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;JavaScriptのテストをしたことがある人？ ※初TDDの人を含まず。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;JavaScriptのテスト　3/15人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a href='https://twitter.com/modal_soul/status/173620451766050816' data-datetime='2012-02-26T04:08:36+00:00'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;JsTestDriverを使ったことがある人？ &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;JsTestDriverやったことある率は、3/20人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:09:07+00:00' href='https://twitter.com/modal_soul/status/173620584972943360'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;JsTestDriverを使ったことがある人？ &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;JsTestDriverやったことある率は、3/20人くらい？ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a href='https://twitter.com/modal_soul/status/173620584972943360' data-datetime='2012-02-26T04:09:07+00:00'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;そもそもテストって？ &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;「プログラマがおこなうホワイトボックステスト」って、１．開発的アプローチ（TDD）、2.ドキュメント的アプローチ、3.品質担保的アプローチ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-26T04:16:53+00:00' href='https://twitter.com/modal_soul/status/173622536502906880'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;そもそもテストって？ &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;「プログラマがおこなうホワイトボックステスト」って、１．開発的アプローチ（TDD）、2.ドキュメント的アプローチ、3.品質担保的アプローチ &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a href='https://twitter.com/modal_soul/status/173622536502906880' data-datetime='2012-02-26T04:16:53+00:00'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h3 id='jstestdriver'&gt;JsTestDriverについて&lt;/h3&gt;
@@ -2031,25 +2031,25 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;p&gt;テストコードの書き方、流れ、設定のTips、loggingなどなど&lt;/p&gt;
 
 &lt;p&gt;なかでもドキュメントやヘルプにもでてこない&lt;a href='http://code.google.com/p/js-test-driver/source/browse/trunk/JsTestDriver/src/com/google/jstestdriver/config/YamlParser.java#96'&gt;オプション&lt;/a&gt;がでてきて新鮮でしたｗ&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;これは「変なことをやりたかったらJSTestDriverのコードを読もうぜ」フラグ…… &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; さねゆきさん (@saneyuki_s) &lt;a data-datetime='2012-02-26T05:34:16+00:00' href='https://twitter.com/saneyuki_s/status/173642014301224960'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;これは「変なことをやりたかったらJSTestDriverのコードを読もうぜ」フラグ…… &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; さねゆきさん (@saneyuki_s) &lt;a href='https://twitter.com/saneyuki_s/status/173642014301224960' data-datetime='2012-02-26T05:34:16+00:00'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;Google ProjectのWikiを読むよりも&lt;a href='http://code.google.com/p/js-test-driver/source/browse/trunk/JsTestDriver/src/com/google/jstestdriver/config/YamlParser.java#96'&gt;コード&lt;/a&gt;を見たほうが色々わかるよ、って&lt;/p&gt;
 
 &lt;h3 id='sinonjs'&gt;Sinon.jsについて&lt;/h3&gt;
 
 &lt;p&gt;JsTestDriverで非同期処理のテストを使用とすると、 （かなり）難しいことになるようなので、&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;jsTestDriverで非同期テストの設定を書くのはあまりに面倒なので向いてない(かも) &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; gochoさん (@gocho) &lt;a data-datetime='2012-02-26T05:23:21+00:00' href='https://twitter.com/gocho/status/173639264653942786'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;jsTestDriverで非同期テストの設定を書くのはあまりに面倒なので向いてない(かも) &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;&lt;/p&gt;&amp;mdash; gochoさん (@gocho) &lt;a href='https://twitter.com/gocho/status/173639264653942786' data-datetime='2012-02-26T05:23:21+00:00'&gt;2月 26, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;Sinon.jsでやったほうがいいところも（多々）あるそうです。&lt;/p&gt;
 
-&lt;p&gt;この辺りは適材適所で使い分けるのがポイントのようです。 &lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;p&gt;この辺りは適材適所で使い分けるのがポイントのようです。 &lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;ajaxのテストは、jsTestDriverだけじゃなくて、Sinon.jsとか、jqMockとか、使うといいんじゃない? 適材適所大切。 
 &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD
 &lt;/a&gt;
 &lt;/p&gt;&amp;mdash; gochoさん (@gocho) 
-&lt;a data-datetime='2012-02-26T05:35:23+00:00' href='https://twitter.com/gocho/status/173642294325555202'&gt;2月 26, 2012
+&lt;a href='https://twitter.com/gocho/status/173642294325555202' data-datetime='2012-02-26T05:35:23+00:00'&gt;2月 26, 2012
 &lt;/a&gt;
-&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id='azu_re'&gt;@azu_reさん発表&lt;/h2&gt;
@@ -2057,7 +2057,7 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;h3 id='webstorm'&gt;WebStormについて&lt;/h3&gt;
 
 &lt;p&gt;私は使ったこと無かったのですが、シェアウェアのIDEなんだそうです。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;
 &lt;p&gt;
 &lt;a href='https://twitter.com/search/%2523JSTDD'&gt;#JSTDD&lt;/a&gt;
  発表中のスライド &quot;WebStorm指南書&quot; 
@@ -2065,9 +2065,9 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
  &lt;/a&gt;
  &lt;/p&gt;
  &amp;mdash; azuさん (@azu_re) 
-&lt;a data-datetime='2012-02-26T06:39:17+00:00' href='https://twitter.com/azu_re/status/173658374586646528'&gt;2月 26, 2012
+&lt;a href='https://twitter.com/azu_re/status/173658374586646528' data-datetime='2012-02-26T06:39:17+00:00'&gt;2月 26, 2012
 &lt;/a&gt;
-&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;有償なだけあり、豊富な機能が提供されていてとても便利そうな印象でした。＠azu_reさんの資料がとても良くまとめられていらっしゃるので、詳細は &lt;a href='http://azu.github.com/slide/webstorm/webstorm.html'&gt;こちら&lt;/a&gt; を見てもらったほうがいいと思います。&lt;/p&gt;
 
@@ -2092,7 +2092,7 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;p&gt;&lt;a href='http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4048707868'&gt;テスト駆動JavaScript&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;を去年読みはじめてから、もっと勉強しよう、と思いつつなかなか手がつけられずにいたので、とてもいい機会になりました。&lt;/p&gt;
-&lt;a href='http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4048707868'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4048707868&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4048707868' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;
+&lt;a href='http://www.amazon.co.jp/gp/product/4048707868/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4048707868'&gt;&lt;img border='0' src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4048707868&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' /&gt;&lt;/a&gt;&lt;img height='1' alt='' border='0' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4048707868' style='border:none !important; margin:0px !important;' width='1' /&gt;
 &lt;p&gt;今回の内容を踏まえつつ、Jenkinsとからめてビルドパイプラインを構築するのが当面の目標ですね。&lt;/p&gt;</description>
                 <link>http://modalsoul.github.io/report/test/2012/02/26/jstd-handson</link>
                 <guid>http://modalsoul.github.io/report/test/2012/02/26/jstd-handson</guid>
@@ -2115,9 +2115,9 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 
 &lt;p&gt;これにより、IntelliJとJsTestDriverの統合による恩恵を受けています。&lt;/p&gt;
 
-&lt;p&gt;JavaScriptアプリでは、常に3つのブラウザを対象にテストをしています。 &lt;img width='80%' src='http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg' height='80%' /&gt;&lt;/p&gt;
+&lt;p&gt;JavaScriptアプリでは、常に3つのブラウザを対象にテストをしています。 &lt;img height='80%' src='http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg' width='80%' /&gt;&lt;/p&gt;
 
-&lt;p&gt;テストコンソールにはテスト結果と、ブラウザからフェッチされたコンソール出力を確認できます。 &lt;img width='80%' src='http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg' height='80%' /&gt;&lt;/p&gt;
+&lt;p&gt;テストコンソールにはテスト結果と、ブラウザからフェッチされたコンソール出力を確認できます。 &lt;img height='80%' src='http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg' width='80%' /&gt;&lt;/p&gt;
 
 &lt;p&gt;上の試験例では、FireFox, Chromeのテストは通っていますが、Safariでは失敗しています。 サンプルでは３つのテストケースがあり、拡張した1つは2つのテストメソッドを持っています。 もしエラーが発生した場合、スタックトレースがクリッカブルになり、IntelliJはエラーの行右側に飛びます。&lt;/p&gt;
 
@@ -2180,16 +2180,16 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;img src='/img/jenkins-sticker.jpg' /&gt;
 &lt;p&gt;講演では、検証済みマージや、ビルドパイプライン、昇進モデル 自動化と自動化がつながり複雑な自動化が可能になる、「継続的デリバリ」についてのお話でした。&lt;/p&gt;
 
-&lt;p&gt;検証済みマージについては、&lt;a href='http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4774149942'&gt;WEB+DB Press vol.67&lt;/a&gt;にて記事を書かれたそうなので、必読ですね！ &lt;a href='http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4774149942'&gt;&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4774149942&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4774149942' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;&lt;/p&gt;
+&lt;p&gt;検証済みマージについては、&lt;a href='http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4774149942'&gt;WEB+DB Press vol.67&lt;/a&gt;にて記事を書かれたそうなので、必読ですね！ &lt;a href='http://www.amazon.co.jp/gp/product/4774149942/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4774149942'&gt;&lt;img border='0' src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4774149942&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' /&gt;&lt;/a&gt;&lt;img height='1' alt='' border='0' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4774149942' style='border:none !important; margin:0px !important;' width='1' /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id='1310140017c3__'&gt;［開発プロセス］13:10～14:00【17-C-3】オフェンシブな開発～「納品しない受託開発」にみるソフトウェア受託開発の未来　倉貫 義人 氏&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href='https://yukar.in/note/ckFpb7'&gt;オフェンシブな開発 #devsumi #devsumiC つぶやきまとめ - Yukarin&amp;#8217;Note&lt;/a&gt; &lt;a href='https://yukar.in/note/ckFpb7'&gt;https://yukar.in/note/ckFpb7&lt;/a&gt;&lt;/p&gt;
-&lt;div id='__ss_11631411' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_11631411'&gt; 
 	&lt;strong style='display:block;margin:12px 0 4px'&gt;
-	&lt;a href='http://www.slideshare.net/kuranuki/devsumi2012-11631411' title='Devsumi2012 倉貫講演資料' target='_blank'&gt;Devsumi2012 倉貫講演資料&lt;/a&gt;
+	&lt;a href='http://www.slideshare.net/kuranuki/devsumi2012-11631411' target='_blank' title='Devsumi2012 倉貫講演資料'&gt;Devsumi2012 倉貫講演資料&lt;/a&gt;
 	&lt;/strong&gt; 
-	&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11631411' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+	&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/11631411' marginwidth='0' width='425'&gt;
 	&lt;/iframe&gt; 
 	&lt;div style='padding:5px 0 12px'&gt; View more &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations&lt;/a&gt; from &lt;a href='http://www.slideshare.net/kuranuki' target='_blank'&gt;Yoshihito Kuranuki&lt;/a&gt; 
 	&lt;/div&gt; 
@@ -2199,11 +2199,11 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;p&gt;技術が好きでエンジニアになった人が、 食っていく為、家族を食わせて行く為に、それまでのスキルを捨ててマネジメントをする でも、それってその人の本意じゃないし、それまでのスキルが無駄になる 本人にとっても雇用する側にとってもおいしくない&lt;/p&gt;
 
 &lt;p&gt;そんな現状を変えられそうなお話でした。&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;&quot;研修と納品が目的だと、価値を提供することを目指せなくなる。これが守りの姿勢。&quot; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:27:10+00:00' href='https://twitter.com/joker1007/status/170363635363880961'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;&quot;生産性を上げれば上げるほど、担当できる顧客が増える。SIerの逆向きのインセンティブとは違う。プログラマとして頑張っていけるモデルを作っている。&quot; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:46:12+00:00' href='https://twitter.com/joker1007/status/170368425288413185'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;倉貫「いつまでも、いつからでも夢に挑戦できる社会にしていきたい。独身だろうが家族いても。それを実現するのがSonicGardenが取り組んでいるスタートアッププラットフォーム。」 &lt;a href='https://twitter.com/search/%2523devsumi'&gt;#devsumi&lt;/a&gt; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; miyohideさん (@miyohide) &lt;a data-datetime='2012-02-17T04:49:10+00:00' href='https://twitter.com/miyohide/status/170369173749366784'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;プログラマーはマニュアル化できないナレッジワーカー。ナレッジワーカーはノマドでタイムフリー、だからマネジメントするものではない &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T04:51:14+00:00' href='https://twitter.com/modal_soul/status/170369690638622720'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;倉貫さんの目指している世界があまりにもカッコ良すぎる。自分のビジネスモデルを通して実現したい世界が凄く分かりやすくて、しかも魅力的だ。 &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a data-datetime='2012-02-17T04:52:04+00:00' href='https://twitter.com/joker1007/status/170369902337736706'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;&quot;研修と納品が目的だと、価値を提供することを目指せなくなる。これが守りの姿勢。&quot; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a href='https://twitter.com/joker1007/status/170363635363880961' data-datetime='2012-02-17T04:27:10+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;&quot;生産性を上げれば上げるほど、担当できる顧客が増える。SIerの逆向きのインセンティブとは違う。プログラマとして頑張っていけるモデルを作っている。&quot; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a href='https://twitter.com/joker1007/status/170368425288413185' data-datetime='2012-02-17T04:46:12+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;倉貫「いつまでも、いつからでも夢に挑戦できる社会にしていきたい。独身だろうが家族いても。それを実現するのがSonicGardenが取り組んでいるスタートアッププラットフォーム。」 &lt;a href='https://twitter.com/search/%2523devsumi'&gt;#devsumi&lt;/a&gt; &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; miyohideさん (@miyohide) &lt;a href='https://twitter.com/miyohide/status/170369173749366784' data-datetime='2012-02-17T04:49:10+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;プログラマーはマニュアル化できないナレッジワーカー。ナレッジワーカーはノマドでタイムフリー、だからマネジメントするものではない &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a href='https://twitter.com/modal_soul/status/170369690638622720' data-datetime='2012-02-17T04:51:14+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;倉貫さんの目指している世界があまりにもカッコ良すぎる。自分のビジネスモデルを通して実現したい世界が凄く分かりやすくて、しかも魅力的だ。 &lt;a href='https://twitter.com/search/%2523devsumiC'&gt;#devsumiC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tomohiro Hashidateさん (@joker1007) &lt;a href='https://twitter.com/joker1007/status/170369902337736706' data-datetime='2012-02-17T04:52:04+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;hr /&gt;
 &lt;h3 id='dena_special1420150517a4scrum__'&gt;［DeNA Special］14:20～15:05【17-A-4】Scrumで組織改革　貝瀬 岳志 氏&lt;/h3&gt;
 
@@ -2214,7 +2214,7 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 &lt;p&gt;それと、会場の聴講者がとても多いことにも驚きました。 やはりスクラムが注目されている、ということなんでしょうか？&lt;/p&gt;
 
 &lt;p&gt;このセッションで特に気になったつぶやきを抜粋&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;そうだね、その辺の充実度がチームの成熟度と関係しているかもしれない。@&lt;a href='https://twitter.com/modal_soul'&gt;modal_soul&lt;/a&gt;: イテレーティブに開発する上で、やはり立ち上げの早さは重要なんですね　@&lt;a href='https://twitter.com/tsuyok'&gt;tsuyok&lt;/a&gt;: スプリント0のテンプレート。こういうテンプレートを作っていくのは重要だよなー。 &lt;a href='https://twitter.com/search/%2523devsumiA'&gt;#devsumiA&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tsuyoshi Yasunishiさん (@tsuyok) &lt;a data-datetime='2012-02-17T05:47:11+00:00' href='https://twitter.com/tsuyok/status/170383772905250816'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;そうだね、その辺の充実度がチームの成熟度と関係しているかもしれない。@&lt;a href='https://twitter.com/modal_soul'&gt;modal_soul&lt;/a&gt;: イテレーティブに開発する上で、やはり立ち上げの早さは重要なんですね　@&lt;a href='https://twitter.com/tsuyok'&gt;tsuyok&lt;/a&gt;: スプリント0のテンプレート。こういうテンプレートを作っていくのは重要だよなー。 &lt;a href='https://twitter.com/search/%2523devsumiA'&gt;#devsumiA&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tsuyoshi Yasunishiさん (@tsuyok) &lt;a href='https://twitter.com/tsuyok/status/170383772905250816' data-datetime='2012-02-17T05:47:11+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;hr /&gt;
 &lt;h3 id='10th_special1525161517b5___'&gt;［10th Special］15:25～16:15【17-B-5】アジャイルマニフェスト ディケイド　角谷 信太郎 氏&lt;/h3&gt;
 
@@ -2227,26 +2227,26 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
 
 &lt;p&gt;流石、信頼と実績の角谷さん。素晴らしいセッションでした！そしてもの凄い聴講者の数ｗｗ 角谷さん自身もおっしゃっていましたが、このセッションは劇場版、生でしか味わえないものが満載でした！&lt;/p&gt;
 
-&lt;p&gt;講演資料をツイートと併せて追っていただくと、劇場に近づけるかもしれませんね &lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;&quot;角谷さんのセッションを最後まで聴いてデブサミが何なのか分かったような気がした。講演の中で角谷さんが言及したとおり、デブサミは&quot;映画館&quot;なのだ&quot; / “10回目のデブサミ - The Dragon Scroll” &lt;a href='http://t.co/RhwzqMeB' title='http://htn.to/NvW2er'&gt;htn.to/NvW2er&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kakutani Shintaroさん (@kakutani) &lt;a data-datetime='2012-02-18T15:14:48+00:00' href='https://twitter.com/kakutani/status/170889006152826881'&gt;2月 18, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;p&gt;講演資料をツイートと併せて追っていただくと、劇場に近づけるかもしれませんね &lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;&quot;角谷さんのセッションを最後まで聴いてデブサミが何なのか分かったような気がした。講演の中で角谷さんが言及したとおり、デブサミは&quot;映画館&quot;なのだ&quot; / “10回目のデブサミ - The Dragon Scroll” &lt;a href='http://t.co/RhwzqMeB' title='http://htn.to/NvW2er'&gt;htn.to/NvW2er&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kakutani Shintaroさん (@kakutani) &lt;a href='https://twitter.com/kakutani/status/170889006152826881' data-datetime='2012-02-18T15:14:48+00:00'&gt;2月 18, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id='special1740191017e74tate_4tate______'&gt;［Special］17:40～19:10【17-E-7】君の4tate（立てた帆）に、風を感じているか？ ～4tateで日本を変えるプロジェクト～　野村 恭彦 氏 / 市谷 聡啓 氏&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href='https://yukar.in/note/ckFpaN'&gt;君の4tate（立てた帆）に、風を感じているか？ #devsumiE つぶやきまとめ - Yukarin&amp;#8217;Note&lt;/a&gt; &lt;a href='https://yukar.in/note/ckFpaN'&gt;https://yukar.in/note/ckFpaN&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;「よんたて」ではなく「ほたて」だった &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; uedayoさん (@uedayo) &lt;a data-datetime='2012-02-17T08:44:14+00:00' href='https://twitter.com/uedayo/status/170428328854040576'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;「よんたて」ではなく「ほたて」だった &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; uedayoさん (@uedayo) &lt;a href='https://twitter.com/uedayo/status/170428328854040576' data-datetime='2012-02-17T08:44:14+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;
 &lt;p&gt;このセッションですが、実際よくわからないまま参加しましたｗ ただ、スピーカーの野村　恭彦さんが監訳された&lt;a href='http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=modalsoul-22&amp;amp;linkCode=as2&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4873115051'&gt;ゲームストーミング ―会議、チーム、プロジェクトを成功へと導く87のゲーム&lt;/a&gt; は、 仕事や勉強会のワークショップのネタにフル活用していて、この本つながりで参加しました。※この本、オススメです&lt;/p&gt;
 &lt;a href='http://www.amazon.co.jp/gp/product/4873115051/ref=as_li_ss_il?ie=UTF8&amp;tag=modalsoul-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4873115051'&gt;
-&lt;img src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4873115051&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' border='0' /&gt;
-&lt;/a&gt;&lt;img width='1' alt='' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4873115051' style='border:none !important; margin:0px !important;' height='1' border='0' /&gt;
+&lt;img border='0' src='http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL110_&amp;ASIN=4873115051&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=modalsoul-22&amp;ServiceVersion=20070822' /&gt;
+&lt;/a&gt;&lt;img height='1' alt='' border='0' src='http://www.assoc-amazon.jp/e/ir?t=modalsoul-22&amp;l=as2&amp;o=9&amp;a=4873115051' style='border:none !important; margin:0px !important;' width='1' /&gt;
 &lt;p&gt;このセッションでは、これまでの聴講するだけのスタイルではなくて、受講者同士がディスカッションするスタイルでした。&lt;/p&gt;
 
 &lt;p&gt;このセッション中で特に感銘した部分のツイートを抜粋して紹介すると、&lt;/p&gt;
-&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;べき論で集まってもうまくいかない　思いをもった人を集める　 &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dai Fujiharaさん (@daipresents) &lt;a data-datetime='2012-02-17T09:37:25+00:00' href='https://twitter.com/daipresents/status/170441710839676928'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;対話による多様性と同調、アジャイル・スクラムにも通じてますよね &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T09:40:40+00:00' href='https://twitter.com/modal_soul/status/170442530129842176'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;ITで何が生まれるかをITを使わない人は知らない &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; uedayoさん (@uedayo) &lt;a data-datetime='2012-02-17T09:38:09+00:00' href='https://twitter.com/uedayo/status/170441898404757504'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;この問題に対する解答を行えない、なぜなら発注がないから。発注する側は、これまでの延長でしか考えていなくて、解決できることを知らないから　&lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a data-datetime='2012-02-17T09:43:38+00:00' href='https://twitter.com/modal_soul/status/170443275742871552'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
-&lt;/script&gt;&lt;blockquote lang='ja' class='twitter-tweet'&gt;&lt;p&gt;共感駆動開発いいね　 &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dai Fujiharaさん (@daipresents) &lt;a data-datetime='2012-02-17T09:51:18+00:00' href='https://twitter.com/daipresents/status/170445204791369728'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script src='//platform.twitter.com/widgets.js' charset='utf-8'&gt;
+&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;べき論で集まってもうまくいかない　思いをもった人を集める　 &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dai Fujiharaさん (@daipresents) &lt;a href='https://twitter.com/daipresents/status/170441710839676928' data-datetime='2012-02-17T09:37:25+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;対話による多様性と同調、アジャイル・スクラムにも通じてますよね &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a href='https://twitter.com/modal_soul/status/170442530129842176' data-datetime='2012-02-17T09:40:40+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;ITで何が生まれるかをITを使わない人は知らない &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; uedayoさん (@uedayo) &lt;a href='https://twitter.com/uedayo/status/170441898404757504' data-datetime='2012-02-17T09:38:09+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;この問題に対する解答を行えない、なぜなら発注がないから。発注する側は、これまでの延長でしか考えていなくて、解決できることを知らないから　&lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; imae （Master BBQ）さん (@modal_soul) &lt;a href='https://twitter.com/modal_soul/status/170443275742871552' data-datetime='2012-02-17T09:43:38+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
+&lt;/script&gt;&lt;blockquote class='twitter-tweet' lang='ja'&gt;&lt;p&gt;共感駆動開発いいね　 &lt;a href='https://twitter.com/search/%2523devsumiE'&gt;#devsumiE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dai Fujiharaさん (@daipresents) &lt;a href='https://twitter.com/daipresents/status/170445204791369728' data-datetime='2012-02-17T09:51:18+00:00'&gt;2月 17, 2012&lt;/a&gt;&lt;/blockquote&gt;&lt;script charset='utf-8' src='//platform.twitter.com/widgets.js'&gt;
 &lt;/script&gt;&lt;hr /&gt;
 &lt;h2 id='id29'&gt;最後に、&lt;/h2&gt;
 
@@ -2398,7 +2398,7 @@ object Application extends Controller &lt;span class='o'&gt;{&lt;/span&gt;
         <item>
                 <title>Capistranoをやってみよう</title>
                 <description>&lt;h2 id='id21' /&gt;
-&lt;a href='https://github.com/capistrano/capistrano'&gt;&lt;img width='300' title='capistrano/capistrano - GitHub' alt='https://github.com/capistrano/capistrano' src='http://capture.heartrails.com/300x300/cool?https://github.com/capistrano/capistrano' height='300' /&gt;&lt;/a&gt;
+&lt;a href='https://github.com/capistrano/capistrano'&gt;&lt;img height='300' alt='https://github.com/capistrano/capistrano' title='capistrano/capistrano - GitHub' src='http://capture.heartrails.com/300x300/cool?https://github.com/capistrano/capistrano' width='300' /&gt;&lt;/a&gt;
 &lt;p&gt;Capistranoをやってみました。 &lt;a href='http://builder.japan.zdnet.com/virtualization/sp_open-source-software-moonlinx-2009/20396188/'&gt;こちら&lt;/a&gt;と&lt;a href='http://doruby.kbmj.com/trinityt_on_rails/20080325/__Capistrano___1'&gt;こちら&lt;/a&gt;を参考にしました。&lt;/p&gt;
 
 &lt;h2 id='capistrano'&gt;Capistranoって？&lt;/h2&gt;
@@ -2522,7 +2522,7 @@ end
         <item>
                 <title>ScalaでFizzBuzzしてみた</title>
                 <description>&lt;h2 id='id6' /&gt;
-&lt;a href='http://ja.wikipedia.org/wiki/Fizz_Buzz'&gt;&lt;img width='200' title='Fizz Buzz - Wikipedia' alt='http://ja.wikipedia.org/wiki/Fizz_Buzz' src='http://capture.heartrails.com/200x120/cool?http://ja.wikipedia.org/wiki/Fizz_Buzz' height='120' /&gt;&lt;/a&gt;
+&lt;a href='http://ja.wikipedia.org/wiki/Fizz_Buzz'&gt;&lt;img height='120' alt='http://ja.wikipedia.org/wiki/Fizz_Buzz' title='Fizz Buzz - Wikipedia' src='http://capture.heartrails.com/200x120/cool?http://ja.wikipedia.org/wiki/Fizz_Buzz' width='200' /&gt;&lt;/a&gt;
 &lt;p&gt;社内でFizzBuzz大会をやりました。&lt;/p&gt;
 
 &lt;h2 id='id7'&gt;はじめに&lt;/h2&gt;
@@ -2530,11 +2530,11 @@ end
 &lt;p&gt;社内のチームでFizzBuzz大会をやろう、という話自体は去年の秋ごろからあって 年が明けて、今日開催しました。&lt;/p&gt;
 
 &lt;h2 id='fizzbuzz'&gt;FizzBuzz大会要綱&lt;/h2&gt;
-&lt;div id='__ss_11253526' style='width:425px'&gt; 
+&lt;div style='width:425px' id='__ss_11253526'&gt; 
 &lt;strong style='display:block;margin:12px 0 4px'&gt;
-&lt;a href='http://www.slideshare.net/modalsoul/fizz-buzz-publish-11253526' title='Fizz buzz publish' target='_blank'&gt;Fizz buzz publish&lt;/a&gt;
+&lt;a href='http://www.slideshare.net/modalsoul/fizz-buzz-publish-11253526' target='_blank' title='Fizz buzz publish'&gt;Fizz buzz publish&lt;/a&gt;
 &lt;/strong&gt; 
-&lt;iframe width='425' frameborder='0' src='http://www.slideshare.net/slideshow/embed_code/11253526' marginwidth='0' scrolling='no' height='355' marginheight='0'&gt;
+&lt;iframe height='355' frameborder='0' marginheight='0' scrolling='no' src='http://www.slideshare.net/slideshow/embed_code/11253526' marginwidth='0' width='425'&gt;
 &lt;/iframe&gt; 
 &lt;div style='padding:5px 0 12px'&gt; View more &lt;a href='http://www.slideshare.net/' target='_blank'&gt;presentations
 &lt;/a&gt; from &lt;a href='http://www.slideshare.net/modalsoul' target='_blank'&gt;modalsoul&lt;/a&gt; &lt;/div&gt; &lt;/div&gt;
@@ -2801,331 +2801,6 @@ fizzbuzz&lt;span class='o'&gt;(&lt;/span&gt;15&lt;span class='o'&gt;)&lt;/span&g
                 <link>http://modalsoul.github.io/record/2012/01/11/first-post</link>
                 <guid>http://modalsoul.github.io/record/2012/01/11/first-post</guid>
                 <pubDate>2012-01-11T00:00:00+09:00</pubDate>
-        </item>
-
-        <item>
-                <title>Jekyll Introduction</title>
-                <description>&lt;p&gt;This Jekyll introduction will outline specifically what Jekyll is and why you would want to use it. Directly following the intro we&amp;#8217;ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
-
-&lt;h2 id='overview'&gt;Overview&lt;/h2&gt;
-
-&lt;h3 id='what_is_jekyll'&gt;What is Jekyll?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;#8220;a simple, blog aware, static site generator&amp;#8221;.&lt;/p&gt;
-
-&lt;h3 id='examples'&gt;Examples&lt;/h3&gt;
-
-&lt;p&gt;This website is created with Jekyll. &lt;a href='https://github.com/mojombo/jekyll/wiki/Sites'&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id='what_does_jekyll_do'&gt;What does Jekyll Do?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a ruby gem you install on your local system. Once there you can call &lt;code&gt;jekyll --server&lt;/code&gt; on a directory and provided that directory is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
-
-&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static &lt;code&gt;_site&lt;/code&gt; folder. The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
-
-&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags on each request, Jekyll does this once &lt;em&gt;beforehand&lt;/em&gt; and caches the &lt;em&gt;entire website&lt;/em&gt; in a folder for serving statically.&lt;/p&gt;
-
-&lt;h3 id='jekyll_is_not_blogging_software'&gt;Jekyll is Not Blogging Software&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Jekyll is a parsing engine.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Jekyll does not come with any content nor does it have any templates or design elements. This is a common source of confusion when getting started. Jekyll does not come with anything you actually use or see on your website - you have to make it.&lt;/p&gt;
-
-&lt;h3 id='why_should_i_care'&gt;Why Should I Care?&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is very minimalistic and very efficient. The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server. Traditional dynamic blogs like Wordpress require a database and server-side code. Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.&lt;/p&gt;
-
-&lt;p&gt;Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Developers like Jekyll because we can write content like we write code:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ability to write content in markdown or textile in your favorite text-editor.&lt;/li&gt;
-
-&lt;li&gt;Ability to write and preview your content via localhost.&lt;/li&gt;
-
-&lt;li&gt;No internet connection required.&lt;/li&gt;
-
-&lt;li&gt;Ability to publish via git.&lt;/li&gt;
-
-&lt;li&gt;Ability to host your blog on a static web-server.&lt;/li&gt;
-
-&lt;li&gt;Ability to host freely on GitHub Pages.&lt;/li&gt;
-
-&lt;li&gt;No database required.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id='how_jekyll_works'&gt;How Jekyll Works&lt;/h1&gt;
-
-&lt;p&gt;The following is a complete but concise outline of exactly how Jekyll works.&lt;/p&gt;
-
-&lt;p&gt;Be aware that core concepts are introduced in rapid succession without code examples. This information is not intended to specifically teach you how to do anything, rather it is intended to give you the &lt;em&gt;full picture&lt;/em&gt; relative to what is going on in Jekyll-world.&lt;/p&gt;
-
-&lt;p&gt;Learning these core concepts should help you avoid common frustrations and ultimately help you better understand the code examples contained throughout Jekyll-Bootstrap.&lt;/p&gt;
-
-&lt;h2 id='initial_setup'&gt;Initial Setup&lt;/h2&gt;
-
-&lt;p&gt;After &lt;a href='/index.html#start-now'&gt;installing jekyll&lt;/a&gt; you&amp;#8217;ll need to format your website directory in a way jekyll expects. Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
-
-&lt;h3 id='the_jekyll_application_base_format'&gt;The Jekyll Application Base Format&lt;/h3&gt;
-
-&lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- _config.yml
-|-- _includes
-|-- _layouts
-|   |-- default.html
-|   |-- post.html
-|-- _posts
-|   |-- 2011-10-25-open-source-is-good.markdown
-|   |-- 2011-04-26-hello-world.markdown
-|-- _site
-|-- index.html
-|-- assets
-    |-- css
-        |-- style.css
-    |-- javascripts&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_config.yml&lt;/strong&gt;&lt;br /&gt;Stores configuration data.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_includes&lt;/strong&gt;&lt;br /&gt;This folder is for partial views.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_layouts&lt;/strong&gt; &lt;br /&gt;This folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_posts&lt;/strong&gt;&lt;br /&gt;This folder contains your dynamic content/posts. the naming format is required to be &lt;code&gt;@YEAR-MONTH-DATE-title.MARKUP@&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt;&lt;br /&gt;This is where the generated site will be placed once Jekyll is done transforming it.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;assets&lt;/strong&gt;&lt;br /&gt;This folder is not part of the standard jekyll structure. The assets folder represents &lt;em&gt;any generic&lt;/em&gt; folder you happen to create in your root directory. Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(read more: &lt;a href='https://github.com/mojombo/jekyll/wiki/Usage'&gt;https://github.com/mojombo/jekyll/wiki/Usage&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h3 id='jekyll_configuration'&gt;Jekyll Configuration&lt;/h3&gt;
-
-&lt;p&gt;Jekyll supports various configuration options that are fully outlined here: &lt;a href='https://github.com/mojombo/jekyll/wiki/Configuration'&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id='content_in_jekyll'&gt;Content in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Content in Jekyll is either a post or a page. These content &amp;#8220;objects&amp;#8221; get inserted into one or more templates to build the final output for its respective static-page.&lt;/p&gt;
-
-&lt;h3 id='posts_and_pages'&gt;Posts and Pages&lt;/h3&gt;
-
-&lt;p&gt;Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax. Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.&lt;/p&gt;
-
-&lt;h3 id='working_with_posts'&gt;Working With Posts&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt; &lt;br /&gt;Posts are created by properly formatting a file and placing it the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;A post must have a valid filename in the form &lt;code&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code&gt;_posts&lt;/code&gt; directory. If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file. Additionally, each file must have &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;YAML Front-Matter&lt;/a&gt; prepended to its content. YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Order&lt;/strong&gt;&lt;br /&gt;Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy. Only reverse chronological and chronological ordering is supported in Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt; &lt;br /&gt;Posts can have tags associated with them as part of their meta-data. Tags may be placed on posts by providing them in the post&amp;#8217;s YAML front matter. You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt; &lt;br /&gt;Posts may be categorized by providing one or more categories in the YAML front matter. Categories offer more significance over tags in that they can be reflected in the URL path to the given post. Note categories in Jekyll work in a specific way. If you define more than one category you are defining a category hierarchy &amp;#8220;set&amp;#8221;. Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title :  Hello World
-categories : [lessons, beginner]
----&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This defines the category hierarchy &amp;#8220;lessons/beginner&amp;#8221;. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll. You won&amp;#8217;t find &amp;#8220;lessons&amp;#8221; and &amp;#8220;beginner&amp;#8221; as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
-
-&lt;h3 id='working_with_pages'&gt;Working With Pages&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Page&lt;/strong&gt;&lt;br /&gt;Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do &lt;em&gt;not&lt;/em&gt; start with an underscore.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;In order to register as a Jekyll page the file must contain &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;YAML Front-Matter&lt;/a&gt;. Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the &lt;code&gt;site.pages&lt;/code&gt; array for inclusion into your templates.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories and Tags&lt;/strong&gt;&lt;br /&gt;Pages do not compute categories nor tags so defining them will have no effect.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sub-Directories&lt;/strong&gt;&lt;br /&gt;If pages are defined in sub-directories, the path to the page will be reflected in the url. Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- people
-    |-- bob
-        |-- essay.html&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This page will be available at &lt;code&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Recommended Pages&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;index.html&lt;/strong&gt;&lt;br /&gt;You will always want to define the root index.html page as this will display on your root URL.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;404.html&lt;/strong&gt;&lt;br /&gt;Create a root 404.html page and GitHub Pages will serve it as your 404 response.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;sitemap.html&lt;/strong&gt;&lt;br /&gt;Generating a sitemap is good practice for SEO.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;about.html&lt;/strong&gt;&lt;br /&gt;A nice about page is easy to do and gives the human perspective to your website.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id='templates_in_jekyll'&gt;Templates in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Templates are used to contain a page&amp;#8217;s or post&amp;#8217;s content. All templates have access to a global site object variable: &lt;code&gt;site&lt;/code&gt; as well as a page object variable: &lt;code&gt;page&lt;/code&gt;. The site variable holds all accessible content and metadata relative to the site. The page variable holds accessible data for the given page or post being rendered at that point.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Create a Template&lt;/strong&gt;&lt;br /&gt;Templates are created by properly formatting a file and placing it in the &lt;code&gt;_layouts&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;Templates should be coded in HTML and contain YAML Front Matter. All templates can contain Liquid code to work with your site&amp;#8217;s data.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rending Page/Post Content in a Template&lt;/strong&gt;&lt;br /&gt;There is a special variable in all templates named : &lt;code&gt;content&lt;/code&gt;. The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined. Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;...
-&amp;lt;body&amp;gt;
-  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
-  &amp;lt;div id=&quot;main&quot;&amp;gt;
-    &amp;#123;{content}&amp;#125;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-...&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id='subtemplates'&gt;Sub-Templates&lt;/h3&gt;
-
-&lt;p&gt;Sub-templates are exactly templates with the only difference being they define another &amp;#8220;root&amp;#8221; layout/template within their YAML Front Matter. This essentially means a template will render inside of another template.&lt;/p&gt;
-
-&lt;h3 id='includes'&gt;Includes&lt;/h3&gt;
-
-&lt;p&gt;In Jekyll you can define include files by placing them in the &lt;code&gt;_includes&lt;/code&gt; folder. Includes are NOT templates, rather they are just code snippets that get included into templates. In this way, you can treat the code inside includes as if it was native to the parent template.&lt;/p&gt;
-
-&lt;p&gt;Any valid template code may be used in includes.&lt;/p&gt;
-
-&lt;h2 id='using_liquid_for_templating'&gt;Using Liquid for Templating&lt;/h2&gt;
-
-&lt;p&gt;Templating is perhaps the most confusing and frustrating part of Jekyll. This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.&lt;/p&gt;
-
-&lt;h3 id='what_is_liquid'&gt;What is Liquid?&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href='https://github.com/Shopify/liquid'&gt;Liquid&lt;/a&gt; is a secure templating language developed by &lt;a href='http://shopify.com'&gt;Shopify&lt;/a&gt;. Liquid is designed for end-users to be able to execute logic within template files without imposing any security risk on the hosting server.&lt;/p&gt;
-
-&lt;p&gt;Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with your site and post/page data.&lt;/p&gt;
-
-&lt;h3 id='why_do_we_have_to_use_liquid'&gt;Why Do We Have to Use Liquid?&lt;/h3&gt;
-
-&lt;p&gt;GitHub uses Jekyll to power &lt;a href='http://pages.github.com/'&gt;GitHub Pages&lt;/a&gt;. GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.&lt;/p&gt;
-
-&lt;h3 id='liquid_is_not_programmerfriendly'&gt;Liquid is Not Programmer-Friendly.&lt;/h3&gt;
-
-&lt;p&gt;The short story is liquid is not real code and its not intended to execute real code. The point being you can&amp;#8217;t do jackshit in liquid that hasn&amp;#8217;t been allowed explicitly by the implementation. What&amp;#8217;s more you can only access data-structures that have been explicitly passed to the template.&lt;/p&gt;
-
-&lt;p&gt;In Jekyll&amp;#8217;s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins. Both of which cannot be supported by GitHub Pages.&lt;/p&gt;
-
-&lt;p&gt;As a programmer - this is very frustrating.&lt;/p&gt;
-
-&lt;p&gt;But rather than look a gift horse in the mouth we are going to suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Aside&lt;/strong&gt; &lt;br /&gt;My personal stance is to not invest time trying to hack liquid. It&amp;#8217;s really unnecessary &lt;em&gt;from a programmer&amp;#8217;s&lt;/em&gt; perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code) you are better off sticking with ruby. Toward that end I&amp;#8217;ve built &lt;a href='http://github.com/plusjade/mustache-with-jekyll'&gt;Mustache-with-Jekyll&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id='static_assets'&gt;Static Assets&lt;/h2&gt;
-
-&lt;p&gt;Static assets are any file in the root or non-underscored subfolders that are not pages. That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.&lt;/p&gt;
-
-&lt;p&gt;Static assets should be used for images, css, and javascript files.&lt;/p&gt;
-
-&lt;h2 id='how_jekyll_parses_files'&gt;How Jekyll Parses Files&lt;/h2&gt;
-
-&lt;p&gt;Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Content parsing.&lt;/strong&gt; &lt;br /&gt;This is done with textile or markdown.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;Template parsing.&lt;/strong&gt; &lt;br /&gt;This is done with the liquid templating language.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And thus there are two main types of file formats needed for this parsing.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Post and Page files.&lt;/strong&gt;&lt;br /&gt;All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;Template files.&lt;/strong&gt; &lt;br /&gt;These files go in &lt;code&gt;_layouts&lt;/code&gt; folder and contain your blogs &lt;strong&gt;templates&lt;/strong&gt;. They should be made in HTML with the help of Liquid syntax. Since include files are simply injected into templates they are essentially parsed as if they were native to the template.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Arbitrary files and folders.&lt;/strong&gt; &lt;br /&gt;Files that &lt;em&gt;are not&lt;/em&gt; valid pages are treated as static content and pass through Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.&lt;/p&gt;
-
-&lt;h3 id='formatting_files_for_parsing'&gt;Formatting Files for Parsing.&lt;/h3&gt;
-
-&lt;p&gt;We&amp;#8217;ve outlined the need for valid formatting using &lt;strong&gt;YAML Front Matter&lt;/strong&gt;. Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty. This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
-
-&lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-layout: post
-category : pages
-tags : [how-to, jekyll]
----
-
-... contents ...&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block. The data inside the block must be valid YAML.&lt;/p&gt;
-
-&lt;p&gt;Configuration parameters for YAML Front-Matter is outlined here: &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;A comprehensive explanation of YAML Front Matter&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id='defining_layouts_for_posts_and_templates_parsing'&gt;Defining Layouts for Posts and Templates Parsing.&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into. If a template file specifies its own layout, it is effectively being used as a &lt;code&gt;sub-template.&lt;/code&gt; That is to say loading a post file into a template file that refers to another template file with work in the way you&amp;#8217;d expect; as a nested sub-template.&lt;/p&gt;
-
-&lt;h2 id='how_jekyll_generates_the_final_static_files'&gt;How Jekyll Generates the Final Static Files.&lt;/h2&gt;
-
-&lt;p&gt;Ultimately, Jekyll&amp;#8217;s job is to generate a static representation of your website. The following is an outline of how that&amp;#8217;s done:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll collects data.&lt;/strong&gt; &lt;br /&gt;Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll computes data.&lt;/strong&gt; &lt;br /&gt;Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one big &lt;code&gt;site&lt;/code&gt; object that holds all the posts, pages, layouts, and respective metadata. At this stage your site is one big computed ruby object.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll liquifies posts and templates.&lt;/strong&gt;&lt;br /&gt;Next jekyll loops through each post file and converts (through markdown or textile) and &lt;strong&gt;liquifies&lt;/strong&gt; the post inside of its respective layout(s). Once the post is parsed and liquified inside the the proper layout structure, the layout itself is &amp;#8220;liquified&amp;#8221;. &lt;br /&gt;&lt;strong&gt;Liquification&lt;/strong&gt; is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll generates output.&lt;/strong&gt; &lt;br /&gt;Finally the liquid templates are &amp;#8220;rendered&amp;#8221;, thereby processing any liquid syntax provided in the templates and saving the final, static representation of the file.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Notes.&lt;/strong&gt;&lt;br /&gt;Because Jekyll computes the entire site in one fell swoop, each template is given access to a global &lt;code&gt;site&lt;/code&gt; hash that contains useful data. It is this data that you&amp;#8217;ll iterate through and format using the Liquid tags and filters in order to render it onto a given page.&lt;/p&gt;
-
-&lt;p&gt;Remember, in Jekyll you are an end-user. Your API has only two components:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;The manner in which you setup your directory.&lt;/li&gt;
-
-&lt;li&gt;The liquid syntax and variables passed into the liquid templates.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;All the data objects available to you in the templates via Liquid are outlined in the &lt;strong&gt;API Section&lt;/strong&gt; of Jekyll-Bootstrap. You can also read the original documentation here: &lt;a href='https://github.com/mojombo/jekyll/wiki/Template-Data'&gt;https://github.com/mojombo/jekyll/wiki/Template-Data&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id='conclusion'&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does. As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.&lt;/p&gt;
-
-&lt;p&gt;Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt; for reading this far.&lt;/p&gt;
-
-&lt;h2 id='next_steps'&gt;Next Steps&lt;/h2&gt;
-
-&lt;p&gt;Please take a look at &lt;a href='http://modalsoul.github.io' /&gt; or jump right into &lt;a href='http://modalsoul.github.io'&gt;Usage&lt;/a&gt; if you&amp;#8217;d like.&lt;/p&gt;</description>
-                <link>http://modalsoul.github.io/lessons/2011/12/29/jekyll-introduction</link>
-                <guid>http://modalsoul.github.io/lessons/2011/12/29/jekyll-introduction</guid>
-                <pubDate>2011-12-29T00:00:00+09:00</pubDate>
         </item>
 
 

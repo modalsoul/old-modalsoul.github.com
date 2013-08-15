@@ -176,16 +176,20 @@
           
         			
 	 </div>
-      <h2 id='scala_on_liftfacebook'>【意訳】Scala on LiftでのFacebookサインイン</h2>
+      <h2>【意訳】Scala on LiftでのFacebookサインイン</h2>
 
-<p>この記事は、<a href='http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/'>ayushmishra2005氏の記事</a>の意訳です。参考にさせていただいたついでに訳してみました。参考程度にどうぞ。</p>
+<p>この記事は、<a href="http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/">ayushmishra2005氏の記事</a>の意訳です。参考にさせていただいたついでに訳してみました。参考程度にどうぞ。</p>
 
-<p><img alt='Providing a “Sign-in with Facebook” functionality using Scala' src='http://capture.heartrails.com/300x200/cool?http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/' /></p>
+<p><img src="http://capture.heartrails.com/300x200/cool?http://blog.knoldus.com/2012/07/29/providing-a-sign-in-with-facebook-functionality-using-scala/" alt="Providing a “Sign-in with Facebook” functionality using Scala"></p>
 
-<p>誤訳・誤植等ありましたら、<a href='https://twitter.com/modal_soul'>@modal_soulまで</a>リプライいただけるとありがたいです。</p>
+<p>誤訳・誤植等ありましたら、<a href="https://twitter.com/modal_soul">@modal_soulまで</a>リプライいただけるとありがたいです。</p>
+
 <hr />
+
 <p>ここ最近に、Lift2.4で構築したソーシャルプロジェクトで、Facebookへのサインイン機能を統合しました。この記事はその時の手順のサマリです。</p>
+
 <hr />
+
 <p><em>1)Facebook APIを作る（※既に持っている場合不要です）</em></p>
 
 <p>次のリンクを参考にアプリを作ってください。サイトURLを含む全ての詳細を記入してエンターします。サイトURLは以下のような感じになります。</p>
@@ -195,38 +199,93 @@
 <p>このサイトURL宛に、Facebookはレスポンスを送ります。このアプリケーションを保存すると、アプリキー/APIキー/秘密鍵が入手できます。</p>
 
 <p>これらのキーは後ほど使うので注意してください。</p>
+
 <hr />
+
 <p><em>2) Liftを使っている場合は、各キーをdefault.propsに追加設定します。</em></p>
-<div class='highlight'><pre><code class='sh'>facebook.key<span class='o'>=</span>&lt;your_key&gt;
-facebook.secret<span class='o'>=</span>your &lt;secret_key&gt;
-facebook.callbackurl<span class='o'>=</span>/api/facebook/auth
-</code></pre></div><hr />
-<p><em>3) Facebookログイン画像<a href='http://sandthre34.wapka.mobi/download-43-23c50858c8a88d7a9397/fb.png?PHPSESSID=3b88fe8fb9bb628c5beb8870fd0e367c'>fb.png</a>をダウンロードします</em></p>
+
+<div class="highlight"><pre><code class="sh">facebook.key<span class="o">=</span>&lt;your_key&gt;
+facebook.secret<span class="o">=</span>your &lt;secret_key&gt;
+facebook.callbackurl<span class="o">=</span>/api/facebook/auth
+</code></pre></div>
+
 <hr />
+
+<p><em>3) Facebookログイン画像<a href="http://sandthre34.wapka.mobi/download-43-23c50858c8a88d7a9397/fb.png?PHPSESSID=3b88fe8fb9bb628c5beb8870fd0e367c">fb.png</a>をダウンロードします</em></p>
+
+<hr />
+
 <p><em>4) アプリキー/APIキー/秘密鍵とコールバックURLを設定するために、FacebookGraph.scalaを新規作成します。またFacebookからアクセストークンを要求するためにこのScalaファイルを使用します。</em></p>
-<script src='https://gist.github.com/3310411.js?file=FacebookGraph.scala'>
-</script><hr />
-<p><em>5) 次にログインページにFacebookログインリンクを表示するためにFacebook素にペットを作成します。</em></p>
-<script src='https://gist.github.com/3310425.js?file=Facebook.scala'>
-</script><hr />
-<p><em>6) login.htmlにFacebookログインリンクを追加します。</em></p>
-<div class='highlight'><pre><code class='sh'>&lt;div <span class='nv'>class</span><span class='o'>=</span><span class='s2'>&quot;span4&quot;</span>&gt;
-      &lt;span <span class='nv'>lift</span><span class='o'>=</span><span class='s2'>&quot;Facebook.link&quot;</span>/&gt;&lt;/span&gt;
-&lt;/div&gt;
-</code></pre></div><hr />
-<p><em>7) SiteMap.scalaにFacebook接続メニューを作ります。</em></p>
-<div class='highlight'><pre><code class='sh'>val <span class='nv'>facebookConnect</span> <span class='o'>=</span> MenuLoc<span class='o'>(</span>
-    Menu.i<span class='o'>(</span><span class='s2'>&quot;FacebookConnect&quot;</span><span class='o'>)</span> / <span class='s2'>&quot;facebook&quot;</span> / <span class='s2'>&quot;connect&quot;</span> &gt;&gt; EarlyResponse<span class='o'>(()</span> <span class='o'>=</span>&gt; <span class='o'>{</span>
-      FacebookGraph.csrf<span class='o'>(</span>Helpers.nextFuncName<span class='o'>)</span>
-      Full<span class='o'>(</span>RedirectResponse<span class='o'>(</span>FacebookGraph.authUrl, S.responseCookies: _*<span class='o'>))</span>
- <span class='o'>}))</span>
-</code></pre></div><hr />
-<p><em>8) 最後に、Facebookからレスポンスを受け取るためのFacebook.apiを作成します。</em></p>
-<script src='https://gist.github.com/3310432.js?file=FacebookApiStateful.scala'>
+
+<script src="https://gist.github.com/3310411.js?file=FacebookGraph.scala">
 </script>
+
+<hr />
+
+<p><em>5) 次にログインページにFacebookログインリンクを表示するためにFacebook素にペットを作成します。</em></p>
+
+<script src="https://gist.github.com/3310425.js?file=Facebook.scala">
+</script>
+
+<hr />
+
+<p><em>6) login.htmlにFacebookログインリンクを追加します。</em></p>
+
+<div class="highlight"><pre><code class="sh">&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;span4&quot;</span>&gt;
+      &lt;span <span class="nv">lift</span><span class="o">=</span><span class="s2">&quot;Facebook.link&quot;</span>/&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre></div>
+
+<hr />
+
+<p><em>7) SiteMap.scalaにFacebook接続メニューを作ります。</em></p>
+
+<div class="highlight"><pre><code class="sh">val <span class="nv">facebookConnect</span> <span class="o">=</span> MenuLoc<span class="o">(</span>
+    Menu.i<span class="o">(</span><span class="s2">&quot;FacebookConnect&quot;</span><span class="o">)</span> / <span class="s2">&quot;facebook&quot;</span> / <span class="s2">&quot;connect&quot;</span> &gt;&gt; EarlyResponse<span class="o">(()</span> <span class="o">=</span>&gt; <span class="o">{</span>
+      FacebookGraph.csrf<span class="o">(</span>Helpers.nextFuncName<span class="o">)</span>
+      Full<span class="o">(</span>RedirectResponse<span class="o">(</span>FacebookGraph.authUrl, S.responseCookies: _*<span class="o">))</span>
+ <span class="o">}))</span>
+</code></pre></div>
+
+<hr />
+
+<p><em>8) 最後に、Facebookからレスポンスを受け取るためのFacebook.apiを作成します。</em></p>
+
+<script src="https://gist.github.com/3310432.js?file=FacebookApiStateful.scala">
+</script>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    18 Oct 2012
+    <a href="/report/2012/10/18/about-npm-start-and-package-json">node.jsにおける、npmとpackage.jsonという作法について</a>
+    </li>
+  
+    <li>
+    12 Aug 2012
+    <a href="/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku">【意訳】Heroku上でPlayFramework + Scalaアプリケーションを実行する</a>
+    </li>
+  
+    <li>
+    29 Feb 2012
+    <a href="/programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery&Heroku ［Play2アプリのビルド編］</a>
+    </li>
+  
+    <li>
+    30 Aug 2012
+    <a href="/test/programing/2012/08/30/android-ui-test-touchutils-performclick">TouchUtilsを使ったAndroidテストでjava.lang.SecurityException:PermissionDenialが起きたときの回避方法</a>
+    </li>
+  
+    <li>
+    17 Feb 2012
+    <a href="/report/2012/02/17/developers-summit-2012">Developers Summit 2012 2日目ツイートまとめ。#devsumi</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

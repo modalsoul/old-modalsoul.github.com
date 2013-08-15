@@ -176,24 +176,28 @@
           
         			
 	 </div>
-      <h2 id='id21' />
-<a href='https://github.com/capistrano/capistrano'><img height='300' alt='https://github.com/capistrano/capistrano' title='capistrano/capistrano - GitHub' src='http://capture.heartrails.com/300x300/cool?https://github.com/capistrano/capistrano' width='300' /></a>
-<p>Capistranoをやってみました。 <a href='http://builder.japan.zdnet.com/virtualization/sp_open-source-software-moonlinx-2009/20396188/'>こちら</a>と<a href='http://doruby.kbmj.com/trinityt_on_rails/20080325/__Capistrano___1'>こちら</a>を参考にしました。</p>
+      <h2>{page.title}</h2>
 
-<h2 id='capistrano'>Capistranoって？</h2>
+<p><a href="https://github.com/capistrano/capistrano"><img title="capistrano/capistrano - GitHub" src="http://capture.heartrails.com/300x300/cool?https://github.com/capistrano/capistrano" alt="https://github.com/capistrano/capistrano" width="300" height="300" /></a></p>
+
+<p>Capistranoをやってみました。
+<a href="http://builder.japan.zdnet.com/virtualization/sp_open-source-software-moonlinx-2009/20396188/">こちら</a>と<a href="http://doruby.kbmj.com/trinityt_on_rails/20080325/__Capistrano___1">こちら</a>を参考にしました。</p>
+
+<h2>Capistranoって？</h2>
 
 <p>Capistranoは複数サーバにアプリケーションを配備できるデプロイツールなのですが、厳密にいえば「複数のサーバ上で同時に並行してコマンドを実行できるツール」だそうです。</p>
 
-<h2 id='id22'>インストール</h2>
-<div class='highlight'><pre><code class='sh'>&gt; gem install -y capistrano
-INFO:  <span class='sb'>`</span>gem install -y<span class='sb'>`</span> is now default and will be removed
+<h2>インストール</h2>
+
+<div class="highlight"><pre><code class="sh">&gt; gem install -y capistrano
+INFO:  <span class="sb">`</span>gem install -y<span class="sb">`</span> is now default and will be removed
 INFO:  use --ignore-dependencies to install only the gems you list
-Fetching: highline-1.6.11.gem <span class='o'>(</span>100%<span class='o'>)</span>
-Fetching: net-ssh-2.3.0.gem <span class='o'>(</span>100%<span class='o'>)</span>
-Fetching: net-sftp-2.0.5.gem <span class='o'>(</span>100%<span class='o'>)</span>
-Fetching: net-scp-1.0.4.gem <span class='o'>(</span>100%<span class='o'>)</span>
-Fetching: net-ssh-gateway-1.1.0.gem <span class='o'>(</span>100%<span class='o'>)</span>
-Fetching: capistrano-2.9.0.gem <span class='o'>(</span>100%<span class='o'>)</span>
+Fetching: highline-1.6.11.gem <span class="o">(</span>100%<span class="o">)</span>
+Fetching: net-ssh-2.3.0.gem <span class="o">(</span>100%<span class="o">)</span>
+Fetching: net-sftp-2.0.5.gem <span class="o">(</span>100%<span class="o">)</span>
+Fetching: net-scp-1.0.4.gem <span class="o">(</span>100%<span class="o">)</span>
+Fetching: net-ssh-gateway-1.1.0.gem <span class="o">(</span>100%<span class="o">)</span>
+Fetching: capistrano-2.9.0.gem <span class="o">(</span>100%<span class="o">)</span>
 Successfully installed highline-1.6.11
 Successfully installed net-ssh-2.3.0
 Successfully installed net-sftp-2.0.5
@@ -201,101 +205,147 @@ Successfully installed net-scp-1.0.4
 Successfully installed net-ssh-gateway-1.1.0
 Successfully installed capistrano-2.9.0
 6 gems installed
-Installing ri documentation <span class='k'>for </span>highline-1.6.11...
-Installing ri documentation <span class='k'>for </span>net-ssh-2.3.0...
-Installing ri documentation <span class='k'>for </span>net-sftp-2.0.5...
-Installing ri documentation <span class='k'>for </span>net-scp-1.0.4...
-Installing ri documentation <span class='k'>for </span>net-ssh-gateway-1.1.0...
-Installing ri documentation <span class='k'>for </span>capistrano-2.9.0...
-Installing RDoc documentation <span class='k'>for </span>highline-1.6.11...
-Installing RDoc documentation <span class='k'>for </span>net-ssh-2.3.0...
-Installing RDoc documentation <span class='k'>for </span>net-sftp-2.0.5...
-Installing RDoc documentation <span class='k'>for </span>net-scp-1.0.4...
-Installing RDoc documentation <span class='k'>for </span>net-ssh-gateway-1.1.0...
-Installing RDoc documentation <span class='k'>for </span>capistrano-2.9.0...
+Installing ri documentation <span class="k">for </span>highline-1.6.11...
+Installing ri documentation <span class="k">for </span>net-ssh-2.3.0...
+Installing ri documentation <span class="k">for </span>net-sftp-2.0.5...
+Installing ri documentation <span class="k">for </span>net-scp-1.0.4...
+Installing ri documentation <span class="k">for </span>net-ssh-gateway-1.1.0...
+Installing ri documentation <span class="k">for </span>capistrano-2.9.0...
+Installing RDoc documentation <span class="k">for </span>highline-1.6.11...
+Installing RDoc documentation <span class="k">for </span>net-ssh-2.3.0...
+Installing RDoc documentation <span class="k">for </span>net-sftp-2.0.5...
+Installing RDoc documentation <span class="k">for </span>net-scp-1.0.4...
+Installing RDoc documentation <span class="k">for </span>net-ssh-gateway-1.1.0...
+Installing RDoc documentation <span class="k">for </span>capistrano-2.9.0...
 </code></pre></div>
+
 <p>これでインストール完了。gemって便利だ</p>
-<div class='highlight'><pre><code class='sh'>&gt;cap -h
-Usage: cap <span class='o'>[</span>options<span class='o'>]</span> action ...
-    -d, --debug                      Prompts before each remote <span class='nb'>command </span>execution.
-    -e, --explain TASK               Displays <span class='nb'>help</span> <span class='o'>(</span><span class='k'>if </span>available<span class='o'>)</span> <span class='k'>for </span>the task.
+
+<div class="highlight"><pre><code class="sh">&gt;cap -h
+Usage: cap <span class="o">[</span>options<span class="o">]</span> action ...
+    -d, --debug                      Prompts before each remote <span class="nb">command </span>execution.
+    -e, --explain TASK               Displays <span class="nb">help</span> <span class="o">(</span><span class="k">if </span>available<span class="o">)</span> <span class="k">for </span>the task.
     -F, --default-config             Always use default config, even with -f.
     -f, --file FILE                  A recipe file to load. May be given more than once.
     -H, --long-help                  Explain these options and environment variables.
-    -h, --help                       Display this <span class='nb'>help </span>message.
-    -l <span class='o'>[</span>STDERR|STDOUT|file<span class='o'>]</span>          Choose logger method. STDERR used by default.
+    -h, --help                       Display this <span class="nb">help </span>message.
+    -l <span class="o">[</span>STDERR|STDOUT|file<span class="o">]</span>          Choose logger method. STDERR used by default.
         --logger
     -n, --dry-run                    Prints out commands without running them.
-    -p, --password                   Immediately prompt <span class='k'>for </span>the password.
+    -p, --password                   Immediately prompt <span class="k">for </span>the password.
     -q, --quiet                      Make the output as quiet as possible.
     -r, --preserve-roles             Preserve task roles
-    -S, --set-before <span class='nv'>NAME</span><span class='o'>=</span>VALUE      Set a variable before the recipes are loaded.
-    -s, --set <span class='nv'>NAME</span><span class='o'>=</span>VALUE             Set a variable after the recipes are loaded.
-    -T, --tasks <span class='o'>[</span>PATTERN<span class='o'>]</span>            List all tasks <span class='o'>(</span>matching optional PATTERN<span class='o'>)</span> in the loaded recipe files.
-    -t, --tool                       Abbreviates the output of -T <span class='k'>for </span>tool integration.
+    -S, --set-before <span class="nv">NAME</span><span class="o">=</span>VALUE      Set a variable before the recipes are loaded.
+    -s, --set <span class="nv">NAME</span><span class="o">=</span>VALUE             Set a variable after the recipes are loaded.
+    -T, --tasks <span class="o">[</span>PATTERN<span class="o">]</span>            List all tasks <span class="o">(</span>matching optional PATTERN<span class="o">)</span> in the loaded recipe files.
+    -t, --tool                       Abbreviates the output of -T <span class="k">for </span>tool integration.
     -V, --version                    Display the Capistrano version, and exit.
     -v, --verbose                    Be more verbose. May be given more than once.
-    -X, --skip-system-config         Don<span class='s1'>&#39;t load the system config file (capistrano.conf)</span>
-<span class='s1'>    -x, --skip-user-config           Don&#39;</span>t load the user config file <span class='o'>(</span>.caprc<span class='o'>)</span>
+    -X, --skip-system-config         Don<span class="s1">&#39;t load the system config file (capistrano.conf)</span>
+<span class="s1">    -x, --skip-user-config           Don&#39;</span>t load the user config file <span class="o">(</span>.caprc<span class="o">)</span>
 </code></pre></div>
+
 <p>インストールされてることを確認。</p>
 
-<h2 id='capify'>capifyの実行</h2>
+<h2>capifyの実行</h2>
 
 <p>アプリケーションのカレントディレクトリに移動して、capifyコマンドを実行</p>
-<div class='highlight'><pre><code class='sh'>&gt; capify . <span class='c'>#.を忘れないこと</span>
-<span class='o'>[</span>add<span class='o'>]</span> writing <span class='s1'>&#39;./Capfile&#39;</span>
-<span class='o'>[</span>add<span class='o'>]</span> making directory <span class='s1'>&#39;./config&#39;</span>
-<span class='o'>[</span>add<span class='o'>]</span> writing <span class='s1'>&#39;./config/deploy.rb&#39;</span>
-<span class='o'>[</span><span class='k'>done</span><span class='o'>]</span> capified!
+
+<div class="highlight"><pre><code class="sh">&gt; capify . <span class="c">#.を忘れないこと</span>
+<span class="o">[</span>add<span class="o">]</span> writing <span class="s1">&#39;./Capfile&#39;</span>
+<span class="o">[</span>add<span class="o">]</span> making directory <span class="s1">&#39;./config&#39;</span>
+<span class="o">[</span>add<span class="o">]</span> writing <span class="s1">&#39;./config/deploy.rb&#39;</span>
+<span class="o">[</span><span class="k">done</span><span class="o">]</span> capified!
 </code></pre></div>
-<p>カレントディレクトリ直下に、Capfileファイルとconfigディレクトリ config配下に、deploy.rbが作成される。</p>
 
-<h2 id='deployrb'>deploy.rbの編集</h2>
+<p>カレントディレクトリ直下に、Capfileファイルとconfigディレクトリ
+config配下に、deploy.rbが作成される。</p>
 
-<p>/cofig/deploy.rbを編集してみる。 とりあえずHelloWorldするために、作成されたdeploy.rbの内容を以下のように修正。</p>
-<div class='highlight'><pre><code class='sh'><span class='nb'>set</span> :application, <span class='s2'>&quot;hoge&quot;</span>
-<span class='nb'>set</span> :repository,  <span class='s2'>&quot;huga&quot;</span>
+<h2>deploy.rbの編集</h2>
 
-<span class='nb'>set</span> :scm, :subversion
+<p>/cofig/deploy.rbを編集してみる。
+とりあえずHelloWorldするために、作成されたdeploy.rbの内容を以下のように修正。</p>
 
-role :test, <span class='s2'>&quot;127.0.0.1&quot;</span>                          <span class='c'># Your HTTP server, Apache/etc</span>
-role :app, <span class='s2'>&quot;127.0.0.1&quot;</span>                          <span class='c'># This may be the same as your `Web` server</span>
+<div class="highlight"><pre><code class="sh"><span class="nb">set</span> :application, <span class="s2">&quot;hoge&quot;</span>
+<span class="nb">set</span> :repository,  <span class="s2">&quot;huga&quot;</span>
 
-namespace :deploy <span class='k'>do</span>
-task :hw, :roles <span class='o'>=</span>&gt; <span class='o'>[</span>:test, :ap<span class='o'>]</span> <span class='k'>do</span>
-<span class='k'>  </span>run <span class='s2'>&quot;echo HelloWorld! $HOSTNAME&quot;</span>
+<span class="nb">set</span> :scm, :subversion
+
+role :test, <span class="s2">&quot;127.0.0.1&quot;</span>                          <span class="c"># Your HTTP server, Apache/etc</span>
+role :app, <span class="s2">&quot;127.0.0.1&quot;</span>                          <span class="c"># This may be the same as your `Web` server</span>
+
+namespace :deploy <span class="k">do</span>
+task :hw, :roles <span class="o">=</span>&gt; <span class="o">[</span>:test, :ap<span class="o">]</span> <span class="k">do</span>
+<span class="k">  </span>run <span class="s2">&quot;echo HelloWorld! $HOSTNAME&quot;</span>
 end
 end
 </code></pre></div>
-<h2 id='id23'>デプロイの実行</h2>
+
+<h2>デプロイの実行</h2>
 
 <p>コマンドを実行してデプロイ</p>
-<div class='highlight'><pre><code class='sh'>&gt; cap deploy:hw
-  * executing <span class='sb'>`</span>deploy:hw<span class='err'>&#39;</span>
-  * executing <span class='s2'>&quot;echo HelloWorld! $HOSTNAME&quot;</span>
-    servers: <span class='o'>[</span><span class='s2'>&quot;127.0.0.1&quot;</span><span class='o'>]</span>
-  connection failed <span class='k'>for</span>: 127.0.0.1 <span class='o'>(</span>Errno::ECONNREFUSED: 対象のコンピューターによって拒否されたため、接続できませんでした。 - connect<span class='o'>(</span>2<span class='o'>))</span>
+
+<div class="highlight"><pre><code class="sh">&gt; cap deploy:hw
+  * executing <span class="sb">`</span>deploy:hw<span class="err">&#39;</span>
+  * executing <span class="s2">&quot;echo HelloWorld! $HOSTNAME&quot;</span>
+    servers: <span class="o">[</span><span class="s2">&quot;127.0.0.1&quot;</span><span class="o">]</span>
+  connection failed <span class="k">for</span>: 127.0.0.1 <span class="o">(</span>Errno::ECONNREFUSED: 対象のコンピューターによって拒否されたため、接続できませんでした。 - connect<span class="o">(</span>2<span class="o">))</span>
 </code></pre></div>
-<p>タスクが実行される。 ローカルにSSH接続できなかったので、タスクに失敗したことを確認。</p>
+
+<p>タスクが実行される。
+ローカルにSSH接続できなかったので、タスクに失敗したことを確認。</p>
 
 <p>※Railsのプロジェクトを用意してなかったので、これは想定通りの動きなのでとりあえず今はOK</p>
 
 <p>想定の動作としては、↓のような感じ</p>
-<div class='highlight'><pre><code class='sh'>&gt; cap deploy:hw
-  * executing <span class='sb'>`</span>deploy:hw<span class='err'>&#39;</span>
-  * executing <span class='s2'>&quot;echo HelloWorld! $HOSTNAME&quot;</span>
-  servers: <span class='o'>[</span><span class='s2'>&quot;127.0.0.1&quot;</span>,<span class='s2'>&quot;127.0.0.1&quot;</span><span class='o'>]</span>
-  <span class='o'>[</span><span class='s2'>&quot;127.0.0.1&quot;</span><span class='o'>]</span> executing <span class='nb'>command</span>
-  **<span class='o'>[</span>out :: 127.0.0.1<span class='o'>]</span>HelloWorld! <span class='nb'>test</span>
-  **<span class='o'>[</span>out :: 127.0.0.1<span class='o'>]</span>HelloWorld! app
-</code></pre></div>
-<h2 id='id24'>最後に</h2>
 
-<p>なんとなく動かして、Capistranoからコマンドを実行する手前までは確認。 あとは、デプロイ対象のサーバとSSH接続して、どうコマンドを実行させるかって感じでしょうか。 もっといろいろ触ってみてよう</p>
+<div class="highlight"><pre><code class="sh">&gt; cap deploy:hw
+  * executing <span class="sb">`</span>deploy:hw<span class="err">&#39;</span>
+  * executing <span class="s2">&quot;echo HelloWorld! $HOSTNAME&quot;</span>
+  servers: <span class="o">[</span><span class="s2">&quot;127.0.0.1&quot;</span>,<span class="s2">&quot;127.0.0.1&quot;</span><span class="o">]</span>
+  <span class="o">[</span><span class="s2">&quot;127.0.0.1&quot;</span><span class="o">]</span> executing <span class="nb">command</span>
+  **<span class="o">[</span>out :: 127.0.0.1<span class="o">]</span>HelloWorld! <span class="nb">test</span>
+  **<span class="o">[</span>out :: 127.0.0.1<span class="o">]</span>HelloWorld! app
+</code></pre></div>
+
+<h2>最後に</h2>
+
+<p>なんとなく動かして、Capistranoからコマンドを実行する手前までは確認。
+あとは、デプロイ対象のサーバとSSH接続して、どうコマンドを実行させるかって感じでしょうか。
+もっといろいろ触ってみてよう</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    15 Jan 2012
+    <a href="/record/2012/01/15/setup-jekyll">Jekyllによる静的Ｗebサイト構築入門してみた</a>
+    </li>
+  
+    <li>
+    26 Jul 2012
+    <a href="/programing/2012/07/26/Optimizing-Play2-for-Database-Driven-Apps">【意訳】データベース駆動アプリのための、Play2最適化について　#play_ja</a>
+    </li>
+  
+    <li>
+    12 Aug 2012
+    <a href="/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku">【意訳】Heroku上でPlayFramework + Scalaアプリケーションを実行する</a>
+    </li>
+  
+    <li>
+    29 Feb 2012
+    <a href="/programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery&Heroku ［Play2アプリのビルド編］</a>
+    </li>
+  
+    <li>
+    18 Oct 2012
+    <a href="/report/2012/10/18/about-npm-start-and-package-json">node.jsにおける、npmとpackage.jsonという作法について</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

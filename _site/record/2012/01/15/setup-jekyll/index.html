@@ -176,101 +176,132 @@
           
         			
 	 </div>
-      <h2 id='jekylleb'><a href='http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf'>Jekyllによる静的Ｗebサイト構築入門してみた</a></h2>
+      <h2><a href="http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf">Jekyllによる静的Ｗebサイト構築入門してみた</a></h2>
 
-<p><img alt='Jekyllによる静的Ｗebサイト構築入門' src='http://capture.heartrails.com/free?http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf' /></p>
+<p><img src="http://capture.heartrails.com/free?http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf" alt="Jekyllによる静的Ｗebサイト構築入門"></p>
 
-<p><a href='http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf'>こちら</a>を参考にしました。</p>
+<p><a href="http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf">こちら</a>を参考にしました。</p>
 
 <p>いろいろ嵌りポイントがあったので、後世の遺産として書き残します。</p>
 
-<h2 id='id1'>環境構築</h2>
+<h2>環境構築</h2>
 
 <p>※ここで使った環境は、Windows7です。</p>
 
-<h3 id='ruby'>Rubyのインストール</h3>
+<h3>Rubyのインストール</h3>
 
-<p>ActiveScriptRubyを<a href='http://www.geocities.co.jp/SiliconValley-PaloAlto/9251/ruby/'>ダウンロード</a>＆インストール。 デフォルト設定でインストールしたら、↓に入った。(うろ覚え、たしかあってると思う)</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>C:<span class='se'>\P</span>roguram files<span class='o'>(</span>x86<span class='o'>)</span><span class='se'>\r</span>uby-1.8
+<p>ActiveScriptRubyを<a href="http://www.geocities.co.jp/SiliconValley-PaloAlto/9251/ruby/">ダウンロード</a>＆インストール。
+デフォルト設定でインストールしたら、↓に入った。(うろ覚え、たしかあってると思う)</p>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>C:<span class="se">\P</span>roguram files<span class="o">(</span>x86<span class="o">)</span><span class="se">\r</span>uby-1.8
 </code></pre></div>
-<h3 id='path'>Pathの設定</h3>
+
+<h3>Pathの設定</h3>
 
 <p>環境変数に↓を追加</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span><span class='s2'>&quot;C:\Proguram files(x86)\ruby-1.8\bin&quot;</span>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span><span class="s2">&quot;C:\Proguram files(x86)\ruby-1.8\bin&quot;</span>
 </code></pre></div>
-<h3 id='rubygems'>RubyGemsのセットアップ</h3>
+
+<h3>RubyGemsのセットアップ</h3>
 
 <p>gemのバージョンを確認。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>gem -v
-</code></pre></div>
-<p>バージョン1.3.6以前には対応していないので、1.3.6以前だった場合は更新する。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>gem update --sytem
-</code></pre></div>
-<h3 id='jekyll'>Jekyllのインストール</h3>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>gem install jekyll
-</code></pre></div>
-<p>インストールできるはずなんだけど、なんかエラーがでる。。 どうやら、Program files(x86)配下に書き込み権限がないから、らしい。</p>
 
-<h3 id='ruby'>再：Rubyのインストール</h3>
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem -v
+</code></pre></div>
+
+<p>バージョン1.3.6以前には対応していないので、1.3.6以前だった場合は更新する。</p>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem update --sytem
+</code></pre></div>
+
+<h3>Jekyllのインストール</h3>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem install jekyll
+</code></pre></div>
+
+<p>インストールできるはずなんだけど、なんかエラーがでる。。
+どうやら、Program files(x86)配下に書き込み権限がないから、らしい。</p>
+
+<h3>再：Rubyのインストール</h3>
 
 <p>もう一度、今度は、C:\直下にインストール。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>C:<span class='se'>\r</span>uby-1.8
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>C:<span class="se">\r</span>uby-1.8
 </code></pre></div>
-<h3 id='path'>再：Pathの設定</h3>
+
+<h3>再：Pathの設定</h3>
 
 <p>Rubyのパスを↓に変更する。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>C:<span class='se'>\r</span>uby-1.8
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>C:<span class="se">\r</span>uby-1.8
 </code></pre></div>
-<h3 id='jekyll'>再：Jekyllのインストール</h3>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>gem install jekyll
+
+<h3>再：Jekyllのインストール</h3>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem install jekyll
 </code></pre></div>
-<p>で、インストールできるはずなんだけど、なんかエラーがでる。。 どうやらWindows環境だと、MAKE無くてエラーになってるらしい。 Mac、Linux環境だとmakeはデフォルトはいっているので、Windows環境の嵌りポイント。</p>
 
-<h3 id='nmake'>NMAKEのインストール</h3>
+<p>で、インストールできるはずなんだけど、なんかエラーがでる。。
+どうやらWindows環境だと、MAKE無くてエラーになってるらしい。
+Mac、Linux環境だとmakeはデフォルトはいっているので、Windows環境の嵌りポイント。</p>
 
-<p>こちらを参考にWindows環境用のMAKE：NMAKEのインストールを試みる。 <a href='http://d.hatena.ne.jp/perlcodesample/20081025/1225035398'>http://d.hatena.ne.jp/perlcodesample/20081025/1225035398</a></p>
+<h3>NMAKEのインストール</h3>
 
-<p><img alt='http://d.hatena.ne.jp/perlcodesample/20081025/1225035398' src='http://capture.heartrails.com/free?http://d.hatena.ne.jp/perlcodesample/20081025/1225035398' /></p>
+<p>こちらを参考にWindows環境用のMAKE：NMAKEのインストールを試みる。
+<a href="http://d.hatena.ne.jp/perlcodesample/20081025/1225035398">http://d.hatena.ne.jp/perlcodesample/20081025/1225035398</a></p>
+
+<p><img src="http://capture.heartrails.com/free?http://d.hatena.ne.jp/perlcodesample/20081025/1225035398" alt="http://d.hatena.ne.jp/perlcodesample/20081025/1225035398"></p>
 
 <p>Nake15.exeをダウンロード＆インストールしようとしたら、</p>
 
-<p><img alt='nmake error diag' src='/img/nmake15-error.jpg' /></p>
+<p><img src="/img/nmake15-error.jpg" alt="nmake error diag"></p>
 
-<p>手持ちの環境では、このNMAKEは使えないらしい。 別の方法を探す。</p>
+<p>手持ちの環境では、このNMAKEは使えないらしい。
+別の方法を探す。</p>
 
-<h3 id='visualstudio'>VisualStudioのインストール</h3>
+<h3>VisualStudioのインストール</h3>
 
 <p>VC++ CompilerにNMAKEが同梱されているようなので、VisualStudioをインストール。</p>
 
-<p><a href='http://www.microsoft.com/japan/msdn/vstudio/express/'>VisualStudio 2010 Express</a></p>
+<p><a href="http://www.microsoft.com/japan/msdn/vstudio/express/">VisualStudio 2010 Express</a></p>
 
-<p><img alt='VisualStudio 2010 Express' src='http://capture.heartrails.com/free?http://www.microsoft.com/japan/msdn/vstudio/express/' /></p>
+<p><img src="http://capture.heartrails.com/free?http://www.microsoft.com/japan/msdn/vstudio/express/" alt="VisualStudio 2010 Express"></p>
 
-<p>Microsoft Visual C++ 2010 Expressをインストール。 インストール後に、再度Jekyllインストールしてみてもやっぱりダメ。</p>
-<div class='highlight'><pre><code class='sh'>NMAKE : fatal error U1077: <span class='s1'>&#39;&quot;～\bin\cl.EXE&quot;&#39;</span> : リターン コード <span class='s1'>&#39;0xc0000135&#39;</span>
+<p>Microsoft Visual C++ 2010 Expressをインストール。
+インストール後に、再度Jekyllインストールしてみてもやっぱりダメ。</p>
+
+<div class="highlight"><pre><code class="sh">NMAKE : fatal error U1077: <span class="s1">&#39;&quot;～\bin\cl.EXE&quot;&#39;</span> : リターン コード <span class="s1">&#39;0xc0000135&#39;</span>
 </code></pre></div>
+
 <p>まだ何か足りないっぽい。</p>
 
-<h3 id='id2'>環境変数の設定</h3>
+<h3>環境変数の設定</h3>
 
 <p>環境変数を設定してやる必要があるらしい。</p>
 
-<p><a href='http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake'>http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake</a></p>
+<p><a href="http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake">http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake</a></p>
 
-<p><img alt='http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake' src='http://capture.heartrails.com/free?http://www7.atwiki.jp/smashonline/?cmd=word&amp;amp;word=cl.exe%200xc0000135&amp;amp;type=normal&amp;amp;page=nmake' /></p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>C:<span class='se'>\P</span>rogram Files <span class='o'>(</span>x86<span class='o'>)</span><span class='se'>\M</span>icrosoft Visual Studio 10.0<span class='se'>\V</span>C<span class='se'>\b</span>in<span class='se'>\v</span>cvars32.bat
+<p><img src="http://capture.heartrails.com/free?http://www7.atwiki.jp/smashonline/?cmd=word&amp;amp;word=cl.exe%200xc0000135&amp;amp;type=normal&amp;amp;page=nmake" alt="http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake"></p>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>C:<span class="se">\P</span>rogram Files <span class="o">(</span>x86<span class="o">)</span><span class="se">\M</span>icrosoft Visual Studio 10.0<span class="se">\V</span>C<span class="se">\b</span>in<span class="se">\v</span>cvars32.bat
 </code></pre></div>
-<h3 id='jekyll'>再：Jekyllのインストール</h3>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>gem install jekyll
+
+<h3>再：Jekyllのインストール</h3>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem install jekyll
 </code></pre></div>
+
 <p>なんとかJekyllのインストールに成功。</p>
 
-<h2 id='jekyll'>Jekyllの実行</h2>
+<h2>Jekyllの実行</h2>
 
 <p>ローカルのgithub:pagesのルートディレクトリ配下に移動してJekyllを実行。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>jekyll --server --auto
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>jekyll --server --auto
 </code></pre></div>
-<h2 id='id3'>ブラウザで表示</h2>
+
+<h2>ブラウザで表示</h2>
 
 <p>デフォルトのポートが4000なので、</p>
 
@@ -278,12 +309,43 @@
 
 <p>にアクセスする。</p>
 
-<h2 id='id4'>最後に</h2>
+<h2>最後に</h2>
 
-<p>時間がたってからこの記事を書いたので、一部詳細があってないところもあるだろうけれど 大体こんな流れでした。</p>
+<p>時間がたってからこの記事を書いたので、一部詳細があってないところもあるだろうけれど
+大体こんな流れでした。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    01 Feb 2012
+    <a href="/ci/2012/02/01/setup-capistrano">Capistranoをやってみよう</a>
+    </li>
+  
+    <li>
+    12 Aug 2012
+    <a href="/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku">【意訳】Heroku上でPlayFramework + Scalaアプリケーションを実行する</a>
+    </li>
+  
+    <li>
+    29 Feb 2012
+    <a href="/programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery&Heroku ［Play2アプリのビルド編］</a>
+    </li>
+  
+    <li>
+    04 Mar 2012
+    <a href="/programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery＆Heroku［Herokuデプロイ編］</a>
+    </li>
+  
+    <li>
+    26 Jul 2012
+    <a href="/programing/2012/07/26/Optimizing-Play2-for-Database-Driven-Apps">【意訳】データベース駆動アプリのための、Play2最適化について　#play_ja</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

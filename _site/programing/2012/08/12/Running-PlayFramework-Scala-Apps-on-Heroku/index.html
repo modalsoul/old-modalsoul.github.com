@@ -182,107 +182,187 @@
           
         			
 	 </div>
-      <p>誤訳・誤植等ありましたら、<a href='https://twitter.com/modal_soul'>@modal_soulまで</a>リプライいただけるとありがたいです。</p>
+      <p>誤訳・誤植等ありましたら、<a href="https://twitter.com/modal_soul">@modal_soulまで</a>リプライいただけるとありがたいです。</p>
+
 <hr />
-<p><a href='http://scala.playframework.org/'>ScalaでPlay Frameworkアプリを構築</a>するのが最近流行っているようです。理由としては、これまでのJVMベースのWebアプリよりも簡単に構築、デプロイできることです。ScalaでPlayアプリの構築とHerokuへのデプロイをやってみましょう。</p>
+
+<p><a href="http://scala.playframework.org/">ScalaでPlay Frameworkアプリを構築</a>するのが最近流行っているようです。理由としては、これまでのJVMベースのWebアプリよりも簡単に構築、デプロイできることです。ScalaでPlayアプリの構築とHerokuへのデプロイをやってみましょう。</p>
+
 <hr />
-<p><em>Step1) <a href='http://www.playframework.org/download'>Play Framework</a>をインストールします（バージョン1.2.3以上をインストールしてください)。</em></p>
+
+<p><em>Step1) <a href="http://www.playframework.org/download">Play Framework</a>をインストールします（バージョン1.2.3以上をインストールしてください)。</em></p>
+
 <hr />
+
 <p><em>Step2) Play Scalaモジュールをインストールします。</em></p>
-<div class='highlight'><pre><code class='sh'>play install scala
-</code></pre></div><hr />
-<p><em>Step3) ScalaサポートしたPlayアプリを作成します。</em></p>
-<div class='highlight'><pre><code class='sh'>play new playwithscala --with scala
-</code></pre></div><hr />
-<p><em>Step4) アプリケーションをスタートします。</em></p>
-<div class='highlight'><pre><code class='sh'><span class='nb'>cd </span>playwithscala
-play run
-</code></pre></div><hr />
-<p><em>Step5) ブラウザでアプリケーションを開きます。</em></p>
-<div class='highlight'><pre><code class='sh'>http://localhost:9000
+
+<div class="highlight"><pre><code class="sh">play install scala
 </code></pre></div>
-<p>とても簡単ですね。Heroku上にデプロイする前に、カスタムmodel, view, controllerを追加してもう少し味付けしてみましょう。</p>
+
 <hr />
+
+<p><em>Step3) ScalaサポートしたPlayアプリを作成します。</em></p>
+
+<div class="highlight"><pre><code class="sh">play new playwithscala --with scala
+</code></pre></div>
+
+<hr />
+
+<p><em>Step4) アプリケーションをスタートします。</em></p>
+
+<div class="highlight"><pre><code class="sh"><span class="nb">cd </span>playwithscala
+play run
+</code></pre></div>
+
+<hr />
+
+<p><em>Step5) ブラウザでアプリケーションを開きます。</em></p>
+
+<div class="highlight"><pre><code class="sh">http://localhost:9000
+</code></pre></div>
+
+<p>とても簡単ですね。Heroku上にデプロイする前に、カスタムmodel, view, controllerを追加してもう少し味付けしてみましょう。</p>
+
+<hr />
+
 <p><em>Step1) app/models/Widget.scalaを新規作成して、以下を記述します。</em></p>
-<div class='highlight'><pre><code class='sh'>package models
+
+<div class="highlight"><pre><code class="sh">package models
  
-<span class='k'>case </span>class Widget<span class='o'>(</span>id: Int, name: String<span class='o'>)</span>
-</code></pre></div><hr />
+<span class="k">case </span>class Widget<span class="o">(</span>id: Int, name: String<span class="o">)</span>
+</code></pre></div>
+
+<hr />
+
 <p><em>Step2) app/views/Widget/list.scala.htmlファイルを新規作成して、以下を記述します。</em></p>
-<div class='highlight'><pre><code class='sh'> ＠<span class='o'>(</span>widgets: Vector<span class='o'>[</span>models.Widget<span class='o'>])</span>
+
+<div class="highlight"><pre><code class="sh"> ＠<span class="o">(</span>widgets: Vector<span class="o">[</span>models.Widget<span class="o">])</span>
  
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;body&gt;
-        @widgets.map <span class='o'>{</span> <span class='nv'>widget</span> <span class='o'>=</span>&gt; 
-            Widget @widget.id <span class='o'>=</span> @widget.name&lt;/br&gt;
-        <span class='o'>}</span>
+        @widgets.map <span class="o">{</span> <span class="nv">widget</span> <span class="o">=</span>&gt; 
+            Widget @widget.id <span class="o">=</span> @widget.name&lt;/br&gt;
+        <span class="o">}</span>
     &lt;/body&gt;
 &lt;/html&gt;
-</code></pre></div><hr />
+</code></pre></div>
+
+<hr />
+
 <p><em>Step3) app/controllers/WidgetController.scalaを新規作成して、以下を記述します。</em></p>
-<div class='highlight'><pre><code class='sh'>package controllers
+
+<div class="highlight"><pre><code class="sh">package controllers
  
 import play._
 import play.mvc._
  
-object WidgetController extends Controller <span class='o'>{</span>
+object WidgetController extends Controller <span class="o">{</span>
  
     import views.Widget._
     import models.Widget
  
-    def <span class='nv'>list</span> <span class='o'>=</span> <span class='o'>{</span>
-        val <span class='nv'>widget1</span> <span class='o'>=</span> Widget<span class='o'>(</span>1, <span class='s2'>&quot;The first Widget&quot;</span><span class='o'>)</span>
-        val <span class='nv'>widget2</span> <span class='o'>=</span> Widget<span class='o'>(</span>2, <span class='s2'>&quot;A really special Widget&quot;</span><span class='o'>)</span>
-        val <span class='nv'>widget3</span> <span class='o'>=</span> Widget<span class='o'>(</span>3, <span class='s2'>&quot;Just another Widget&quot;</span><span class='o'>)</span>
-        html.list<span class='o'>(</span>Vector<span class='o'>(</span>widget1, widget2, widget3<span class='o'>))</span>
-    <span class='o'>}</span>
+    def <span class="nv">list</span> <span class="o">=</span> <span class="o">{</span>
+        val <span class="nv">widget1</span> <span class="o">=</span> Widget<span class="o">(</span>1, <span class="s2">&quot;The first Widget&quot;</span><span class="o">)</span>
+        val <span class="nv">widget2</span> <span class="o">=</span> Widget<span class="o">(</span>2, <span class="s2">&quot;A really special Widget&quot;</span><span class="o">)</span>
+        val <span class="nv">widget3</span> <span class="o">=</span> Widget<span class="o">(</span>3, <span class="s2">&quot;Just another Widget&quot;</span><span class="o">)</span>
+        html.list<span class="o">(</span>Vector<span class="o">(</span>widget1, widget2, widget3<span class="o">))</span>
+    <span class="o">}</span>
  
-<span class='o'>}</span>
+<span class="o">}</span>
 </code></pre></div>
+
 <p><em>Step4) 以下のURLを表示して、動きを確認しましょう。</em></p>
-<div class='highlight'><pre><code class='sh'>http://localhost:9000/WidgetController/list
+
+<div class="highlight"><pre><code class="sh">http://localhost:9000/WidgetController/list
 </code></pre></div>
+
 <p>動きましたね。それにサーバーのリロードも不要でした。URLを少しきれいにしましょう。conf/routeファイルを修正して、”Application.index”を”WidgetController.list”へ変更します。</p>
-<div class='highlight'><pre><code class='sh'>GET     /                                       WidgetController.list
+
+<div class="highlight"><pre><code class="sh">GET     /                                       WidgetController.list
 </code></pre></div>
+
 <p>簡単にできましたが、ついでに友達にも見せたいですね。Herokuへデプロイしましょう。</p>
+
 <hr />
+
 <p><em>Step1) Linux, MacもしくはWindowsに、Herokuコマンドクライアントをインストールします。</em></p>
 
 <p><em>Step2) コマンドラインからHerokuへログインします。</em></p>
-<div class='highlight'><pre><code class='sh'>heroku auth:login
+
+<div class="highlight"><pre><code class="sh">heroku auth:login
 </code></pre></div>
+
 <p><em>Step3) Herokuは、アプリケーションのデプロイにgitを使うので、.gitignoreファイルを作成して、以下を記述します。</em></p>
-<div class='highlight'><pre><code class='sh'>/modules
+
+<div class="highlight"><pre><code class="sh">/modules
 /tmp
 </code></pre></div>
+
 <p><em>Step4) gitリポジトリを作成して、ファイルを追加し、コミットします。</em></p>
-<div class='highlight'><pre><code class='sh'>git init
+
+<div class="highlight"><pre><code class="sh">git init
 git add .
 git commit -m init
 </code></pre></div>
+
 <p><em>Step5) Herokuにアプリケーションを新規作成します。</em></p>
-<div class='highlight'><pre><code class='sh'>heroku create -s cedar
+
+<div class="highlight"><pre><code class="sh">heroku create -s cedar
 </code></pre></div>
+
 <p>これで、Heroku上に新しいアプリケーションを規定し、アプリケーションへのランダムな名前/のURLを割り当てます。</p>
 
 <p><em>Step6) アプリケーションをデプロイします。</em></p>
-<div class='highlight'><pre><code class='sh'>git push heroku master
+
+<div class="highlight"><pre><code class="sh">git push heroku master
 </code></pre></div>
+
 <p>アプリケーションがアセンブルされ、Heroku上にデプロイされます。</p>
 
 <p><em>Step7) ブラウザでアプリケーションを開きます。</em></p>
-<div class='highlight'><pre><code class='sh'>heroku open
+
+<div class="highlight"><pre><code class="sh">heroku open
 </code></pre></div>
+
 <p>ジャジャーン！これでPlay + Scala アプリがクラウド上で実行されました。</p>
 
 <p>JavaOneで、これをBill Venners(ScalaTestの作者)に見せたら、scalatest.orgのWebサイト（Play + Scalaのアプリ)をHerokuへ移行してくれました。クール！</p>
 
 <p>何か質問あれば、教えてください。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    29 Feb 2012
+    <a href="/programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery&Heroku ［Play2アプリのビルド編］</a>
+    </li>
+  
+    <li>
+    04 Mar 2012
+    <a href="/programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery＆Heroku［Herokuデプロイ編］</a>
+    </li>
+  
+    <li>
+    15 Jan 2012
+    <a href="/record/2012/01/15/setup-jekyll">Jekyllによる静的Ｗebサイト構築入門してみた</a>
+    </li>
+  
+    <li>
+    26 Jul 2012
+    <a href="/programing/2012/07/26/Optimizing-Play2-for-Database-Driven-Apps">【意訳】データベース駆動アプリのための、Play2最適化について　#play_ja</a>
+    </li>
+  
+    <li>
+    01 Feb 2012
+    <a href="/ci/2012/02/01/setup-capistrano">Capistranoをやってみよう</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

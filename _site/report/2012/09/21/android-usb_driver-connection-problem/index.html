@@ -182,41 +182,80 @@
           
         			
 	 </div>
-      <hr />
-<h2 id='id91'>現象について</h2>
+      <hr>
+
+<h2>現象について</h2>
 
 <p>Android端末をUSBケーブルでつないでデバッグ接続しても、EclipseのDDMSで認識されませんでした。</p>
 
 <p>PCは、Core2世代のMac book air</p>
 
 <p>Android端末は、docomo版Sony EricssonのXperia arc</p>
+
 <hr />
-<h2 id='id92'>原因</h2>
+
+<h2>原因</h2>
 
 <p>端的に言うと、MBAにインストールされていたEasyTetherのドライバと競合していた為でした。</p>
-<a href='https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja'>
-<img height='200' alt='https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja' title='Now Capturing...' src='http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja' width='300' />
-</a><hr />
-<h2 id='id93'>対処法</h2>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja">
+<img title="Now Capturing..." src="http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja" alt="https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja" width="300" height="200" />
+</a></p>
+
+<hr />
+
+<h2>対処法</h2>
 
 <p>EasyTetherのドライバを削除することで、DDMSでAndroid端末が認識されない問題は解消できます。</p>
 
-<p><strong>・「/System/Library/Extentions」をFinderで開き、「EasyTetherUSBEthernet.kext」を削除する</strong></p>
+<p>*<em>・「/System/Library/Extentions」をFinderで開き、「EasyTetherUSBEthernet.kext」を削除する *</em></p>
 
 <p>競合そのものを解消する方法ではないので、EasyTetherが使えなくなりますが、Android2.3以降？の端末では、OSの機能としてテザリングがサポートされているようなので影響は少ないかな、と。</p>
 
-<p><a href='http://gadget-shot.com/news/5757'>こちら</a>の記事を参考しました。</p>
+<p><a href="http://gadget-shot.com/news/5757">こちら</a>の記事を参考しました。</p>
+
 <hr />
-<h2 id='id94'>余談ですが、、</h2>
 
-<p>このMBA、Ruby界隈では有名なJoJoエバンジェリスト”<a href='http://twitter.com/joker1007'>@joker1007</a>”さんに、２ヶ月ほど前に譲ってもらったものです。このMBAでAndroidアプリの開発をするために環境を準備していた訳です。</p>
+<h2>余談ですが、、</h2>
 
-<p><img alt='my MBA' src='http://farm9.staticflickr.com/8462/8008426062_ecca73f4dd.jpg' /></p>
+<p>このMBA、Ruby界隈では有名なJoJoエバンジェリスト”<a href="http://twitter.com/joker1007">@joker1007</a>”さんに、２ヶ月ほど前に譲ってもらったものです。このMBAでAndroidアプリの開発をするために環境を準備していた訳です。</p>
 
-<p>ちなみにこのMBAは、<a href='http://twitter.com/joker1007'>@joker1007</a>さん仕様のためステッカーはプリインです。</p>
+<p><img src="http://farm9.staticflickr.com/8462/8008426062_ecca73f4dd.jpg" alt="my MBA"></p>
+
+<p>ちなみにこのMBAは、<a href="http://twitter.com/joker1007">@joker1007</a>さん仕様のためステッカーはプリインです。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    29 Oct 2012
+    <a href="/report/2012/10/29/node-express-access-log-rotation">node.js+express+log4jsでのアクセスログローテーション</a>
+    </li>
+  
+    <li>
+    17 Sep 2012
+    <a href="/report/2012/09/17/xp-festival">XP祭り2012～ソーシャルチェンジ～にスタッフ参加してきました　#xpjug</a>
+    </li>
+  
+    <li>
+    21 Feb 2012
+    <a href="/test/2012/02/21/jstd-with-play2">【意訳】Play Framework 2.0とJsTestDriverによるJavaScriptテスト。</a>
+    </li>
+  
+    <li>
+    20 May 2012
+    <a href="/test/programing/2012/05/20/android-ui-test-InstrumentationTestCase">AndroidアプリのUIテスト-InstrumentationTestCase編-</a>
+    </li>
+  
+    <li>
+    02 Apr 2012
+    <a href="/programing/2012/04/02/start-android-application-architecture">Androidプログラミング入門してみた-アーキテクチャ編-</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

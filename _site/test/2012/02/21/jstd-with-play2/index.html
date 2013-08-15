@@ -176,39 +176,81 @@
           
         			
 	 </div>
-      <h2 id='testing_javascript_with_play_framework_20_and_jstestdriver'>【意訳】Testing javascript with Play Framework 2.0 and JsTestDriver</h2>
+      <h2>【意訳】Testing javascript with Play Framework 2.0 and JsTestDriver</h2>
 
-<p><img alt='Testing javascript with Play Framework 2.0 and JsTestDriver' src='http://capture.heartrails.com/300x200/cool?http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html' /></p>
+<p><img src="http://capture.heartrails.com/300x200/cool?http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html" alt="Testing javascript with Play Framework 2.0 and JsTestDriver"></p>
 
-<p><a href='http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html'>Testing javascript with Play Framework 2.0 and JsTestDriver</a>を適当翻訳でご紹介します。</p>
+<p><a href="http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html">Testing javascript with Play Framework 2.0 and JsTestDriver</a>を適当翻訳でご紹介します。</p>
 
-<p>元記事は<a href='http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html'>こちら</a></p>
+<p>元記事は<a href="http://www.eishay.com/2012/02/testing-javascript-with-play-framework.html">こちら</a></p>
+
 <hr />
+
 <p>qwallet.comでは、バックエンドにScala on Play2.0を使った広大なjavascriptアプリケーションを構築しています。</p>
 
 <p>Scalaの開発にIntelliJ IDEAを使うようになってからは、JavaScriptでも同じように使っています。</p>
 
 <p>これにより、IntelliJとJsTestDriverの統合による恩恵を受けています。</p>
 
-<p>JavaScriptアプリでは、常に3つのブラウザを対象にテストをしています。 <img height='80%' src='http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg' width='80%' /></p>
+<p>JavaScriptアプリでは、常に3つのブラウザを対象にテストをしています。
+<img src="http://3.bp.blogspot.com/-IYdsLWKTgmA/Tzy0yd1OVUI/AAAAAAAABK4/2u5mI8xOwu4/s1600/server.jpg" width="80%" height="80%"></p>
 
-<p>テストコンソールにはテスト結果と、ブラウザからフェッチされたコンソール出力を確認できます。 <img height='80%' src='http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg' width='80%' /></p>
+<p>テストコンソールにはテスト結果と、ブラウザからフェッチされたコンソール出力を確認できます。
+<img src="http://4.bp.blogspot.com/-CDyQpVkCRhU/Tzy1FNhDTiI/AAAAAAAABLA/ZYSJTpS4iXw/s1600/test_rez.jpg" width="80%" height="80%"></p>
 
-<p>上の試験例では、FireFox, Chromeのテストは通っていますが、Safariでは失敗しています。 サンプルでは３つのテストケースがあり、拡張した1つは2つのテストメソッドを持っています。 もしエラーが発生した場合、スタックトレースがクリッカブルになり、IntelliJはエラーの行右側に飛びます。</p>
+<p>上の試験例では、FireFox, Chromeのテストは通っていますが、Safariでは失敗しています。
+サンプルでは３つのテストケースがあり、拡張した1つは2つのテストメソッドを持っています。
+もしエラーが発生した場合、スタックトレースがクリッカブルになり、IntelliJはエラーの行右側に飛びます。</p>
 
 <p>テストはとても速いですが、この小さなサブセットのためにChromeでは6msかかっていますが、まだ改善の余地があります。</p>
 
-<p>Play2.0の親切なところは、JavaScriptファイルの自動コンパイルです。 JsTestDriverのdevモードでは、ライブラリファイルとテストケースをブラウザに送り、アプリケーションファイルはPlay2.0アプリケーションによって送られます。 Playは、ファイルの変更を検知して自動でリコンパイルします。 テストを書くときに見逃しているかもしれないものをコンパイラがキャッチしてくれ、結果としてカバレッジが向上します。 <script src='https://gist.github.com/1843026.js?file=gistfile1.txt'>
+<p>Play2.0の親切なところは、JavaScriptファイルの自動コンパイルです。
+JsTestDriverのdevモードでは、ライブラリファイルとテストケースをブラウザに送り、アプリケーションファイルはPlay2.0アプリケーションによって送られます。
+Playは、ファイルの変更を検知して自動でリコンパイルします。
+テストを書くときに見逃しているかもしれないものをコンパイラがキャッチしてくれ、結果としてカバレッジが向上します。
+<script src="https://gist.github.com/1843026.js?file=gistfile1.txt">
 </script></p>
 
-<p>CIモードでは、JavaScriptファイルは1度コンパイルされておりPlayを経由して送られる必要がない。 この方法はとても早く、Playがバックグラウンドで実行されている必要性を低減してくれます。</p>
+<p>CIモードでは、JavaScriptファイルは1度コンパイルされておりPlayを経由して送られる必要がない。
+この方法はとても早く、Playがバックグラウンドで実行されている必要性を低減してくれます。</p>
 
-<p>qwallet.comの継続的デプロイの運用では、アプリケーションの全ての部分をテストします。 JsTestDriverはクロージャーコンパイラーとバンドルされ、fast devモードユニットテストとテスティングストラテジーのコンポーネントとして提供されています。</p>
+<p>qwallet.comの継続的デプロイの運用では、アプリケーションの全ての部分をテストします。
+JsTestDriverはクロージャーコンパイラーとバンドルされ、fast devモードユニットテストとテスティングストラテジーのコンポーネントとして提供されています。</p>
 
 <p>ところで、もし興味があったら、jobs@qwalletにメールを送ってくれ。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    26 Feb 2012
+    <a href="/report/test/2012/02/26/jstd-handson">横浜JSTDDハンズオンに参加しました。#JSTDD</a>
+    </li>
+  
+    <li>
+    20 May 2012
+    <a href="/test/programing/2012/05/20/android-ui-test-InstrumentationTestCase">AndroidアプリのUIテスト-InstrumentationTestCase編-</a>
+    </li>
+  
+    <li>
+    14 Mar 2012
+    <a href="/report/2012/03/14/AgileUx-NYC-2012-Redux-in-Tokyo">AgileUX NYC 2012 Redux in Tokyo(#AgileUXNYC_ja)に参加しました。</a>
+    </li>
+  
+    <li>
+    29 Feb 2012
+    <a href="/programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery&Heroku ［Play2アプリのビルド編］</a>
+    </li>
+  
+    <li>
+    17 Feb 2012
+    <a href="/report/2012/02/17/developers-summit-2012">Developers Summit 2012 2日目ツイートまとめ。#devsumi</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

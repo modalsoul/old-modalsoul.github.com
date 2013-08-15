@@ -182,14 +182,17 @@
           
         			
 	 </div>
-      <hr />
-<h2 id='id95'>謝辞</h2>
+      <hr>
+
+<h2>謝辞</h2>
 
 <p>今回、node.jsをはじめるに辺りこちらのサイトを参考にさせていただきました。感謝です。</p>
 
-<p><img alt='node.js ハンズオン資料' src='http://capture.heartrails.com/200x150/cool?http://dl.dropbox.com/u/219436/node.js/handson/build/html/index.html' /></p>
+<p><img src="http://capture.heartrails.com/200x150/cool?http://dl.dropbox.com/u/219436/node.js/handson/build/html/index.html" alt="node.js ハンズオン資料"></p>
+
 <hr />
-<h2 id='id96'>インストール</h2>
+
+<h2>インストール</h2>
 
 <p>まずは、環境の準備です。</p>
 
@@ -199,7 +202,7 @@
 
 <p>下記サイトから最新の安定版をダウンロード。2012/10/10時点の最新の安定版は、v0.8.11</p>
 
-<p><img alt='v0.8のインストーラダウンロード' src='http://capture.heartrails.com/200x150/cool?http://nodejs.jp/nodejs.org_ja/docs/v0.8/' /></p>
+<p><img src="http://capture.heartrails.com/200x150/cool?http://nodejs.jp/nodejs.org_ja/docs/v0.8/" alt="v0.8のインストーラダウンロード"></p>
 
 <p><em>2. インストーラの起動</em></p>
 
@@ -208,55 +211,98 @@
 <p><em>3. インストールの確認</em></p>
 
 <p>コマンドラインからインストールしたnode.jsのバージョンを確認します。v0.8.11の表示が確認できます。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>node -v
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>node -v
 v0.8.11
 </code></pre></div>
-<p><em>4. npmのインストール</em> npmは、nodeのライブラリパッケージ専用のパッケージ管理ツールです。 インストーラからインストールすると、併せてnpmもインストールされます。</p>
 
-<h2 id='hello_world'>Hello World</h2>
+<p><em>4. npmのインストール</em>
+npmは、nodeのライブラリパッケージ専用のパッケージ管理ツールです。
+インストーラからインストールすると、併せてnpmもインストールされます。</p>
 
-<p>helloworld.jsを作成します。 <script src='https://gist.github.com/3868393.js'> 
+<h2>Hello World</h2>
+
+<p>helloworld.jsを作成します。
+<script src="https://gist.github.com/3868393.js"> 
 </script></p>
 
 <p>実行すると、こんな感じ。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>node helloworld.js
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>node helloworld.js
 Hello node.js
 </code></pre></div>
-<h2 id='io'>非同期IOメソッドを使う</h2>
+
+<h2>非同期IOメソッドを使う</h2>
 
 <p>ハンズオンの内容を写経してみます。</p>
 
-<h3 id='1'>1ファイルのダウンロード</h3>
-<script src='https://gist.github.com/3868441.js'> 
+<h3>1ファイルのダウンロード</h3>
+
+<script src="https://gist.github.com/3868441.js"> 
 </script>
+
 <p>これを実行すると、こんな感じ。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>node download1.js http://www.google.co.jp/
-http.createClient is deprecated. Use <span class='sb'>`</span>http.request<span class='sb'>`</span> instead.
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>node download1.js http://www.google.co.jp/
+http.createClient is deprecated. Use <span class="sb">`</span>http.request<span class="sb">`</span> instead.
 200
 date:Wed, 10 Oct 2012 21:17:40 GMT
 expires:-1
-cache-control:private, max-age<span class='o'>=</span>0
-content-type:text/html; <span class='nv'>charset</span><span class='o'>=</span>Shift_JIS
-<span class='nb'>set</span>-cookie:PREF<span class='o'>=</span><span class='nv'>ID</span><span class='o'>=</span>e0429b2fdb66b6f5:FF<span class='o'>=</span>0:TM<span class='o'>=</span>1349903860:LM<span class='o'>=</span>1349903860:S<span class='o'>=</span>RztyFRMdq8JPKHw1; <span class='nv'>expires</span><span class='o'>=</span>Fri, 10-Oct-2014 21:17:40 GMT; <span class='nv'>path</span><span class='o'>=</span>/; <span class='nv'>domain</span><span class='o'>=</span>.google.co.jp,NID<span class='o'>=</span><span class='nv'>64</span><span class='o'>=</span>bF0HOrYnQ_hHT1a9O-_qkflB9ZOIv34SmPnV4YeXbEbhqCQGR0wjpKvjFPtnQ0psZzJQPW3qZvP7uaHjxg_ajr0--fMSSVCFvOzHFe_O6Eqc2wCs-VZqV-7L3-1PnQ9V; <span class='nv'>expires</span><span class='o'>=</span>Thu, 11-Apr-2013 21:17:40 GMT; <span class='nv'>path</span><span class='o'>=</span>/; <span class='nv'>domain</span><span class='o'>=</span>.google.co.jp; HttpOnly
-p3p:CP<span class='o'>=</span><span class='s2'>&quot;This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=151657 for more info.&quot;</span>
+cache-control:private, max-age<span class="o">=</span>0
+content-type:text/html; <span class="nv">charset</span><span class="o">=</span>Shift_JIS
+<span class="nb">set</span>-cookie:PREF<span class="o">=</span><span class="nv">ID</span><span class="o">=</span>e0429b2fdb66b6f5:FF<span class="o">=</span>0:TM<span class="o">=</span>1349903860:LM<span class="o">=</span>1349903860:S<span class="o">=</span>RztyFRMdq8JPKHw1; <span class="nv">expires</span><span class="o">=</span>Fri, 10-Oct-2014 21:17:40 GMT; <span class="nv">path</span><span class="o">=</span>/; <span class="nv">domain</span><span class="o">=</span>.google.co.jp,NID<span class="o">=</span><span class="nv">64</span><span class="o">=</span>bF0HOrYnQ_hHT1a9O-_qkflB9ZOIv34SmPnV4YeXbEbhqCQGR0wjpKvjFPtnQ0psZzJQPW3qZvP7uaHjxg_ajr0--fMSSVCFvOzHFe_O6Eqc2wCs-VZqV-7L3-1PnQ9V; <span class="nv">expires</span><span class="o">=</span>Thu, 11-Apr-2013 21:17:40 GMT; <span class="nv">path</span><span class="o">=</span>/; <span class="nv">domain</span><span class="o">=</span>.google.co.jp; HttpOnly
+p3p:CP<span class="o">=</span><span class="s2">&quot;This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&amp;answer=151657 for more info.&quot;</span>
 server:gws
-x-xss-protection:1; <span class='nv'>mode</span><span class='o'>=</span>block
+x-xss-protection:1; <span class="nv">mode</span><span class="o">=</span>block
 x-frame-options:SAMEORIGIN
 transfer-encoding:chunked
 
 ・・・
 </code></pre></div>
+
 <p>実行結果の1行目に何やらメッセージが出力されていますが、リファレンスで確認するとhttp.createClientの使用は非推奨とのことでした。</p>
 
-<p><img alt='http.createClientは非推奨らしい' src='http://capture.heartrails.com/200x150/cool?http://nodejs.jp/nodejs.org_ja/docs/v0.8/api/http.html#http_http_createclient_port_host' /></p>
+<p><img src="http://capture.heartrails.com/200x150/cool?http://nodejs.jp/nodejs.org_ja/docs/v0.8/api/http.html#http_http_createclient_port_host" alt="http.createClientは非推奨らしい"></p>
 
 <p>http.request()で書き直したものがこちら。</p>
-<script src='https://gist.github.com/3868625.js'> 
+
+<script src="https://gist.github.com/3868625.js"> 
 </script>
+
 <p>同じように動きます。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    18 Oct 2012
+    <a href="/report/2012/10/18/about-npm-start-and-package-json">node.jsにおける、npmとpackage.jsonという作法について</a>
+    </li>
+  
+    <li>
+    10 Aug 2012
+    <a href="/programing/2012/08/10/Sign-in-with-Facebook-Scala">【意訳】Scala on LiftでのFacebookサインイン</a>
+    </li>
+  
+    <li>
+    15 Jan 2012
+    <a href="/record/2012/01/15/setup-jekyll">Jekyllによる静的Ｗebサイト構築入門してみた</a>
+    </li>
+  
+    <li>
+    17 Feb 2012
+    <a href="/report/2012/02/17/developers-summit-2012">Developers Summit 2012 2日目ツイートまとめ。#devsumi</a>
+    </li>
+  
+    <li>
+    01 Feb 2012
+    <a href="/ci/2012/02/01/setup-capistrano">Capistranoをやってみよう</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

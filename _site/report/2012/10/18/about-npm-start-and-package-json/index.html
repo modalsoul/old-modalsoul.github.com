@@ -182,52 +182,96 @@
           
         			
 	 </div>
-      <hr />
-<h2 id='id98'>謝辞</h2>
+      <hr>
+
+<h2>謝辞</h2>
 
 <p>以下の記事を参考にさせていただきました。感謝です。</p>
 
-<p><em>・ <a href='http://kysnm.hatenablog.com/entry/20111225/1324828008'>npm についてまとめてみる - need something more&#8230;</a></em></p>
+<p><em>・ <a href="http://kysnm.hatenablog.com/entry/20111225/1324828008">npm についてまとめてみる - need something more...</a></em></p>
 
-<p><em>・ <a href='http://d.hatena.ne.jp/sugyan/20110909/1315575343'>npm configで設定値を管理 - すぎゃーんメモ</a></em></p>
+<p><em>・ <a href="http://d.hatena.ne.jp/sugyan/20110909/1315575343">npm configで設定値を管理 - すぎゃーんメモ</a></em></p>
 
-<p><em>・ <a href='http://d.hatena.ne.jp/Jxck/20120410/1334071898'>Node.js の起動オプション、環境変数、npm start の話 - Block Rockin’ Codes</a></em></p>
+<p><em>・ <a href="http://d.hatena.ne.jp/Jxck/20120410/1334071898">Node.js の起動オプション、環境変数、npm start の話 - Block Rockin’ Codes</a></em></p>
 
-<h2 id='npmpackagejson'>npmとpackage.jsonによるパッケージ管理</h2>
+<h2>npmとpackage.jsonによるパッケージ管理</h2>
 
 <p>node.jsではパッケージ管理にnpmを用います。そしてRubyのGemfileのように、パッケージのバージョン管理をするには、package.jsonファイルを用います。</p>
-<script src='https://gist.github.com/3914746.js'> 
+
+<script src="https://gist.github.com/3914746.js"> 
 </script>
+
 <p>こんな感じ。</p>
 
-<p>上記のようにバージョンを直接指定する以外にも、&#8221;xx以上&#8221;といった指定もできるようです。</p>
-<div class='highlight'><pre><code class='sh'><span class='s2'>&quot;express&quot;</span>: <span class='s2'>&quot;&gt;=2.3.11&quot;</span>,
+<p>上記のようにバージョンを直接指定する以外にも、&quot;xx以上&quot;といった指定もできるようです。</p>
+
+<div class="highlight"><pre><code class="sh"><span class="s2">&quot;express&quot;</span>: <span class="s2">&quot;&gt;=2.3.11&quot;</span>,
 </code></pre></div>
+
 <p>package.jsonの編集が終わったら、</p>
-<div class='highlight'><pre><code class='sh'>npm install
+
+<div class="highlight"><pre><code class="sh">npm install
 </code></pre></div>
+
 <p>これで、一括でパッケージがインストールされます。</p>
 
-<p>パッケージは、./node_modules配下にインストールされるので、git等でバージョン管理を行う場合、.gitignoreにnode_modules/を追加すると良いようです。</p>
-<hr />
-<h2 id='npm_startpackagejson'>npm startによる起動とpackage.jsonでの設定</h2>
+<p>パッケージは、./node<em>modules配下にインストールされるので、git等でバージョン管理を行う場合、.gitignoreにnode</em>modules/を追加すると良いようです。</p>
 
-<p>package.jsonには、パッケージの依存関係以外にも色々記述できます。 例えばscriptsに、prestart,start,poststartを記述しておくと、npm startで実行されるようです。</p>
+<hr />
+
+<h2>npm startによる起動とpackage.jsonでの設定</h2>
+
+<p>package.jsonには、パッケージの依存関係以外にも色々記述できます。
+例えばscriptsに、prestart,start,poststartを記述しておくと、npm startで実行されるようです。</p>
 
 <p>以下のような、package.jsonを記述した場合、</p>
-<div class='highlight'><pre><code class='sh'><span class='s2'>&quot;scripts&quot;</span>: <span class='o'>{</span>
-    <span class='s2'>&quot;start&quot;</span>: <span class='s2'>&quot;NODE_ENV=production NODE_PATH=lib node app&quot;</span>
+
+<div class="highlight"><pre><code class="sh"><span class="s2">&quot;scripts&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;start&quot;</span>: <span class="s2">&quot;NODE_ENV=production NODE_PATH=lib node app&quot;</span>
 </code></pre></div>
+
 <p>npm installを実行することで、実行環境を切り替え、モジュールをPATHに追加し、起動します。</p>
+
 <hr />
-<h2 id='id99'>まとめ</h2>
+
+<h2>まとめ</h2>
 
 <p>プロジェクトを作成する人は、package.jsonをキチンと書く。</p>
 
 <p>cloneして使う人は、npm installして、npm startする。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    10 Aug 2012
+    <a href="/programing/2012/08/10/Sign-in-with-Facebook-Scala">【意訳】Scala on LiftでのFacebookサインイン</a>
+    </li>
+  
+    <li>
+    10 Oct 2012
+    <a href="/report/2012/10/10/entrance-into-node-js">node.jsをはじめました</a>
+    </li>
+  
+    <li>
+    15 Jan 2012
+    <a href="/record/2012/01/15/setup-jekyll">Jekyllによる静的Ｗebサイト構築入門してみた</a>
+    </li>
+  
+    <li>
+    01 Feb 2012
+    <a href="/ci/2012/02/01/setup-capistrano">Capistranoをやってみよう</a>
+    </li>
+  
+    <li>
+    12 Aug 2012
+    <a href="/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku">【意訳】Heroku上でPlayFramework + Scalaアプリケーションを実行する</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

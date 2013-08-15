@@ -176,66 +176,79 @@
           
         			
 	 </div>
-      <h2 id='tutorial_play_framework2_with_scala_anorm_json_coffeescript_jquery__herokuplay2'>【意訳】Tutorial: Play Framework2 with Scala, Anorm, JSON, CoffeeScript, jQuery &amp; Heroku　［Play2アプリのビルド編］</h2>
+      <h2>【意訳】Tutorial: Play Framework2 with Scala, Anorm, JSON, CoffeeScript, jQuery &amp; Heroku　［Play2アプリのビルド編］</h2>
 
-<p>元記事は<a href='http://www.jamesward.com/2012/02/21/play-framework-2-with-scala-anorm-json-coffeescript-jquery-heroku'>こちら</a></p>
+<p>元記事は<a href="http://www.jamesward.com/2012/02/21/play-framework-2-with-scala-anorm-json-coffeescript-jquery-heroku">こちら</a></p>
 
 <p>少々長い記事なので、Play2アプリのビルド編とHerokuへのデプロイ編に分けます。</p>
 
 <p>今回は、Play2アプリのビルド編です。</p>
 
-<p>Herokuへのデプロイ編は、<a href='http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/'>こちら</a></p>
+<p>Herokuへのデプロイ編は、<a href="http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/">こちら</a></p>
 
-<p><img alt='Herokuへのデプロイ編' src='http://capture.heartrails.com/200x150/cool?http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/' /></p>
+<p><img src="http://capture.heartrails.com/200x150/cool?http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/" alt="Herokuへのデプロイ編"></p>
 
 <p>※ 2012/03/06:アドバイスいただいた箇所について修正しました。</p>
+
 <hr />
+
 <p>Play Framework2 RC2がリリースされ、モダンなWebアプリケーションを構築する手法として成熟した生産的な方法になっています。</p>
 
 <p>Play2とScala,Anorm,JSON,CoffeeScript,jQueryを使って迅速なアプリケーション構築を体験してみましょう。</p>
 
 <p>一度ローカルでアプリケーションが動いてしまえば、あとはHerokuにデプロイするだけです。</p>
 
-<p>（注意：これは<a href='http://www.jamesward.com/2011/12/11/tutorial-play-framework-jpa-json-jquery-heroku'>my Play1+Java turtorial</a>の、Play2＋Scala版です。）Githubからソースを入手してください。</p>
+<p>（注意：これは<a href="http://www.jamesward.com/2011/12/11/tutorial-play-framework-jpa-json-jquery-heroku">my Play1+Java turtorial</a>の、Play2＋Scala版です。）Githubからソースを入手してください。</p>
 
 <p>Step 1) Play2 RC2版をダウンロード・インストールしてください。</p>
 
 <p>Step 2) 新しいアプリケーションを作ります：</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>play new foobar
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>play new foobar
 </code></pre></div>
+
 <p>プロンプトの言語選択画面がでたら、Scalaを選択してください。</p>
 
-<p>Step 3) 新しく作成した&#8221;foobar&#8221;ディレクトリ配下にIDEの設定ファイルを生成します。</p>
+<p>Step 3) 新しく作成した&quot;foobar&quot;ディレクトリ配下にIDEの設定ファイルを生成します。</p>
 
 <p>IntelliJでは、このように実行します。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>play new foobar
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>play new foobar
 </code></pre></div>
-<p>注意：ここで生成されたIMLファイルは、プロジェクトとして直接インポート可能ではありません。代わりに、モジュールなしでプロジェクトを新たに生成して、このステップで生成したIMLファイルからそのプロジェクトへモジュールをインポートする必要があります。もしわからなければ、<a href='http://www.jamesward.com/2011/07/28/setup-play-framework-with-scala-in-intellij'>Play1+Scala IntelliJ article</a>が参考になります。</p>
+
+<p>注意：ここで生成されたIMLファイルは、プロジェクトとして直接インポート可能ではありません。代わりに、モジュールなしでプロジェクトを新たに生成して、このステップで生成したIMLファイルからそのプロジェクトへモジュールをインポートする必要があります。もしわからなければ、<a href="http://www.jamesward.com/2011/07/28/setup-play-framework-with-scala-in-intellij">Play1+Scala IntelliJ article</a>が参考になります。</p>
 
 <p>Eclipseプロジェクト化するために、下記のコマンドを実行</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>play eclipsify
-</code></pre></div>
-<p>Step 4) Playサーバの起動</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>play run
-</code></pre></div>
-<p>正常に起動していることをテストするために、ここにアクセス<a href='http://localhost:9000'>http://localhost:9000</a></p>
 
-<p>Step 5) Play2 with ScalaではデフォルトでORマッパーを提供していません。代わりにデフォルトのRDBMS永続性プロバイダとなっているのがAnormです(Anormは Object Relational Mapperではありません)。このシンプルなアプリケーションでは、1つの永続的オブジェクト：Bar(ひとつのプライマリキーと名前を持っている)を持っています。Anormは、自動でのスキーマ作成を行わないので、SQLスキーマの作成/廃棄のためのスクリプトが必要です。新しいファイル&#8221;conf/evolutions/default/1.sql&#8221;を作成し、以下の内容を記述します。</p>
-<div class='highlight'><pre><code class='sh'><span class='c'># --- First database schema</span>
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>play eclipsify
+</code></pre></div>
+
+<p>Step 4) Playサーバの起動</p>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>play run
+</code></pre></div>
+
+<p>正常に起動していることをテストするために、ここにアクセス<a href="http://localhost:9000">http://localhost:9000</a></p>
+
+<p>Step 5) Play2 with ScalaではデフォルトでORマッパーを提供していません。代わりにデフォルトのRDBMS永続性プロバイダとなっているのがAnormです(Anormは Object Relational Mapperではありません)。このシンプルなアプリケーションでは、1つの永続的オブジェクト：Bar(ひとつのプライマリキーと名前を持っている)を持っています。Anormは、自動でのスキーマ作成を行わないので、SQLスキーマの作成/廃棄のためのスクリプトが必要です。新しいファイル&quot;conf/evolutions/default/1.sql&quot;を作成し、以下の内容を記述します。</p>
+
+<div class="highlight"><pre><code class="sh"><span class="c"># --- First database schema</span>
  
-<span class='c'># --- !Ups</span>
+<span class="c"># --- !Ups</span>
  
-CREATE TABLE bar <span class='o'>(</span>
+CREATE TABLE bar <span class="o">(</span>
   id                        SERIAL PRIMARY KEY,
-  name                      VARCHAR<span class='o'>(</span>255<span class='o'>)</span> NOT NULL
-<span class='o'>)</span>;
+  name                      VARCHAR<span class="o">(</span>255<span class="o">)</span> NOT NULL
+<span class="o">)</span>;
  
-<span class='c'># --- !Downs</span>
+<span class="c"># --- !Downs</span>
  
 DROP TABLE IF EXISTS bar;
 </code></pre></div>
-<p>Anormでは、Scalaの&#8221;case class&#8221;を永続的/CRUDインターフェースとして、値オブジェクトとシングルトンオブジェクトとして扱うことができます。&#8221;app/models/Bar.scla&#8221;というファイルにBar case classとオブジェクトを作成して、以下の内容を記述します。</p>
-<div class='highlight'><pre><code class='sh'>package models
+
+<p>Anormでは、Scalaの&quot;case class&quot;を永続的/CRUDインターフェースとして、値オブジェクトとシングルトンオブジェクトとして扱うことができます。&quot;app/models/Bar.scla&quot;というファイルにBar case classとオブジェクトを作成して、以下の内容を記述します。</p>
+
+<div class="highlight"><pre><code class="sh">package models
  
 import play.api.db._
 import play.api.Play.current
@@ -243,133 +256,184 @@ import play.api.Play.current
 import anorm._
 import anorm.SqlParser._
  
-<span class='k'>case </span>class Bar<span class='o'>(</span>id: Pk<span class='o'>[</span>Long<span class='o'>]</span>, name: String<span class='o'>)</span>
+<span class="k">case </span>class Bar<span class="o">(</span>id: Pk<span class="o">[</span>Long<span class="o">]</span>, name: String<span class="o">)</span>
  
-object Bar <span class='o'>{</span>
+object Bar <span class="o">{</span>
  
-  val <span class='nv'>simple</span> <span class='o'>=</span> <span class='o'>{</span>
-    get<span class='o'>[</span>Pk<span class='o'>[</span>Long<span class='o'>]]</span>（<span class='s2'>&quot;id&quot;</span><span class='o'>)</span> ~
-    get<span class='o'>[</span>String<span class='o'>]</span>（<span class='s2'>&quot;name&quot;</span><span class='o'>)</span> map <span class='o'>{</span>
-      <span class='k'>case </span>id~name <span class='o'>=</span>&gt; Bar<span class='o'>(</span>id, name<span class='o'>)</span>
-    <span class='o'>}</span>
-  <span class='o'>}</span>
+  val <span class="nv">simple</span> <span class="o">=</span> <span class="o">{</span>
+    get<span class="o">[</span>Pk<span class="o">[</span>Long<span class="o">]]</span>（<span class="s2">&quot;id&quot;</span><span class="o">)</span> ~
+    get<span class="o">[</span>String<span class="o">]</span>（<span class="s2">&quot;name&quot;</span><span class="o">)</span> map <span class="o">{</span>
+      <span class="k">case </span>id~name <span class="o">=</span>&gt; Bar<span class="o">(</span>id, name<span class="o">)</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
  
-  def findAll<span class='o'>()</span>: Seq<span class='o'>[</span>Bar<span class='o'>]</span> <span class='o'>=</span> <span class='o'>{</span>
-    DB.withConnection <span class='o'>{</span> implicit <span class='nv'>connection</span> <span class='o'>=</span>&gt;
-      SQL<span class='o'>(</span><span class='s2'>&quot;select * from bar&quot;</span><span class='o'>)</span>.as<span class='o'>(</span>Bar.simple *<span class='o'>)</span>
-    <span class='o'>}</span>
-  <span class='o'>}</span>
+  def findAll<span class="o">()</span>: Seq<span class="o">[</span>Bar<span class="o">]</span> <span class="o">=</span> <span class="o">{</span>
+    DB.withConnection <span class="o">{</span> implicit <span class="nv">connection</span> <span class="o">=</span>&gt;
+      SQL<span class="o">(</span><span class="s2">&quot;select * from bar&quot;</span><span class="o">)</span>.as<span class="o">(</span>Bar.simple *<span class="o">)</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
  
-  def create<span class='o'>(</span>bar: Bar<span class='o'>)</span>: <span class='nv'>Unit</span> <span class='o'>=</span> <span class='o'>{</span>
-    DB.withConnection <span class='o'>{</span> implicit <span class='nv'>connection</span> <span class='o'>=</span>&gt;
-      SQL<span class='o'>(</span><span class='s2'>&quot;insert into bar(name) values ({name})&quot;</span><span class='o'>)</span>.on<span class='o'>(</span>
-        <span class='err'>&#39;</span>name -&gt; bar.name
-      <span class='o'>)</span>.executeUpdate<span class='o'>()</span>
-    <span class='o'>}</span>
-  <span class='o'>}</span>
+  def create<span class="o">(</span>bar: Bar<span class="o">)</span>: <span class="nv">Unit</span> <span class="o">=</span> <span class="o">{</span>
+    DB.withConnection <span class="o">{</span> implicit <span class="nv">connection</span> <span class="o">=</span>&gt;
+      SQL<span class="o">(</span><span class="s2">&quot;insert into bar(name) values ({name})&quot;</span><span class="o">)</span>.on<span class="o">(</span>
+        <span class="err">&#39;</span>name -&gt; bar.name
+      <span class="o">)</span>.executeUpdate<span class="o">()</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
  
-<span class='o'>}</span>
+<span class="o">}</span>
 </code></pre></div>
-<p>変数の&#8221;simple&#8221;は、データベースの行値をBar case classにマップする、基本的なパーサを提供します。</p>
 
-<p>静的関数、&#8221;findAll&#8221;と&#8221;create&#8221;は、一般的なデータアクセスを行います。</p>
+<p>変数の&quot;simple&quot;は、データベースの行値をBar case classにマップする、基本的なパーサを提供します。</p>
 
-<p>注意点としては、&#8221;findAll&#8221;はBarへ各行を返すために、&#8221;simple&#8221; row parserを使っている点です。</p>
+<p>静的関数、&quot;findAll&quot;と&quot;create&quot;は、一般的なデータアクセスを行います。</p>
 
-<p>Step 6) インメモリーのh2データベースを使うために、&#8221;conf/application.conf&#8221;ファイルに以下の値を設定する。</p>
-<div class='highlight'><pre><code class='sh'>db.default.driver<span class='o'>=</span>org.h2.Driver
-db.default.url<span class='o'>=</span><span class='s2'>&quot;jdbc:h2:mem:play&quot;</span>
+<p>注意点としては、&quot;findAll&quot;はBarへ各行を返すために、&quot;simple&quot; row parserを使っている点です。</p>
+
+<p>Step 6) インメモリーのh2データベースを使うために、&quot;conf/application.conf&quot;ファイルに以下の値を設定する。</p>
+
+<div class="highlight"><pre><code class="sh">db.default.driver<span class="o">=</span>org.h2.Driver
+db.default.url<span class="o">=</span><span class="s2">&quot;jdbc:h2:mem:play&quot;</span>
 </code></pre></div>
-<p>Step 7) &#8220;app/controllers/Application.scala&#8221;を下記のように更新し、BarをHTTP POSTへ変換してデータベースに反映するアプリケーションコントローラー関数を作成します。</p>
-<div class='highlight'><pre><code class='sh'>package controllers
+
+<p>Step 7) &quot;app/controllers/Application.scala&quot;を下記のように更新し、BarをHTTP POSTへ変換してデータベースに反映するアプリケーションコントローラー関数を作成します。</p>
+
+<div class="highlight"><pre><code class="sh">package controllers
  
 import play.api.data.Form
-import play.api.data.Forms.<span class='o'>{</span>single, nonEmptyText<span class='o'>}</span>
-import play.api.mvc.<span class='o'>{</span>Action, Controller<span class='o'>}</span>
+import play.api.data.Forms.<span class="o">{</span>single, nonEmptyText<span class="o">}</span>
+import play.api.mvc.<span class="o">{</span>Action, Controller<span class="o">}</span>
 import anorm.NotAssigned
  
 import models.Bar
  
  
-object Application extends Controller <span class='o'>{</span>
+object Application extends Controller <span class="o">{</span>
  
-  val <span class='nv'>barForm</span> <span class='o'>=</span> Form<span class='o'>(</span>
-    single<span class='o'>(</span><span class='s2'>&quot;name&quot;</span> -&gt; nonEmptyText<span class='o'>)</span>
-  <span class='o'>)</span>
+  val <span class="nv">barForm</span> <span class="o">=</span> Form<span class="o">(</span>
+    single<span class="o">(</span><span class="s2">&quot;name&quot;</span> -&gt; nonEmptyText<span class="o">)</span>
+  <span class="o">)</span>
  
-  def <span class='nv'>index</span> <span class='o'>=</span> Action <span class='o'>{</span>
-    Ok<span class='o'>(</span>views.html.index<span class='o'>(</span>barForm<span class='o'>))</span>
-  <span class='o'>}</span>
+  def <span class="nv">index</span> <span class="o">=</span> Action <span class="o">{</span>
+    Ok<span class="o">(</span>views.html.index<span class="o">(</span>barForm<span class="o">))</span>
+  <span class="o">}</span>
  
-  def addBar<span class='o'>()</span> <span class='o'>=</span> Action <span class='o'>{</span> implicit <span class='nv'>request</span> <span class='o'>=</span>&gt;
-    barForm.bindFromRequest.fold<span class='o'>(</span>
-      <span class='nv'>errors</span> <span class='o'>=</span>&gt; BadRequest,
-      <span class='o'>{</span>
-        <span class='k'>case</span> <span class='o'>(</span>name<span class='o'>)</span> <span class='o'>=</span>&gt;
-          Bar.create<span class='o'>(</span>Bar<span class='o'>(</span>NotAssigned, name<span class='o'>))</span>
-          Redirect<span class='o'>(</span>routes.Application.index<span class='o'>())</span>
-      <span class='o'>}</span>
-    <span class='o'>)</span>
-  <span class='o'>}</span>
+  def addBar<span class="o">()</span> <span class="o">=</span> Action <span class="o">{</span> implicit <span class="nv">request</span> <span class="o">=</span>&gt;
+    barForm.bindFromRequest.fold<span class="o">(</span>
+      <span class="nv">errors</span> <span class="o">=</span>&gt; BadRequest,
+      <span class="o">{</span>
+        <span class="k">case</span> <span class="o">(</span>name<span class="o">)</span> <span class="o">=</span>&gt;
+          Bar.create<span class="o">(</span>Bar<span class="o">(</span>NotAssigned, name<span class="o">))</span>
+          Redirect<span class="o">(</span>routes.Application.index<span class="o">())</span>
+      <span class="o">}</span>
+    <span class="o">)</span>
+  <span class="o">}</span>
  
-<span class='o'>}</span>
+<span class="o">}</span>
 </code></pre></div>
-<p>&#8220;barForm&#8221;マップは、フォームオブジェクトへパラメータを要求し、入力データのバリデーションを行います。 静的関数の&#8221;addBar&#8221;は、リクエストと&#8221;barForm&#8221;へのリクエストパラメータのマッピングを行います。 失敗した場合は、コントローラはBadRequestを返します。 成功した場合は、Barの名前は新しい&#8221;Bar&#8221;を構築するために使われます。そしてその&#8221;Bar&#8221;はデータベースに保存され、indexページへのリダイレクトが送られます。 index関数は、Step 9で更新されるテンプレートへ&#8221;barForm&#8221;を渡すように変更されました。</p>
 
-<p>Step 8) &#8220;conf/routes&#8221;ファイルに以下の行を追加して、&#8221;/addBar&#8221; URLへのPOSTリクエストを&#8221;Application.addBar&#8221;へマップする新しいルートを作成します。</p>
-<div class='highlight'><pre><code class='sh'>POST	/addBar		controllers.Application.addBar
+<p>&quot;barForm&quot;マップは、フォームオブジェクトへパラメータを要求し、入力データのバリデーションを行います。
+静的関数の&quot;addBar&quot;は、リクエストと&quot;barForm&quot;へのリクエストパラメータのマッピングを行います。
+失敗した場合は、コントローラはBadRequestを返します。
+成功した場合は、Barの名前は新しい&quot;Bar&quot;を構築するために使われます。そしてその&quot;Bar&quot;はデータベースに保存され、indexページへのリダイレクトが送られます。
+index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot;を渡すように変更されました。</p>
+
+<p>Step 8) &quot;conf/routes&quot;ファイルに以下の行を追加して、&quot;/addBar&quot; URLへのPOSTリクエストを&quot;Application.addBar&quot;へマップする新しいルートを作成します。</p>
+
+<div class="highlight"><pre><code class="sh">POST   /addBar     controllers.Application.addBar
 </code></pre></div>
-<p>Step 9) フォームパラメータを受け取るために、&#8221;main&#8221;テンプレートを拡張した&#8221;app/views/index.scala.html&#8221;テンプレートを更新し、Webページ上のフォームをレンダリングするためにPlay2 form helperを使います。</p>
-<div class='highlight'><pre><code class='sh'>　＠<span class='o'>(</span>form: play.api.data.Form<span class='o'>[</span>String<span class='o'>])</span>
+
+<p>Step 9) フォームパラメータを受け取るために、&quot;main&quot;テンプレートを拡張した&quot;app/views/index.scala.html&quot;テンプレートを更新し、Webページ上のフォームをレンダリングするためにPlay2 form helperを使います。</p>
+
+<div class="highlight"><pre><code class="sh">　＠<span class="o">(</span>form: play.api.data.Form<span class="o">[</span>String<span class="o">])</span>
  
-　＠main<span class='o'>(</span><span class='s2'>&quot;Welcome to Play 2.0&quot;</span><span class='o'>)</span> ｛
+　＠main<span class="o">(</span><span class="s2">&quot;Welcome to Play 2.0&quot;</span><span class="o">)</span> ｛
  
-    　＠helper.form<span class='o'>(</span><span class='nv'>action</span> <span class='o'>=</span> routes.Application.addBar<span class='o'>)</span> ｛
-        　＠helper.inputText<span class='o'>(</span>form<span class='o'>(</span><span class='s2'>&quot;name&quot;</span><span class='o'>))</span>
-        ＜input <span class='nb'>type</span><span class='o'>=</span><span class='s2'>&quot;submit&quot;</span>/＞
+    　＠helper.form<span class="o">(</span><span class="nv">action</span> <span class="o">=</span> routes.Application.addBar<span class="o">)</span> ｛
+        　＠helper.inputText<span class="o">(</span>form<span class="o">(</span><span class="s2">&quot;name&quot;</span><span class="o">))</span>
+        ＜input <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span>/＞
     ｝
  
 ｝
 </code></pre></div>
-<p>ブラウザで<a href='http://localhost:9000'>http://localhost:9000</a>を開き、データベース変更の適用と、フォームのテストをします。うまくできていれば、フォームを送信するとindexページへリダイレクトされるはずです。</p>
 
-<p>Step 10) JSONサービスを作成し、barの全てを取得するための関数を、&#8221;app/controllers/Application.scala&#8221;ファイルに追加します。</p>
-<div class='highlight'><pre><code class='sh'>  import com.codahale.jerkson.Json
- 
-  def listBars<span class='o'>()</span> <span class='o'>=</span> Action <span class='o'>{</span>
-    val <span class='nv'>bars</span> <span class='o'>=</span> Bar.findAll<span class='o'>()</span>
- 
-    val <span class='nv'>json</span> <span class='o'>=</span> Json.generate<span class='o'>(</span>bars<span class='o'>)</span>
- 
-    Ok<span class='o'>(</span>json<span class='o'>)</span>.as<span class='o'>(</span><span class='s2'>&quot;application/json&quot;</span><span class='o'>)</span>
-  <span class='o'>}</span>
-</code></pre></div>
-<p>新しく作成した関数は、シリアル化されたJSONとして、&#8221;Bar.findAll()&#8221;から&#8221;Bar&#8221;オブジェクトのリストを返します。</p>
+<p>ブラウザで<a href="http://localhost:9000">http://localhost:9000</a>を開き、データベース変更の適用と、フォームのテストをします。うまくできていれば、フォームを送信するとindexページへリダイレクトされるはずです。</p>
 
-<p>&#8220;/listBars&#8221;へのリクエストのために、下記のように新しいGET request handlerを&#8221;conf/routes&#8221;に追加します。</p>
-<div class='highlight'><pre><code class='sh'>GET		/listBars		controllers.Application.listBars
-</code></pre></div>
-<p>ブラウザで<a href='http://localhost:9000/listBars'>http://localhost:9000/listBars</a>を開いてみてください。Step 9で作成したbarが表示されているはずです。</p>
+<p>Step 10) JSONサービスを作成し、barの全てを取得するための関数を、&quot;app/controllers/Application.scala&quot;ファイルに追加します。</p>
 
-<p>Step 11) jQueryを使いJSONシリアル化されたbarの取得と、それぞれのページ追加のために、新しいCoffeeScriptファイル&#8221;app/assets/javascripts/index.coffee&#8221;を作成します。内容は以下</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>-&gt;
-  <span class='nv'>$.</span>get <span class='s2'>&quot;/listBars&quot;</span>, <span class='o'>(</span>data<span class='o'>)</span> -＞
-    <span class='nv'>$.</span>each data, <span class='o'>(</span>index, item<span class='o'>)</span> -＞
-      <span class='k'>$(</span><span class='s2'>&quot;#bars&quot;</span><span class='k'>)</span>.append <span class='s2'>&quot;＜li＞Bar &quot;</span> + item.name + <span class='s2'>&quot;＜/li＞&quot;</span>
-</code></pre></div>
-<p>CoffeScriptは、&#8221;/listBars&#8221;へのGETリクエストの作成と返却値の反復、ページ(Step 12で追加します)の&#8221;bars&#8221;エレメントへの各アイテムの追加のために、jQueryを使います。</p>
-
-<p>Step 12) CoffeeScriptのソースから自動コンパイルされたindex.jsスクリプトを使うために、&#8221;app/views/index.scala.html&#8221;を以下の行を&#8221;main&#8221;ブロックへ追加し、更新します。</p>
-<div class='highlight'><pre><code class='sh'>　＜script <span class='nv'>src</span><span class='o'>=</span><span class='s2'>&quot;＠routes.Assets.at(&quot;</span>javascripts/index.js<span class='s2'>&quot;)&quot;</span> <span class='nb'>type</span><span class='o'>=</span><span class='s2'>&quot;text/javascript&quot;</span>＞＜/script＞
+<div class="highlight"><pre><code class="sh">  import com.codahale.jerkson.Json
  
-    　＜ul <span class='nv'>id</span><span class='o'>=</span><span class='s2'>&quot;bars&quot;</span>＞＜/ul＞
+  def listBars<span class="o">()</span> <span class="o">=</span> Action <span class="o">{</span>
+    val <span class="nv">bars</span> <span class="o">=</span> Bar.findAll<span class="o">()</span>
+ 
+    val <span class="nv">json</span> <span class="o">=</span> Json.generate<span class="o">(</span>bars<span class="o">)</span>
+ 
+    Ok<span class="o">(</span>json<span class="o">)</span>.as<span class="o">(</span><span class="s2">&quot;application/json&quot;</span><span class="o">)</span>
+  <span class="o">}</span>
 </code></pre></div>
-<p>ブラウザで、<a href='http://localhost:9000/'>http://localhost:9000/</a>を表示し、barがページ上部に表示され、新しいbarが期待通りに追加されていることを確認してください。</p>
+
+<p>新しく作成した関数は、シリアル化されたJSONとして、&quot;Bar.findAll()&quot;から&quot;Bar&quot;オブジェクトのリストを返します。</p>
+
+<p>&quot;/listBars&quot;へのリクエストのために、下記のように新しいGET request handlerを&quot;conf/routes&quot;に追加します。</p>
+
+<div class="highlight"><pre><code class="sh">GET        /listBars       controllers.Application.listBars
+</code></pre></div>
+
+<p>ブラウザで<a href="http://localhost:9000/listBars">http://localhost:9000/listBars</a>を開いてみてください。Step 9で作成したbarが表示されているはずです。</p>
+
+<p>Step 11) jQueryを使いJSONシリアル化されたbarの取得と、それぞれのページ追加のために、新しいCoffeeScriptファイル&quot;app/assets/javascripts/index.coffee&quot;を作成します。内容は以下</p>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>-&gt;
+  <span class="nv">$.</span>get <span class="s2">&quot;/listBars&quot;</span>, <span class="o">(</span>data<span class="o">)</span> -＞
+    <span class="nv">$.</span>each data, <span class="o">(</span>index, item<span class="o">)</span> -＞
+      <span class="k">$(</span><span class="s2">&quot;#bars&quot;</span><span class="k">)</span>.append <span class="s2">&quot;＜li＞Bar &quot;</span> + item.name + <span class="s2">&quot;＜/li＞&quot;</span>
+</code></pre></div>
+
+<p>CoffeScriptは、&quot;/listBars&quot;へのGETリクエストの作成と返却値の反復、ページ(Step 12で追加します)の&quot;bars&quot;エレメントへの各アイテムの追加のために、jQueryを使います。</p>
+
+<p>Step 12) CoffeeScriptのソースから自動コンパイルされたindex.jsスクリプトを使うために、&quot;app/views/index.scala.html&quot;を以下の行を&quot;main&quot;ブロックへ追加し、更新します。</p>
+
+<div class="highlight"><pre><code class="sh">　＜script <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;＠routes.Assets.at(&quot;</span>javascripts/index.js<span class="s2">&quot;)&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span>＞＜/script＞
+ 
+    　＜ul <span class="nv">id</span><span class="o">=</span><span class="s2">&quot;bars&quot;</span>＞＜/ul＞
+</code></pre></div>
+
+<p>ブラウザで、<a href="http://localhost:9000/">http://localhost:9000/</a>を表示し、barがページ上部に表示され、新しいbarが期待通りに追加されていることを確認してください。</p>
 
 <p>これで、Scala, Anorm, JSON, CoffeeScript, jQueryを使ったPlay2アプリのビルド完了です。ここで紹介したすべてのソースコードはGitHub上にあります。あとはHerokuへデプロイするだけです。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    12 Aug 2012
+    <a href="/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku">【意訳】Heroku上でPlayFramework + Scalaアプリケーションを実行する</a>
+    </li>
+  
+    <li>
+    04 Mar 2012
+    <a href="/programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery＆Heroku［Herokuデプロイ編］</a>
+    </li>
+  
+    <li>
+    26 Jul 2012
+    <a href="/programing/2012/07/26/Optimizing-Play2-for-Database-Driven-Apps">【意訳】データベース駆動アプリのための、Play2最適化について　#play_ja</a>
+    </li>
+  
+    <li>
+    15 Jan 2012
+    <a href="/record/2012/01/15/setup-jekyll">Jekyllによる静的Ｗebサイト構築入門してみた</a>
+    </li>
+  
+    <li>
+    10 Aug 2012
+    <a href="/programing/2012/08/10/Sign-in-with-Facebook-Scala">【意訳】Scala on LiftでのFacebookサインイン</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

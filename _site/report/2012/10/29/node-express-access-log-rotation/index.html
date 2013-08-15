@@ -176,43 +176,85 @@
           
         			
 	 </div>
-      <a href='http://www.flickr.com/photos/kuromatsunai/3024100752/' title='足跡 - Footprint - by kuromatsunai.info, on Flickr'>
-<img height='240' alt='足跡 - Footprint -' src='http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg' width='320' />
-</a><hr />
-<h2 id='id101'>謝辞</h2>
+      <p><a href="http://www.flickr.com/photos/kuromatsunai/3024100752/" title="足跡 - Footprint - by kuromatsunai.info, on Flickr">
+<img src="http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg" width="320" height="240" alt="足跡 - Footprint -"></p>
+
+<h2></a></h2>
+
+<h2>謝辞</h2>
 
 <p>以下の記事を参考にさせていただきました。感謝です。</p>
 
-<p><em>・ <a href='http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html'>【Node.js】expressでaccess log + log rotate | 湘南社中テクニカルブログ</a></em></p>
-<hr />
-<h2 id='nodejsexpress'>node.jsとexpressでのアクセスログ</h2>
+<p><em>・ <a href="http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html">【Node.js】expressでaccess log + log rotate | 湘南社中テクニカルブログ</a></em></p>
 
-<p>node.js+expressには、express標準のloggerだとログの出力先をファイルにすると、対象のファイルがずっとオープン状態になってしまう、という欠点があります。 (※:もしかしたら私が回避方法を知らないだけかもしれませんが。）</p>
+<hr />
+
+<h2>node.jsとexpressでのアクセスログ</h2>
+
+<p>node.js+expressには、express標準のloggerだとログの出力先をファイルにすると、対象のファイルがずっとオープン状態になってしまう、という欠点があります。
+(※:もしかしたら私が回避方法を知らないだけかもしれませんが。）</p>
 
 <p>そのため、いい感じのログをファイル出力し、日次でローテーションする、というような運用ができません。</p>
 
 <p>1ファイルに長々とアクセスログが出力されるようでは、運用もままならないので、log4jsを使ってexpressのアクセスログをいい感じにローテーションできるようにしたいと思います。</p>
+
 <hr />
-<h2 id='log4js'>log4jsを使う</h2>
+
+<h2>log4jsを使う</h2>
 
 <p>LoggingFrameworkのlog4jsについては、こちらで紹介しています</p>
 
-<p><a href='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/'>node.js+log4jsで、ログローテーションする</a></p>
-<a href='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/'>
-<img height='90' alt='http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' title='Now Capturing...' src='http://capture.heartrails.com/120x90/cool?http://modalsoul.github.com/report/2012/10/14/node-js-log4js/' width='120' />
-</a>
-<p>実際のコードはこんな感じ。※:要リファクタリング <script src='https://gist.github.com/3973839.js'>
-</script> app.routerの前で、functionを入れログレベルをinfoで出力させています。</p>
+<p><a href="http://modalsoul.github.com/report/2012/10/14/node-js-log4js/">node.js+log4jsで、ログローテーションする</a></p>
+
+<p><a href="http://modalsoul.github.com/report/2012/10/14/node-js-log4js/">
+<img title="Now Capturing..." src="http://capture.heartrails.com/120x90/cool?http://modalsoul.github.com/report/2012/10/14/node-js-log4js/" alt="http://modalsoul.github.com/report/2012/10/14/node-js-log4js/" width="120" height="90" />
+</a></p>
+
+<p>実際のコードはこんな感じ。※:要リファクタリング
+<script src="https://gist.github.com/3973839.js">
+</script>
+app.routerの前で、functionを入れログレベルをinfoで出力させています。</p>
 
 <p>実際にexpressをスタートさせ、ブラウザからアクセスすると以下のようなログが出力されます。</p>
 
 <p>access.log</p>
-<div class='highlight'><pre><code class='sh'><span class='o'>[</span>2012-10-29 23:06:18.732<span class='o'>]</span> <span class='o'>[</span>INFO<span class='o'>]</span> dateFile - 127.0.0.1	Mon Oct 29 2012 23:06:18 GMT+0900 <span class='o'>(</span>東京 <span class='o'>(</span>標準時<span class='o'>))</span>	GET	/	200	-	Mozilla/5.0 <span class='o'>(</span>Windows NT 6.1; WOW64<span class='o'>)</span> AppleWebKit/537.4 <span class='o'>(</span>KHTML, like Gecko<span class='o'>)</span> Chrome/22.0.1229.94 Safari/537.4
-<span class='o'>[</span>2012-10-29 23:06:18.968<span class='o'>]</span> <span class='o'>[</span>INFO<span class='o'>]</span> dateFile - 127.0.0.1	Mon Oct 29 2012 23:06:18 GMT+0900 <span class='o'>(</span>東京 <span class='o'>(</span>標準時<span class='o'>))</span>	GET	/stylesheets/style.css	200	http://localhost:3000/	Mozilla/5.0 <span class='o'>(</span>Windows NT 6.1; WOW64<span class='o'>)</span> AppleWebKit/537.4 <span class='o'>(</span>KHTML, like Gecko<span class='o'>)</span> Chrome/22.0.1229.94 Safari/537.4
+
+<div class="highlight"><pre><code class="sh"><span class="o">[</span>2012-10-29 23:06:18.732<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> dateFile - 127.0.0.1  Mon Oct 29 2012 23:06:18 GMT+0900 <span class="o">(</span>東京 <span class="o">(</span>標準時<span class="o">))</span> GET /   200 -   Mozilla/5.0 <span class="o">(</span>Windows NT 6.1; WOW64<span class="o">)</span> AppleWebKit/537.4 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/22.0.1229.94 Safari/537.4
+<span class="o">[</span>2012-10-29 23:06:18.968<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> dateFile - 127.0.0.1   Mon Oct 29 2012 23:06:18 GMT+0900 <span class="o">(</span>東京 <span class="o">(</span>標準時<span class="o">))</span> GET /stylesheets/style.css  200 http://localhost:3000/  Mozilla/5.0 <span class="o">(</span>Windows NT 6.1; WOW64<span class="o">)</span> AppleWebKit/537.4 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/22.0.1229.94 Safari/537.4
 </code></pre></div>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    17 Feb 2012
+    <a href="/report/2012/02/17/developers-summit-2012">Developers Summit 2012 2日目ツイートまとめ。#devsumi</a>
+    </li>
+  
+    <li>
+    10 Oct 2012
+    <a href="/report/2012/10/10/entrance-into-node-js">node.jsをはじめました</a>
+    </li>
+  
+    <li>
+    17 Sep 2012
+    <a href="/report/2012/09/17/xp-festival">XP祭り2012～ソーシャルチェンジ～にスタッフ参加してきました　#xpjug</a>
+    </li>
+  
+    <li>
+    20 May 2012
+    <a href="/test/programing/2012/05/20/android-ui-test-InstrumentationTestCase">AndroidアプリのUIテスト-InstrumentationTestCase編-</a>
+    </li>
+  
+    <li>
+    25 May 2012
+    <a href="/report/2012/05/25/agile-kaihatsu-kihon-no-ki">横浜道場 特別編 「アジャイル開発 基本のキ」に参加しました。</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

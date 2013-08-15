@@ -176,97 +176,147 @@
           
         			
 	 </div>
-      <h2 id='play2'>【意訳】データベース駆動アプリのための、Play2最適化について</h2>
+      <h2>【意訳】データベース駆動アプリのための、Play2最適化について</h2>
 
-<p>この記事は、HerokuのPrincipal Developer Evangelistの<a href='http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps'>James Ward氏の記事</a>の意訳です。参考程度にどうぞ。</p>
+<p>この記事は、HerokuのPrincipal Developer Evangelistの<a href="http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps">James Ward氏の記事</a>の意訳です。参考程度にどうぞ。</p>
 
-<p><img alt='Optimizing Play 2 for Database-Driven Apps' src='http://capture.heartrails.com/300x200/cool?http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps' /></p>
+<p><img src="http://capture.heartrails.com/300x200/cool?http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps" alt="Optimizing Play 2 for Database-Driven Apps"></p>
 
-<p>誤訳・誤植等ありましたら、<a href='https://twitter.com/modal_soul'>@modal_soulまで</a>リプライいただけるとありがたいです。</p>
+<p>誤訳・誤植等ありましたら、<a href="https://twitter.com/modal_soul">@modal_soulまで</a>リプライいただけるとありがたいです。</p>
+
 <hr />
-<p>先週Matt Raible氏と共に、UberConfで行われたPlay vs. Grailsスマックダウンでプレゼンテーションをしました。 このセッションの目標は、同じフレームワークを用いて同じアプリケーションを作り、Play2+JavaとGrailsを比較することです。 比較のために、いくつかのベンチマークを含む評価基準を使用しました。 結果については、こちら（<a href='http://raibledesigns.com/rd/entry/play_vs_grails_smackdown_at'>Matt&#8217;s session recap blog</a>）に詳しく掲載されています。 評価結果のプレゼンの後、これらのタイプのアプリケーションでPlay2のAkkaスレッドシステムを最適化するのに重要なことを発見しました。 Play2は、ブロッキングのコールを含まないHTTPリクエスト(i.e. 非同期)のためにout-of-the-boxに最適化されています。 Javaのほとんどのデータベース駆動アプリでは同期コールはJDBC経由で使用されるため、Play2ではこれらのリクエストタイプのためにAkkaを調整するちょっとした設定が必要です。</p>
 
-<p>シンプルな例をあげてみます。時間的に現実的なデータベースブロックをシミュレートするために、このベンチマークをローカルではなくHeroku上で実行します。 <a href='https://github.com/jamesward/play2bars'>&#8220;play2bars&#8221;example app</a>から&#8221;java-ebean&#8221;ブランチとHerokuの共有のPostgreSQLデータベースを使います。</p>
+<p>先週Matt Raible氏と共に、UberConfで行われたPlay vs. Grailsスマックダウンでプレゼンテーションをしました。
+このセッションの目標は、同じフレームワークを用いて同じアプリケーションを作り、Play2+JavaとGrailsを比較することです。
+比較のために、いくつかのベンチマークを含む評価基準を使用しました。
+結果については、こちら（<a href="http://raibledesigns.com/rd/entry/play_vs_grails_smackdown_at">Matt&#39;s session recap blog</a>）に詳しく掲載されています。
+評価結果のプレゼンの後、これらのタイプのアプリケーションでPlay2のAkkaスレッドシステムを最適化するのに重要なことを発見しました。
+Play2は、ブロッキングのコールを含まないHTTPリクエスト(i.e. 非同期)のためにout-of-the-boxに最適化されています。
+Javaのほとんどのデータベース駆動アプリでは同期コールはJDBC経由で使用されるため、Play2ではこれらのリクエストタイプのためにAkkaを調整するちょっとした設定が必要です。</p>
+
+<p>シンプルな例をあげてみます。時間的に現実的なデータベースブロックをシミュレートするために、このベンチマークをローカルではなくHeroku上で実行します。
+<a href="https://github.com/jamesward/play2bars">&quot;play2bars&quot;example app</a>から&quot;java-ebean&quot;ブランチとHerokuの共有のPostgreSQLデータベースを使います。</p>
 
 <p>Apache Benchを実行して、同時100クライアント接続で10000リクエストをアプリのJSONサービスへ投げるために、同じAWSリージョンにあるEC2サーバーからHerokuのmy appとして、以下のコマンドを実行しました。</p>
-<div class='highlight'><pre><code class='sh'>ab -n 10000 -c 100 http://falling-dusk-7291.herokuapp.com/bars
-</code></pre></div>
-<p>最初の最適化前の結果がこちらです</p>
-<div class='highlight'><pre><code class='sh'>Concurrency Level:      100
-Time taken <span class='k'>for </span>tests:   10.272 seconds
-Complete requests:      10000
-Failed requests:        0
-Write errors:           0
-Total transferred:      1560000 bytes
-HTML transferred:       510000 bytes
-Requests per second:    973.53 <span class='o'>[</span><span class='c'>#/sec] (mean)</span>
-Time per request:       102.719 <span class='o'>[</span>ms<span class='o'>]</span> <span class='o'>(</span>mean<span class='o'>)</span>
-</code></pre></div>
-<p>毎秒973リクエストは悪くはありませんが、下記のようなエラーが確認できました。</p>
-<div class='highlight'><pre><code class='sh'><span class='o'>[</span>error<span class='o'>]</span> play - Cannot invoke the action, eventually got an error: Thrown<span class='o'>(</span>akka.pattern.AskTimeoutException: Timed out<span class='o'>)</span>
-</code></pre></div>
-<p>これは、Akkaが長時間ブロックされたことを意味しており、同期のコード実行を改善するようにPlay中のAkkaの設定を変え、評価を再実行しました。その結果は以下のようになりました。</p>
-<div class='highlight'><pre><code class='sh'>Concurrency Level:      100
-Time taken <span class='k'>for </span>tests:   7.274 seconds
-Complete requests:      10000
-Failed requests:        0
-Write errors:           0
-Total transferred:      1560000 bytes
-HTML transferred:       510000 bytes
-Requests per second:    1374.70 <span class='o'>[</span><span class='c'>#/sec] (mean)</span>
-Time per request:       72.743 <span class='o'>[</span>ms<span class='o'>]</span> <span class='o'>(</span>mean<span class='o'>)</span>
-</code></pre></div>
-<p>今回は、毎秒1374リクエストになりました。シンプルな最適化の方法は、Akkaで処理を行うスレッドを増やすして、タイムアウト値を長く設定することです。それによりスレッドが同期DBによってブロックされた際、より多くのリクエストをハンドリングするためにさらにスレッドを呼び出します。実際に使ったPlayの設定は以下です。</p>
-<div class='highlight'><pre><code class='sh'>play <span class='o'>{</span>
- 
-    akka <span class='o'>{</span>
- 
-        actor <span class='o'>{</span>
- 
-            deployment <span class='o'>{</span>
- 
-                /actions <span class='o'>{</span>
-                    <span class='nv'>router</span> <span class='o'>=</span> round-robin
-                    nr-of-instances <span class='o'>=</span> 100
-                <span class='o'>}</span>
- 
-                /promises <span class='o'>{</span>
-                    <span class='nv'>router</span> <span class='o'>=</span> round-robin
-                    nr-of-instances <span class='o'>=</span> 100
-                <span class='o'>}</span>
- 
-            <span class='o'>}</span>
- 
-            <span class='nv'>retrieveBodyParserTimeout</span> <span class='o'>=</span> 5 seconds
- 
-            actions-dispatcher <span class='o'>=</span> <span class='o'>{</span>
-                fork-join-executor <span class='o'>{</span>
-                    parallelism-factor <span class='o'>=</span> 100
-                    parallelism-max <span class='o'>=</span> 100
-                <span class='o'>}</span>
-            <span class='o'>}</span>
- 
-            promises-dispatcher <span class='o'>=</span> <span class='o'>{</span>
-                fork-join-executor <span class='o'>{</span>
-                    parallelism-factor <span class='o'>=</span> 100
-                    parallelism-max <span class='o'>=</span> 100
-                <span class='o'>}</span>
-            <span class='o'>}</span>
- 
-        <span class='o'>}</span>
- 
-    <span class='o'>}</span>
- 
-<span class='o'>}</span>
-</code></pre></div>
-<p>Akkaで使用されるスレッドの数は、CPUと&#8221;parallelism-factor&#8221;の設定値を掛け合わせた値で、&#8221;parallelism-max&#8221;が上限値です。 デフォルトの&#8221;parallelism-factor&#8221;は&#8221;1&#8221;に設定されていて、この場合スレッド数はCPU数と同じで、&#8221;parallelism-max&#8221;のデフォルトは&#8221;24&#8221;です。これらの設定について詳しくは、<a href='http://www.playframework.org/documentation/2.0/AkkaCore'>Playのドキュメント</a>で確認できます。</p>
 
-<p>すべての設定ファイルは<a href='https://github.com/jamesward/play2bars/tree/java-ebean/conf'>こちらのplay2barsプロジェクトから</a></p>
+<div class="highlight"><pre><code class="sh">ab -n 10000 -c 100 http://falling-dusk-7291.herokuapp.com/bars
+</code></pre></div>
+
+<p>最初の最適化前の結果がこちらです</p>
+
+<div class="highlight"><pre><code class="sh">Concurrency Level:      100
+Time taken <span class="k">for </span>tests:   10.272 seconds
+Complete requests:      10000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1560000 bytes
+HTML transferred:       510000 bytes
+Requests per second:    973.53 <span class="o">[</span><span class="c">#/sec] (mean)</span>
+Time per request:       102.719 <span class="o">[</span>ms<span class="o">]</span> <span class="o">(</span>mean<span class="o">)</span>
+</code></pre></div>
+
+<p>毎秒973リクエストは悪くはありませんが、下記のようなエラーが確認できました。</p>
+
+<div class="highlight"><pre><code class="sh"><span class="o">[</span>error<span class="o">]</span> play - Cannot invoke the action, eventually got an error: Thrown<span class="o">(</span>akka.pattern.AskTimeoutException: Timed out<span class="o">)</span>
+</code></pre></div>
+
+<p>これは、Akkaが長時間ブロックされたことを意味しており、同期のコード実行を改善するようにPlay中のAkkaの設定を変え、評価を再実行しました。その結果は以下のようになりました。</p>
+
+<div class="highlight"><pre><code class="sh">Concurrency Level:      100
+Time taken <span class="k">for </span>tests:   7.274 seconds
+Complete requests:      10000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1560000 bytes
+HTML transferred:       510000 bytes
+Requests per second:    1374.70 <span class="o">[</span><span class="c">#/sec] (mean)</span>
+Time per request:       72.743 <span class="o">[</span>ms<span class="o">]</span> <span class="o">(</span>mean<span class="o">)</span>
+</code></pre></div>
+
+<p>今回は、毎秒1374リクエストになりました。シンプルな最適化の方法は、Akkaで処理を行うスレッドを増やすして、タイムアウト値を長く設定することです。それによりスレッドが同期DBによってブロックされた際、より多くのリクエストをハンドリングするためにさらにスレッドを呼び出します。実際に使ったPlayの設定は以下です。</p>
+
+<div class="highlight"><pre><code class="sh">play <span class="o">{</span>
+ 
+    akka <span class="o">{</span>
+ 
+        actor <span class="o">{</span>
+ 
+            deployment <span class="o">{</span>
+ 
+                /actions <span class="o">{</span>
+                    <span class="nv">router</span> <span class="o">=</span> round-robin
+                    nr-of-instances <span class="o">=</span> 100
+                <span class="o">}</span>
+ 
+                /promises <span class="o">{</span>
+                    <span class="nv">router</span> <span class="o">=</span> round-robin
+                    nr-of-instances <span class="o">=</span> 100
+                <span class="o">}</span>
+ 
+            <span class="o">}</span>
+ 
+            <span class="nv">retrieveBodyParserTimeout</span> <span class="o">=</span> 5 seconds
+ 
+            actions-dispatcher <span class="o">=</span> <span class="o">{</span>
+                fork-join-executor <span class="o">{</span>
+                    parallelism-factor <span class="o">=</span> 100
+                    parallelism-max <span class="o">=</span> 100
+                <span class="o">}</span>
+            <span class="o">}</span>
+ 
+            promises-dispatcher <span class="o">=</span> <span class="o">{</span>
+                fork-join-executor <span class="o">{</span>
+                    parallelism-factor <span class="o">=</span> 100
+                    parallelism-max <span class="o">=</span> 100
+                <span class="o">}</span>
+            <span class="o">}</span>
+ 
+        <span class="o">}</span>
+ 
+    <span class="o">}</span>
+ 
+<span class="o">}</span>
+</code></pre></div>
+
+<p>Akkaで使用されるスレッドの数は、CPUと&quot;parallelism-factor&quot;の設定値を掛け合わせた値で、&quot;parallelism-max&quot;が上限値です。
+デフォルトの&quot;parallelism-factor&quot;は&quot;1&quot;に設定されていて、この場合スレッド数はCPU数と同じで、&quot;parallelism-max&quot;のデフォルトは&quot;24&quot;です。これらの設定について詳しくは、<a href="http://www.playframework.org/documentation/2.0/AkkaCore">Playのドキュメント</a>で確認できます。</p>
+
+<p>すべての設定ファイルは<a href="https://github.com/jamesward/play2bars/tree/java-ebean/conf">こちらのplay2barsプロジェクトから</a></p>
 
 <p>このベンチマークはあくまで参考であって、それぞれの環境で異なってくると思います。それぞれの環境に合わせたチューニングをしてください。質問があれば是非。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    01 Feb 2012
+    <a href="/ci/2012/02/01/setup-capistrano">Capistranoをやってみよう</a>
+    </li>
+  
+    <li>
+    29 Feb 2012
+    <a href="/programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery&Heroku ［Play2アプリのビルド編］</a>
+    </li>
+  
+    <li>
+    12 Aug 2012
+    <a href="/programing/2012/08/12/Running-PlayFramework-Scala-Apps-on-Heroku">【意訳】Heroku上でPlayFramework + Scalaアプリケーションを実行する</a>
+    </li>
+  
+    <li>
+    15 Jan 2012
+    <a href="/record/2012/01/15/setup-jekyll">Jekyllによる静的Ｗebサイト構築入門してみた</a>
+    </li>
+  
+    <li>
+    04 Mar 2012
+    <a href="/programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku">【意訳】Tutorial：Play Framework 2 with Scala, Anorm, JSON, CoffeeScript, jQuery＆Heroku［Herokuデプロイ編］</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

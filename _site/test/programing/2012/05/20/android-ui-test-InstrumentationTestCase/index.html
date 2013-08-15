@@ -176,60 +176,120 @@
           
         			
 	 </div>
-      <h2 id='androiduiinstrumentationtestcase'>AndroidアプリのUIテスト-InstrumentationTestCase編-</h2>
+      <h2>AndroidアプリのUIテスト-InstrumentationTestCase編-</h2>
 
 <p>複数のActivityに跨る画面遷移のテストを調べて、サンプルを作ってみました。</p>
 
 <p>サンプルのAndroidプロジェクトとテストプロジェクトは以下に置きました。</p>
 
-<p>サンプルAndroidアプリ <a href='https://github.com/modalsoul/uiTestSample'>uiTestSample</a></p>
+<p>サンプルAndroidアプリ
+<a href="https://github.com/modalsoul/uiTestSample">uiTestSample</a></p>
 
-<p>サンプルテスト <a href='https://github.com/modalsoul/uiTestSample-test'>uiTestSample-test</a></p>
+<p>サンプルテスト
+<a href="https://github.com/modalsoul/uiTestSample-test">uiTestSample-test</a></p>
 
-<p>参考にしたのは以下のページ <a href='http://stackoverflow.com/questions/1759626/how-do-you-test-an-android-application-across-multiple-activities'>How do you test an Android application across multiple Activities?</a></p>
-<I>※：参考ページでは、JUnit4を使っていますが、ここではJUnit3を使っているため一部違っています。</I><hr />
-<h2 id='id61'>サンプルアプリの動作について</h2>
+<p>参考にしたのは以下のページ
+<a href="http://stackoverflow.com/questions/1759626/how-do-you-test-an-android-application-across-multiple-activities">How do you test an Android application across multiple Activities?</a></p>
+
+<p><I>※：参考ページでは、JUnit4を使っていますが、ここではJUnit3を使っているため一部違っています。</I></p>
+
+<hr />
+
+<h2>サンプルアプリの動作について</h2>
 
 <p>このサンプルでは、アプリの起動後の画面にボタンが表示され、そのボタンをクリックすると別画面に遷移します。</p>
-<h3>起動後の画面</h3><a href='http://www.flickr.com/photos/modalsoul/7233426834/' title='uiTestSample-main by modal_soul, on Flickr'>
-<img height='492' alt='uiTestSample-main' src='http://farm6.staticflickr.com/5343/7233426834_d72dda0713.jpg' width='500' />
-</a><h3>ボタンクリックで遷移後の画面</h3><a href='http://www.flickr.com/photos/modalsoul/7233469296/' title='uiTestSample-transited by modal_soul, on Flickr'>
-<img height='492' alt='uiTestSample-transited' src='http://farm6.staticflickr.com/5196/7233469296_d04794833e.jpg' width='500' />
-</a><hr />
-<h2 id='id62'>テストの概要</h2>
+
+<h3>起動後の画面</h3>
+
+<p><a href="http://www.flickr.com/photos/modalsoul/7233426834/" title="uiTestSample-main by modal_soul, on Flickr">
+<img src="http://farm6.staticflickr.com/5343/7233426834_d72dda0713.jpg" width="500" height="492" alt="uiTestSample-main">
+</a></p>
+
+<h3>ボタンクリックで遷移後の画面</h3>
+
+<p><a href="http://www.flickr.com/photos/modalsoul/7233469296/" title="uiTestSample-transited by modal_soul, on Flickr">
+<img src="http://farm6.staticflickr.com/5196/7233469296_d04794833e.jpg" width="500" height="492" alt="uiTestSample-transited">
+</a></p>
+
+<hr />
+
+<h2>テストの概要</h2>
 
 <p>このサンプルでは、アプリ起動後の画面のTextViewの内容を確認。ボタン1のクリックをエミュレートし、画面遷移後の画面のTextViewの内容を確認しています。</p>
 
-<h3 id='instrumentationtestcase'>InstrumentationTestCase</h3>
+<h3>InstrumentationTestCase</h3>
 
-<p>InstrumentationTestCaseを継承したクラスを作成します。 getInstrumentation()を使うことで、現在有効になってるアクティビティを捕捉し、TouchUtilsでユーザ操作をエミュレートします。</p>
+<p>InstrumentationTestCaseを継承したクラスを作成します。
+getInstrumentation()を使うことで、現在有効になってるアクティビティを捕捉し、TouchUtilsでユーザ操作をエミュレートします。</p>
 
-<h2 id='id63'>テストの流れ</h2>
+<h2>テストの流れ</h2>
 
-<h3 id='id64'>捕捉するインテント情報を設定</h3>
-<script src='https://gist.github.com/2758292.js?file=getInstrumentation.java'>
+<h3>捕捉するインテント情報を設定</h3>
+
+<script src="https://gist.github.com/2758292.js?file=getInstrumentation.java">
 </script>
-<h3 id='instrumentationactivitymonitor'>存在するInstrumentation.ActivityMonitorがヒットするまで待ちます。タイムアウト時間を設定。</h3>
-<script src='https://gist.github.com/2758303.js?file=getCurrentActivity.java'>
+
+<h3>存在するInstrumentation.ActivityMonitorがヒットするまで待ちます。タイムアウト時間を設定。</h3>
+
+<script src="https://gist.github.com/2758303.js?file=getCurrentActivity.java">
 </script>
-<h3 id='view'>Viewを取得して、初期状態を確認。</h3>
-<script src='https://gist.github.com/2758332.js?file=getAndCheckView.java'>
+
+<h3>Viewを取得して、初期状態を確認。</h3>
+
+<script src="https://gist.github.com/2758332.js?file=getAndCheckView.java">
 </script>
-<h3 id='id65'>ボタンのクリックをエミュレート。</h3>
-<script src='https://gist.github.com/2758337.js?file=emulateButtonClick.java'>
+
+<h3>ボタンのクリックをエミュレート。</h3>
+
+<script src="https://gist.github.com/2758337.js?file=emulateButtonClick.java">
 </script>
-<h3 id='activity'>再度Activityを取得。</h3>
-<script src='https://gist.github.com/2758348.js?file=getCurrentActivity2.java'>
+
+<h3>再度Activityを取得。</h3>
+
+<script src="https://gist.github.com/2758348.js?file=getCurrentActivity2.java">
 </script>
-<h3 id='id66'>画面遷移後の表示を確認。</h3>
-<script src='https://gist.github.com/2758351.js?file=getAndCheckView2.java'>
+
+<h3>画面遷移後の表示を確認。</h3>
+
+<script src="https://gist.github.com/2758351.js?file=getAndCheckView2.java">
 </script>
-<h2 id='id67'>まとめ</h2>
+
+<h2>まとめ</h2>
 
 <p>TouchUtilsを使えば、このほかにもドラッグ、スクロール、長押し等色々エミュレートでき、UIスレッドを意識しないで書けるので、アプリのハッピーパスのテストくらいであれば簡単に書けそうです。</p>
+
     </div>
     <hr>
-
+  <h4>関連する記事</h4>
+  <ul>
+  
+    <li>
+    30 Aug 2012
+    <a href="/test/programing/2012/08/30/android-ui-test-touchutils-performclick">TouchUtilsを使ったAndroidテストでjava.lang.SecurityException:PermissionDenialが起きたときの回避方法</a>
+    </li>
+  
+    <li>
+    17 Feb 2012
+    <a href="/report/2012/02/17/developers-summit-2012">Developers Summit 2012 2日目ツイートまとめ。#devsumi</a>
+    </li>
+  
+    <li>
+    25 May 2012
+    <a href="/report/2012/05/25/agile-kaihatsu-kihon-no-ki">横浜道場 特別編 「アジャイル開発 基本のキ」に参加しました。</a>
+    </li>
+  
+    <li>
+    11 May 2012
+    <a href="/report/2012/05/11/scrumdo-full-boost">スクラム道 Full Boost 「青物横丁制圧作戦」#scrumdoに参加しました。</a>
+    </li>
+  
+    <li>
+    26 Feb 2012
+    <a href="/report/test/2012/02/26/jstd-handson">横浜JSTDDハンズオンに参加しました。#JSTDD</a>
+    </li>
+  
+  </ul>
+  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

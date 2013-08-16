@@ -33,6 +33,15 @@
 <div class="row-fluid">
   <div class="span9">
     <div class="content">
+      <div id="thumbnail">
+      	{% unless page.thumbnail == empty %}
+          {% assign reference_url = page.thumbnail %}
+          {% unless page.comment == empty %}
+            {% assign comment = page.comment %}
+            {% include helpers/reference_thumbnail.html %}
+          {% endunless %}
+        {% endunless %}			
+	 </div>
       {{ content }}
     </div>
     <hr>  

@@ -12,7 +12,7 @@ tagline: Tech Blog (BETA)
         <h4><a href="{{ post.url }}">{{ post.title}}</a></h4>
         <p>{{ post.comment }}</p>
         <a href="{{ post.url}}">
-    	  <img src='http://capture.heartrails.com/360x180/cool/shorten?{{BASE_PATH}}{{ post.url }}'>
+    	  <img src='http://capture.heartrails.com/320x180/cool/shorten?{{BASE_PATH}}{{ post.url }}'>
         </a>
         <div id="right">
           <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io{{ post.url }}/" data-via="modal_soul" data-lang="ja">ツイート</a>

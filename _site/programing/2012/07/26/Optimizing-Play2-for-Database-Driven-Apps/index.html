@@ -176,11 +176,9 @@
           
         			
 	 </div>
-      <h2>【意訳】データベース駆動アプリのための、Play2最適化について</h2>
+      <p>この記事は、HerokuのPrincipal Developer Evangelistの<a href="http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps">James Ward氏の記事</a>の意訳です。参考程度にどうぞ。</p>
 
-<p>この記事は、HerokuのPrincipal Developer Evangelistの<a href="http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps">James Ward氏の記事</a>の意訳です。参考程度にどうぞ。</p>
-
-<p><img src="http://capture.heartrails.com/300x200/cool?http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps" alt="Optimizing Play 2 for Database-Driven Apps"></p>
+<p><img src="http://capture.heartrails.com/300x200/cool?http://www.jamesward.com/2012/06/25/optimizing-play-2-for-database-driven-apps" alt="Optimizing Play 2 for Database-Driven Apps" /></p>
 
 <p>誤訳・誤植等ありましたら、<a href="https://twitter.com/modal_soul">@modal_soulまで</a>リプライいただけるとありがたいです。</p>
 
@@ -189,13 +187,13 @@
 <p>先週Matt Raible氏と共に、UberConfで行われたPlay vs. Grailsスマックダウンでプレゼンテーションをしました。
 このセッションの目標は、同じフレームワークを用いて同じアプリケーションを作り、Play2+JavaとGrailsを比較することです。
 比較のために、いくつかのベンチマークを含む評価基準を使用しました。
-結果については、こちら（<a href="http://raibledesigns.com/rd/entry/play_vs_grails_smackdown_at">Matt&#39;s session recap blog</a>）に詳しく掲載されています。
+結果については、こちら（<a href="http://raibledesigns.com/rd/entry/play_vs_grails_smackdown_at">Matt&#8217;s session recap blog</a>）に詳しく掲載されています。
 評価結果のプレゼンの後、これらのタイプのアプリケーションでPlay2のAkkaスレッドシステムを最適化するのに重要なことを発見しました。
 Play2は、ブロッキングのコールを含まないHTTPリクエスト(i.e. 非同期)のためにout-of-the-boxに最適化されています。
 Javaのほとんどのデータベース駆動アプリでは同期コールはJDBC経由で使用されるため、Play2ではこれらのリクエストタイプのためにAkkaを調整するちょっとした設定が必要です。</p>
 
 <p>シンプルな例をあげてみます。時間的に現実的なデータベースブロックをシミュレートするために、このベンチマークをローカルではなくHeroku上で実行します。
-<a href="https://github.com/jamesward/play2bars">&quot;play2bars&quot;example app</a>から&quot;java-ebean&quot;ブランチとHerokuの共有のPostgreSQLデータベースを使います。</p>
+<a href="https://github.com/jamesward/play2bars">&#8220;play2bars&#8221;example app</a>から&#8221;java-ebean&#8221;ブランチとHerokuの共有のPostgreSQLデータベースを使います。</p>
 
 <p>Apache Benchを実行して、同時100クライアント接続で10000リクエストをアプリのJSONサービスへ投げるために、同じAWSリージョンにあるEC2サーバーからHerokuのmy appとして、以下のコマンドを実行しました。</p>
 
@@ -278,12 +276,13 @@ Time per request:       72.743 <span class="o">[</span>ms<span class="o">]</span
 <span class="o">}</span>
 </code></pre></div>
 
-<p>Akkaで使用されるスレッドの数は、CPUと&quot;parallelism-factor&quot;の設定値を掛け合わせた値で、&quot;parallelism-max&quot;が上限値です。
-デフォルトの&quot;parallelism-factor&quot;は&quot;1&quot;に設定されていて、この場合スレッド数はCPU数と同じで、&quot;parallelism-max&quot;のデフォルトは&quot;24&quot;です。これらの設定について詳しくは、<a href="http://www.playframework.org/documentation/2.0/AkkaCore">Playのドキュメント</a>で確認できます。</p>
+<p>Akkaで使用されるスレッドの数は、CPUと&#8221;parallelism-factor&#8221;の設定値を掛け合わせた値で、&#8221;parallelism-max&#8221;が上限値です。
+デフォルトの&#8221;parallelism-factor&#8221;は&#8221;1&#8221;に設定されていて、この場合スレッド数はCPU数と同じで、&#8221;parallelism-max&#8221;のデフォルトは&#8221;24&#8221;です。これらの設定について詳しくは、<a href="http://www.playframework.org/documentation/2.0/AkkaCore">Playのドキュメント</a>で確認できます。</p>
 
 <p>すべての設定ファイルは<a href="https://github.com/jamesward/play2bars/tree/java-ebean/conf">こちらのplay2barsプロジェクトから</a></p>
 
 <p>このベンチマークはあくまで参考であって、それぞれの環境で異なってくると思います。それぞれの環境に合わせたチューニングをしてください。質問があれば是非。</p>
+
 
     </div>
     <hr>  
@@ -297,7 +296,7 @@ Time per request:       72.743 <span class="o">[</span>ms<span class="o">]</span
   
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   
@@ -315,11 +314,11 @@ Time per request:       72.743 <span class="o">[</span>ms<span class="o">]</span
 
   
      
-    	<li><a href="/tags.html#Play2-ref">Play2 <span>4</span></a></li>
+    	<li><a href="/tags.html#Play2-ref">Play2 <span>5</span></a></li>
      
-    	<li><a href="/tags.html#Heroku-ref">Heroku <span>4</span></a></li>
+    	<li><a href="/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
      
-    	<li><a href="/tags.html#Database-Driven-ref">Database-Driven <span>1</span></a></li>
+    	<li><a href="/tags.html#Database-Driven-ref">Database-Driven <span>2</span></a></li>
      
     	<li><a href="/tags.html#Akka-ref">Akka <span>1</span></a></li>
     
@@ -358,7 +357,7 @@ Time per request:       72.743 <span class="o">[</span>ms<span class="o">]</span
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/programing/2012/08/10/Sign-in-with-Facebook-Scala" title="【意訳】Scala on LiftでのFacebookサインイン">Next &rarr;</a></li>
+        <li class="next"><a href="/programing/2012/07/31/Getting-Started-with-Play2-Scala-and-Squeryl" title="【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ　#scalajp　#play_ja">Next &rarr;</a></li>
       
       </ul>
     </div>
@@ -402,7 +401,7 @@ Time per request:       72.743 <span class="o">[</span>ms<span class="o">]</span
   
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   
@@ -420,11 +419,11 @@ Time per request:       72.743 <span class="o">[</span>ms<span class="o">]</span
 
   
      
-    	<li><a href="/tags.html#Play2-ref">Play2 <span>4</span></a></li>
+    	<li><a href="/tags.html#Play2-ref">Play2 <span>5</span></a></li>
      
-    	<li><a href="/tags.html#Heroku-ref">Heroku <span>4</span></a></li>
+    	<li><a href="/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
      
-    	<li><a href="/tags.html#Database-Driven-ref">Database-Driven <span>1</span></a></li>
+    	<li><a href="/tags.html#Database-Driven-ref">Database-Driven <span>2</span></a></li>
      
     	<li><a href="/tags.html#Akka-ref">Akka <span>1</span></a></li>
     

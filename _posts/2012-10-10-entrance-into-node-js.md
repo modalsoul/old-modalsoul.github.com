@@ -7,7 +7,7 @@ comment: この記事は、node.js使い始めのメモ書きです。
 thumbnail: http://nodejs.jp/index.html
 ---
 
------------------
+
 
 
 ## 謝辞

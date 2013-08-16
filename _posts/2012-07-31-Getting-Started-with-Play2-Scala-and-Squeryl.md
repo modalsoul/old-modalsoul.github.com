@@ -4,8 +4,6 @@ title: 【意訳】Scala on Play2 with Squerylではじめるデータベース�
 tags: Play2 Heroku Database-Driven Scala Squeryl CoffeeScript JSON jQuery ScalaTest
 categories: Programing
 ---
-【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ
------------------
 
 この記事は、HerokuのPrincipal Developer EvangelistのJames Ward氏とRyan Knight氏の記事[Getting Started with Play 2, Scala, and Squeryl](http://www.artima.com/articles/play2_scala_squeryl.html)の意訳です。参考程度にどうぞ。
 

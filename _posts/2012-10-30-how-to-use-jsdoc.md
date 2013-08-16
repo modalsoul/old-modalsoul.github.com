@@ -9,13 +9,14 @@ thumbnail:
 <a href="http://www.flickr.com/photos/pixagraphic/3414730395/" title="Old Documents by pixagraphic, on Flickr">
 <img src="http://farm4.staticflickr.com/3586/3414730395_7dedac534b_n.jpg" width="320" height="213" alt="Old Documents">
 </a>
------------------
+
+
 ## 謝辞
 以下の記事を参考にさせていただきました。感謝です。
 
 
-*・ [JsDoc3-manual-jp](https://sites.google.com/site/jsdoc3manualjp/) *
-*・ [JavaScript対応APIドキュメント生成ツールのまとめ | Web scratch](http://efcl.info/2011/0226/res2291/) *
+* [JsDoc3-manual-jp](https://sites.google.com/site/jsdoc3manualjp/) 
+* [JavaScript対応APIドキュメント生成ツールのまとめ｜ Web scratch](http://efcl.info/2011/0226/res2291/) 
 
 <hr />
 

@@ -7,7 +7,7 @@ comment: この記事は、node.jsとLoggingFrameworkのlog4jsを使ってのロ
 thumbnail: https://github.com/nomiddlename/log4js-node/blob/master/README.md
 ---
 
------------------
+
 
 
 
@@ -172,21 +172,21 @@ patternの設定は、ローテーションされたファイルのpostfixにな
 
 patternの設定は、以下の書式が適用されます。
 
-*・ yyyy : 西暦を4桁表示します。2桁表示するには"yy"を指定します。*
+* yyyy : 西暦を4桁表示します。2桁表示するには"yy"を指定します。
 
-*・ MM : 月*
+* MM : 月
 
-*・ dd : 日*
+* dd : 日
 
-*・ hh : 時間(24時間表示)*
+* hh : 時間(24時間表示)
 
-*・ mm : 分*
+* mm : 分
 
-*・ ss : 秒*
+* ss : 秒
 
-*・ sss : ミリ秒*
+* sss : ミリ秒
 
-*・ O : タイムゾーン（大文字のOです）*
+* O : タイムゾーン（大文字のOです）
 
 
 これでnode.js+log4jsで、ログローテーションできるようになりました。

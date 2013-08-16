@@ -4,8 +4,6 @@ title: VMWarePlayerでUbuntu環境を立ててみた。
 tags: Ubuntu VMWare
 categories: Environment
 ---
-[VMWarePlayer](http://www.vmware.com/jp/products/desktop_virtualization/player/overview)で、[Ubuntu](http://www.ubuntulinux.jp/)環境を作ってみました。
------------------
 
 ![VMWarePlayer](http://capture.heartrails.com/300x200/cool?http://www.vmware.com/jp/products/desktop_virtualization/player/overview)
 

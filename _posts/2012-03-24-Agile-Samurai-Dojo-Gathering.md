@@ -4,8 +4,6 @@ title: Agile Samurai Dojo Gathering(#agilesamurai)でろくろ回しました。
 tags: Agile
 categories: report
 ---
-Agile Samurai Dojo Gathering(#agilesamurai)でろくろ回しました。
------------------
 
 ![Agile Samurai Dojo Gathering](http://capture.heartrails.com/400x200/cool/shorten?http://agile-samurai-ja.github.com/dojo-gathering/2012/index.html)
 

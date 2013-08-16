@@ -4,8 +4,6 @@ title: みなとRuby会議01に参加しました。#minatork01
 tags: Ruby Scala みなとRuby会議 勉強会
 categories: report Programing
 ---
-みなとRuby会議01に参加しました。#minatork01 
------------------
 
 当日のTwitterのまとめはこちら↓
 

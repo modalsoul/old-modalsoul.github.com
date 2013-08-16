@@ -16,9 +16,9 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="http://modalsoul.github.io/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="http://modalsoul.github.io/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="http://modalsoul.github.io/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -35,8 +35,8 @@
     <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
 
     <!-- atom & rss feed -->
-    <link href="http://modalsoul.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="http://modalsoul.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
   </head>
 
   <body>
@@ -53,7 +53,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-narrow">
-          <a class="brand" href="http://modalsoul.github.io"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
+          <a class="brand" href="/"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
           <ul class="nav">
             
             
@@ -64,7 +64,7 @@
     
       
       	
-      	<li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      	<li><a href="/archive.html">Archive</a></li>
       	
       
     
@@ -76,23 +76,7 @@
     
       
       	
-      	<li><a href="http://modalsoul.github.io/categories.html">Categories</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="http://modalsoul.github.io/pages.html">Pages</a></li>
+      	<li><a href="/categories.html">Categories</a></li>
       	
       
     
@@ -108,7 +92,23 @@
     
       
       	
-      	<li><a href="http://modalsoul.github.io/tags.html">Tags</a></li>
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
       	
       
     
@@ -176,155 +176,191 @@
           
         			
 	 </div>
-      <h2 id='scala_on_play2_with_squeryl'>【意訳】Scala on Play2 with Squerylではじめるデータベース駆動アプリ</h2>
+      <p>この記事は、HerokuのPrincipal Developer EvangelistのJames Ward氏とRyan Knight氏の記事<a href="http://www.artima.com/articles/play2_scala_squeryl.html">Getting Started with Play 2, Scala, and Squeryl</a>の意訳です。参考程度にどうぞ。</p>
 
-<p>この記事は、HerokuのPrincipal Developer EvangelistのJames Ward氏とRyan Knight氏の記事<a href='http://www.artima.com/articles/play2_scala_squeryl.html'>Getting Started with Play 2, Scala, and Squeryl</a>の意訳です。参考程度にどうぞ。</p>
+<p><img src="http://capture.heartrails.com/300x200/cool?http://www.artima.com/articles/play2_scala_squeryl.html" alt="Getting Started with Play 2, Scala, and Squeryl" /></p>
 
-<p><img alt='Getting Started with Play 2, Scala, and Squeryl' src='http://capture.heartrails.com/300x200/cool?http://www.artima.com/articles/play2_scala_squeryl.html' /></p>
+<p>誤訳・誤植等ありましたら、<a href="https://twitter.com/modal_soul">@modal_soul</a>までリプライいただけるとありがたいです。</p>
+<hr />
 
-<p>誤訳・誤植等ありましたら、<a href='https://twitter.com/modal_soul'>@modal_soul</a>までリプライいただけるとありがたいです。 <hr /></p>
-
-<h2 id='id79'>サマリー</h2>
-<table border='1'><tr><td>
+<h2 id="section">サマリー</h2>
+<table border="1"><tr><td>
 この記事では、Play2,Scala,Squeryl,JSON,CoffeScript,CoffeScript,jQueryとScalaTestを使ったWebアプリケーションの作り方を紹介します。また、同時にScalaTestを使ったテスト方法とHerokuを使ったクラウド環境へのアプリケーションデプロイについても学べます。
 </td></tr>
 </table>
-<p>Play2,Scala,Squeryl,JSON,CoffeScript,jQueryとScalaTestの組み合わせによって、モダンなWebアプリケーションの構築とテストを効率的に行うことができ, シンプルなデータベース駆動Webアプリケーションの構築、テスト、クラウドへのデプロイを体験できます。</p>
 
-<h2 id='play2'>Play2の紹介</h2>
+<p>Play2,Scala,Squeryl,JSON,CoffeScript,jQueryとScalaTestの組み合わせによって、モダンなWebアプリケーションの構築とテストを効率的に行うことができ,
+シンプルなデータベース駆動Webアプリケーションの構築、テスト、クラウドへのデプロイを体験できます。</p>
 
-<p>Play2は数あるWebフレームワークの中でも、ステートレスアーキテクチャで設計された、ユニークなWebフレームワークです。 Play2は、メモリやCPUなどのリソースの消費を抑えた、とても軽量なフレームワークです。 ステートレスであるため、昨今クラウドアーキテクチャにとって重要な、水平のスケーリングを容易に行うことができます。 他のアーキテクチャの特徴としては、完全に非同期なHTTPプログラミングモデルを使った、Websocketやcometのようなlong lived-connectionを利用するために設計されていることです。</p>
+<h2 id="play2">Play2の紹介</h2>
+<p>Play2は数あるWebフレームワークの中でも、ステートレスアーキテクチャで設計された、ユニークなWebフレームワークです。
+Play2は、メモリやCPUなどのリソースの消費を抑えた、とても軽量なフレームワークです。
+ステートレスであるため、昨今クラウドアーキテクチャにとって重要な、水平のスケーリングを容易に行うことができます。
+他のアーキテクチャの特徴としては、完全に非同期なHTTPプログラミングモデルを使った、Websocketやcometのようなlong lived-connectionを利用するために設計されていることです。</p>
 
-<p>また他の特徴としては、Herokuのようなクラウドアプリケーションプラットフォームへのデプロイに適するように、完璧に完結していることです。 Playアプリケーションのデプロイはシンプルで、コンテナベースのアプローチをしてきたJava開発者の多くが経験してきた環境齟齬を回避することができます。</p>
+<p>また他の特徴としては、Herokuのようなクラウドアプリケーションプラットフォームへのデプロイに適するように、完璧に完結していることです。
+Playアプリケーションのデプロイはシンプルで、コンテナベースのアプローチをしてきたJava開発者の多くが経験してきた環境齟齬を回避することができます。</p>
 
 <p>Ruby on Rails, GrailsやDjangoなどの新しいWebフレームワークは、動的型付によってとても優れた生産性を発揮します。Playも動的言語フレームワークが持っているのと同じように、素早い繰り返しと高速な開発を行うことができ、しかしながらJavaやScalaのような静的型付言語による恩恵も留めています。これによりコンパイラは生産性を妨害することなく開発者を支援することができます。</p>
 
-<h2 id='squeryl'>Squerylの紹介</h2>
+<h2 id="squeryl">Squerylの紹介</h2>
+<p>データベースとのインテグレーションに最適の技術は何か？これは今まで幾度と無く討論されてきました。幸いなことに、JavaやScalaのエコシステムでは、データの永続化の方法が複数用意され、選択することができます。
+Play2のデフォルトのデータベースマッピングツールはAnormが使われています。(※AnormはORMではありません)
+名前が指し示す通り、Anormはオブジェクトとリレーショナルモデルとの自動マッピングを行いません。
+代わりに、開発者はネイティブなSQLを書き、手動でリレーショナルデータとオブジェクトのマッピングを行います。
+この手法では、実行される生のクエリーをチューニングすることができるという利点があります。
+Playの開発者は、SQLを使用することはリレーショナルデータベースとの対話とSQL層を抽象化することにおいての優れたDSLであり、パワフルで柔軟な方法だと主張してます。</p>
 
-<p>データベースとのインテグレーションに最適の技術は何か？これは今まで幾度と無く討論されてきました。幸いなことに、JavaやScalaのエコシステムでは、データの永続化の方法が複数用意され、選択することができます。 Play2のデフォルトのデータベースマッピングツールはAnormが使われています。(※AnormはORMではありません) 名前が指し示す通り、Anormはオブジェクトとリレーショナルモデルとの自動マッピングを行いません。 代わりに、開発者はネイティブなSQLを書き、手動でリレーショナルデータとオブジェクトのマッピングを行います。 この手法では、実行される生のクエリーをチューニングすることができるという利点があります。 Playの開発者は、SQLを使用することはリレーショナルデータベースとの対話とSQL層を抽象化することにおいての優れたDSLであり、パワフルで柔軟な方法だと主張してます。</p>
-
-<p>Squerylは、Scalaにおけるデータ永続化のためのAnormの代替手段です。Anormと比較して、SquerylはHibernateに似ており、オブジェクトリレーショナルマッピングを提供します。Squerylはデータベースとの対話において、型安全なDSLを提供します。 またSquerylは、明示的に取得されるデータオブジェクトの粒度を制御することができます。 Hibernateのような従来のORMと共通のN+1問題に対するエレガントなソリューションを提供します。</p>
+<p>Squerylは、Scalaにおけるデータ永続化のためのAnormの代替手段です。Anormと比較して、SquerylはHibernateに似ており、オブジェクトリレーショナルマッピングを提供します。Squerylはデータベースとの対話において、型安全なDSLを提供します。
+またSquerylは、明示的に取得されるデータオブジェクトの粒度を制御することができます。
+Hibernateのような従来のORMと共通のN+1問題に対するエレガントなソリューションを提供します。</p>
 
 <p>SquerylはPlay2のデフォルトのデータ永続化ライブラリではありませんが、特別な追加設定やセットアップは必要としません。データベースエボリューションは手動で行う必要があり、データベース接続は初期起動時に生成する必要があります。トランザクションも同様に、コントローラーで呼ばれた際に、明示的に定義される必要があります。</p>
 
-<h2 id='play2squeryl'>Play2でのSquerylのセットアップ</h2>
-
+<h2 id="play2squeryl">Play2でのSquerylのセットアップ</h2>
 <p>Play2プロジェクトがまだない場合、Play2をインストール後、新規プロジェクトを作成しましょう。</p>
-<div class='highlight'><pre><code class='sh'>play new mysquerylapp
+
+<div class="highlight"><pre><code class="sh">play new mysquerylapp
 </code></pre></div>
+
 <p>プロジェクトの言語はScalaを選択しましょう。</p>
 
 <p>SquerylライブラリをPlayプロジェクトに追加する必要があります。後ほどプロジェクトはHerokuにデプロイします。HerokuのデフォルトのデータベースはPostgreSQLで、PostgreJDBCドライバーも依存関係にあるためここで追加します。</p>
 
 <p>project/Build.scalaファイルを編集し、依存関係を更新しましょう。</p>
-<div class='highlight'><pre><code class='sh'>val <span class='nv'>appDependencies</span> <span class='o'>=</span> Seq<span class='o'>(</span>
-  <span class='s2'>&quot;org.squeryl&quot;</span> %% <span class='s2'>&quot;squeryl&quot;</span> % <span class='s2'>&quot;0.9.5-2&quot;</span>,
-  <span class='s2'>&quot;postgresql&quot;</span> % <span class='s2'>&quot;postgresql&quot;</span> % <span class='s2'>&quot;9.1-901-1.jdbc4&quot;</span>
-<span class='o'>)</span>
+
+<div class="highlight"><pre><code class="sh">val <span class="nv">appDependencies</span> <span class="o">=</span> Seq<span class="o">(</span>
+  <span class="s2">&quot;org.squeryl&quot;</span> %% <span class="s2">&quot;squeryl&quot;</span> % <span class="s2">&quot;0.9.5-2&quot;</span>,
+  <span class="s2">&quot;postgresql&quot;</span> % <span class="s2">&quot;postgresql&quot;</span> % <span class="s2">&quot;9.1-901-1.jdbc4&quot;</span>
+<span class="o">)</span>
 </code></pre></div>
+
 <p>IDEにEclipseやIntellijを使っている場合、Playはプロジェクトを自動作成してくれます。</p>
 
 <p>Intellijの場合</p>
-<div class='highlight'><pre><code class='sh'>play idea
+
+<div class="highlight"><pre><code class="sh">play idea
 </code></pre></div>
+
 <p>Eclipseの場合</p>
-<div class='highlight'><pre><code class='sh'>play eclipsify
+
+<div class="highlight"><pre><code class="sh">play eclipsify
 </code></pre></div>
+
 <p>ここでは注意ですが、プロジェクトファイルは依存関係を更新した後に作成しましょう。なぜならプロジェクトは必要なライブラリも含めて構成されるからです。もし後で依存関係を更新する場合は、プロジェクトを生成するコマンドを再度実行してください。</p>
 
 <p>これでプロジェクトを実行することができます。プロジェクトルートに移動し、以下のコマンドを実行しましょう。</p>
-<div class='highlight'><pre><code class='sh'>play ~run
+
+<div class="highlight"><pre><code class="sh">play ~run
 </code></pre></div>
+
 <p>サーバは以下のURLで起動しています。確かめてみましょう。</p>
-<div class='highlight'><pre><code class='sh'>http://localhost:9000
+
+<div class="highlight"><pre><code class="sh">http://localhost:9000
 </code></pre></div>
+
 <p>ローカルでのテストではインメモリのh2データベースを使用します。Playでこのデータベースを使用するには、conf/application.confファイルを修正し、以下の行のコメントアウトの解除か、行の追加をします。</p>
-<div class='highlight'><pre><code class='sh'>db.default.driver<span class='o'>=</span>org.h2.Driver
-db.default.url<span class='o'>=</span><span class='s2'>&quot;jdbc:h2:mem:play&quot;</span>
+
+<div class="highlight"><pre><code class="sh">db.default.driver<span class="o">=</span>org.h2.Driver
+db.default.url<span class="o">=</span><span class="s2">&quot;jdbc:h2:mem:play&quot;</span>
 </code></pre></div>
-<p>最後のセットアップ手順として、Squerylデータベースを接続します。データベースの接続情報を取得するために、Play標準の構成システムを使います。 Playアプリケーションのライフサイクルのスタートアップフェーズにフックするグローバルクラスを追加するだけで完了です。 app/Global.scalaファイルを新規に作成し、以下を記述します。</p>
-<div class='highlight'><pre><code class='sh'>import org.squeryl.adapters.<span class='o'>{</span>H2Adapter, PostgreSqlAdapter<span class='o'>}</span>
+
+<p>最後のセットアップ手順として、Squerylデータベースを接続します。データベースの接続情報を取得するために、Play標準の構成システムを使います。
+Playアプリケーションのライフサイクルのスタートアップフェーズにフックするグローバルクラスを追加するだけで完了です。
+app/Global.scalaファイルを新規に作成し、以下を記述します。</p>
+
+<div class="highlight"><pre><code class="sh">import org.squeryl.adapters.<span class="o">{</span>H2Adapter, PostgreSqlAdapter<span class="o">}</span>
 import org.squeryl.internals.DatabaseAdapter
-import org.squeryl.<span class='o'>{</span>Session, SessionFactory<span class='o'>}</span>
+import org.squeryl.<span class="o">{</span>Session, SessionFactory<span class="o">}</span>
 import play.api.db.DB
 import play.api.GlobalSettings
 
 import play.api.Application
 
-object Global extends GlobalSettings <span class='o'>{</span>
+object Global extends GlobalSettings <span class="o">{</span>
 
-  override def onStart<span class='o'>(</span>app: Application<span class='o'>)</span> <span class='o'>{</span>
-    SessionFactory.concreteFactory <span class='o'>=</span> app.configuration.getString<span class='o'>(</span><span class='s2'>&quot;db.default.driver&quot;</span><span class='o'>)</span> match <span class='o'>{</span>
-      <span class='k'>case </span>Some<span class='o'>(</span><span class='s2'>&quot;org.h2.Driver&quot;</span><span class='o'>)</span> <span class='o'>=</span>&gt; Some<span class='o'>(()</span> <span class='o'>=</span>&gt; getSession<span class='o'>(</span>new H2Adapter, app<span class='o'>))</span>
-      <span class='k'>case </span>Some<span class='o'>(</span><span class='s2'>&quot;org.postgresql.Driver&quot;</span><span class='o'>)</span> <span class='o'>=</span>&gt; Some<span class='o'>(()</span> <span class='o'>=</span>&gt; getSession<span class='o'>(</span>new PostgreSqlAdapter, app<span class='o'>))</span>
-      <span class='k'>case </span><span class='nv'>_</span> <span class='o'>=</span>&gt; sys.error<span class='o'>(</span><span class='s2'>&quot;Database driver must be either org.h2.Driver or org.postgresql.Driver&quot;</span><span class='o'>)</span>
-    <span class='o'>}</span>
-  <span class='o'>}</span>
+  override def onStart<span class="o">(</span>app: Application<span class="o">)</span> <span class="o">{</span>
+    SessionFactory.concreteFactory <span class="o">=</span> app.configuration.getString<span class="o">(</span><span class="s2">&quot;db.default.driver&quot;</span><span class="o">)</span> match <span class="o">{</span>
+      <span class="k">case </span>Some<span class="o">(</span><span class="s2">&quot;org.h2.Driver&quot;</span><span class="o">)</span> <span class="o">=</span>&gt; Some<span class="o">(()</span> <span class="o">=</span>&gt; getSession<span class="o">(</span>new H2Adapter, app<span class="o">))</span>
+      <span class="k">case </span>Some<span class="o">(</span><span class="s2">&quot;org.postgresql.Driver&quot;</span><span class="o">)</span> <span class="o">=</span>&gt; Some<span class="o">(()</span> <span class="o">=</span>&gt; getSession<span class="o">(</span>new PostgreSqlAdapter, app<span class="o">))</span>
+      <span class="k">case </span><span class="nv">_</span> <span class="o">=</span>&gt; sys.error<span class="o">(</span><span class="s2">&quot;Database driver must be either org.h2.Driver or org.postgresql.Driver&quot;</span><span class="o">)</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
 
-  def getSession<span class='o'>(</span>adapter:DatabaseAdapter, app: Application<span class='o'>)</span> <span class='o'>=</span> Session.create<span class='o'>(</span>DB.getConnection<span class='o'>()(</span>app<span class='o'>)</span>, adapter<span class='o'>)</span>
+  def getSession<span class="o">(</span>adapter:DatabaseAdapter, app: Application<span class="o">)</span> <span class="o">=</span> Session.create<span class="o">(</span>DB.getConnection<span class="o">()(</span>app<span class="o">)</span>, adapter<span class="o">)</span>
 
-<span class='o'>}</span>
+<span class="o">}</span>
 </code></pre></div>
+
 <p>アプリケーションスタートアップのdb.default.driver設定パラメータは、データベース接続のセットアップのために使用するドライバを決定するために使われます。新しいコネクションが生成され、SquerylのSessionFactoryにストアされます。</p>
 
 <p>ブラウザで、http://localhost:9000をリロードすると、アプリケーションが動作し、PlayのSTDOUTログで以下のメッセージが表示されるはずです。</p>
-<div class='highlight'><pre><code class='sh'><span class='o'>[</span>info<span class='o'>]</span> play - database <span class='o'>[</span>default<span class='o'>]</span> connected at jdbc:h2:mem:play
-</code></pre></div>
-<h2 id='entity'>Entityの作成</h2>
 
+<div class="highlight"><pre><code class="sh"><span class="o">[</span>info<span class="o">]</span> play - database <span class="o">[</span>default<span class="o">]</span> connected at jdbc:h2:mem:play
+</code></pre></div>
+
+<h2 id="entity">Entityの作成</h2>
 <p>それでは、データベースでデータを保持するためのシンプルなEntityオブジェクトを作成しましょう。app/models/Bar.scalaファイルを新規に作成し、以下のを記述します。</p>
-<div class='highlight'><pre><code class='sh'>package models
 
-import org.squeryl.<span class='o'>{</span>Schema, KeyedEntity<span class='o'>}</span>
+<div class="highlight"><pre><code class="sh">package models
 
-<span class='k'>case </span>class Bar<span class='o'>(</span>name: Option<span class='o'>[</span>String<span class='o'>])</span> extends KeyedEntity<span class='o'>[</span>Long<span class='o'>]</span> <span class='o'>{</span>
-  val id: <span class='nv'>Long</span> <span class='o'>=</span> 0
-<span class='o'>}</span>
+import org.squeryl.<span class="o">{</span>Schema, KeyedEntity<span class="o">}</span>
 
-object AppDB extends Schema <span class='o'>{</span>
-  val <span class='nv'>barTable</span> <span class='o'>=</span> table［Bar］<span class='o'>(</span><span class='s2'>&quot;bar&quot;</span><span class='o'>)</span>
-<span class='o'>}</span>
+<span class="k">case </span>class Bar<span class="o">(</span>name: Option<span class="o">[</span>String<span class="o">])</span> extends KeyedEntity<span class="o">[</span>Long<span class="o">]</span> <span class="o">{</span>
+  val id: <span class="nv">Long</span> <span class="o">=</span> 0
+<span class="o">}</span>
+
+object AppDB extends Schema <span class="o">{</span>
+  val <span class="nv">barTable</span> <span class="o">=</span> table［Bar］<span class="o">(</span><span class="s2">&quot;bar&quot;</span><span class="o">)</span>
+<span class="o">}</span>
 </code></pre></div>
+
 <p>これはBarオブジェクトのリストを保持するかなりシンプルなentityです。各々のBarはnameとプライマリキーとしてIDを持っています。Scalaのcase classは,不変で、基本的にクラスを文法上の便宜で満たすものです。また、クライアントから返却されたフォーム値のマッチングを行う際にとても便利なパターンマッチングとして使用することもできます。AppDBオブジェクトは、Squerylがデータベースへマッピングするスキーマのインスタンスです。今回の場合、データベースにbarというテーブルを１つ定義します。スキーマは単一のオブジェクトとして宣言されるため、シングルトンオブジェクトを生成します。</p>
 
 <p>Squerylを使うと、AppDB.createメソッドを呼ぶだけでプラグラムチックにデータベーススキーマを生成することができます。ですが、手動でSQLスクリプトを作成する方法をお勧めします（PlayではこのSQLスクリプトをevolutions scriptと呼びます)。Playは、これらのSQLスクリプトに対応するデータベーススキーマをチェックして、データベーススキーマの変更を追跡します。Playは、スキーマが古くなっていることを検出すると、このSQLスクリプトの適用を提案してきます。これはDEVモードのときにのみ行われ、PRODモードでは、アプリケーションの起動前にスクリプトを適用されます。これにより、データベーススキーマの変更やバージョンのロールバックを行う必要がある場合に、スキーマの変更をコントロールすることができます。</p>
 
 <p>conf/evolutions/default/1.sqlファイルを新規作成して、以下を記述します。</p>
-<div class='highlight'><pre><code class='sh'><span class='c'># --- First database schema</span>
 
-<span class='c'># --- !Ups</span>
+<div class="highlight"><pre><code class="sh"><span class="c"># --- First database schema</span>
+
+<span class="c"># --- !Ups</span>
 
 create sequence s_bar_id;
 
-create table bar <span class='o'>(</span>
-  id    bigint DEFAULT nextval<span class='o'>(</span><span class='s1'>&#39;s_bar_id&#39;</span><span class='o'>)</span>,
-  name  varchar<span class='o'>(</span>128<span class='o'>)</span>
-<span class='o'>)</span>;
+create table bar <span class="o">(</span>
+  id    bigint DEFAULT nextval<span class="o">(</span><span class="s1">&#39;s_bar_id&#39;</span><span class="o">)</span>,
+  name  varchar<span class="o">(</span>128<span class="o">)</span>
+<span class="o">)</span>;
 
 
-<span class='c'># --- !Downs</span>
+<span class="c"># --- !Downs</span>
 
 drop table bar;
 drop sequence s_bar_id;
 </code></pre></div>
-<p>このSQLファイルは”Ups”と”Downs”の2つのセクションから成っています。”Ups”セクションは、データベーススキーマに変更を反映させ、”Downs”セクションは、データベースへの変更を取り消す際の記述です。Playは、データベーススキーマへの変更をこれらのファイルの名前順に適用します。もし、デプロイ後1.sqlの適用後にスキーマへ変更を行う必要がある場合は、2.sqlファイルに変更内容を記述します。 http://localhost:9000をリロードすると、Playがデータベースへの変更を適用するか尋ねてくるはずです。1.sqlの”Ups”セクションをローカルのインメモリデータベースに適用するために、Apply this script now!ボタンをクリックします。</p>
 
-<h2 id='id80'>モデルのテスト</h2>
+<p>このSQLファイルは”Ups”と”Downs”の2つのセクションから成っています。”Ups”セクションは、データベーススキーマに変更を反映させ、”Downs”セクションは、データベースへの変更を取り消す際の記述です。Playは、データベーススキーマへの変更をこれらのファイルの名前順に適用します。もし、デプロイ後1.sqlの適用後にスキーマへ変更を行う必要がある場合は、2.sqlファイルに変更内容を記述します。
+http://localhost:9000をリロードすると、Playがデータベースへの変更を適用するか尋ねてくるはずです。1.sqlの”Ups”セクションをローカルのインメモリデータベースに適用するために、Apply this script now!ボタンをクリックします。</p>
+
+<h2 id="section-1">モデルのテスト</h2>
 
 <p>Play2では、テスト駆動開発のスタイルに合った強力なテストサポートがなされています。ScalaでPlay2を使う場合、テストはデフォルトでspaes2が使われていますが、ScalaTestを使用します。Barモデルオブジェクトのシンプルなテストを作ります。プロジェクトにScalaTestの依存関係を追加し、testOptions設定を修正します。project/Build.scalaを以下を追記して更新します。</p>
-<div class='highlight'><pre><code class='sh'>val <span class='nv'>appDependencies</span> <span class='o'>=</span> Seq<span class='o'>(</span>
-  <span class='s2'>&quot;org.scalatest&quot;</span> %% <span class='s2'>&quot;scalatest&quot;</span> % <span class='s2'>&quot;1.8&quot;</span> % <span class='s2'>&quot;test&quot;</span>,
-  <span class='s2'>&quot;org.squeryl&quot;</span> %% <span class='s2'>&quot;squeryl&quot;</span> % <span class='s2'>&quot;0.9.5-2&quot;</span>,
-  <span class='s2'>&quot;postgresql&quot;</span> % <span class='s2'>&quot;postgresql&quot;</span> % <span class='s2'>&quot;9.1-901-1.jdbc4&quot;</span>
-<span class='o'>)</span>
 
-val <span class='nv'>main</span> <span class='o'>=</span> PlayProject<span class='o'>(</span>appName, appVersion, appDependencies, <span class='nv'>mainLang</span> <span class='o'>=</span> SCALA<span class='o'>)</span>.settings<span class='o'>(</span>
-  testOptions in Test :<span class='o'>=</span> Nil
+<div class="highlight"><pre><code class="sh">val <span class="nv">appDependencies</span> <span class="o">=</span> Seq<span class="o">(</span>
+  <span class="s2">&quot;org.scalatest&quot;</span> %% <span class="s2">&quot;scalatest&quot;</span> % <span class="s2">&quot;1.8&quot;</span> % <span class="s2">&quot;test&quot;</span>,
+  <span class="s2">&quot;org.squeryl&quot;</span> %% <span class="s2">&quot;squeryl&quot;</span> % <span class="s2">&quot;0.9.5-2&quot;</span>,
+  <span class="s2">&quot;postgresql&quot;</span> % <span class="s2">&quot;postgresql&quot;</span> % <span class="s2">&quot;9.1-901-1.jdbc4&quot;</span>
+<span class="o">)</span>
+
+val <span class="nv">main</span> <span class="o">=</span> PlayProject<span class="o">(</span>appName, appVersion, appDependencies, <span class="nv">mainLang</span> <span class="o">=</span> SCALA<span class="o">)</span>.settings<span class="o">(</span>
+  testOptions in Test :<span class="o">=</span> Nil
   // Add your own project settings here
-<span class='o'>)</span>
+<span class="o">)</span>
 </code></pre></div>
+
 <p>test/BarSpec.scalaを新規作成し以下を記述します。</p>
-<div class='highlight'><pre><code class='sh'>import models.<span class='o'>{</span>AppDB, Bar<span class='o'>}</span>
+
+<div class="highlight"><pre><code class="sh">import models.<span class="o">{</span>AppDB, Bar<span class="o">}</span>
 
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
@@ -334,87 +370,103 @@ import org.squeryl.PrimitiveTypeMode.inTransaction
 import play.api.test._
 import play.api.test.Helpers._
 
-class BarSpec extends FlatSpec with ShouldMatchers <span class='o'>{</span>
+class BarSpec extends FlatSpec with ShouldMatchers <span class="o">{</span>
 
-  <span class='s2'>&quot;A Bar&quot;</span> should <span class='s2'>&quot;be creatable&quot;</span> in <span class='o'>{</span>
-    running<span class='o'>(</span>FakeApplication<span class='o'>(</span><span class='nv'>additionalConfiguration</span> <span class='o'>=</span> inMemoryDatabase<span class='o'>()))</span> <span class='o'>{</span>
-      inTransaction <span class='o'>{</span>
-        val <span class='nv'>bar</span> <span class='o'>=</span> AppDB.barTable insert Bar<span class='o'>(</span>Some<span class='o'>(</span><span class='s2'>&quot;foo&quot;</span><span class='o'>))</span>
-        bar.id should not equal<span class='o'>(</span>0<span class='o'>)</span>
-      <span class='o'>}</span>
-    <span class='o'>}</span>
-  <span class='o'>}</span>
+  <span class="s2">&quot;A Bar&quot;</span> should <span class="s2">&quot;be creatable&quot;</span> in <span class="o">{</span>
+    running<span class="o">(</span>FakeApplication<span class="o">(</span><span class="nv">additionalConfiguration</span> <span class="o">=</span> inMemoryDatabase<span class="o">()))</span> <span class="o">{</span>
+      inTransaction <span class="o">{</span>
+        val <span class="nv">bar</span> <span class="o">=</span> AppDB.barTable insert Bar<span class="o">(</span>Some<span class="o">(</span><span class="s2">&quot;foo&quot;</span><span class="o">))</span>
+        bar.id should not equal<span class="o">(</span>0<span class="o">)</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
 
-<span class='o'>}</span>
+<span class="o">}</span>
 </code></pre></div>
-<p>このテストでは、実行するためにFakeApplicationとインメモリデータベースを使います。FakeApplicationを使用すると、Squerylデータベースコネクションは先に生成されたGlobalオブジェクトを使って構成されます。テスト本体は単純にBarのインスタンスを生成し、idが０ではないことをテストします。 これはSquerylトランザクションで行われます。 1系のPlayと異なり、テストはコマンドラインから実行されます。コマンドは以下</p>
-<div class='highlight'><pre><code class='sh'>play <span class='nb'>test</span>
+
+<p>このテストでは、実行するためにFakeApplicationとインメモリデータベースを使います。FakeApplicationを使用すると、Squerylデータベースコネクションは先に生成されたGlobalオブジェクトを使って構成されます。テスト本体は単純にBarのインスタンスを生成し、idが０ではないことをテストします。
+これはSquerylトランザクションで行われます。
+1系のPlayと異なり、テストはコマンドラインから実行されます。コマンドは以下</p>
+
+<div class="highlight"><pre><code class="sh">play <span class="nb">test</span>
 </code></pre></div>
+
 <p>テストが終了したら、以下のメッセージがPlayのSTDOUTログに出力されていることを確認します。</p>
-<div class='highlight'><pre><code class='sh'><span class='o'>[</span>info<span class='o'>]</span> Passed: : Total 1, Failed 0, Errors 0, Passed 1, Skipped 0
+
+<div class="highlight"><pre><code class="sh"><span class="o">[</span>info<span class="o">]</span> Passed: : Total 1, Failed 0, Errors 0, Passed 1, Skipped 0
 </code></pre></div>
+
 <p>ソースの変更の度にテストを実行するには、以下のコマンドで実行します</p>
-<div class='highlight'><pre><code class='sh'>play ~test
+
+<div class="highlight"><pre><code class="sh">play ~test
 </code></pre></div>
+
 <p>~runと~testコマンドはバックグラウンドで継続して実行することができます。これにより、ユニットテスト/機能テストやブラウザからの手動テストをすぐさま実行することができます。</p>
 
-<h2 id='webbar'>WebフォームからBarを生成する</h2>
+<h2 id="webbar">WebフォームからBarを生成する</h2>
 
 <p>新しくBarオブジェクトを生成するための基本的なWeb UIを追加してみましょう。このセクションの手順を全て踏まないとコードのコンパイルができないので注意してください。</p>
 
 <p>最初に、app/controllers/Application.scalaファイルを下記の記述を追加して更新します。</p>
-<div class='highlight'><pre><code class='sh'>package controllers
+
+<div class="highlight"><pre><code class="sh">package controllers
 
 import play.api.mvc._
 
 import com.codahale.jerkson.Json
 import play.api.data.Form
-import play.api.data.Forms.<span class='o'>{</span>mapping, text, optional<span class='o'>}</span>
+import play.api.data.Forms.<span class="o">{</span>mapping, text, optional<span class="o">}</span>
 
 import org.squeryl.PrimitiveTypeMode._
-import models.<span class='o'>{</span>AppDB, Bar<span class='o'>}</span>
+import models.<span class="o">{</span>AppDB, Bar<span class="o">}</span>
 
 
-object Application extends Controller <span class='o'>{</span>
+object Application extends Controller <span class="o">{</span>
 
-  val <span class='nv'>barForm</span> <span class='o'>=</span> Form<span class='o'>(</span>
-    mapping<span class='o'>(</span>
-      <span class='s2'>&quot;name&quot;</span> -&gt; optional<span class='o'>(</span>text<span class='o'>)</span>
-    <span class='o'>)(</span>Bar.apply<span class='o'>)(</span>Bar.unapply<span class='o'>)</span>
-  <span class='o'>)</span>
+  val <span class="nv">barForm</span> <span class="o">=</span> Form<span class="o">(</span>
+    mapping<span class="o">(</span>
+      <span class="s2">&quot;name&quot;</span> -&gt; optional<span class="o">(</span>text<span class="o">)</span>
+    <span class="o">)(</span>Bar.apply<span class="o">)(</span>Bar.unapply<span class="o">)</span>
+  <span class="o">)</span>
 
-  def <span class='nv'>index</span> <span class='o'>=</span> Action <span class='o'>{</span>
-    Ok<span class='o'>(</span>views.html.index<span class='o'>(</span>barForm<span class='o'>))</span>
-  <span class='o'>}</span>
+  def <span class="nv">index</span> <span class="o">=</span> Action <span class="o">{</span>
+    Ok<span class="o">(</span>views.html.index<span class="o">(</span>barForm<span class="o">))</span>
+  <span class="o">}</span>
 
-  def <span class='nv'>addBar</span> <span class='o'>=</span> Action <span class='o'>{</span> implicit <span class='nv'>request</span> <span class='o'>=</span>&gt;
-    barForm.bindFromRequest.value map <span class='o'>{</span> <span class='nv'>bar</span> <span class='o'>=</span>&gt;
-      inTransaction<span class='o'>(</span>AppDB.barTable insert bar<span class='o'>)</span>
-      Redirect<span class='o'>(</span>routes.Application.index<span class='o'>())</span>
-    <span class='o'>}</span> getOrElse BadRequest
-  <span class='o'>}</span>
+  def <span class="nv">addBar</span> <span class="o">=</span> Action <span class="o">{</span> implicit <span class="nv">request</span> <span class="o">=</span>&gt;
+    barForm.bindFromRequest.value map <span class="o">{</span> <span class="nv">bar</span> <span class="o">=</span>&gt;
+      inTransaction<span class="o">(</span>AppDB.barTable insert bar<span class="o">)</span>
+      Redirect<span class="o">(</span>routes.Application.index<span class="o">())</span>
+    <span class="o">}</span> getOrElse BadRequest
+  <span class="o">}</span>
 
-<span class='o'>}</span>
+<span class="o">}</span>
 </code></pre></div>
+
 <p>barFormは、リクエストパラメーターnameからcace class Barのプロパティnameへ（コンストラクタを通して）マッピングをします。indexメソッドは、index templateへbarFormのインスタンスを渡すように更新されました。次にtemplateを更新します。addBarメソッドは、リクエストパラメーターをオブジェクトbarにバインドし、トランザクション内でデータベースへインサートします。SquerylはPlay frameworkに統合されていないので、データベーストランザクションはSquerylのinTransactionを使って明示的に開始する必要があります。次にユーザはindexページにリダイレクトされます。リクエストパラメータがbarFormを使ってBarにマッピングされなかった場合、BadRequestエラーが返却されます。</p>
 
 <p>次にapp/views/index.scala.htmlテンプレートに以下を追記して更新します。</p>
-<div class='highlight'><pre><code class='sh'> ＠<span class='o'>(</span>form: play.api.data.Form<span class='o'>[</span>Bar<span class='o'>])</span>
 
- ＠main<span class='o'>(</span><span class='s2'>&quot;Welcome to Play 2.0&quot;</span><span class='o'>)</span> <span class='o'>{</span>
+<div class="highlight"><pre><code class="sh"> ＠<span class="o">(</span>form: play.api.data.Form<span class="o">[</span>Bar<span class="o">])</span>
 
-    @helper.form<span class='o'>(</span><span class='nv'>action</span> <span class='o'>=</span> routes.Application.addBar<span class='o'>)</span> <span class='o'>{</span>
-        @helper.inputText<span class='o'>(</span>form<span class='o'>(</span><span class='s2'>&quot;name&quot;</span><span class='o'>))</span>
-        &lt;input <span class='nb'>type</span><span class='o'>=</span><span class='s2'>&quot;submit&quot;</span>/&gt;
-    <span class='o'>}</span>
+ ＠main<span class="o">(</span><span class="s2">&quot;Welcome to Play 2.0&quot;</span><span class="o">)</span> <span class="o">{</span>
 
-<span class='o'>}</span>
+    @helper.form<span class="o">(</span><span class="nv">action</span> <span class="o">=</span> routes.Application.addBar<span class="o">)</span> <span class="o">{</span>
+        @helper.inputText<span class="o">(</span>form<span class="o">(</span><span class="s2">&quot;name&quot;</span><span class="o">))</span>
+        &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span>/&gt;
+    <span class="o">}</span>
+
+<span class="o">}</span>
 </code></pre></div>
-<p>この時点で、テンプレートはApplication Controllerのindexメソッドから渡されたForm<span>Bar</span>パラメータを取ります。テンプレート本体の新しいHTMLフォームはPlay2のform helperを使ってレンダリングされます。このフォームは、nameフィールドとsubmitボタンを持ちます。注意しなければいけないのは、フォームのアクションは、ルートからApplication controllerのaddBarメソッドへを指していることです。</p>
 
-<p>この時点でコンソールウィンドウをみると”value addBar is not a member of controllers.ReverseApplication”エラーがみられると思います。 これは、routeファイルがコンパイルされ、routeがチェックされたからです。まだrouteが作られていないので、conf/routesファイルを編集し、以下の行を追加します。</p>
-<div class='highlight'><pre><code class='sh'>POST    /bars                       controllers.Application.addBar
+<p>この時点で、テンプレートはApplication Controllerのindexメソッドから渡されたForm[Bar]パラメータを取ります。テンプレート本体の新しいHTMLフォームはPlay2のform helperを使ってレンダリングされます。このフォームは、nameフィールドとsubmitボタンを持ちます。注意しなければいけないのは、フォームのアクションは、ルートからApplication controllerのaddBarメソッドへを指していることです。</p>
+
+<p>この時点でコンソールウィンドウをみると”value addBar is not a member of controllers.ReverseApplication”エラーがみられると思います。
+これは、routeファイルがコンパイルされ、routeがチェックされたからです。まだrouteが作られていないので、conf/routesファイルを編集し、以下の行を追加します。</p>
+
+<div class="highlight"><pre><code class="sh">POST    /bars                       controllers.Application.addBar
 </code></pre></div>
+
 <p>これにより、/barsURLへのPOSTリクエストをaddBarメソッドへマッピングするHTTPルートを作成します。</p>
 
 <p>ブラウザでhttp://localhost:9000 を更新すると、新しいBarオブジェクトを追加するための基本的なフォームが表示されているはずです。成功した場合、新しいBarを追加した後に、ブラウザはindexページにリダイレクトして戻ります。</p>
@@ -424,17 +476,20 @@ object Application extends Controller <span class='o'>{</span>
 <p>addBarの場合、barForm.bindFromRequestメソッドがplay.api.mvc.Requestパラメータをとり、明示的に渡す必要がないため、リクエストをimplicitと明示します。</p>
 
 <p>参考に、Form.bindToRequestメソッドのメソッド定義を記載します。</p>
-<div class='highlight'><pre><code class='sh'>def bindFromRequest<span class='o'>()(</span>implicit request: play.api.mvc.Request<span class='o'>[</span>_<span class='o'>])</span>: Form<span class='o'>[</span>T<span class='o'>]</span> <span class='o'>=</span> <span class='o'>{</span>...<span class='o'>}</span>
+
+<div class="highlight"><pre><code class="sh">def bindFromRequest<span class="o">()(</span>implicit request: play.api.mvc.Request<span class="o">[</span>_<span class="o">])</span>: Form<span class="o">[</span>T<span class="o">]</span> <span class="o">=</span> <span class="o">{</span>...<span class="o">}</span>
 </code></pre></div>
-<p>bindFromRequestはフォームオブジェクトを返します。addBarメソッドでは、この場合Option<span>Bar</span>を返却するFormインスタンスのvalueメソッドを呼び出します。そして、呼び出しもとのマップがBarを取得し、フォームマッピングから生成できれば生成し、そうでなければgetOrElseステートメントはBadRequestを返却します。Barオブジェクトが生成することができた場合、それはトランザクション内でデータベースに保存されます。</p>
+
+<p>bindFromRequestはフォームオブジェクトを返します。addBarメソッドでは、この場合Option[Bar]を返却するFormインスタンスのvalueメソッドを呼び出します。そして、呼び出しもとのマップがBarを取得し、フォームマッピングから生成できれば生成し、そうでなければgetOrElseステートメントはBadRequestを返却します。Barオブジェクトが生成することができた場合、それはトランザクション内でデータベースに保存されます。</p>
 
 <p>これで、Squerylでリクエストパラメータとオブジェクトをマップしオブジェクトを保存する方法について理解できたと思うので、新しいaddBar controllerメソッドのテストを書きましょう。</p>
 
-<h2 id='bar'>Barの追加のテスト</h2>
+<h2 id="bar">Barの追加のテスト</h2>
 
 <p>下記の記述を新規作成したtest/ApplicationSpec.scalaファイルを記述し、addBar controllerメソッドの新しいテストを作ります。</p>
-<div class='highlight'><pre><code class='sh'>import controllers.routes
-import models.<span class='o'>{</span>AppDB, Bar<span class='o'>}</span>
+
+<div class="highlight"><pre><code class="sh">import controllers.routes
+import models.<span class="o">{</span>AppDB, Bar<span class="o">}</span>
 
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
@@ -445,38 +500,43 @@ import play.api.http.ContentTypes.JSON
 import play.api.test._
 import play.api.test.Helpers._
 
-class ApplicationSpec extends FlatSpec with ShouldMatchers <span class='o'>{</span>
+class ApplicationSpec extends FlatSpec with ShouldMatchers <span class="o">{</span>
 
-  <span class='s2'>&quot;A request to the addBar action&quot;</span> should <span class='s2'>&quot;respond&quot;</span> in <span class='o'>{</span>
-    running<span class='o'>(</span>FakeApplication<span class='o'>(</span><span class='nv'>additionalConfiguration</span> <span class='o'>=</span> inMemoryDatabase<span class='o'>()))</span> <span class='o'>{</span>
-      val <span class='nv'>result</span> <span class='o'>=</span> controllers.Application.addBar<span class='o'>(</span>FakeRequest<span class='o'>()</span>.withFormUrlEncodedBody<span class='o'>(</span><span class='s2'>&quot;name&quot;</span> -&gt; <span class='s2'>&quot;FooBar&quot;</span><span class='o'>))</span>
-      status<span class='o'>(</span>result<span class='o'>)</span> should equal <span class='o'>(</span>SEE_OTHER<span class='o'>)</span>
-      redirectLocation<span class='o'>(</span>result<span class='o'>)</span> should equal <span class='o'>(</span>Some<span class='o'>(</span>routes.Application.index.url<span class='o'>))</span>
-    <span class='o'>}</span>
-  <span class='o'>}</span>
+  <span class="s2">&quot;A request to the addBar action&quot;</span> should <span class="s2">&quot;respond&quot;</span> in <span class="o">{</span>
+    running<span class="o">(</span>FakeApplication<span class="o">(</span><span class="nv">additionalConfiguration</span> <span class="o">=</span> inMemoryDatabase<span class="o">()))</span> <span class="o">{</span>
+      val <span class="nv">result</span> <span class="o">=</span> controllers.Application.addBar<span class="o">(</span>FakeRequest<span class="o">()</span>.withFormUrlEncodedBody<span class="o">(</span><span class="s2">&quot;name&quot;</span> -&gt; <span class="s2">&quot;FooBar&quot;</span><span class="o">))</span>
+      status<span class="o">(</span>result<span class="o">)</span> should equal <span class="o">(</span>SEE_OTHER<span class="o">)</span>
+      redirectLocation<span class="o">(</span>result<span class="o">)</span> should equal <span class="o">(</span>Some<span class="o">(</span>routes.Application.index.url<span class="o">))</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
 
-<span class='o'>}</span>
+<span class="o">}</span>
 </code></pre></div>
+
 <p>機能テストではインメモリーデータベースとFakeApplicationを使います。テストでは、Application controllerのaddBarメソッドへのリクエストとnameという名前でFooBarという値のフォームパラメータを生成します。このテストの成功は、シンプルにindexページへリダイレクトされることで、ステータスがSEE_OTHER(HTTP 303ステータスコード)であるかをチェックし、リダイレクトのロケーションはindexページのURLでチェックされます。play testでテストを実行するか、play ~testであればコードの変更のタイミングでテストが実行されています。</p>
 
-<h2 id='jsonbar'>JSONとしてBarを取得する</h2>
+<h2 id="jsonbar">JSONとしてBarを取得する</h2>
 
 <p>JSONのシリアライズされたデータとして全てのBarオブジェクトをアプリケーションへ返却するRESTfulなサービスを追加しましょう。app/controllers/Application.scalaファイルに新しいメソッドを追加します。</p>
-<div class='highlight'><pre><code class='sh'>  def <span class='nv'>getBars</span> <span class='o'>=</span> Action <span class='o'>{</span>
-    val <span class='nv'>json</span> <span class='o'>=</span> inTransaction <span class='o'>{</span>
-      val <span class='nv'>bars</span> <span class='o'>=</span> from<span class='o'>(</span>AppDB.barTable<span class='o'>)(</span><span class='nv'>barTable</span> <span class='o'>=</span>&gt;
-        <span class='k'>select</span><span class='o'>(</span>barTable<span class='o'>)</span>
-      <span class='o'>)</span>
-      Json.generate<span class='o'>(</span>bars<span class='o'>)</span>
-    <span class='o'>}</span>
-    Ok<span class='o'>(</span>json<span class='o'>)</span>.as<span class='o'>(</span>JSON<span class='o'>)</span>
-  <span class='o'>}</span>
+
+<div class="highlight"><pre><code class="sh">  def <span class="nv">getBars</span> <span class="o">=</span> Action <span class="o">{</span>
+    val <span class="nv">json</span> <span class="o">=</span> inTransaction <span class="o">{</span>
+      val <span class="nv">bars</span> <span class="o">=</span> from<span class="o">(</span>AppDB.barTable<span class="o">)(</span><span class="nv">barTable</span> <span class="o">=</span>&gt;
+        <span class="k">select</span><span class="o">(</span>barTable<span class="o">)</span>
+      <span class="o">)</span>
+      Json.generate<span class="o">(</span>bars<span class="o">)</span>
+    <span class="o">}</span>
+    Ok<span class="o">(</span>json<span class="o">)</span>.as<span class="o">(</span>JSON<span class="o">)</span>
+  <span class="o">}</span>
 </code></pre></div>
+
 <p>getBarsメソッドは、Squerylを使用してデータベースからBarオブジェクトを取ってきて、BarオブジェクトのJSON形式のリストを生成し、JSONデータを返却します。</p>
 
 <p>conf/routesファイルに新しいルートを追加します。</p>
-<div class='highlight'><pre><code class='sh'>GET     /bars                       controllers.Application.getBars
+
+<div class="highlight"><pre><code class="sh">GET     /bars                       controllers.Application.getBars
 </code></pre></div>
+
 <p>これにより、/barsへのGETリクエストがgetBarsメソッドへマッピングされます。</p>
 
 <p>ブラウザでhttp://localhost:9000/barsを表示させ確認してみましょう。</p>
@@ -487,107 +547,124 @@ class ApplicationSpec extends FlatSpec with ShouldMatchers <span class='o'>{</sp
 
 <p>クエリーの構文は、Squerylのタイプ・セーフなクエリー言語の力とDSLを作るためのScalaの力を示しています。from関数は最初のパラメータとしてテーブルへのタイプ・セーフな参照を受け取ります。これはキーワードからのSQLに似ています。２番目のパラメータは、パラメータとしてクエリーにテーブルを取得し、そのテーブル上に何をするかを指定します。この場合はselectです。formは、barsを不変な定数にセットされている反復処理可能なオブジェクトを返却します。その後、Json.generateメソッドは、データベースから取得されたbarsを反復処理し、それらを返却します。jsonの定数は、application/json(JSONの値)にセットされたコンテントタイプと共に、OK(HTTP 200ステータスコードの応答)で返却されます。</p>
 
-<h2 id='json'>JSONサービスをテストする</h2>
+<h2 id="json">JSONサービスをテストする</h2>
 
 <p>JSONサービスをテストする新しいテストのためにtest/ApplicationSpec.scalaを更新します。以下を追記します。</p>
-<div class='highlight'><pre><code class='sh'><span class='s2'>&quot;A request to the getBars Action&quot;</span> should <span class='s2'>&quot;respond with data&quot;</span> in <span class='o'>{</span>
-    running<span class='o'>(</span>FakeApplication<span class='o'>(</span><span class='nv'>additionalConfiguration</span> <span class='o'>=</span> inMemoryDatabase<span class='o'>()))</span> <span class='o'>{</span>
-      inTransaction<span class='o'>(</span>AppDB.barTable insert Bar<span class='o'>(</span>Some<span class='o'>(</span><span class='s2'>&quot;foo&quot;</span><span class='o'>)))</span>
 
-      val <span class='nv'>result</span> <span class='o'>=</span> controllers.Application.getBars<span class='o'>(</span>FakeRequest<span class='o'>())</span>
-      status<span class='o'>(</span>result<span class='o'>)</span> should equal <span class='o'>(</span>OK<span class='o'>)</span>
-      contentAsString<span class='o'>(</span>result<span class='o'>)</span> should include <span class='o'>(</span><span class='s2'>&quot;foo&quot;</span><span class='o'>)</span>
-    <span class='o'>}</span>
-  <span class='o'>}</span>
+<div class="highlight"><pre><code class="sh"><span class="s2">&quot;A request to the getBars Action&quot;</span> should <span class="s2">&quot;respond with data&quot;</span> in <span class="o">{</span>
+    running<span class="o">(</span>FakeApplication<span class="o">(</span><span class="nv">additionalConfiguration</span> <span class="o">=</span> inMemoryDatabase<span class="o">()))</span> <span class="o">{</span>
+      inTransaction<span class="o">(</span>AppDB.barTable insert Bar<span class="o">(</span>Some<span class="o">(</span><span class="s2">&quot;foo&quot;</span><span class="o">)))</span>
+
+      val <span class="nv">result</span> <span class="o">=</span> controllers.Application.getBars<span class="o">(</span>FakeRequest<span class="o">())</span>
+      status<span class="o">(</span>result<span class="o">)</span> should equal <span class="o">(</span>OK<span class="o">)</span>
+      contentAsString<span class="o">(</span>result<span class="o">)</span> should include <span class="o">(</span><span class="s2">&quot;foo&quot;</span><span class="o">)</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
 </code></pre></div>
+
 <p>再びこの機能テストでは、FakeApplicationとインメモリデータベースを使用します。そしてデータベースに新しいBarを生成し、Application controllerのgetBarsメソッドへのリクエストを作ります。テストしたレスポンスはOK(HTTP 200)で、生成されたBarの名前を含んでいるはずです。前と同じように、play testでこのテストを実行するか、play ~testで実行します。これで３つのテストに通っているはずです。</p>
 
-<h2 id='coffescriptjquerybars'>CoffeScriptとjQueryでBarsを表示する</h2>
+<h2 id="coffescriptjquerybars">CoffeScriptとjQueryでBarsを表示する</h2>
 
 <p>これで、Barオブジェクトのリストを取得するRESTfulなJSONサービスができたので、取得とindexページへの表示を行うようCoffeScriptとjQueryを使って書いてみましょう。Play2の新しい機能の一つに、CoffeeScriptからJavaScriptへコンパイルとJavaScriptの構文チェック、ミニファイ化、LESSのCSSへのコンパイルを行うassetコンパイラがあります。</p>
 
 <p>app/assets/javascripts/index.coffeeファイルを新規作成し、下記を記述します。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>-&gt;
-  <span class='nv'>$.</span>get <span class='s2'>&quot;/bars&quot;</span>, <span class='o'>(</span>data<span class='o'>)</span> -&gt;
-    <span class='nv'>$.</span>each data, <span class='o'>(</span>index, item<span class='o'>)</span> -&gt;
-      <span class='k'>$(</span><span class='s2'>&quot;#bars&quot;</span><span class='k'>)</span>.append <span class='k'>$(</span><span class='s2'>&quot;&lt;li&gt;&quot;</span><span class='k'>)</span>.text item.name
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>-&gt;
+  <span class="nv">$.</span>get <span class="s2">&quot;/bars&quot;</span>, <span class="o">(</span>data<span class="o">)</span> -&gt;
+    <span class="nv">$.</span>each data, <span class="o">(</span>index, item<span class="o">)</span> -&gt;
+      <span class="k">$(</span><span class="s2">&quot;#bars&quot;</span><span class="k">)</span>.append <span class="k">$(</span><span class="s2">&quot;&lt;li&gt;&quot;</span><span class="k">)</span>.text item.name
 </code></pre></div>
+
 <p>このCoffeeScriptは、/barsへのgetリクエストを作るためにjQueryを使用し、各barに対して反復処理を行い、barsのidと共にbarをページのエレメントに追加します。では、このスクリプトをロードするためにapp/views/index.scala.htmlテンプレートを更新し、ページにbarsエレメントを入れてみましょう。以下の記述をテンプレートのmainセクションのトップに追加します。</p>
 
-<p><div class='highlight'><pre><code class='sh'> &lt;script <span class='nv'>src</span><span class='o'>=</span><span class='s2'>&quot;@routes.Assets.at(&quot;</span>javascripts/index.min.js<span class='s2'>&quot;)&quot;</span> <span class='nb'>type</span><span class='o'>=</span><span class='s2'>&quot;text/javascript&quot;</span>&gt;&lt;/script&gt;    
-    &lt;ul <span class='nv'>id</span><span class='o'>=</span><span class='s2'>&quot;bars&quot;</span>&gt;&lt;/ul&gt;
-</code></pre></div></p>
+<div class="highlight"><pre><code class="sh"> &lt;script <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;@routes.Assets.at(&quot;</span>javascripts/index.min.js<span class="s2">&quot;)&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span>&gt;&lt;/script&gt;    
+    &lt;ul <span class="nv">id</span><span class="o">=</span><span class="s2">&quot;bars&quot;</span>&gt;&lt;/ul&gt;
+</code></pre></div>
 
 <p>スクリプトのsrcは、javascripts/index.min.jsファイルへのURLを取得するためにroutes.Assets.at関数を使うことに注意してください。まだこのファイルは存在していません。Playのassetコンパイラは、index.coffeeファイルをコンパイルしてミニファイ化されたこのファイルを生成する必要がることを検知します。再度http://localhost:9000 のWebページを読み込み、新しいBarを生成し、Webページに表示されることを確認しましょう。</p>
 
-<h2 id='heroku'>Herokuへのデプロイ</h2>
+<h2 id="heroku">Herokuへのデプロイ</h2>
 
 <p>Herokuはクラウド上でPlay2の実行環境を提供する複数言語対応したCloud Application Platformです。このアプリケーションをHerokuへデプロイするには以下の手順を実行します。</p>
 
 <p><em>1. 下記の内容を記述したProcfileをルートディレクトリは以下に作成します。</em></p>
-<div class='highlight'><pre><code class='sh'>web: target/start -Dhttp.port<span class='o'>=</span><span class='k'>${</span><span class='nv'>PORT</span><span class='k'>}</span> -DapplyEvolutions.default<span class='o'>=</span><span class='nb'>true</span> -Ddb.default.driver<span class='o'>=</span>org.postgresql.Driver -Ddb.default.url<span class='o'>=</span><span class='k'>${</span><span class='nv'>DATABASE_URL</span><span class='k'>}</span> <span class='k'>${</span><span class='nv'>JAVA_OPTS</span><span class='k'>}</span>
+
+<div class="highlight"><pre><code class="sh">web: target/start -Dhttp.port<span class="o">=</span><span class="k">${</span><span class="nv">PORT</span><span class="k">}</span> -DapplyEvolutions.default<span class="o">=</span><span class="nb">true</span> -Ddb.default.driver<span class="o">=</span>org.postgresql.Driver -Ddb.default.url<span class="o">=</span><span class="k">${</span><span class="nv">DATABASE_URL</span><span class="k">}</span> <span class="k">${</span><span class="nv">JAVA_OPTS</span><span class="k">}</span>
 </code></pre></div>
+
 <p>これによりHerokuへPlayアプリケーションの実行方法を伝えます。</p>
 
 <p><em>2. Herokuは、Heroku上へのファイル転送にGitを用います。まだGitがインストールされていないのであれば、Gitをインストールしましょう。プロジェクトのルートディレクトリから、このプロジェクト用のGitリポジトリを生成し、ファイルを追加し、コミットします。</em></p>
-<div class='highlight'><pre><code class='sh'>git init
+
+<div class="highlight"><pre><code class="sh">git init
 git add .
 git commit -m init
 </code></pre></div>
+
 <p><em>3. HerokuのツールベルトはHerokuへのコマンドラインインターフェースです。Heroku ツールベルトをインストールしましょう。</em></p>
 
 <p><em>4. Herokuアカウントへサインアップします。</em></p>
 
 <p><em>5. コマンドラインからHerokuへログインします：</em></p>
-<div class='highlight'><pre><code class='sh'>heroku login
+
+<div class="highlight"><pre><code class="sh">heroku login
 </code></pre></div>
+
 <p>GitのSSHキーをセットアップし、それをHerokuアカウントへ紐付けます。</p>
 
 <p><em>6. 新しいアプリケーションをHerokuにプロビジョニングします。</em></p>
-<div class='highlight'><pre><code class='sh'>heroku create --stack cedar
+
+<div class="highlight"><pre><code class="sh">heroku create --stack cedar
 </code></pre></div>
+
 <p><em>7. HerokuへアプリケーションをPushします。</em></p>
-<div class='highlight'><pre><code class='sh'>git push heroku master
+
+<div class="highlight"><pre><code class="sh">git push heroku master
 </code></pre></div>
+
 <p>Herokuが、SBTでアプリケーションをビルドし、dyno上で実行します。</p>
 
 <p><em>8. ブラウザでクラウド上で実行されるアプリケーションを開きましょう。</em></p>
-<div class='highlight'><pre><code class='sh'>heroku open
+
+<div class="highlight"><pre><code class="sh">heroku open
 </code></pre></div>
+
 <p>おめでとうございます！これであなたのアプリケーションはクラウド上で実行されています。</p>
 
-<h2 id='share_your_opinion'>Share Your Opinion</h2>
+<h2 id="share-your-opinion">Share Your Opinion</h2>
 
-<p>Play2について思うところはありませんか？<a href='http://www.artima.com/forums/flat.jsp?forum=226&amp;thread=344288'>Getting Started with Play2, Scala, and Squeryl</a>のフォーラムトピックで議論しましょう。</p>
+<p>Play2について思うところはありませんか？<a href="http://www.artima.com/forums/flat.jsp?forum=226&amp;thread=344288">Getting Started with Play2, Scala, and Squeryl</a>のフォーラムトピックで議論しましょう。</p>
 
-<h2 id='id81'>リソース</h2>
+<h2 id="section-2">リソース</h2>
 
 <p>このプロジェクトの全てのソースコードは、Github上から入手することができます。</p>
 
-<p><a href='https://github.com/jamesward/play2bars/blob/scala-squeryl'>https://github.com/jamesward/play2bars/blob/scala-squeryl</a></p>
+<p><a href="https://github.com/jamesward/play2bars/blob/scala-squeryl">https://github.com/jamesward/play2bars/blob/scala-squeryl</a></p>
 
 <p>ローカルでPlayが実行されている場合、Playのローカルドキュメントにアクセスできます。</p>
 
-<p><a href='http://localhost:9000/@documentation'>http://localhost:9000/@documentation</a></p>
+<p><a href="http://localhost:9000/@documentation">http://localhost:9000/@documentation</a></p>
 
 <p>下記のサイトでもPlayのドキュメントを閲覧できます。</p>
 
-<p><a href='http://www.playframework.org/documentation'>http://www.playframework.org/documentation</a></p>
+<p><a href="http://www.playframework.org/documentation">http://www.playframework.org/documentation</a></p>
 
 <p>Herokuについては、Heroku Dev Centerを見てください。</p>
 
-<p><a href='http://devcenter.heroku.com/'>http://devcenter.heroku.com/</a></p>
+<p><a href="http://devcenter.heroku.com/">http://devcenter.heroku.com/</a></p>
 
 <p>この記事が一助となればと思いますが、もし質問や問題があれば我々に知らせてください。</p>
 
-<h2 id='id82'>著者について</h2>
+<h2 id="section-3">著者について</h2>
 
-<p>James Ward (<a href='www.jamesward.com'>www.jamesward.com</a>) is a Principal Developer Evangelist at Heroku. Today he focuses on teaching developers how to deploy Java, Play! and Scala apps to the cloud. James frequently presents at conferences around the world such as JavaOne, Devoxx, and many other Java get-togethers. Along with Bruce Eckel, James co-authored First Steps in Flex. He has also published numerous screencasts, blogs, and technical articles. Starting with Pascal and Assembly in the 80&#8217;s, James found his passion for writing code. Beginning in the 90&#8217;s he began doing web development with HTML, Perl/CGI, then Java. After building a Flex and Java based customer service portal in 2004 for Pillar Data Systems he became a Technical Evangelist for Flex at Adobe. You can find him tweeting as <a href='http://twitter.com/_JamesWard'>@JamesWard</a>, answering questions on <a href='http://stackoverflow.com/users/77409/james-ward'>StackOverflow.com</a>, and posting code at <a href='http://github.com/jamesward'>github.com/jamesward</a>.</p>
+<p>James Ward (<a href="www.jamesward.com">www.jamesward.com</a>) is a Principal Developer Evangelist at Heroku. Today he focuses on teaching developers how to deploy Java, Play! and Scala apps to the cloud. James frequently presents at conferences around the world such as JavaOne, Devoxx, and many other Java get-togethers. Along with Bruce Eckel, James co-authored First Steps in Flex. He has also published numerous screencasts, blogs, and technical articles. Starting with Pascal and Assembly in the 80&#8217;s, James found his passion for writing code. Beginning in the 90&#8217;s he began doing web development with HTML, Perl/CGI, then Java. After building a Flex and Java based customer service portal in 2004 for Pillar Data Systems he became a Technical Evangelist for Flex at Adobe. You can find him tweeting as <a href="http://twitter.com/_JamesWard">@JamesWard</a>, answering questions on <a href="http://stackoverflow.com/users/77409/james-ward">StackOverflow.com</a>, and posting code at <a href="http://github.com/jamesward">github.com/jamesward</a>.</p>
 
 <p>Ryan Knight is a senior software architect and consultant with over fifteen years of experience in all aspects of cloud computing and software development. He first started Java Consulting for Sun Microsystems Java Center and now runs his own consulting company. Some of his recent projects include being a software Consultant for Deloitte at the State of Louisiana, expert services for Adobe at T-Mobile, creatng a web application at Team Marketing Report, development of a text and voice chat system for Sony Online Entertainment, contributing to the Development of a Gift Card Creation Tool, and being a software architect for Williams Pipeline.</p>
-    </div>
-    <hr>
 
+
+    </div>
+    <hr>  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>
@@ -597,7 +674,7 @@ git commit -m init
 
   
      
-    	<li><a href="http://modalsoul.github.io/categories.html#programing-ref">
+    	<li><a href="/categories.html#programing-ref">
     		programing <span>12</span>
     	</a></li>
     
@@ -616,23 +693,23 @@ git commit -m init
 
   
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Play2-ref">Play2 <span>5</span></a></li>
+    	<li><a href="/tags.html#Play2-ref">Play2 <span>5</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
+    	<li><a href="/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Database-Driven-ref">Database-Driven <span>2</span></a></li>
+    	<li><a href="/tags.html#Database-Driven-ref">Database-Driven <span>2</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Scala-ref">Scala <span>7</span></a></li>
+    	<li><a href="/tags.html#Scala-ref">Scala <span>7</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Squeryl-ref">Squeryl <span>1</span></a></li>
+    	<li><a href="/tags.html#Squeryl-ref">Squeryl <span>1</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#CoffeeScript-ref">CoffeeScript <span>3</span></a></li>
+    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>3</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#JSON-ref">JSON <span>1</span></a></li>
+    	<li><a href="/tags.html#JSON-ref">JSON <span>1</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#jQuery-ref">jQuery <span>3</span></a></li>
+    	<li><a href="/tags.html#jQuery-ref">jQuery <span>3</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#ScalaTest-ref">ScalaTest <span>1</span></a></li>
+    	<li><a href="/tags.html#ScalaTest-ref">ScalaTest <span>1</span></a></li>
     
   
 
@@ -665,11 +742,11 @@ git commit -m init
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="http://modalsoul.github.io/programing/2012/07/26/Optimizing-Play2-for-Database-Driven-Apps" title="【意訳】データベース駆動アプリのための、Play2最適化について　#play_ja">&larr; Previous</a></li>
+        <li class="prev"><a href="/programing/2012/07/26/Optimizing-Play2-for-Database-Driven-Apps" title="【意訳】データベース駆動アプリのための、Play2最適化について　#play_ja">&larr; Previous</a></li>
       
-        <li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+        <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="http://modalsoul.github.io/programing/2012/08/10/Sign-in-with-Facebook-Scala" title="【意訳】Scala on LiftでのFacebookサインイン">Next &rarr;</a></li>
+        <li class="next"><a href="/programing/2012/08/10/Sign-in-with-Facebook-Scala" title="【意訳】Scala on LiftでのFacebookサインイン">Next &rarr;</a></li>
       
       </ul>
     </div>
@@ -679,7 +756,7 @@ git commit -m init
 
   <div id="disqus_thread"></div>
 <script type="text/javascript">
-    
+    var disqus_developer = 1;
     var disqus_shortname = 'modalsoul'; // required: replace example with your forum shortname
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
@@ -712,7 +789,7 @@ git commit -m init
 
   
      
-    	<li><a href="http://modalsoul.github.io/categories.html#programing-ref">
+    	<li><a href="/categories.html#programing-ref">
     		programing <span>12</span>
     	</a></li>
     
@@ -731,23 +808,23 @@ git commit -m init
 
   
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Play2-ref">Play2 <span>5</span></a></li>
+    	<li><a href="/tags.html#Play2-ref">Play2 <span>5</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
+    	<li><a href="/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Database-Driven-ref">Database-Driven <span>2</span></a></li>
+    	<li><a href="/tags.html#Database-Driven-ref">Database-Driven <span>2</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Scala-ref">Scala <span>7</span></a></li>
+    	<li><a href="/tags.html#Scala-ref">Scala <span>7</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#Squeryl-ref">Squeryl <span>1</span></a></li>
+    	<li><a href="/tags.html#Squeryl-ref">Squeryl <span>1</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#CoffeeScript-ref">CoffeeScript <span>3</span></a></li>
+    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>3</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#JSON-ref">JSON <span>1</span></a></li>
+    	<li><a href="/tags.html#JSON-ref">JSON <span>1</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#jQuery-ref">jQuery <span>3</span></a></li>
+    	<li><a href="/tags.html#jQuery-ref">jQuery <span>3</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#ScalaTest-ref">ScalaTest <span>1</span></a></li>
+    	<li><a href="/tags.html#ScalaTest-ref">ScalaTest <span>1</span></a></li>
     
   
 
@@ -816,22 +893,6 @@ git commit -m init
     </div>
 
     
-
-
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29102099-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-
-
     
     <!-- Twitter badge -->
     <!-- twitter follow badge by go2web20 -->

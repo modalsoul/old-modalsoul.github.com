@@ -177,19 +177,17 @@
         			
 	 </div>
       <p><a href="http://www.flickr.com/photos/kuromatsunai/3024100752/" title="足跡 - Footprint - by kuromatsunai.info, on Flickr">
-<img src="http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg" width="320" height="240" alt="足跡 - Footprint -"></p>
+<img src="http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg" width="320" height="240" alt="足跡 - Footprint -" />
+</a></p>
 
-<h2></a></h2>
-
-<h2>謝辞</h2>
-
+<h2 id="section">謝辞</h2>
 <p>以下の記事を参考にさせていただきました。感謝です。</p>
 
-<p><em>・ <a href="http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html">【Node.js】expressでaccess log + log rotate | 湘南社中テクニカルブログ</a></em></p>
+<p>*<a href="http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html">【Node.js】expressでaccess log + log rotate ｜ 湘南社中テクニカルブログ</a></p>
 
 <hr />
 
-<h2>node.jsとexpressでのアクセスログ</h2>
+<h2 id="nodejsexpress">node.jsとexpressでのアクセスログ</h2>
 
 <p>node.js+expressには、express標準のloggerだとログの出力先をファイルにすると、対象のファイルがずっとオープン状態になってしまう、という欠点があります。
 (※:もしかしたら私が回避方法を知らないだけかもしれませんが。）</p>
@@ -200,7 +198,7 @@
 
 <hr />
 
-<h2>log4jsを使う</h2>
+<h2 id="log4js">log4jsを使う</h2>
 
 <p>LoggingFrameworkのlog4jsについては、こちらで紹介しています</p>
 
@@ -219,9 +217,10 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
 
 <p>access.log</p>
 
-<div class="highlight"><pre><code class="sh"><span class="o">[</span>2012-10-29 23:06:18.732<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> dateFile - 127.0.0.1  Mon Oct 29 2012 23:06:18 GMT+0900 <span class="o">(</span>東京 <span class="o">(</span>標準時<span class="o">))</span> GET /   200 -   Mozilla/5.0 <span class="o">(</span>Windows NT 6.1; WOW64<span class="o">)</span> AppleWebKit/537.4 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/22.0.1229.94 Safari/537.4
-<span class="o">[</span>2012-10-29 23:06:18.968<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> dateFile - 127.0.0.1   Mon Oct 29 2012 23:06:18 GMT+0900 <span class="o">(</span>東京 <span class="o">(</span>標準時<span class="o">))</span> GET /stylesheets/style.css  200 http://localhost:3000/  Mozilla/5.0 <span class="o">(</span>Windows NT 6.1; WOW64<span class="o">)</span> AppleWebKit/537.4 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/22.0.1229.94 Safari/537.4
+<div class="highlight"><pre><code class="sh"><span class="o">[</span>2012-10-29 23:06:18.732<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> dateFile - 127.0.0.1	Mon Oct 29 2012 23:06:18 GMT+0900 <span class="o">(</span>東京 <span class="o">(</span>標準時<span class="o">))</span>	GET	/	200	-	Mozilla/5.0 <span class="o">(</span>Windows NT 6.1; WOW64<span class="o">)</span> AppleWebKit/537.4 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/22.0.1229.94 Safari/537.4
+<span class="o">[</span>2012-10-29 23:06:18.968<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> dateFile - 127.0.0.1	Mon Oct 29 2012 23:06:18 GMT+0900 <span class="o">(</span>東京 <span class="o">(</span>標準時<span class="o">))</span>	GET	/stylesheets/style.css	200	http://localhost:3000/	Mozilla/5.0 <span class="o">(</span>Windows NT 6.1; WOW64<span class="o">)</span> AppleWebKit/537.4 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/22.0.1229.94 Safari/537.4
 </code></pre></div>
+
 
     </div>
     <hr>  
@@ -235,7 +234,7 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
   
      
     	<li><a href="/categories.html#report-ref">
-    		report <span>16</span>
+    		report <span>17</span>
     	</a></li>
     
   
@@ -253,11 +252,11 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
 
   
      
-    	<li><a href="/tags.html#node.js-ref">node.js <span>4</span></a></li>
+    	<li><a href="/tags.html#node.js-ref">node.js <span>5</span></a></li>
      
     	<li><a href="/tags.html#express-ref">express <span>1</span></a></li>
      
-    	<li><a href="/tags.html#log4js-ref">log4js <span>1</span></a></li>
+    	<li><a href="/tags.html#log4js-ref">log4js <span>2</span></a></li>
     
   
 
@@ -338,7 +337,7 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
   
      
     	<li><a href="/categories.html#report-ref">
-    		report <span>16</span>
+    		report <span>17</span>
     	</a></li>
     
   
@@ -356,11 +355,11 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
 
   
      
-    	<li><a href="/tags.html#node.js-ref">node.js <span>4</span></a></li>
+    	<li><a href="/tags.html#node.js-ref">node.js <span>5</span></a></li>
      
     	<li><a href="/tags.html#express-ref">express <span>1</span></a></li>
      
-    	<li><a href="/tags.html#log4js-ref">log4js <span>1</span></a></li>
+    	<li><a href="/tags.html#log4js-ref">log4js <span>2</span></a></li>
     
   
 

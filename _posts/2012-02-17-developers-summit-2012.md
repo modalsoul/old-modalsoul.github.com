@@ -4,8 +4,6 @@ title: Developers Summit 2012 2日目ツイートまとめ。#devsumi
 tags: DevelopersSummit
 categories: report
 ---
-![Developers Summit 2012](http://capture.heartrails.com/300x200/cool?http://seshop.com/se/timetable/21)
------------------
 
 ##Developers Summitとは？
 

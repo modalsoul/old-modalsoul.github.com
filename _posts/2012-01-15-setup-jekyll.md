@@ -4,8 +4,6 @@ title: Jekyllによる静的Ｗebサイト構築入門してみた
 tags: Jekyll github
 categories: record
 ---
-[Jekyllによる静的Ｗebサイト構築入門してみた](http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf)
------------------
 
 ![Jekyllによる静的Ｗebサイト構築入門](http://capture.heartrails.com/free?http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf)
 

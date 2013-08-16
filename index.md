@@ -35,9 +35,14 @@ tagline: Tech Blog (BETA)
     <h4>Author</h4>
     <h5>modal_soul</h5>
     <p>I'm a software engineer, Scala programer, Android app developer.</p> 
+    <a href="https://twitter.com/modal_soul">
+      <img alt="Follow me on Twitter" src="/img/Twitter_lg.png" style="width: 130px;">
+    </a>
+    <a href="https://play.google.com/store/search?q=pub:modal_soul">
+      <img alt="Get it on Google Play"
+       src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+    </a>
     <p>Certified Scrum Master  Certified Scrum Product Owner</p>
-    <p><a href="https://twitter.com/modal_soul">Twitter</a></p>
-    <p><a href="https://play.google.com/store/apps/developer?id=modal_soul">Google Play</a></p>
     <div style="float:left;">
       <img src="/assets/ScrumMaster_Logo_Seal.png" style="width: 65px; max-width: 100%; height: auto; float: left;" >
       <img src="/assets/Scrum_Product_Owner_Seal.png" style="width: 65px; max-width: 100%; height: auto; float: left;" >

@@ -176,9 +176,7 @@
           
         			
 	 </div>
-      <h2>AndroidアプリのUIテスト-InstrumentationTestCase編-</h2>
-
-<p>複数のActivityに跨る画面遷移のテストを調べて、サンプルを作ってみました。</p>
+      <p>複数のActivityに跨る画面遷移のテストを調べて、サンプルを作ってみました。</p>
 
 <p>サンプルのAndroidプロジェクトとテストプロジェクトは以下に置きました。</p>
 
@@ -191,72 +189,66 @@
 <p>参考にしたのは以下のページ
 <a href="http://stackoverflow.com/questions/1759626/how-do-you-test-an-android-application-across-multiple-activities">How do you test an Android application across multiple Activities?</a></p>
 
-<p><I>※：参考ページでは、JUnit4を使っていますが、ここではJUnit3を使っているため一部違っています。</I></p>
+<p><i>※：参考ページでは、JUnit4を使っていますが、ここではJUnit3を使っているため一部違っています。</i></p>
 
 <hr />
 
-<h2>サンプルアプリの動作について</h2>
-
+<h2 id="section">サンプルアプリの動作について</h2>
 <p>このサンプルでは、アプリの起動後の画面にボタンが表示され、そのボタンをクリックすると別画面に遷移します。</p>
 
 <h3>起動後の画面</h3>
 
 <p><a href="http://www.flickr.com/photos/modalsoul/7233426834/" title="uiTestSample-main by modal_soul, on Flickr">
-<img src="http://farm6.staticflickr.com/5343/7233426834_d72dda0713.jpg" width="500" height="492" alt="uiTestSample-main">
+<img src="http://farm6.staticflickr.com/5343/7233426834_d72dda0713.jpg" width="500" height="492" alt="uiTestSample-main" />
 </a></p>
 
 <h3>ボタンクリックで遷移後の画面</h3>
 
 <p><a href="http://www.flickr.com/photos/modalsoul/7233469296/" title="uiTestSample-transited by modal_soul, on Flickr">
-<img src="http://farm6.staticflickr.com/5196/7233469296_d04794833e.jpg" width="500" height="492" alt="uiTestSample-transited">
+<img src="http://farm6.staticflickr.com/5196/7233469296_d04794833e.jpg" width="500" height="492" alt="uiTestSample-transited" />
 </a></p>
 
 <hr />
 
-<h2>テストの概要</h2>
-
+<h2 id="section-1">テストの概要</h2>
 <p>このサンプルでは、アプリ起動後の画面のTextViewの内容を確認。ボタン1のクリックをエミュレートし、画面遷移後の画面のTextViewの内容を確認しています。</p>
 
-<h3>InstrumentationTestCase</h3>
-
+<h3 id="instrumentationtestcase">InstrumentationTestCase</h3>
 <p>InstrumentationTestCaseを継承したクラスを作成します。
 getInstrumentation()を使うことで、現在有効になってるアクティビティを捕捉し、TouchUtilsでユーザ操作をエミュレートします。</p>
 
-<h2>テストの流れ</h2>
+<h2 id="section-2">テストの流れ</h2>
 
-<h3>捕捉するインテント情報を設定</h3>
+<h3 id="section-3">捕捉するインテント情報を設定</h3>
 
 <script src="https://gist.github.com/2758292.js?file=getInstrumentation.java">
 </script>
 
-<h3>存在するInstrumentation.ActivityMonitorがヒットするまで待ちます。タイムアウト時間を設定。</h3>
+<h3 id="instrumentationactivitymonitor">存在するInstrumentation.ActivityMonitorがヒットするまで待ちます。タイムアウト時間を設定。</h3>
 
 <script src="https://gist.github.com/2758303.js?file=getCurrentActivity.java">
 </script>
 
-<h3>Viewを取得して、初期状態を確認。</h3>
+<h3 id="view">Viewを取得して、初期状態を確認。</h3>
 
 <script src="https://gist.github.com/2758332.js?file=getAndCheckView.java">
 </script>
 
-<h3>ボタンのクリックをエミュレート。</h3>
-
+<h3 id="section-4">ボタンのクリックをエミュレート。</h3>
 <script src="https://gist.github.com/2758337.js?file=emulateButtonClick.java">
 </script>
 
-<h3>再度Activityを取得。</h3>
-
+<h3 id="activity">再度Activityを取得。</h3>
 <script src="https://gist.github.com/2758348.js?file=getCurrentActivity2.java">
 </script>
 
-<h3>画面遷移後の表示を確認。</h3>
-
+<h3 id="section-5">画面遷移後の表示を確認。</h3>
 <script src="https://gist.github.com/2758351.js?file=getAndCheckView2.java">
 </script>
 
-<h2>まとめ</h2>
-
+<h2 id="section-6">まとめ</h2>
 <p>TouchUtilsを使えば、このほかにもドラッグ、スクロール、長押し等色々エミュレートでき、UIスレッドを意識しないで書けるので、アプリのハッピーパスのテストくらいであれば簡単に書けそうです。</p>
+
 
     </div>
     <hr>  
@@ -274,7 +266,7 @@ getInstrumentation()を使うことで、現在有効になってるアクティ
     	</a></li>
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   
@@ -385,7 +377,7 @@ getInstrumentation()を使うことで、現在有効になってるアクティ
     	</a></li>
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   

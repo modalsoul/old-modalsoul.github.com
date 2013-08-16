@@ -16,9 +16,9 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="http://modalsoul.github.io/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="http://modalsoul.github.io/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="http://modalsoul.github.io/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/page.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -35,8 +35,8 @@
     <script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
 
     <!-- atom & rss feed -->
-    <link href="http://modalsoul.github.io/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="http://modalsoul.github.io/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
   </head>
 
   <body>
@@ -53,7 +53,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-narrow">
-          <a class="brand" href="http://modalsoul.github.io"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
+          <a class="brand" href="/"><img src="/img/modalsoul.png" style="padding-right:4px">modal_soul debriefing</a>
           <ul class="nav">
             
             
@@ -64,7 +64,7 @@
     
       
       	
-      	<li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+      	<li><a href="/archive.html">Archive</a></li>
       	
       
     
@@ -76,23 +76,7 @@
     
       
       	
-      	<li><a href="http://modalsoul.github.io/categories.html">Categories</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="http://modalsoul.github.io/pages.html">Pages</a></li>
+      	<li><a href="/categories.html">Categories</a></li>
       	
       
     
@@ -108,7 +92,23 @@
     
       
       	
-      	<li><a href="http://modalsoul.github.io/tags.html">Tags</a></li>
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
       	
       
     
@@ -172,7 +172,7 @@
 	
 		<p>この記事は、node.jsとLoggingFrameworkのlog4jsを使ってのロギングとローテーションの方法についてのメモ書きです。</p>
 		<a href="https://github.com/nomiddlename/log4js-node/blob/master/README.md">
-		<img title="�Q�l" src="http://capture.heartrails.com/300x200/cool?https://github.com/nomiddlename/log4js-node/blob/master/README.md" alt="�Q�l" width="300" height="200" />
+		<img title="参考" src="http://capture.heartrails.com/300x200/cool?https://github.com/nomiddlename/log4js-node/blob/master/README.md" alt="参考" width="300" height="200" />
 		</a>
 	
 
@@ -182,92 +182,128 @@
           
         			
 	 </div>
-      <hr />
-<h2 id='id101'>インストール</h2>
+      <h2 id="section">インストール</h2>
 
 <p>まずは、環境の準備です。</p>
 
 <p>npmでlog4jsをインストールします。</p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>npm install log4js
-</code></pre></div><hr />
-<h2 id='id102'>ログ出力のために必要な手順</h2>
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>npm install log4js
+</code></pre></div>
+
+<hr />
+
+<h2 id="section-1">ログ出力のために必要な手順</h2>
 
 <p><em>1. log4jsを読み込む</em></p>
-<div class='highlight'><pre><code class='sh'>var <span class='nv'>log4js</span> <span class='o'>=</span> require<span class='o'>(</span><span class='s1'>&#39;log4js&#39;</span><span class='o'>)</span>;
+
+<div class="highlight"><pre><code class="sh">var <span class="nv">log4js</span> <span class="o">=</span> require<span class="o">(</span><span class="s1">&#39;log4js&#39;</span><span class="o">)</span>;
 </code></pre></div>
+
 <p><em>2. loggerを取得する</em></p>
-<div class='highlight'><pre><code class='sh'>var <span class='nv'>logger</span> <span class='o'>=</span> log4js.getLogger<span class='o'>()</span>;
+
+<div class="highlight"><pre><code class="sh">var <span class="nv">logger</span> <span class="o">=</span> log4js.getLogger<span class="o">()</span>;
 </code></pre></div>
+
 <p><em>3. ログレベルを指定して、ログ出力する</em></p>
-<div class='highlight'><pre><code class='sh'>logger.info<span class='o'>(</span><span class='s1'>&#39;This is test.&#39;</span><span class='o'>)</span>;
+
+<div class="highlight"><pre><code class="sh">logger.info<span class="o">(</span><span class="s1">&#39;This is test.&#39;</span><span class="o">)</span>;
 </code></pre></div>
+
 <p><em>4．実行結果</em></p>
-<div class='highlight'><pre><code class='sh'><span class='nv'>$ </span>node logging-sample.js
-<span class='o'>[</span>2012-10-14 14:04:49.197<span class='o'>]</span> <span class='o'>[</span>INFO<span class='o'>]</span> <span class='o'>[</span>default<span class='o'>]</span> - This is test.
+
+<div class="highlight"><pre><code class="sh"><span class="nv">$ </span>node logging-sample.js
+<span class="o">[</span>2012-10-14 14:04:49.197<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> <span class="o">[</span>default<span class="o">]</span> - This is test.
 </code></pre></div>
+
 <p>出力形式を指定せずに実行すると、デフォルトで標準出力にログ出力されます。</p>
+
 <hr />
-<h2 id='id103'>ログをファイルに出力する手順</h2>
+
+<h2 id="section-2">ログをファイルに出力する手順</h2>
 
 <p>ログの出力先を標準出力からファイルに変更します。</p>
 
 <p><em>1. appenders.jsonを生成</em></p>
-<div class='highlight'><pre><code class='sh'>appenders: <span class='o'>[{</span>
-	<span class='s2'>&quot;type&quot;</span>: <span class='s2'>&quot;file&quot;</span>,
-	<span class='s2'>&quot;filename&quot;</span>: <span class='s2'>&quot;logging.log&quot;</span>,
-<span class='o'>}]</span>
+
+<div class="highlight"><pre><code class="sh">appenders: <span class="o">[{</span>
+	<span class="s2">&quot;type&quot;</span>: <span class="s2">&quot;file&quot;</span>,
+	<span class="s2">&quot;filename&quot;</span>: <span class="s2">&quot;logging.log&quot;</span>,
+<span class="o">}]</span>
 </code></pre></div>
+
 <p><em>2. log4jsに設定を反映</em></p>
-<div class='highlight'><pre><code class='sh'>log4js.configure<span class='o'>({</span>
-	appenders: <span class='o'>[{</span>
-	<span class='s2'>&quot;type&quot;</span>: <span class='s2'>&quot;file&quot;</span>,
-	<span class='s2'>&quot;filename&quot;</span>: <span class='s2'>&quot;logging.log&quot;</span>,
-	<span class='o'>}]</span>
-<span class='o'>})</span>;
+
+<div class="highlight"><pre><code class="sh">log4js.configure<span class="o">({</span>
+	appenders: <span class="o">[{</span>
+	<span class="s2">&quot;type&quot;</span>: <span class="s2">&quot;file&quot;</span>,
+	<span class="s2">&quot;filename&quot;</span>: <span class="s2">&quot;logging.log&quot;</span>,
+	<span class="o">}]</span>
+<span class="o">})</span>;
 </code></pre></div>
+
 <p><em>3. loggerを取得する</em></p>
-<div class='highlight'><pre><code class='sh'>var <span class='nv'>logger</span> <span class='o'>=</span> log4js.getLogger<span class='o'>(</span><span class='s1'>&#39;file&#39;</span><span class='o'>)</span>;
+
+<div class="highlight"><pre><code class="sh">var <span class="nv">logger</span> <span class="o">=</span> log4js.getLogger<span class="o">(</span><span class="s1">&#39;file&#39;</span><span class="o">)</span>;
 </code></pre></div>
+
 <p>getLoggerの引数に、上記で設定したtypeを指定します。</p>
 
 <p><em>4．実行結果</em></p>
 
 <p>実行すると、プロダクトと同じ階層に&#8221;logger.log&#8221;ファイルが生成され、以下のように出力されます。</p>
-<div class='highlight'><pre><code class='sh'><span class='o'>[</span>2012-10-14 18:50:33.876<span class='o'>]</span> <span class='o'>[</span>INFO<span class='o'>]</span> file - This is test.
-</code></pre></div>
-<h3 id='id104'>ログファイルの出力先を変更する</h3>
 
-<p>appendersのfilenameに、ファイルパスを含めて記載すると、出力先を任意に変更できます。</p>
-<div class='highlight'><pre><code class='sh'>log4js.configure<span class='o'>({</span>
-	appenders: <span class='o'>[{</span>
-	<span class='s2'>&quot;type&quot;</span>: <span class='s2'>&quot;file&quot;</span>,
-	<span class='s2'>&quot;filename&quot;</span>: <span class='s2'>&quot;logs/logging.log&quot;</span>,
-	<span class='o'>}]</span>
-<span class='o'>})</span>;
+<div class="highlight"><pre><code class="sh"><span class="o">[</span>2012-10-14 18:50:33.876<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> file - This is test.
 </code></pre></div>
+
+<h3 id="section-3">ログファイルの出力先を変更する</h3>
+<p>appendersのfilenameに、ファイルパスを含めて記載すると、出力先を任意に変更できます。</p>
+
+<div class="highlight"><pre><code class="sh">log4js.configure<span class="o">({</span>
+	appenders: <span class="o">[{</span>
+	<span class="s2">&quot;type&quot;</span>: <span class="s2">&quot;file&quot;</span>,
+	<span class="s2">&quot;filename&quot;</span>: <span class="s2">&quot;logs/logging.log&quot;</span>,
+	<span class="o">}]</span>
+<span class="o">})</span>;
+</code></pre></div>
+
 <p>上記の設定で実行すると、プロダクトと同階層にある&#8221;logs&#8221;ディレクトリ配下に、&#8221;logger.log&#8221;ファイルが生成され、ログが出力されます。</p>
-<i><b>ただし</b>、パスにしていしたディレクトリは自動で生成はされないので、あらかじめディレクトリを生成しておく必要があります。</i><hr />
-<h2 id='id105'>ログファイルのローテーションを設定する手順</h2>
-<a href='https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender'><img title='Date rolling file appender ・ nomiddlename/log4js-node Wiki ・ GitHub' alt='https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender' height='150' src='http://capture.heartrails.com/200x150/cool/1350212685200?https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender' width='200' />
+
+<p><i><b>ただし</b>、パスにしていしたディレクトリは自動で生成はされないので、あらかじめディレクトリを生成しておく必要があります。</i></p>
+
+<hr />
+
+<h2 id="section-4">ログファイルのローテーションを設定する手順</h2>
+<p><a href="https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender"><img title="Date rolling file appender ・ nomiddlename/log4js-node Wiki ・ GitHub" src="http://capture.heartrails.com/200x150/cool/1350212685200?https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender" alt="https://github.com/nomiddlename/log4js-node/wiki/Date%20rolling%20file%20appender" width="200" height="150" />
 </a>
-<p>ログファイルを日次でローテーションするよう設定します。</p>
+ログファイルを日次でローテーションするよう設定します。</p>
 
 <p><em>1. appenders.jsonを生成</em></p>
-<div class='highlight'><pre><code class='sh'>appenders: <span class='o'>[{</span>
-	<span class='s2'>&quot;type&quot;</span>: <span class='s2'>&quot;dateFile&quot;</span>,
-	<span class='s2'>&quot;filename&quot;</span>: <span class='s2'>&quot;logging.log&quot;</span>,
-	<span class='s2'>&quot;pattern&quot;</span>: <span class='s2'>&quot;-yyyy-MM-dd&quot;</span>
-<span class='o'>}]</span>
+
+<div class="highlight"><pre><code class="sh">appenders: <span class="o">[{</span>
+	<span class="s2">&quot;type&quot;</span>: <span class="s2">&quot;dateFile&quot;</span>,
+	<span class="s2">&quot;filename&quot;</span>: <span class="s2">&quot;logging.log&quot;</span>,
+	<span class="s2">&quot;pattern&quot;</span>: <span class="s2">&quot;-yyyy-MM-dd&quot;</span>
+<span class="o">}]</span>
 </code></pre></div>
+
 <p><em>2. log4jsに設定を反映する</em></p>
 
-<p>log4js.configure({ appenders: <span>{ &#8220;type&#8221;: &#8220;dateFile&#8221;, &#8220;filename&#8221;: &#8220;logging.log&#8221;, &#8220;pattern&#8221;: &#8220;-yyyy-MM-dd&#8221; }</span> });</p>
+<p>log4js.configure({
+	appenders: [{
+	&#8220;type&#8221;: &#8220;dateFile&#8221;,
+	&#8220;filename&#8221;: &#8220;logging.log&#8221;,
+	&#8220;pattern&#8221;: &#8220;-yyyy-MM-dd&#8221;
+	}]
+});</p>
 
 <p>ここで設定している&#8221;pattern&#8221;は、ローテーションで生成されるログファイル名のpostfixです。</p>
 
 <p><em>3. loggerを取得する</em></p>
-<div class='highlight'><pre><code class='sh'>var <span class='nv'>logger</span> <span class='o'>=</span> log4js.getLogger<span class='o'>(</span><span class='s1'>&#39;dateFile&#39;</span><span class='o'>)</span>;
+
+<div class="highlight"><pre><code class="sh">var <span class="nv">logger</span> <span class="o">=</span> log4js.getLogger<span class="o">(</span><span class="s1">&#39;dateFile&#39;</span><span class="o">)</span>;
 </code></pre></div>
+
 <p>getLoggerの引数に、上記で設定したtypeを指定します。</p>
 
 <p><em>4. ローテーションの動作</em></p>
@@ -275,38 +311,53 @@
 <p>上記設定の場合、初回起動時は&#8221;filename&#8221;の設定値の&#8221;logging.log&#8221;という名前のログファイルが生成されます。</p>
 
 <p>そして午前0時に、現在の&#8221;logging.log&#8221;が、&#8221;logging.log<i>-yyyy-MM-dd</i>&#8220;にリネームされ新しい&#8221;logging.log&#8221;が生成されます。</p>
+
 <hr />
-<h3 id='pattern'>patternの設定</h3>
+
+<h3 id="pattern">patternの設定</h3>
 
 <p>patternの設定は、ローテーションされたファイルのpostfixになります。</p>
 
 <p>patternの設定は、以下の書式が適用されます。</p>
 
-<p><em>・ yyyy : 西暦を4桁表示します。2桁表示するには&#8221;yy&#8221;を指定します。</em></p>
-
-<p><em>・ MM : 月</em></p>
-
-<p><em>・ dd : 日</em></p>
-
-<p><em>・ hh : 時間(24時間表示)</em></p>
-
-<p><em>・ mm : 分</em></p>
-
-<p><em>・ ss : 秒</em></p>
-
-<p><em>・ sss : ミリ秒</em></p>
-
-<p><em>・ O : タイムゾーン（大文字のOです）</em></p>
+<ul>
+  <li>
+    <p>yyyy : 西暦を4桁表示します。2桁表示するには&#8221;yy&#8221;を指定します。</p>
+  </li>
+  <li>
+    <p>MM : 月</p>
+  </li>
+  <li>
+    <p>dd : 日</p>
+  </li>
+  <li>
+    <p>hh : 時間(24時間表示)</p>
+  </li>
+  <li>
+    <p>mm : 分</p>
+  </li>
+  <li>
+    <p>ss : 秒</p>
+  </li>
+  <li>
+    <p>sss : ミリ秒</p>
+  </li>
+  <li>
+    <p>O : タイムゾーン（大文字のOです）</p>
+  </li>
+</ul>
 
 <p>これでnode.js+log4jsで、ログローテーションできるようになりました。</p>
 
 <p>最後に、日次でローテーションするサンプル全コードを載せます。</p>
-<script src='https://gist.github.com/3888287.js'> 
-</script>
-<p>この他にもlog4jsには色々な設定ができるようなので、機会を見て調べてみたいと思います。</p>
-    </div>
-    <hr>
 
+<script src="https://gist.github.com/3888287.js"> 
+</script>
+
+<p>この他にもlog4jsには色々な設定ができるようなので、機会を見て調べてみたいと思います。</p>
+
+    </div>
+    <hr>  
   
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>
@@ -316,7 +367,7 @@
 
   
      
-    	<li><a href="http://modalsoul.github.io/categories.html#report-ref">
+    	<li><a href="/categories.html#report-ref">
     		report <span>17</span>
     	</a></li>
     
@@ -335,9 +386,9 @@
 
   
      
-    	<li><a href="http://modalsoul.github.io/tags.html#node.js-ref">node.js <span>5</span></a></li>
+    	<li><a href="/tags.html#node.js-ref">node.js <span>5</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#log4js-ref">log4js <span>2</span></a></li>
+    	<li><a href="/tags.html#log4js-ref">log4js <span>2</span></a></li>
     
   
 
@@ -370,11 +421,11 @@
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="http://modalsoul.github.io/report/2012/10/10/entrance-into-node-js" title="node.jsをはじめました">&larr; Previous</a></li>
+        <li class="prev"><a href="/report/2012/10/10/entrance-into-node-js" title="node.jsをはじめました">&larr; Previous</a></li>
       
-        <li><a href="http://modalsoul.github.io/archive.html">Archive</a></li>
+        <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="http://modalsoul.github.io/report/2012/10/18/about-npm-start-and-package-json" title="node.jsにおける、npmとpackage.jsonという作法について">Next &rarr;</a></li>
+        <li class="next"><a href="/report/2012/10/18/about-npm-start-and-package-json" title="node.jsにおける、npmとpackage.jsonという作法について">Next &rarr;</a></li>
       
       </ul>
     </div>
@@ -384,7 +435,7 @@
 
   <div id="disqus_thread"></div>
 <script type="text/javascript">
-    
+    var disqus_developer = 1;
     var disqus_shortname = 'modalsoul'; // required: replace example with your forum shortname
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
@@ -417,7 +468,7 @@
 
   
      
-    	<li><a href="http://modalsoul.github.io/categories.html#report-ref">
+    	<li><a href="/categories.html#report-ref">
     		report <span>17</span>
     	</a></li>
     
@@ -436,9 +487,9 @@
 
   
      
-    	<li><a href="http://modalsoul.github.io/tags.html#node.js-ref">node.js <span>5</span></a></li>
+    	<li><a href="/tags.html#node.js-ref">node.js <span>5</span></a></li>
      
-    	<li><a href="http://modalsoul.github.io/tags.html#log4js-ref">log4js <span>2</span></a></li>
+    	<li><a href="/tags.html#log4js-ref">log4js <span>2</span></a></li>
     
   
 
@@ -507,22 +558,6 @@
     </div>
 
     
-
-
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29102099-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-
-
     
     <!-- Twitter badge -->
     <!-- twitter follow badge by go2web20 -->

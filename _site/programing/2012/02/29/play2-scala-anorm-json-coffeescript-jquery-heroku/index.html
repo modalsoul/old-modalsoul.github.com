@@ -176,9 +176,7 @@
           
         			
 	 </div>
-      <h2>【意訳】Tutorial: Play Framework2 with Scala, Anorm, JSON, CoffeeScript, jQuery &amp; Heroku　［Play2アプリのビルド編］</h2>
-
-<p>元記事は<a href="http://www.jamesward.com/2012/02/21/play-framework-2-with-scala-anorm-json-coffeescript-jquery-heroku">こちら</a></p>
+      <p>元記事は<a href="http://www.jamesward.com/2012/02/21/play-framework-2-with-scala-anorm-json-coffeescript-jquery-heroku">こちら</a></p>
 
 <p>少々長い記事なので、Play2アプリのビルド編とHerokuへのデプロイ編に分けます。</p>
 
@@ -186,7 +184,7 @@
 
 <p>Herokuへのデプロイ編は、<a href="http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/">こちら</a></p>
 
-<p><img src="http://capture.heartrails.com/200x150/cool?http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/" alt="Herokuへのデプロイ編"></p>
+<p><img src="http://capture.heartrails.com/200x150/cool?http://modalsoul.github.com/Programing/2012/03/04/play2-scala-anorm-json-coffeescript-jquery-heroku/" alt="Herokuへのデプロイ編" /></p>
 
 <p>※ 2012/03/06:アドバイスいただいた箇所について修正しました。</p>
 
@@ -209,7 +207,7 @@
 
 <p>プロンプトの言語選択画面がでたら、Scalaを選択してください。</p>
 
-<p>Step 3) 新しく作成した&quot;foobar&quot;ディレクトリ配下にIDEの設定ファイルを生成します。</p>
+<p>Step 3) 新しく作成した&#8221;foobar&#8221;ディレクトリ配下にIDEの設定ファイルを生成します。</p>
 
 <p>IntelliJでは、このように実行します。</p>
 
@@ -230,7 +228,7 @@
 
 <p>正常に起動していることをテストするために、ここにアクセス<a href="http://localhost:9000">http://localhost:9000</a></p>
 
-<p>Step 5) Play2 with ScalaではデフォルトでORマッパーを提供していません。代わりにデフォルトのRDBMS永続性プロバイダとなっているのがAnormです(Anormは Object Relational Mapperではありません)。このシンプルなアプリケーションでは、1つの永続的オブジェクト：Bar(ひとつのプライマリキーと名前を持っている)を持っています。Anormは、自動でのスキーマ作成を行わないので、SQLスキーマの作成/廃棄のためのスクリプトが必要です。新しいファイル&quot;conf/evolutions/default/1.sql&quot;を作成し、以下の内容を記述します。</p>
+<p>Step 5) Play2 with ScalaではデフォルトでORマッパーを提供していません。代わりにデフォルトのRDBMS永続性プロバイダとなっているのがAnormです(Anormは Object Relational Mapperではありません)。このシンプルなアプリケーションでは、1つの永続的オブジェクト：Bar(ひとつのプライマリキーと名前を持っている)を持っています。Anormは、自動でのスキーマ作成を行わないので、SQLスキーマの作成/廃棄のためのスクリプトが必要です。新しいファイル&#8221;conf/evolutions/default/1.sql&#8221;を作成し、以下の内容を記述します。</p>
 
 <div class="highlight"><pre><code class="sh"><span class="c"># --- First database schema</span>
  
@@ -246,7 +244,7 @@ CREATE TABLE bar <span class="o">(</span>
 DROP TABLE IF EXISTS bar;
 </code></pre></div>
 
-<p>Anormでは、Scalaの&quot;case class&quot;を永続的/CRUDインターフェースとして、値オブジェクトとシングルトンオブジェクトとして扱うことができます。&quot;app/models/Bar.scla&quot;というファイルにBar case classとオブジェクトを作成して、以下の内容を記述します。</p>
+<p>Anormでは、Scalaの&#8221;case class&#8221;を永続的/CRUDインターフェースとして、値オブジェクトとシングルトンオブジェクトとして扱うことができます。&#8221;app/models/Bar.scla&#8221;というファイルにBar case classとオブジェクトを作成して、以下の内容を記述します。</p>
 
 <div class="highlight"><pre><code class="sh">package models
  
@@ -284,19 +282,19 @@ object Bar <span class="o">{</span>
 <span class="o">}</span>
 </code></pre></div>
 
-<p>変数の&quot;simple&quot;は、データベースの行値をBar case classにマップする、基本的なパーサを提供します。</p>
+<p>変数の&#8221;simple&#8221;は、データベースの行値をBar case classにマップする、基本的なパーサを提供します。</p>
 
-<p>静的関数、&quot;findAll&quot;と&quot;create&quot;は、一般的なデータアクセスを行います。</p>
+<p>静的関数、&#8221;findAll&#8221;と&#8221;create&#8221;は、一般的なデータアクセスを行います。</p>
 
-<p>注意点としては、&quot;findAll&quot;はBarへ各行を返すために、&quot;simple&quot; row parserを使っている点です。</p>
+<p>注意点としては、&#8221;findAll&#8221;はBarへ各行を返すために、&#8221;simple&#8221; row parserを使っている点です。</p>
 
-<p>Step 6) インメモリーのh2データベースを使うために、&quot;conf/application.conf&quot;ファイルに以下の値を設定する。</p>
+<p>Step 6) インメモリーのh2データベースを使うために、&#8221;conf/application.conf&#8221;ファイルに以下の値を設定する。</p>
 
 <div class="highlight"><pre><code class="sh">db.default.driver<span class="o">=</span>org.h2.Driver
 db.default.url<span class="o">=</span><span class="s2">&quot;jdbc:h2:mem:play&quot;</span>
 </code></pre></div>
 
-<p>Step 7) &quot;app/controllers/Application.scala&quot;を下記のように更新し、BarをHTTP POSTへ変換してデータベースに反映するアプリケーションコントローラー関数を作成します。</p>
+<p>Step 7) &#8220;app/controllers/Application.scala&#8221;を下記のように更新し、BarをHTTP POSTへ変換してデータベースに反映するアプリケーションコントローラー関数を作成します。</p>
 
 <div class="highlight"><pre><code class="sh">package controllers
  
@@ -332,18 +330,18 @@ object Application extends Controller <span class="o">{</span>
 <span class="o">}</span>
 </code></pre></div>
 
-<p>&quot;barForm&quot;マップは、フォームオブジェクトへパラメータを要求し、入力データのバリデーションを行います。
-静的関数の&quot;addBar&quot;は、リクエストと&quot;barForm&quot;へのリクエストパラメータのマッピングを行います。
+<p>&#8220;barForm&#8221;マップは、フォームオブジェクトへパラメータを要求し、入力データのバリデーションを行います。
+静的関数の&#8221;addBar&#8221;は、リクエストと&#8221;barForm&#8221;へのリクエストパラメータのマッピングを行います。
 失敗した場合は、コントローラはBadRequestを返します。
-成功した場合は、Barの名前は新しい&quot;Bar&quot;を構築するために使われます。そしてその&quot;Bar&quot;はデータベースに保存され、indexページへのリダイレクトが送られます。
-index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot;を渡すように変更されました。</p>
+成功した場合は、Barの名前は新しい&#8221;Bar&#8221;を構築するために使われます。そしてその&#8221;Bar&#8221;はデータベースに保存され、indexページへのリダイレクトが送られます。
+index関数は、Step 9で更新されるテンプレートへ&#8221;barForm&#8221;を渡すように変更されました。</p>
 
-<p>Step 8) &quot;conf/routes&quot;ファイルに以下の行を追加して、&quot;/addBar&quot; URLへのPOSTリクエストを&quot;Application.addBar&quot;へマップする新しいルートを作成します。</p>
+<p>Step 8) &#8220;conf/routes&#8221;ファイルに以下の行を追加して、&#8221;/addBar&#8221; URLへのPOSTリクエストを&#8221;Application.addBar&#8221;へマップする新しいルートを作成します。</p>
 
-<div class="highlight"><pre><code class="sh">POST   /addBar     controllers.Application.addBar
+<div class="highlight"><pre><code class="sh">POST	/addBar		controllers.Application.addBar
 </code></pre></div>
 
-<p>Step 9) フォームパラメータを受け取るために、&quot;main&quot;テンプレートを拡張した&quot;app/views/index.scala.html&quot;テンプレートを更新し、Webページ上のフォームをレンダリングするためにPlay2 form helperを使います。</p>
+<p>Step 9) フォームパラメータを受け取るために、&#8221;main&#8221;テンプレートを拡張した&#8221;app/views/index.scala.html&#8221;テンプレートを更新し、Webページ上のフォームをレンダリングするためにPlay2 form helperを使います。</p>
 
 <div class="highlight"><pre><code class="sh">　＠<span class="o">(</span>form: play.api.data.Form<span class="o">[</span>String<span class="o">])</span>
  
@@ -359,7 +357,7 @@ index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot
 
 <p>ブラウザで<a href="http://localhost:9000">http://localhost:9000</a>を開き、データベース変更の適用と、フォームのテストをします。うまくできていれば、フォームを送信するとindexページへリダイレクトされるはずです。</p>
 
-<p>Step 10) JSONサービスを作成し、barの全てを取得するための関数を、&quot;app/controllers/Application.scala&quot;ファイルに追加します。</p>
+<p>Step 10) JSONサービスを作成し、barの全てを取得するための関数を、&#8221;app/controllers/Application.scala&#8221;ファイルに追加します。</p>
 
 <div class="highlight"><pre><code class="sh">  import com.codahale.jerkson.Json
  
@@ -372,16 +370,16 @@ index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot
   <span class="o">}</span>
 </code></pre></div>
 
-<p>新しく作成した関数は、シリアル化されたJSONとして、&quot;Bar.findAll()&quot;から&quot;Bar&quot;オブジェクトのリストを返します。</p>
+<p>新しく作成した関数は、シリアル化されたJSONとして、&#8221;Bar.findAll()&#8221;から&#8221;Bar&#8221;オブジェクトのリストを返します。</p>
 
-<p>&quot;/listBars&quot;へのリクエストのために、下記のように新しいGET request handlerを&quot;conf/routes&quot;に追加します。</p>
+<p>&#8220;/listBars&#8221;へのリクエストのために、下記のように新しいGET request handlerを&#8221;conf/routes&#8221;に追加します。</p>
 
-<div class="highlight"><pre><code class="sh">GET        /listBars       controllers.Application.listBars
+<div class="highlight"><pre><code class="sh">GET		/listBars		controllers.Application.listBars
 </code></pre></div>
 
 <p>ブラウザで<a href="http://localhost:9000/listBars">http://localhost:9000/listBars</a>を開いてみてください。Step 9で作成したbarが表示されているはずです。</p>
 
-<p>Step 11) jQueryを使いJSONシリアル化されたbarの取得と、それぞれのページ追加のために、新しいCoffeeScriptファイル&quot;app/assets/javascripts/index.coffee&quot;を作成します。内容は以下</p>
+<p>Step 11) jQueryを使いJSONシリアル化されたbarの取得と、それぞれのページ追加のために、新しいCoffeeScriptファイル&#8221;app/assets/javascripts/index.coffee&#8221;を作成します。内容は以下</p>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>-&gt;
   <span class="nv">$.</span>get <span class="s2">&quot;/listBars&quot;</span>, <span class="o">(</span>data<span class="o">)</span> -＞
@@ -389,9 +387,9 @@ index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot
       <span class="k">$(</span><span class="s2">&quot;#bars&quot;</span><span class="k">)</span>.append <span class="s2">&quot;＜li＞Bar &quot;</span> + item.name + <span class="s2">&quot;＜/li＞&quot;</span>
 </code></pre></div>
 
-<p>CoffeScriptは、&quot;/listBars&quot;へのGETリクエストの作成と返却値の反復、ページ(Step 12で追加します)の&quot;bars&quot;エレメントへの各アイテムの追加のために、jQueryを使います。</p>
+<p>CoffeScriptは、&#8221;/listBars&#8221;へのGETリクエストの作成と返却値の反復、ページ(Step 12で追加します)の&#8221;bars&#8221;エレメントへの各アイテムの追加のために、jQueryを使います。</p>
 
-<p>Step 12) CoffeeScriptのソースから自動コンパイルされたindex.jsスクリプトを使うために、&quot;app/views/index.scala.html&quot;を以下の行を&quot;main&quot;ブロックへ追加し、更新します。</p>
+<p>Step 12) CoffeeScriptのソースから自動コンパイルされたindex.jsスクリプトを使うために、&#8221;app/views/index.scala.html&#8221;を以下の行を&#8221;main&#8221;ブロックへ追加し、更新します。</p>
 
 <div class="highlight"><pre><code class="sh">　＜script <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;＠routes.Assets.at(&quot;</span>javascripts/index.js<span class="s2">&quot;)&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span>＞＜/script＞
  
@@ -401,6 +399,7 @@ index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot
 <p>ブラウザで、<a href="http://localhost:9000/">http://localhost:9000/</a>を表示し、barがページ上部に表示され、新しいbarが期待通りに追加されていることを確認してください。</p>
 
 <p>これで、Scala, Anorm, JSON, CoffeeScript, jQueryを使ったPlay2アプリのビルド完了です。ここで紹介したすべてのソースコードはGitHub上にあります。あとはHerokuへデプロイするだけです。</p>
+
 
     </div>
     <hr>  
@@ -414,7 +413,7 @@ index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot
   
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   
@@ -432,15 +431,15 @@ index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot
 
   
      
-    	<li><a href="/tags.html#Play2-ref">Play2 <span>4</span></a></li>
+    	<li><a href="/tags.html#Play2-ref">Play2 <span>5</span></a></li>
      
-    	<li><a href="/tags.html#Scala-ref">Scala <span>6</span></a></li>
+    	<li><a href="/tags.html#Scala-ref">Scala <span>7</span></a></li>
      
-    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>2</span></a></li>
+    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>3</span></a></li>
      
-    	<li><a href="/tags.html#jQuery-ref">jQuery <span>2</span></a></li>
+    	<li><a href="/tags.html#jQuery-ref">jQuery <span>3</span></a></li>
      
-    	<li><a href="/tags.html#Heroku-ref">Heroku <span>4</span></a></li>
+    	<li><a href="/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
      
     	<li><a href="/tags.html#AnormEdit-ref">AnormEdit <span>1</span></a></li>
     
@@ -523,7 +522,7 @@ index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot
   
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   
@@ -541,15 +540,15 @@ index関数は、Step 9で更新されるテンプレートへ&quot;barForm&quot
 
   
      
-    	<li><a href="/tags.html#Play2-ref">Play2 <span>4</span></a></li>
+    	<li><a href="/tags.html#Play2-ref">Play2 <span>5</span></a></li>
      
-    	<li><a href="/tags.html#Scala-ref">Scala <span>6</span></a></li>
+    	<li><a href="/tags.html#Scala-ref">Scala <span>7</span></a></li>
      
-    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>2</span></a></li>
+    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>3</span></a></li>
      
-    	<li><a href="/tags.html#jQuery-ref">jQuery <span>2</span></a></li>
+    	<li><a href="/tags.html#jQuery-ref">jQuery <span>3</span></a></li>
      
-    	<li><a href="/tags.html#Heroku-ref">Heroku <span>4</span></a></li>
+    	<li><a href="/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
      
     	<li><a href="/tags.html#AnormEdit-ref">AnormEdit <span>1</span></a></li>
     

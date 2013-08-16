@@ -4,8 +4,6 @@ title: スクラム道 StaffMeetup20120523に遊びに行ってきました。
 tags: Agile スクラム道 ネタ
 categories: report
 ---
-スクラム道 StaffMeetup20120523に遊びに行ってきました。
------------------
 
 
 

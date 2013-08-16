@@ -176,9 +176,7 @@
           
         			
 	 </div>
-      <h2>【意訳】Tutorial: Play Framework2 with Scala, Anorm, JSON, CoffeeScript, jQuery &amp; Heroku　［Herokuデプロイ編］</h2>
-
-<p>元記事は<a href="http://www.jamesward.com/2012/02/21/play-framework-2-with-scala-anorm-json-coffeescript-jquery-heroku">こちら</a></p>
+      <p>元記事は<a href="http://www.jamesward.com/2012/02/21/play-framework-2-with-scala-anorm-json-coffeescript-jquery-heroku">こちら</a></p>
 
 <p>少々長い記事なので、Play2アプリのビルド編とHerokuへのデプロイ編に分けます。</p>
 
@@ -186,8 +184,8 @@
 
 <p>Play2アプリのビルド編は、<a href="http://modalsoul.github.com/Programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku/">こちら</a></p>
 
-<p><img src="http://capture.heartrails.com/200x150/cool?http://modalsoul.github.com/Programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku/" alt="Play2アプリビルド編">
-<hr /></p>
+<p><img src="http://capture.heartrails.com/200x150/cool?http://modalsoul.github.com/Programing/2012/02/29/play2-scala-anorm-json-coffeescript-jquery-heroku/" alt="Play2アプリビルド編" /></p>
+<hr />
 
 <p>Step 1) <a href="http://heroku.com/signup">Herokuのアカウントを取得</a>して、<a href="http://toolbelt.heroku.com/">Heroku Toolbelt</a>と<a href="http://git-scm.org/">git</a>をインストールして、コマンドラインからHerokuへログインします</p>
 
@@ -201,41 +199,41 @@ Heroku上でアプリケーションを実行してこのDBを使うには、別
 これにはいくつか方法がありますが、最も簡単な方法はスタートアップコマンドラインからDBの設定をオーバーライドする方法です。
 これはStep3で紹介します。
 その前に、Psotgres JDBCドライバーをプロジェクトの依存関係として指定する必要があります。
-&quot;project/Build.scala&quot;ファイルに、以下のような&quot;appDependencies&quot;を設定します。</p>
+&#8220;project/Build.scala&#8221;ファイルに、以下のような&#8221;appDependencies&#8221;を設定します。</p>
 
 <div class="highlight"><pre><code class="sh">   val <span class="nv">appDependencies</span> <span class="o">=</span> Seq<span class="o">(</span>
       <span class="s2">&quot;postgresql&quot;</span> % <span class="s2">&quot;postgresql&quot;</span> % <span class="s2">&quot;9.1-901-1.jdbc4&quot;</span>
     <span class="o">)</span>
 </code></pre></div>
 
-<p>Step 3) Herokuにどのプロセスを実行するのかを教えるために、プロジェクトルートディレクトリ配下にファイル名&quot;Procfile&quot;を作成し（※大文字と小文字が区別されます）、以下のように記述します</p>
+<p>Step 3) Herokuにどのプロセスを実行するのかを教えるために、プロジェクトルートディレクトリ配下にファイル名&#8221;Procfile&#8221;を作成し（※大文字と小文字が区別されます）、以下のように記述します</p>
 
 <div class="highlight"><pre><code class="sh">web: target/start -Dhttp.port<span class="o">=</span><span class="nv">$PORT</span> -DapplyEvolutions.default<span class="o">=</span><span class="nb">true</span> -Ddb.default.driver<span class="o">=</span>org.postgresql.Driver -Ddb.default.url<span class="o">=</span><span class="nv">$DATABASE_URL</span>
 </code></pre></div>
 
-<p>Play2では、プロジェクトのビルドにScala Build Tool(SBT)を使います。プロジェクトがHerokuへデプロイされると、プロジェクトをコンパイルするため&quot;sbt stage!コマンドが実行されます。
-そして、プロセスがJavaのクラスパスの設定とPlayサーバーの起動をする&quot;taget/start&quot;スクリプトを生成します。
-Herokuはアプリケーションに、Javaプロパティ&quot;http.port&quot;が適宜設定されるように、環境変数&quot;PORT&quot;を使用してリッスンすべきHTTPポートを通知します。
+<p>Play2では、プロジェクトのビルドにScala Build Tool(SBT)を使います。プロジェクトがHerokuへデプロイされると、プロジェクトをコンパイルするため&#8221;sbt stage!コマンドが実行されます。
+そして、プロセスがJavaのクラスパスの設定とPlayサーバーの起動をする&#8221;taget/start&#8221;スクリプトを生成します。
+Herokuはアプリケーションに、Javaプロパティ&#8221;http.port&#8221;が適宜設定されるように、環境変数&#8221;PORT&#8221;を使用してリッスンすべきHTTPポートを通知します。
 また、Heroku上のアプリケーションへDB（とその他のリソース）への接続文字列は、デフォルトでは環境変数介して渡されます。
 環境変数のDATABASE_URLは、DBホスト、名前、ユーザ名、パスワードを含みます。
-所謂&quot;db.default.url&quot;プロパティがその値で設定されます。
+所謂&#8221;db.default.url&#8221;プロパティがその値で設定されます。
 またドライバは、Postgres JDBCドライバクラスに設定されます。</p>
 
 <p>Step 4) Herokuはアプリケーションのアップロード方法としてgitを使っています。
 SCMツールにgitを使っていようと無かろうとHerokuへアプリケーションをアップロードするにはgitを使います。
 プロジェクトのルートディレクトリでgit repoを作り、ファイルを追加してコミットします。</p>
 
-<div class="highlight"><pre><code class="sh">   git init
-    git add Procfile app conf project public
-    git commit -m init
+<div class="highlight"><pre><code class="sh">	git init
+	git add Procfile app conf project public
+	git commit -m init
 </code></pre></div>
 
-<p>※ 選択しての&quot;git add&quot;の代わりに、&quot;.gitignore&quot;ファイルを更新することもできます。</p>
+<p>※ 選択しての&#8221;git add&#8221;の代わりに、&#8221;.gitignore&#8221;ファイルを更新することもできます。</p>
 
 <p>Step 5) Heroku CLIを使用して、Heroku上に新しいアプリケーションをプロビジョニングします。
-あなたが作った各アプリケーションは1月辺り、750<a href="http://devcenter.heroku.com/articles/dynos">&quot;dyno&quot;</a>時間無料です。
+あなたが作った各アプリケーションは1月辺り、750<a href="http://devcenter.heroku.com/articles/dynos">&#8220;dyno&#8221;</a>時間無料です。
 開発者として無料でHerokuを使用でき、スケールした分だけ支払うことになります。
-コマンドライン上で、&quot;cedar&quot;スタックを使って新しいアプリケーションを作ります。</p>
+コマンドライン上で、&#8221;cedar&#8221;スタックを使って新しいアプリケーションを作ります。</p>
 
 <div class="highlight"><pre><code class="sh">heroku create -s cedar
 </code></pre></div>
@@ -243,14 +241,14 @@ SCMツールにgitを使っていようと無かろうとHerokuへアプリケ�
 <p>これでアプリケーションのHTTPとgitのエンドポイントを作ります。
 アプリケーションで変更した名前を使うことも、自身のドメイン名を使うことも可能です。</p>
 
-<p>Step 6) アプリケーションはクラウドへデプロイする準備が整いました。コマンドラインからHerokuのマスターブランチへ&quot;git push&quot;します。</p>
+<p>Step 6) アプリケーションはクラウドへデプロイする準備が整いました。コマンドラインからHerokuのマスターブランチへ&#8221;git push&#8221;します。</p>
 
 <div class="highlight"><pre><code class="sh">git push heroku master
 </code></pre></div>
 
-<p>Herokuがファイル受け取ると、Play Frameworkのプレコンパイラが実行され、Herokuが&quot;slug file&quot;をアセンブルし、&quot;slug&quot;がdynoへデプロイされます。</p>
+<p>Herokuがファイル受け取ると、Play Frameworkのプレコンパイラが実行され、Herokuが&#8221;slug file&#8221;をアセンブルし、&#8221;slug&#8221;がdynoへデプロイされます。</p>
 
-<p>Step 7) これで&quot;heroku create&quot;に続いて出力のドメインに移動する、もしくは単純に実行することで、ブラウザでアプリケーションを表示できます。</p>
+<p>Step 7) これで&#8221;heroku create&#8221;に続いて出力のドメインに移動する、もしくは単純に実行することで、ブラウザでアプリケーションを表示できます。</p>
 
 <div class="highlight"><pre><code class="sh">heroku open
 </code></pre></div>
@@ -260,6 +258,7 @@ SCMツールにgitを使っていようと無かろうとHerokuへアプリケ�
 もし質問があったら、私に知らせてください。</p>
 
 <p>このエントリーは、CoffeeScript, jQuery, Play Framework, Scalaを使ってポストされました。パーマリンクをブックマークしてください。コメントかトラックバックをよろしく。トラックバックURLは、<a href="http://www.jamesward.com/2012/02/21/play-framework-2-with-scala-anorm-json-coffeescript-jquery-heroku/trackback/">こちら</a></p>
+
 
     </div>
     <hr>  
@@ -273,7 +272,7 @@ SCMツールにgitを使っていようと無かろうとHerokuへアプリケ�
   
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   
@@ -291,15 +290,15 @@ SCMツールにgitを使っていようと無かろうとHerokuへアプリケ�
 
   
      
-    	<li><a href="/tags.html#Play2-ref">Play2 <span>4</span></a></li>
+    	<li><a href="/tags.html#Play2-ref">Play2 <span>5</span></a></li>
      
-    	<li><a href="/tags.html#Scala-ref">Scala <span>6</span></a></li>
+    	<li><a href="/tags.html#Scala-ref">Scala <span>7</span></a></li>
      
-    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>2</span></a></li>
+    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>3</span></a></li>
      
-    	<li><a href="/tags.html#jQuery-ref">jQuery <span>2</span></a></li>
+    	<li><a href="/tags.html#jQuery-ref">jQuery <span>3</span></a></li>
      
-    	<li><a href="/tags.html#Heroku-ref">Heroku <span>4</span></a></li>
+    	<li><a href="/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
      
     	<li><a href="/tags.html#Anrom-ref">Anrom <span>1</span></a></li>
     
@@ -382,7 +381,7 @@ SCMツールにgitを使っていようと無かろうとHerokuへアプリケ�
   
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   
@@ -400,15 +399,15 @@ SCMツールにgitを使っていようと無かろうとHerokuへアプリケ�
 
   
      
-    	<li><a href="/tags.html#Play2-ref">Play2 <span>4</span></a></li>
+    	<li><a href="/tags.html#Play2-ref">Play2 <span>5</span></a></li>
      
-    	<li><a href="/tags.html#Scala-ref">Scala <span>6</span></a></li>
+    	<li><a href="/tags.html#Scala-ref">Scala <span>7</span></a></li>
      
-    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>2</span></a></li>
+    	<li><a href="/tags.html#CoffeeScript-ref">CoffeeScript <span>3</span></a></li>
      
-    	<li><a href="/tags.html#jQuery-ref">jQuery <span>2</span></a></li>
+    	<li><a href="/tags.html#jQuery-ref">jQuery <span>3</span></a></li>
      
-    	<li><a href="/tags.html#Heroku-ref">Heroku <span>4</span></a></li>
+    	<li><a href="/tags.html#Heroku-ref">Heroku <span>5</span></a></li>
      
     	<li><a href="/tags.html#Anrom-ref">Anrom <span>1</span></a></li>
     

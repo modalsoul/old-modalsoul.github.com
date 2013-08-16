@@ -176,35 +176,28 @@
           
         			
 	 </div>
-      <h2><a href="http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf">Jekyllによる静的Ｗebサイト構築入門してみた</a></h2>
-
-<p><img src="http://capture.heartrails.com/free?http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf" alt="Jekyllによる静的Ｗebサイト構築入門"></p>
+      <p><img src="http://capture.heartrails.com/free?http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf" alt="Jekyllによる静的Ｗebサイト構築入門" /></p>
 
 <p><a href="http://www.ksr-it.net/pdf/kushiro-jekyll-text.pdf">こちら</a>を参考にしました。</p>
 
 <p>いろいろ嵌りポイントがあったので、後世の遺産として書き残します。</p>
 
-<h2>環境構築</h2>
-
-<p>※ここで使った環境は、Windows7です。</p>
-
-<h3>Rubyのインストール</h3>
-
-<p>ActiveScriptRubyを<a href="http://www.geocities.co.jp/SiliconValley-PaloAlto/9251/ruby/">ダウンロード</a>＆インストール。
+<h2 id="section">環境構築</h2>
+<p>※ここで使った環境は、Windows7です。
+###Rubyのインストール
+ActiveScriptRubyを<a href="http://www.geocities.co.jp/SiliconValley-PaloAlto/9251/ruby/">ダウンロード</a>＆インストール。
 デフォルト設定でインストールしたら、↓に入った。(うろ覚え、たしかあってると思う)</p>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>C:<span class="se">\P</span>roguram files<span class="o">(</span>x86<span class="o">)</span><span class="se">\r</span>uby-1.8
 </code></pre></div>
 
-<h3>Pathの設定</h3>
-
+<h3 id="path">Pathの設定</h3>
 <p>環境変数に↓を追加</p>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span><span class="s2">&quot;C:\Proguram files(x86)\ruby-1.8\bin&quot;</span>
 </code></pre></div>
 
-<h3>RubyGemsのセットアップ</h3>
-
+<h3 id="rubygems">RubyGemsのセットアップ</h3>
 <p>gemのバージョンを確認。</p>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem -v
@@ -215,7 +208,7 @@
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem update --sytem
 </code></pre></div>
 
-<h3>Jekyllのインストール</h3>
+<h3 id="jekyll">Jekyllのインストール</h3>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem install jekyll
 </code></pre></div>
@@ -223,21 +216,19 @@
 <p>インストールできるはずなんだけど、なんかエラーがでる。。
 どうやら、Program files(x86)配下に書き込み権限がないから、らしい。</p>
 
-<h3>再：Rubyのインストール</h3>
-
+<h3 id="ruby">再：Rubyのインストール</h3>
 <p>もう一度、今度は、C:\直下にインストール。</p>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>C:<span class="se">\r</span>uby-1.8
 </code></pre></div>
 
-<h3>再：Pathの設定</h3>
-
+<h3 id="path-1">再：Pathの設定</h3>
 <p>Rubyのパスを↓に変更する。</p>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>C:<span class="se">\r</span>uby-1.8
 </code></pre></div>
 
-<h3>再：Jekyllのインストール</h3>
+<h3 id="jekyll-1">再：Jekyllのインストール</h3>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem install jekyll
 </code></pre></div>
@@ -246,27 +237,25 @@
 どうやらWindows環境だと、MAKE無くてエラーになってるらしい。
 Mac、Linux環境だとmakeはデフォルトはいっているので、Windows環境の嵌りポイント。</p>
 
-<h3>NMAKEのインストール</h3>
-
+<h3 id="nmake">NMAKEのインストール</h3>
 <p>こちらを参考にWindows環境用のMAKE：NMAKEのインストールを試みる。
 <a href="http://d.hatena.ne.jp/perlcodesample/20081025/1225035398">http://d.hatena.ne.jp/perlcodesample/20081025/1225035398</a></p>
 
-<p><img src="http://capture.heartrails.com/free?http://d.hatena.ne.jp/perlcodesample/20081025/1225035398" alt="http://d.hatena.ne.jp/perlcodesample/20081025/1225035398"></p>
+<p><img src="http://capture.heartrails.com/free?http://d.hatena.ne.jp/perlcodesample/20081025/1225035398" alt="http://d.hatena.ne.jp/perlcodesample/20081025/1225035398" /></p>
 
 <p>Nake15.exeをダウンロード＆インストールしようとしたら、</p>
 
-<p><img src="/img/nmake15-error.jpg" alt="nmake error diag"></p>
+<p><img src="/img/nmake15-error.jpg" alt="nmake error diag" /></p>
 
 <p>手持ちの環境では、このNMAKEは使えないらしい。
 別の方法を探す。</p>
 
-<h3>VisualStudioのインストール</h3>
-
+<h3 id="visualstudio">VisualStudioのインストール</h3>
 <p>VC++ CompilerにNMAKEが同梱されているようなので、VisualStudioをインストール。</p>
 
 <p><a href="http://www.microsoft.com/japan/msdn/vstudio/express/">VisualStudio 2010 Express</a></p>
 
-<p><img src="http://capture.heartrails.com/free?http://www.microsoft.com/japan/msdn/vstudio/express/" alt="VisualStudio 2010 Express"></p>
+<p><img src="http://capture.heartrails.com/free?http://www.microsoft.com/japan/msdn/vstudio/express/" alt="VisualStudio 2010 Express" /></p>
 
 <p>Microsoft Visual C++ 2010 Expressをインストール。
 インストール後に、再度Jekyllインストールしてみてもやっぱりダメ。</p>
@@ -276,32 +265,32 @@ Mac、Linux環境だとmakeはデフォルトはいっているので、Windows�
 
 <p>まだ何か足りないっぽい。</p>
 
-<h3>環境変数の設定</h3>
+<h3 id="section-1">環境変数の設定</h3>
 
 <p>環境変数を設定してやる必要があるらしい。</p>
 
 <p><a href="http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake">http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake</a></p>
 
-<p><img src="http://capture.heartrails.com/free?http://www7.atwiki.jp/smashonline/?cmd=word&amp;amp;word=cl.exe%200xc0000135&amp;amp;type=normal&amp;amp;page=nmake" alt="http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake"></p>
+<p><img src="http://capture.heartrails.com/free?http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake" alt="http://www7.atwiki.jp/smashonline/?cmd=word&amp;word=cl.exe%200xc0000135&amp;type=normal&amp;page=nmake" /></p>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>C:<span class="se">\P</span>rogram Files <span class="o">(</span>x86<span class="o">)</span><span class="se">\M</span>icrosoft Visual Studio 10.0<span class="se">\V</span>C<span class="se">\b</span>in<span class="se">\v</span>cvars32.bat
 </code></pre></div>
 
-<h3>再：Jekyllのインストール</h3>
+<h3 id="jekyll-2">再：Jekyllのインストール</h3>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>gem install jekyll
 </code></pre></div>
 
 <p>なんとかJekyllのインストールに成功。</p>
 
-<h2>Jekyllの実行</h2>
+<h2 id="jekyll-3">Jekyllの実行</h2>
 
 <p>ローカルのgithub:pagesのルートディレクトリ配下に移動してJekyllを実行。</p>
 
 <div class="highlight"><pre><code class="sh"><span class="nv">$ </span>jekyll --server --auto
 </code></pre></div>
 
-<h2>ブラウザで表示</h2>
+<h2 id="section-2">ブラウザで表示</h2>
 
 <p>デフォルトのポートが4000なので、</p>
 
@@ -309,7 +298,7 @@ Mac、Linux環境だとmakeはデフォルトはいっているので、Windows�
 
 <p>にアクセスする。</p>
 
-<h2>最後に</h2>
+<h2 id="section-3">最後に</h2>
 
 <p>時間がたってからこの記事を書いたので、一部詳細があってないところもあるだろうけれど
 大体こんな流れでした。</p>

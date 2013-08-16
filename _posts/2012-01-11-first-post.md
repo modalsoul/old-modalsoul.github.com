@@ -4,8 +4,6 @@ title: GitHub+Jekyllでブログを立ててみた。
 tags: GitHub, Jekyll
 categories: record
 ---
-GitHub+[Jekyll](http://jekyllbootstrap.com/)でブログを立ててみた。
------------------
 
 ![Jekyllで始める簡単ブログ](http://capture.heartrails.com/free?http://mattn.kaoriya.net/software/lang/ruby/20090409185248.htm)
 

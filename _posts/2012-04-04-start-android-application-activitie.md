@@ -4,8 +4,6 @@ title: Androidプログラミング入門してみた-アクティビティ編-
 tags: Android
 categories: Programing
 ---
-Androidプログラミング入門してみた-アクティビティ編-
------------------
 [前回](/Programing/2012/04/02/start-android-application-architecture)のつづきです。
 
 今回も主に書籍（ [本格アプリを作ろう！ Androidプログラミングレシピ](http://www.amazon.co.jp/gp/product/4844331272/ref=as_li_ss_il?ie=UTF8&tag=modalsoul-22&linkCode=as2&camp=247&creative=7399&creativeASIN=4844331272)）を参考にして進めます。

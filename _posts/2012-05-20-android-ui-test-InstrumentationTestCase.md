@@ -4,8 +4,7 @@ title: AndroidアプリのUIテスト-InstrumentationTestCase編-
 tags: Android UI Test InstrumentationTestCase TouchUtils
 categories: Test Programing
 ---
-AndroidアプリのUIテスト-InstrumentationTestCase編-
------------------
+
 複数のActivityに跨る画面遷移のテストを調べて、サンプルを作ってみました。
 
 サンプルのAndroidプロジェクトとテストプロジェクトは以下に置きました。

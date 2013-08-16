@@ -4,8 +4,6 @@ title: スクラム道 Full Boost 「青物横丁制圧作戦」#scrumdoに参�
 tags: Agile スクラム道 勉強会
 categories: report
 ---
-[スクラム道 Full Boost 「青物横丁制圧作戦」](http://www.taoofscrum.org/contents/post/240)に参加しました。
------------------
 <h4>この記事では、選手として参加させていただいて感じたことと、自分が壇上で発言した質問や意見の補足をメインに書いています。</h4>
 
 <a href="http://www.taoofscrum.org/contents/post/240">

@@ -7,18 +7,18 @@ comment: この記事は、node.jsを使ったプロジェクトを作成する�
 thumbnail: https://npmjs.org/
 ---
 
------------------
+
 ## 謝辞
 以下の記事を参考にさせていただきました。感謝です。
 
 
-*・ [npm についてまとめてみる - need something more...](http://kysnm.hatenablog.com/entry/20111225/1324828008)*
+* [npm についてまとめてみる - need something more...](http://kysnm.hatenablog.com/entry/20111225/1324828008)
 
 
-*・ [npm configで設定値を管理 - すぎゃーんメモ](http://d.hatena.ne.jp/sugyan/20110909/1315575343)*
+* [npm configで設定値を管理 - すぎゃーんメモ](http://d.hatena.ne.jp/sugyan/20110909/1315575343)
 
 
-*・ [Node.js の起動オプション、環境変数、npm start の話 - Block Rockin’ Codes](http://d.hatena.ne.jp/Jxck/20120410/1334071898)*
+* [Node.js の起動オプション、環境変数、npm start の話 - Block Rockin’ Codes](http://d.hatena.ne.jp/Jxck/20120410/1334071898)
 
 
 ## npmとpackage.jsonによるパッケージ管理

@@ -4,8 +4,6 @@ title: Capistranoをやってみよう
 tags: Capistrano
 categories: CI
 ---
-{page.title}
------------------
 
 <a href="https://github.com/capistrano/capistrano"><img title="capistrano/capistrano - GitHub" src="http://capture.heartrails.com/300x300/cool?https://github.com/capistrano/capistrano" alt="https://github.com/capistrano/capistrano" width="300" height="300" /></a>
 

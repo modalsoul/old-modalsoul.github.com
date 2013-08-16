@@ -172,7 +172,7 @@
 	
 		<p>この記事は、以前書いた記事<a href="http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/" >AndroidアプリのUIテスト-InstrumentationTestCase編-</a>の補足記事です。</p>
 		<a href="http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/">
-		<img title="�Q�l" src="http://capture.heartrails.com/300x200/cool?http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/" alt="�Q�l" width="300" height="200" />
+		<img title="参考" src="http://capture.heartrails.com/300x200/cool?http://modalsoul.github.com/Test/Programing/2012/05/20/android-ui-test-InstrumentationTestCase/" alt="参考" width="300" height="200" />
 		</a>
 	
 
@@ -182,14 +182,12 @@
           
         			
 	 </div>
-      <hr>
-
-<p>以前の記事では、InstrumantetionTestCaseとTouchUtilsを使ってのUIテストについて書きました。</p>
+      <p>以前の記事では、InstrumantetionTestCaseとTouchUtilsを使ってのUIテストについて書きました。</p>
 
 <p>最近、この方法でテストを実行してjava.lang.SecurityException: Permission Denialが発生して、テストに失敗する事象に悩まされたので、
 回避方法を記録しておきます。</p>
 
-<h2>原因</h2>
+<h2 id="section">原因</h2>
 
 <p>この問題が発生する正確な理由はわかっていません。</p>
 
@@ -202,35 +200,31 @@ TouchUtilsは端末によっては利用できないよう制限されている�
 
 <p>そのため、テストケース中のボタンなどのViewのクリック動作がシミュレートできずにテストが失敗したようです。</p>
 
-<p><br/></p>
-
-<h2>TouchUtilsを使わずにテストする方法</h2>
+<p><br />
+## TouchUtilsを使わずにテストする方法</p>
 
 <p>以前紹介した方法では、ユーザのViewのクリック動作を以下のような方法でシミュレートしました。</p>
 
-<h3>Activityの取得</h3>
-
+<h3 id="activity">Activityの取得</h3>
 <script src="https://gist.github.com/2758303.js?file=getCurrentActivity.java">
 </script>
 
-<h3>Viewを取得して、初期状態を確認。</h3>
-
+<h3 id="view">Viewを取得して、初期状態を確認。</h3>
 <script src="https://gist.github.com/2758332.js?file=getAndCheckView.java">
 </script>
 
-<h3>ボタンのクリックをシミュレート。</h3>
-
+<h3 id="section-1">ボタンのクリックをシミュレート。</h3>
 <script src="https://gist.github.com/2758332.js?file=getAndCheckView.java">
 </script>
 
-<h3>performClick()を使った回避方法</h3>
-
-<p>上記のクリックのシミュレートに使用したTouchUtilsの代わりに、<a href="http://developer.android.com/reference/android/view/View.html#performClick(">performClick()</a>)を使います。</p>
+<h3 id="performclick">performClick()を使った回避方法</h3>
+<p>上記のクリックのシミュレートに使用したTouchUtilsの代わりに、<a href="http://developer.android.com/reference/android/view/View.html#performClick()">performClick()</a>を使います。</p>
 
 <p>※この場合、clickPerformは明示的にUIスレッドで実行する必要があります。</p>
 
 <script src="https://gist.github.com/3531257.js?file=performClick-sample.java">
 </script>
+
 
     </div>
     <hr>  
@@ -248,7 +242,7 @@ TouchUtilsは端末によっては利用できないよう制限されている�
     	</a></li>
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   
@@ -361,7 +355,7 @@ TouchUtilsは端末によっては利用できないよう制限されている�
     	</a></li>
      
     	<li><a href="/categories.html#programing-ref">
-    		programing <span>11</span>
+    		programing <span>12</span>
     	</a></li>
     
   

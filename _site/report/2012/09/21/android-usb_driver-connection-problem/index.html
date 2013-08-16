@@ -172,7 +172,7 @@
 	
 		<p>この記事は、MacでAndroidアプリ開発するべく開発環境を構築したときのメモです。特にハマった現象について、原因と対処法を記録しておきます。</p>
 		<a href="http://developer.android.com/index.html">
-		<img title="�Q�l" src="http://capture.heartrails.com/300x200/cool?http://developer.android.com/index.html" alt="�Q�l" width="300" height="200" />
+		<img title="参考" src="http://capture.heartrails.com/300x200/cool?http://developer.android.com/index.html" alt="参考" width="300" height="200" />
 		</a>
 	
 
@@ -182,10 +182,7 @@
           
         			
 	 </div>
-      <hr>
-
-<h2>現象について</h2>
-
+      <h2 id="section">現象について</h2>
 <p>Android端末をUSBケーブルでつないでデバッグ接続しても、EclipseのDDMSで認識されませんでした。</p>
 
 <p>PCは、Core2世代のMac book air</p>
@@ -194,35 +191,26 @@
 
 <hr />
 
-<h2>原因</h2>
-
+<h2 id="section-1">原因</h2>
 <p>端的に言うと、MBAにインストールされていたEasyTetherのドライバと競合していた為でした。</p>
 
-<p><a href="https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja">
-<img title="Now Capturing..." src="http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja" alt="https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&hl=ja" width="300" height="200" />
+<p><a href="https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja">
+<img title="Now Capturing..." src="http://capture.heartrails.com/300x200/cool?https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja" alt="https://play.google.com/store/apps/details?id=com.mstream.easytether_polyclef&amp;hl=ja" width="300" height="200" />
 </a></p>
 
 <hr />
 
-<h2>対処法</h2>
-
+<h2 id="section-2">対処法</h2>
 <p>EasyTetherのドライバを削除することで、DDMSでAndroid端末が認識されない問題は解消できます。</p>
 
-<p>*<em>・「/System/Library/Extentions」をFinderで開き、「EasyTetherUSBEthernet.kext」を削除する *</em></p>
+<blockquote>
+  <p>「/System/Library/Extentions」をFinderで開き、「EasyTetherUSBEthernet.kext」を削除する</p>
+</blockquote>
 
 <p>競合そのものを解消する方法ではないので、EasyTetherが使えなくなりますが、Android2.3以降？の端末では、OSの機能としてテザリングがサポートされているようなので影響は少ないかな、と。</p>
 
 <p><a href="http://gadget-shot.com/news/5757">こちら</a>の記事を参考しました。</p>
 
-<hr />
-
-<h2>余談ですが、、</h2>
-
-<p>このMBA、Ruby界隈では有名なJoJoエバンジェリスト”<a href="http://twitter.com/joker1007">@joker1007</a>”さんに、２ヶ月ほど前に譲ってもらったものです。このMBAでAndroidアプリの開発をするために環境を準備していた訳です。</p>
-
-<p><img src="http://farm9.staticflickr.com/8462/8008426062_ecca73f4dd.jpg" alt="my MBA"></p>
-
-<p>ちなみにこのMBAは、<a href="http://twitter.com/joker1007">@joker1007</a>さん仕様のためステッカーはプリインです。</p>
 
     </div>
     <hr>  
@@ -236,7 +224,7 @@
   
      
     	<li><a href="/categories.html#report-ref">
-    		report <span>16</span>
+    		report <span>17</span>
     	</a></li>
     
   
@@ -339,7 +327,7 @@
   
      
     	<li><a href="/categories.html#report-ref">
-    		report <span>16</span>
+    		report <span>17</span>
     	</a></li>
     
   

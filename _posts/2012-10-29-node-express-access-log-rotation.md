@@ -9,12 +9,12 @@ thumbnail:
 <a href="http://www.flickr.com/photos/kuromatsunai/3024100752/" title="足跡 - Footprint - by kuromatsunai.info, on Flickr">
 <img src="http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg" width="320" height="240" alt="足跡 - Footprint -">
 </a>
------------------
+
 ## 謝辞
 以下の記事を参考にさせていただきました。感謝です。
 
 
-*・ [【Node.js】expressでaccess log + log rotate | 湘南社中テクニカルブログ](http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html)*
+*[【Node.js】expressでaccess log + log rotate ｜ 湘南社中テクニカルブログ](http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html)
 
 <hr />
 

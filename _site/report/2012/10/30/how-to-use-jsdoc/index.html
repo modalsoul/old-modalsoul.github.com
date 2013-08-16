@@ -177,20 +177,20 @@
         			
 	 </div>
       <p><a href="http://www.flickr.com/photos/pixagraphic/3414730395/" title="Old Documents by pixagraphic, on Flickr">
-<img src="http://farm4.staticflickr.com/3586/3414730395_7dedac534b_n.jpg" width="320" height="213" alt="Old Documents"></p>
+<img src="http://farm4.staticflickr.com/3586/3414730395_7dedac534b_n.jpg" width="320" height="213" alt="Old Documents" />
+</a></p>
 
-<h2></a></h2>
-
-<h2>謝辞</h2>
-
+<h2 id="section">謝辞</h2>
 <p>以下の記事を参考にさせていただきました。感謝です。</p>
 
-<p>*・ <a href="https://sites.google.com/site/jsdoc3manualjp/">JsDoc3-manual-jp</a> *
-*・ <a href="http://efcl.info/2011/0226/res2291/">JavaScript対応APIドキュメント生成ツールのまとめ | Web scratch</a> *</p>
+<ul>
+  <li><a href="https://sites.google.com/site/jsdoc3manualjp/">JsDoc3-manual-jp</a> </li>
+  <li><a href="http://efcl.info/2011/0226/res2291/">JavaScript対応APIドキュメント生成ツールのまとめ｜ Web scratch</a> </li>
+</ul>
 
 <hr />
 
-<h2>JavaScriptのドキュメンテーション</h2>
+<h2 id="javascript">JavaScriptのドキュメンテーション</h2>
 
 <p>今回は「JavaScriptでコメントを書くときどうすればいいんだ？」という疑問から出発しました。
 Javaだと、JavaDocの形式で書いておけば、Eclipse等のIDEを使うと対象のメソッドをわざわざ見に行かなくともコメント、引数、戻り値が見れて便利です。</p>
@@ -199,19 +199,18 @@ Javaだと、JavaDocの形式で書いておけば、Eclipse等のIDEを使う�
 
 <hr />
 
-<h2>JSDoc3を使う</h2>
+<h2 id="jsdoc3">JSDoc3を使う</h2>
 
 <p>ドキュメント生成ルーツは色々あるようですが、今回はJSDoc3を使いました。
 <a href="https://github.com/jsdoc3/jsdoc">
 <img title="jsdoc3/jsdoc ・ GitHub" src="http://capture.heartrails.com/120x90/cool/1351633993677?https://github.com/jsdoc3/jsdoc" alt="https://github.com/jsdoc3/jsdoc" width="120" height="90" />
 </a></p>
 
-<p>現状だとJSDocの後継&quot;JsDoc Toolkit&quot;がメジャーなようですが、さらに後継のJSDoc3を使いました。</p>
+<p>現状だとJSDocの後継&#8221;JsDoc Toolkit&#8221;がメジャーなようですが、さらに後継のJSDoc3を使いました。</p>
 
 <hr />
 
-<h2>JSDoc3のインストール</h2>
-
+<h2 id="jsdoc3-1">JSDoc3のインストール</h2>
 <p>JSDoc3をインストールします。
 npmが既にインストールされている前提で</p>
 
@@ -222,12 +221,12 @@ npmが既にインストールされている前提で</p>
 
 <hr />
 
-<h2>アノテーションの記述</h2>
+<h2 id="section-1">アノテーションの記述</h2>
 
 <p>ドキュメントに落としたいオブジェクトの直前にJSDocアノテーションを追加します。
-Javaと同じく&quot;/＊＊... ＊/ &quot;で囲まれた部分がアノテーションとなります。</p>
+Javaと同じく&#8221;/＊＊&#8230; ＊/ &#8220;で囲まれた部分がアノテーションとなります。</p>
 
-<p>タグは、&quot;＠... &quot;で記述します。</p>
+<p>タグは、&#8221;＠&#8230; &#8220;で記述します。</p>
 
 <p>実際にnode.js＋expressのコードにアノテーションを追加してみました。</p>
 
@@ -237,44 +236,43 @@ Javaと同じく&quot;/＊＊... ＊/ &quot;で囲まれた部分がアノテー
 
 <hr />
 
-<h2>タグの種類</h2>
-
+<h2 id="section-2">タグの種類</h2>
 <p>上記のサンプルでは@param, @return, @moduleの3種類しか使っていませんが、JSDocには他にもタグが用意されているようです。</p>
 
-<h3>主要属性</h3>
+<h3 id="section-3">主要属性</h3>
 
 <p>@param  @return  @extends </p>
 
-<h3>アクセス識別子</h3>
+<h3 id="section-4">アクセス識別子</h3>
 
 <p>@private  @protected  @public  @access </p>
 
-<h3>オブジェクト属性</h3>
+<h3 id="section-5">オブジェクト属性</h3>
 
-<p>@class  @constructor  @function  @constant  @member  @enum  ...</p>
+<p>@class  @constructor  @function  @constant  @member  @enum  &#8230;</p>
 
-<h3>オブジェクト参照属性</h3>
+<h3 id="section-6">オブジェクト参照属性</h3>
 
 <p>@static  @inner </p>
 
-<h3>説明</h3>
+<h3 id="section-7">説明</h3>
 
-<p>@desc  @example  @fileoverview  @classdesc ...</p>
+<p>@desc  @example  @fileoverview  @classdesc &#8230;</p>
 
-<h3>サポート情報</h3>
+<h3 id="section-8">サポート情報</h3>
 
 <p>@version  @since  @deprecated  @see  @author </p>
 
 <hr />
 
-<h2>ドキュメントの生成</h2>
-
+<h2 id="section-9">ドキュメントの生成</h2>
 <p>JSDocを実行して、ドキュメントを生成します。</p>
 
 <div class="highlight"><pre><code class="sh">jsdoc app.js
 </code></pre></div>
 
 <p><a href="http://modalsoul.github.com/assets/sample/jsdoc-out/56ea328d1a.html">生成されたドキュメントはこちら</a></p>
+
 
     </div>
     <hr>  
@@ -288,7 +286,7 @@ Javaと同じく&quot;/＊＊... ＊/ &quot;で囲まれた部分がアノテー
   
      
     	<li><a href="/categories.html#report-ref">
-    		report <span>16</span>
+    		report <span>17</span>
     	</a></li>
     
   
@@ -306,7 +304,7 @@ Javaと同じく&quot;/＊＊... ＊/ &quot;で囲まれた部分がアノテー
 
   
      
-    	<li><a href="/tags.html#node.js-ref">node.js <span>4</span></a></li>
+    	<li><a href="/tags.html#node.js-ref">node.js <span>5</span></a></li>
      
     	<li><a href="/tags.html#JavaScript-ref">JavaScript <span>3</span></a></li>
      
@@ -391,7 +389,7 @@ Javaと同じく&quot;/＊＊... ＊/ &quot;で囲まれた部分がアノテー
   
      
     	<li><a href="/categories.html#report-ref">
-    		report <span>16</span>
+    		report <span>17</span>
     	</a></li>
     
   
@@ -409,7 +407,7 @@ Javaと同じく&quot;/＊＊... ＊/ &quot;で囲まれた部分がアノテー
 
   
      
-    	<li><a href="/tags.html#node.js-ref">node.js <span>4</span></a></li>
+    	<li><a href="/tags.html#node.js-ref">node.js <span>5</span></a></li>
      
     	<li><a href="/tags.html#JavaScript-ref">JavaScript <span>3</span></a></li>
      

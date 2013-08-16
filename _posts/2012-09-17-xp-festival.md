@@ -7,7 +7,6 @@ comment: この記事は、2012年９月１６日に開催された<a href="http
 thumbnail: http://xpjug.com/xp2012/
 ---
 
------------------
 
 
 ## XP祭りとは？

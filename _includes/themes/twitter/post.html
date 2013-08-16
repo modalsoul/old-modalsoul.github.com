@@ -29,27 +29,6 @@
   </div>
   
   <div class="span3">
-    <h4>Published</h4>
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
-    </div>
-    <h4>Category</h4>
-    {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-    {% endunless %}  
-    <h4>Tag</h4>
-    {% unless page.tags == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-tags"></i></li>
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
-    </ul>
-    {% endunless %}  
-    <hr>
     <script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
 	</script>
 	<a href="http://aws.fxwill.com/" id="fxwillamazon">fxwill.com</a>

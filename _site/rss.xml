@@ -5,10 +5,171 @@
         <description>modal_soul debriefing - modal_soul</description>
         <link>http://modalsoul.github.io</link>
         <link>http://modalsoul.github.io</link>
-        <lastBuildDate>2013-08-17T02:21:17+09:00</lastBuildDate>
-        <pubDate>2013-08-17T02:21:17+09:00</pubDate>
+        <lastBuildDate>2013-08-18T17:42:35+09:00</lastBuildDate>
+        <pubDate>2013-08-18T17:42:35+09:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Github Pages Build Failure</title>
+                <description>&lt;h2 id=&quot;github&quot;&gt;Githubからの通知の確認&lt;/h2&gt;
+&lt;p&gt;Github-pagesのリポジトリへpushすると以下のような文面のメールが届きます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Subject: Page build failure
+
+The page build failed with the following error:
+
+page build failed
+
+For information on troubleshooting Jekyll see https://help.github.com/articles/using-jekyll-with-pages#troubleshooting
+If you have any questions please contact GitHub Support.
+
+support@github.com
+https://github.com/contact
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;通知してくれるのはいいんですが、情報量が少ない。。せめてビルド時のエラーログなりを送ってほしい。。。&lt;/p&gt;
+
+&lt;h2 id=&quot;github-1&quot;&gt;Githubのヘルプページの確認&lt;/h2&gt;
+&lt;p&gt;ひとまず、メールに記載されていたURLのページを確認します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://capture.heartrails.com/128x128?https://help.github.com/articles/using-jekyll-with-pages#troubleshooting&quot; alt=&quot;Troubleshooting｜Using Jekyll with Pages｜GitHub Help&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Troubleshootingに記載されている要旨は、「ローカルでビルドして、パースエラーを見つけなさい」とのこと。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;ローカル環境でビルド&lt;/h3&gt;
+&lt;p&gt;GitHubで使っているJekyllとその依存関係のバージョンについては、&lt;a href=&quot;https://github.com/github/pages-gem/blob/master/github-pages.gemspec#L16&quot;&gt;the same versions of Jekyll and other dependencies that we use&lt;/a&gt;に記載されていて、この時点では以下のバージョンになっていた。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  s.rubygems_version      = &quot;1.8.0&quot;
+  s.required_ruby_version = &quot;~&amp;gt; 1.9.3&quot;
+  ~~~
+  # Jekyll and related dependency versions as used by GitHub Pages. 
+  # For more information see:
+  # https://help.github.com/articles/using-jekyll-with-pages
+
+  s.add_dependency(&quot;RedCloth&quot;,   &quot;= 4.2.9&quot;)
+  s.add_dependency(&quot;jekyll&quot;,     &quot;= 1.1.2&quot;)
+  s.add_dependency(&quot;kramdown&quot;,   &quot;= 1.0.2&quot;)
+  s.add_dependency(&quot;liquid&quot;,     &quot;= 2.5.1&quot;)
+  s.add_dependency(&quot;maruku&quot;,     &quot;= 0.6.1&quot;)
+  s.add_dependency(&quot;rdiscount&quot;,  &quot;= 1.6.8&quot;)
+  s.add_dependency(&quot;redcarpet&quot;,  &quot;= 2.2.2&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ローカルの環境を上記のバージョンに合わせてビルドしてみると、いくつかErrorが。&lt;/p&gt;
+
+&lt;p&gt;エラーの原因は、
+* _postの記事に書かれていたサンプルコードがmarkdownのリンク表記とかぶっていたため、不正なリンクとして解釈されていた
+* URLにマルチバイト文字を含むためエラーになった
+こと&lt;/p&gt;
+
+&lt;p&gt;上記の箇所を修正してローカル環境でビルドしてもエラーや警告が出ないことを確認し、GitHubに再度pushしても、同じくPage build failureとなってしまった。&lt;/p&gt;
+
+&lt;p&gt;ひとまずバージョン依存での問題ではなさそうということはわかった。&lt;/p&gt;
+
+&lt;h2 id=&quot;pages-dont-build-unable-to-run-jekyll&quot;&gt;Pages don&amp;#8217;t build: &amp;#8220;Unable to run Jekyll&amp;#8221;の確認&lt;/h2&gt;
+&lt;p&gt;GitHubのヘルプには、Troubleshootingの手順で確認してもビルドに失敗したら、&lt;a href=&quot;https://help.github.com/articles/pages-don-t-build-unable-to-run-jekyll&quot;&gt;Page doesn&amp;#8217;t build&lt;/a&gt; guideを確認するようにと記載されていた。&lt;/p&gt;
+
+&lt;p&gt;このPage does&amp;#8217;nt build guideの内容は以下&lt;/p&gt;
+
+&lt;h3 id=&quot;unsafe-plugins&quot;&gt;Unsafe plugins&lt;/h3&gt;
+&lt;p&gt;危ないプラグインは使うなよ、ということらしいけど、debug.rbしか入っていないから、これが原因ではなさそう。&lt;/p&gt;
+
+&lt;h3 id=&quot;syntax-errors&quot;&gt;Syntax errors&lt;/h3&gt;
+&lt;p&gt;sourceファイルのタイポかその辺のエラーじゃないか、ってことらしい。jekyllのsafeオプションを付けてビルドしてみる。以下のコマンドを実行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll build --safe
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これも問題なし。&lt;/p&gt;
+
+&lt;h3 id=&quot;source-setting&quot;&gt;Source setting&lt;/h3&gt;
+&lt;p&gt;GitHubのビルドサーバーでは、sourceセッティングをオーバーライドするらしく、sourceの設定を弄っていると正しくビルドされないらしい。&lt;/p&gt;
+
+&lt;p&gt;sourceセッティングは変更していないので、これも原因ではなさそう。&lt;/p&gt;
+
+&lt;h3 id=&quot;submodules-in-pages&quot;&gt;Submodules in Pages&lt;/h3&gt;
+&lt;p&gt;リポジトリでサブモジュールを使っている場合、ビルド時に自動でそのサブモジュールをpullするらしい。
+この時、サブモジュールのアクセス先がpublicではなくprivateだとアクセスできずに失敗するらしい。&lt;/p&gt;
+
+&lt;p&gt;サブモジュールは使っていないので、これも原因ではなさそう。&lt;/p&gt;
+
+&lt;h3 id=&quot;viewing-build-error-messages&quot;&gt;Viewing build error messages&lt;/h3&gt;
+&lt;p&gt;ビルドのエラーログを確認しろ、とのこと。&lt;/p&gt;
+
+&lt;p&gt;ローカル環境でビルドする以外の方法として、&lt;a href=&quot;http://travisci.org/&quot;&gt;Travis CI&lt;/a&gt;を使ってビルドエラーメッセージを確認することができるらしい。&lt;/p&gt;
+
+&lt;p&gt;手順は以下&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gemfileを準備
+リポジトリのルート直下に、ファイル名&amp;#8221;Gemfile&amp;#8221;で以下の内容を記述する。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://rubygems.org&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;github-pages&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;.travis.ymlの準備
+テストサービスの設定に、ファイル名&amp;#8221;.travis.yml&amp;#8221;で以下の内容を記述する。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;ss&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;bundle exec jekyll build&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;この状態でGitHubへpushするとTravic CIでビルドジョブが実行される、らしい。&lt;/p&gt;
+
+&lt;h4 id=&quot;travis-ci&quot;&gt;Travis CIのビルドメッセージを確認&lt;/h4&gt;
+&lt;p&gt;Travis CIの画面から、以下のビルドメッセージを確認すると&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll build
+Configuration file: /home/travis/build/modalsoul/modalsoul.github.com/_config.yml
+   Deprecation: Auto-regeneration can no longer be &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;from your configuration file&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;. Use the --watch/-w &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;-line option instead.
+    Source: /home/travis/build/modalsoul/modalsoul.github.com
+    Destination: /home/travis/build/modalsoul/modalsoul.github.com/_site
+    Generating...   Liquid Exception: invalid byte sequence in UTF-8 in post.html
+error: invalid byte sequence in UTF-8. Use --trace to view backtrace
+The &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;bundle exec jekyll build&amp;quot;&lt;/span&gt; exited with 1.
+Done. Your build exited with 1.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;どうやらpost.htmlのパースでエラーになっているらしい。&lt;/p&gt;
+
+&lt;h2 id=&quot;liquid-exception&quot;&gt;Liquid Exceptionの確認&lt;/h2&gt;
+
+&lt;h3 id=&quot;markdown&quot;&gt;markdownパーサー&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Liquid Exception: invalid byte sequence in UTF-8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;で、ググってみると&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://igarashikuniaki.net/diary/20130519.html&quot;&gt;Github Pages で page build failed エラー｜いがいが日記&lt;/a&gt;
+&lt;a href=&quot;http://tokkonopapa.github.io/blog/2013/08/04/liquid-exception-error/&quot;&gt;Liquid Exception: Invalid Byte Sequence in UTF-8 in atom.xml｜T.I.D.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;markdownパーサーによってはビルドエラーになる場合があるらしい。
+markdownパーサーを、&amp;#8221;redcarpet&amp;#8221;、&amp;#8221;kramdown&amp;#8221;、&amp;#8221;rdiscount&amp;#8221;と変えて試してみた結果、どのmarkdownパーサーでも同じくビルド失敗。&lt;/p&gt;
+
+&lt;p&gt;markdownパーサー依存の問題ではなさそう。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;詳細なエラー発生箇所の確認&lt;/h3&gt;
+&lt;p&gt;エラー発生箇所をもっと詳細に特定するために、post.htmlの中身を削ってビルド・エラーメッセージの確認を行う。
+どうやら_includes/helpers/reference_thumbnail.htmlを使っている箇所が原因のよう。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;解決&lt;/h2&gt;
+&lt;p&gt;上記のファイルをエディタで開いてみると、文字コードがSHIFT_JISとなっていた。&lt;/p&gt;
+
+&lt;p&gt;これをUTF-8に変換してビルドしてみると、成功。&lt;/p&gt;
+
+&lt;p&gt;調べてみれば、なんてことない初歩的な問題でした。。&lt;/p&gt;
+
+</description>
+                <link>http://modalsoul.github.io/environment/2013/08/17/Github-pages-build-failure</link>
+                <guid>http://modalsoul.github.io/environment/2013/08/17/Github-pages-build-failure</guid>
+                <pubDate>2013-08-17T00:00:00+09:00</pubDate>
+        </item>
 
         <item>
                 <title>node.js+JSDoc3によるインラインAPIドキュメントの生成</title>

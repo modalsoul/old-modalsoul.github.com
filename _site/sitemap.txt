@@ -9,6 +9,7 @@ http://modalsoul.github.io/rss.xml
 http://modalsoul.github.io/sitemap.txt
 http://modalsoul.github.io/tags.html
 
+http://modalsoul.github.io/environment/2013/08/17/Github-pages-build-failure
 http://modalsoul.github.io/report/2012/10/30/how-to-use-jsdoc
 http://modalsoul.github.io/report/2012/10/29/node-express-access-log-rotation
 http://modalsoul.github.io/report/2012/10/18/about-npm-start-and-package-json

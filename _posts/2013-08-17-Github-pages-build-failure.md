@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Github-pagesでPage build failureにハマった件。またはLiquid Exception: invalid byte sequence in UTF-8 in〜になった件。
+title: Github-pagesでPage　build failureにハマった件。またはLiquid　Exception：　invalid　byte　sequence　in　UTF-8になった件。
 tags: Github-pages Jekyll
 categories: environment
 comment: この記事は、Github-pagesでビルドに失敗する現象にハマった時のメモ書きです。

@@ -9,9 +9,9 @@ tagline: Tech Blog (BETA)
     <ul class="posts">
       {% for post in site.posts limit:7 %} 
         <h6> <span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;</h6>
-        <h4><a href="{{ post.url }}">{{ post.title}}</a></h4>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
         <p>{{ post.comment }}</p>
-        <a href="{{ post.url}}">
+        <a href="{{ post.url }}">
     	  <img src='http://capture.heartrails.com/320x180/cool/shorten?{{BASE_PATH}}{{ post.url }}'>
         </a>
         <div id="right">

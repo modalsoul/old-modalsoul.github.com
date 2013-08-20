@@ -5,13 +5,13 @@
         <description>modal_soul debriefing - modal_soul</description>
         <link>http://modalsoul.github.io</link>
         <link>http://modalsoul.github.io</link>
-        <lastBuildDate>2013-08-18T17:42:35+09:00</lastBuildDate>
-        <pubDate>2013-08-18T17:42:35+09:00</pubDate>
+        <lastBuildDate>2013-08-20T22:46:19+09:00</lastBuildDate>
+        <pubDate>2013-08-20T22:46:19+09:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>Github Pages Build Failure</title>
+                <title>Github-pagesでPage　build failureにハマった件。またはLiquid　Exception：　invalid　byte　sequence　in　UTF-8になった件。</title>
                 <description>&lt;h2 id=&quot;github&quot;&gt;Githubからの通知の確認&lt;/h2&gt;
 &lt;p&gt;Github-pagesのリポジトリへpushすると以下のような文面のメールが届きます。&lt;/p&gt;
 

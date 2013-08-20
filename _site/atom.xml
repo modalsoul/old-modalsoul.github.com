@@ -4,7 +4,7 @@
  <title>modal_soul debriefing</title>
  <link href="http://modalsoul.github.io/" rel="self"/>
  <link href="http://modalsoul.github.io"/>
- <updated>2013-08-18T17:42:35+09:00</updated>
+ <updated>2013-08-20T22:46:19+09:00</updated>
  <id>http://modalsoul.github.io</id>
  <author>
    <name>modal_soul</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Github Pages Build Failure</title>
+   <title>Github-pagesでPage　build failureにハマった件。またはLiquid　Exception：　invalid　byte　sequence　in　UTF-8になった件。</title>
    <link href="http://modalsoul.github.io/environment/2013/08/17/Github-pages-build-failure"/>
    <updated>2013-08-17T00:00:00+09:00</updated>
    <id>http://modalsoul.github.io/environment/2013/08/17/Github-pages-build-failure</id>

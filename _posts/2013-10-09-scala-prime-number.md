@@ -13,13 +13,14 @@ thumbnail:
 
 判定には、試し割り法を使いました。
 
+<hr/>
 ## コード
 ↓のようになりました
 
 <script src="https://gist.github.com/modalsoul/6902340.js">
 </script>
 
-
+<hr/>
 ## 解説
 処理のおおまかな流れは以下のような感じ
 

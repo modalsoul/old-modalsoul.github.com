@@ -6,6 +6,7 @@ categories: programing
 comment: この記事は、社内のプログラミングコンテストで、Scalaの素数判定のプラグラムを書いた時のメモ書きです。
 thumbnail: 
 ---
+
 ![素数](http://kajipon.sakura.ne.jp/art/j-olym45.jpg)
 
 ## 概要

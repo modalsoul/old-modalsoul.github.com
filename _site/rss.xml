@@ -5,10 +5,94 @@
         <description>modal_soul debriefing - modal_soul</description>
         <link>http://modalsoul.github.io</link>
         <link>http://modalsoul.github.io</link>
-        <lastBuildDate>2013-08-20T22:46:19+09:00</lastBuildDate>
-        <pubDate>2013-08-20T22:46:19+09:00</pubDate>
+        <lastBuildDate>2013-09-15T09:11:03+09:00</lastBuildDate>
+        <pubDate>2013-09-15T09:11:03+09:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Sublime text2でjshintプラグインを使う</title>
+                <description>&lt;h2 id=&quot;section&quot;&gt;インストール手順&lt;/h2&gt;
+&lt;p&gt;基本的にSublime-JSHintのGithubのREADMEの通りです。
+以下の手順はMacの場合のものです。&lt;/p&gt;
+
+&lt;h3 id=&quot;nodejs&quot;&gt;node.jsのインストール&lt;/h3&gt;
+&lt;p&gt;JSHintを実行する為に、Sublime Textとは別に&lt;a href=&quot;http://nodejs.org/#download&quot;&gt;node.js&lt;/a&gt;がインストールされている必要があるようです。&lt;/p&gt;
+
+&lt;h3 id=&quot;sublime-jshint&quot;&gt;Sublime-JSHintのインストール&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://sublime.wbond.net/installation&quot;&gt;Sublime Text package manager&lt;/a&gt;を使った方法と、マニュアルでのインストール方法がありますが、今回はpackage managerを使ってインストールしました。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cmd+Shift+P&lt;/li&gt;
+  &lt;li&gt;install と入力し、 Package Control: Install Package を選択&lt;/li&gt;
+  &lt;li&gt;js gutter と入力し、 JSHint Gutter を選択&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;動作確認&lt;/h3&gt;
+&lt;p&gt;適当なJavaScriptファイルをSublime Textで開き、&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cmd+Shift+P&lt;/li&gt;
+  &lt;li&gt;JSHintを選択&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これでラインナンバーの左側にJSHintの警告マークがでればOKですが、手元の環境では以下のようなエラーが出てしまいました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/20130909/sublime-error-popup.png&quot; alt=&quot;Sublime-JSHint error popup&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nodepath&quot;&gt;node_pathの設定&lt;/h3&gt;
+&lt;p&gt;上記のエラーはnode.jsのパス設定がうまくいっていないためのエラーのようです。
+GithubのREADMEでもこういった現象が起きることが書かれていました。&lt;a href=&quot;https://github.com/victorporof/Sublime-JSHint#oh-noez-command-not-found&quot;&gt;Oh noez, command not found!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;READMEの記述にしたがいnode_pathを設定します&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cmd+Shift+P&lt;/li&gt;
+  &lt;li&gt;jshint と入力し、Set node Path を選択&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JSHint.sublime-settingsが開き、デフォルトの設定は以下のようになっています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+  // Simply using `node` without specifying a path sometimes doesn't work :(
+  // https://github.com/victorporof/Sublime-JSHint#oh-noez-command-not-found
+  // http://nodejs.org/#download
+  &quot;node_path&quot;: &quot;/usr/local/bin/node&quot;,
+
+  // Automatically lint on edit (Sublime Text 3 only).
+  &quot;lint_on_edit&quot;: false,
+
+  // Automatically lint when a file is saved.
+  &quot;lint_on_save&quot;: false
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上の&amp;#8221;node_path&amp;#8221;がnode.jsのパス、真ん中の&amp;#8221;lint_on_edit&amp;#8221;は編集時の自動lintの設定、下が保存時の自動lintの設定。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、私の環境ではnode.jsのインストールパスは上記のデフォルトパスと同じになっていました。
+設定からすると動くはずの用に思えます。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;リンク元のパスを設定&lt;/h3&gt;
+&lt;p&gt;&amp;#8220;sublime node.js not found&amp;#8221;でググってみたところ、Sublime-HTMLPrettifyに参考になりそうなissueがありました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/victorporof/Sublime-HTMLPrettify/issues/53&quot;&gt;Node.js was not found when it is there&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;このissueのコメントを漁っていくと、&lt;a href=&quot;https://github.com/victorporof/Sublime-HTMLPrettify/issues/53#issuecomment-24030863&quot;&gt;それっぽいコメント&lt;/a&gt;がありました&lt;/p&gt;
+
+&lt;p&gt;このコメントによると、
+/usr/local/bin/node のリンク元　/usr/local/Cellar/node/0.10.15/bin/node と設定したらうまくいった、らしい&lt;/p&gt;
+
+&lt;p&gt;これを参考に、ls -l /usr/local/bin/node の結果を、JSHint.sublime-settingsのnode_pathに設定し、再起動したらJSHintが動きました。&lt;/p&gt;
+
+&lt;p&gt;とりあえずめでたしめでたし&lt;/p&gt;
+
+&lt;p&gt;ただ、このissueのコメントだと同じくMacでも/usr/local/bin/nodeで動いたケースもあるようなので、詳細は不明ですね。。&lt;/p&gt;
+
+</description>
+                <link>http://modalsoul.github.io/environment/2013/09/09/sublime-text-jshint</link>
+                <guid>http://modalsoul.github.io/environment/2013/09/09/sublime-text-jshint</guid>
+                <pubDate>2013-09-09T00:00:00+09:00</pubDate>
+        </item>
 
         <item>
                 <title>Github-pagesでPage　build failureにハマった件。またはLiquid　Exception：　invalid　byte　sequence　in　UTF-8になった件。</title>

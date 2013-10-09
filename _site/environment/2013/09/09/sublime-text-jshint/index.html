@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>node.js+express+log4jsでのアクセスログローテーション</title>
+    <title>Sublime text2でjshintプラグインを使う</title>
     
     <meta name="author" content="modal_soul">
 
@@ -135,13 +135,13 @@
         
 
 <div class="page-header">
-  <h1>node.js+express+log4jsでのアクセスログローテーション </h1>
+  <h1>Sublime text2でjshintプラグインを使う </h1>
   <div id="right">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io/report/2012/10/29/node-express-access-log-rotation/" data-via="modal_soul" data-lang="ja">ツイート</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io/environment/2013/09/09/sublime-text-jshint/" data-via="modal_soul" data-lang="ja">ツイート</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
     </script>
 			
-    <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/report/2012/10/29/node-express-access-log-rotation/" class="hatena-bookmark-button" data-hatena-bookmark-title="node.js+express+log4jsでのアクセスログローテーション" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+    <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/environment/2013/09/09/sublime-text-jshint/" class="hatena-bookmark-button" data-hatena-bookmark-title="Sublime text2でjshintプラグインを使う" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
       <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
     </a>
     <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
@@ -160,7 +160,7 @@
 	  })();
 	  </script>
 	
-    <div class="fb-like" data-href="http://modalsoul.github.io/report/2012/10/29/node-express-access-log-rotation/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+    <div class="fb-like" data-href="http://modalsoul.github.io/environment/2013/09/09/sublime-text-jshint/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
     </div>
   </div>
 </div>
@@ -177,6 +177,12 @@
 
 
 
+	
+		<p>この記事は、Sublime Text2にJSHintプラグインをインストールしてハマった時のメモ書きです。</p>
+		<a href="https://dl.dropboxusercontent.com/u/2388316/screenshots/sublime-jshint.png">
+		<img title="参考" src="http://capture.heartrails.com/300x200/cool?https://dl.dropboxusercontent.com/u/2388316/screenshots/sublime-jshint.png" alt="参考" width="300" height="200" />
+		</a>
+	
 
 
 
@@ -184,50 +190,81 @@
           
         			
 	    </div>
-      <p><a href="http://www.flickr.com/photos/kuromatsunai/3024100752/" title="足跡 - Footprint - by kuromatsunai.info, on Flickr">
-<img src="http://farm4.staticflickr.com/3272/3024100752_36c698bab8_n.jpg" width="320" height="240" alt="足跡 - Footprint -" />
-</a></p>
+      <h2 id="section">インストール手順</h2>
+<p>基本的にSublime-JSHintのGithubのREADMEの通りです。
+以下の手順はMacの場合のものです。</p>
 
-<h2 id="section">謝辞</h2>
-<p>以下の記事を参考にさせていただきました。感謝です。</p>
+<h3 id="nodejs">node.jsのインストール</h3>
+<p>JSHintを実行する為に、Sublime Textとは別に<a href="http://nodejs.org/#download">node.js</a>がインストールされている必要があるようです。</p>
 
-<p>*<a href="http://blog.shonanshachu.com/2012/10/nodejsexpressaccess-log-log-rotate.html">【Node.js】expressでaccess log + log rotate ｜ 湘南社中テクニカルブログ</a></p>
+<h3 id="sublime-jshint">Sublime-JSHintのインストール</h3>
+<p><a href="https://sublime.wbond.net/installation">Sublime Text package manager</a>を使った方法と、マニュアルでのインストール方法がありますが、今回はpackage managerを使ってインストールしました。</p>
 
-<hr />
+<ul>
+  <li>Cmd+Shift+P</li>
+  <li>install と入力し、 Package Control: Install Package を選択</li>
+  <li>js gutter と入力し、 JSHint Gutter を選択</li>
+</ul>
 
-<h2 id="nodejsexpress">node.jsとexpressでのアクセスログ</h2>
+<h3 id="section-1">動作確認</h3>
+<p>適当なJavaScriptファイルをSublime Textで開き、</p>
 
-<p>node.js+expressには、express標準のloggerだとログの出力先をファイルにすると、対象のファイルがずっとオープン状態になってしまう、という欠点があります。
-(※:もしかしたら私が回避方法を知らないだけかもしれませんが。）</p>
+<ul>
+  <li>Cmd+Shift+P</li>
+  <li>JSHintを選択</li>
+</ul>
 
-<p>そのため、いい感じのログをファイル出力し、日次でローテーションする、というような運用ができません。</p>
+<p>これでラインナンバーの左側にJSHintの警告マークがでればOKですが、手元の環境では以下のようなエラーが出てしまいました。</p>
 
-<p>1ファイルに長々とアクセスログが出力されるようでは、運用もままならないので、log4jsを使ってexpressのアクセスログをいい感じにローテーションできるようにしたいと思います。</p>
+<p><img src="/img/20130909/sublime-error-popup.png" alt="Sublime-JSHint error popup" /></p>
 
-<hr />
+<h3 id="nodepath">node_pathの設定</h3>
+<p>上記のエラーはnode.jsのパス設定がうまくいっていないためのエラーのようです。
+GithubのREADMEでもこういった現象が起きることが書かれていました。<a href="https://github.com/victorporof/Sublime-JSHint#oh-noez-command-not-found">Oh noez, command not found!</a></p>
 
-<h2 id="log4js">log4jsを使う</h2>
+<p>READMEの記述にしたがいnode_pathを設定します</p>
 
-<p>LoggingFrameworkのlog4jsについては、こちらで紹介しています</p>
+<ul>
+  <li>Cmd+Shift+P</li>
+  <li>jshint と入力し、Set node Path を選択</li>
+</ul>
 
-<p><a href="http://modalsoul.github.com/report/2012/10/14/node-js-log4js/">node.js+log4jsで、ログローテーションする</a></p>
+<p>JSHint.sublime-settingsが開き、デフォルトの設定は以下のようになっています。</p>
 
-<p><a href="http://modalsoul.github.com/report/2012/10/14/node-js-log4js/">
-<img title="Now Capturing..." src="http://capture.heartrails.com/120x90/cool?http://modalsoul.github.com/report/2012/10/14/node-js-log4js/" alt="http://modalsoul.github.com/report/2012/10/14/node-js-log4js/" width="120" height="90" />
-</a></p>
+<pre><code>{
+  // Simply using `node` without specifying a path sometimes doesn't work :(
+  // https://github.com/victorporof/Sublime-JSHint#oh-noez-command-not-found
+  // http://nodejs.org/#download
+  "node_path": "/usr/local/bin/node",
 
-<p>実際のコードはこんな感じ。※:要リファクタリング
-<script src="https://gist.github.com/3973839.js">
-</script>
-app.routerの前で、functionを入れログレベルをinfoで出力させています。</p>
+  // Automatically lint on edit (Sublime Text 3 only).
+  "lint_on_edit": false,
 
-<p>実際にexpressをスタートさせ、ブラウザからアクセスすると以下のようなログが出力されます。</p>
+  // Automatically lint when a file is saved.
+  "lint_on_save": false
+}
+</code></pre>
 
-<p>access.log</p>
+<p>上の&#8221;node_path&#8221;がnode.jsのパス、真ん中の&#8221;lint_on_edit&#8221;は編集時の自動lintの設定、下が保存時の自動lintの設定。</p>
 
-<div class="highlight"><pre><code class="sh"><span class="o">[</span>2012-10-29 23:06:18.732<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> dateFile - 127.0.0.1	Mon Oct 29 2012 23:06:18 GMT+0900 <span class="o">(</span>東京 <span class="o">(</span>標準時<span class="o">))</span>	GET	/	200	-	Mozilla/5.0 <span class="o">(</span>Windows NT 6.1; WOW64<span class="o">)</span> AppleWebKit/537.4 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/22.0.1229.94 Safari/537.4
-<span class="o">[</span>2012-10-29 23:06:18.968<span class="o">]</span> <span class="o">[</span>INFO<span class="o">]</span> dateFile - 127.0.0.1	Mon Oct 29 2012 23:06:18 GMT+0900 <span class="o">(</span>東京 <span class="o">(</span>標準時<span class="o">))</span>	GET	/stylesheets/style.css	200	http://localhost:3000/	Mozilla/5.0 <span class="o">(</span>Windows NT 6.1; WOW64<span class="o">)</span> AppleWebKit/537.4 <span class="o">(</span>KHTML, like Gecko<span class="o">)</span> Chrome/22.0.1229.94 Safari/537.4
-</code></pre></div>
+<p>ちなみに、私の環境ではnode.jsのインストールパスは上記のデフォルトパスと同じになっていました。
+設定からすると動くはずの用に思えます。</p>
+
+<h3 id="section-2">リンク元のパスを設定</h3>
+<p>&#8220;sublime node.js not found&#8221;でググってみたところ、Sublime-HTMLPrettifyに参考になりそうなissueがありました。</p>
+
+<p><a href="https://github.com/victorporof/Sublime-HTMLPrettify/issues/53">Node.js was not found when it is there</a> </p>
+
+<p>このissueのコメントを漁っていくと、<a href="https://github.com/victorporof/Sublime-HTMLPrettify/issues/53#issuecomment-24030863">それっぽいコメント</a>がありました</p>
+
+<p>このコメントによると、
+/usr/local/bin/node のリンク元　/usr/local/Cellar/node/0.10.15/bin/node と設定したらうまくいった、らしい</p>
+
+<p>これを参考に、ls -l /usr/local/bin/node の結果を、JSHint.sublime-settingsのnode_pathに設定し、再起動したらJSHintが動きました。</p>
+
+<p>とりあえずめでたしめでたし</p>
+
+<p>ただ、このissueのコメントだと同じくMacでも/usr/local/bin/nodeで動いたケースもあるようなので、詳細は不明ですね。。</p>
 
 
     </div>
@@ -237,8 +274,8 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
     <ul>
     
       <li>
-        14 Oct 2012
-        <a href="/report/2012/10/14/node-js-log4js">node.js+log4jsで、ログローテーションする</a>
+        01 Feb 2012
+        <a href="/ci/2012/02/01/setup-capistrano">Capistranoをやってみよう</a>
       </li>
       
       <li>
@@ -247,8 +284,8 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
       </li>
       
       <li>
-        17 Feb 2012
-        <a href="/report/2012/02/17/developers-summit-2012">Developers Summit 2012 2日目ツイートまとめ。#devsumi</a>
+        15 Jan 2012
+        <a href="/record/2012/01/15/setup-jekyll">Jekyllによる静的Ｗebサイト構築入門してみた</a>
       </li>
       
       <li>
@@ -257,8 +294,8 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
       </li>
       
       <li>
-        20 May 2012
-        <a href="/test/programing/2012/05/20/android-ui-test-InstrumentationTestCase">AndroidアプリのUIテスト-InstrumentationTestCase編-</a>
+        17 Aug 2013
+        <a href="/environment/2013/08/17/Github-pages-build-failure">Github-pagesでPage　build failureにハマった件。またはLiquid　Exception：　invalid　byte　sequence　in　UTF-8になった件。</a>
       </li>
       
     </ul>
@@ -272,8 +309,8 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
 
   
      
-    	<li><a href="/categories.html#report-ref">
-    		report <span>17</span>
+    	<li><a href="/categories.html#environment-ref">
+    		environment <span>3</span>
     	</a></li>
     
   
@@ -291,11 +328,11 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
 
   
      
-    	<li><a href="/tags.html#node.js-ref">node.js <span>5</span></a></li>
+    	<li><a href="/tags.html#SublimeText-ref">SublimeText <span>1</span></a></li>
      
-    	<li><a href="/tags.html#express-ref">express <span>1</span></a></li>
+    	<li><a href="/tags.html#jshint-ref">jshint <span>1</span></a></li>
      
-    	<li><a href="/tags.html#log4js-ref">log4js <span>2</span></a></li>
+    	<li><a href="/tags.html#JavaScript-ref">JavaScript <span>4</span></a></li>
     
   
 
@@ -308,14 +345,14 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
     <a href="https://twitter.com/share" class="twitter-share-button" data-via="modal_soul" data-lang="ja">ツイート</a>
 	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 	  </script>
-	  <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/report/2012/10/29/node-express-access-log-rotation" class="hatena-bookmark-button" data-hatena-bookmark-title="node.js+express+log4jsでのアクセスログローテーション" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+	  <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io/environment/2013/09/09/sublime-text-jshint" class="hatena-bookmark-button" data-hatena-bookmark-title="Sublime text2でjshintプラグインを使う" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
 	    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
 	  </a>
 	  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
 	  </script>
 	  <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
 	  <g:plusone size="medium"></g:plusone>
-	  <div class="fb-like" data-href="http://modalsoul.github.io/report/2012/10/29/node-express-access-log-rotation/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+	  <div class="fb-like" data-href="http://modalsoul.github.io/environment/2013/09/09/sublime-text-jshint/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
 	  </div>
 	</div>
     <hr>
@@ -328,11 +365,11 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/report/2012/10/18/about-npm-start-and-package-json" title="node.jsにおける、npmとpackage.jsonという作法について">&larr; Previous</a></li>
+        <li class="prev"><a href="/environment/2013/08/17/Github-pages-build-failure" title="Github-pagesでPage　build failureにハマった件。またはLiquid　Exception：　invalid　byte　sequence　in　UTF-8になった件。">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/report/2012/10/30/how-to-use-jsdoc" title="node.js+JSDoc3によるインラインAPIドキュメントの生成">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
@@ -363,7 +400,7 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
   <div class="span3">
     <h4>Published</h4>
     <div class="date">
-      <span>29 October 2012</span>
+      <span>09 September 2013</span>
     </div>
     <h4>Category</h4>
     
@@ -375,8 +412,8 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
 
   
      
-    	<li><a href="/categories.html#report-ref">
-    		report <span>17</span>
+    	<li><a href="/categories.html#environment-ref">
+    		environment <span>3</span>
     	</a></li>
     
   
@@ -394,11 +431,11 @@ app.routerの前で、functionを入れログレベルをinfoで出力させて�
 
   
      
-    	<li><a href="/tags.html#node.js-ref">node.js <span>5</span></a></li>
+    	<li><a href="/tags.html#SublimeText-ref">SublimeText <span>1</span></a></li>
      
-    	<li><a href="/tags.html#express-ref">express <span>1</span></a></li>
+    	<li><a href="/tags.html#jshint-ref">jshint <span>1</span></a></li>
      
-    	<li><a href="/tags.html#log4js-ref">log4js <span>2</span></a></li>
+    	<li><a href="/tags.html#JavaScript-ref">JavaScript <span>4</span></a></li>
     
   
 

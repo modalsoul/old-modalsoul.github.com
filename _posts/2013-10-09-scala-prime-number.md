@@ -3,9 +3,10 @@ layout: post
 title: Scalaで素数判定
 tags: Scala
 categories: programing
-comment: この記事は、Scalaで素数判定のプラグラムを書いた時のメモ書きです。
-thumbnail: http://kajipon.sakura.ne.jp/art/j-olym45.jpg
+comment: この記事は、社内のプログラミングコンテストで、Scalaの素数判定のプラグラムを書いた時のメモ書きです。
+thumbnail: 
 ---
+![素数](http://kajipon.sakura.ne.jp/art/j-olym45.jpg)
 
 ## 概要
 今回は、1<= X <=10^9 の範囲の自然数Xを渡されたとき、Xが素数か否かを判定します。

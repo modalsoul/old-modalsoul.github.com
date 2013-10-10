@@ -45,3 +45,33 @@ filterの条件を増やして(ex. 3, 5, 7, 11,,,)リストが短くなるよう
 早くなりませんでした、というか若干遅くなった。。。
 
 filterを追加することでループの回数を減らすことの損益分岐点は、思ったより低かったようです。無念
+
+<hr/>
+## 追記
+[@gakuzzzz](https://twitter.com/gakuzzzz)さんにコメントいただき、コードを改良しました。
+
+<blockquote class="twitter-tweet">
+    <p>
+        <a href="https://twitter.com/modal_soul">@modal_soul</a> (3L to sqrt(num).toLong by 2) とかすると filter が必要なくなって速くなりそうですね。
+    </p>&mdash; がくぞ (@gakuzzzz) 
+    <a href="https://twitter.com/gakuzzzz/statuses/387965601525669888">October 9, 2013</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8">
+</script>
+
+### コード・その２
+<script src="https://gist.github.com/modalsoul/6918594.js">
+</script>
+
+(x to y by 2)とすることで、2刻みでリストを生成するので、最初に生成されるリストが短くできる&filterが省略できるわけですね。
+
+Before:140ms, After:130ms だいたい10msほど速くなりました。
+
+
+### コード・その３
+<script src="https://gist.github.com/modalsoul/6918797.js">
+</script>
+
+returnを使うと例外で遅くなるのでは？という話もあったので、forallを使うパターンも試してみました。
+結果は↑とほぼ同じ結果になりました。
+forallがbooleanを返すので、returnのためのtrue/falseがなくなったので、コードはだいぶ綺麗になった気がします。

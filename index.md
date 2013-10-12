@@ -17,15 +17,13 @@ tagline: Tech Blog (BETA)
         <div id="right">
           <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://modalsoul.github.io{{ post.url }}/" data-via="modal_soul" data-lang="ja">ツイート</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-          </script>
-			
-          <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io{{ page.url }}/" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ post.title }}" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
+          </script>			
+          <a href="http://b.hatena.ne.jp/entry/http://modalsoul.github.io{{ post.url }}/" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ post.title }}" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加">
             <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
           </a>
           <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
           </script>
-          
-		  <div class="fb-like" data-href="http://modalsoul.github.io{{ post.url }}/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
+		      <div class="fb-like" data-href="http://modalsoul.github.io{{ post.url }}/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true">
           </div>
         </div>
       {% endfor %}
@@ -54,7 +52,6 @@ tagline: Tech Blog (BETA)
     <a class="twitter-timeline" href="https://twitter.com/modal_soul" data-widget-id="364724609657999360">@modal_soul からのツイート</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
     </script>
-
 	<div>
     <script src="http://tool2.fxwill.com/amazon/set_amazon.php?ListId=JD4OW220A56Y&AssociatesId=modalsoul-22&txt=3&color=1">
     </script>

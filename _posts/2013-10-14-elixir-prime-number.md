@@ -37,7 +37,7 @@ def isPrimeがメイン関数です。
 Scalaと同じようにリストを生成するような便利な関数があるのかもしれませんが、見つけられなかったので。。
 
 
-def seiveのコールでは、第１引数のリストが空でない場合、def seive([h｜t], num)、第１引数のリストが空の場合、def seive([], _)にマッチします。
+def seiveのコールでは、第１引数のリストが空でない場合、def seive(［h｜t］, num)、第１引数のリストが空の場合、def seive(［］, _)にマッチします。
 
 def seive([h｜t], num) では、
 

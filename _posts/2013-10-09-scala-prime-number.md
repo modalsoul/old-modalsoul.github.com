@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scalaで素数判定【追記アリ】
-tags: Scala
+tags: Scala 素数
 categories: programing
 comment: この記事は、社内のプログラミングコンテストで、Scalaの素数判定のプラグラムを書いた時のメモ書きです。
 thumbnail: 
